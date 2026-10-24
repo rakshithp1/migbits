@@ -1,0 +1,9 @@
+* text=auto
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+
+# Preserve generated bundles, including significant whitespace in template literals.
+public/imported/**/previews/*.html -text -diff
+# Preserve upstream font notices byte-for-byte, including original whitespace.
+public/library/fonts/*-OFL.txt -text -whitespace

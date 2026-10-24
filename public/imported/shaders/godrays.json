@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--godrays",
+    "name": "Godrays",
+    "description": "Godrays shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Godrays/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "95d574493423afca2fcfe59f32820d98576c6dd5fe48edb7ccdc46806d12bda4",
+    "dataUrl": "/imported/shaders/godrays.json",
+    "downloadUrl": "/imported/shaders/godrays.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Godrays/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {coverageOver, withFrame, seamlessRadialFrame, noiseRays} from \"@coreroot/std/paint/light\"\nimport {transformColor, transformPosition} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    center: Parameters<typeof transformPosition>[0]\n    density: number\n    intensity: number\n    spotty: number\n    speed: number\n    rayColor: string\n    backgroundColor: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"Godrays\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Volumetric light rays emanating from a point\",\n    acceptsUVContext: true,\n    animatedTime: { speed: 'speed' },\n    props: {\n        center: {\n            default: { x: 0, y: 0 },\n            transform: transformPosition,\n            description: \"The center point of the god rays\",\n            ui: {type: 'position', label: 'Center', group: 'Position'}\n        },\n        density: {\n            default: 0.3,\n            description: 'Frequency of ray sectors',\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Density', group: 'Effect'}\n        },\n        intensity: {\n            default: 0.8,\n            description: 'Ray visibility within sectors',\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Intensity', group: 'Effect'}\n        },\n        spotty: {\n            default: 1,\n            description: 'Density of spots on rays (higher = more spots)',\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Spotty', group: 'Effect'}\n        },\n        speed: {\n            default: 0.5,\n            description: 'Animation speed of the rays',\n            ui: {type: 'range', min: 0, max: 2, step: 0.1, label: 'Speed', group: 'Animation'}\n        },\n        rayColor: {\n            default: \"#4283fb\",\n            transform: transformColor,\n            description: 'Color of the light rays',\n            ui: {type: 'color', label: 'Ray Color', group: 'Colors'}\n        },\n        backgroundColor: {\n            default: \"transparent\",\n            transform: transformColor,\n            description: 'Background color',\n            ui: {type: 'color', label: 'Background Color', group: 'Colors'}\n        }\n    },\n    // The recipe: the seam-free radial frame → the two-layer noise ray stack → the ray color\n    // composited over the background by coverage (straight alpha, linear RGB).\n    paint: coverageOver({\n        color: p('rayColor'),\n        background: p('backgroundColor'),\n        coverage: withFrame(seamlessRadialFrame(p('center')), noiseRays({\n            density: p('density'),\n            intensity: p('intensity'),\n            spotty: p('spotty'),\n        })),\n    }),\n})\n\nexport default componentDefinition\n",
+      "sha256": "de1d9cc0ffb4b85931fbe8d6193362c7c2b43cc8c9fb9968e0f70ce93037dbd7"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

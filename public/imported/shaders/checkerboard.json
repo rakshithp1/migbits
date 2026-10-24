@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--checkerboard",
+    "name": "Checkerboard",
+    "description": "Checkerboard shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Checkerboard/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "8f289775bec9256d3741dd691fe1a1c57fedd50e168bbff67ee08357173cbfd8",
+    "dataUrl": "/imported/shaders/checkerboard.json",
+    "downloadUrl": "/imported/shaders/checkerboard.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Checkerboard/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {checkerCells, strokeOver} from \"@coreroot/std/paint/patterns\"\nimport {transformColor, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    colorA: Parameters<typeof transformColor>[0],\n    colorB: Parameters<typeof transformColor>[0],\n    cells: number,\n    softness: number,\n    colorSpace: string\n}\n\n// std generator: paints from coordinates, no child consumed.\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"Checkerboard\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Classic checkerboard pattern with two alternating colors\",\n    // When a UV-propagating distortion wraps this generator, the composer supplies a per-pixel\n    // `uvContext` and Checkerboard rasterises at full canvas resolution against that distorted UV.\n    // The Quilez analytical filter operates on the looked-up UV's derivatives, preserving cell\n    // crispness through arbitrary distortions — much better than RTT bilinear.\n    acceptsUVContext: true,\n    props: {\n        colorA: {\n            default: \"#cccccc\",\n            transform: transformColor,\n            description: \"First color of the checkerboard pattern\",\n            ui: {\n                type: 'color',\n                label: 'Color A',\n                group: 'Colors'\n            }\n        },\n        colorB: {\n            default: \"#999999\",\n            transform: transformColor,\n            description: \"Second color of the checkerboard pattern\",\n            ui: {\n                type: 'color',\n                label: 'Color B',\n                group: 'Colors'\n            }\n        },\n        cells: {\n            default: 8,\n            description: \"Number of cells along the canvas height (creates square cells). Switch the unit to px in the editor to set an absolute cell size instead.\",\n            ui: {\n                type: ['range', 'map'],\n                min: 1,\n                max: 50,\n                step: 1,\n                label: 'Cells',\n                group: 'Effect',\n                // Inverse-dimensional: the plain number is a cell COUNT (legacy / resize-relative),\n                // but the unit chip can switch to px, where the value is\n                // an absolute cell size that resolves to `count = canvasHeight / px` (resize-stable).\n                dimensional: 'count-canvas-height'\n            }\n        },\n        softness: {\n            default: 0,\n            description: \"Smoothness of the transition between colors (0 = hard edges, 1 = very soft)\",\n            ui: {\n                type: ['range', 'map'],\n                min: 0,\n                max: 1,\n                step: 0.1,\n                label: 'Softness',\n                group: 'Effect'\n            }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: {\n                type: 'select',\n                options: colorSpaceOptions,\n                label: 'Color Space',\n                group: 'Colors'\n            }\n        }\n    },\n\n    // The recipe: the anti-aliased checker blend factor mixes the two colors in the chosen\n    // color space.\n    paint: strokeOver({\n        fill: p('colorA'),\n        stroke: p('colorB'),\n        mask: checkerCells({cells: p('cells'), softness: p('softness')}),\n        space: p('colorSpace'),\n    })\n})\n\nexport default componentDefinition\n",
+      "sha256": "3e07030c8978e53a96b2683f15b4312f56dc1d5f8a410de5ceeecf0d778e8252"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--truchet",
+    "name": "Truchet",
+    "description": "Truchet shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Truchet/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "507412a14bd0aa4a3a6a0b839d58b2bd4ef9876c190511f7c5fc1750238c0d97",
+    "dataUrl": "/imported/shaders/truchet.json",
+    "downloadUrl": "/imported/shaders/truchet.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Truchet/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {cellFrame, strokeOver, truchetArcs} from \"@coreroot/std/paint/patterns\"\nimport {transformColor, transformColorSpace, colorSpaceOptions, transformAngle} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    colorA: Parameters<typeof transformColor>[0]\n    colorB: Parameters<typeof transformColor>[0]\n    cells: number\n    thickness: number\n    rotation: Parameters<typeof transformAngle>[0]\n    softness: number\n    seed: number\n    colorSpace: string\n}\n\n// std generator: paints from coordinates, no child consumed.\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"Truchet\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Quarter-circle arc tiles that connect to form organic, maze-like flowing curves\",\n    // When a UV-propagating distortion wraps this generator, the composer supplies a per-pixel\n    // `uvContext` and Truchet rasterises at full canvas resolution against that distorted UV.\n    acceptsUVContext: true,\n    props: {\n        colorA: {\n            default: \"#000000\",\n            transform: transformColor,\n            description: \"Background color between the arcs\",\n            ui: { type: 'color', label: 'Color A', group: 'Colors' }\n        },\n        colorB: {\n            default: \"#ffffff\",\n            transform: transformColor,\n            description: \"Arc line color\",\n            ui: { type: 'color', label: 'Color B', group: 'Colors' }\n        },\n        cells: {\n            default: 10,\n            description: \"Number of tiles across the shortest canvas edge\",\n            ui: { type: ['range', 'map'], min: 2, max: 40, step: 1, label: 'Cells', group: 'Effect' }\n        },\n        thickness: {\n            default: 2,\n            description: \"Thickness of the arc lines\",\n            ui: { type: ['range', 'map'], min: 0, max: 20, step: 0.1, label: 'Thickness', group: 'Effect' }\n        },\n        rotation: {\n            default: 0,\n            transform: transformAngle,\n            description: \"Rotation of the tiling in degrees\",\n            ui: { type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Rotation', group: 'Effect' }\n        },\n        softness: {\n            default: 0,\n            description: \"Softness of the arc edges (0 = crisp, 1 = very soft)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Softness', group: 'Effect' }\n        },\n        seed: {\n            default: 0,\n            description: \"Random seed — changes which tiles flip, producing a different maze pattern\",\n            ui: { type: ['range', 'map'], min: 0, max: 100, step: 1, label: 'Seed', group: 'Effect' }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: { type: 'select', options: colorSpaceOptions, label: 'Color Space', group: 'Colors' }\n        }\n    },\n\n    // The recipe: a clockwise lattice, quarter-circle arc tiles drawn in it (orientation hashed\n    // per tile, `seed` reshuffles the maze), arcs stroked over the background in the chosen\n    // color space.\n    paint: strokeOver({\n        fill: p('colorA'),\n        stroke: p('colorB'),\n        mask: truchetArcs({\n            frame: cellFrame({cells: p('cells'), rotation: p('rotation'), convention: 'clockwise'}),\n            thickness: p('thickness'),\n            softness: p('softness'),\n            seed: p('seed'),\n        }),\n        space: p('colorSpace'),\n    })\n})\n\nexport default componentDefinition\n",
+      "sha256": "e75eba7b4cbb66494c32d25da9fc8b56cb4e67ba9d6784cec50b1c3b8a908fd5"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

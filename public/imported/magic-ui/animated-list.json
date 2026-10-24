@@ -1,0 +1,50 @@
+{
+  "resource": {
+    "id": "magic-ui--animated-list",
+    "name": "Animated List",
+    "description": "A list that animates each item in sequence with a delay. Used to showcase notifications or events on your landing page.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Components",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/animated-list.tsx",
+    "files": 2,
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "a58812d0936972958286887c0b6c24477d810697bc34aa0f2011e7a58503b9bb",
+    "dataUrl": "/imported/magic-ui/animated-list.json",
+    "downloadUrl": "/imported/magic-ui/animated-list.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/animated-list.tsx",
+      "content": "\"use client\"\n\nimport React, {\n  useEffect,\n  useMemo,\n  useState,\n  type ComponentPropsWithoutRef,\n} from \"react\"\nimport { AnimatePresence, motion, type MotionProps } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport function AnimatedListItem({ children }: { children: React.ReactNode }) {\n  const animations: MotionProps = {\n    initial: { scale: 0, opacity: 0 },\n    animate: { scale: 1, opacity: 1, originY: 0 },\n    exit: { scale: 0, opacity: 0 },\n    transition: { type: \"spring\", stiffness: 350, damping: 40 },\n  }\n\n  return (\n    <motion.div {...animations} layout className=\"mx-auto w-full\">\n      {children}\n    </motion.div>\n  )\n}\n\nexport interface AnimatedListProps extends ComponentPropsWithoutRef<\"div\"> {\n  children: React.ReactNode\n  delay?: number\n}\n\nexport const AnimatedList = React.memo(\n  ({ children, className, delay = 1000, ...props }: AnimatedListProps) => {\n    const [index, setIndex] = useState(0)\n    const childrenArray = useMemo(\n      () => React.Children.toArray(children),\n      [children]\n    )\n\n    useEffect(() => {\n      let timeout: ReturnType<typeof setTimeout> | null = null\n\n      if (index < childrenArray.length - 1) {\n        timeout = setTimeout(() => {\n          setIndex((prevIndex) => (prevIndex + 1) % childrenArray.length)\n        }, delay)\n      }\n\n      return () => {\n        if (timeout !== null) {\n          clearTimeout(timeout)\n        }\n      }\n    }, [index, delay, childrenArray.length])\n\n    const itemsToShow = useMemo(() => {\n      const result = childrenArray.slice(0, index + 1).reverse()\n      return result\n    }, [index, childrenArray])\n\n    return (\n      <div\n        className={cn(`flex flex-col items-center gap-4`, className)}\n        {...props}\n      >\n        <AnimatePresence>\n          {itemsToShow.map((item) => (\n            <AnimatedListItem key={(item as React.ReactElement).key}>\n              {item}\n            </AnimatedListItem>\n          ))}\n        </AnimatePresence>\n      </div>\n    )\n  }\n)\n\nAnimatedList.displayName = \"AnimatedList\"\n",
+      "sha256": "9363c5afa61d7aab1919b4500f7325cc8871b35103d5dd60a2a1625fe5e7dc58"
+    },
+    {
+      "path": "apps/www/public/r/animated-list.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"animated-list\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Animated List\",\n  \"description\": \"A list that animates each item in sequence with a delay. Used to showcase notifications or events on your landing page.\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/animated-list.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport React, {\\n  useEffect,\\n  useMemo,\\n  useState,\\n  type ComponentPropsWithoutRef,\\n} from \\\"react\\\"\\nimport { AnimatePresence, motion, type MotionProps } from \\\"motion/react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\nexport function AnimatedListItem({ children }: { children: React.ReactNode }) {\\n  const animations: MotionProps = {\\n    initial: { scale: 0, opacity: 0 },\\n    animate: { scale: 1, opacity: 1, originY: 0 },\\n    exit: { scale: 0, opacity: 0 },\\n    transition: { type: \\\"spring\\\", stiffness: 350, damping: 40 },\\n  }\\n\\n  return (\\n    <motion.div {...animations} layout className=\\\"mx-auto w-full\\\">\\n      {children}\\n    </motion.div>\\n  )\\n}\\n\\nexport interface AnimatedListProps extends ComponentPropsWithoutRef<\\\"div\\\"> {\\n  children: React.ReactNode\\n  delay?: number\\n}\\n\\nexport const AnimatedList = React.memo(\\n  ({ children, className, delay = 1000, ...props }: AnimatedListProps) => {\\n    const [index, setIndex] = useState(0)\\n    const childrenArray = useMemo(\\n      () => React.Children.toArray(children),\\n      [children]\\n    )\\n\\n    useEffect(() => {\\n      let timeout: ReturnType<typeof setTimeout> | null = null\\n\\n      if (index < childrenArray.length - 1) {\\n        timeout = setTimeout(() => {\\n          setIndex((prevIndex) => (prevIndex + 1) % childrenArray.length)\\n        }, delay)\\n      }\\n\\n      return () => {\\n        if (timeout !== null) {\\n          clearTimeout(timeout)\\n        }\\n      }\\n    }, [index, delay, childrenArray.length])\\n\\n    const itemsToShow = useMemo(() => {\\n      const result = childrenArray.slice(0, index + 1).reverse()\\n      return result\\n    }, [index, childrenArray])\\n\\n    return (\\n      <div\\n        className={cn(`flex flex-col items-center gap-4`, className)}\\n        {...props}\\n      >\\n        <AnimatePresence>\\n          {itemsToShow.map((item) => (\\n            <AnimatedListItem key={(item as React.ReactElement).key}>\\n              {item}\\n            </AnimatedListItem>\\n          ))}\\n        </AnimatePresence>\\n      </div>\\n    )\\n  }\\n)\\n\\nAnimatedList.displayName = \\\"AnimatedList\\\"\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "a95ae266e0eda12b8230724c690818a434d22bad0a2093a8197417cc997d298b"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"animated-list\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Animated List\",\n  \"description\": \"A list that animates each item in sequence with a delay. Used to showcase notifications or events on your landing page.\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/animated-list.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

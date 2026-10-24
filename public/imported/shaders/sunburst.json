@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--sunburst",
+    "name": "Sun Burst",
+    "description": "Sun Burst shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/SunBurst/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "bd42271f66eeb40c8d65c2bff745709e781d3d056e0cc8d7fbc7bcacb6166ed5",
+    "dataUrl": "/imported/shaders/sunburst.json",
+    "downloadUrl": "/imported/shaders/sunburst.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/SunBurst/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {coverageMix, withFrame, radialFrame, modulate, softRayLobes, featherMask} from \"@coreroot/std/paint/light\"\nimport {transformColor, transformPosition} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    color: Parameters<typeof transformColor>[0]\n    background: Parameters<typeof transformColor>[0]\n    center: Parameters<typeof transformPosition>[0]\n    rayCount: number\n    softness: number\n    radius: number\n    feather: number\n    speed: number\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"SunBurst\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Radial sunburst rays emanating from a center point\",\n    // When a UV-propagating distortion wraps this generator, the composer supplies a per-pixel\n    // `uvContext` and SunBurst rasterises at full canvas resolution against that distorted UV.\n    acceptsUVContext: true,\n    // Per-node animated time, read by the paint's rotation phase.\n    animatedTime: { speed: 'speed' },\n    props: {\n        color: {\n            default: \"#ffdd88\",\n            transform: transformColor,\n            description: \"Ray color\",\n            ui: { type: 'color', label: 'Color', group: 'Colors' }\n        },\n        background: {\n            default: \"#000000\",\n            transform: transformColor,\n            description: \"Background color\",\n            ui: { type: 'color', label: 'Background', group: 'Colors' }\n        },\n        center: {\n            default: { x: 0.5, y: 0.5 },\n            transform: transformPosition,\n            description: \"Center point of the sunburst\",\n            ui: { type: 'position', label: 'Center', group: 'Position' }\n        },\n        rayCount: {\n            default: 12,\n            description: \"Number of rays\",\n            ui: { type: 'range', min: 3, max: 64, step: 1, label: 'Ray Count', group: 'Effect' }\n        },\n        softness: {\n            default: 0.3,\n            description: \"Softness of ray edges\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Softness', group: 'Effect' }\n        },\n        radius: {\n            default: 0.8,\n            description: \"How far the rays extend from the center\",\n            ui: { type: ['range', 'map'], min: 0, max: 1.2, step: 0.01, label: 'Radius', group: 'Effect' }\n        },\n        feather: {\n            default: 0.5,\n            description: \"How gradually the rays fade at their outer edge\",\n            ui: { type: ['range', 'map'], min: 0, max: 5, step: 0.01, label: 'Feather', group: 'Effect' }\n        },\n        speed: {\n            default: 0.2,\n            description: \"Rotation speed — positive values rotate clockwise\",\n            ui: { type: 'range', min: -2, max: 2, step: 0.1, label: 'Speed', group: 'Animation' }\n        }\n    },\n    // The recipe: a radial frame around the centre → spinning ray lobes × the outer feather\n    // (positive speed = clockwise, hence the negative spin), colored by coverage over the\n    // background.\n    paint: coverageMix({\n        color: p('color'),\n        background: p('background'),\n        coverage: withFrame(radialFrame(p('center')), modulate(\n            softRayLobes({count: p('rayCount'), softness: p('softness'), spin: -1}),\n            featherMask({radius: p('radius'), feather: p('feather')}),\n        ), 'burstFrame'),\n        hint: 'burstAlpha',\n    })\n})\n\nexport default componentDefinition\n",
+      "sha256": "d1d809fdd2904677ba1894e92f3443a80045bc9937fcbc29c62b05c0ea0216ad"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

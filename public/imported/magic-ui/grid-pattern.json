@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--grid-pattern",
+    "name": "Grid Pattern",
+    "description": "A background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Backgrounds & effects",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/grid-pattern.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "51829c0c00e87b056db5cb0654fab95a96ef1cf07a2af757ebc7b99151d0c8ae",
+    "dataUrl": "/imported/magic-ui/grid-pattern.json",
+    "downloadUrl": "/imported/magic-ui/grid-pattern.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/grid-pattern.tsx",
+      "content": "import { useId } from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface GridPatternProps extends React.SVGProps<SVGSVGElement> {\n  width?: number\n  height?: number\n  x?: number\n  y?: number\n  squares?: Array<[x: number, y: number]>\n  strokeDasharray?: string\n  className?: string\n  [key: string]: unknown\n}\n\nexport function GridPattern({\n  width = 40,\n  height = 40,\n  x = -1,\n  y = -1,\n  strokeDasharray = \"0\",\n  squares,\n  className,\n  ...props\n}: GridPatternProps) {\n  const id = useId()\n\n  return (\n    <svg\n      aria-hidden=\"true\"\n      className={cn(\n        \"pointer-events-none absolute inset-0 h-full w-full fill-gray-400/30 stroke-gray-400/30\",\n        className\n      )}\n      {...props}\n    >\n      <defs>\n        <pattern\n          id={id}\n          width={width}\n          height={height}\n          patternUnits=\"userSpaceOnUse\"\n          x={x}\n          y={y}\n        >\n          <path\n            d={`M.5 ${height}V.5H${width}`}\n            fill=\"none\"\n            strokeDasharray={strokeDasharray}\n          />\n        </pattern>\n      </defs>\n      <rect width=\"100%\" height=\"100%\" strokeWidth={0} fill={`url(#${id})`} />\n      {squares && (\n        <svg x={x} y={y} className=\"overflow-visible\">\n          {squares.map(([x, y]) => (\n            <rect\n              strokeWidth=\"0\"\n              key={`${x}-${y}`}\n              width={width - 1}\n              height={height - 1}\n              x={x * width + 1}\n              y={y * height + 1}\n            />\n          ))}\n        </svg>\n      )}\n    </svg>\n  )\n}\n",
+      "sha256": "1d1caaf01de0a1ebfdffea1163535f8fbfdfbee33cd0a640e09388815d1823df"
+    },
+    {
+      "path": "apps/www/public/r/grid-pattern.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"grid-pattern\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Grid Pattern\",\n  \"description\": \"A background grid pattern made with SVGs, fully customizable using Tailwind CSS.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/grid-pattern.tsx\",\n      \"content\": \"import { useId } from \\\"react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\ninterface GridPatternProps extends React.SVGProps<SVGSVGElement> {\\n  width?: number\\n  height?: number\\n  x?: number\\n  y?: number\\n  squares?: Array<[x: number, y: number]>\\n  strokeDasharray?: string\\n  className?: string\\n  [key: string]: unknown\\n}\\n\\nexport function GridPattern({\\n  width = 40,\\n  height = 40,\\n  x = -1,\\n  y = -1,\\n  strokeDasharray = \\\"0\\\",\\n  squares,\\n  className,\\n  ...props\\n}: GridPatternProps) {\\n  const id = useId()\\n\\n  return (\\n    <svg\\n      aria-hidden=\\\"true\\\"\\n      className={cn(\\n        \\\"pointer-events-none absolute inset-0 h-full w-full fill-gray-400/30 stroke-gray-400/30\\\",\\n        className\\n      )}\\n      {...props}\\n    >\\n      <defs>\\n        <pattern\\n          id={id}\\n          width={width}\\n          height={height}\\n          patternUnits=\\\"userSpaceOnUse\\\"\\n          x={x}\\n          y={y}\\n        >\\n          <path\\n            d={`M.5 ${height}V.5H${width}`}\\n            fill=\\\"none\\\"\\n            strokeDasharray={strokeDasharray}\\n          />\\n        </pattern>\\n      </defs>\\n      <rect width=\\\"100%\\\" height=\\\"100%\\\" strokeWidth={0} fill={`url(#${id})`} />\\n      {squares && (\\n        <svg x={x} y={y} className=\\\"overflow-visible\\\">\\n          {squares.map(([x, y]) => (\\n            <rect\\n              strokeWidth=\\\"0\\\"\\n              key={`${x}-${y}`}\\n              width={width - 1}\\n              height={height - 1}\\n              x={x * width + 1}\\n              y={y * height + 1}\\n            />\\n          ))}\\n        </svg>\\n      )}\\n    </svg>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "87b67223033ca97ee464f34cf4bafe12ee699ec583616b42f9249de1d8b7b0aa"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"grid-pattern\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Grid Pattern\",\n  \"description\": \"A background grid pattern made with SVGs, fully customizable using Tailwind CSS.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/grid-pattern.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

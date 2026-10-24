@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--logo-cloud-sectioned",
+    "name": "Logo Cloud / Sectioned",
+    "description": "Logos grouped by relationship (Partners, Featured in) - honest labels, not invented tiers.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/logo-cloud/sectioned.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "df60edebf031f2c921f0bef2c7aefdc5b77518eeb35a33a12588a568981b5708",
+    "dataUrl": "/imported/inspo/logo-cloud-sectioned.json",
+    "downloadUrl": "/imported/inspo/logo-cloud-sectioned.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/logo-cloud/sectioned.tsx",
+      "content": "/* inspo-reference-component\n * type= logo-cloud | genre= editorial | theme= Inspo-paper\n * archetype= Sectioned | diversification= logos grouped by relationship\n *   instead of strewn in one row\n * states= default + hover (logo opacity ↑)\n * contrast= pass (46-50)\n *\n * Honest framing - group labels are real-world (\"Partners\",\n * \"Featured in\") instead of invented credibility tiers. Logos are\n * typographic wordmark placeholders.\n */\n\nconst GROUPS = [\n  {\n    label: \"Partners\",\n    marks: [\"Together AI\", \"Mod / 01\", \"Studio 04\"],\n  },\n  {\n    label: \"Featured in\",\n    marks: [\"[Outlet]\", \"[Outlet]\", \"[Outlet]\"],\n  },\n];\n\nexport function LogoCloudSectioned() {\n  return (\n    <section className=\"border-y rule bg-[var(--color-bg)] px-8 py-12 sm:px-14 sm:py-16\">\n      <div className=\"grid grid-cols-1 gap-x-12 gap-y-10 lg:grid-cols-2\">\n        {GROUPS.map((g) => (\n          <div key={g.label}>\n            <p className=\"text-meta\">{g.label}</p>\n            <ul className=\"mt-4 flex flex-wrap items-baseline gap-x-8 gap-y-3\">\n              {g.marks.map((m, i) => (\n                <li\n                  key={`${m}-${i}`}\n                  className={`\n                    text-xl text-[var(--color-fg)] opacity-70\n                    transition-opacity hover:opacity-100\n                    ${i % 2 === 0 ? \"font-display\" : \"font-mono tracking-normal text-base\"}\n                  `}\n                >\n                  {m}\n                </li>\n              ))}\n            </ul>\n          </div>\n        ))}\n      </div>\n    </section>\n  );\n}\n",
+      "sha256": "05e0e763c71cd892b7895492a55a41d34198e6ff27bffd1540851af1a8c33d66"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Grouped by relation",
+    "Type": "logo-cloud"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

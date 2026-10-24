@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--bokehblur",
+    "name": "Bokeh Blur",
+    "description": "Bokeh Blur shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/BokehBlur/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "fe0da4e940d51415dba5a76ddd6b5e6b05fafd9c03d0de9dce2e9c21f20024b4",
+    "dataUrl": "/imported/shaders/bokehblur.json",
+    "downloadUrl": "/imported/shaders/bokehblur.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/BokehBlur/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p as prop} from \"@coreroot/std\"\nimport {bokehDefocus} from \"@coreroot/std/effects/blurs\"\nimport {transformAngle} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    radius: number\n    highlightGain: number\n    highlightThreshold: number\n    bladeShape: string\n    bladeCount: number\n    bladeRotation: Parameters<typeof transformAngle>[0]\n    chromaticFringe: number\n    catEye: number\n}\n\nconst MAX_RADIUS = 100\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"BokehBlur\",\n    role: 'filter',\n    species: 'custom',\n    boundingBoxDeclaration: {aspectRatio: null},\n    category: \"Blurs\",\n    description: \"Photographic lens blur where bright highlights bloom into aperture-shaped discs\",\n    requiresRTT: true,\n    requiresChild: true,\n    props: {\n        radius: {\n            default: 50,\n            description: 'Defocus amount — how far the lens blur spreads',\n            ui: {type: ['range', 'map'], min: 0, max: MAX_RADIUS, step: 1, label: 'Radius', group: 'Effect'}\n        },\n        highlightGain: {\n            default: 4,\n            description: 'How strongly bright highlights bloom into discs',\n            ui: {type: ['range', 'map'], min: 0, max: 10, step: 0.1, label: 'Highlight Bloom', group: 'Highlights'}\n        },\n        highlightThreshold: {\n            default: 0.6,\n            description: 'Brightness above which a highlight forms a disc',\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Highlight Threshold', group: 'Highlights'}\n        },\n        bladeShape: {\n            default: 'blades',\n            description: 'Aperture shape the highlights bloom into — bladed iris or a novelty cut-out (heart, star, …)',\n            ui: {\n                type: 'select',\n                options: [\n                    {label: 'Blades', value: 'blades'},\n                    {label: 'Circle', value: 'circle'},\n                    {label: 'Star', value: 'star'},\n                    {label: 'Heart', value: 'heart'},\n                    {label: 'Flower', value: 'flower'},\n                    {label: 'Cross', value: 'cross'},\n                    {label: 'Ring', value: 'ring'}\n                ],\n                label: 'Blade Shape',\n                group: 'Aperture'\n            }\n        },\n        bladeCount: {\n            default: 6,\n            description: 'Blade or point count for the Blades, Star and Flower shapes — 0–2 blades is a circular iris',\n            ui: {type: 'range', min: 0, max: 9, step: 1, label: 'Aperture Blades', group: 'Aperture'}\n        },\n        bladeRotation: {\n            default: 0,\n            transform: transformAngle,\n            description: 'Rotation of the aperture shape (in degrees)',\n            ui: {type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Blade Rotation', group: 'Aperture'}\n        },\n        chromaticFringe: {\n            default: 0.2,\n            description: 'Lens color fringing on the disc edges',\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Chromatic Fringe', group: 'Aperture'}\n        },\n        catEye: {\n            default: 0,\n            description: 'Clips the discs into cat-eye shapes toward the frame corners, like a real lens vignetting its aperture',\n            ui: {type: 'range', min: 0, max: 1, step: 0.01, label: 'Cat Eye', group: 'Aperture'}\n        }\n    },\n\n    // The two halves of the bokeh-defocus recipe: the aperture-table gather compute\n    // (uniform-radius or map-driven fork) + the defocused-buffer sampling fragment.\n    ...bokehDefocus({\n        radius: prop('radius'),\n        gain: prop('highlightGain'),\n        threshold: prop('highlightThreshold'),\n        shape: prop('bladeShape'),\n        blades: prop('bladeCount'),\n        rotation: prop('bladeRotation'),\n        fringe: prop('chromaticFringe'),\n        catEye: prop('catEye'),\n    }),\n})\n\nexport default componentDefinition\n",
+      "sha256": "4623bf4d2edc51f167127258da8e25e2da28e0177faaca4e55d3f02223ff1676"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

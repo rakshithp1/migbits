@@ -1,0 +1,2 @@
+.migbits .site-cta .final-cta { width: 100%; }
+.site-cta a:focus-visible { outline: 3px solid var(--ink); outline-offset: 5px; }

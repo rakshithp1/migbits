@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--aurora-text",
+    "name": "Aurora Text",
+    "description": "A beautiful aurora text effect",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Typography & text",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/aurora-text.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "c31bac30bdc485419bb93d54f8330fd08532744303bc36322edf7742142d1727",
+    "dataUrl": "/imported/magic-ui/aurora-text.json",
+    "downloadUrl": "/imported/magic-ui/aurora-text.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/aurora-text.tsx",
+      "content": "\"use client\"\n\nimport React, { memo } from \"react\"\n\ninterface AuroraTextProps {\n  children: React.ReactNode\n  className?: string\n  colors?: string[]\n  speed?: number\n}\n\nexport const AuroraText = memo(\n  ({\n    children,\n    className = \"\",\n    colors = [\"#FF0080\", \"#7928CA\", \"#0070F3\", \"#38bdf8\"],\n    speed = 1,\n  }: AuroraTextProps) => {\n    const gradientStyle = {\n      backgroundImage: `linear-gradient(135deg, ${colors.join(\", \")}, ${\n        colors[0]\n      })`,\n      WebkitBackgroundClip: \"text\",\n      WebkitTextFillColor: \"transparent\",\n      animationDuration: `${10 / speed}s`,\n    }\n\n    return (\n      <span className={`relative inline-block ${className}`}>\n        <span className=\"sr-only\">{children}</span>\n        <span\n          className=\"animate-aurora relative bg-size-[200%_auto] bg-clip-text text-transparent\"\n          style={gradientStyle}\n          aria-hidden=\"true\"\n        >\n          {children}\n        </span>\n      </span>\n    )\n  }\n)\n\nAuroraText.displayName = \"AuroraText\"\n",
+      "sha256": "c7bd0b72a093084a881416975249c507ddd715249ac5832a9161538eeef29927"
+    },
+    {
+      "path": "apps/www/public/r/aurora-text.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"aurora-text\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Aurora Text\",\n  \"description\": \"A beautiful aurora text effect\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/aurora-text.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport React, { memo } from \\\"react\\\"\\n\\ninterface AuroraTextProps {\\n  children: React.ReactNode\\n  className?: string\\n  colors?: string[]\\n  speed?: number\\n}\\n\\nexport const AuroraText = memo(\\n  ({\\n    children,\\n    className = \\\"\\\",\\n    colors = [\\\"#FF0080\\\", \\\"#7928CA\\\", \\\"#0070F3\\\", \\\"#38bdf8\\\"],\\n    speed = 1,\\n  }: AuroraTextProps) => {\\n    const gradientStyle = {\\n      backgroundImage: `linear-gradient(135deg, ${colors.join(\\\", \\\")}, ${\\n        colors[0]\\n      })`,\\n      WebkitBackgroundClip: \\\"text\\\",\\n      WebkitTextFillColor: \\\"transparent\\\",\\n      animationDuration: `${10 / speed}s`,\\n    }\\n\\n    return (\\n      <span className={`relative inline-block ${className}`}>\\n        <span className=\\\"sr-only\\\">{children}</span>\\n        <span\\n          className=\\\"animate-aurora relative bg-size-[200%_auto] bg-clip-text text-transparent\\\"\\n          style={gradientStyle}\\n          aria-hidden=\\\"true\\\"\\n        >\\n          {children}\\n        </span>\\n      </span>\\n    )\\n  }\\n)\\n\\nAuroraText.displayName = \\\"AuroraText\\\"\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ],\n  \"cssVars\": {\n    \"theme\": {\n      \"animate-aurora\": \"aurora 8s ease-in-out infinite alternate\"\n    }\n  },\n  \"css\": {\n    \"@keyframes aurora\": {\n      \"0%\": {\n        \"background-position\": \"0% 50%\",\n        \"transform\": \"rotate(-5deg) scale(0.9)\"\n      },\n      \"25%\": {\n        \"background-position\": \"50% 100%\",\n        \"transform\": \"rotate(5deg) scale(1.1)\"\n      },\n      \"50%\": {\n        \"background-position\": \"100% 50%\",\n        \"transform\": \"rotate(-3deg) scale(0.95)\"\n      },\n      \"75%\": {\n        \"background-position\": \"50% 0%\",\n        \"transform\": \"rotate(3deg) scale(1.05)\"\n      },\n      \"100%\": {\n        \"background-position\": \"0% 50%\",\n        \"transform\": \"rotate(-5deg) scale(0.9)\"\n      }\n    }\n  }\n}",
+      "sha256": "22a3f272cb03dfa7803edc726cdd6a90ad51aa848e0d79b806bc6d5a341dae0b"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"aurora-text\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Aurora Text\",\n  \"description\": \"A beautiful aurora text effect\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/aurora-text.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ],\n  \"cssVars\": {\n    \"theme\": {\n      \"animate-aurora\": \"aurora 8s ease-in-out infinite alternate\"\n    }\n  },\n  \"css\": {\n    \"@keyframes aurora\": {\n      \"0%\": {\n        \"background-position\": \"0% 50%\",\n        \"transform\": \"rotate(-5deg) scale(0.9)\"\n      },\n      \"25%\": {\n        \"background-position\": \"50% 100%\",\n        \"transform\": \"rotate(5deg) scale(1.1)\"\n      },\n      \"50%\": {\n        \"background-position\": \"100% 50%\",\n        \"transform\": \"rotate(-3deg) scale(0.95)\"\n      },\n      \"75%\": {\n        \"background-position\": \"50% 0%\",\n        \"transform\": \"rotate(3deg) scale(1.05)\"\n      },\n      \"100%\": {\n        \"background-position\": \"0% 50%\",\n        \"transform\": \"rotate(-5deg) scale(0.9)\"\n      }\n    }\n  }\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

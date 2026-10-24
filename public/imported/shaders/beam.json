@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--beam",
+    "name": "Beam",
+    "description": "Beam shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Beam/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "a00c4143033bd71e960dde7e918872426bb23c0c002905e8fe81dc27ba85819e",
+    "dataUrl": "/imported/shaders/beam.json",
+    "downloadUrl": "/imported/shaders/beam.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Beam/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {beam, beamPreconvertedFields} from \"@coreroot/std/paint/gradients\"\nimport {transformPosition, transformColor, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    startPosition: Parameters<typeof transformPosition>[0]\n    endPosition: Parameters<typeof transformPosition>[0]\n    startThickness: number\n    endThickness: number\n    startSoftness: number\n    endSoftness: number\n    insideColor: Parameters<typeof transformColor>[0],\n    outsideColor: Parameters<typeof transformColor>[0],\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"Beam\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"A beam of light from one point to another.\",\n    acceptsUVContext: true,\n    // The beam paint preconverts the endpoint colors on the CPU each frame (non-linear\n    // color spaces) into these fields — see beamPreconvertedFields.\n    extraFields: beamPreconvertedFields,\n    props: {\n        startPosition: {\n            default: {\n                x: 0.2,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: \"Starting point of the beam\",\n            ui: { type: 'position', label: 'Start Position', group: 'Position' }\n        },\n        endPosition: {\n            default: {\n                x: 0.8,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: \"Ending point of the beam\",\n            ui: { type: 'position', label: 'End Position', group: 'Position' }\n        },\n        startThickness: {\n            default: 0.2,\n            description: 'Thickness at the start of the beam',\n            ui: { type: ['range', 'map'], min: 0, max: 2, step: 0.1, label: 'Start Thickness', group: 'Effect' }\n        },\n        endThickness: {\n            default: 0.2,\n            description: 'Thickness at the end of the beam',\n            ui: { type: ['range', 'map'], min: 0, max: 2, step: 0.1, label: 'End Thickness', group: 'Effect' }\n        },\n        startSoftness: {\n            default: 0.5,\n            description: 'Edge softness at the start of the beam',\n            ui: { type: ['range', 'map'], min: 0, max: 50, step: 0.1, label: 'Start Softness', group: 'Effect' }\n        },\n        endSoftness: {\n            default: 0.5,\n            description: 'Edge softness at the end of the beam',\n            ui: { type: ['range', 'map'], min: 0, max: 20, step: 0.1, label: 'End Softness', group: 'Effect' }\n        },\n        insideColor: {\n            default: \"#FF0000\",\n            transform: transformColor,\n            description: \"Color at the center of the beam\",\n            ui: { type: 'color', label: 'Inside Color', group: 'Colors' }\n        },\n        outsideColor: {\n            default: \"#0000FF\",\n            transform: transformColor,\n            description: \"Color at the edges of the beam\",\n            ui: { type: 'color', label: 'Outside Color', group: 'Colors' }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: {\n                type: 'select',\n                options: colorSpaceOptions,\n                label: 'Color Space',\n                group: 'Colors'\n            }\n        }\n    },\n    paint: beam({\n        from: p('startPosition'),\n        to: p('endPosition'),\n        thickness: {start: p('startThickness'), end: p('endThickness')},\n        softness: {start: p('startSoftness'), end: p('endSoftness')},\n        colors: {inside: p('insideColor'), outside: p('outsideColor')},\n        space: p('colorSpace'),\n    })\n})\n\nexport default componentDefinition\n",
+      "sha256": "c9351636ee5ae6f7dd2c59d2966215506f90ec1b925c61a04ce8424a451c782c"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

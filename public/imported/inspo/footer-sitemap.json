@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--footer-sitemap",
+    "name": "Footer / Sitemap",
+    "description": "4-column link map. The most-AI-recognised footer shape; reserve for genuine docs roots or hubs.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/footer/sitemap.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "4e4cafb0be109dda1db0579c10bacfb18097983ea6b9c81a656296321ad5b3e2",
+    "dataUrl": "/imported/inspo/footer-sitemap.json",
+    "downloadUrl": "/imported/inspo/footer-sitemap.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/footer/sitemap.tsx",
+      "content": "/* inspo-reference-component\n * type= footer | genre= editorial | theme= Inspo-paper\n * archetype= Ft3 Sitemap | diversification= 4-column link map - the\n *   most-AI-recognised footer shape. Included as the canonical\n *   \"this is what the field defaults to\" reference.\n * states= default + hover\n * contrast= pass (46-50)\n *\n * Note - Ft3 is the easiest footer to spot as templated. Use\n * only when the site genuinely needs a deep link map (docs root, hub\n * page). Otherwise prefer Ft1 Index, Ft5 Statement, or Ft7 Colophon.\n */\n\nconst COLUMNS = [\n  {\n    label: \"Catalogue\",\n    links: [\"The archive\", \"Components\", \"Collections\", \"Issues\"],\n  },\n  {\n    label: \"Agent\",\n    links: [\"MCP server\", \"Install\", \"Tool reference\", \"Use cases\"],\n  },\n  {\n    label: \"Project\",\n    links: [\"About\", \"Self-host\", \"Contribute\", \"Roadmap\"],\n  },\n  {\n    label: \"Legal\",\n    links: [\"DMCA\", \"Licence\", \"Privacy\", \"Status\"],\n  },\n];\n\nexport function FooterSitemap() {\n  return (\n    <footer className=\"border-t rule bg-[var(--color-bg)] px-8 py-16 sm:px-14 sm:py-20\">\n      <div className=\"grid grid-cols-2 gap-x-10 gap-y-12 sm:grid-cols-4\">\n        {COLUMNS.map((c) => (\n          <div key={c.label}>\n            <p className=\"text-meta\">{c.label}</p>\n            <ul className=\"mt-4 space-y-2.5\">\n              {c.links.map((l) => (\n                <li key={l}>\n                  <a\n                    href=\"#\"\n                    className=\"text-sm text-[var(--color-fg)] transition-colors hover:text-[var(--color-accent)]\"\n                  >\n                    {l}\n                  </a>\n                </li>\n              ))}\n            </ul>\n          </div>\n        ))}\n      </div>\n      <div className=\"mt-12 flex flex-wrap items-baseline justify-between gap-3 border-t rule pt-6 text-meta\">\n        <span>Together AI · MIT · {new Date().getFullYear()}</span>\n        <span>Filed by hand in New York.</span>\n      </div>\n    </footer>\n  );\n}\n",
+      "sha256": "c9bf028e411e6ce60cc92bb8b14861f485cbc7d6dc336d8a5a2676800986fb23"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Ft3 Sitemap",
+    "Type": "footer"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

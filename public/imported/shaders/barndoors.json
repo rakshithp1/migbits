@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--barndoors",
+    "name": "Barn Doors",
+    "description": "Barn Doors shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/BarnDoors/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "b8b1f7ea047126a6802c5b70b5f3d5f0594a0148360c3dab06969bf07ab96057",
+    "dataUrl": "/imported/shaders/barndoors.json",
+    "downloadUrl": "/imported/shaders/barndoors.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/BarnDoors/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {reveal, coverage} from \"@coreroot/std/effects/reveal\"\nimport {transformBoolean} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    progress: number\n    angle: number\n    feather: number\n    invert: boolean\n}\n\n// LinearWipe's directional coverage folded about its midpoint: two wipe fronts open outward from\n// the center line simultaneously — barn doors parting. `invert` folds the other way, so the doors\n// close in from both edges.\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"BarnDoors\",\n    role: 'filter',\n    species: 'pointwise',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Transitions\",\n    description: \"Split the content along a center line and wipe outward in both directions\",\n    props: {\n        progress: {\n            default: 0.5,\n            description: \"How far the doors have opened (0 = fully visible, 1 = fully wiped away)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Progress', group: 'Transition' }\n        },\n        angle: {\n            default: 0,\n            description: \"Direction the doors open in degrees (0 = apart horizontally)\",\n            ui: { type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Angle', group: 'Transition' }\n        },\n        feather: {\n            default: 0.1,\n            description: \"Softness of the wipe edges\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Feather', group: 'Transition' }\n        },\n        invert: {\n            default: false,\n            transform: transformBoolean,\n            description: \"Close in from both edges instead of opening from the center\",\n            ui: { type: 'checkbox', label: 'Invert', group: 'Transition' }\n        }\n    },\n    effect: reveal({\n        coverage: coverage.directional(p('angle')).folded(),\n        progress: p('progress'),\n        feather: p('feather'),\n        invert: p('invert'),\n    }),\n    missingChildMessage: 'You must pass a child component into the Barn Doors shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "c8e293f67d645cbc274d119f3b776de0f30ee418c5a5563a8db86b922c0c38ab"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

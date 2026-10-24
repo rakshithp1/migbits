@@ -1,0 +1,50 @@
+{
+  "resource": {
+    "id": "magic-ui--word-rotate",
+    "name": "Word Rotate",
+    "description": "A vertical rotation of words",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Typography & text",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/word-rotate.tsx",
+    "files": 2,
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "a9e460ef9042f85fb6388c13ffb1c222e2e072d2792423fdcfdb420514d9a059",
+    "dataUrl": "/imported/magic-ui/word-rotate.json",
+    "downloadUrl": "/imported/magic-ui/word-rotate.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/word-rotate.tsx",
+      "content": "\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport { AnimatePresence, motion, type MotionProps } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface WordRotateProps {\n  words: string[]\n  duration?: number\n  motionProps?: MotionProps\n  className?: string\n}\n\nexport function WordRotate({\n  words,\n  duration = 2500,\n  motionProps = {\n    initial: { opacity: 0, y: -50 },\n    animate: { opacity: 1, y: 0 },\n    exit: { opacity: 0, y: 50 },\n    transition: { duration: 0.25, ease: \"easeOut\" },\n  },\n  className,\n}: WordRotateProps) {\n  const [index, setIndex] = useState(0)\n\n  useEffect(() => {\n    const interval = setInterval(() => {\n      setIndex((prevIndex) => (prevIndex + 1) % words.length)\n    }, duration)\n\n    // Clean up interval on unmount\n    return () => clearInterval(interval)\n  }, [words, duration])\n\n  return (\n    <div className=\"overflow-hidden py-2\">\n      <AnimatePresence mode=\"wait\">\n        <motion.h1\n          key={words[index]}\n          className={cn(className)}\n          {...motionProps}\n        >\n          {words[index]}\n        </motion.h1>\n      </AnimatePresence>\n    </div>\n  )\n}\n",
+      "sha256": "201852c2ddd0c63f1cefa730c50f97d88c1d4ee4b7158ca35032b8efc91d2293"
+    },
+    {
+      "path": "apps/www/public/r/word-rotate.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"word-rotate\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Word Rotate\",\n  \"description\": \"A vertical rotation of words\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/word-rotate.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport { useEffect, useState } from \\\"react\\\"\\nimport { AnimatePresence, motion, type MotionProps } from \\\"motion/react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\ninterface WordRotateProps {\\n  words: string[]\\n  duration?: number\\n  motionProps?: MotionProps\\n  className?: string\\n}\\n\\nexport function WordRotate({\\n  words,\\n  duration = 2500,\\n  motionProps = {\\n    initial: { opacity: 0, y: -50 },\\n    animate: { opacity: 1, y: 0 },\\n    exit: { opacity: 0, y: 50 },\\n    transition: { duration: 0.25, ease: \\\"easeOut\\\" },\\n  },\\n  className,\\n}: WordRotateProps) {\\n  const [index, setIndex] = useState(0)\\n\\n  useEffect(() => {\\n    const interval = setInterval(() => {\\n      setIndex((prevIndex) => (prevIndex + 1) % words.length)\\n    }, duration)\\n\\n    // Clean up interval on unmount\\n    return () => clearInterval(interval)\\n  }, [words, duration])\\n\\n  return (\\n    <div className=\\\"overflow-hidden py-2\\\">\\n      <AnimatePresence mode=\\\"wait\\\">\\n        <motion.h1\\n          key={words[index]}\\n          className={cn(className)}\\n          {...motionProps}\\n        >\\n          {words[index]}\\n        </motion.h1>\\n      </AnimatePresence>\\n    </div>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "d90065bc6e4f7b741da710f7b14dc9ac8e25af9ca635cc963304b6b7769b56ec"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"word-rotate\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Word Rotate\",\n  \"description\": \"A vertical rotation of words\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/word-rotate.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

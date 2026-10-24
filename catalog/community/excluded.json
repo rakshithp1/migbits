@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Animate UI",
+    "repo": "imskyleen/animate-ui",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://github.com/imskyleen/animate-ui/blob/e6cea6b5ae5a4985d3bf3cc0ebea173555eafd72/LICENSE.md",
+    "reason": "Custom terms or redistribution restrictions; not included in the permissive collection."
+  },
+  {
+    "name": "Animate.css",
+    "repo": "animate-css/animate.css",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/LICENSE",
+    "reason": "Custom terms or redistribution restrictions; not included in the permissive collection."
+  },
+  {
+    "name": "Ariakit",
+    "repo": "ariakit/ariakit",
+    "reason": "GitHub status 404"
+  },
+  {
+    "name": "Cruip Open",
+    "repo": "cruip/tailwind-landing-page-template",
+    "reason": "GitHub status 404"
+  },
+  {
+    "name": "React Bits",
+    "repo": "DavidHDev/react-bits",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://github.com/DavidHDev/react-bits/blob/e12c22192ac7b4b452c5e2feb9b586d74765d696/LICENSE.md",
+    "reason": "Custom terms or redistribution restrictions; not included in the permissive collection."
+  }
+]

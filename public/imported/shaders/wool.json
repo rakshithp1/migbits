@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--wool",
+    "name": "Wool",
+    "description": "Wool shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Wool/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "7d9db2256e4b39a193ee0072d2abc03900729399d3b129b659b77a141058f81a",
+    "dataUrl": "/imported/shaders/wool.json",
+    "downloadUrl": "/imported/shaders/wool.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Wool/index.ts",
+      "content": "import {defineStd} from \"@coreroot/std\"\nimport {noiseRelief, reliefBases} from \"@coreroot/std/paint/noise\"\nimport {reliefStylizeProps} from \"@coreroot/utilities/noiseStylize\"\n\nexport interface ComponentProps {\n    intensity: number\n    scale: number\n    contrast: number\n    distortion: number\n    seed: number\n}\n\n// std custom-tier filter: an RTT relief filter over the child (the relief noun samples the child\n// texture through the height-field displacement, so it is not a gather build).\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"Wool\",\n    role: 'filter',\n    species: 'custom',\n    requiresRTT: true,\n    requiresChild: true,\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Stylize\",\n    description: \"Applies an interwoven fibrous fabric texture and distortion to child content\",\n    // High scale + low contrast keeps the weave fine and subtle, so it reads as a fabric texture.\n    props: reliefStylizeProps({ intensity: 0.5, scale: 4, contrast: -0.5, distortion: 0.15 }),\n\n    // RTT relief filter over the interwoven wool height field.\n    gpu: {fragment: noiseRelief(reliefBases.wool)}\n})\n\nexport default componentDefinition\n",
+      "sha256": "510e319684486a8794d950390a6ff68048d60e629257a2cc7d3c4bed97d73697"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

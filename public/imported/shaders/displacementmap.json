@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--displacementmap",
+    "name": "Displacement Map",
+    "description": "Displacement Map shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/DisplacementMap/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "d3586c95286c7e91ceb96afd6050313700c26a55aa9d6a9bf067a9dfda2472ac",
+    "dataUrl": "/imported/shaders/displacementmap.json",
+    "downloadUrl": "/imported/shaders/displacementmap.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/DisplacementMap/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {displaceByLayer} from \"@coreroot/std/warps\"\nimport {transformEdges} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    source: string\n    amount: number\n    channelMode: string\n    angle: number\n    edges: string\n}\n\n// The prop uses an inline transform, so `propValues.channelMode` arrives as the mapped number.\nconst CHANNEL_MODES: Record<string, number> = {twoAxis: 0, directional: 1}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"DisplacementMap\",\n    role: 'filter',\n    species: 'gather',\n    category: \"Distortions\",\n    description: \"Distorts child content using another layer's pixels as a displacement map\",\n    boundingBoxDeclaration: { aspectRatio: null },\n    props: {\n        source: {\n            default: '',\n            description: 'The layer whose pixels drive the displacement — its red/green (or luminance) push the content around',\n            // compileTime → the selected layer id is part of the structural hash; switching layers\n            // recomposes and re-resolves the source RTT boundary.\n            compileTime: true,\n            ui: { type: 'layer', label: 'Source Layer', group: 'Effect' }\n        },\n        amount: {\n            default: 0.3,\n            description: 'Overall displacement strength',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Amount', group: 'Effect' }\n        },\n        channelMode: {\n            default: 'twoAxis',\n            description: 'How the source drives the push — red→X / green→Y, or luminance along a fixed angle',\n            compileTime: true,\n            transform: (value: string) => CHANNEL_MODES[value] ?? 0,\n            ui: {\n                type: 'select',\n                options: [\n                    {label: 'Red / Green', value: 'twoAxis'},\n                    {label: 'Luminance', value: 'directional'}\n                ],\n                label: 'Channels',\n                group: 'Effect'\n            }\n        },\n        angle: {\n            default: 0,\n            description: 'Push direction in degrees (used by the Luminance channel mode)',\n            ui: { type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Angle', group: 'Effect', condition: { channelMode: 'directional' } }\n        },\n        edges: {\n            default: 'mirror',\n            description: 'How to handle edges when distortion pushes content out of bounds',\n            transform: transformEdges,\n            compileTime: true,\n            ui: {\n                type: 'select',\n                options: [\n                    {label: 'Stretch', value: 'stretch'},\n                    {label: 'Transparent', value: 'transparent'},\n                    {label: 'Mirror', value: 'mirror'},\n                    {label: 'Wrap', value: 'wrap'}\n                ],\n                label: 'Edges',\n                group: 'Effect'\n            }\n        }\n    },\n\n    // Silent on a missing child, as this shader has always been. No source selected (or an\n    // unresolvable id) → sharp passthrough. Animation comes for free: an animated source layer\n    // displaces live.\n    effect: displaceByLayer({\n        source: p('source'),\n        amount: p('amount'),\n        channels: p('channelMode'),\n        angle: p('angle'),\n        edges: p('edges'),\n    }),\n})\n\nexport default componentDefinition\n",
+      "sha256": "ad6a0a7ea91a28269a6e5316255637e6f4baf75e971970eacfdf323ddb25878b"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "revision": "ef95d88f86cbc321678a6d80c0d62069398b7f17",
+  "licenseSha256": "46ae5f0dc2e06a18cde8b06bdb45abea0b6e28d169e6eff2069536780304cf6e",
+  "archiveSha256": "bf15fff23c19561b82f2e3d0ab7ab02211c7760f374956b4b2f3d4bc24997a2c",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-garden--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "062627b41e2c071aba7dca431b5ec8d15ed562fcf4b51603e9d63025269c81a2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

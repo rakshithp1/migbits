@@ -1,0 +1,15 @@
+{
+  "revision": "ed21081e33f7db2770922b4e04d16dcf5bbdfa85",
+  "licenseSha256": "f01d61b6b5ccb1dc7119c1e93ddda679d51697384d5c34ce773f2c6d71515f92",
+  "archiveSha256": "bbd78bd481ff3953dc72db524eaaae6e34e7c6bc04cbbc4e5bee433e6f3ce0a5",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-base-web--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ba8bf24d9d16e549d71be821ed44451370b69ed9319ef6c33857649f7c768724",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

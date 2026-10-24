@@ -1,0 +1,15 @@
+{
+  "revision": "960ae222ace1df8de835dc3c62d698f1b58b6786",
+  "licenseSha256": "9763e8439364e3663d1c41ac4c2a2bb44af407e3f28d9a079919d7a574d868f8",
+  "archiveSha256": "072de7f9501351950308cfcdd6889e6a2f7476ce634c9aefdfd7dedeb2a03bed",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-chakra-ui--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6b6d6a1b72a6812f936e0cd68ca7ee52872c6f77837f0d3d07beca46a2a10353",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

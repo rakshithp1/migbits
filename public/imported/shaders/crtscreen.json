@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--crtscreen",
+    "name": "CRTScreen",
+    "description": "CRTScreen shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/CRTScreen/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "b6aa3361139e9ac517b69045045030edee33bf9c0ff726548b401ec7ac303813",
+    "dataUrl": "/imported/shaders/crtscreen.json",
+    "downloadUrl": "/imported/shaders/crtscreen.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/CRTScreen/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {gatherStack, rgbSplit, adjust, scanlines, phosphorMask, vignetteOverlay, opaque} from \"@coreroot/std/effects/blurs\"\n\nexport interface ComponentProps {\n    pixelSize: number,\n    colorShift: number,\n    scanlineIntensity: number,\n    scanlineFrequency: number,\n    brightness: number,\n    contrast: number,\n    vignetteIntensity: number,\n    vignetteRadius: number\n}\n\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"CRTScreen\",\n    role: 'filter',\n    species: 'gather',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Stylize\",\n    description: \"Retro CRT monitor simulation with scanlines\",\n    props: {\n        pixelSize: {\n            default: 128,\n            description: 'Density of the RGB phosphor stripes — about half this many across the canvas width (higher = smaller, finer pixels)',\n            ui: { type: ['range', 'map'], min: 8, max: 128, step: 1, label: 'Pixel Size', group: 'Effect' }\n        },\n        colorShift: {\n            default: 1,\n            description: 'Chromatic aberration amount',\n            ui: { type: ['range', 'map'], min: 0, max: 10, step: 0.1, label: 'Color Shift', group: 'Effect' }\n        },\n        scanlineIntensity: {\n            default: 0.3,\n            description: 'Strength of horizontal scanlines',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Scanline Intensity', group: 'Effect' }\n        },\n        scanlineFrequency: {\n            default: 200,\n            description: 'Number of scanlines across screen',\n            ui: { type: ['range', 'map'], min: 100, max: 800, step: 10, label: 'Scanline Frequency', group: 'Effect' }\n        },\n        brightness: {\n            default: 1,\n            description: 'Screen brightness boost',\n            ui: { type: ['range', 'map'], min: 0.5, max: 2, step: 0.1, label: 'Brightness', group: 'Adjustments' }\n        },\n        contrast: {\n            default: 1,\n            description: 'Screen contrast enhancement',\n            ui: { type: ['range', 'map'], min: 0.5, max: 2, step: 0.1, label: 'Contrast', group: 'Adjustments' }\n        },\n        vignetteIntensity: {\n            default: 1,\n            description: 'Strength of corner darkening effect (0 = off)',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Vignette Intensity', group: 'Effect' }\n        },\n        vignetteRadius: {\n            default: 0.5,\n            description: 'How far the vignette extends inward (0 = edges only, 1 = reaches center)',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Vignette Radius', group: 'Effect' }\n        }\n    },\n\n    // The retro-monitor stack, literally — RGB-split sampling at three chromatic-aberration UVs,\n    // then adjust → scanlines → phosphor mask → vignette, finished as an opaque screen. Not a\n    // uvRemap candidate (three sample UVs + a screen-space overlay stack).\n    effect: gatherStack(rgbSplit({amount: p('colorShift')}), [\n        adjust({brightness: p('brightness'), contrast: p('contrast')}),\n        scanlines({frequency: p('scanlineFrequency'), intensity: p('scanlineIntensity')}),\n        phosphorMask({pitch: p('pixelSize')}),\n        vignetteOverlay({radius: p('vignetteRadius'), intensity: p('vignetteIntensity')}),\n        opaque(),\n    ]),\n})\n\nexport default componentDefinition\n",
+      "sha256": "898df7b8c6d34ead769f2b046a3a59de51abc5d0d50ab7367481c71002957e05"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

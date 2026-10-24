@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--cta-banded",
+    "name": "Cta / Banded",
+    "description": "Full-bleed accent ribbon with one action. Earns its loudness by being the only one on the page.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/cta/banded.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "0fb9686da186ecbf89dfbf236dc429975a15caac1ca171e72296a67df0f689ba",
+    "dataUrl": "/imported/inspo/cta-banded.json",
+    "downloadUrl": "/imported/inspo/cta-banded.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/cta/banded.tsx",
+      "content": "/* inspo-reference-component\n * type= cta | genre= editorial | theme= Inspo-paper\n * archetype= Banded | diversification= differs from Quiet on paper band\n *   (accent-bleed vs paper) + voice (declarative vs invitational)\n * states= default + hover (button: ink wipe), focus-visible (ring)\n * contrast= pass (46-50)\n */\n\n/**\n * Banded CTA - full-bleed accent ribbon with a single action. The\n * pattern earns its loudness by being the only one of its kind on the\n * page. Reserve for the singular conversion ask; never stack two of\n * these on one page.\n */\nexport function CtaBanded() {\n  return (\n    <section\n      className=\"relative overflow-hidden border-y rule bg-[var(--color-accent)] text-[var(--color-accent-ink)] px-8 py-20 sm:px-14 sm:py-24\"\n    >\n      <div className=\"grid grid-cols-1 items-center gap-x-10 gap-y-8 lg:grid-cols-12\">\n        <div className=\"lg:col-span-8\">\n          <p className=\"font-mono text-xs tracking-normal text-[var(--color-paper)]/70\">\n            Install once. Free forever.\n          </p>\n          <p\n            className=\"font-display mt-4 max-w-[22ch] text-balance leading-[1] tracking-tight\"\n            style={{ fontSize: \"clamp(2rem, 5vw, 3.5rem)\" }}\n          >\n            Lend your agent some taste.\n          </p>\n        </div>\n\n        <div className=\"lg:col-span-4 lg:justify-self-end\">\n          {/* Inverse button - paper background on accent ground. Hover\n              wipes to ink so the button stays the heaviest thing in\n              the band even after the eye adjusts to the red. */}\n          <a\n            href=\"#\"\n            className=\"group/btn relative inline-flex h-12 items-center gap-3 overflow-hidden border-2 px-7 font-mono text-sm tracking-normal transition-colors duration-300 ease-out\"\n            style={{\n              borderColor: \"var(--color-paper)\",\n              color: \"var(--color-accent)\",\n              backgroundColor: \"var(--color-paper)\",\n            }}\n          >\n            <span\n              aria-hidden\n              className=\"absolute inset-0 origin-left scale-x-0 transition-transform duration-300 ease-out group-hover/btn:scale-x-100\"\n              style={{ backgroundColor: \"var(--color-ink)\" }}\n            />\n            <span className=\"relative z-10 transition-colors duration-300 group-hover/btn:text-[var(--color-paper)]\">\n              npx inspo init\n            </span>\n            <span\n              aria-hidden\n              className=\"relative z-10 transition-[transform,color] duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:text-[var(--color-paper)]\"\n            >\n              →\n            </span>\n          </a>\n        </div>\n      </div>\n    </section>\n  );\n}\n",
+      "sha256": "0fde6fd02d20a6e861b7395092645d0f1bf88d2b31bf4446a6ea1dc57164f9db"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Accent Band",
+    "Type": "cta"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

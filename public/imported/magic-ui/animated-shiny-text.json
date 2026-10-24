@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--animated-shiny-text",
+    "name": "Animated Shiny Text",
+    "description": "A light glare effect which pans across text making it appear as if it is shimmering.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Typography & text",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/animated-shiny-text.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "4d7063b807165abf46b4bd08611e8b5a44ed9cf6809ee9770a202e1eccd5535a",
+    "dataUrl": "/imported/magic-ui/animated-shiny-text.json",
+    "downloadUrl": "/imported/magic-ui/animated-shiny-text.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/animated-shiny-text.tsx",
+      "content": "import {\n  type ComponentPropsWithoutRef,\n  type CSSProperties,\n  type FC,\n} from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport interface AnimatedShinyTextProps extends ComponentPropsWithoutRef<\"span\"> {\n  shimmerWidth?: number\n}\n\nexport const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({\n  children,\n  className,\n  shimmerWidth = 100,\n  ...props\n}) => {\n  return (\n    <span\n      style={\n        {\n          \"--shiny-width\": `${shimmerWidth}px`,\n        } as CSSProperties\n      }\n      className={cn(\n        \"mx-auto max-w-md text-neutral-600/70 dark:text-neutral-400/70\",\n\n        // Shine effect\n        \"animate-shiny-text bg-size-[var(--shiny-width)_100%] bg-clip-text bg-position-[0_0] bg-no-repeat [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite]\",\n\n        // Shine gradient\n        \"bg-linear-to-r from-transparent via-black/80 via-50% to-transparent dark:via-white/80\",\n\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </span>\n  )\n}\n",
+      "sha256": "3743a0a0b4894840a96bacd839e493872bac484a940684f91fd23a1784c00fbb"
+    },
+    {
+      "path": "apps/www/public/r/animated-shiny-text.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"animated-shiny-text\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Animated Shiny Text\",\n  \"description\": \"A light glare effect which pans across text making it appear as if it is shimmering.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/animated-shiny-text.tsx\",\n      \"content\": \"import {\\n  type ComponentPropsWithoutRef,\\n  type CSSProperties,\\n  type FC,\\n} from \\\"react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\nexport interface AnimatedShinyTextProps extends ComponentPropsWithoutRef<\\\"span\\\"> {\\n  shimmerWidth?: number\\n}\\n\\nexport const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({\\n  children,\\n  className,\\n  shimmerWidth = 100,\\n  ...props\\n}) => {\\n  return (\\n    <span\\n      style={\\n        {\\n          \\\"--shiny-width\\\": `${shimmerWidth}px`,\\n        } as CSSProperties\\n      }\\n      className={cn(\\n        \\\"mx-auto max-w-md text-neutral-600/70 dark:text-neutral-400/70\\\",\\n\\n        // Shine effect\\n        \\\"animate-shiny-text bg-size-[var(--shiny-width)_100%] bg-clip-text bg-position-[0_0] bg-no-repeat [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite]\\\",\\n\\n        // Shine gradient\\n        \\\"bg-linear-to-r from-transparent via-black/80 via-50% to-transparent dark:via-white/80\\\",\\n\\n        className\\n      )}\\n      {...props}\\n    >\\n      {children}\\n    </span>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ],\n  \"cssVars\": {\n    \"theme\": {\n      \"animate-shiny-text\": \"shiny-text 8s infinite\"\n    }\n  },\n  \"css\": {\n    \"@keyframes shiny-text\": {\n      \"0%, 90%, 100%\": {\n        \"background-position\": \"calc(-100% - var(--shiny-width)) 0\"\n      },\n      \"30%, 60%\": {\n        \"background-position\": \"calc(100% + var(--shiny-width)) 0\"\n      }\n    }\n  }\n}",
+      "sha256": "f8f3bf18fc6a4e18dd28c301e9706a2791407f4ae7e236ea53aa9852aa635e91"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"animated-shiny-text\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Animated Shiny Text\",\n  \"description\": \"A light glare effect which pans across text making it appear as if it is shimmering.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/animated-shiny-text.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ],\n  \"cssVars\": {\n    \"theme\": {\n      \"animate-shiny-text\": \"shiny-text 8s infinite\"\n    }\n  },\n  \"css\": {\n    \"@keyframes shiny-text\": {\n      \"0%, 90%, 100%\": {\n        \"background-position\": \"calc(-100% - var(--shiny-width)) 0\"\n      },\n      \"30%, 60%\": {\n        \"background-position\": \"calc(100% + var(--shiny-width)) 0\"\n      }\n    }\n  }\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

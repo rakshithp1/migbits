@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--watercolor",
+    "name": "Watercolor",
+    "description": "Watercolor shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Watercolor/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "3d1c366c3ea7ee20c0700e572a33b5957edabf0fd5f81e7440f5db1dffdb1b32",
+    "dataUrl": "/imported/shaders/watercolor.json",
+    "downloadUrl": "/imported/shaders/watercolor.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Watercolor/index.ts",
+      "content": "import {defineStd, p, crosses} from \"@coreroot/std\"\nimport {bleedWarp, kuwahara, paperGrain, wash} from \"@coreroot/std/effects/stylize\"\nimport {transformColor} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    radius: number\n    bleed: number\n    strength: number\n    paper: number\n    paperColor: Parameters<typeof transformColor>[0]\n}\n\n// The bleed frame: the time-wobbled tap position, shared by the original sample and every\n// brush tap.\nconst wet = bleedWarp({amount: p('bleed')})\n\n// std gather filter — painterly Kuwahara flattening over the child's render-to-texture, plus\n// paper grain and a bleed-wobbled edge break. `radius` is a compileTime brush size (the tap loop\n// is unrolled in JS), so the builder re-runs per radius; `bleed`/`paper`/`strength` at 0 each\n// compile their work away (`recompile: crosses(0)` recompiles on the 0 crossing).\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"Watercolor\",\n    role: 'filter',\n    species: 'gather',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Stylize\",\n    description: \"Painterly watercolor look — Kuwahara flattening, pigment edge darkening, paper grain and bleeding\",\n    props: {\n        radius: {\n            default: 3,\n            // Loop bounds are unrolled in JS at build time, so the brush radius must recompile when it\n            // changes. Hidden — fixed brush size.\n            compileTime: true,\n            description: \"Brush size — radius of the painterly flattening\",\n            ui: { type: 'range', min: 1, max: 8, step: 1, label: 'Brush', group: 'Effect', hidden: true }\n        },\n        bleed: {\n            default: 1,\n            // At 0 the noise wobble is dead — the base UV collapses to the screen UV.\n            recompile: crosses(0),\n            description: \"Amount the pigment bleeds and wobbles past hard edges\",\n            ui: { type: ['range', 'map'], min: 0, max: 3, step: 0.01, label: 'Bleed', group: 'Effect' }\n        },\n        strength: {\n            default: 1,\n            // At 0 the compose mixes all the way back to the child — the whole gather is dead.\n            recompile: crosses(0),\n            description: \"Blend between the original image (0) and the full watercolor effect (1)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Strength', group: 'Effect' }\n        },\n        paper: {\n            default: 0.35,\n            // At 0 the grain multiplies to 1 and the tint weight is 0 — the grain noise is dead.\n            recompile: crosses(0),\n            description: \"Strength of the paper grain the pigment settles into\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Paper', group: 'Effect' }\n        },\n        paperColor: {\n            default: \"#fbf7ec\",\n            transform: transformColor,\n            description: \"Tint of the paper grain\",\n            ui: { type: 'color', label: 'Paper Color', group: 'Colors' }\n        }\n    },\n\n    // The recipe: bleed-warped taps → Kuwahara brush (4 overlapping quadrants, lowest-variance\n    // mean) → paper grain → wash compose mixing back toward the original by strength.\n    effect: wash({\n        at: wet,\n        brush: kuwahara({at: wet, radius: p('radius')}),\n        grain: paperGrain({amount: p('paper')}),\n        paper: p('paper'),\n        paperColor: p('paperColor'),\n        strength: p('strength'),\n    }),\n})\n\nexport default componentDefinition\n",
+      "sha256": "08357253397ba2bc58c187c5748ff866fd871aad634e2a9cda4907d0046c3f45"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

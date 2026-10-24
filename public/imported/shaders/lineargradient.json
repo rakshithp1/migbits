@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--lineargradient",
+    "name": "Linear Gradient",
+    "description": "Linear Gradient shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/LinearGradient/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "27a415820997910af3d7f0329b0fcfbe32fc13919079e2b116e01d35811206f8",
+    "dataUrl": "/imported/shaders/lineargradient.json",
+    "downloadUrl": "/imported/shaders/lineargradient.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/LinearGradient/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {rampOver, dist, stops} from \"@coreroot/std/paint/fields\"\nimport {transformColor, transformPosition, transformAngle, transformEdges, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\nimport {colorStopsPropConfig, type ColorStop} from \"@coreroot/utilities/colorStops\"\n\nexport type {ColorStop}\n\nexport interface ComponentProps {\n    colorA: Parameters<typeof transformColor>[0],\n    colorB: Parameters<typeof transformColor>[0],\n    stops: ColorStop[] | null,\n    start: Parameters<typeof transformPosition>[0],\n    end: Parameters<typeof transformPosition>[0],\n    angle: Parameters<typeof transformAngle>[0],\n    edges: string,\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"LinearGradient\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Create smooth linear color gradients\",\n    // When a UV-propagating distortion wraps this generator, the composer supplies a per-pixel\n    // `uvContext` so the gradient evaluates against the distorted UV at full canvas resolution.\n    // Gradients are continuous, so no AA changes are needed.\n    acceptsUVContext: true,\n    props: {\n        colorA: {\n            default: \"#1aff00\",\n            transform: transformColor,\n            description: \"The starting color of the gradient\",\n            ui: { type: 'color', label: 'Color A', group: 'Colors' }\n        },\n        colorB: {\n            default: \"#0000ff\",\n            transform: transformColor,\n            description: \"The ending color of the gradient\",\n            ui: { type: 'color', label: 'Color B', group: 'Colors' }\n        },\n        // Multi-stop colors. Default null → the shader runs the literal original two-color\n        // (colorA/colorB) path, so legacy presets and npm consumers keep the original result. When\n        // present and non-empty, these stops override colorA/colorB. See utilities/colorStops.ts.\n        stops: colorStopsPropConfig(),\n        start: {\n            default: {\n                x: 0,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: \"The starting point of the gradient\",\n            ui: { type: 'position', label: 'Start', group: 'Position' }\n        },\n        end: {\n            default: {\n                x: 1,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: \"The ending point of the gradient\",\n            ui: { type: 'position', label: 'End', group: 'Position' }\n        },\n        angle: {\n            default: 0,\n            transform: transformAngle,\n            description: \"Additional rotation angle of the gradient (in degrees)\",\n            ui: { type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Angle', group: 'Effect' }\n        },\n        edges: {\n            default: 'stretch',\n            transform: transformEdges,\n            compileTime: true,\n            description: 'How to handle areas beyond the gradient endpoints',\n            ui: {\n                type: 'select',\n                options: [\n                    {label: 'Stretch', value: 'stretch'},\n                    {label: 'Transparent', value: 'transparent'},\n                    {label: 'Mirror', value: 'mirror'},\n                    {label: 'Wrap', value: 'wrap'}\n                ],\n                label: 'Edges',\n                group: 'Effect'\n            }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: {\n                type: 'select',\n                options: colorSpaceOptions,\n                label: 'Color Space',\n                group: 'Colors'\n            }\n        }\n    },\n    paint: rampOver(\n        dist.linear({from: p('start'), to: p('end'), angle: p('angle')}),\n        stops(p('colorSpace')),\n        {edges: p('edges')},\n    )\n})\n\nexport default componentDefinition\n",
+      "sha256": "83046b19ca64c80df89bdf13af77766a993327667adfe3f820405db4e1d0b1cd"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

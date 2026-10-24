@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--features-bento",
+    "name": "Features / Bento",
+    "description": "Six tiles, irregular spans. The largest carries the lead idea; smaller ones extend it.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/features/bento.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "c212a9eb7cccc386b86f52c3a4abf59efd282bc477075542ac56aa46aa7106c5",
+    "dataUrl": "/imported/inspo/features-bento.json",
+    "downloadUrl": "/imported/inspo/features-bento.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/features/bento.tsx",
+      "content": "/* inspo-reference-component\n * type= features | genre= editorial | theme= Inspo-paper\n * macrostructure= Bento Grid | diversification= 6 irregular tiles -\n *   varied spans defeat the 3x2 sameness AI defaults to.\n * states= default · hover (subtle scale)\n * contrast= pass (46-50)\n */\n\n/**\n * Bento - six tiles, irregular spans. The largest tile carries the\n * lead idea; the smaller ones extend it. Spans break the 3x2 default\n * AI grids reach for. No icons, no emoji decoration - typography\n * supplies the variety.\n */\nexport function FeaturesBento() {\n  return (\n    <section className=\"border rule bg-[var(--color-bg)] px-8 py-16 sm:px-14 sm:py-20\">\n      <div className=\"grid grid-cols-1 gap-4 md:grid-cols-3 md:grid-rows-[auto_auto_auto]\">\n        {/* Lead - spans two columns + two rows */}\n        <article className=\"md:col-span-2 md:row-span-2 border rule p-8 flex flex-col\">\n          <p className=\"text-meta\">Lead</p>\n          <p className=\"font-display mt-6 max-w-[18ch] text-balance text-4xl leading-[1] tracking-tight sm:text-5xl\">\n            <em className=\"italic\">Study</em>, then build. Never the\n            other way around.\n          </p>\n          <p className=\"mt-auto max-w-[44ch] pt-12 text-sm leading-relaxed text-[var(--color-fg-muted)]\">\n            Every reference here was traced from a real production site\n            - then rebuilt fresh, distilled, stamped with the\n            macrostructure it embodies.\n          </p>\n        </article>\n\n        {/* Tile 2 */}\n        <article className=\"border rule p-6\">\n          <p className=\"text-meta\">Patterns</p>\n          <p className=\"font-display mt-3 text-4xl leading-none tracking-tight\">\n            19\n          </p>\n          <p className=\"mt-3 text-sm text-[var(--color-fg-muted)]\">\n            named macrostructures, each one a complete page-shape.\n          </p>\n        </article>\n\n        {/* Tile 3 */}\n        <article className=\"border rule p-6\">\n          <p className=\"text-meta\">Sites filed</p>\n          <p className=\"font-display mt-3 text-4xl leading-none tracking-tight\">\n            832\n          </p>\n          <p className=\"mt-3 text-sm text-[var(--color-fg-muted)]\">\n            published rows, palettes extracted, queryable from MCP.\n          </p>\n        </article>\n\n        {/* Tile 4 - spans two columns */}\n        <article className=\"md:col-span-2 border rule p-6 flex items-baseline justify-between gap-6\">\n          <div>\n            <p className=\"text-meta\">For your agent</p>\n            <p className=\"font-display mt-3 text-2xl leading-tight\">\n              An MCP tool surface that returns URLs, not base64.\n            </p>\n          </div>\n          <a\n            href=\"/mcp\"\n            className=\"font-mono text-xs tracking-normal whitespace-nowrap text-[var(--color-fg)] transition-colors hover:text-[var(--color-accent)]\"\n          >\n            Read the API →\n          </a>\n        </article>\n\n        {/* Tile 5 */}\n        <article className=\"border rule p-6\">\n          <p className=\"text-meta\">License</p>\n          <p className=\"font-display mt-3 text-2xl leading-tight\">\n            MIT, owned by Together AI.\n          </p>\n          <p className=\"mt-3 text-sm text-[var(--color-fg-muted)]\">\n            Free to fork. Free to self-host.\n          </p>\n        </article>\n      </div>\n    </section>\n  );\n}\n",
+      "sha256": "2e64e5bc59ca23e2a966339feeecdc571fd96eafe08b5e1a093088a68c48c490"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Bento Grid",
+    "Type": "features"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

@@ -1,0 +1,819 @@
+{
+  "bundleUrl": "https://bencho.dev/assets/blocks-AqfnMsHN.js",
+  "freeListUrl": "https://bencho.dev/assets/free-CS27mm_V.js",
+  "licenseUrl": "https://bencho.dev/licence",
+  "bundleSha256": "341e70af4c031509563c039b96bf579c1ec9ba1d30de97ab63a5dffd1cd9ae5a",
+  "freeListSha256": "6efdd6331f41e510c9aa99dd7b1a7c3ed90c0d4ba6191832160d8f6959e0ad1e",
+  "licenseSha256": "095f677c5e84dd2c8b3d10fdbc07d2c026e5dc5863090a02a616cdb539aa61b1",
+  "freeIds": [
+    "ascii-wake",
+    "card-swap",
+    "rolling-counter",
+    "wake-slider",
+    "stacked-bars",
+    "toast-stack",
+    "folding-bill",
+    "emoji-reactions",
+    "asset-swap",
+    "heat-word",
+    "image-compare",
+    "like",
+    "signature",
+    "voice-note",
+    "eye-tracker",
+    "dynamic-island",
+    "time-scrubber",
+    "upload-dropzone",
+    "particles",
+    "label-input",
+    "one-time-code",
+    "generate",
+    "step-player",
+    "todo-tower",
+    "image-accordion",
+    "glass-bubble",
+    "action-node",
+    "magnet-select",
+    "slide-confirm",
+    "picker",
+    "checklist",
+    "carousel",
+    "palette",
+    "liq-toggle",
+    "dock",
+    "sound",
+    "pull",
+    "escape",
+    "aspect",
+    "tilt",
+    "drag-ball",
+    "seek",
+    "slosh",
+    "liq-create"
+  ],
+  "items": [
+    {
+      "id": "ascii-wake",
+      "name": "AsciiWake",
+      "dependencies": [],
+      "tokens": [
+        "--fill-on",
+        "--ink"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "card-swap",
+      "name": "CardSwap",
+      "dependencies": [],
+      "tokens": [
+        "--fill-on",
+        "--fill-slab",
+        "--t"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "rolling-counter",
+      "name": "Counter",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--pane-edge",
+        "--signal"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "wake-slider",
+      "name": "WakeSlider",
+      "dependencies": [],
+      "tokens": [
+        "--fill-on",
+        "--fill-slab"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "stacked-bars",
+      "name": "StackedBars",
+      "dependencies": [
+        "framer-motion"
+      ],
+      "tokens": [
+        "--c",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--i",
+        "--pane-edge",
+        "--stb-r",
+        "--stb-rr"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "toast-stack",
+      "name": "ToastStack",
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "tokens": [
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--pane-edge",
+        "--signal",
+        "--tst-r"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "folding-bill",
+      "name": "FoldingBill",
+      "dependencies": [],
+      "tokens": [],
+      "stubs": [
+        "BILL_ART"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "emoji-reactions",
+      "name": "Reactions",
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--on-slab",
+        "--pane-edge",
+        "--signal",
+        "--slab"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "asset-swap",
+      "name": "Swap",
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--pane-edge",
+        "--pick",
+        "--swp-r"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "heat-word",
+      "name": "HeatWord",
+      "dependencies": [],
+      "tokens": [],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "image-compare",
+      "name": "Compare",
+      "dependencies": [],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--signal"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "like",
+      "name": "Like",
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--pane-edge",
+        "--signal"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "signature",
+      "name": "Signature",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--pane-edge",
+        "--signal"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "voice-note",
+      "name": "VoiceNote",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ink-3",
+        "--pane-edge",
+        "--signal"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "eye-tracker",
+      "name": "Watcher",
+      "dependencies": [],
+      "tokens": [
+        "--bg",
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "dynamic-island",
+      "name": "Island",
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--p"
+      ],
+      "stubs": [
+        "AVATARS"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "time-scrubber",
+      "name": "Scrub",
+      "dependencies": [],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--pane-edge",
+        "--signal"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "upload-dropzone",
+      "name": "Upload",
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ok",
+        "--pane-edge",
+        "--signal"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "particles",
+      "name": "Particles",
+      "dependencies": [],
+      "tokens": [
+        "--fill-on",
+        "--ink"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "label-input",
+      "name": "LabelInput",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tokens": [
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ink-3",
+        "--ink-4"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "one-time-code",
+      "name": "Otp",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "generate",
+      "name": "Generate",
+      "dependencies": [],
+      "tokens": [
+        "--fill-on",
+        "--fill-on-rgb",
+        "--fill-slab",
+        "--font-ui",
+        "--pane-edge"
+      ],
+      "stubs": [
+        "FLOWER"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "step-player",
+      "name": "StepPlayer",
+      "dependencies": [],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-on-rgb",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ink-2",
+        "--ink-rgb",
+        "--pane-edge"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "todo-tower",
+      "name": "Tower",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--focus",
+        "--ink",
+        "--ink-2",
+        "--ink-4",
+        "--ink-rgb",
+        "--on-ink",
+        "--pane-edge"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "image-accordion",
+      "name": "Accordion",
+      "dependencies": [],
+      "tokens": [],
+      "stubs": [
+        "SHOTS"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "glass-bubble",
+      "name": "LiquidGlass",
+      "dependencies": [],
+      "tokens": [],
+      "stubs": [
+        "COW"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "action-node",
+      "name": "ActionNode",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ink-3",
+        "--ink-4",
+        "--ink-rgb",
+        "--pane-edge",
+        "--wash"
+      ],
+      "stubs": [
+        "AVATARS"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "magnet-select",
+      "name": "MagneticSelect",
+      "dependencies": [
+        "framer-motion"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--pane-edge"
+      ],
+      "stubs": [
+        "MARKS"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "slide-confirm",
+      "name": "SlideConfirm",
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--pane-edge"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "picker",
+      "name": "Picker",
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-on-rgb",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ink-rgb",
+        "--pane-edge"
+      ],
+      "stubs": [
+        "AVATARS"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "checklist",
+      "name": "Checklist",
+      "dependencies": [
+        "framer-motion"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-on-rgb",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ink-rgb",
+        "--pane-edge"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "carousel",
+      "name": "Carousel",
+      "dependencies": [],
+      "tokens": [
+        "--bg",
+        "--font-ui",
+        "--ink-rgb",
+        "--lift",
+        "--sway"
+      ],
+      "stubs": [
+        "SHOTS"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "palette",
+      "name": "Palette",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--fill-on-rgb",
+        "--fill-slab",
+        "--font-ui",
+        "--ink-2",
+        "--ink-rgb",
+        "--pane-edge"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "liq-toggle",
+      "name": "Toggle",
+      "dependencies": [
+        "framer-motion"
+      ],
+      "tokens": [
+        "--board",
+        "--card",
+        "--fill-on",
+        "--fill-slab",
+        "--ink",
+        "--nod-r",
+        "--pane-edge"
+      ],
+      "stubs": [
+        "#liq-goo"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "dock",
+      "name": "GlassDock",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tokens": [
+        "--fill-on",
+        "--fill-slab",
+        "--font-ui",
+        "--g-blur",
+        "--g-bright",
+        "--g-edge-far",
+        "--g-edge-hi",
+        "--g-edge-lo",
+        "--g-lift",
+        "--g-sat",
+        "--g-shadow",
+        "--g-spec",
+        "--ink",
+        "--ink-rgb",
+        "--on-ink",
+        "--pane",
+        "--pane-edge",
+        "--shadow-rgb",
+        "--try-edge"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "sound",
+      "name": "Sound",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tokens": [
+        "--card",
+        "--fill-on",
+        "--font-ui",
+        "--ink-3",
+        "--ink-4",
+        "--ink-5",
+        "--ink-rgb",
+        "--on-ink",
+        "--on-slab",
+        "--pane",
+        "--pane-edge",
+        "--slab",
+        "--surface-2",
+        "--surface-3"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "pull",
+      "name": "Balance",
+      "dependencies": [],
+      "tokens": [
+        "--bg",
+        "--card",
+        "--ember",
+        "--fill-on",
+        "--fill-on-rgb",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ink-rgb",
+        "--nod-r",
+        "--ok",
+        "--pane-edge",
+        "--tip"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "escape",
+      "name": "Escape",
+      "dependencies": [],
+      "tokens": [
+        "--fill-on",
+        "--fill-on-rgb",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ink-rgb",
+        "--on-ink",
+        "--pane-edge",
+        "--wash"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "aspect",
+      "name": "Aspect",
+      "dependencies": [],
+      "tokens": [
+        "--asp-ms",
+        "--card",
+        "--font-ui",
+        "--ink",
+        "--ink-3",
+        "--ink-rgb",
+        "--surface-2",
+        "--wash"
+      ],
+      "stubs": [
+        "SHEEP"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "tilt",
+      "name": "Tilt",
+      "dependencies": [],
+      "tokens": [
+        "--surface-2"
+      ],
+      "stubs": [
+        "BUTTERFLY"
+      ],
+      "status": "license-verified"
+    },
+    {
+      "id": "drag-ball",
+      "name": "Ball",
+      "dependencies": [
+        "framer-motion",
+        "liquid-gooey"
+      ],
+      "tokens": [],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "seek",
+      "name": "Seek",
+      "dependencies": [],
+      "tokens": [
+        "--bg",
+        "--font-ui",
+        "--g-blur",
+        "--g-sat",
+        "--ink",
+        "--ink-2",
+        "--ink-3",
+        "--ink-4",
+        "--ink-5",
+        "--ink-rgb",
+        "--pane",
+        "--pane-edge"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "slosh",
+      "name": "Slosh",
+      "dependencies": [],
+      "tokens": [
+        "--bg",
+        "--board",
+        "--fill-on",
+        "--fill-on-rgb",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ink-rgb",
+        "--lean",
+        "--pane-edge"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    },
+    {
+      "id": "liq-create",
+      "name": "Create",
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "tokens": [
+        "--board",
+        "--fill-on",
+        "--fill-on-rgb",
+        "--fill-slab",
+        "--font-ui",
+        "--ink",
+        "--ink-rgb",
+        "--pane-edge"
+      ],
+      "stubs": [],
+      "status": "license-verified"
+    }
+  ]
+}

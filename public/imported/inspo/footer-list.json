@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--footer-list",
+    "name": "Footer / Index",
+    "description": "Hand-set table of contents. Reads as back-matter - numbered, mono, no underlines.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/footer/list.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "6b9c46c393e376e92ce32d9c38fb03dc8d67591a4856aa40eca0f8269a9bb905",
+    "dataUrl": "/imported/inspo/footer-list.json",
+    "downloadUrl": "/imported/inspo/footer-list.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/footer/list.tsx",
+      "content": "/* inspo-reference-component\n * type= footer | genre= editorial | theme= Inspo-paper\n * archetype= Ft1 Index | diversification= differs from Statement on\n *   density (high vs airy) + structure (typographic list vs proclamation)\n * states= default + hover (every link gets accent shift)\n * contrast= pass (46-50)\n */\n\nimport Link from \"next/link\";\n\n/**\n * Index footer - a hand-set table of contents at the foot of a long\n * scroll. Numbered, mono, no underlines. Reads like the back-matter of\n * a magazine. Good for sites with deep content (docs, archives, atlases)\n * where the footer needs to navigate, not narrate.\n */\nconst SECTIONS = [\n  { num: \"01\", label: \"The archive\", href: \"/screens\", note: \"2,320 captures\" },\n  { num: \"02\", label: \"Components\", href: \"/components\", note: \"Patterns, sliced\" },\n  { num: \"03\", label: \"Collections\", href: \"/collections\", note: \"Editor's issues\" },\n  { num: \"04\", label: \"MCP server\", href: \"/mcp\", note: \"For Claude Code, Cursor, …\" },\n  { num: \"05\", label: \"About\", href: \"/about\", note: \"Open source, Together AI\" },\n];\n\nexport function FooterList() {\n  return (\n    <footer className=\"border-t rule bg-[var(--color-bg)] px-8 py-14 sm:px-14\">\n      <p className=\"text-meta\">Index</p>\n      <ul className=\"mt-6 grid grid-cols-1 gap-y-2\">\n        {SECTIONS.map((s) => (\n          <li key={s.num}>\n            <Link\n              href={s.href}\n              className=\"group grid grid-cols-[3rem_1fr_auto] items-baseline gap-x-6 border-b rule py-3 transition-colors\"\n            >\n              <span className=\"font-mono text-meta text-[var(--color-fg-muted)]\">\n                {s.num}\n              </span>\n              <span className=\"font-display text-2xl leading-tight transition-colors group-hover:text-[var(--color-accent)] sm:text-3xl\">\n                {s.label}\n              </span>\n              <span className=\"text-meta hidden text-right text-[var(--color-fg-muted)] sm:inline\">\n                {s.note}\n              </span>\n            </Link>\n          </li>\n        ))}\n      </ul>\n\n      <p className=\"text-meta mt-10\">\n        © {new Date().getFullYear()} · MIT · Together AI\n      </p>\n    </footer>\n  );\n}\n",
+      "sha256": "325b27e4560b8d53ec3743671a23bca85579f5b80397cf59ec4b2bb0ca8bb80e"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Ft1 Index",
+    "Type": "footer"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

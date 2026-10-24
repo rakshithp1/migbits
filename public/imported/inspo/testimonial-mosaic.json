@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--testimonial-mosaic",
+    "name": "Testimonial / Mosaic",
+    "description": "Four cards, hover-lifted. Density that reads as range without picking one voice over another.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/testimonial/mosaic.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "fd0a85d69f271ed0955f85a76e5283d5c0339373f47809590cf5fcb51f0d3a10",
+    "dataUrl": "/imported/inspo/testimonial-mosaic.json",
+    "downloadUrl": "/imported/inspo/testimonial-mosaic.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/testimonial/mosaic.tsx",
+      "content": "/* inspo-reference-component\n * type= testimonial | genre= editorial | theme= Inspo-paper\n * archetype= Mosaic | diversification= differs from Pull-Quote on\n *   density (4 voices vs 1) + composition (grid vs hero)\n * states= default · hover (subtle lift)\n * contrast= pass (46-50)\n *\n * Note - quotes are placeholder slots. Replace with real attributed\n * customer voices before shipping; No invented\n * customer testimonials.\n */\n\nconst QUOTES = [\n  {\n    text: \"[Quote slot 01 - replace before shipping.]\",\n    who: \"[Name]\",\n    role: \"[Role]\",\n  },\n  {\n    text: \"[Quote slot 02 - keep it short. One sentence beats four.]\",\n    who: \"[Name]\",\n    role: \"[Role]\",\n  },\n  {\n    text: \"[Quote slot 03 - focus on what changed, not adjectives.]\",\n    who: \"[Name]\",\n    role: \"[Role]\",\n  },\n  {\n    text: \"[Quote slot 04 - the strongest voice goes here.]\",\n    who: \"[Name]\",\n    role: \"[Role]\",\n  },\n];\n\nexport function TestimonialMosaic() {\n  return (\n    <section className=\"border rule bg-[var(--color-bg)] px-8 py-16 sm:px-14 sm:py-20\">\n      <p className=\"text-meta\">In the field</p>\n      <p className=\"font-display mt-4 max-w-[24ch] text-balance text-4xl leading-[1.05] tracking-tight sm:text-5xl\">\n        What designers tell us, unedited.\n      </p>\n\n      <ul className=\"mt-12 grid grid-cols-1 gap-6 md:grid-cols-2\">\n        {QUOTES.map((q, i) => (\n          <li\n            key={i}\n            className=\"flex flex-col border rule p-8 transition-transform duration-300 ease-out hover:-translate-y-1\"\n          >\n            <p className=\"font-display flex-1 text-lg leading-relaxed\">\n              &ldquo;{q.text}&rdquo;\n            </p>\n            <div className=\"mt-8 flex items-baseline gap-3 border-t rule pt-4\">\n              <span className=\"text-meta\">-</span>\n              <p className=\"text-sm\">\n                <span className=\"text-[var(--color-fg)]\">{q.who}</span>\n                <span className=\"text-meta normal-case tracking-normal text-[var(--color-fg-muted)]\"> · {q.role}</span>\n              </p>\n            </div>\n          </li>\n        ))}\n      </ul>\n    </section>\n  );\n}\n",
+      "sha256": "f4ed8e2aba5c58ba1cfe39aaf1bfe3a3c01c3b5157484e184cc337f2cfb853f2"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Quote grid",
+    "Type": "testimonial"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--hero-question",
+    "name": "Hero / Question",
+    "description": "Hero asks rather than tells. Useful when the brief is invitational; the answer is the rest of the page.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/hero/question.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "62a06c938a84d76497343b5b1f48abc5597aa3b1478addca10ce6235da9a050c",
+    "dataUrl": "/imported/inspo/hero-question.json",
+    "downloadUrl": "/imported/inspo/hero-question.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/hero/question.tsx",
+      "content": "/* inspo-reference-component\n * type= hero | genre= editorial | theme= Inspo-paper\n * archetype= Question | diversification= hero as inquiry, not assertion\n * states= default (static)\n * contrast= pass (46-50)\n */\n\n/**\n * Question - the hero asks rather than tells. Useful when the brief is\n * exploratory or invitational. The \"answer\" in mono caption underneath\n * is brief and confident, framing the rest of the page as the long\n * answer.\n */\nexport function HeroQuestion() {\n  return (\n    <section className=\"border rule bg-[var(--color-bg)] px-8 py-20 sm:px-14 sm:py-28\">\n      <div className=\"mx-auto max-w-4xl\">\n        <p className=\"text-meta\">Asked by an agent, 04:21</p>\n        <h1\n          className=\"font-display mt-8 max-w-[20ch] text-balance leading-[1] tracking-tight\"\n          style={{ fontSize: \"clamp(2.5rem, 6vw, 5rem)\" }}\n        >\n          What does <em className=\"italic\">good</em> actually look like?\n        </h1>\n\n        <div className=\"mt-16 border-t rule pt-6\">\n          <p className=\"text-meta\">Answered, in 832 plates →</p>\n        </div>\n      </div>\n    </section>\n  );\n}\n",
+      "sha256": "eb7764d2452e1f29faab4b21da409ab2080eb0555685ef392cf40ed7267b7460"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Question",
+    "Type": "hero"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

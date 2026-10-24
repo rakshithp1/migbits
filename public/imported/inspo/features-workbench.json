@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--features-workbench",
+    "name": "Features / Workbench",
+    "description": "Explanatory copy left, working demo right. Real strings, no faux chrome.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/features/workbench.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "b24fcdcb8ee516912e5a79604eaf8dc9b34db8b51109fb07ee85087a3ca74134",
+    "dataUrl": "/imported/inspo/features-workbench.json",
+    "downloadUrl": "/imported/inspo/features-workbench.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/features/workbench.tsx",
+      "content": "/* inspo-reference-component\n * type= features | genre= editorial | theme= Inspo-paper\n * archetype= Workbench | diversification= copy left, demo right -\n *   feature explained alongside its working example\n * states= default · hover (terminal cursor blink kept on)\n * contrast= pass (46-50)\n */\n\n/**\n * Workbench - split section: explanatory copy on the left, a live\n * demo block on the right. The demo here is a typeset terminal\n * transcript (real strings, not chrome - see the \"re-drawn\n * chrome forbidden\" rule). Reach for it when the feature is best\n * shown, not just told.\n */\nexport function FeaturesWorkbench() {\n  return (\n    <section className=\"border rule bg-[var(--color-bg)] px-8 py-16 sm:px-14 sm:py-20\">\n      <div className=\"grid grid-cols-1 gap-x-12 gap-y-10 lg:grid-cols-12\">\n        <div className=\"lg:col-span-5\">\n          <p className=\"text-meta\">From the bench</p>\n          <p\n            className=\"font-display mt-4 max-w-[22ch] text-balance leading-[1.05] tracking-tight\"\n            style={{ fontSize: \"clamp(1.75rem, 4vw, 3rem)\" }}\n          >\n            One MCP call gets your agent a real reference.\n          </p>\n          <p className=\"mt-6 max-w-[40ch] text-sm leading-relaxed text-[var(--color-fg-muted)]\">\n            search_screens returns hosted image URLs your agent&rsquo;s\n            vision model can fetch directly. No base64 in the tool\n            result. No context bloat.\n          </p>\n        </div>\n\n        <div className=\"lg:col-span-7\">\n          {/* Terminal transcript - real strings, not faux chrome. */}\n          <pre className=\"overflow-x-auto border rule bg-[color-mix(in_oklab,var(--color-fg)_4%,var(--color-bg))] px-5 py-5 font-mono text-sm leading-relaxed\">\n{`> search_screens(\"editorial dark agency hero\", { mode: \"dark\" })\n\n  ┌── 8 results\n  │\n  │  · linear-app             dark · agency · marquee\n  │  · vercel-com             dark · saas   · stat-led\n  │  · atelier-mira           dark · agency · specimen\n  │  · raycast-com            dark · saas   · workbench\n  │  · arc-net                dark · agency · manifesto\n  │  · …\n  │\n  └── each carries: hero URL, palette, type ramp, designer credit`}\n          </pre>\n          <p className=\"text-meta mt-3 text-[var(--color-fg-muted)]\">\n            Run from any MCP-capable editor.\n          </p>\n        </div>\n      </div>\n    </section>\n  );\n}\n",
+      "sha256": "eb8c135780ecd8e3afd5dd67046d0118807a89bec5a6f84b942cf54bc153a7e0"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Copy + demo",
+    "Type": "features"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

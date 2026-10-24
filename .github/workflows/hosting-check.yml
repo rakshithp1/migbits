@@ -1,0 +1,27 @@
+name: Public hosting check
+
+on:
+  workflow_dispatch:
+    inputs:
+      origin:
+        description: HTTPS origin to verify
+        required: true
+        default: https://migbits.migbits.workers.dev
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run test:hosting
+        env:
+          SMOKE_BASE_URL: ${{ inputs.origin }}

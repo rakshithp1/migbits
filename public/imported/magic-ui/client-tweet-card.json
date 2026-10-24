@@ -1,0 +1,50 @@
+{
+  "resource": {
+    "id": "magic-ui--client-tweet-card",
+    "name": "Client Tweet Card",
+    "description": "A client-side version of the tweet card that displays a tweet with the author's name, handle, and profile picture.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Components",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/client-tweet-card.tsx",
+    "files": 2,
+    "dependencies": [
+      "react-tweet"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "89c88a8d834938a3f92f416a41a902036dcccaa55ae57f14747e600a2b69ff98",
+    "dataUrl": "/imported/magic-ui/client-tweet-card.json",
+    "downloadUrl": "/imported/magic-ui/client-tweet-card.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/client-tweet-card.tsx",
+      "content": "\"use client\"\n\nimport { useTweet, type TweetProps } from \"react-tweet\"\n\nimport {\n  MagicTweet,\n  TweetNotFound,\n  TweetSkeleton,\n} from \"@/registry/magicui/tweet-card\"\n\nexport const ClientTweetCard = ({\n  id,\n  apiUrl,\n  fallback = <TweetSkeleton />,\n  components,\n  fetchOptions,\n  onError,\n  ...props\n}: TweetProps & { className?: string }) => {\n  const { data, error, isLoading } = useTweet(id, apiUrl, fetchOptions)\n\n  if (isLoading) return fallback\n  if (error || !data) {\n    const NotFound = components?.TweetNotFound ?? TweetNotFound\n    return <NotFound error={onError ? onError(error) : error} />\n  }\n\n  return <MagicTweet tweet={data} {...props} />\n}\n",
+      "sha256": "865680fbed5876bbda320e2ab75222b696175a67cc70001d56100a96c7afe4e4"
+    },
+    {
+      "path": "apps/www/public/r/client-tweet-card.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"client-tweet-card\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Client Tweet Card\",\n  \"description\": \"A client-side version of the tweet card that displays a tweet with the author's name, handle, and profile picture.\",\n  \"dependencies\": [\n    \"react-tweet\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/client-tweet-card.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport { useTweet, type TweetProps } from \\\"react-tweet\\\"\\n\\nimport {\\n  MagicTweet,\\n  TweetNotFound,\\n  TweetSkeleton,\\n} from \\\"@/registry/magicui/tweet-card\\\"\\n\\nexport const ClientTweetCard = ({\\n  id,\\n  apiUrl,\\n  fallback = <TweetSkeleton />,\\n  components,\\n  fetchOptions,\\n  onError,\\n  ...props\\n}: TweetProps & { className?: string }) => {\\n  const { data, error, isLoading } = useTweet(id, apiUrl, fetchOptions)\\n\\n  if (isLoading) return fallback\\n  if (error || !data) {\\n    const NotFound = components?.TweetNotFound ?? TweetNotFound\\n    return <NotFound error={onError ? onError(error) : error} />\\n  }\\n\\n  return <MagicTweet tweet={data} {...props} />\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "670a96486141f32cd5f7bd9e87448963a1d5b18e03362258bac9835557dff860"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"client-tweet-card\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Client Tweet Card\",\n  \"description\": \"A client-side version of the tweet card that displays a tweet with the author's name, handle, and profile picture.\",\n  \"dependencies\": [\n    \"react-tweet\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/client-tweet-card.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

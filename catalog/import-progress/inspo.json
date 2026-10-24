@@ -1,0 +1,551 @@
+{
+  "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+  "licenseSha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55",
+  "archiveSha256": "07001b2d0bbe33d5f0982ed600cb7a4e9c871a34a1b50cc8b3f6ec331cf7d577",
+  "items": [
+    {
+      "key": "cta-banded",
+      "id": "inspo--cta-banded",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0fb9686da186ecbf89dfbf236dc429975a15caac1ca171e72296a67df0f689ba",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "cta-form-led",
+      "id": "inspo--cta-form-led",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0ddb2f54b42963a7d9b9d2f95b8ae4f0da5723eaef0ee3c3fc94d9493a8b6987",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "cta-inverted",
+      "id": "inspo--cta-inverted",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fb29063309877a841e0e69ae4edc043d2c2ea58ff46b8f043d338d16286c1b73",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "cta-marquee",
+      "id": "inspo--cta-marquee",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6b9708e49ea398a9037c322bfa17a1d21bd18e815bbedc84576d589356a32e62",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "cta-quiet",
+      "id": "inspo--cta-quiet",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b8e491cfc8836b9d9a9037a044d055360902de85790214cac6782879f665743c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "cta-sticky-compact",
+      "id": "inspo--cta-sticky-compact",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b95abc0c872eb1c6e1b37298361863a1ffa8a8690ad94b55f4e7af8b74643e38",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "cta-two-button",
+      "id": "inspo--cta-two-button",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4fb78accfd8b73596d860e0a011e2b0145eb72112c870ecd072a7b9a365d2fa1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "faq-accordion",
+      "id": "inspo--faq-accordion",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cf90227ca20c22ac09577c6f9a587d18d0cde815f67f05e9865ca2d7abe02838",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "faq-category-tabs",
+      "id": "inspo--faq-category-tabs",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "562449738a812569db0267d4947a7c4dbc899f4ff9ba5e6bc5483f9a0dc5503e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "faq-compact",
+      "id": "inspo--faq-compact",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e11e40b47d0b16970b7776563a283cd8da42bd8f15dd562bf1c4a5c34322d669",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "faq-numbered",
+      "id": "inspo--faq-numbered",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "22b8bc6247d34fa38cc69a7e01b3de5d6dafde3bea7c027c57daa04c7378797e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "faq-search-led",
+      "id": "inspo--faq-search-led",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2ebaacf0aacdbe21127dd745a24cc40e3d6ba6d6095dcff846a009aba9fe2458",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "faq-two-column",
+      "id": "inspo--faq-two-column",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "04a099a5bd19afa6e56ea7f7d5b3e247e359374d6c45e4c9fd445defdd1cf707",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "faq-with-cta",
+      "id": "inspo--faq-with-cta",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c8eeb6e4d4de5a5a1f626c2132a9fb09a1ba008d7eef4c57fc8e0da9505d69a0",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "features-alternating",
+      "id": "inspo--features-alternating",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "109d0fd62598c00b521e7407ef3e43085f8c1e5992a511ca4b106731c7543f8f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "features-bento",
+      "id": "inspo--features-bento",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c212a9eb7cccc386b86f52c3a4abf59efd282bc477075542ac56aa46aa7106c5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "features-compare",
+      "id": "inspo--features-compare",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "368e88cb5743c18ba20d901b902cf69f9a24bca5c9e5d6b9229dcde4a854927b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "features-icon-trio",
+      "id": "inspo--features-icon-trio",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4954d525cf27e4a96101a267adbdc5f5672e6c93e7b53cde55039acf92abc7d0",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "features-long-form",
+      "id": "inspo--features-long-form",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "81717075d86259eb31cdc6362d8fdabd095c501fb80d0628219dba7273cac9ca",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "features-numbered-triplet",
+      "id": "inspo--features-numbered-triplet",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d9139ec510b6d41064591677fc1fd225ab8c4efbfbc4815029d495c8a87e73dd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "features-workbench",
+      "id": "inspo--features-workbench",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b24fcdcb8ee516912e5a79604eaf8dc9b34db8b51109fb07ee85087a3ca74134",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "footer-address",
+      "id": "inspo--footer-address",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4ec6a5e83cbaeeebb4845652cbeafe164ce76a586a7a0b64540a584a402fea95",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "footer-colophon",
+      "id": "inspo--footer-colophon",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "61ef52f2276b5aee559f1248d1c4f09a76dcde43d4d3c94a9727d2086752e5ca",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "footer-list",
+      "id": "inspo--footer-list",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6b9c46c393e376e92ce32d9c38fb03dc8d67591a4856aa40eca0f8269a9bb905",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "footer-long-copy",
+      "id": "inspo--footer-long-copy",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b37844a4dcf6d30a0d9727f03a5a984a7139555fd56d71a4c2f5646404b1a522",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "footer-newsletter",
+      "id": "inspo--footer-newsletter",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "54f085a96de8ad80699c341a4ce0e0d226a361dd8849e6249f77d253238e6094",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "footer-sitemap",
+      "id": "inspo--footer-sitemap",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4e4cafb0be109dda1db0579c10bacfb18097983ea6b9c81a656296321ad5b3e2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "footer-statement",
+      "id": "inspo--footer-statement",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "34b5fa5e79f681c25fc5174b18feaefe6fab38a1647a4fc6faf269076ff259a7",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hero-documentary",
+      "id": "inspo--hero-documentary",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b862a9757db20dddd3859fd16b54c51098b728b72653459d3250c62e3c75390d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hero-manifesto",
+      "id": "inspo--hero-manifesto",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "63fc68bffb8dc5e2391474a436a8ff6bde26fa27e4a728a56be9da1ca922a0d3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hero-marquee",
+      "id": "inspo--hero-marquee",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "349133c1441f656c87018a1ebdd729bd34974856af5ca23896bf441beea64d07",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hero-question",
+      "id": "inspo--hero-question",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "62a06c938a84d76497343b5b1f48abc5597aa3b1478addca10ce6235da9a050c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hero-split-screen",
+      "id": "inspo--hero-split-screen",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f9ee8b4c12ce83fe38da1223b0b51b2844e8379d17ca44ec7cae33ac01fab198",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hero-stat-led",
+      "id": "inspo--hero-stat-led",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6ca467cee4b47ea81ff16a8f47b700bb395bf98b8a00a3c28dbc77c22a0c4184",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hero-word-as-art",
+      "id": "inspo--hero-word-as-art",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7d32aa9aa5024fe8fb5cf40bbebb1fea39e6989f9e9bda633d1b045c6bf903dc",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "logo-cloud-credits",
+      "id": "inspo--logo-cloud-credits",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2b0ff23c45155d00452be1cd343881dc79db2bd15a8184044513db8fe5b1ae47",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "logo-cloud-grid",
+      "id": "inspo--logo-cloud-grid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "42bdc981d21b6092db2be0bc985edb2873fedb79ec54054c17e1dde05d21ddc4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "logo-cloud-marquee",
+      "id": "inspo--logo-cloud-marquee",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cefb7c01801a1f854a92a339789a76b2f7fc0fbfd3b5bfd9eca56259b68d4bbb",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "logo-cloud-pill-chips",
+      "id": "inspo--logo-cloud-pill-chips",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4e8502c319c6a006505b9ee654e683ca84a7c36db582e2a6e6a779d2519cc5e0",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "logo-cloud-sectioned",
+      "id": "inspo--logo-cloud-sectioned",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "df60edebf031f2c921f0bef2c7aefdc5b77518eeb35a33a12588a568981b5708",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "logo-cloud-strip",
+      "id": "inspo--logo-cloud-strip",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cef5d86375d55b6d833470b3c13692414004e3876386f29fc9018d6bd1712102",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "nav-breadcrumb",
+      "id": "inspo--nav-breadcrumb",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cf3e62654b6141a949fba0f8dc01d6409531149bb86b28b8a8f64eee7d7d44bc",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "nav-floating-pill",
+      "id": "inspo--nav-floating-pill",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c1f86ef40c1c40d0bacb330337a773f9b3c634bd7aaa853462ecde4bd8c002ae",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "nav-inline",
+      "id": "inspo--nav-inline",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1ee82dd41c164d7a6196a338c8e753644e7b2c5059ce0c0407b98715f1a52cd4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "nav-marginal",
+      "id": "inspo--nav-marginal",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "28b43d6253d1bdf0f4d4f531369e887a2377912abceca4724df2c02964797003",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "nav-mega",
+      "id": "inspo--nav-mega",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b652033a050ce8cbaea460d2991927410c088be8ca9c47bb43df79fda7c6b37d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "nav-off-canvas",
+      "id": "inspo--nav-off-canvas",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0662c3d6d4a579364d34b73983847a54418d8b38ff024affb607af6525971c57",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "nav-search-first",
+      "id": "inspo--nav-search-first",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "efe5d14cf9a25eb623897e345d3e16f814d5b4e16e7863278e30e4201291bac7",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pricing-enterprise",
+      "id": "inspo--pricing-enterprise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b311cbc0dfd1c47e415fdc2b1a42acc753fb8d022f3633608efe91ce65e20bf3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pricing-per-use",
+      "id": "inspo--pricing-per-use",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "552bf145b1ac95e6a76b431fefe5b53c4f2bfeeb44defaa71fc2f171ce1e3d80",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pricing-single-plan",
+      "id": "inspo--pricing-single-plan",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ad5f1df7138959d4f9c70e5e4621365f11d647cb8c99ab0911882ecbfb2e2d1c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pricing-table",
+      "id": "inspo--pricing-table",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e28cdd55428a2de7aba7fa4665370243ad25f94367187e04b5034c98ccadd356",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pricing-three-card",
+      "id": "inspo--pricing-three-card",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "722e5e8257ff5969932d64eade75bf1ad9952505d7863ddc8977817cafc35ef6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pricing-tier-bento",
+      "id": "inspo--pricing-tier-bento",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8513618b0e069e5d823bdc5961d1c9641e666f69412c88d71349206f6b0ebaa5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pricing-toggle",
+      "id": "inspo--pricing-toggle",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "45a52292a80f3ae3f3123a707585659e81de46a34fe5430c4f47fd5d1401b1cc",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "stat-annotated",
+      "id": "inspo--stat-annotated",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "eb5eb08e53d804b0749d1117057044df352a895abfcbda5347f515e61aef4085",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "stat-bar-chart",
+      "id": "inspo--stat-bar-chart",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "33c150f196cac3c41acefc8f5c1b7e7df4fdc0320f18c783218b3e30d63ef15b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "stat-before-after",
+      "id": "inspo--stat-before-after",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "91a6c72fcbeac22406c426a2807d00f16b338a678d33c9356686ef31039cd4e6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "stat-grid",
+      "id": "inspo--stat-grid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "99b93bae32ff9d6462e016d167f29117463d764504726c77b10bf1b02e8d689e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "stat-row",
+      "id": "inspo--stat-row",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1d8b9dac8c5b8022b6ef1c34cadfa7542e276775fb6647c2ab058b33c5263588",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "stat-single-hero",
+      "id": "inspo--stat-single-hero",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7e1ee027c71c339016b1aa95da6ca7a8242bc44122fcd554aaee4c6bd29fa5e6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "testimonial-cinematic",
+      "id": "inspo--testimonial-cinematic",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "53a81a7112f2c8be139db55cbf1c94e93202c99a9905518501f9fc6d770e03c7",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "testimonial-conversation",
+      "id": "inspo--testimonial-conversation",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "829788222467e9fa8455ba302387dbc7212a7337c3aae2414e36ebb8d4174627",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "testimonial-mosaic",
+      "id": "inspo--testimonial-mosaic",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fd0a85d69f271ed0955f85a76e5283d5c0339373f47809590cf5fcb51f0d3a10",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "testimonial-press",
+      "id": "inspo--testimonial-press",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "630c148d1051ab8393dc4946b19c187aa65bbfbb235c9d772b6195cd61624556",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "testimonial-pull-quote",
+      "id": "inspo--testimonial-pull-quote",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "081d9482113c50760856d1c7577e0e5981ded5f0e46b45f59ba92bd6603d8a42",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "testimonial-reviews-row",
+      "id": "inspo--testimonial-reviews-row",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "06fa15f0242c6fee3d72b2f5fad470c167a55391512a5dce89741eca7938496c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "testimonial-single-portrait",
+      "id": "inspo--testimonial-single-portrait",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "da3840e3d45c1d3eee41559f304f064f5e0af9d78152c416191e77ea468e0d93",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

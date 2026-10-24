@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--fallinglines",
+    "name": "Falling Lines",
+    "description": "Falling Lines shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/FallingLines/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "36fb1174552b10ff5370d883d8bfb5943850f4377162c97eb50abc8eacb8fd65",
+    "dataUrl": "/imported/shaders/fallinglines.json",
+    "downloadUrl": "/imported/shaders/fallinglines.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/FallingLines/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {alphaOf, fallingStreaks, strokeOver, times, withAlpha} from \"@coreroot/std/paint/patterns\"\nimport {transformColor, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    colorA: Parameters<typeof transformColor>[0]\n    colorB: Parameters<typeof transformColor>[0]\n    colorSpace: string\n    angle: number\n    speed: number\n    speedVariance: number\n    density: number\n    trailLength: number\n    balance: number\n    strokeWidth: number\n    rounding: number\n}\n\n// The streak field, driven by the node's accumulated animation time: `mask` is the streak\n// coverage, `fade` the lead→trail position within a streak.\nconst streaks = fallingStreaks({\n    angle: p('angle'),\n    density: p('density'),\n    speedVariance: p('speedVariance'),\n    trailLength: p('trailLength'),\n    strokeWidth: p('strokeWidth'),\n    rounding: p('rounding'),\n    balance: p('balance'),\n})\n\n// Trail color fading toward the lead color along each streak, in the chosen color space.\nconst streakColor = strokeOver({\n    fill: p('colorB'),\n    stroke: p('colorA'),\n    mask: streaks.fade,\n    space: p('colorSpace'),\n})\n\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"FallingLines\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Directional falling lines with a leading-to-trailing color fade\",\n    acceptsUVContext: true,\n    // Per-node accumulated time driven by the `speed` prop; the paint noun reads it as the drift.\n    animatedTime: { speed: 'speed' },\n    props: {\n        colorA: {\n            default: \"#ffffff\",\n            transform: transformColor,\n            description: \"Color at the leading edge of each line\",\n            ui: { type: 'color', label: 'Lead Color', group: 'Colors' }\n        },\n        colorB: {\n            default: \"#ffffff00\",\n            transform: transformColor,\n            description: \"Color at the trailing edge (transparent by default)\",\n            ui: { type: 'color', label: 'Trail Color', group: 'Colors' }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for interpolation between lead and trail colors',\n            ui: { type: 'select', options: colorSpaceOptions, label: 'Color Space', group: 'Colors' }\n        },\n        angle: {\n            default: 90,\n            description: \"Direction of movement in degrees (90=down, 270=up, 0=right, 180=left)\",\n            ui: { type: 'range', min: 0, max: 360, step: 1, label: 'Angle', group: 'Effect' }\n        },\n        speed: {\n            default: 0.5,\n            description: \"Movement speed\",\n            ui: { type: 'range', min: 0, max: 3, step: 0.01, label: 'Speed', group: 'Animation' }\n        },\n        speedVariance: {\n            default: 0.3,\n            description: \"Per-line speed variance (0=uniform, 1=high variance)\",\n            ui: { type: 'range', min: 0, max: 1, step: 0.01, label: 'Speed Variance', group: 'Animation' }\n        },\n        density: {\n            default: 15,\n            description: \"Number of line columns across the canvas\",\n            ui: { type: 'range', min: 1, max: 60, step: 1, label: 'Density', group: 'Effect' }\n        },\n        trailLength: {\n            default: 0.35,\n            description: \"Streak length relative to spacing (0=point, 1=continuous)\",\n            ui: { type: ['range', 'map'], min: 0.01, max: 1, step: 0.01, label: 'Trail Length', group: 'Effect' }\n        },\n        balance: {\n            default: 0.5,\n            description: \"Color mix midpoint (0.5=linear, 0=all trailing/colorB, 1=all leading/colorA)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Balance', group: 'Colors' }\n        },\n        strokeWidth: {\n            default: 0.15,\n            description: \"Line thickness as fraction of column width (0=hairline, 1=full width)\",\n            ui: { type: ['range', 'map'], min: 0.02, max: 1, step: 0.02, label: 'Stroke Width', group: 'Effect' }\n        },\n        rounding: {\n            default: 1,\n            description: \"Rounds the leading edge (0=flat/square, 1=fully rounded cap)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Rounding', group: 'Effect' }\n        }\n    },\n\n    // The recipe: the streak coverage masks the faded color's alpha.\n    paint: withAlpha(streakColor, times(alphaOf(streakColor), streaks.mask))\n})\n\nexport default componentDefinition\n",
+      "sha256": "ab36e92908ee3d3157d59ddfffff537775437a88d8e3b11666f60c96f8df6d0c"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

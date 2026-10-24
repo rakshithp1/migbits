@@ -1,0 +1,15 @@
+{
+  "revision": "6d3e9d686434d69ac8fc9ca4c4a93f3afaa3d676",
+  "licenseSha256": "1434c6b2a8417d41e4db20ff3b772888e66a0069e20d928f83fa1390f44758c7",
+  "archiveSha256": "1facfd5942961c88f6cf7682be834cdb4569b437ce998ff83bc419ed6b2d7082",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-fluent-ui--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b2d05b1e8e19955b09509b823a9055c0eae647347c1c1b3df7395c6a8cfec42d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

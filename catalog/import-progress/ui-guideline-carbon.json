@@ -1,0 +1,15 @@
+{
+  "revision": "a16813e1cdafe954597768566762e5310884c5eb",
+  "licenseSha256": "037b3e9eaff51477b270e9082f54b99175e4dd893548654f00995045b68294b8",
+  "archiveSha256": "95366425161ca2cefd81ed6b762908fca6e717695c15bebc374484a459a3dbf0",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-carbon--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7f1ecb10bfc38957a37ce09906ef68e9865b7d16e51e4e4d40f901359657c894",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

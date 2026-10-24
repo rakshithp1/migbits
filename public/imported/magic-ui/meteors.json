@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--meteors",
+    "name": "Meteors",
+    "description": "A meteor shower effect.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Backgrounds & effects",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/meteors.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "f2c56deca7778fa8a4c8cc59b957c8d53bc6e971e11091090ee14766566c2d76",
+    "dataUrl": "/imported/magic-ui/meteors.json",
+    "downloadUrl": "/imported/magic-ui/meteors.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/meteors.tsx",
+      "content": "\"use client\"\n\nimport React, { useEffect, useState } from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface MeteorsProps {\n  number?: number\n  minDelay?: number\n  maxDelay?: number\n  minDuration?: number\n  maxDuration?: number\n  angle?: number\n  className?: string\n}\n\nexport const Meteors = ({\n  number = 20,\n  minDelay = 0.2,\n  maxDelay = 1.2,\n  minDuration = 2,\n  maxDuration = 10,\n  angle = 215,\n  className,\n}: MeteorsProps) => {\n  const [meteorStyles, setMeteorStyles] = useState<Array<React.CSSProperties>>(\n    []\n  )\n\n  useEffect(() => {\n    const styles = [...new Array(number)].map(() => ({\n      \"--angle\": -angle + \"deg\",\n      top: \"-5%\",\n      left: `calc(0% + ${Math.floor(Math.random() * window.innerWidth)}px)`,\n      animationDelay: Math.random() * (maxDelay - minDelay) + minDelay + \"s\",\n      animationDuration:\n        Math.floor(Math.random() * (maxDuration - minDuration) + minDuration) +\n        \"s\",\n    }))\n    setMeteorStyles(styles)\n  }, [number, minDelay, maxDelay, minDuration, maxDuration, angle])\n\n  return (\n    <>\n      {[...meteorStyles].map((style, idx) => (\n        // Meteor Head\n        <span\n          key={idx}\n          style={{ ...style }}\n          className={cn(\n            \"animate-meteor pointer-events-none absolute size-0.5 rotate-(--angle) rounded-full bg-zinc-500 shadow-[0_0_0_1px_#ffffff10]\",\n            className\n          )}\n        >\n          {/* Meteor Tail */}\n          <div className=\"pointer-events-none absolute top-1/2 -z-10 h-px w-12.5 -translate-y-1/2 bg-linear-to-r from-zinc-500 to-transparent\" />\n        </span>\n      ))}\n    </>\n  )\n}\n",
+      "sha256": "0730d0d6449fb3fb098a5e9edc80d066bdf06ebbb1d1e598b8fb6a10ff4a5ff9"
+    },
+    {
+      "path": "apps/www/public/r/meteors.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"meteors\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Meteors\",\n  \"description\": \"A meteor shower effect.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/meteors.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport React, { useEffect, useState } from \\\"react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\ninterface MeteorsProps {\\n  number?: number\\n  minDelay?: number\\n  maxDelay?: number\\n  minDuration?: number\\n  maxDuration?: number\\n  angle?: number\\n  className?: string\\n}\\n\\nexport const Meteors = ({\\n  number = 20,\\n  minDelay = 0.2,\\n  maxDelay = 1.2,\\n  minDuration = 2,\\n  maxDuration = 10,\\n  angle = 215,\\n  className,\\n}: MeteorsProps) => {\\n  const [meteorStyles, setMeteorStyles] = useState<Array<React.CSSProperties>>(\\n    []\\n  )\\n\\n  useEffect(() => {\\n    const styles = [...new Array(number)].map(() => ({\\n      \\\"--angle\\\": -angle + \\\"deg\\\",\\n      top: \\\"-5%\\\",\\n      left: `calc(0% + ${Math.floor(Math.random() * window.innerWidth)}px)`,\\n      animationDelay: Math.random() * (maxDelay - minDelay) + minDelay + \\\"s\\\",\\n      animationDuration:\\n        Math.floor(Math.random() * (maxDuration - minDuration) + minDuration) +\\n        \\\"s\\\",\\n    }))\\n    setMeteorStyles(styles)\\n  }, [number, minDelay, maxDelay, minDuration, maxDuration, angle])\\n\\n  return (\\n    <>\\n      {[...meteorStyles].map((style, idx) => (\\n        // Meteor Head\\n        <span\\n          key={idx}\\n          style={{ ...style }}\\n          className={cn(\\n            \\\"animate-meteor pointer-events-none absolute size-0.5 rotate-(--angle) rounded-full bg-zinc-500 shadow-[0_0_0_1px_#ffffff10]\\\",\\n            className\\n          )}\\n        >\\n          {/* Meteor Tail */}\\n          <div className=\\\"pointer-events-none absolute top-1/2 -z-10 h-px w-12.5 -translate-y-1/2 bg-linear-to-r from-zinc-500 to-transparent\\\" />\\n        </span>\\n      ))}\\n    </>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ],\n  \"cssVars\": {\n    \"theme\": {\n      \"animate-meteor\": \"meteor 5s linear infinite\"\n    }\n  },\n  \"css\": {\n    \"@keyframes meteor\": {\n      \"0%\": {\n        \"transform\": \"rotate(var(--angle)) translateX(0)\",\n        \"opacity\": \"1\"\n      },\n      \"70%\": {\n        \"opacity\": \"1\"\n      },\n      \"100%\": {\n        \"transform\": \"rotate(var(--angle)) translateX(-500px)\",\n        \"opacity\": \"0\"\n      }\n    }\n  }\n}",
+      "sha256": "541a4a88f9a9a77ed5dd3b33d14967daec15528e4be067b806ce77b793983027"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"meteors\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Meteors\",\n  \"description\": \"A meteor shower effect.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/meteors.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ],\n  \"cssVars\": {\n    \"theme\": {\n      \"animate-meteor\": \"meteor 5s linear infinite\"\n    }\n  },\n  \"css\": {\n    \"@keyframes meteor\": {\n      \"0%\": {\n        \"transform\": \"rotate(var(--angle)) translateX(0)\",\n        \"opacity\": \"1\"\n      },\n      \"70%\": {\n        \"opacity\": \"1\"\n      },\n      \"100%\": {\n        \"transform\": \"rotate(var(--angle)) translateX(-500px)\",\n        \"opacity\": \"0\"\n      }\n    }\n  }\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

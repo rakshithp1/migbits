@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--swirl",
+    "name": "Swirl",
+    "description": "Swirl shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Swirl/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "37a55b2d52388ef70a56b87b662d902b514cc97ba083e0d6d67bcc878a120e23",
+    "dataUrl": "/imported/shaders/swirl.json",
+    "downloadUrl": "/imported/shaders/swirl.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Swirl/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {rampOver, flowField, threshold, pulse, share, shimmered, stops} from \"@coreroot/std/paint/fields\"\nimport {transformColor, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\nimport {colorStopsPropConfig, type ColorStop} from \"@coreroot/utilities/colorStops\"\n\nexport type {ColorStop}\n\n// The signed multi-layer flow pattern, evaluated once per composition (see `paint`).\nconst swirlPatternField = share(flowField({detail: p('detail')}))\n\nexport interface ComponentProps{\n    colorA: string\n    colorB: string\n    stops: ColorStop[] | null\n    speed: number\n    detail: number\n    blend: number\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"Swirl\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Textures\",\n    description: \"Flowing swirl pattern with multi-layered noise\",\n    // Per-node animated time, read by the paint's flow clock.\n    animatedTime: { speed: 'speed' },\n    props: {\n        colorA: {\n            default: '#1275d8',\n            description: 'Primary gradient color',\n            transform: transformColor,\n            ui: {\n                type: 'color',\n                label: 'Color A',\n                group: 'Colors'\n            }\n        },\n        colorB: {\n            default: '#e19136',\n            description: 'Secondary gradient color',\n            transform: transformColor,\n            ui: {\n                type: 'color',\n                label: 'Color B',\n                group: 'Colors'\n            }\n        },\n        stops: colorStopsPropConfig(),\n        speed: {\n            default: 1,\n            description: 'Flow animation speed',\n            ui: {\n                type: 'range',\n                min: 0,\n                max: 5,\n                step: 0.1,\n                label: 'Speed',\n                group: 'Animation'\n            }\n        },\n        detail: {\n            default: 1,\n            description: 'Level of detail and intricacy in the swirl patterns',\n            ui: {\n                type: ['range', 'map'],\n                min: 0,\n                max: 5,\n                step: 0.1,\n                label: 'Detail',\n                group: 'Effect'\n            }\n        },\n        blend: {\n            default: 50,\n            description: 'Skew color balance toward A (lower values) or B (higher values)',\n            ui: {\n                type: ['range', 'map'],\n                min: 0,\n                max: 100,\n                step: 1,\n                label: 'Blend',\n                group: 'Effect'\n            }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: {\n                type: 'select',\n                options: colorSpaceOptions,\n                label: 'Color Space',\n                group: 'Colors'\n            }\n        }\n    },\n    // The layered flow pattern feeds BOTH the color threshold and the shimmer gain, so it\n    // is shared (one evaluation). Blend (0–100) remaps to a ±0.3 threshold bias.\n    paint: shimmered(\n        rampOver(\n            threshold(swirlPatternField, {low: 0.3, high: 0.7, bias: {base: p('blend'), add: -50, mul: 0.006}}),\n            stops(p('colorSpace')),\n        ),\n        pulse(swirlPatternField, {speed: 2.5, span: 8, depth: 0.015}),\n    )\n})\n\nexport default componentDefinition\n",
+      "sha256": "4be5098e94762006bd3384d8430cc30599251f3c99f06195a489d1472b670ada"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

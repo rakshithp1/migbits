@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--noise-texture",
+    "name": "Noise Texture",
+    "description": "An SVG fractal noise layer using feTurbulence, desaturation, and contrast controls for subtle texture overlays.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Typography & text",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/noise-texture.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "84fd2b48ba2059242ad439438d82dca673631aaec823cc1e3a604d6af7f374b8",
+    "dataUrl": "/imported/magic-ui/noise-texture.json",
+    "downloadUrl": "/imported/magic-ui/noise-texture.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/noise-texture.tsx",
+      "content": "\"use client\"\n\nimport { useId, type ComponentProps } from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport interface NoiseTextureProps extends ComponentProps<\"svg\"> {\n  /** Extra classes merged onto the root `svg` element. */\n  className?: string\n  /**\n   * `baseFrequency` for `feTurbulence`; higher values yield finer-grained noise.\n   * @default 0.4\n   */\n  frequency?: number\n  /**\n   * `numOctaves` for `feTurbulence`; more octaves add detail at smaller scales.\n   * @default 6\n   */\n  octaves?: number\n  /**\n   * Linear slope on each channel after desaturation; adjusts contrast of the noise.\n   * @default 0.15\n   */\n  slope?: number\n  /**\n   * Opacity of the filled noise layer (`rect`).\n   * @default 0.6\n   */\n  noiseOpacity?: number\n}\n\nexport const NoiseTexture = ({\n  className,\n  frequency = 0.4,\n  octaves = 6,\n  slope = 0.15,\n  noiseOpacity = 0.6,\n  ...props\n}: NoiseTextureProps) => {\n  const filterId = useId()\n\n  return (\n    <svg\n      className={cn(\n        \"pointer-events-none absolute inset-0 z-0 size-full opacity-50 select-none dark:opacity-[0.75]\",\n        className\n      )}\n      xmlns=\"http://www.w3.org/2000/svg\"\n      {...props}\n    >\n      <filter id={filterId}>\n        <feTurbulence\n          type=\"fractalNoise\"\n          baseFrequency={frequency}\n          numOctaves={octaves}\n          stitchTiles=\"stitch\"\n        />\n        <feColorMatrix type=\"saturate\" values=\"0\" />\n        <feComponentTransfer>\n          <feFuncR type=\"linear\" slope={slope} />\n          <feFuncG type=\"linear\" slope={slope} />\n          <feFuncB type=\"linear\" slope={slope} />\n        </feComponentTransfer>\n      </filter>\n      <rect\n        width=\"100%\"\n        height=\"100%\"\n        filter={`url(#${filterId})`}\n        opacity={noiseOpacity}\n      />\n    </svg>\n  )\n}\n",
+      "sha256": "90cad110cf368c95bd40edcdfe64d52c6aacb0656996e20867562787f4ca4c1c"
+    },
+    {
+      "path": "apps/www/public/r/noise-texture.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"noise-texture\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Noise Texture\",\n  \"description\": \"An SVG fractal noise layer using feTurbulence, desaturation, and contrast controls for subtle texture overlays.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/noise-texture.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport { useId, type ComponentProps } from \\\"react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\nexport interface NoiseTextureProps extends ComponentProps<\\\"svg\\\"> {\\n  /** Extra classes merged onto the root `svg` element. */\\n  className?: string\\n  /**\\n   * `baseFrequency` for `feTurbulence`; higher values yield finer-grained noise.\\n   * @default 0.4\\n   */\\n  frequency?: number\\n  /**\\n   * `numOctaves` for `feTurbulence`; more octaves add detail at smaller scales.\\n   * @default 6\\n   */\\n  octaves?: number\\n  /**\\n   * Linear slope on each channel after desaturation; adjusts contrast of the noise.\\n   * @default 0.15\\n   */\\n  slope?: number\\n  /**\\n   * Opacity of the filled noise layer (`rect`).\\n   * @default 0.6\\n   */\\n  noiseOpacity?: number\\n}\\n\\nexport const NoiseTexture = ({\\n  className,\\n  frequency = 0.4,\\n  octaves = 6,\\n  slope = 0.15,\\n  noiseOpacity = 0.6,\\n  ...props\\n}: NoiseTextureProps) => {\\n  const filterId = useId()\\n\\n  return (\\n    <svg\\n      className={cn(\\n        \\\"pointer-events-none absolute inset-0 z-0 size-full opacity-50 select-none dark:opacity-[0.75]\\\",\\n        className\\n      )}\\n      xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n      {...props}\\n    >\\n      <filter id={filterId}>\\n        <feTurbulence\\n          type=\\\"fractalNoise\\\"\\n          baseFrequency={frequency}\\n          numOctaves={octaves}\\n          stitchTiles=\\\"stitch\\\"\\n        />\\n        <feColorMatrix type=\\\"saturate\\\" values=\\\"0\\\" />\\n        <feComponentTransfer>\\n          <feFuncR type=\\\"linear\\\" slope={slope} />\\n          <feFuncG type=\\\"linear\\\" slope={slope} />\\n          <feFuncB type=\\\"linear\\\" slope={slope} />\\n        </feComponentTransfer>\\n      </filter>\\n      <rect\\n        width=\\\"100%\\\"\\n        height=\\\"100%\\\"\\n        filter={`url(#${filterId})`}\\n        opacity={noiseOpacity}\\n      />\\n    </svg>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "b9e1ddc65cfbacd822c2c8855a43a5fac902b335b2818212769cb5f01a0b7952"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"noise-texture\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Noise Texture\",\n  \"description\": \"An SVG fractal noise layer using feTurbulence, desaturation, and contrast controls for subtle texture overlays.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/noise-texture.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

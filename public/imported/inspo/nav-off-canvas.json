@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--nav-off-canvas",
+    "name": "Nav / Off-canvas",
+    "description": "Page leads with the wordmark and a menu affordance; full nav slides in from the right.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/nav/off-canvas.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "0662c3d6d4a579364d34b73983847a54418d8b38ff024affb607af6525971c57",
+    "dataUrl": "/imported/inspo/nav-off-canvas.json",
+    "downloadUrl": "/imported/inspo/nav-off-canvas.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/nav/off-canvas.tsx",
+      "content": "\"use client\";\n\n/* inspo-reference-component\n * type= nav | genre= editorial | theme= Inspo-paper\n * archetype= N4 Off-canvas | diversification= minimal top row, full\n *   nav slides in from the side on demand\n * states= default · open · focus-visible · prefers-reduced-motion\n * contrast= pass (46-50)\n */\n\nimport { useEffect, useState } from \"react\";\n\n/**\n * Off-canvas nav - the page leads with just the wordmark and a\n * \"menu\" affordance. The full navigation slides in from the right as\n * a drawer. Body scroll locks while open; Esc closes. Reach for it\n * when the site wants to be content-led and the nav is the second\n * citizen.\n */\nconst LINKS = [\"Archive\", \"Components\", \"Collections\", \"MCP\", \"About\", \"Contribute\"];\n\nexport function NavOffCanvas() {\n  const [open, setOpen] = useState(false);\n\n  useEffect(() => {\n    if (!open) return;\n    const onKey = (e: KeyboardEvent) => {\n      if (e.key === \"Escape\") setOpen(false);\n    };\n    document.body.style.overflow = \"hidden\";\n    window.addEventListener(\"keydown\", onKey);\n    return () => {\n      document.body.style.overflow = \"\";\n      window.removeEventListener(\"keydown\", onKey);\n    };\n  }, [open]);\n\n  return (\n    <>\n      <header className=\"border-y rule bg-[var(--color-bg)] px-8 py-5 sm:px-14\">\n        <div className=\"flex items-center justify-between\">\n          <a href=\"#\" className=\"font-display text-2xl tracking-tight\">\n            Inspo<span className=\"text-[var(--color-accent)]\">.</span>\n          </a>\n          <button\n            type=\"button\"\n            onClick={() => setOpen(true)}\n            aria-expanded={open}\n            aria-controls=\"off-canvas-nav\"\n            className=\"text-meta border rule px-3 py-1.5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]\"\n          >\n            Menu\n          </button>\n        </div>\n      </header>\n\n      {/* Drawer */}\n      <div\n        id=\"off-canvas-nav\"\n        role=\"dialog\"\n        aria-modal=\"true\"\n        aria-hidden={!open}\n        className={`\n          fixed inset-0 z-50 transition-opacity duration-300\n          ${open ? \"opacity-100 pointer-events-auto\" : \"opacity-0 pointer-events-none\"}\n        `}\n      >\n        <div\n          className=\"absolute inset-0 bg-[color-mix(in_oklab,var(--color-fg)_40%,transparent)] backdrop-blur-sm\"\n          onClick={() => setOpen(false)}\n        />\n        <aside\n          className={`\n            absolute right-0 top-0 h-full w-[min(420px,86vw)]\n            border-l rule bg-[var(--color-bg)] px-8 py-8\n            transition-transform duration-300 ease-out\n            ${open ? \"translate-x-0\" : \"translate-x-full\"}\n          `}\n          style={{ willChange: \"transform\" }}\n        >\n          <div className=\"flex items-baseline justify-between\">\n            <p className=\"text-meta\">Menu</p>\n            <button\n              type=\"button\"\n              onClick={() => setOpen(false)}\n              aria-label=\"Close menu\"\n              className=\"text-meta hover:text-[var(--color-accent)]\"\n            >\n              Close ✕\n            </button>\n          </div>\n          <ul className=\"mt-10 space-y-4\">\n            {LINKS.map((l) => (\n              <li key={l}>\n                <a\n                  href=\"#\"\n                  className=\"font-display block text-3xl leading-tight tracking-tight transition-colors hover:text-[var(--color-accent)]\"\n                >\n                  {l}\n                </a>\n              </li>\n            ))}\n          </ul>\n        </aside>\n      </div>\n    </>\n  );\n}\n",
+      "sha256": "939fbe0da3a41c44d1018ac5ce8693a06fa741b03d4b1237568d1d9cb03e5c2a"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "N4 Drawer",
+    "Type": "nav"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

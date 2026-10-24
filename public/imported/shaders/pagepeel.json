@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--pagepeel",
+    "name": "Page Peel",
+    "description": "Page Peel shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/PagePeel/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "a0e7fd452dd8c2151918bf6d4d9a5702f0dcac43b31a7a2045ad7aff06cb5258",
+    "dataUrl": "/imported/shaders/pagepeel.json",
+    "downloadUrl": "/imported/shaders/pagepeel.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/PagePeel/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {gatherStack, peelFrame, peelCompose, curlShading, curlSheen, overhangShadow, revealShadow} from \"@coreroot/std/effects/blurs\"\n\nexport interface ComponentProps {\n    corner: string\n    amount: number\n    radius: number\n    shading: number\n    highlight: number\n    highlightSoftness: number\n    shadow: number\n}\n\n// The peel geometry (curl UV, fold angle, crease distances + shadow reaches) every part reads.\nconst peel = peelFrame({corner: p('corner'), amount: p('amount'), radius: p('radius')})\n\n// The curl composites TWO child samples (curl UV + flat screen UV) per pixel, which a\n// single-coordinate warp map can't express — hence a gather effect, not a warp.\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"PagePeel\",\n    role: 'filter',\n    species: 'gather',\n    category: \"Transitions\",\n    description: \"Curl the content up from a corner like a peeling page\",\n    boundingBoxDeclaration: { aspectRatio: null },\n    props: {\n        corner: {\n            default: 'bottom-right',\n            description: \"Which corner the page peels from\",\n            // NOTE: corner carries no `transform` — it is a cpu-only compile-time string (an inline\n            // transform would make the bridge write the string into an f32 field).\n            compileTime: true,\n            ui: {\n                type: 'select',\n                options: [\n                    {label: 'Top Left', value: 'top-left'},\n                    {label: 'Top Right', value: 'top-right'},\n                    {label: 'Bottom Left', value: 'bottom-left'},\n                    {label: 'Bottom Right', value: 'bottom-right'}\n                ],\n                label: 'Corner',\n                group: 'Effect'\n            }\n        },\n        amount: {\n            default: 0.2,\n            description: \"How far the peel has progressed across the page (0 = flat, 1 = fully peeled)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Amount', group: 'Effect' }\n        },\n        radius: {\n            default: 0.2,\n            description: \"Tightness of the curl (fraction of the page diagonal)\",\n            ui: { type: ['range', 'map'], min: 0.02, max: 0.4, step: 0.01, label: 'Curl Radius', group: 'Effect' }\n        },\n        shading: {\n            default: 0.55,\n            description: \"How much the underside of the curl is shaded for depth\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Shading', group: 'Effect' }\n        },\n        highlight: {\n            default: 0.4,\n            description: \"Strength of the specular sheen running along the curl\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Highlight', group: 'Effect' }\n        },\n        highlightSoftness: {\n            default: 0.2,\n            description: \"Width of the specular highlight band (low = tight gloss, high = broad satin)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Highlight Softness', group: 'Effect' }\n        },\n        shadow: {\n            default: 1,\n            description: \"Strength of the contact shadow the curl casts on the page\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Shadow', group: 'Effect' }\n        }\n    },\n\n    // The fold composite — crook shading and specular sheen on the curl, the two contact shadows\n    // either side of the crease, layered back to front. Silent on a missing child, as this\n    // shader has always been.\n    effect: gatherStack(\n        peelCompose(peel, {\n            shade: curlShading(peel, {shading: p('shading')}),\n            sheen: curlSheen(peel, {highlight: p('highlight'), softness: p('highlightSoftness')}),\n            overhang: overhangShadow(peel, {amount: p('amount'), shadow: p('shadow')}),\n            reveal: revealShadow(peel, {amount: p('amount'), shadow: p('shadow')}),\n        }),\n        [],\n    ),\n})\n\nexport default componentDefinition\n",
+      "sha256": "29462a205f65ef07fddde116212c09af818b5008729d2586a02b71c70e76caaf"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

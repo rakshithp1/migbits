@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--plasma",
+    "name": "Plasma",
+    "description": "Plasma shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Plasma/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "0cb0023aeb61e8819027d658b84c195f754897acfd0192a56da1980e9f650028",
+    "dataUrl": "/imported/shaders/plasma.json",
+    "downloadUrl": "/imported/shaders/plasma.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Plasma/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {rampOver, tone, scaledVolume, warped, noiseField, stops} from \"@coreroot/std/paint/fields\"\nimport {transformColor, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\nimport {colorStopsPropConfig, type ColorStop} from \"@coreroot/utilities/colorStops\"\n\nexport type {ColorStop}\n\nexport interface ComponentProps {\n    density: number\n    speed: number\n    intensity: number\n    warp: number\n    contrast: number\n    balance: number\n    colorA: Parameters<typeof transformColor>[0]\n    colorB: Parameters<typeof transformColor>[0]\n    stops: ColorStop[] | null\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"Plasma\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Animated effect of glowing plasma\",\n    acceptsUVContext: true,\n    // Per-node animated time, read by the paint's warp clock.\n    animatedTime: { speed: 'speed' },\n    props: {\n        density: {\n            default: 2,\n            description: \"Density of the plasma pattern\",\n            ui: { type: ['range', 'map'], min: 0, max: 4, step: 0.1, label: 'Density', group: 'Effect' }\n        },\n        speed: {\n            default: 2,\n            description: \"Animation speed\",\n            ui: { type: 'range', min: 0, max: 5, step: 0.1, label: 'Speed', group: 'Effect' }\n        },\n        intensity: {\n            default: 1.5,\n            description: \"Brightness and spread of the plasma glow\",\n            ui: { type: ['range', 'map'], min: 0.1, max: 3, step: 0.1, label: 'Intensity', group: 'Colors' }\n        },\n        warp: {\n            default: 0.4,\n            description: \"How much the flow distorts and swirls\",\n            ui: { type: 'range', min: 0, max: 1, step: 0.01, label: 'Warp', group: 'Effect' }\n        },\n        contrast: {\n            default: 1,\n            description: 'Push darks darker and lights lighter',\n            ui: { type: ['range', 'map'], min: 0, max: 3, step: 0.1, label: 'Contrast', group: 'Colors' }\n        },\n        balance: {\n            default: 50,\n            description: 'Skew color balance toward A (higher) or B (lower)',\n            ui: { type: ['range', 'map'], min: 0, max: 100, step: 1, label: 'Balance', group: 'Colors' }\n        },\n        colorA: {\n            default: '#7018be',\n            description: 'Primary color',\n            transform: transformColor,\n            ui: { type: 'color', label: 'Color A', group: 'Colors' }\n        },\n        colorB: {\n            default: '#000000',\n            description: 'Secondary color',\n            transform: transformColor,\n            ui: { type: 'color', label: 'Color B', group: 'Colors' }\n        },\n        stops: colorStopsPropConfig(),\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: {\n                type: 'select',\n                options: colorSpaceOptions,\n                label: 'Color Space',\n                group: 'Colors'\n            }\n        }\n    },\n    // Domain-warped MaterialX noise on an aspect-corrected volume slab, tone-shaped, then\n    // ramped through the stops/pair palette.\n    paint: rampOver(\n        tone(\n            scaledVolume(\n                warped(noiseField('mx3'), {amount: p('warp'), amountScale: 4, timeScale: 0.125}),\n                {scale: p('density')},\n            ),\n            {glow: p('intensity'), contrast: p('contrast'), balance: p('balance'), invert: true},\n        ),\n        stops(p('colorSpace')),\n    )\n})\n\nexport default componentDefinition\n",
+      "sha256": "573ff885aa7283e56ab55f13b9b55edf25e715a87f31aac0ed459e5667ab3be4"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

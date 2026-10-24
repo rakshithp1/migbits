@@ -1,0 +1,367 @@
+{
+  "revision": "936867543ac2576920d663cc9803597f6044f3ac",
+  "licenseSha256": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812",
+  "archiveSha256": "866df1a8fb82a5f49e8333400b537f1d5113b8eac165f53df6ebc5ba0f0fbf21",
+  "items": [
+    {
+      "key": "adapt",
+      "id": "impeccable--adapt",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9463a7516c187eb9ead5759977ca51aa5f84d236c5a668d9ad8bedbdb8a878c4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "adapt.native",
+      "id": "impeccable--adapt-native",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "72d5a26fafc67ed1a8ba757baef243e72072a09c759a9ad7d1d61671b3b76532",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "android",
+      "id": "impeccable--android",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "45b0ced1a095f55b9583e0f7891c097b0500f4c981be38288e57771f8d04d42b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animate",
+      "id": "impeccable--animate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4f63dd1b0db9c1dbb54c61000ed1431cbb82d37e91bd043197ec791628b63c29",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "audit",
+      "id": "impeccable--audit",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a7bc3b2b8dfddedde39ef3da82721e28c0deb006fa27b267094c6a84bb054caf",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "audit.native",
+      "id": "impeccable--audit-native",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4f18760128678952128ed8c9f8d606fb0cbb1fec7905190563064995b663c482",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "bolder",
+      "id": "impeccable--bolder",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "385a7c14e5067ef135e0ecfdbdce9d40b98538f567e11bdaef0ecd3ba3a648c5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "clarify",
+      "id": "impeccable--clarify",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "595e7379c23656fe369651392957586176feb711a2dccb58ba449d87cbe78a5b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "colorize",
+      "id": "impeccable--colorize",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c0864c7c24c8e2a9f7725893b7bd1c5e709956c85c478c853719683090bbcd45",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "component-review",
+      "id": "impeccable--component-review",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "747af67ddb2829e1d072633ae3ebed957d85896c9a6db0c481d547d95b54ccec",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "craft-floor",
+      "id": "impeccable--craft-floor",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "515fb69ed37f627d086061cafce8711aa901545e689a264b078ba94486728b5e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "craft",
+      "id": "impeccable--craft",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9872931a272a1cea46f96fa2890e2d654f427766c12365e3ff208a765d23c25b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "critique",
+      "id": "impeccable--critique",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4c375bfe3a18399ea2898b46d6dfe9027616e8fa1b57b705212dcfd211202b6f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "degraded/asset-producer",
+      "id": "impeccable--degraded-asset-producer",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4ded38d247b91c7d9314a8ae09f4b2c3cf324e3ac85a36591dff6578b94a5904",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "degraded/documenter",
+      "id": "impeccable--degraded-documenter",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e0c9205b0a270fd331aac758d28fa69cc00dd5dfec3ff4b4595b5c752e5f1b2f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "degraded/finish-reviewer",
+      "id": "impeccable--degraded-finish-reviewer",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7a6740a7a59b106b3b6ae6750cae4ea6e984c8b0cefb7143036fbb9cf984c9a2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "degraded/manual-edit-applier",
+      "id": "impeccable--degraded-manual-edit-applier",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "08450dc31093e48752c04dba5b4af51cbe557e2084e5806ae3fc67356952ae28",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "delight",
+      "id": "impeccable--delight",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9b05f5f8aa2a8fa83e4f0ab31bc964d2c40d532451bff333b5ac305fb337a30c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "distill",
+      "id": "impeccable--distill",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "77922fcc231fb3ea66880acdd27f14ccf0443ce9addc8c43a902b42375480658",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "doctor",
+      "id": "impeccable--doctor",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "110ba3e12b92b0d911b187147734ad0f01d8727a230a6ef10cb51525d58587b1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "document",
+      "id": "impeccable--document",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ba27b6f8af5cc12e884c89f99df69930cfcf1c29ce5b4917a7b1f516f138281e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "extract",
+      "id": "impeccable--extract",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b95eff24e45d440ad53289edb77778ab545a6450448982e24028f07745cae430",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "generate",
+      "id": "impeccable--generate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "75ad51bfff89d483323f48b491edd8f55f05c9da31385e99caedba30be44c87f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "harden",
+      "id": "impeccable--harden",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2e77f53b41bd5e8affd82ddcfa3393ac622e46db66ba7f9a8e37744b27eb258c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hooks",
+      "id": "impeccable--hooks",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "34efe0d3407ff6b4db73e683f02e1f4091c439a6e6db59aadfc97cdfd78caa47",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "init",
+      "id": "impeccable--init",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a7f624ca8af59c056873115f2873933ca72df1b0a127890184a5cb8815a1a6a7",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ios",
+      "id": "impeccable--ios",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "eee942146e8f0bd859852601f37244314ba45c8219dfaf50fc892674933e4297",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "layout",
+      "id": "impeccable--layout",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6c6572ef4df453f84ab8c6c6385caa5c0046f366c2b1f558706b2e9cb0912454",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "live-setup",
+      "id": "impeccable--live-setup",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c6e0536f7d1bcb99c21251c017a0d76cc424061dfa4a7f52361b3fc944af0332",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "live",
+      "id": "impeccable--live",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e8850ce9f8d8780df0fc5f902257870182d7fc78b0f382fc5b14c50f31e5a40a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "mode-operate",
+      "id": "impeccable--mode-operate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b37dce27905c102b15b57455cc718cf58e3bc0577da026cb2614b219ded9dfee",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "mode-persuade",
+      "id": "impeccable--mode-persuade",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8978dde1b6f4aa5e8d5bad514e01c212ef21529b49b783a946bc38690bf83e84",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "mode-read",
+      "id": "impeccable--mode-read",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e9237a62d39407f855322ca790d17994d54e7bc00a38f0b9f470ffc82ce5101b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "new-work",
+      "id": "impeccable--new-work",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1f0b65240f542af40967cf75b68baf37745f5083a37b876fe3400a5458790ee8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "onboard",
+      "id": "impeccable--onboard",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c81cebafc48dcb1cc1c232d8545f506f2072493b2bff78cdc2304e1d5f28e107",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "operate",
+      "id": "impeccable--operate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e4e00e1594d4f909e514f61d61824fedfd6eaa750c04833fef262f4badce2af3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "optimize",
+      "id": "impeccable--optimize",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0e7c57b5bed1c9e41b5eed47abc9fc95f70d9cddbe8b6ae428f13682a2bdbfb2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "overdrive",
+      "id": "impeccable--overdrive",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6a7452001abeb3980612385c3c9375a5e2f69915708b1851746ea3c3d04830e9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "polish",
+      "id": "impeccable--polish",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3baec0431834fa951ea668b290d67540f33bac1da3ac66377410389ab688daba",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "quieter",
+      "id": "impeccable--quieter",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "48139ea5f72f2626e18aa36b22ee0119008efb49d845e29c166b3c2750996976",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "region-map",
+      "id": "impeccable--region-map",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cc7c2c08a3b3b258c1566564b75df2ebbc488096d6f4b9b736b3a00340199d94",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "routing",
+      "id": "impeccable--routing",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d305b65e41ac93fa726588dc279f1e05f12f67fc0738af038f38018c4e524411",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "shape",
+      "id": "impeccable--shape",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6509046ae12f524d3ad813e6b8b2760ce1b0a03b89e8cea2047921b3ee2ea77c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "typeset",
+      "id": "impeccable--typeset",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "84a89c9eebe82741875a01746311041a51595efe7c7a42fe56cbb8500288e5c3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "visualize",
+      "id": "impeccable--visualize",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b4512e97d45c894d687539baa2b003743779a436e5d0d817326c3f50539e92c1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

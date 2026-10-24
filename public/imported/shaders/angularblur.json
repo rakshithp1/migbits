@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--angularblur",
+    "name": "Angular Blur",
+    "description": "Angular Blur shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/AngularBlur/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "24114293faa3e88bac46b787466661d77bff5c15301d71d173edb9a155af641e",
+    "dataUrl": "/imported/shaders/angularblur.json",
+    "downloadUrl": "/imported/shaders/angularblur.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/AngularBlur/index.ts",
+      "content": "import {defineStd, p, crosses} from \"@coreroot/std\"\nimport {motionBlur, blurPath} from \"@coreroot/std/effects/blurs\"\nimport {transformPosition} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    intensity: number\n    center: Parameters<typeof transformPosition>[0]\n    dispersion: number\n    falloff: number\n    focus: number\n    bias: number\n    highlights: number\n    jitter: number\n}\n\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"AngularBlur\",\n    role: 'filter',\n    species: 'gather',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Blurs\",\n    description: \"Radial motion blur rotating around a center point\",\n    props: {\n        intensity: {\n            default: 20,\n            description: 'Intensity of the angular blur effect',\n            ui: { type: ['range', 'map'], min: 0, max: 100, step: 1, label: 'Blur Intensity', group: 'Effect' }\n        },\n        center: {\n            default: {\n                x: 0.5,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: 'The center point of the rotation',\n            ui: {\n                type: 'position',\n                label: 'Center Position',\n                group: 'Position'\n            }\n        },\n        dispersion: {\n            default: 0,\n            description: 'Spectral color fringing along the streak, like light through a lens; negative flips which end is red',\n            recompile: crosses(0),\n            ui: {type: ['range', 'map'], min: -1, max: 1, step: 0.01, label: 'Dispersion', group: 'Lens'}\n        },\n        falloff: {\n            default: 0,\n            description: 'Concentrates the dispersion away from the center; 0 fringes everywhere equally',\n            recompile: crosses(0),\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Falloff', group: 'Lens'}\n        },\n        focus: {\n            default: 0,\n            description: 'Radius of a clean zone around the center that stays sharp',\n            recompile: crosses(0),\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Focus', group: 'Lens'}\n        },\n        bias: {\n            default: 0,\n            description: 'Trails the sweep off one side of each pixel instead of both; the sign picks the direction',\n            recompile: crosses(0),\n            ui: {type: ['range', 'map'], min: -1, max: 1, step: 0.01, label: 'Bias', group: 'Streak'}\n        },\n        highlights: {\n            default: 0,\n            description: 'Lets bright pixels streak further than dark ones, like light rays',\n            recompile: crosses(0),\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Highlights', group: 'Streak'}\n        },\n        jitter: {\n            default: 0,\n            description: 'Per-pixel noise on the tap spacing that hides banding in long streaks',\n            recompile: crosses(0),\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Jitter', group: 'Streak'}\n        }\n    },\n\n    // Every detail dial is off at 0; the plain 32-tap gather is compiled until one is set.\n    effect: motionBlur({\n        path: blurPath.orbit(p('center')),\n        amount: p('intensity'),\n        detail: {\n            dispersion: p('dispersion'), falloff: p('falloff'), focus: p('focus'),\n            bias: p('bias'), highlights: p('highlights'), jitter: p('jitter'),\n        },\n    }),\n})\n\nexport default componentDefinition\n",
+      "sha256": "0a7b2f6d4e875e8b0d0a017bfebf94327bd9ab9ec31fa7eb02b2d08559b88d1c"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

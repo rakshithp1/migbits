@@ -1,0 +1,15 @@
+{
+  "revision": "4d1c0d8ef7319502ed2dba7813d4ba9ee6f73f3c",
+  "licenseSha256": "70bfef859a7eed41e630a7257ee3772cd98345d21219e3ae3c3e75f91ff55e9c",
+  "archiveSha256": "6ad48a31dfacf1a4aa14b01740fafb33dba55738e07b869a923d451146076650",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-vuetify--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "dbe5f69bc0981af98b29681c91145e45828bd852e8a5086b22f376b6685c3708",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

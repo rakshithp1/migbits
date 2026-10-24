@@ -1,0 +1,50 @@
+{
+  "resource": {
+    "id": "magic-ui--text-reveal",
+    "name": "Text Reveal",
+    "description": "Fade in text as you scroll down the page.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Typography & text",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/text-reveal.tsx",
+    "files": 2,
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "a8674663bd9296f5afdbae7ee1832438d7a90a4793d43b31b01142cd138d8813",
+    "dataUrl": "/imported/magic-ui/text-reveal.json",
+    "downloadUrl": "/imported/magic-ui/text-reveal.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/text-reveal.tsx",
+      "content": "\"use client\"\n\nimport {\n  useRef,\n  type ComponentPropsWithoutRef,\n  type FC,\n  type ReactNode,\n} from \"react\"\nimport { motion, MotionValue, useScroll, useTransform } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport interface TextRevealProps extends ComponentPropsWithoutRef<\"div\"> {\n  children: string\n}\n\nexport const TextReveal: FC<TextRevealProps> = ({ children, className }) => {\n  const sectionRef = useRef<HTMLDivElement | null>(null)\n  const { scrollYProgress } = useScroll({\n    target: sectionRef,\n  })\n\n  if (typeof children !== \"string\") {\n    throw new Error(\"TextReveal: children must be a string\")\n  }\n\n  const words = children.split(\" \")\n\n  return (\n    <div ref={sectionRef} className={cn(\"relative z-0 h-[200vh]\", className)}>\n      <div\n        className={\n          \"sticky top-0 mx-auto flex h-[50%] max-w-4xl items-center bg-transparent px-4 py-20\"\n        }\n      >\n        <span\n          className={\n            \"flex flex-wrap p-5 text-2xl font-bold text-black/20 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl dark:text-white/20\"\n          }\n        >\n          {words.map((word, i) => {\n            const start = i / words.length\n            const end = start + 1 / words.length\n            return (\n              <Word key={i} progress={scrollYProgress} range={[start, end]}>\n                {word}\n              </Word>\n            )\n          })}\n        </span>\n      </div>\n    </div>\n  )\n}\n\ninterface WordProps {\n  children: ReactNode\n  progress: MotionValue<number>\n  range: [number, number]\n}\n\nconst Word: FC<WordProps> = ({ children, progress, range }) => {\n  const opacity = useTransform(progress, range, [0, 1])\n  return (\n    <span className=\"xl:lg-3 relative mx-1 lg:mx-1.5\">\n      <span className=\"absolute opacity-30\">{children}</span>\n      <motion.span\n        style={{ opacity: opacity }}\n        className={\"text-black dark:text-white\"}\n      >\n        {children}\n      </motion.span>\n    </span>\n  )\n}\n",
+      "sha256": "af69b435aa66a762af04d7d85b8578627ad9fb6541d01170135756e647d36240"
+    },
+    {
+      "path": "apps/www/public/r/text-reveal.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"text-reveal\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Text Reveal\",\n  \"description\": \"Fade in text as you scroll down the page.\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/text-reveal.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport {\\n  useRef,\\n  type ComponentPropsWithoutRef,\\n  type FC,\\n  type ReactNode,\\n} from \\\"react\\\"\\nimport { motion, MotionValue, useScroll, useTransform } from \\\"motion/react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\nexport interface TextRevealProps extends ComponentPropsWithoutRef<\\\"div\\\"> {\\n  children: string\\n}\\n\\nexport const TextReveal: FC<TextRevealProps> = ({ children, className }) => {\\n  const sectionRef = useRef<HTMLDivElement | null>(null)\\n  const { scrollYProgress } = useScroll({\\n    target: sectionRef,\\n  })\\n\\n  if (typeof children !== \\\"string\\\") {\\n    throw new Error(\\\"TextReveal: children must be a string\\\")\\n  }\\n\\n  const words = children.split(\\\" \\\")\\n\\n  return (\\n    <div ref={sectionRef} className={cn(\\\"relative z-0 h-[200vh]\\\", className)}>\\n      <div\\n        className={\\n          \\\"sticky top-0 mx-auto flex h-[50%] max-w-4xl items-center bg-transparent px-4 py-20\\\"\\n        }\\n      >\\n        <span\\n          className={\\n            \\\"flex flex-wrap p-5 text-2xl font-bold text-black/20 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl dark:text-white/20\\\"\\n          }\\n        >\\n          {words.map((word, i) => {\\n            const start = i / words.length\\n            const end = start + 1 / words.length\\n            return (\\n              <Word key={i} progress={scrollYProgress} range={[start, end]}>\\n                {word}\\n              </Word>\\n            )\\n          })}\\n        </span>\\n      </div>\\n    </div>\\n  )\\n}\\n\\ninterface WordProps {\\n  children: ReactNode\\n  progress: MotionValue<number>\\n  range: [number, number]\\n}\\n\\nconst Word: FC<WordProps> = ({ children, progress, range }) => {\\n  const opacity = useTransform(progress, range, [0, 1])\\n  return (\\n    <span className=\\\"xl:lg-3 relative mx-1 lg:mx-1.5\\\">\\n      <span className=\\\"absolute opacity-30\\\">{children}</span>\\n      <motion.span\\n        style={{ opacity: opacity }}\\n        className={\\\"text-black dark:text-white\\\"}\\n      >\\n        {children}\\n      </motion.span>\\n    </span>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "5fbc83e19ee405d2b3fde4d5d6edd49593946754be2a6265e4c1cdbbea3e4ed1"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"text-reveal\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Text Reveal\",\n  \"description\": \"Fade in text as you scroll down the page.\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/text-reveal.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

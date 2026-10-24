@@ -1,0 +1,15 @@
+{
+  "revision": "37d68787ed8255bff05d4d6cd7d7c10350495295",
+  "licenseSha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+  "archiveSha256": "83ffa85e662bc67855cebf40604ae50784f93229e14a771a852062b9320e39a7",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-blueprint--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "01aea79919414ecdb7a1df422254b697ada02994c1dc14d1590104b93fd4930f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

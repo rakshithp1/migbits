@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--duotone",
+    "name": "Duotone",
+    "description": "Duotone shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Duotone/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "164cc2143ed13efefb9a3c0f7b2c9770f8cc3ea65bb38d9e7521f458af17f643",
+    "dataUrl": "/imported/shaders/duotone.json",
+    "downloadUrl": "/imported/shaders/duotone.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Duotone/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {duotone} from \"@coreroot/std/effects/color\"\nimport {transformColor, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    colorA: Parameters<typeof transformColor>[0]\n    colorB: Parameters<typeof transformColor>[0]\n    blend: number\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"Duotone\",\n    role: 'filter',\n    species: 'pointwise',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Adjustments\",\n    description: \"Map colors to two tones based on luminance\",\n    props: {\n        colorA: {\n            default: \"#ff0000\",\n            transform: transformColor,\n            description: 'First color (used for darker areas)',\n            ui: {\n                type: 'color',\n                label: 'Color A',\n                group: 'Colors'\n            }\n        },\n        colorB: {\n            default: \"#023af4\",\n            transform: transformColor,\n            description: 'Second color (used for brighter areas)',\n            ui: {\n                type: 'color',\n                label: 'Color B',\n                group: 'Colors'\n            }\n        },\n        blend: {\n            default: 0.5,\n            description: 'Blend point between the two colors',\n            ui: {\n                type: ['range', 'map'],\n                min: 0.0,\n                max: 1.0,\n                step: 0.1,\n                label: 'Blend',\n                group: 'Effect'\n            }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: {\n                type: 'select',\n                options: colorSpaceOptions,\n                label: 'Color Space',\n                group: 'Colors'\n            }\n        }\n    },\n    // No `missingChildMessage`: the tone filters fail SILENTLY (transparent), by design.\n    effect: duotone({colorA: p('colorA'), colorB: p('colorB'), blend: p('blend'), colorSpace: p('colorSpace')}),\n})\n\nexport default componentDefinition\n",
+      "sha256": "5025fae0d150f067ac8ee35c2ea9092b553d3c5f4342a5d21aafe4f0807b5ef2"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "revision": "e8d943ce85d0b7b522f47205000fc982f22b5965",
+  "licenseSha256": "3c82654bb472ebbcacc4c1ff00f94aa8c60c4b7ee011b16bafcbacecc3703458",
+  "archiveSha256": "221a3165d8f8d452eb4d7a9ddf29af95eb0198895f6a4470dfa37b2ce7fd654e",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-ant-design--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6abbafd034ed3813498e4ac3c5f9f3ca21e0b923db96e44a6299c21931b02ff4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

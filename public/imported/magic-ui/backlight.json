@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--backlight",
+    "name": "Backlight",
+    "description": "A backlight glow effect for videos, images, and SVGs.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Components",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/backlight.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "ca5130d2633962d35e7303f13206d24ab388c5238fb4202f96df1c369ced750d",
+    "dataUrl": "/imported/magic-ui/backlight.json",
+    "downloadUrl": "/imported/magic-ui/backlight.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/backlight.tsx",
+      "content": "import { useId, type ReactElement } from \"react\"\n\ntype BacklightProps = {\n  children?: ReactElement\n  className?: string\n  blur?: number\n}\n\nexport function Backlight({ blur = 20, children, className }: BacklightProps) {\n  const id = useId()\n\n  return (\n    <div className={className}>\n      <svg width=\"0\" height=\"0\" aria-hidden=\"true\">\n        <filter id={id} y=\"-50%\" x=\"-50%\" width=\"200%\" height=\"200%\">\n          <feGaussianBlur\n            in=\"SourceGraphic\"\n            stdDeviation={blur}\n            result=\"blurred\"\n          ></feGaussianBlur>\n          <feColorMatrix\n            type=\"saturate\"\n            in=\"blurred\"\n            values=\"4\"\n          ></feColorMatrix>\n          <feComposite in=\"SourceGraphic\" operator=\"over\"></feComposite>\n        </filter>\n      </svg>\n\n      <div style={{ filter: `url(#${id})` }}>{children}</div>\n    </div>\n  )\n}\n",
+      "sha256": "d302fbcbfa80f42cf59f3ffbf4451627f6a79d9206d6e3bc1fb3f65511515108"
+    },
+    {
+      "path": "apps/www/public/r/backlight.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"backlight\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Backlight\",\n  \"description\": \"A backlight glow effect for videos, images, and SVGs.\",\n  \"dependencies\": [],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/backlight.tsx\",\n      \"content\": \"import { useId, type ReactElement } from \\\"react\\\"\\n\\ntype BacklightProps = {\\n  children?: ReactElement\\n  className?: string\\n  blur?: number\\n}\\n\\nexport function Backlight({ blur = 20, children, className }: BacklightProps) {\\n  const id = useId()\\n\\n  return (\\n    <div className={className}>\\n      <svg width=\\\"0\\\" height=\\\"0\\\" aria-hidden=\\\"true\\\">\\n        <filter id={id} y=\\\"-50%\\\" x=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\">\\n          <feGaussianBlur\\n            in=\\\"SourceGraphic\\\"\\n            stdDeviation={blur}\\n            result=\\\"blurred\\\"\\n          ></feGaussianBlur>\\n          <feColorMatrix\\n            type=\\\"saturate\\\"\\n            in=\\\"blurred\\\"\\n            values=\\\"4\\\"\\n          ></feColorMatrix>\\n          <feComposite in=\\\"SourceGraphic\\\" operator=\\\"over\\\"></feComposite>\\n        </filter>\\n      </svg>\\n\\n      <div style={{ filter: `url(#${id})` }}>{children}</div>\\n    </div>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "e2e48a5ee95aa73a8216e23d9a7fba9aa2df7eb07029512832450df834f98aa0"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"backlight\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Backlight\",\n  \"description\": \"A backlight glow effect for videos, images, and SVGs.\",\n  \"dependencies\": [],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/backlight.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

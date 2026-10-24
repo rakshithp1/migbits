@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--vesica",
+    "name": "Vesica",
+    "description": "Vesica shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Vesica/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "041973827e07f93f088644687837559724db10f1aa14a992aa7f27ff719f23f8",
+    "dataUrl": "/imported/shaders/vesica.json",
+    "downloadUrl": "/imported/shaders/vesica.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Vesica/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd} from \"@coreroot/std\"\nimport {vesica} from \"@coreroot/std/shape\"\nimport type {transformColor, transformPosition} from \"@coreroot/utilities/transformations\"\nimport type {BoundingBoxOrigin, DimensionalString, DimensionalValue} from \"@coreroot/types\"\n\nexport interface ComponentProps {\n    origin: BoundingBoxOrigin\n    color: Parameters<typeof transformColor>[0]\n    center: Parameters<typeof transformPosition>[0]\n    radius: number | DimensionalValue | DimensionalString\n    spread: number\n    rotation: number\n    softness: number\n    strokeThickness: number\n    strokeColor: Parameters<typeof transformColor>[0]\n    strokePosition: string\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd({\n    role: 'shape',\n    name: \"Vesica\",\n    description: \"Vesica piscis (lens shape) formed by the intersection of two overlapping circles\",\n    shape: {\n        // Circle `radius`, center separation `spread` (as a fraction of the radius).\n        distance: ({x, y}, u) => vesica(x, y, u('radius'), u('spread')),\n        colorDescription: \"Fill color of the vesica\",\n        centerDescription: \"Center position of the vesica\",\n        bounds: {size: {width: 'radius', height: 'radius'}},\n        shapeProps: {\n            radius: {\n                default: 0.35,\n                description: \"Radius of the two overlapping circles\",\n                ui: { type: 'range', min: 0.05, max: 1, step: 0.01, label: 'Size', group: 'Shape' }\n            },\n            spread: {\n                default: 0.5,\n                description: \"Circle separation — 0 = full circle overlap, 1 = infinitely thin lens\",\n                ui: { type: 'range', min: 0.05, max: 0.95, step: 0.01, label: 'Spread', group: 'Shape' }\n            }\n        }\n    },\n})\n\nexport default componentDefinition\n",
+      "sha256": "b802ea70643866b126cc74afa2cba008c7683d719fca08a1dd455b9a6161a7fe"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

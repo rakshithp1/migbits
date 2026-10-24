@@ -1,0 +1,50 @@
+{
+  "resource": {
+    "id": "magic-ui--border-beam",
+    "name": "Border Beam",
+    "description": "An animated beam of light which travels along the border of its container.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Components",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/border-beam.tsx",
+    "files": 2,
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "71d5a91596d6542ebc68562f9f268901a800c8cf1704159b806734c1ec3fd7ab",
+    "dataUrl": "/imported/magic-ui/border-beam.json",
+    "downloadUrl": "/imported/magic-ui/border-beam.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/border-beam.tsx",
+      "content": "\"use client\"\n\nimport { motion, type MotionStyle, type Transition } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface BorderBeamProps {\n  /**\n   * The size of the border beam.\n   */\n  size?: number\n  /**\n   * The duration of the border beam.\n   */\n  duration?: number\n  /**\n   * The delay of the border beam.\n   */\n  delay?: number\n  /**\n   * The color of the border beam from.\n   */\n  colorFrom?: string\n  /**\n   * The color of the border beam to.\n   */\n  colorTo?: string\n  /**\n   * The motion transition of the border beam.\n   */\n  transition?: Transition\n  /**\n   * The class name of the border beam.\n   */\n  className?: string\n  /**\n   * The style of the border beam.\n   */\n  style?: React.CSSProperties\n  /**\n   * Whether to reverse the animation direction.\n   */\n  reverse?: boolean\n  /**\n   * The initial offset position (0-100).\n   */\n  initialOffset?: number\n  /**\n   * The border width of the beam.\n   */\n  borderWidth?: number\n}\n\nexport const BorderBeam = ({\n  className,\n  size = 50,\n  delay = 0,\n  duration = 6,\n  colorFrom = \"#ffaa40\",\n  colorTo = \"#9c40ff\",\n  transition,\n  style,\n  reverse = false,\n  initialOffset = 0,\n  borderWidth = 1,\n}: BorderBeamProps) => {\n  return (\n    <div\n      className=\"pointer-events-none absolute inset-0 rounded-[inherit] border-(length:--border-beam-width) border-transparent mask-[linear-gradient(transparent,transparent),linear-gradient(#000,#000)] mask-intersect [mask-clip:padding-box,border-box]\"\n      style={\n        {\n          \"--border-beam-width\": `${borderWidth}px`,\n        } as React.CSSProperties\n      }\n    >\n      <motion.div\n        className={cn(\n          \"absolute aspect-square\",\n          \"bg-linear-to-l from-(--color-from) via-(--color-to) to-transparent\",\n          className\n        )}\n        style={\n          {\n            width: size,\n            offsetPath: `rect(0 auto auto 0 round ${size}px)`,\n            \"--color-from\": colorFrom,\n            \"--color-to\": colorTo,\n            ...style,\n          } as MotionStyle\n        }\n        initial={{ offsetDistance: `${initialOffset}%` }}\n        animate={{\n          offsetDistance: reverse\n            ? [`${100 - initialOffset}%`, `${-initialOffset}%`]\n            : [`${initialOffset}%`, `${100 + initialOffset}%`],\n        }}\n        transition={{\n          repeat: Infinity,\n          ease: \"linear\",\n          duration,\n          delay: -delay,\n          ...transition,\n        }}\n      />\n    </div>\n  )\n}\n",
+      "sha256": "ccdfb52cb8f2089e7823a9edfe9c3a52e52ab6759ed5b91d184b1e2bb80cf414"
+    },
+    {
+      "path": "apps/www/public/r/border-beam.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"border-beam\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Border Beam\",\n  \"description\": \"An animated beam of light which travels along the border of its container.\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/border-beam.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport { motion, type MotionStyle, type Transition } from \\\"motion/react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\ninterface BorderBeamProps {\\n  /**\\n   * The size of the border beam.\\n   */\\n  size?: number\\n  /**\\n   * The duration of the border beam.\\n   */\\n  duration?: number\\n  /**\\n   * The delay of the border beam.\\n   */\\n  delay?: number\\n  /**\\n   * The color of the border beam from.\\n   */\\n  colorFrom?: string\\n  /**\\n   * The color of the border beam to.\\n   */\\n  colorTo?: string\\n  /**\\n   * The motion transition of the border beam.\\n   */\\n  transition?: Transition\\n  /**\\n   * The class name of the border beam.\\n   */\\n  className?: string\\n  /**\\n   * The style of the border beam.\\n   */\\n  style?: React.CSSProperties\\n  /**\\n   * Whether to reverse the animation direction.\\n   */\\n  reverse?: boolean\\n  /**\\n   * The initial offset position (0-100).\\n   */\\n  initialOffset?: number\\n  /**\\n   * The border width of the beam.\\n   */\\n  borderWidth?: number\\n}\\n\\nexport const BorderBeam = ({\\n  className,\\n  size = 50,\\n  delay = 0,\\n  duration = 6,\\n  colorFrom = \\\"#ffaa40\\\",\\n  colorTo = \\\"#9c40ff\\\",\\n  transition,\\n  style,\\n  reverse = false,\\n  initialOffset = 0,\\n  borderWidth = 1,\\n}: BorderBeamProps) => {\\n  return (\\n    <div\\n      className=\\\"pointer-events-none absolute inset-0 rounded-[inherit] border-(length:--border-beam-width) border-transparent mask-[linear-gradient(transparent,transparent),linear-gradient(#000,#000)] mask-intersect [mask-clip:padding-box,border-box]\\\"\\n      style={\\n        {\\n          \\\"--border-beam-width\\\": `${borderWidth}px`,\\n        } as React.CSSProperties\\n      }\\n    >\\n      <motion.div\\n        className={cn(\\n          \\\"absolute aspect-square\\\",\\n          \\\"bg-linear-to-l from-(--color-from) via-(--color-to) to-transparent\\\",\\n          className\\n        )}\\n        style={\\n          {\\n            width: size,\\n            offsetPath: `rect(0 auto auto 0 round ${size}px)`,\\n            \\\"--color-from\\\": colorFrom,\\n            \\\"--color-to\\\": colorTo,\\n            ...style,\\n          } as MotionStyle\\n        }\\n        initial={{ offsetDistance: `${initialOffset}%` }}\\n        animate={{\\n          offsetDistance: reverse\\n            ? [`${100 - initialOffset}%`, `${-initialOffset}%`]\\n            : [`${initialOffset}%`, `${100 + initialOffset}%`],\\n        }}\\n        transition={{\\n          repeat: Infinity,\\n          ease: \\\"linear\\\",\\n          duration,\\n          delay: -delay,\\n          ...transition,\\n        }}\\n      />\\n    </div>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "5ed4f31cf1aa2cf44b03d57058b6bc46ae2b100fef426c9bf7f5ee9663ecf66a"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"border-beam\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Border Beam\",\n  \"description\": \"An animated beam of light which travels along the border of its container.\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/border-beam.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

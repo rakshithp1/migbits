@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--radialgradient",
+    "name": "Radial Gradient",
+    "description": "Radial Gradient shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/RadialGradient/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "e338b14e329ea996be2563d45bb4d9ac3b29e86b6781a3eb47d2717aaba02d05",
+    "dataUrl": "/imported/shaders/radialgradient.json",
+    "downloadUrl": "/imported/shaders/radialgradient.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/RadialGradient/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {rampOver, rings, dist, stops} from \"@coreroot/std/paint/fields\"\nimport {transformColor, transformPosition, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\nimport {colorStopsPropConfig, type ColorStop} from \"@coreroot/utilities/colorStops\"\n\nexport type {ColorStop}\n\nexport interface ComponentProps {\n    colorA: Parameters<typeof transformColor>[0],\n    colorB: Parameters<typeof transformColor>[0],\n    stops: ColorStop[] | null,\n    center: Parameters<typeof transformPosition>[0],\n    radius: number,\n    repeat: number,\n    aspect: number,\n    skewAngle: number,\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"RadialGradient\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Radial gradient radiating from a center point\",\n    // When a UV-propagating distortion wraps this generator, the composer supplies a per-pixel\n    // `uvContext` so the gradient evaluates against the distorted UV at full canvas resolution.\n    // Gradients are continuous, so no AA changes are needed.\n    acceptsUVContext: true,\n    props: {\n        colorA: {\n            default: \"#ff0000\",\n            transform: transformColor,\n            description: \"The starting color at the center of the gradient\",\n            ui: { type: 'color', label: 'Color A', group: 'Colors' }\n        },\n        colorB: {\n            default: \"#0000ff\",\n            transform: transformColor,\n            description: \"The ending color at the edge of the gradient\",\n            ui: { type: 'color', label: 'Color B', group: 'Colors' }\n        },\n        stops: colorStopsPropConfig(),\n        center: {\n            default: {\n                x: 0.5,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: \"The center point of the radial gradient\",\n            ui: { type: 'position', label: 'Center', group: 'Position' }\n        },\n        radius: {\n            default: 1,\n            description: \"The radius of the gradient (normalized, 0.0-1.0)\",\n            ui: { type: ['range', 'map'], min: 0, max: 2, step: 0.1, label: 'Radius', group: 'Effect' }\n        },\n        repeat: {\n            default: 1,\n            description: \"Number of times the gradient repeats. Values above 1 create concentric rings.\",\n            ui: { type: ['range', 'map'], min: 1, max: 20, step: 0.5, label: 'Repeat', group: 'Effect' }\n        },\n        aspect: {\n            default: 1,\n            description: \"Stretches the gradient into an ellipse. Values below 1 compress vertically, above 1 compress horizontally.\",\n            ui: { type: ['range', 'map'], min: 0.1, max: 4, step: 0.01, label: 'Aspect', group: 'Effect' }\n        },\n        skewAngle: {\n            default: 0,\n            description: \"Rotates the ellipse axis in degrees. Only visible when Aspect is not 1.\",\n            ui: { type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Skew Angle', group: 'Effect' }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: {\n                type: 'select',\n                options: colorSpaceOptions,\n                label: 'Color Space',\n                group: 'Colors'\n            }\n        }\n    },\n    paint: rampOver(\n        rings(dist.radial({center: p('center'), radius: p('radius'), aspect: p('aspect'), skew: p('skewAngle')}), p('repeat')),\n        stops(p('colorSpace')),\n    )\n})\n\nexport default componentDefinition\n",
+      "sha256": "a37d6df95dd06625abf7cec5bb49cac03f32fd6a783259647f9e72936917e4d7"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

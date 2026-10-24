@@ -1,0 +1,51 @@
+{
+  "resource": {
+    "id": "magic-ui--highlighter",
+    "name": "Highlighter",
+    "description": "A text highlighter that mimics the effect of a human-drawn marker stroke.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Components",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/highlighter.tsx",
+    "files": 2,
+    "dependencies": [
+      "motion",
+      "rough-notation"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "3f63baa4e5321aa613dbe987fd17940bff313b0203c8f20055477098aad05b04",
+    "dataUrl": "/imported/magic-ui/highlighter.json",
+    "downloadUrl": "/imported/magic-ui/highlighter.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/highlighter.tsx",
+      "content": "\"use client\"\n\nimport { useLayoutEffect, useRef } from \"react\"\nimport type React from \"react\"\nimport { useInView } from \"motion/react\"\nimport { annotate } from \"rough-notation\"\nimport { type RoughAnnotation } from \"rough-notation/lib/model\"\n\ntype AnnotationAction =\n  | \"highlight\"\n  | \"underline\"\n  | \"box\"\n  | \"circle\"\n  | \"strike-through\"\n  | \"crossed-off\"\n  | \"bracket\"\n\ninterface HighlighterProps {\n  children: React.ReactNode\n  action?: AnnotationAction\n  color?: string\n  strokeWidth?: number\n  animationDuration?: number\n  iterations?: number\n  padding?: number\n  multiline?: boolean\n  isView?: boolean\n}\n\nexport function Highlighter({\n  children,\n  action = \"highlight\",\n  color = \"#ffd1dc\",\n  strokeWidth = 1.5,\n  animationDuration = 600,\n  iterations = 2,\n  padding = 2,\n  multiline = true,\n  isView = false,\n}: HighlighterProps) {\n  const elementRef = useRef<HTMLSpanElement>(null)\n\n  const isInView = useInView(elementRef, {\n    once: true,\n    margin: \"-10%\",\n  })\n\n  // If isView is false, always show. If isView is true, wait for inView\n  const shouldShow = !isView || isInView\n\n  useLayoutEffect(() => {\n    const element = elementRef.current\n    let annotation: RoughAnnotation | null = null\n    let resizeObserver: ResizeObserver | null = null\n\n    if (shouldShow && element) {\n      const annotationConfig = {\n        type: action,\n        color,\n        strokeWidth,\n        animationDuration,\n        iterations,\n        padding,\n        multiline,\n      }\n\n      const currentAnnotation = annotate(element, annotationConfig)\n      annotation = currentAnnotation\n      currentAnnotation.show()\n\n      resizeObserver = new ResizeObserver(() => {\n        currentAnnotation.hide()\n        currentAnnotation.show()\n      })\n\n      resizeObserver.observe(element)\n      resizeObserver.observe(document.body)\n    }\n\n    return () => {\n      annotation?.remove()\n      if (resizeObserver) {\n        resizeObserver.disconnect()\n      }\n    }\n  }, [\n    shouldShow,\n    action,\n    color,\n    strokeWidth,\n    animationDuration,\n    iterations,\n    padding,\n    multiline,\n  ])\n\n  return (\n    <span ref={elementRef} className=\"relative inline-block bg-transparent\">\n      {children}\n    </span>\n  )\n}\n",
+      "sha256": "521c876ac04938ae747126a5277c14c6eb19114a9a09c3567249a7d2ee2af5b2"
+    },
+    {
+      "path": "apps/www/public/r/highlighter.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"highlighter\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Highlighter\",\n  \"description\": \"A text highlighter that mimics the effect of a human-drawn marker stroke.\",\n  \"dependencies\": [\n    \"motion\",\n    \"rough-notation\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/highlighter.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport { useLayoutEffect, useRef } from \\\"react\\\"\\nimport type React from \\\"react\\\"\\nimport { useInView } from \\\"motion/react\\\"\\nimport { annotate } from \\\"rough-notation\\\"\\nimport { type RoughAnnotation } from \\\"rough-notation/lib/model\\\"\\n\\ntype AnnotationAction =\\n  | \\\"highlight\\\"\\n  | \\\"underline\\\"\\n  | \\\"box\\\"\\n  | \\\"circle\\\"\\n  | \\\"strike-through\\\"\\n  | \\\"crossed-off\\\"\\n  | \\\"bracket\\\"\\n\\ninterface HighlighterProps {\\n  children: React.ReactNode\\n  action?: AnnotationAction\\n  color?: string\\n  strokeWidth?: number\\n  animationDuration?: number\\n  iterations?: number\\n  padding?: number\\n  multiline?: boolean\\n  isView?: boolean\\n}\\n\\nexport function Highlighter({\\n  children,\\n  action = \\\"highlight\\\",\\n  color = \\\"#ffd1dc\\\",\\n  strokeWidth = 1.5,\\n  animationDuration = 600,\\n  iterations = 2,\\n  padding = 2,\\n  multiline = true,\\n  isView = false,\\n}: HighlighterProps) {\\n  const elementRef = useRef<HTMLSpanElement>(null)\\n\\n  const isInView = useInView(elementRef, {\\n    once: true,\\n    margin: \\\"-10%\\\",\\n  })\\n\\n  // If isView is false, always show. If isView is true, wait for inView\\n  const shouldShow = !isView || isInView\\n\\n  useLayoutEffect(() => {\\n    const element = elementRef.current\\n    let annotation: RoughAnnotation | null = null\\n    let resizeObserver: ResizeObserver | null = null\\n\\n    if (shouldShow && element) {\\n      const annotationConfig = {\\n        type: action,\\n        color,\\n        strokeWidth,\\n        animationDuration,\\n        iterations,\\n        padding,\\n        multiline,\\n      }\\n\\n      const currentAnnotation = annotate(element, annotationConfig)\\n      annotation = currentAnnotation\\n      currentAnnotation.show()\\n\\n      resizeObserver = new ResizeObserver(() => {\\n        currentAnnotation.hide()\\n        currentAnnotation.show()\\n      })\\n\\n      resizeObserver.observe(element)\\n      resizeObserver.observe(document.body)\\n    }\\n\\n    return () => {\\n      annotation?.remove()\\n      if (resizeObserver) {\\n        resizeObserver.disconnect()\\n      }\\n    }\\n  }, [\\n    shouldShow,\\n    action,\\n    color,\\n    strokeWidth,\\n    animationDuration,\\n    iterations,\\n    padding,\\n    multiline,\\n  ])\\n\\n  return (\\n    <span ref={elementRef} className=\\\"relative inline-block bg-transparent\\\">\\n      {children}\\n    </span>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "3d9344cc4450c3fdde2044b70be19ac238128f44215259027811185659544a15"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"highlighter\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Highlighter\",\n  \"description\": \"A text highlighter that mimics the effect of a human-drawn marker stroke.\",\n  \"dependencies\": [\n    \"motion\",\n    \"rough-notation\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/highlighter.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

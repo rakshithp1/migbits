@@ -1,0 +1,20 @@
+{
+  "reviewedAt": "2026-10-24",
+  "productionUrl": "https://migbits.com",
+  "deploymentVersion": "38791d99-ae52-46c5-9f8c-f9c3242c8c27",
+  "removedCatalogRecords": 4672,
+  "retainedCatalogRecords": 530,
+  "removedApplicationEffects": ["BlurText", "SpotlightCard"],
+  "importRegenerationPaused": true,
+  "lintPassed": true,
+  "typecheckPassed": true,
+  "unitTestsPassed": 33,
+  "localBrowserTestsPassed": 10,
+  "liveBrowserTestsPassed": 10,
+  "nextProductionBuildPassed": true,
+  "cloudflareBuildPassed": true,
+  "liveHostingCheckGroupsPassed": 9,
+  "gitHistoryRewritten": true,
+  "historyRewriteMethod": "Clean root snapshot; previous commit ancestry removed from published branches.",
+  "scope": "Current deployment, generated public files and current repository tree. Retained resources are source checked; this record does not claim complete runtime or accessibility validation of all resources."
+}

@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--dotgrid",
+    "name": "Dot Grid",
+    "description": "Dot Grid shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/DotGrid/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "b33c2e5f625405237b58b09162341762f443c3a56d8a262ed4c3f64fa8873af3",
+    "dataUrl": "/imported/shaders/dotgrid.json",
+    "downloadUrl": "/imported/shaders/dotgrid.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/DotGrid/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {dotLattice, withAlpha, sampleMapsAtCellCentres} from \"@coreroot/std/paint/patterns\"\nimport {transformColor} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps{\n    color: Parameters<typeof transformColor>[0],\n    density: number\n    dotSize: number\n    offset: number\n    speed: number\n    speedVariance: number\n    twinkle: number\n}\n\n// std generator: paints from coordinates, no child consumed.\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"DotGrid\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Grid of dots with optional twinkling animation\",\n    // When a UV-propagating distortion wraps this generator, the composer supplies a per-pixel\n    // `uvContext` and DotGrid rasterises at full canvas resolution against that distorted UV. The\n    // fwidth-based AA operates on the looked-up UV's derivatives, preserving dot crispness through\n    // arbitrary distortions — much better than RTT bilinear.\n    acceptsUVContext: true,\n    // Per-node animated time: the renderer registers `_animTime`\n    // and advances it by `deltaTime * speed` (speed=0 pauses). The paint noun reads it as the drift.\n    animatedTime: { speed: 'speed' },\n    props: {\n        color: {\n            default: '#ffffff',\n            description: 'The color of the dot',\n            transform: transformColor,\n            ui: {\n                type: 'color',\n                label: 'Color',\n                group: 'Colors'\n            }\n        },\n        density: {\n            default: 30,\n            description: 'The number of dots along the canvas height (the width fits as many as the aspect ratio allows)',\n            ui: {\n                type: 'range',\n                min: 1,\n                max: 200,\n                step: 1,\n                label: 'Density',\n                group: 'Effect'\n            }\n        },\n        dotSize: {\n            default: 0.3,\n            description: 'The size of each dot, zero (0) being invisible, one (1) filled the grid with no gaps',\n            ui: {\n                type: ['range', 'map'],\n                min: 0,\n                max: 1,\n                step: 0.01,\n                label: 'Dot Size',\n                group: 'Effect'\n            }\n        },\n        offset: {\n            default: 0,\n            description: 'Horizontal stagger of alternating rows (0.5 = classic polka-dot brick offset)',\n            ui: {\n                type: ['range', 'map'],\n                min: 0,\n                max: 1,\n                step: 0.01,\n                label: 'Row Offset',\n                group: 'Effect'\n            }\n        },\n        speed: {\n            default: 0,\n            description: 'Animates the rows drifting horizontally (0 = static)',\n            ui: {\n                type: 'range',\n                min: -3,\n                max: 3,\n                step: 0.01,\n                label: 'Speed',\n                group: 'Animation'\n            }\n        },\n        speedVariance: {\n            default: 0.3,\n            description: 'Per-row random speed variance for irregular drifting motion',\n            ui: {\n                type: 'range',\n                min: 0,\n                max: 1,\n                step: 0.01,\n                label: 'Speed Variance',\n                group: 'Animation'\n            }\n        },\n        twinkle: {\n            default: 0,\n            description: 'Intensity of the twinkle effect (0 = off, 1 = full twinkle)',\n            ui: {\n                type: ['range', 'map'],\n                min: 0,\n                max: 1,\n                step: 0.1,\n                label: 'Twinkle',\n                group: 'Animation'\n            }\n        }\n    },\n    // Sample mapped props (dotSize, twinkle) at the cell centre rather than the fragment position.\n    // Without this, dotSize varies per-fragment within a cell, clipping dots at source boundaries\n    // instead of keeping them fully circular.\n    mapSampleUVs: sampleMapsAtCellCentres({\n        cells: p('density'),\n        props: ['dotSize', 'twinkle'],\n    }),\n\n    // The recipe: the dot-lattice coverage carries the alpha under the dot color.\n    paint: withAlpha(p('color'), dotLattice({\n        density: p('density'),\n        dotSize: p('dotSize'),\n        offset: p('offset'),\n        speedVariance: p('speedVariance'),\n        twinkle: p('twinkle'),\n    }))\n})\n\nexport default componentDefinition\n",
+      "sha256": "43b92e7413662b1d141ed67f8881195218344bada46fed27b40db35e700e5446"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

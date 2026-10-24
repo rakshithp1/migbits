@@ -1,0 +1,56 @@
+{
+  "project": "Motion Primitives",
+  "repository": "https://github.com/ibelick/motion-primitives",
+  "revision": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/LICENCE.md",
+  "licenseSha256": "f668f5ef3635eb906f10b1eea9a32e449eb6e1a183ab6879ef6d56c0980dd2f3",
+  "modifications": [
+    "Changed utility imports to relative paths and normalized source to LF.",
+    "Added a shared reduced-motion/visibility policy and paused props; changed border mask composition to preserve the visible ring.",
+    "Guarded text-loop intervals and empty children.",
+    "Added a controlled animated-background value, typed child events, and preserved existing child handlers.",
+    "Clamped transition-panel indexes and added static fallbacks.",
+    "Added magnetic-effect dependency fixes and removed synchronous effect state updates.",
+    "Used stable module-level motion tags for the staggered group; as supports div/section/nav/ul/ol/span and asChild supports div/li/span.",
+    "Added original reusable examples and styles; these additions are identified separately from upstream files."
+  ],
+  "files": [
+    {
+      "path": "components/motion/text-loop.tsx",
+      "upstreamPath": "components/core/text-loop.tsx",
+      "upstreamSha256": "87707ae5f7a3e13f1e6d348e735e65b05d742dc24343d20b6470f8b857d0d2d4",
+      "sha256": "9fd4154f99f253d2f185f693a440857d00a068043071e0b75ba41ce0f3d1f9ef"
+    },
+    {
+      "path": "components/motion/animated-background.tsx",
+      "upstreamPath": "components/core/animated-background.tsx",
+      "upstreamSha256": "fa592713c408eaf58b21976c20737d84239c42a0b7e47cf9e7843121b1c0852c",
+      "sha256": "5feb723f51efd19b23a1587f63a4ba3aea27f14b2968837b702cf735a6253b0a"
+    },
+    {
+      "path": "components/motion/transition-panel.tsx",
+      "upstreamPath": "components/core/transition-panel.tsx",
+      "upstreamSha256": "1b3c67058a09a560a034b7fe52ad1c205b589a63ed80055900e8a66830db0be2",
+      "sha256": "cae3fdf16f843d5d52c3514431d73ffd934920d365ca7a26ad7c9577d325ea41"
+    },
+    {
+      "path": "components/motion/border-trail.tsx",
+      "upstreamPath": "components/core/border-trail.tsx",
+      "upstreamSha256": "6b6334b83c97304c68143a45971fe492aaf24676047d05e4fec13cd42cefe916",
+      "sha256": "e69a70eafb2acf4e870bd64bb1aba631ecc8de13eadfa0b42993eb95b5177d86"
+    },
+    {
+      "path": "components/motion/magnetic.tsx",
+      "upstreamPath": "components/core/magnetic.tsx",
+      "upstreamSha256": "3fd95392d2c7929336a25e513130c26ae4b57af695fceb01378800cd10522762",
+      "sha256": "8b85b3f3993f74d45005af2b7eacb7e76a883303e48978234715d331a1f7db23"
+    },
+    {
+      "path": "components/motion/animated-group.tsx",
+      "upstreamPath": "components/core/animated-group.tsx",
+      "upstreamSha256": "0c162bbdd3c332e7aa113cd7ddfa7ac36de3184866cb82ad9140525561e08c35",
+      "sha256": "a8672f06c7115ea01973478571322b156af288b630a5f3f0fdb8dfd7581c961d"
+    }
+  ]
+}

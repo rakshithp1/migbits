@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--flowfield",
+    "name": "Flow Field",
+    "description": "Flow Field shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/FlowField/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "2e73df88061868289f9cb498061163ee67cdd0f14922f4cfc509de314c2ac128",
+    "dataUrl": "/imported/shaders/flowfield.json",
+    "downloadUrl": "/imported/shaders/flowfield.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/FlowField/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {flowNoise} from \"@coreroot/std/warps\"\nimport {transformEdges} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    strength: number\n    detail: number\n    speed: number\n    evolutionSpeed: number\n    seed: number\n    edges: Parameters<typeof transformEdges>[0]\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"FlowField\",\n    role: 'warp',\n    category: \"Distortions\",\n    description: \"Fluid-like distortion with constant smooth motion\",\n    boundingBoxDeclaration: { aspectRatio: null },\n    // Two independent animated clocks: the primary `speed` (flow drift) → `_animTime`, and\n    // `evolutionSpeed` (pattern reshape) → `_animTime_evolution`. Both advance CPU-side each frame.\n    animatedTime: { speed: 'speed' },\n    extraAnimatedTimes: { evolution: 'evolutionSpeed' },\n    props: {\n        strength: {\n            default: 0.15,\n            description: \"Intensity of the flow distortion\",\n            ui: { type: ['range', 'map'], min: 0, max: 0.5, step: 0.01, label: 'Strength', group: 'Effect' }\n        },\n        detail: {\n            default: 2,\n            description: \"Scale of the flow patterns\",\n            ui: { type: ['range', 'map'], min: 0.5, max: 5, step: 0.1, label: 'Detail', group: 'Effect' }\n        },\n        speed: {\n            default: 0,\n            description: \"Speed of the flow\",\n            ui: { type: 'range', min: 0, max: 20, step: 0.1, label: 'Speed', group: 'Animation' }\n        },\n        evolutionSpeed: {\n            default: 0,\n            description: \"How fast the flow field pattern reshapes over time\",\n            ui: { type: 'range', min: 0, max: 20, step: 0.1, label: 'Evolution Speed', group: 'Animation' }\n        },\n        seed: {\n            default: 0,\n            description: \"Random seed for flow pattern variation\",\n            ui: { type: ['range', 'map'], min: 0, max: 100, step: 1, label: 'Seed', group: 'Effect' }\n        },\n        edges: {\n            default: 'mirror',\n            description: 'How to handle edges when distortion pushes content out of bounds',\n            transform: transformEdges,\n            compileTime: true,\n            ui: {\n                type: 'select',\n                options: [\n                    {label: 'Stretch', value: 'stretch'},\n                    {label: 'Transparent', value: 'transparent'},\n                    {label: 'Mirror', value: 'mirror'},\n                    {label: 'Wrap', value: 'wrap'}\n                ],\n                label: 'Edges',\n                group: 'Effect'\n            }\n        }\n    },\n    map: flowNoise({strength: p('strength'), detail: p('detail'), seed: p('seed')}),\n})\n\nexport default componentDefinition\n",
+      "sha256": "7deaf09a5360b2e225b61380c009d2a2b1edcac13a1fa3cfc354c7fc84e02ba0"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--checkerwipe",
+    "name": "Checker Wipe",
+    "description": "Checker Wipe shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/CheckerWipe/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "22863d9c9550aa56093803158cc76dd4d648babfe2a0a9074a274d6b6eb0f280",
+    "dataUrl": "/imported/shaders/checkerwipe.json",
+    "downloadUrl": "/imported/shaders/checkerwipe.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/CheckerWipe/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {reveal, coverage} from \"@coreroot/std/effects/reveal\"\nimport {transformBoolean} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    progress: number\n    blockSize: number\n    softness: number\n    invert: boolean\n}\n\n// The classic staggered checkerboard: even-parity cells sweep away corner-to-corner over the first\n// half of progress, odd-parity cells over the second. `softness` cross-fades cells (0 = hard\n// on/off squares).\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"CheckerWipe\",\n    role: 'filter',\n    species: 'pointwise',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Transitions\",\n    description: \"Wipe the content away as a checkerboard of fading squares\",\n    props: {\n        progress: {\n            default: 0.5,\n            description: \"How far the wipe has progressed (0 = fully visible, 1 = fully wiped away)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Progress', group: 'Transition' }\n        },\n        blockSize: {\n            default: 0.1,\n            description: \"Size of each square as a fraction of the frame width\",\n            ui: { type: ['range', 'map'], min: 0.02, max: 0.5, step: 0.01, label: 'Block Size', group: 'Transition' }\n        },\n        softness: {\n            default: 0.15,\n            description: \"How softly each square fades out (0 = hard-edged squares)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Softness', group: 'Transition' }\n        },\n        invert: {\n            default: false,\n            transform: transformBoolean,\n            description: \"Reverse the order the squares wipe in\",\n            ui: { type: 'checkbox', label: 'Invert', group: 'Transition' }\n        }\n    },\n    effect: reveal({\n        coverage: coverage.cells(p('blockSize')).checker(),\n        progress: p('progress'),\n        feather: p('softness'),\n        invert: p('invert'),\n    }),\n    missingChildMessage: 'You must pass a child component into the Checker Wipe shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "c5dc46607a36e9622987f2095a2831c06c1e9a735ad0e0a05c5d22d0ef8a68ff"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

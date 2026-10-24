@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--chalkboard",
+    "name": "Chalkboard",
+    "description": "Chalkboard shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Chalkboard/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "5fa55fe7b6a95abf94270b1be6218ae7ddb0338a968ede7b6b08388f5a3e7113",
+    "dataUrl": "/imported/shaders/chalkboard.json",
+    "downloadUrl": "/imported/shaders/chalkboard.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Chalkboard/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {chalkSketch, sobelTaps} from \"@coreroot/std/effects/stylize\"\nimport {transformColor} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    boardColor: Parameters<typeof transformColor>[0]\n    chalkColor: Parameters<typeof transformColor>[0]\n    edgeSensitivity: number\n    edgeThickness: number\n    shading: number\n    hatchScale: number\n    grain: number\n}\n\n// std gather filter: samples the composed child at the 8 Sobel taps + centre (straight alpha),\n// luminance-reduces, then composes the chalk drawing. Multi-tap → not a uvRemap candidate.\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"Chalkboard\",\n    role: 'filter',\n    species: 'gather',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Stylize\",\n    description: \"Renders content as a chalk drawing on a blackboard, with edge strokes and cross-hatch shading\",\n    props: {\n        boardColor: {\n            default: \"#000000\",\n            transform: transformColor,\n            description: \"Background board color\",\n            ui: { type: 'color', label: 'Board', group: 'Colors' }\n        },\n        chalkColor: {\n            default: \"#eceadb\",\n            transform: transformColor,\n            description: \"Chalk stroke color\",\n            ui: { type: 'color', label: 'Chalk', group: 'Colors' }\n        },\n        edgeSensitivity: {\n            default: 0.5,\n            description: \"How readily edges are detected and drawn as chalk strokes\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Edge Sensitivity', group: 'Effect' }\n        },\n        edgeThickness: {\n            default: 1.5,\n            description: \"Thickness of the chalk outline strokes\",\n            ui: { type: ['range', 'map'], min: 0.5, max: 4, step: 0.1, label: 'Edge Thickness', group: 'Effect' }\n        },\n        shading: {\n            default: 0.05,\n            description: \"Amount of cross-hatch shading filling darker regions\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Shading', group: 'Effect' }\n        },\n        hatchScale: {\n            default: 16,\n            description: \"Spacing of the cross-hatch lines in pixels\",\n            ui: { type: ['range', 'map'], min: 3, max: 24, step: 0.5, label: 'Hatch Scale', group: 'Effect' }\n        },\n        grain: {\n            default: 0.45,\n            description: \"Chalk dustiness / grain that breaks up the strokes\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Grain', group: 'Effect' }\n        }\n    },\n\n    // The recipe: the Sobel tap ring's edge magnitude becomes the stroke outline; the compose\n    // fills darker regions with cross-hatch line families and breaks the strokes with value-noise\n    // dust over the board color.\n    effect: chalkSketch({\n        edges: sobelTaps({spacing: p('edgeThickness')}),\n        sensitivity: p('edgeSensitivity'),\n        hatchScale: p('hatchScale'),\n        shading: p('shading'),\n        grain: p('grain'),\n        board: p('boardColor'),\n        chalk: p('chalkColor'),\n    }),\n})\n\nexport default componentDefinition\n",
+      "sha256": "3e5eb0eb231540bb405bdcbf28df3601e239aefe01c0f06fdd966391225f2526"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

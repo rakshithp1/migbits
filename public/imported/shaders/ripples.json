@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--ripples",
+    "name": "Ripples",
+    "description": "Ripples shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Ripples/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "0b082967108c571c1fca731dc3f6c6bfe09310eee19f161967508db73873d92a",
+    "dataUrl": "/imported/shaders/ripples.json",
+    "downloadUrl": "/imported/shaders/ripples.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Ripples/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {ringWaves, strokeOver} from \"@coreroot/std/paint/patterns\"\nimport {transformColor, transformPosition} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    center: Parameters<typeof transformPosition>[0],\n    colorA: Parameters<typeof transformColor>[0],\n    colorB: Parameters<typeof transformColor>[0],\n    speed: number,\n    frequency: number,\n    softness: number,\n    thickness: number,\n    phase: number\n}\n\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"Ripples\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Concentric animated ripples emanating from a point\",\n    acceptsUVContext: true,\n    // Per-node animated time: the renderer registers `_animTime` and advances it by\n    // `deltaTime * speed` (speed=0 pauses, negative reverses). The paint noun reads it as the\n    // outward ripple motion.\n    animatedTime: { speed: 'speed' },\n    props: {\n        center: {\n            default: {\n                x: 0.5,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: \"The center point where ripples emanate from\",\n            ui: { type: 'position', label: 'Center', group: 'Position' }\n        },\n        colorA: {\n            default: \"#ffffff\",\n            transform: transformColor,\n            description: \"Color of the ripple waves\",\n            ui: { type: 'color', label: 'Color A', group: 'Colors' }\n        },\n        colorB: {\n            default: \"#000000\",\n            transform: transformColor,\n            description: \"Background color between ripples\",\n            ui: { type: 'color', label: 'Color B', group: 'Colors' }\n        },\n        speed: {\n            default: 1.0,\n            description: 'Speed of ripple animation',\n            ui: { type: 'range', min: -5, max: 5, step: 0.1, label: 'Speed', group: 'Animation' }\n        },\n        frequency: {\n            default: 20.0,\n            description: 'Number of ripples/spacing between them',\n            ui: { type: ['range', 'map'], min: 1, max: 80, step: 0.1, label: 'Frequency', group: 'Effect' }\n        },\n        softness: {\n            default: 0,\n            description: 'Softness of ripple edges',\n            ui: { type: ['range', 'map'], min: 0, max: 3, step: 0.1, label: 'Softness', group: 'Effect' }\n        },\n        thickness: {\n            default: 0.5,\n            description: 'Thickness of each ripple band',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Thickness', group: 'Effect' }\n        },\n        phase: {\n            default: 0,\n            description: 'Phase offset for ripple animation',\n            ui: { type: ['range', 'map'], min: 0, max: 6.28, step: 0.1, label: 'Phase', group: 'Animation' }\n        }\n    },\n\n    // The recipe: the concentric ring mask (animated by the node's clock plus `phase`) strokes\n    // the ring color over the background, alpha-weighted in linear space.\n    paint: strokeOver({\n        fill: p('colorB'),\n        stroke: p('colorA'),\n        mask: ringWaves({\n            center: p('center'),\n            frequency: p('frequency'),\n            thickness: p('thickness'),\n            softness: p('softness'),\n            phase: p('phase'),\n        }),\n    })\n})\n\nexport default componentDefinition\n",
+      "sha256": "1c59e67820403aa9c02373a35dc049cb9477e4b52e63be2921cae82a7eb2e71c"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

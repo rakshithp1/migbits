@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--nav-breadcrumb",
+    "name": "Nav / Breadcrumb-led",
+    "description": "Path is the primary nav. For deep hierarchies - docs, atlases, catalogue subsections.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/nav/breadcrumb.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "cf3e62654b6141a949fba0f8dc01d6409531149bb86b28b8a8f64eee7d7d44bc",
+    "dataUrl": "/imported/inspo/nav-breadcrumb.json",
+    "downloadUrl": "/imported/inspo/nav-breadcrumb.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/nav/breadcrumb.tsx",
+      "content": "/* inspo-reference-component\n * type= nav | genre= editorial | theme= Inspo-paper\n * archetype= N8 Breadcrumb-led | diversification= path is the primary\n *   nav, top-level links collapse to actions\n * states= default · hover · focus-visible\n * contrast= pass (46-50)\n */\n\n/**\n * Breadcrumb-led nav - the page tells you exactly where you are\n * before it tells you where else to go. Reach for it on deep\n * hierarchies (docs, atlases, catalogue subsections). The wordmark\n * stays in the path; actions sit to the right.\n */\nexport function NavBreadcrumb() {\n  return (\n    <header className=\"border-y rule bg-[var(--color-bg)] px-8 py-5 sm:px-14\">\n      <div className=\"flex flex-wrap items-baseline justify-between gap-y-3 gap-x-6\">\n        <nav aria-label=\"Breadcrumb\" className=\"flex items-baseline gap-2 text-meta\">\n          <a href=\"#\" className=\"font-display normal-case tracking-tight text-base text-[var(--color-fg)] hover:text-[var(--color-accent)]\">\n            Inspo<span className=\"text-[var(--color-accent)]\">.</span>\n          </a>\n          <span aria-hidden className=\"text-[var(--color-fg-muted)]\">/</span>\n          <a href=\"#\" className=\"hover:text-[var(--color-accent)]\">\n            Components\n          </a>\n          <span aria-hidden className=\"text-[var(--color-fg-muted)]\">/</span>\n          <span className=\"text-[var(--color-fg)]\">Pricing</span>\n          <span aria-hidden className=\"text-[var(--color-fg-muted)]\">/</span>\n          <span className=\"text-[var(--color-fg-muted)]\">Toggle</span>\n        </nav>\n\n        <div className=\"flex items-center gap-3\">\n          <button\n            type=\"button\"\n            className=\"text-meta border rule px-3 py-1.5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]\"\n          >\n            Copy code\n          </button>\n          <button\n            type=\"button\"\n            className=\"text-meta border rule px-3 py-1.5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]\"\n          >\n            Open in MCP\n          </button>\n        </div>\n      </div>\n    </header>\n  );\n}\n",
+      "sha256": "198d736d1cd9ee943c2ad079c4a766e2cfd25cb60e9c18e276896b6744398552"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "N8 Breadcrumb",
+    "Type": "nav"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

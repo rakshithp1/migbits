@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--filmstock",
+    "name": "Film Stock",
+    "description": "Film Stock shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/FilmStock/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "3846df05f4b63b634fa7fbf2db8e22909b45aeb674d3cce34d47badf6c17ad7f",
+    "dataUrl": "/imported/shaders/filmstock.json",
+    "downloadUrl": "/imported/shaders/filmstock.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/FilmStock/index.ts",
+      "content": "import type {GpuShaderDefinition, GpuFragmentParams, KitTexture, Expr} from \"@coreroot/gpu/porters\"\nimport {call, ZERO} from \"@coreroot/gpu/porters\"\nimport {defineStd, crosses, p as prop, schema} from \"@coreroot/std\"\nimport {lutAtlasGrade} from \"@coreroot/std/effects/color\"\nimport {screenedBloom, frameSway} from \"@coreroot/std/effects/blurs\"\nimport {blend} from \"@coreroot/gpu/kit\"\nimport {LUT_SIZE, STOCK_OPTIONS, decodeStockLut} from \"./stockLuts\"\n\n// The stock color grades are real measured film-emulation LUTs from the RawTherapee Film\n// Simulation Collection by Pat David, Pavlov Dmitry and Michael Ezra (CC BY-SA 4.0,\n// https://rawpedia.rawtherapee.com/Film_Simulation), downsampled one-time to 17³ in\n// stockLuts.ts (whose header records each stock's source file). The LUT data remains\n// CC BY-SA 4.0; our stock names are aliases for the classic stocks each LUT approximates.\n\nexport interface ComponentProps {\n    stock: string\n    strength: number\n    halation: number\n    halationRadius: number\n    weave: number\n}\n\n/** Halation tint — the red-orange of emulsion backscatter (fixed; real stocks all glow warm). */\nconst HAL_TINT: [number, number, number] = [1.0, 0.38, 0.16]\n/** Highlight-extraction threshold for halation (the red-orange emulsion backscatter). */\nconst HALATION_THRESHOLD = 0.62\n\n// The recipe's three stages, as std vocabulary: gate weave (frameSway — jitter the sample UV on\n// a gated clock) → LUT grade (lutAtlasGrade over the stock's measured 17³ LUT) → halation\n// (screenedBloom — screen the warm highlight bloom back in). Module-level so the compute hook\n// and the fragment read the SAME part.\nconst weaveStage = frameSway({amount: prop('weave'), field: 'weaveTime'})\nconst gradeStage = lutAtlasGrade({\n    select: prop('stock'), strength: prop('strength'),\n    size: LUT_SIZE, decode: decodeStockLut, fallback: 'portrait400', label: 'filmstock-lut',\n})\nconst halationStage = screenedBloom({\n    strength: prop('halation'), radius: prop('halationRadius'),\n    tint: HAL_TINT, threshold: HALATION_THRESHOLD,\n    output: 'halationTexture', extractName: 'filmStockHalationExtract',\n})\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"FilmStock\",\n    role: 'filter',\n    species: 'custom',\n    boundingBoxDeclaration: {aspectRatio: null},\n    category: \"Adjustments\",\n    description: \"Real analog film color from measured film-emulation LUTs — ten classic stock looks with emulsion halation and projector gate weave\",\n    requiresRTT: true,\n    requiresChild: true,\n    // Per-frame gate-weave drift accumulator (advances only while enabled) — driven by the\n    // frameSway stage's onBeforeRender hook.\n    extraFields: {\n        weaveTime: {schema: schema.f32, initial: 0},\n    },\n    props: {\n        stock: {\n            default: 'portrait400',\n            description: 'Film stock — each look is a real measured film-emulation color LUT',\n            compileTime: true,\n            ui: {\n                type: 'select',\n                options: [...STOCK_OPTIONS],\n                label: 'Stock',\n                group: 'Stock',\n            },\n        },\n        strength: {\n            default: 1,\n            description: \"How strongly the stock's color grade is applied\",\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Strength', group: 'Stock'},\n        },\n        halation: {\n            default: 0.4,\n            // The screen-blend strength: slider 1 = internal 10 (the un-scaled glow was too subtle\n            // to read as emulsion bloom at sane slider values).\n            transform: (value: number) => value * 10,\n            description: 'Strength of the red-orange highlight glow (film emulsion backscatter)',\n            // Recompose only when halation crosses 0 (adds/removes the highlight-bloom compute pass).\n            recompile: crosses(0),\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Halation', group: 'Halation'},\n        },\n        halationRadius: {\n            default: 28,\n            description: 'Spread of the halation glow in pixels',\n            ui: {type: 'range', min: 0, max: 100, step: 1, label: 'Halation Radius', group: 'Halation'},\n        },\n        weave: {\n            default: 0,\n            description: 'Gate weave — subtle projector-like frame jitter and rotation',\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Gate Weave', group: 'Weave'},\n        },\n    },\n\n    // Stage 3's compute half — the halation highlight-bloom pre-pass.\n    compute: halationStage.compute,\n\n    // The composed fragment: gate weave → LUT grade → halation screen. The child RTT is\n    // premultiplied → recover straight alpha at the woven UV before grading.\n    gpu: {fragment: (params: GpuFragmentParams): Expr => {\n        const {childNode, computeOutputs, convertToTexture} = params\n        if (!childNode) {\n            console.error('You must pass a child component into the FilmStock shader.')\n            return ZERO\n        }\n\n        // Child RTT: the compute pass's copy when halation ran, else our own boundary (weave still needs it).\n        const childTex = (computeOutputs?.childTexture as KitTexture | undefined) ?? convertToTexture(childNode)\n\n        const wovenUv = weaveStage(params)\n        const straight = call(blend.unpremultiplyAlpha, 'unpremultiplyAlpha', [childTex.sample(wovenUv)])\n        return halationStage.screen(gradeStage(straight, params), wovenUv, params)\n    }},\n})\n\nexport default componentDefinition\n",
+      "sha256": "8d0e36f0a22c08c7802a87a20bd0a6c6db247a3554225a50e0d7c24818924478"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

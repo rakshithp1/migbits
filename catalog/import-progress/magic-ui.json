@@ -1,0 +1,2007 @@
+{
+  "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+  "licenseSha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba",
+  "archiveSha256": "3ca9cbcbb439e2b5a354362b080830b2dad96cd34a4f76de63c4b9f75443fb63",
+  "items": [
+    {
+      "key": "index",
+      "id": "magic-ui--index",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6c9daa613f11a6a6d4edea61d98e79579a38d5fadd7de6b35da24cdfb8d089b9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "magic-card",
+      "id": "magic-ui--magic-card",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "76e88dcf8ebd50ee136c6b4ae7297e4c7d69d7ea45a75586427ab718619bf780",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "android",
+      "id": "magic-ui--android",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d589e6e716bfc50c4a06264bb71659d9cf22128e93ed1ed96075f4b07edd8267",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "warp-background",
+      "id": "magic-ui--warp-background",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "be9bfa5dd794293a76ff9e4acdffea4b5c9328c323d9d5e71e00a7804cb01505",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "line-shadow-text",
+      "id": "magic-ui--line-shadow-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8ddee5b1e877b3f1aceb1b41630b2e6b3d084dcc7f7388ea51f6508c960698c9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "aurora-text",
+      "id": "magic-ui--aurora-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c31bac30bdc485419bb93d54f8330fd08532744303bc36322edf7742142d1727",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "morphing-text",
+      "id": "magic-ui--morphing-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ec44331089b89c3844c4de86edff51f0a4340c75e1b3d6614f7208f0655a4c19",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "scroll-progress",
+      "id": "magic-ui--scroll-progress",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4b23b6ddf23379f00b58b1bb7e5944bef0c630c951713fc15adad36e259b18ef",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "lens",
+      "id": "magic-ui--lens",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a6f5be9d2406db94cab9ee644975c3c30080d11f2351796f0329d7698d931c25",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pointer",
+      "id": "magic-ui--pointer",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "399ac2157a1b4e84ad3aa8b499bb83d2df5a3a300180241d957533015b441ea9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "smooth-cursor",
+      "id": "magic-ui--smooth-cursor",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e74223bcbce3b2f9962bdc508381f937d93ed1fa8398480e2aeadccf9b590584",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "progressive-blur",
+      "id": "magic-ui--progressive-blur",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d01aef97be1273ba02af4744f60b0cf5c0d58fbf626b6eab51e2f18682f06c83",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "neon-gradient-card",
+      "id": "magic-ui--neon-gradient-card",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8a77d51f048343bdff5381eadddf5e145918d50e4185aee880a3ba4dc241eb10",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "noise-texture",
+      "id": "magic-ui--noise-texture",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "84fd2b48ba2059242ad439438d82dca673631aaec823cc1e3a604d6af7f374b8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "meteors",
+      "id": "magic-ui--meteors",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f2c56deca7778fa8a4c8cc59b957c8d53bc6e971e11091090ee14766566c2d76",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "grid-pattern",
+      "id": "magic-ui--grid-pattern",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "51829c0c00e87b056db5cb0654fab95a96ef1cf07a2af757ebc7b99151d0c8ae",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hexagon-pattern",
+      "id": "magic-ui--hexagon-pattern",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "95dfd2c584445c730d23042be58ddf8bbbf0455a811e2b564299d8a40d2c6296",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "striped-pattern",
+      "id": "magic-ui--striped-pattern",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "56e3a7fa6bbb1439b705414fcb15e2902d508b28ba2ba0f7b5da899aa67eb0f6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "interactive-grid-pattern",
+      "id": "magic-ui--interactive-grid-pattern",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "90e13cb1d0fda13633a1db3486998180bab6ca4796701280e265185b6c9c44c4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dot-pattern",
+      "id": "magic-ui--dot-pattern",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0f43ab22ad19e90304871bcff0fa2d59521e7bd29d6e11371c9c23a77b21189a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "flickering-grid",
+      "id": "magic-ui--flickering-grid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3b684a8671d7d5f72257e01604382727403c94547719035b4d422e84991278a6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hero-video-dialog",
+      "id": "magic-ui--hero-video-dialog",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "be2ed7f1ffea2cc89de8cc4340b49975171f3caa521ab51b0bb285cf662fa38f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "code-comparison",
+      "id": "magic-ui--code-comparison",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3b18891479c366b8854c5305c8c760233b049a36ab18f50a5eb2edbef48d13a4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "marquee",
+      "id": "magic-ui--marquee",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "507df2d6450bad3ee96bb6bdf96ab5e89342b8c0a5588265121996b7b0777ff9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "globe",
+      "id": "magic-ui--globe",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "69071da5863daa82733054be689274d9405e634e9273014268574fce3a9170d3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "glyph-matrix",
+      "id": "magic-ui--glyph-matrix",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3ff2dbc915f659c94f1045f70342aa4ee84577722f1b7b6688151dd5614bf63f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "glare-hover",
+      "id": "magic-ui--glare-hover",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1d4913a34cce352892ff82a78865ccbf5df75314ceb857eba2d8ab3abcf96f34",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "shimmer-button",
+      "id": "magic-ui--shimmer-button",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "eef2833e809410757c455010c0f2e9a86864660e7dc467429a9e42cfe2b7ce1b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "tweet-card",
+      "id": "magic-ui--tweet-card",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ad45670b51fde507b89c8625fc62f4e3702c4d0175c1e5f5bad5f7a96a182f3f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "client-tweet-card",
+      "id": "magic-ui--client-tweet-card",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "89c88a8d834938a3f92f416a41a902036dcccaa55ae57f14747e600a2b69ff98",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "bento-grid",
+      "id": "magic-ui--bento-grid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "524978dca2956a40b2682557c11032a4d88a9f19d3bbaecbe729bbacb4a8bf56",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "particles",
+      "id": "magic-ui--particles",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "417458fae69b758472d900dffe7ba8a0bac9b87e9af86b64cc6b3addc2c3d49a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "number-ticker",
+      "id": "magic-ui--number-ticker",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "57580081ac7af3070e22a805a0cdb2fb2178a5ced34476f4ecd4a430bb477275",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ripple",
+      "id": "magic-ui--ripple",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "379c35562b55d343c443493f045a53b6c4d75f6d016add913dc8383624894a50",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "retro-grid",
+      "id": "magic-ui--retro-grid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2f554327d368d15a33966628ea792057d2cb713aae01afd5fd226a846c6cc9d5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-list",
+      "id": "magic-ui--animated-list",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a58812d0936972958286887c0b6c24477d810697bc34aa0f2011e7a58503b9bb",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-shiny-text",
+      "id": "magic-ui--animated-shiny-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4d7063b807165abf46b4bd08611e8b5a44ed9cf6809ee9770a202e1eccd5535a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-grid-pattern",
+      "id": "magic-ui--animated-grid-pattern",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a411057034244d39a6958064323302a807c0c67c31947ba07297b5eaaaafb48a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "border-beam",
+      "id": "magic-ui--border-beam",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "71d5a91596d6542ebc68562f9f268901a800c8cf1704159b806734c1ec3fd7ab",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-beam",
+      "id": "magic-ui--animated-beam",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b2ee479a13e09c99e3d2b46beb7967cb983b9acfba822ca460cec3c1c2fcb05e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-reveal",
+      "id": "magic-ui--text-reveal",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a8674663bd9296f5afdbae7ee1832438d7a90a4793d43b31b01142cd138d8813",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dia-text-reveal",
+      "id": "magic-ui--dia-text-reveal",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d01a0e951ce8696597e61f24a141aebc06b55e8f1701ca87a0b30776d0d0317e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hyper-text",
+      "id": "magic-ui--hyper-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c430ac3be8ca61d6214e5db81afa83c655c3f46a900a7bd03b211cbe09e32d3e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-gradient-text",
+      "id": "magic-ui--animated-gradient-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a31f0e99f8350de3bef513826a173bb6dee64634713408d3c17d60b6ce4b787b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "orbiting-circles",
+      "id": "magic-ui--orbiting-circles",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1709aca661606a69dbccea8cf15b1ce91c875d774f25a506132311604638b207",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dock",
+      "id": "magic-ui--dock",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c6d5370dcb42f919ec0d8db7b8f6484d233b5e101f5ade3efc3419f3cabc373f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "word-rotate",
+      "id": "magic-ui--word-rotate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a9e460ef9042f85fb6388c13ffb1c222e2e072d2792423fdcfdb420514d9a059",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "avatar-circles",
+      "id": "magic-ui--avatar-circles",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c7953d72669a1b4b134417e46f385db4f077d05af960eddbe7cc3ce689cbbe4f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "typing-animation",
+      "id": "magic-ui--typing-animation",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e9a5430ee667abeed347646e4cd816201e7ef579940399260f1d90ecf0db88b3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "sparkles-text",
+      "id": "magic-ui--sparkles-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "dfc0bd9eadde26b2b2e0bf309f33616c72a8911d3775cb2251fbe73f7e8cf744",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "spinning-text",
+      "id": "magic-ui--spinning-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4f2228952bb751c06606292011577f6e455f523b194b1c203d23f49e230d11c4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "comic-text",
+      "id": "magic-ui--comic-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "236453c86003563bf448ad98f02ef08513f18d230e541015bd3d012b15f093c1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "icon-cloud",
+      "id": "magic-ui--icon-cloud",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b7030a644c76f60b4e0bcdde247ea15caf0f7c6310ae6cc26de730a2454c1577",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-animate",
+      "id": "magic-ui--text-animate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c84668f7685a6073a99a50125b84462c3aab07ef909cbaf41a410641a0844699",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "scroll-based-velocity",
+      "id": "magic-ui--scroll-based-velocity",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4e3006ffd6fdf02cf5aa4241a370d37150befd62320747822bb23cc5b84774b1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "shiny-button",
+      "id": "magic-ui--shiny-button",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "837bc1681a56cfdf645c18b2093f5d0f4ed2bc86a57696f8ae43b415a6591c5a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "shine-border",
+      "id": "magic-ui--shine-border",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "87459f8e3b6869c4e115192156096c496660a5db340660932e7c0def03ef8511",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-circular-progress-bar",
+      "id": "magic-ui--animated-circular-progress-bar",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ffec61657f1e782c45bd5a8b469f1c5eb2948a50c1c526f532183cf5316f9bd6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "confetti",
+      "id": "magic-ui--confetti",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "aee0f4d4dfd531bd7202ceb891ee5884de35bb43b6821a3446e58d4bdef61736",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "cool-mode",
+      "id": "magic-ui--cool-mode",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0bf1d1c452d32672ca4a876cca3caef6238264793fb1202d89ea722cbf0f0142",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pulsating-button",
+      "id": "magic-ui--pulsating-button",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "942c54d37d9c8278ae89389f90eb1400879b1acbfebd1ce62bc545cadb921add",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ripple-button",
+      "id": "magic-ui--ripple-button",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "04417870e39cdf31619c3014637422cea4333ec71c47379fea6de26a79b11dfd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "file-tree",
+      "id": "magic-ui--file-tree",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e6cd08d5eb5df43d058c5c56f155dcd11d45ca78559ac7a5d6052e44c4bf3552",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "blur-fade",
+      "id": "magic-ui--blur-fade",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3addc38e5b1504ef999dfa387b3c6bab4efaf95917c0c6b8f750cf398a401bcc",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "safari",
+      "id": "magic-ui--safari",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1ca0dc8dfdd0abc64022c09ff5696aa757e844cd6090f6665697cf6283d7abb6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "iphone",
+      "id": "magic-ui--iphone",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "28e66081ad6f15db88acc623d746a987e601acecc5a4062ab3d983c272338c00",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "rainbow-button",
+      "id": "magic-ui--rainbow-button",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5fa8eba7f416f5b61b76329a270c03fe18ad10a4f2cc3b062c6e2ec2b6c1a0df",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "interactive-hover-button",
+      "id": "magic-ui--interactive-hover-button",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4222c44db78c7f448c097a9cd28127ea3df4a9bb681a112e41f2741e37e9ae01",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "terminal",
+      "id": "magic-ui--terminal",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e0d082c272b9cca6cf74aff535580c7ae061444919798a96c73fb277597b5f01",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "video-text",
+      "id": "magic-ui--video-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "10adb9be0af2873b70ec3db4219b0355677a767ddbe82ef3f16aa9bdb0b9873b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pixel-image",
+      "id": "magic-ui--pixel-image",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "76f48ad0200998e6f8f1cec95283a66b7737524b567a15b40113325464801d53",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "highlighter",
+      "id": "magic-ui--highlighter",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3f63baa4e5321aa613dbe987fd17940bff313b0203c8f20055477098aad05b04",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-theme-toggler",
+      "id": "magic-ui--animated-theme-toggler",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b33b03ce807892b8b34c2df570fb9ba1909f5ebf294f7eec34c6db26810acdcd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "light-rays",
+      "id": "magic-ui--light-rays",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ccc68f31f53e33225a1ed6d96196ffd443ba100f6a038b75c695217bb3058ad5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dotted-map",
+      "id": "magic-ui--dotted-map",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2b2ebe58d74a99b89947039bef86a8de466c1634ea6fdb68ce7919010323d8f6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "backlight",
+      "id": "magic-ui--backlight",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ca5130d2633962d35e7303f13206d24ab388c5238fb4202f96df1c369ced750d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "kinetic-text",
+      "id": "magic-ui--kinetic-text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4b8fc8816388fb36dec65b271f408ea578612f62c6e1c39c2dad1c99f00197f5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-3d-flip",
+      "id": "magic-ui--text-3d-flip",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "dd92119f5251156efe2d8ffa109c466e7412edf018202ecc4d39fbca1417c56d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "floating-3d-particles",
+      "id": "magic-ui--floating-3d-particles",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "67e10cba22473e7dc7bdfa815707c2ce5ebc5c05c6198077d2f8f6481bcf4c9d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "magic-card-demo",
+      "id": "magic-ui--magic-card-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6a3b52a84fdf72b9b10dd5f8f80b7b064e63ef3a3f88eebaa1357f0576d707d3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "magic-card-demo-2",
+      "id": "magic-ui--magic-card-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "14ca33232c16828a8791ba13bb618512358ac12dbe22ebc17962ec35db5c7437",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "android-demo",
+      "id": "magic-ui--android-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c4fdf4f85944b8e20912bbde863086190d62af775063804db1b82535079c3c87",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "android-demo-2",
+      "id": "magic-ui--android-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7399f711effe5730c936a99e07887a11097f475c7610bb5016d57226ab6bbdc0",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "android-demo-3",
+      "id": "magic-ui--android-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1483874ec5b2b7a9b41056fdda388ba5dbb297524435a5efeb26cc480244e457",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "warp-background-demo",
+      "id": "magic-ui--warp-background-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "54fbb8a51be93c2f7647f4e1f385330400c4e415fc5d3418c469d462f1e24f77",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "line-shadow-text-demo",
+      "id": "magic-ui--line-shadow-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "34a5ac25fbf44fc20a7b19008ce52df6e9cd237a6854e52badd894223162ae4a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "aurora-text-demo",
+      "id": "magic-ui--aurora-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b35e64fcc60d9cec9f44736c988ddb7c8763e3e3ef77fb5e94a98a447e4d59bd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "morphing-text-demo",
+      "id": "magic-ui--morphing-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "638408ac3751e7919993825249fb63b501136bfd4849547f7563a31db0c65377",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "scroll-progress-demo",
+      "id": "magic-ui--scroll-progress-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "29e7326b5572c02d65a0ab9e0aa3a179e7bb57e10f6db291b860fbd1445ee95d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "lens-demo",
+      "id": "magic-ui--lens-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "93082cce91fe2009336b428d997b581fa2bb98c47019d840a88429290d91be95",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "lens-demo-2",
+      "id": "magic-ui--lens-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "df88ecd56d1c0b397261c6e04eb2b66887abfead0bc02ef67b6306bedcf74c58",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "lens-demo-3",
+      "id": "magic-ui--lens-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "db9435adeb837164009832b6496a5830c7b282f6b735dbc1d73ca0899f37d962",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pointer-demo-1",
+      "id": "magic-ui--pointer-demo-1",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1ea203486af8142897a79c91d4affd723ed730909e5dcd3b57d06b86e60554a0",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "smooth-cursor-demo",
+      "id": "magic-ui--smooth-cursor-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a207521e94f3d62be0d366e44c36760f3b7e45c36683d3919363b1e8ffffed5b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "progressive-blur-demo",
+      "id": "magic-ui--progressive-blur-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ab7f9b9350405feb0752d7a15ac1565993977394edc27156cd1917e8e3bb1f1a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "neon-gradient-card-demo",
+      "id": "magic-ui--neon-gradient-card-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "591f9d633810cadbc1715b0554782e9ad781e5437277f920ab3f3ec68804f689",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "noise-texture-demo",
+      "id": "magic-ui--noise-texture-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bfa94ec8ade3ae19b414e46cd333f7f8d78d59e7d02447cdb88dff0a7f9efce6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "noise-texture-demo-2",
+      "id": "magic-ui--noise-texture-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "410e557c7ae9fd4889915d313f650c90d9b1e827ff3987f13131549bd04bed8c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "noise-texture-demo-3",
+      "id": "magic-ui--noise-texture-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "67673882428e4a2341260b8eb518907b9609869b3c3da24a55b3d85e5a64ca26",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "noise-texture-demo-4",
+      "id": "magic-ui--noise-texture-demo-4",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bcab96208d5f588506a93f674c5fe93643e13f3c0f707adc9fc39268103aae5d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "meteors-demo",
+      "id": "magic-ui--meteors-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "63db07b5adb76e73451c963c33a3b35ee90a75f3f5ba4d9bd88ac4ab78765397",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "grid-pattern-demo",
+      "id": "magic-ui--grid-pattern-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8709be13ec2ca2d903511e36f581ead9f2a52cdf534b704da74771e467442a81",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "striped-pattern-demo",
+      "id": "magic-ui--striped-pattern-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d469062922fad7b6ce1db64920ecf32e3d010e100d9185daff4ddd73f91275b5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "striped-pattern-dashed",
+      "id": "magic-ui--striped-pattern-dashed",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8389a451650d9f96cafb877b785858fe6dec209007f022b76df65a35863eb81b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "striped-pattern-right",
+      "id": "magic-ui--striped-pattern-right",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "acea0912931acf0f2ad2569092a578034d4402b05e76e5fbdc4c7900c17138c3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "grid-pattern-linear-gradient",
+      "id": "magic-ui--grid-pattern-linear-gradient",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7af5e386edb6a801b3857a53b5a76cd00995cc757b00de17e23df174c27f34c4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "grid-pattern-dashed",
+      "id": "magic-ui--grid-pattern-dashed",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8e7b80b8be387a638f1a21159501969795889d00eea7d2216f4f7d6caf918fbc",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hexagon-pattern-demo",
+      "id": "magic-ui--hexagon-pattern-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b7f612dc409941e2b2b756620d2cb3978c4d4d43f9bf7ef2c4a1f8cb3ed11361",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hexagon-pattern-linear-gradient",
+      "id": "magic-ui--hexagon-pattern-linear-gradient",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7a8ccb1143d35fe987247b06ddb5c3c63a873536e7842ed430d08bc95b76399d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hexagon-pattern-dashed",
+      "id": "magic-ui--hexagon-pattern-dashed",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ab0f487549d56ddb70f14e33ea777c16315b74a3f861f836ec5f2f1d13f64040",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hexagon-pattern-spacing",
+      "id": "magic-ui--hexagon-pattern-spacing",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a6cf91c29bcc3baf6f4baf00dee5baff483ab8f752606f2c81c5bc81b353d70e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dot-pattern-demo",
+      "id": "magic-ui--dot-pattern-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3e2cf8cd091cb1bd3a6e84618e9e37d2efc1ce750730bf8fc56313fa105a3ede",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dot-pattern-linear-gradient",
+      "id": "magic-ui--dot-pattern-linear-gradient",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d9e72481a8198e49f8658c4de1ab6aac76037a4bd332886075eaf7d8875668ac",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dot-pattern-with-glow-effect",
+      "id": "magic-ui--dot-pattern-with-glow-effect",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4263d610ed2d3dd05bd0b0d5fb34d1794520915ed425f4393e70ae85d06a03c2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "flickering-grid-demo",
+      "id": "magic-ui--flickering-grid-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cebcbd8583aa12e57585d9150d7164988df5c3d8a00b09cac9e339403bd0b486",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "flickering-grid-rounded-demo",
+      "id": "magic-ui--flickering-grid-rounded-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bcc6148245e51f4cf3f57c101e86220dd847d1b1895146ce70d1935f27498467",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hero-video-dialog-demo",
+      "id": "magic-ui--hero-video-dialog-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7e253622b46c60e473152233685039fa53cd323057d52cbb386932b77121a310",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hero-video-dialog-demo-top-in-bottom-out",
+      "id": "magic-ui--hero-video-dialog-demo-top-in-bottom-out",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f6b0524c314eb372576c6ac05f74db813dda018b6884b5ce924cf8a547f64f77",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "code-comparison-demo",
+      "id": "magic-ui--code-comparison-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "91ec07bf0bbb65e514066073b5aac76eb7b7e9a602a579d2f67e0522fc27727f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "marquee-demo",
+      "id": "magic-ui--marquee-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "81471a1211d262b0af848d1bd4c6f028f737bf8ae0bbd63fe3245c4a236466ff",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "marquee-demo-vertical",
+      "id": "magic-ui--marquee-demo-vertical",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "17c5aef853055403717b63146007ad92c3d2d8a40a3f3378ad6de4c25434ee2a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "marquee-logos",
+      "id": "magic-ui--marquee-logos",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e80bcadb42972ff3246162116c42a0ef85a7dccc3360b8848a1f6af2c9e6f954",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "marquee-3d",
+      "id": "magic-ui--marquee-3d",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5d67dba23f1d3d9d73a8e2fdb66b1e6f86fa85f621e0e834857fe7d9032f2c1a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "globe-demo",
+      "id": "magic-ui--globe-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fdf13e0f5fd4b0d2d8fc5586b28b9e8ce3b520d4caadd03973552acb68f0e404",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "glyph-matrix-demo",
+      "id": "magic-ui--glyph-matrix-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ff8576e2cde1d3800bd26f989da7f864f611ef6aab3ded0c6f3e22e6bccf13ee",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "glare-hover-demo",
+      "id": "magic-ui--glare-hover-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bd80f17554fbb6cb640803038efb3d5ef7f45ec2630e1fd1cf10b7a03ca9d20d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "glare-hover-demo-cta",
+      "id": "magic-ui--glare-hover-demo-cta",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "561fd46974663e76f818aee7f83b076c595b343a08b025e01c7ab8e1d9591070",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "glare-hover-demo-alert",
+      "id": "magic-ui--glare-hover-demo-alert",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3cfdc2248881f7668bd46ab1805b901b11c047b1eb33a1017aa602a3ed7e0caa",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "tweet-card-demo",
+      "id": "magic-ui--tweet-card-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8caab7331be00dce3f208b4faa09c8aa7d3653c7aa8c6c972b1f397f333e790a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "tweet-card-images",
+      "id": "magic-ui--tweet-card-images",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f45dc3c0d203c31aa16be35c7092aedb026803147f377b5ee9127ece6cb0aff4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "tweet-card-meta-preview",
+      "id": "magic-ui--tweet-card-meta-preview",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "70165e933fc1377bb72b6f53633544c2442e799d45ba8660ec9173c622a19403",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "shimmer-button-demo",
+      "id": "magic-ui--shimmer-button-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c864f54bc1654f7e0e09c1b735ef8e2201798f3ca9b140d75a180cfbb0cc06ed",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "bento-demo",
+      "id": "magic-ui--bento-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e916708b4ee3da7c0df933d5dc0061a63349535d2afb5652daee815fa327f1ae",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "bento-demo-vertical",
+      "id": "magic-ui--bento-demo-vertical",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f8ddc780df9901c7a6392b2c770e40bc8b73ea7ea705fb47cd3ef6b11f787def",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "number-ticker-demo",
+      "id": "magic-ui--number-ticker-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "635a663529b68a29cc50a1eda42119f0b20e4beaa2a340a02bf383019b990a52",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "number-ticker-demo-2",
+      "id": "magic-ui--number-ticker-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4047af45bcae2e3777666cd4f078c7a881fa20834aeadbb34e93146ca7eb9dea",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "number-ticker-decimal-demo",
+      "id": "magic-ui--number-ticker-decimal-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "134ad96b784478766354d23ec9e0f8b6b96c859b5e0a1868a16d3eb77ed39875",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ripple-demo",
+      "id": "magic-ui--ripple-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "85c96d6d122709a239b8b349fab969d70bd7b9513cce1a6beaf9e0d1765ab89a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "retro-grid-demo",
+      "id": "magic-ui--retro-grid-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1addb71f0b4e16f862deac2b376d1bf0339c8e8ef22380298be94e3f762b8fa1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-list-demo",
+      "id": "magic-ui--animated-list-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "89041afb34d42695ccc1e1a0d1fa62a91692b98e571c4f4d4ec8ec2818668219",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-shiny-text-demo",
+      "id": "magic-ui--animated-shiny-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3b9621a43af6c08c32f4cc861dcf18ae631f6cfb88fa05a116d25042a703910c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "particles-demo",
+      "id": "magic-ui--particles-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "20b668483d32cca562f7db912def0f347d9c5fdfc793e128d45116850def9558",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-grid-pattern-demo",
+      "id": "magic-ui--animated-grid-pattern-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c0c96b529fc78398893b4495ea43105d55a9e0d14cab1c6720c527b33b4e4e94",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "interactive-grid-pattern-demo",
+      "id": "magic-ui--interactive-grid-pattern-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "399376f3da33cf67306739f83b19225a77a4689e285d28fc4028aba5b8121dcd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "interactive-grid-pattern-demo-2",
+      "id": "magic-ui--interactive-grid-pattern-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fa08183e0ec13854828c4da7ec8a713541206a823bceca53c3dc5968adbae470",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "border-beam-demo",
+      "id": "magic-ui--border-beam-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e02a1ebdf9b123633a0c4116eef74e96b6e7ec9aefe4a3b510c767d9ff57b345",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "border-beam-demo-2",
+      "id": "magic-ui--border-beam-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3b8f45659bde51da48b1be8d4b399e017bf388700ef897f8a343d391a160129d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "border-beam-demo-3",
+      "id": "magic-ui--border-beam-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3595d3de1c8f806c6c26ca3dbeafe68cc130d6b96968cdf1caac9ddb50386dcf",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "border-beam-demo-4",
+      "id": "magic-ui--border-beam-demo-4",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1fdb3fd16bbe5ae9b693441b007c9cd63096f2346dfc3c08bd49fcd7f0b27507",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-beam-demo",
+      "id": "magic-ui--animated-beam-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8be118e94f9716701fc3bcd34792a507a569b46abe423689d41c89a9303c357f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-beam-unidirectional",
+      "id": "magic-ui--animated-beam-unidirectional",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "97bf5fbc19bb72edbad8e9621e4e2bcc042425142283bb661367ce096d64e8ee",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-beam-bidirectional",
+      "id": "magic-ui--animated-beam-bidirectional",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a07ac117198262b08652e75f76ef584a454c4d690cabb788397fd04df55a57c8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-beam-multiple-inputs",
+      "id": "magic-ui--animated-beam-multiple-inputs",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1a7a313292d1ccf991a7d2d6a495141540f87eb610da2494be910e2b84194f26",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-beam-multiple-outputs",
+      "id": "magic-ui--animated-beam-multiple-outputs",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "64c3dfd4b9e9254836c120a28420a801faedc23b0187aa3126d95664fa1e94db",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-reveal-demo",
+      "id": "magic-ui--text-reveal-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "feac0bc780ee40cbf4cecca8f54ea3c1d4fcb96b3f55e82e26ede79568953190",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dia-text-reveal-demo",
+      "id": "magic-ui--dia-text-reveal-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "978415eb160f97311190db4519568a8ac090e2c4efbfb41bd4d85abd2b7b6f92",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dia-text-reveal-demo-2",
+      "id": "magic-ui--dia-text-reveal-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8190fc88bdeb499126232e1bc274f4482cdbd70c67b9adb34be4d920bbe6389b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dia-text-reveal-demo-3",
+      "id": "magic-ui--dia-text-reveal-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "26d3a501b0fa575e9fb706909b18360dbea9a8ee8c36deba41cf7d334da74a6c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dia-text-reveal-demo-4",
+      "id": "magic-ui--dia-text-reveal-demo-4",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2dbfe359575d5651738f568267c679b188a3409afb582a1dac128d419bc6f4e0",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-gradient-text-demo",
+      "id": "magic-ui--animated-gradient-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "947ce44fd22058b4a65e36efe2e4ed3167b8abf912c45d0acd8a23c9f2f29a96",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-gradient-text-demo-2",
+      "id": "magic-ui--animated-gradient-text-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "45461e7feedb363fc409c58502c9f31a32c1a9b9dbff69f1bdf46c6b7e84d500",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "orbiting-circles-demo",
+      "id": "magic-ui--orbiting-circles-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cb54c3346ba9216fefdcc8ae2287733e0b488b51f0d4ed0fb2e95ca283bb1608",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dock-demo",
+      "id": "magic-ui--dock-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8aaf84dba9d8b60c6831976b9d13a143fe5aea0a755943401df69aa907f50ef9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dock-demo-2",
+      "id": "magic-ui--dock-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4613294125bdb59c9644d10f65fed5d85159614e81b99e037a9a8825c82ff67f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dock-demo-3",
+      "id": "magic-ui--dock-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4d010ed67f9830d33799216d7b06262cf5b3ce482635192636ab1c2de26c670d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "word-rotate-demo",
+      "id": "magic-ui--word-rotate-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0fd8aec2727ef161f429746c1d39ad78f03e3c67b5269b760e493ee9a45790ed",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "hyper-text-demo",
+      "id": "magic-ui--hyper-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "dc78687a0efe02dd0f663cb98f1dedebc1c33afc89fa015117d264e8346a3e20",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "avatar-circles-demo",
+      "id": "magic-ui--avatar-circles-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ed3b29c8048e2fdc6d60bedb68e27783f204c39fb8159e85fa1bc251f935abc3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "typing-animation-demo",
+      "id": "magic-ui--typing-animation-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f82991a12dcb9f22f7094b5b9a338a60b540f4732b7d9029506dea88ea4e99fd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "typing-animation-demo-2",
+      "id": "magic-ui--typing-animation-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c8c9101a3aad05f29651084eb7bf9e0284d9979c14a6368cd1e8eef967b983ae",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "typing-animation-demo-3",
+      "id": "magic-ui--typing-animation-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b321d025e1b3ff61173184b12843ef606c673aa5c3ccd389fadb86b24cf6c1b4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "typing-animation-demo-4",
+      "id": "magic-ui--typing-animation-demo-4",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4d0d83c7caf7d5704d36ce14eda94a85e944fe91d82f7f11cdfafc05b680b1ee",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "typing-animation-demo-5",
+      "id": "magic-ui--typing-animation-demo-5",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4eff03ca0d1874a1505632537bd062013d615a205a912e984bf23c27857a9ca6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "typing-animation-demo-6",
+      "id": "magic-ui--typing-animation-demo-6",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c70cb8f7b0f1ca79ababe2de3a6c6c95b08ab1d74c2ebd0bc4c72885bcfa41d5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "typing-animation-demo-7",
+      "id": "magic-ui--typing-animation-demo-7",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b32583965b9b8972a909956530716f5c942f57681dfdf30e94d32ebd82cdb1a8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "typing-animation-demo-8",
+      "id": "magic-ui--typing-animation-demo-8",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e6e3fe219529a899252c5c349fd26b3449cd5b90ff720833b96d8a18784b8728",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "scroll-based-velocity-demo",
+      "id": "magic-ui--scroll-based-velocity-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "92c9569315adceb24b8762cecfb8560ef199deeb05160f5c2c6de63a5afba297",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "scroll-based-velocity-images-demo",
+      "id": "magic-ui--scroll-based-velocity-images-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "25fcee3fd847a174540ca569566819ee655e760af3024adb12eeb3edc67634ad",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "sparkles-text-demo",
+      "id": "magic-ui--sparkles-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2baf0cbda8a7e6dce024e4888963f97187ada27aa77d94d1f6b0785697652c0a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "spinning-text-demo",
+      "id": "magic-ui--spinning-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ccb3484a21f9fc952832c0a7c4e39739b67c9ac9e59d962758808011f9cb1d5e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "spinning-text-demo-2",
+      "id": "magic-ui--spinning-text-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "df94fe95a40d3a2fc3c0c9c7031aee088daa014a7faeebb9c87279d5a6f22ad5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "comic-text-demo",
+      "id": "magic-ui--comic-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b6e548d0146f38134a1c91a21ba04ddf59cb8560e6a37eccab14c991811593b4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "icon-cloud-demo",
+      "id": "magic-ui--icon-cloud-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "88c53225e378dd0f68c8d8e5aaea08fe3cb18fcff61ecdc663d402a303bf7f9e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "icon-cloud-demo-2",
+      "id": "magic-ui--icon-cloud-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "466b75f0867f552d3ec0dcd4a4b0e38a424ca8e434c0e63da711d93e92b4e548",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "icon-cloud-demo-3",
+      "id": "magic-ui--icon-cloud-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3a0cc604dfb72f3a20eb025b0003449a9fcfca0824291b811effa8e0412f3e1b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-animate-demo",
+      "id": "magic-ui--text-animate-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "57c821e8f44e03084c916e75fff5b558acb4e65bdad9763563b28bf4b525efce",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-animate-demo-2",
+      "id": "magic-ui--text-animate-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7619449e360ca20e19870e8f60b3b313112310c7f232df76cd332d0ba6b31d6a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-animate-demo-3",
+      "id": "magic-ui--text-animate-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "14e451eb4eb975aadbb244eb35347a99add7d4423c9eec1211ecccc409b3dffb",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-animate-demo-4",
+      "id": "magic-ui--text-animate-demo-4",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "162ed39936f403b82ef5d13af394951cc328b8c3cd994bf7af108d635c055c24",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-animate-demo-5",
+      "id": "magic-ui--text-animate-demo-5",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "59db2928e61365312a4d49b21be29ced31069052d2d2af6610c5f0c13e11ceda",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-animate-demo-6",
+      "id": "magic-ui--text-animate-demo-6",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e185f890872d6343cf348876883b0ddcba567609b77a89eaa54a806751f721af",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-animate-demo-7",
+      "id": "magic-ui--text-animate-demo-7",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c30263feaf8c5d7ea6d3c2a982ea31d7af44b9afba224634649f2f0ec1f8765d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-animate-demo-8",
+      "id": "magic-ui--text-animate-demo-8",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "de2cb5d42424456bc654b3c9718f1b5a10bd75033d0db0672f9dfcd77a826e69",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-animate-demo-9",
+      "id": "magic-ui--text-animate-demo-9",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "758c47e35859654f1094c7d44d2f58095506d627454f49ee9dcbb80af94bab20",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "shiny-button-demo",
+      "id": "magic-ui--shiny-button-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "86b9033bac17da1b2e708a24aa457173ebeb612d12f4e6d6955ec4ebab123b71",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-circular-progress-bar-demo",
+      "id": "magic-ui--animated-circular-progress-bar-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9a3486a69e221fd7f7f58dfdfb6e2f09e7179e97916a8c8d24a81f024d963974",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "shine-border-demo",
+      "id": "magic-ui--shine-border-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "56bd120181dea8dc4cdc3e9d6bda6358549000faa203c63aa3fea930b2ebd4a3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "shine-border-demo-2",
+      "id": "magic-ui--shine-border-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b925da1f583e005003ba9d90b250b94114594fce0134654674af4a51a8a9eee0",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "confetti-demo",
+      "id": "magic-ui--confetti-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1f53e719152030254f30016d0a96a701b6f1fe42b14ea21aabffe879dc013dd2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "confetti-basic-cannon",
+      "id": "magic-ui--confetti-basic-cannon",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ff1376f3e5e61bc5fadadd9bca07d1e246956b47e7ae184945964738f4ac3b31",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "confetti-random-direction",
+      "id": "magic-ui--confetti-random-direction",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2a2af52e69803d6572f77e8ce2b0bbc3dc816709335092b3582bd55178de0257",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "confetti-fireworks",
+      "id": "magic-ui--confetti-fireworks",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9cb404ac76b5529b4d3002bf5bdb0fc04a91704e02e2998aaf52a87de48673c7",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "confetti-stars",
+      "id": "magic-ui--confetti-stars",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "72679b00b84ff20c4e81a371258bc948f51ab2da6a54a3bc95df107d738ff09e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "confetti-side-cannons",
+      "id": "magic-ui--confetti-side-cannons",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8c7db001e06b6242180b8a016aa921c2eebe92a320489952fd4f34ce135fc528",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "confetti-custom-shapes",
+      "id": "magic-ui--confetti-custom-shapes",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "27d42fd25752be725590da2694a1d43dfd7ad594d8808140cfccd2ab18413399",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "confetti-emoji",
+      "id": "magic-ui--confetti-emoji",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "998018e62cc74300ab4b593195013d5071a4fc5f0dc38b11f131d546e6cb314c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "cool-mode-demo",
+      "id": "magic-ui--cool-mode-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ac36c89f74ea50dcbace75781e548ace14f33f7bb6955c05151b18b7ec4d97c9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "cool-mode-custom",
+      "id": "magic-ui--cool-mode-custom",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4318fbee775e76d6e0bc94780cc303f890728179a8e124f74d726cd703f3af5b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pulsating-button-demo",
+      "id": "magic-ui--pulsating-button-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "453fe9fefbaca9bf5b6e476430ecf66f4a850cc274e4c0986664e0d49f5988ce",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pulsating-button-demo-2",
+      "id": "magic-ui--pulsating-button-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0d108ba7307734c4ef28031780d981541d11c1ac599c72eba23eeaf29646a9f3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ripple-button-demo",
+      "id": "magic-ui--ripple-button-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "dd4388e23bd80bd8773316c289f4e37daededd5c3ce53f237714b5faa79e60af",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "file-tree-demo",
+      "id": "magic-ui--file-tree-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "593bad4688375d58ff626d78964c0464c0e303c556f53b666d4eab45d282251b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "blur-fade-demo",
+      "id": "magic-ui--blur-fade-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "860c7fd024e6676820f6248195db6e8a72caf293cb5bcfaebc1876085edbb876",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "blur-fade-text-demo",
+      "id": "magic-ui--blur-fade-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7bd442425ec590beaf673cfd868828fa56146d7518002f46c5d59ad60e8d1d7a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "safari-demo",
+      "id": "magic-ui--safari-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f81192c25ed8e7ca2a1e0596a45ee6146bbc34f17533e7489ffd8fdb099c18d6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "safari-demo-2",
+      "id": "magic-ui--safari-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c7df42946c11a0cef58d847acdb8db86879d6858118ebc553e60367c3fbf94bc",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "safari-demo-3",
+      "id": "magic-ui--safari-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "60e93bdb9b618a96919c392948c7b564c75f27d993ee98ec8c3444f7972ee032",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "safari-demo-4",
+      "id": "magic-ui--safari-demo-4",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3c40d90a04f3b3b482240b7ba33799eab8a5b44ce685ea011e6c3873c4b50d07",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "iphone-demo",
+      "id": "magic-ui--iphone-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9003ee527d9e4bf925b8abd3395820d70e9804e66139a0a54320c3ad225619d2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "iphone-demo-2",
+      "id": "magic-ui--iphone-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d70e277afbe9041e4b75a1d7858157dc73de836217581d0e7ad4062b1fce0bce",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "iphone-demo-3",
+      "id": "magic-ui--iphone-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ab131dcbbd182ce08c57883557ff2a630976608de81b8ab4ed7190fb79d582ac",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "rainbow-button-demo",
+      "id": "magic-ui--rainbow-button-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bad786362f31a59e82e2780242ca8434a0fb978ca1d83c4917d107517d8e9c20",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "rainbow-button-demo-2",
+      "id": "magic-ui--rainbow-button-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c947bf5284968365ba46a8c0d5b3a5ae0eed2e18941166459f2e703a5fed1e55",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "interactive-hover-button-demo",
+      "id": "magic-ui--interactive-hover-button-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ed5c515da4ec26664ba86dc1cc29de9b40afaf2dab7f08c6e181dc51278a2c84",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "terminal-demo",
+      "id": "magic-ui--terminal-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bf8e235e156491efea084b7ae7569555f3fd3ffbdc94fab3a364608057baaa3b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "terminal-demo-2",
+      "id": "magic-ui--terminal-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "470b9d45db8718a9ff981658a34268778b3475438b06b3b1a4433b16ac4f7953",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "video-text-demo",
+      "id": "magic-ui--video-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0710a82962e63df922844c6705f81a34e05685f88cddda6470c8bd13e51d7679",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "pixel-image-demo",
+      "id": "magic-ui--pixel-image-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0e60fe2903dc7d1317a7d4c5cc837d2afcccb539b91ff774caf0d4c62495e673",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "highlighter-demo",
+      "id": "magic-ui--highlighter-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b9b98b751866ca3b37b30b2ffa888e4e2affa33a6630a00d7fdad63ff9d5d9c2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-theme-toggler-demo",
+      "id": "magic-ui--animated-theme-toggler-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1f67b280ce1da4d2bd21ee17a340d7a1ebf4b4862c1b69de0346a7f9b7017216",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-theme-toggler-square-demo",
+      "id": "magic-ui--animated-theme-toggler-square-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "10afede4f3216888ae377fc675cde66d268ef75cc2ceaa355ef5d0f7535fb862",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-theme-toggler-diamond-demo",
+      "id": "magic-ui--animated-theme-toggler-diamond-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c1eeb32f2a95ee7d489c42a3fb225a29df12284a94667223a2747746dc058af0",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-theme-toggler-rectangle-demo",
+      "id": "magic-ui--animated-theme-toggler-rectangle-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "974b09bbeacfed16745c913d4df9309b18c09a8bba263d85a71ef4162d507ecd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-theme-toggler-hexagon-demo",
+      "id": "magic-ui--animated-theme-toggler-hexagon-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8c78dba97b6a71b0aeaae87a8e26fc22b13796ce692ddb2cacabd3c7c3684153",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-theme-toggler-triangle-demo",
+      "id": "magic-ui--animated-theme-toggler-triangle-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "65bd60f652d784e36ea8ba90df0faeb38d60303f72d38ba77ab39f9d39b60192",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-theme-toggler-star-demo",
+      "id": "magic-ui--animated-theme-toggler-star-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f44d491ea949573529b4ca45d4ac5dda34ea3ae6a70d326e8f1c4a6123d57a25",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animated-theme-toggler-next-themes-demo",
+      "id": "magic-ui--animated-theme-toggler-next-themes-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8d00359dd010bd0f8dc31f3f684b4a8bbf01c3cb7f1e32419b60d43867c43ece",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "light-rays-demo",
+      "id": "magic-ui--light-rays-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "81f36ab460795d3bd172a29aa38e05bc64ba2c7a16d7d4d9ee8814106b8c3322",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dotted-map-demo",
+      "id": "magic-ui--dotted-map-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "97423fe2eedb07ac82244b98dba94661baff6a3a3726579226efda0b5a11ac27",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dotted-map-demo-2",
+      "id": "magic-ui--dotted-map-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6a315849cef7b4f3988c020cb1c200ade5267588b178b9d16e23fbf3d5a6189e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "dotted-map-demo-3",
+      "id": "magic-ui--dotted-map-demo-3",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f066727fa2c2905ae504b80c8b2fb2f7b931031629c9e9c0dc82d41d5fe11eb8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "backlight-video-demo",
+      "id": "magic-ui--backlight-video-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c3ecc2860a45cd4f749a9d680071e7f18a70070f85bc2f6de31b6212b9818830",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "backlight-image-demo",
+      "id": "magic-ui--backlight-image-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ab7e348490afe17b181b5db1b2c126a21761990a0ab2c9e74cf56ceefe626b53",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "backlight-svg-demo",
+      "id": "magic-ui--backlight-svg-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f24df1fc972259ca05672e04db6bcd7ba307d97715aecf2e9f3d93d2f5c0a095",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "kinetic-text-demo",
+      "id": "magic-ui--kinetic-text-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5bff4053cd55abe56fc3bff0e5623d7d73dc3addc618f019460c17cc2599bc88",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-3d-flip-demo",
+      "id": "magic-ui--text-3d-flip-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f38c24424494b8483cee7fa95233e19d86d1081ed734b9f0e2013c96087aa84f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "text-3d-flip-demo-2",
+      "id": "magic-ui--text-3d-flip-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3a94169f36fdcc562686709f139de67b066962f996127150a235d08bf86a9d03",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "floating-3d-particles-demo",
+      "id": "magic-ui--floating-3d-particles-demo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "226d768ad5e9f5d13e2c9ba6c79b8270e41450293d60a56f9cb6d73c31aba07a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "floating-3d-particles-demo-2",
+      "id": "magic-ui--floating-3d-particles-demo-2",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bbb01a90e778b1e72cb9c6bc2c46733d5d13088b54db9ec715b0e6de43e78f65",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "utils",
+      "id": "magic-ui--utils",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "afec3b16facd80f72db2ab97e266148761baa12a4501f5055d2cfaaeebcc528c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

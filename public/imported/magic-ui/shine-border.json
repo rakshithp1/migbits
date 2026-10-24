@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--shine-border",
+    "name": "Shine Border",
+    "description": "Shine border is an animated background border effect.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Components",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/shine-border.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "87459f8e3b6869c4e115192156096c496660a5db340660932e7c0def03ef8511",
+    "dataUrl": "/imported/magic-ui/shine-border.json",
+    "downloadUrl": "/imported/magic-ui/shine-border.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/shine-border.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface ShineBorderProps extends React.HTMLAttributes<HTMLDivElement> {\n  /**\n   * Width of the border in pixels\n   * @default 1\n   */\n  borderWidth?: number\n  /**\n   * Duration of the animation in seconds\n   * @default 14\n   */\n  duration?: number\n  /**\n   * Color of the border, can be a single color or an array of colors\n   * @default \"#000000\"\n   */\n  shineColor?: string | string[]\n}\n\n/**\n * Shine Border\n *\n * An animated background border effect component with configurable properties.\n */\nexport function ShineBorder({\n  borderWidth = 1,\n  duration = 14,\n  shineColor = \"#000000\",\n  className,\n  style,\n  ...props\n}: ShineBorderProps) {\n  return (\n    <div\n      style={\n        {\n          \"--border-width\": `${borderWidth}px`,\n          \"--duration\": `${duration}s`,\n          backgroundImage: `radial-gradient(transparent,transparent, ${\n            Array.isArray(shineColor) ? shineColor.join(\",\") : shineColor\n          },transparent,transparent)`,\n          backgroundSize: \"300% 300%\",\n          mask: `linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)`,\n          WebkitMask: `linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)`,\n          WebkitMaskComposite: \"xor\",\n          maskComposite: \"exclude\",\n          padding: \"var(--border-width)\",\n          ...style,\n        } as React.CSSProperties\n      }\n      className={cn(\n        \"motion-safe:animate-shine pointer-events-none absolute inset-0 size-full rounded-[inherit] will-change-[background-position]\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n",
+      "sha256": "c9344b563c2427f26393f6f5e2fe5c72d6a3fcb4b90b8f073ebad515e963c46c"
+    },
+    {
+      "path": "apps/www/public/r/shine-border.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"shine-border\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Shine Border\",\n  \"description\": \"Shine border is an animated background border effect.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/shine-border.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport * as React from \\\"react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\ninterface ShineBorderProps extends React.HTMLAttributes<HTMLDivElement> {\\n  /**\\n   * Width of the border in pixels\\n   * @default 1\\n   */\\n  borderWidth?: number\\n  /**\\n   * Duration of the animation in seconds\\n   * @default 14\\n   */\\n  duration?: number\\n  /**\\n   * Color of the border, can be a single color or an array of colors\\n   * @default \\\"#000000\\\"\\n   */\\n  shineColor?: string | string[]\\n}\\n\\n/**\\n * Shine Border\\n *\\n * An animated background border effect component with configurable properties.\\n */\\nexport function ShineBorder({\\n  borderWidth = 1,\\n  duration = 14,\\n  shineColor = \\\"#000000\\\",\\n  className,\\n  style,\\n  ...props\\n}: ShineBorderProps) {\\n  return (\\n    <div\\n      style={\\n        {\\n          \\\"--border-width\\\": `${borderWidth}px`,\\n          \\\"--duration\\\": `${duration}s`,\\n          backgroundImage: `radial-gradient(transparent,transparent, ${\\n            Array.isArray(shineColor) ? shineColor.join(\\\",\\\") : shineColor\\n          },transparent,transparent)`,\\n          backgroundSize: \\\"300% 300%\\\",\\n          mask: `linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)`,\\n          WebkitMask: `linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)`,\\n          WebkitMaskComposite: \\\"xor\\\",\\n          maskComposite: \\\"exclude\\\",\\n          padding: \\\"var(--border-width)\\\",\\n          ...style,\\n        } as React.CSSProperties\\n      }\\n      className={cn(\\n        \\\"motion-safe:animate-shine pointer-events-none absolute inset-0 size-full rounded-[inherit] will-change-[background-position]\\\",\\n        className\\n      )}\\n      {...props}\\n    />\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ],\n  \"cssVars\": {\n    \"theme\": {\n      \"animate-shine\": \"shine var(--duration) infinite linear\"\n    }\n  },\n  \"css\": {\n    \"@keyframes shine\": {\n      \"0%\": {\n        \"background-position\": \"0% 0%\"\n      },\n      \"50%\": {\n        \"background-position\": \"100% 100%\"\n      },\n      \"to\": {\n        \"background-position\": \"0% 0%\"\n      }\n    }\n  }\n}",
+      "sha256": "56329b539c8b1ddcf54566315674ceba1bfb06e8f5994cf9b6af0fd529e00ce6"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"shine-border\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Shine Border\",\n  \"description\": \"Shine border is an animated background border effect.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/shine-border.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ],\n  \"cssVars\": {\n    \"theme\": {\n      \"animate-shine\": \"shine var(--duration) infinite linear\"\n    }\n  },\n  \"css\": {\n    \"@keyframes shine\": {\n      \"0%\": {\n        \"background-position\": \"0% 0%\"\n      },\n      \"50%\": {\n        \"background-position\": \"100% 100%\"\n      },\n      \"to\": {\n        \"background-position\": \"0% 0%\"\n      }\n    }\n  }\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

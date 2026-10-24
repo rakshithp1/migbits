@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--barshift",
+    "name": "Bar Shift",
+    "description": "Bar Shift shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/BarShift/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "7ef4a6cea37d778d4a49a63929092de4ff1afac5bf53d1ac4f1d82a7b2c41070",
+    "dataUrl": "/imported/shaders/barshift.json",
+    "downloadUrl": "/imported/shaders/barshift.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/BarShift/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {barOffset} from \"@coreroot/std/warps\"\nimport {transformAngle} from \"@coreroot/utilities/transformations\"\nimport {edgesPropConfig} from \"@coreroot/utilities/propConfigs\"\n\nexport interface ComponentProps {\n    count: number\n    angle: Parameters<typeof transformAngle>[0]\n    intensity: number\n    seed: number\n    speed: number\n    edges: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"BarShift\",\n    role: 'warp',\n    category: \"Distortions\",\n    description: \"Slices content into parallel bars, each offset independently for a fractured or glitch-like effect\",\n    boundingBoxDeclaration: { aspectRatio: null },\n    // Per-node animated time: each bar drifts at its own hash rate.\n    animatedTime: { speed: 'speed' },\n    props: {\n        count: {\n            default: 6,\n            description: 'Number of bars across the longest viewport dimension',\n            ui: { type: ['range', 'map'], min: 1, max: 30, step: 1, label: 'Count', group: 'Effect' }\n        },\n        angle: {\n            default: 0,\n            transform: transformAngle,\n            description: 'Angle of bar orientation in degrees (0 = vertical bars, 90 = horizontal bars)',\n            ui: { type: ['range', 'map'], min: -180, max: 180, step: 1, label: 'Angle', group: 'Effect' }\n        },\n        intensity: {\n            default: 0.15,\n            description: 'Maximum displacement per bar',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Intensity', group: 'Effect' }\n        },\n        seed: {\n            default: 0,\n            description: 'Randomization seed for per-bar offset variation',\n            ui: { type: 'range', min: 0, max: 100, step: 1, label: 'Seed', group: 'Effect' }\n        },\n        speed: {\n            default: 0,\n            description: 'Animation speed — each bar drifts at its own rate and direction',\n            ui: { type: 'range', min: -2, max: 2, step: 0.1, label: 'Speed', group: 'Animation' }\n        },\n        edges: edgesPropConfig('mirror', 'How to handle edges when distortion pushes content out of bounds')\n    },\n    map: barOffset({count: p('count'), angle: p('angle'), intensity: p('intensity'), seed: p('seed')}),\n    missingChildMessage: 'You must pass a child component into the BarShift shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "e9fd5cd67894812c5d9a0fa2c694b6af67fc35348b9f41d6cf27e03967e919a5"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

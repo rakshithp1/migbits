@@ -1,0 +1,39 @@
+{
+  "revision": "931c11fa298cc8b70edf4fe657c80b81ac637fec",
+  "licenseSha256": "156c14c84ceebfc926bab961e7548f4051c70b02726e8aba607b3503f4bf9509",
+  "archiveSha256": "2e9ceb78f3d5c93a37204a4fffceb0fae7c2310e2a50345e12a50a54ecb7cf1a",
+  "items": [
+    {
+      "key": "src/ParentSize",
+      "id": "spline--src-parentsize",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b8f2b47eb39d2d78c22a27d8fadf7eae8094f22c03dc5a491e0d709f913b697a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "src/Spline",
+      "id": "spline--src-spline",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0e84ff7be1b1069350f8ca340bdfeb0a6f65bba7b5e815aa656a91cfd220e3a1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "src/next/SplineNext",
+      "id": "spline--src-next-splinenext",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "550c2666088347ac8506780bc21fb72863e77bcae588f6dec61feca0c810a60b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "src/next/decodePreview",
+      "id": "spline--src-next-decodepreview",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3f1a6b24f13c3ca9f8d64cd10e40639a652a595c135ffa919f327827fea46f4a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

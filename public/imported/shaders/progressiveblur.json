@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--progressiveblur",
+    "name": "Progressive Blur",
+    "description": "Progressive Blur shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/ProgressiveBlur/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "e4758be15d8661dbc2d557b3133fe8c88847ee57aaf124df03cb7febb9a6fcd6",
+    "dataUrl": "/imported/shaders/progressiveblur.json",
+    "downloadUrl": "/imported/shaders/progressiveblur.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/ProgressiveBlur/index.ts",
+      "content": "import {defineStd, p, crosses} from \"@coreroot/std\"\nimport {progressiveBlur} from \"@coreroot/std/effects/blurs\"\n\nimport {transformAngle} from \"@coreroot/utilities/transformations\"\nimport {transformPosition} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    intensity: number\n    angle: Parameters<typeof transformAngle>[0]\n    center: Parameters<typeof transformPosition>[0]\n    falloff: number\n    dispersion: number\n    jitter: number\n}\n\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"ProgressiveBlur\",\n    role: 'filter',\n    species: 'custom',\n    boundingBoxDeclaration: {aspectRatio: null},\n    category: \"Blurs\",\n    description: \"Blur that increases progressively in one direction\",\n    requiresRTT: true,\n    requiresChild: true,\n    props: {\n        intensity: {\n            default: 50,\n            description: 'Maximum intensity of the blur effect',\n            ui: {type: ['range', 'map'], min: 0, max: 100, step: 1, label: 'Intensity', group: 'Effect'}\n        },\n        angle: {\n            default: 0,\n            transform: transformAngle,\n            description: 'Direction of the blur gradient (in degrees)',\n            ui: {type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Angle', group: 'Effect'}\n        },\n        center: {\n            default: {\n                x: 0,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: 'Center point where blur begins',\n            ui: {type: 'position', label: 'Center', group: 'Position'}\n        },\n        falloff: {\n            default: 1,\n            description: 'Distance over which blur transitions to full strength',\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Falloff', group: 'Effect'}\n        },\n        dispersion: {\n            default: 0,\n            description: 'Blurs red and blue by different amounts for a lens-like color fringe that grows with the blur; negative swaps the colors',\n            recompile: crosses(0),\n            ui: {type: 'range', min: -1, max: 1, step: 0.01, label: 'Dispersion', group: 'Lens'}\n        },\n        jitter: {\n            default: 0,\n            description: 'Per-pixel noise on the tap spacing that hides banding at large blur radii',\n            ui: {type: 'range', min: 0, max: 1, step: 0.01, label: 'Jitter', group: 'Lens'}\n        }\n    },\n\n    // Compute-backed: variable-radius Gaussian whose radius map ramps directionally from `center`\n    // along `angle`; a map driver on `intensity` samples the per-pixel max radius from the source.\n    // The lens dials are off at 0; the chromatic kernel is only built while dispersion is set.\n    ...progressiveBlur({\n        intensity: p('intensity'), angle: p('angle'), center: p('center'), falloff: p('falloff'),\n        detail: {dispersion: p('dispersion'), jitter: p('jitter')},\n    }),\n})\n\nexport default componentDefinition\n",
+      "sha256": "7b88915e67b70026831c69e343d8d2c1960d7efa23f9415a023119a5b9aeb590"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

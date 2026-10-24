@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--stat-bar-chart",
+    "name": "Stat / Bar chart",
+    "description": "Numbers shown as relative magnitudes, not isolated figures. Pure CSS, no chart library.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/stat/bar-chart.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "33c150f196cac3c41acefc8f5c1b7e7df4fdc0320f18c783218b3e30d63ef15b",
+    "dataUrl": "/imported/inspo/stat-bar-chart.json",
+    "downloadUrl": "/imported/inspo/stat-bar-chart.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/stat/bar-chart.tsx",
+      "content": "/* inspo-reference-component\n * type= stat | genre= editorial | theme= Inspo-paper\n * archetype= Horizontal bar chart | diversification= numbers shown as\n *   relative magnitudes, not isolated figures\n * states= default (static)\n * contrast= pass (46-50)\n */\n\n/**\n * Bar chart - five categories with horizontal bars proportional to\n * real catalogue counts. Each bar carries the figure as a typographic\n * label at the end of the line. Pure CSS, no chart library. The\n * proportions are real (sites per industry); replace with your own\n * data points.\n */\nconst BARS = [\n  { label: \"Editorial\", value: 184 },\n  { label: \"SaaS\", value: 226 },\n  { label: \"Studios\", value: 312 },\n  { label: \"Fashion\", value: 128 },\n  { label: \"Architecture\", value: 84 },\n];\nconst MAX = Math.max(...BARS.map((b) => b.value));\n\nexport function StatBarChart() {\n  return (\n    <section className=\"border rule bg-[var(--color-bg)] px-8 py-16 sm:px-14 sm:py-20\">\n      <div className=\"flex flex-wrap items-baseline justify-between gap-y-3\">\n        <p className=\"text-meta\">By industry</p>\n        <p className=\"text-meta normal-case tracking-normal text-[var(--color-fg-muted)]\">\n          Of {BARS.reduce((n, b) => n + b.value, 0).toLocaleString()} captures\n        </p>\n      </div>\n\n      <ul className=\"mt-10 space-y-4\">\n        {BARS.map((b) => (\n          <li key={b.label}>\n            <p className=\"flex items-baseline justify-between text-sm\">\n              <span className=\"text-[var(--color-fg)]\">{b.label}</span>\n              <span className=\"font-mono tabular-nums text-[var(--color-fg-muted)]\">\n                {b.value}\n              </span>\n            </p>\n            <div className=\"mt-1.5 h-1 w-full bg-[color-mix(in_oklab,var(--color-fg)_8%,transparent)]\">\n              <div\n                className=\"h-full bg-[var(--color-fg)]\"\n                style={{ width: `${(b.value / MAX) * 100}%` }}\n                aria-hidden\n              />\n            </div>\n          </li>\n        ))}\n      </ul>\n    </section>\n  );\n}\n",
+      "sha256": "db8c44390c83e0d2240e0e6184c13785fbb5472cec7181255eb150bd667032de"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Horizontal bars",
+    "Type": "stat"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

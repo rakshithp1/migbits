@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--rectangularcoordinates",
+    "name": "Rectangular Coordinates",
+    "description": "Rectangular Coordinates shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/RectangularCoordinates/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "673b698a82106e97196ba348b41add46e8ae705aa480ce64df38f2ee6fcb66b9",
+    "dataUrl": "/imported/shaders/rectangularcoordinates.json",
+    "downloadUrl": "/imported/shaders/rectangularcoordinates.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/RectangularCoordinates/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {fromPolar} from \"@coreroot/std/warps\"\nimport {centerPropConfig, edgesPropConfig} from \"@coreroot/utilities/propConfigs\"\n// Type-only: `center` accepts the same input shape `transformPosition` does (numbers or px strings).\nimport type {transformPosition} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    center: Parameters<typeof transformPosition>[0]\n    scale: number\n    intensity: number\n    edges: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"RectangularCoordinates\",\n    role: 'warp',\n    category: \"Distortions\",\n    description: \"Convert polar coordinates back to rectangular space\",\n    boundingBoxDeclaration: { aspectRatio: null },\n    props: {\n        center: centerPropConfig(\"The center point for rectangular coordinate conversion\"),\n        scale: {\n            default: 1,\n            description: \"Scale factor for the rectangular output\",\n            ui: { type: ['range', 'map'], min: 0.1, max: 3, step: 0.1, label: 'Scale', group: 'Effect' }\n        },\n        intensity: {\n            default: 1,\n            description: \"Blends between original UVs (0) and rectangular coordinates (1)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Intensity', group: 'Effect' }\n        },\n        edges: edgesPropConfig('transparent', 'How to handle edges when distortion pushes content out of bounds')\n    },\n    map: fromPolar({center: p('center'), scale: p('scale'), intensity: p('intensity')}),\n    missingChildMessage: 'You must pass a child component into the RectangularCoordinates shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "125a121c16f53e203e7152ac4e32fcae61ce320bd96cfd6fcb224af3f99ca3f5"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

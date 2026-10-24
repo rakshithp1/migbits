@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--pricing-table",
+    "name": "Pricing / Comparison table",
+    "description": "Tabular spec sheet. Thin rules, no zebra striping, hover lift to track across rows.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/pricing/table.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "e28cdd55428a2de7aba7fa4665370243ad25f94367187e04b5034c98ccadd356",
+    "dataUrl": "/imported/inspo/pricing-table.json",
+    "downloadUrl": "/imported/inspo/pricing-table.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/pricing/table.tsx",
+      "content": "/* inspo-reference-component\n * type= pricing | genre= editorial | theme= Inspo-paper\n * archetype= Tabular comparison | diversification= differs from 3-card +\n *   toggle on structure (table vs cards) + density (high vs medium)\n * states= default · hover (rows lift)\n * contrast= pass (46-50)\n */\n\n/**\n * Comparison table - feature matrix across tiers. Reads like a magazine\n * spec sheet: thin rules, mono labels, no zebra striping (zebras\n * shout). Hover lifts the row so the eye can track across columns\n * without a colour change.\n */\nconst TIERS = [\"Reader\", \"Studio\", \"Together\"];\nconst ROWS: { label: string; values: Array<string | boolean> }[] = [\n  { label: \"Catalogue access\", values: [true, true, true] },\n  { label: \"URL-paste lookups\", values: [true, true, true] },\n  { label: \"DESIGN.md export\", values: [true, true, true] },\n  { label: \"⌘K palette + Saved\", values: [true, true, true] },\n  { label: \"Self-host the worker\", values: [false, true, true] },\n  { label: \"Fork the schema\", values: [false, true, true] },\n  { label: \"Hosted MCP server\", values: [false, false, true] },\n  { label: \"Auth + rate-limited /extract\", values: [false, false, true] },\n];\n\nexport function PricingTable() {\n  return (\n    <section className=\"border rule bg-[var(--color-bg)] px-8 py-16 sm:px-14 sm:py-20\">\n      <div className=\"mb-12 grid grid-cols-1 gap-y-3 lg:grid-cols-12 lg:gap-x-10\">\n        <div className=\"lg:col-span-3\">\n          <p className=\"text-meta\">Compare</p>\n          <p className=\"font-display mt-3 text-3xl leading-tight\">\n            What&rsquo;s in each tier.\n          </p>\n        </div>\n        <p className=\"lg:col-span-9 max-w-[58ch] text-sm leading-relaxed text-[var(--color-fg-muted)]\">\n          Inspo is free in every tier - the tiers differ in how much of\n          the stack you run yourself. Read for the gallery, Studio for\n          the source, Together for the hosted instance.\n        </p>\n      </div>\n\n      <div className=\"overflow-x-auto\">\n        <table className=\"w-full border-collapse text-sm\">\n          <thead>\n            <tr className=\"border-b rule\">\n              <th className=\"py-4 pr-6 text-left text-meta font-normal\" />\n              {TIERS.map((t, i) => (\n                <th\n                  key={t}\n                  className=\"py-4 pr-6 text-left text-meta font-normal\"\n                >\n                  <span\n                    className={\n                      i === 1\n                        ? \"text-[var(--color-accent)]\"\n                        : \"text-[var(--color-fg)]\"\n                    }\n                  >\n                    {t}\n                  </span>\n                </th>\n              ))}\n            </tr>\n          </thead>\n          <tbody>\n            {ROWS.map((row) => (\n              <tr\n                key={row.label}\n                className=\"border-b rule transition-colors hover:bg-[color-mix(in_oklab,var(--color-fg)_3%,transparent)]\"\n              >\n                <th\n                  scope=\"row\"\n                  className=\"py-4 pr-6 text-left font-normal text-[var(--color-fg)]\"\n                >\n                  {row.label}\n                </th>\n                {row.values.map((v, i) => (\n                  <td\n                    key={i}\n                    className=\"py-4 pr-6 text-[var(--color-fg-muted)]\"\n                  >\n                    {typeof v === \"boolean\" ? (\n                      v ? (\n                        <span aria-label=\"included\" className=\"text-[var(--color-fg)]\">\n                          ·\n                        </span>\n                      ) : (\n                        <span aria-label=\"not included\" className=\"opacity-30\">\n                          -\n                        </span>\n                      )\n                    ) : (\n                      v\n                    )}\n                  </td>\n                ))}\n              </tr>\n            ))}\n          </tbody>\n        </table>\n      </div>\n    </section>\n  );\n}\n",
+      "sha256": "fc3a7475a8c390c55ef310c3d08774bef7367057cb0faaf429472a1fd6f596ea"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Feature matrix",
+    "Type": "pricing"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

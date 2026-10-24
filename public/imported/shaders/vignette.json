@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--vignette",
+    "name": "Vignette",
+    "description": "Vignette shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Vignette/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "50d63a708c8369b5720083840fb725104e66724ff6be19f6aa5190cbf9605140",
+    "dataUrl": "/imported/shaders/vignette.json",
+    "downloadUrl": "/imported/shaders/vignette.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Vignette/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p, tintToward, radialMask, isZero, crosses} from \"@coreroot/std\"\nimport {transformColor, transformPosition} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    color: Parameters<typeof transformColor>[0]\n    center: Parameters<typeof transformPosition>[0]\n    radius: number\n    falloff: number\n    intensity: number\n}\n\n// std pointwise filter (species: no RTT, no premultiply — operates on the composed child inline).\n// Tints the frame toward `color` by an aspect-corrected radial mask × intensity; alpha preserved.\n// GPU bodies live in the kit behind the nouns: `fields.radialFalloffMask` (owns the aspect\n// correction + the transformPosition center double-flip) and `colorMixing.mixToward`.\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"Vignette\",\n    role: 'filter',\n    species: 'pointwise',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Stylize\",\n    description: \"Darkens or tints the edges of the frame, drawing attention toward the center\",\n    props: {\n        color: {\n            default: \"#000000\",\n            transform: transformColor,\n            description: \"Color of the vignette at the edges\",\n            ui: { type: 'color', label: 'Color', group: 'Colors' }\n        },\n        center: {\n            default: { x: 0.5, y: 0.5 },\n            transform: transformPosition,\n            description: \"Center of the clear area where the vignette begins\",\n            ui: { type: 'position', label: 'Center', group: 'Position' }\n        },\n        radius: {\n            default: 0.5,\n            description: \"Distance from center where the vignette begins to fade in\",\n            ui: { type: ['range', 'map'], min: 0, max: 1.5, step: 0.01, label: 'Radius', group: 'Effect' }\n        },\n        falloff: {\n            default: 0.5,\n            description: \"Width of the transition zone from clear to full vignette\",\n            ui: { type: ['range', 'map'], min: 0.01, max: 1.5, step: 0.01, label: 'Falloff', group: 'Effect' }\n        },\n        intensity: {\n            default: 1,\n            description: \"Strength of the vignette effect\",\n            // Recompile only when intensity crosses 0 (identity ↔ effect) — pairs with identityWhen.\n            recompile: crosses(0),\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Intensity', group: 'Effect' }\n        }\n    },\n    effect: tintToward(p('color'), {\n        amount: radialMask({ center: p('center'), radius: p('radius'), falloff: p('falloff') })\n            .times(p('intensity')),\n    }),\n    // intensity=0 zeroes the mix amount whatever the mask is — skips the whole radial computation.\n    identityWhen: isZero('intensity'),\n    missingChildMessage: 'You must pass a child component into the Vignette shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "ad7d2805a94010eba2a6e692c5c354220a528f0df1401930b9769d535857ff8b"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

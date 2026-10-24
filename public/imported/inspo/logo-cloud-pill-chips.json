@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--logo-cloud-pill-chips",
+    "name": "Logo Cloud / Pill chips",
+    "description": "Each wordmark in its own rounded chip. Denser than a strip; works at high partner counts.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/logo-cloud/pill-chips.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "4e8502c319c6a006505b9ee654e683ca84a7c36db582e2a6e6a779d2519cc5e0",
+    "dataUrl": "/imported/inspo/logo-cloud-pill-chips.json",
+    "downloadUrl": "/imported/inspo/logo-cloud-pill-chips.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/logo-cloud/pill-chips.tsx",
+      "content": "/* inspo-reference-component\n * type= logo-cloud | genre= editorial | theme= Inspo-paper\n * archetype= Pill chips | diversification= each logo sits inside a\n *   rounded chip - denser, more playful\n * states= default + hover (chip border accent)\n * contrast= pass (46-50)\n */\n\n/**\n * Pill-chip logos - each wordmark in its own rounded chip with a\n * hairline border. Reads denser than a strip; useful when the\n * partner count is high and a row would force a marquee.\n */\nconst CHIPS = [\n  \"Together AI\",\n  \"Studio 01\",\n  \"S-02\",\n  \"Atelier 03\",\n  \"MARK 04\",\n  \"Studio · 05\",\n  \"S 06 Co\",\n  \"Studio 07\",\n  \"M 08\",\n  \"Studio 09\",\n];\n\nexport function LogoCloudPillChips() {\n  return (\n    <section className=\"border-y rule bg-[var(--color-bg)] px-8 py-12 sm:px-14 sm:py-16\">\n      <p className=\"text-meta text-center\">Partners</p>\n      <ul className=\"mt-6 flex flex-wrap items-center justify-center gap-2\">\n        {CHIPS.map((c) => (\n          <li\n            key={c}\n            className=\"rounded-full border rule px-4 py-1.5 font-mono text-xs tracking-normal text-[var(--color-fg)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]\"\n          >\n            {c}\n          </li>\n        ))}\n      </ul>\n    </section>\n  );\n}\n",
+      "sha256": "606103190f7fac2aee82e2fb94ebb49abe9739f98d2693555326645cfc25f15a"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Rounded chip row",
+    "Type": "logo-cloud"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

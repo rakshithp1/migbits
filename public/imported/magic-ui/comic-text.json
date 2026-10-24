@@ -1,0 +1,50 @@
+{
+  "resource": {
+    "id": "magic-ui--comic-text",
+    "name": "Comic Text",
+    "description": "Comic text animation",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Typography & text",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/comic-text.tsx",
+    "files": 2,
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "236453c86003563bf448ad98f02ef08513f18d230e541015bd3d012b15f093c1",
+    "dataUrl": "/imported/magic-ui/comic-text.json",
+    "downloadUrl": "/imported/magic-ui/comic-text.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/comic-text.tsx",
+      "content": "\"use client\"\n\nimport { type CSSProperties } from \"react\"\nimport { motion } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ntype ComicTextProps = {\n  children: string\n  className?: string\n  style?: CSSProperties\n  fontSize?: number\n}\n\nexport function ComicText({\n  children,\n  className,\n  style,\n  fontSize = 5,\n}: ComicTextProps) {\n  if (typeof children !== \"string\") {\n    throw new Error(\"children must be a string\")\n  }\n\n  const dotColor = \"#EF4444\"\n  const backgroundColor = \"#FACC15\"\n\n  return (\n    <motion.div\n      className={cn(\"text-center select-none\", className)}\n      style={{\n        fontSize: `${fontSize}rem`,\n        fontFamily: \"'Bangers', 'Comic Sans MS', 'Impact', sans-serif\",\n        fontWeight: \"900\",\n        WebkitTextStroke: `${fontSize * 0.35}px #000000`, // Thick black outline\n        transform: \"skewX(-10deg)\",\n        textTransform: \"uppercase\",\n        filter: `\n          drop-shadow(5px 5px 0px #000000) \n          drop-shadow(3px 3px 0px ${dotColor})\n        `,\n        backgroundColor: backgroundColor,\n        backgroundImage: `radial-gradient(circle at 1px 1px, ${dotColor} 1px, transparent 0)`,\n        backgroundSize: \"8px 8px\",\n        backgroundClip: \"text\",\n        WebkitBackgroundClip: \"text\",\n        WebkitTextFillColor: \"transparent\",\n        ...style,\n      }}\n      initial={{ opacity: 0, scale: 0.8, rotate: -2 }}\n      animate={{ opacity: 1, scale: 1, rotate: 0 }}\n      transition={{\n        duration: 0.6,\n        ease: [0.175, 0.885, 0.32, 1.275],\n        type: \"spring\",\n      }}\n    >\n      {children}\n    </motion.div>\n  )\n}\n",
+      "sha256": "d259aa2d9ef9fadcfd565a9bf29557660c511a08e3c18b675dd4b3d731417113"
+    },
+    {
+      "path": "apps/www/public/r/comic-text.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"comic-text\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Comic Text\",\n  \"description\": \"Comic text animation\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/comic-text.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport { type CSSProperties } from \\\"react\\\"\\nimport { motion } from \\\"motion/react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\ntype ComicTextProps = {\\n  children: string\\n  className?: string\\n  style?: CSSProperties\\n  fontSize?: number\\n}\\n\\nexport function ComicText({\\n  children,\\n  className,\\n  style,\\n  fontSize = 5,\\n}: ComicTextProps) {\\n  if (typeof children !== \\\"string\\\") {\\n    throw new Error(\\\"children must be a string\\\")\\n  }\\n\\n  const dotColor = \\\"#EF4444\\\"\\n  const backgroundColor = \\\"#FACC15\\\"\\n\\n  return (\\n    <motion.div\\n      className={cn(\\\"text-center select-none\\\", className)}\\n      style={{\\n        fontSize: `${fontSize}rem`,\\n        fontFamily: \\\"'Bangers', 'Comic Sans MS', 'Impact', sans-serif\\\",\\n        fontWeight: \\\"900\\\",\\n        WebkitTextStroke: `${fontSize * 0.35}px #000000`, // Thick black outline\\n        transform: \\\"skewX(-10deg)\\\",\\n        textTransform: \\\"uppercase\\\",\\n        filter: `\\n          drop-shadow(5px 5px 0px #000000) \\n          drop-shadow(3px 3px 0px ${dotColor})\\n        `,\\n        backgroundColor: backgroundColor,\\n        backgroundImage: `radial-gradient(circle at 1px 1px, ${dotColor} 1px, transparent 0)`,\\n        backgroundSize: \\\"8px 8px\\\",\\n        backgroundClip: \\\"text\\\",\\n        WebkitBackgroundClip: \\\"text\\\",\\n        WebkitTextFillColor: \\\"transparent\\\",\\n        ...style,\\n      }}\\n      initial={{ opacity: 0, scale: 0.8, rotate: -2 }}\\n      animate={{ opacity: 1, scale: 1, rotate: 0 }}\\n      transition={{\\n        duration: 0.6,\\n        ease: [0.175, 0.885, 0.32, 1.275],\\n        type: \\\"spring\\\",\\n      }}\\n    >\\n      {children}\\n    </motion.div>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "8a880e1fe4cf04dd5c917c7b0d73e27225658d1caf1cb078464bd2a07c9bcff7"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"comic-text\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Comic Text\",\n  \"description\": \"Comic text animation\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/comic-text.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

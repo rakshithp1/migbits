@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--bend",
+    "name": "Bend",
+    "description": "Bend shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Bend/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "f4a5e003322c5828f7c36852d209852b5494010b1f2329d7661cd88dccdc2169",
+    "dataUrl": "/imported/shaders/bend.json",
+    "downloadUrl": "/imported/shaders/bend.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Bend/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {bend} from \"@coreroot/std/warps\"\nimport {edgesPropConfig} from \"@coreroot/utilities/propConfigs\"\n\nexport interface ComponentProps {\n    strength: number\n    falloff: number\n    angle: number\n    edges: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"Bend\",\n    role: 'warp',\n    category: \"Distortions\",\n    description: \"Bends the ends of the frame toward you like a curved display — content at the edges swells closer under real perspective, or curls away when the strength goes negative\",\n    boundingBoxDeclaration: { aspectRatio: null },\n    props: {\n        strength: {\n            default: 0.5,\n            description: \"How hard the ends bend — positive curls them toward you (edges magnify), negative curls them away (edges recede into the frame)\",\n            ui: { type: ['range', 'map'], min: -1, max: 1, step: 0.01, label: 'Strength', group: 'Effect' }\n        },\n        falloff: {\n            default: 0,\n            description: \"Concentrates the bend toward the ends — 0 curves the whole frame, higher keeps the middle flat and bends only near the edges\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Falloff', group: 'Effect' }\n        },\n        angle: {\n            default: 0,\n            description: \"Direction of the bend axis in degrees — 0 bends the left/right ends, 90 bends the top/bottom\",\n            ui: { type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Angle', group: 'Effect' }\n        },\n        edges: edgesPropConfig('transparent', 'How to handle edges when the bend pulls content away from the frame border')\n    },\n    map: bend({strength: p('strength'), falloff: p('falloff'), angle: p('angle')}),\n    missingChildMessage: 'You must pass a child component into the Bend shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "eaad2759a12944c5ee5b73047262ddf66d9645c5256b36e4596810b0637a16fa"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

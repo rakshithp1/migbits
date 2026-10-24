@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--interactive-grid-pattern",
+    "name": "Interactive Grid Pattern",
+    "description": "A interactive background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Backgrounds & effects",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/interactive-grid-pattern.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "90e13cb1d0fda13633a1db3486998180bab6ca4796701280e265185b6c9c44c4",
+    "dataUrl": "/imported/magic-ui/interactive-grid-pattern.json",
+    "downloadUrl": "/imported/magic-ui/interactive-grid-pattern.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/interactive-grid-pattern.tsx",
+      "content": "\"use client\"\n\nimport React, { useState } from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\n/**\n * InteractiveGridPattern is a component that renders a grid pattern with interactive squares.\n *\n * @param width - The width of each square.\n * @param height - The height of each square.\n * @param squares - The number of squares in the grid. The first element is the number of horizontal squares, and the second element is the number of vertical squares.\n * @param className - The class name of the grid.\n * @param squaresClassName - The class name of the squares.\n */\ninterface InteractiveGridPatternProps extends React.SVGProps<SVGSVGElement> {\n  width?: number\n  height?: number\n  squares?: [number, number] // [horizontal, vertical]\n  className?: string\n  squaresClassName?: string\n}\n\n/**\n * The InteractiveGridPattern component.\n *\n * @see InteractiveGridPatternProps for the props interface.\n * @returns A React component.\n */\nexport function InteractiveGridPattern({\n  width = 40,\n  height = 40,\n  squares = [24, 24],\n  className,\n  squaresClassName,\n  ...props\n}: InteractiveGridPatternProps) {\n  const [horizontal, vertical] = squares\n  const [hoveredSquare, setHoveredSquare] = useState<number | null>(null)\n\n  return (\n    <svg\n      width={width * horizontal}\n      height={height * vertical}\n      className={cn(\n        \"absolute inset-0 h-full w-full border border-gray-400/30\",\n        className\n      )}\n      {...props}\n    >\n      {Array.from({ length: horizontal * vertical }).map((_, index) => {\n        const x = (index % horizontal) * width\n        const y = Math.floor(index / horizontal) * height\n        return (\n          <rect\n            key={index}\n            x={x}\n            y={y}\n            width={width}\n            height={height}\n            className={cn(\n              \"stroke-gray-400/30 transition-all duration-100 ease-in-out not-[&:hover]:duration-1000\",\n              hoveredSquare === index ? \"fill-gray-300/30\" : \"fill-transparent\",\n              squaresClassName\n            )}\n            onMouseEnter={() => setHoveredSquare(index)}\n            onMouseLeave={() => setHoveredSquare(null)}\n          />\n        )\n      })}\n    </svg>\n  )\n}\n",
+      "sha256": "953385a7fae475dac73f5a88de878cfd8dab1ea5b83a95638ef06bbb10f0a6e2"
+    },
+    {
+      "path": "apps/www/public/r/interactive-grid-pattern.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"interactive-grid-pattern\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Interactive Grid Pattern\",\n  \"description\": \"A interactive background grid pattern made with SVGs, fully customizable using Tailwind CSS.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/interactive-grid-pattern.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport React, { useState } from \\\"react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\n/**\\n * InteractiveGridPattern is a component that renders a grid pattern with interactive squares.\\n *\\n * @param width - The width of each square.\\n * @param height - The height of each square.\\n * @param squares - The number of squares in the grid. The first element is the number of horizontal squares, and the second element is the number of vertical squares.\\n * @param className - The class name of the grid.\\n * @param squaresClassName - The class name of the squares.\\n */\\ninterface InteractiveGridPatternProps extends React.SVGProps<SVGSVGElement> {\\n  width?: number\\n  height?: number\\n  squares?: [number, number] // [horizontal, vertical]\\n  className?: string\\n  squaresClassName?: string\\n}\\n\\n/**\\n * The InteractiveGridPattern component.\\n *\\n * @see InteractiveGridPatternProps for the props interface.\\n * @returns A React component.\\n */\\nexport function InteractiveGridPattern({\\n  width = 40,\\n  height = 40,\\n  squares = [24, 24],\\n  className,\\n  squaresClassName,\\n  ...props\\n}: InteractiveGridPatternProps) {\\n  const [horizontal, vertical] = squares\\n  const [hoveredSquare, setHoveredSquare] = useState<number | null>(null)\\n\\n  return (\\n    <svg\\n      width={width * horizontal}\\n      height={height * vertical}\\n      className={cn(\\n        \\\"absolute inset-0 h-full w-full border border-gray-400/30\\\",\\n        className\\n      )}\\n      {...props}\\n    >\\n      {Array.from({ length: horizontal * vertical }).map((_, index) => {\\n        const x = (index % horizontal) * width\\n        const y = Math.floor(index / horizontal) * height\\n        return (\\n          <rect\\n            key={index}\\n            x={x}\\n            y={y}\\n            width={width}\\n            height={height}\\n            className={cn(\\n              \\\"stroke-gray-400/30 transition-all duration-100 ease-in-out not-[&:hover]:duration-1000\\\",\\n              hoveredSquare === index ? \\\"fill-gray-300/30\\\" : \\\"fill-transparent\\\",\\n              squaresClassName\\n            )}\\n            onMouseEnter={() => setHoveredSquare(index)}\\n            onMouseLeave={() => setHoveredSquare(null)}\\n          />\\n        )\\n      })}\\n    </svg>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "160c6432c904e4d1f4213781ff4b152b7a9658408853366f9e81514300239a9c"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"interactive-grid-pattern\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Interactive Grid Pattern\",\n  \"description\": \"A interactive background grid pattern made with SVGs, fully customizable using Tailwind CSS.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/interactive-grid-pattern.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--kaleidoscope",
+    "name": "Kaleidoscope",
+    "description": "Kaleidoscope shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Kaleidoscope/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "ce79942cfcef6b75bd6f749420545b9496f3a38da2ff02b46b8a1e651e8838e2",
+    "dataUrl": "/imported/shaders/kaleidoscope.json",
+    "downloadUrl": "/imported/shaders/kaleidoscope.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Kaleidoscope/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {kaleidoscope} from \"@coreroot/std/warps\"\nimport {centerPropConfig, edgesPropConfig} from \"@coreroot/utilities/propConfigs\"\n// Type-only: `center` accepts the same input shape `transformPosition` does (numbers or px strings).\nimport type {transformPosition} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    center: Parameters<typeof transformPosition>[0]\n    segments: number\n    angle: number\n    edges: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"Kaleidoscope\",\n    role: 'warp',\n    category: \"Distortions\",\n    description: \"Create a kaleidoscope effect with radial mirrored segments\",\n    boundingBoxDeclaration: { aspectRatio: null },\n    props: {\n        center: centerPropConfig(\"The center point of the kaleidoscope effect\"),\n        segments: {\n            default: 6,\n            description: \"Number of radial segments in the kaleidoscope\",\n            ui: { type: ['range', 'map'], min: 2, max: 24, step: 1, label: 'Segments', group: 'Effect' }\n        },\n        angle: {\n            default: 0,\n            description: \"Rotation offset for the entire kaleidoscope pattern\",\n            ui: { type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Angle', group: 'Effect' }\n        },\n        edges: edgesPropConfig('mirror', 'How to handle edges when distortion pushes content out of bounds')\n    },\n    map: kaleidoscope({center: p('center'), segments: p('segments'), angle: p('angle')}),\n    missingChildMessage: 'You must pass a child component into the Kaleidoscope shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "f119cd29daae6b80272850eb8c44e5a01ae38c33677338a9c59129981be7d420"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

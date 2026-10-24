@@ -1,0 +1,15 @@
+{
+  "revision": "eb3a2b7091293e27df8f9ba906632d8daa3d81a3",
+  "licenseSha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138",
+  "archiveSha256": "9db45f44b2ea0bddf509a85ff1ec06faee00a50df3b78bb242017a665226deb7",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-radix--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f3df5330190245ac1257fdb555f59ad23135546f95bed0d85fcd1f50db911001",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

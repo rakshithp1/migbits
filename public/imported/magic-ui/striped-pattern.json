@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--striped-pattern",
+    "name": "Striped Pattern",
+    "description": "A background striped pattern made with SVGs, fully customizable using Tailwind CSS.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Backgrounds & effects",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/striped-pattern.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "56e3a7fa6bbb1439b705414fcb15e2902d508b28ba2ba0f7b5da899aa67eb0f6",
+    "dataUrl": "/imported/magic-ui/striped-pattern.json",
+    "downloadUrl": "/imported/magic-ui/striped-pattern.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/striped-pattern.tsx",
+      "content": "import React, { useId } from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface StripedPatternProps extends React.SVGProps<SVGSVGElement> {\n  direction?: \"left\" | \"right\"\n}\n\nexport function StripedPattern({\n  direction = \"left\",\n  className,\n  width = 10,\n  height = 10,\n  ...props\n}: StripedPatternProps) {\n  const id = useId()\n  const w = Number(width)\n  const h = Number(height)\n\n  return (\n    <svg\n      aria-hidden=\"true\"\n      className={cn(\n        \"pointer-events-none absolute inset-0 z-10 h-full w-full stroke-[0.5]\",\n        className\n      )}\n      xmlns=\"http://www.w3.org/2000/svg\"\n      {...props}\n    >\n      <defs>\n        <pattern id={id} width={w} height={h} patternUnits=\"userSpaceOnUse\">\n          {direction === \"left\" ? (\n            <>\n              <line x1=\"0\" y1={h} x2={w} y2=\"0\" stroke=\"currentColor\" />\n              <line x1={-w} y1={h} x2=\"0\" y2=\"0\" stroke=\"currentColor\" />\n              <line x1={w} y1={h} x2={w * 2} y2=\"0\" stroke=\"currentColor\" />\n            </>\n          ) : (\n            <>\n              <line x1=\"0\" y1=\"0\" x2={w} y2={h} stroke=\"currentColor\" />\n              <line x1={-w} y1=\"0\" x2=\"0\" y2={h} stroke=\"currentColor\" />\n              <line x1={w} y1=\"0\" x2={w * 2} y2={h} stroke=\"currentColor\" />\n            </>\n          )}\n        </pattern>\n      </defs>\n      <rect width=\"100%\" height=\"100%\" fill={`url(#${id})`} />\n    </svg>\n  )\n}\n",
+      "sha256": "e7616db6087216fc5e8ad0e0aa3fada349ea238a651d85ef4986c88f1f070966"
+    },
+    {
+      "path": "apps/www/public/r/striped-pattern.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"striped-pattern\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Striped Pattern\",\n  \"description\": \"A background striped pattern made with SVGs, fully customizable using Tailwind CSS.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/striped-pattern.tsx\",\n      \"content\": \"import React, { useId } from \\\"react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\ninterface StripedPatternProps extends React.SVGProps<SVGSVGElement> {\\n  direction?: \\\"left\\\" | \\\"right\\\"\\n}\\n\\nexport function StripedPattern({\\n  direction = \\\"left\\\",\\n  className,\\n  width = 10,\\n  height = 10,\\n  ...props\\n}: StripedPatternProps) {\\n  const id = useId()\\n  const w = Number(width)\\n  const h = Number(height)\\n\\n  return (\\n    <svg\\n      aria-hidden=\\\"true\\\"\\n      className={cn(\\n        \\\"pointer-events-none absolute inset-0 z-10 h-full w-full stroke-[0.5]\\\",\\n        className\\n      )}\\n      xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n      {...props}\\n    >\\n      <defs>\\n        <pattern id={id} width={w} height={h} patternUnits=\\\"userSpaceOnUse\\\">\\n          {direction === \\\"left\\\" ? (\\n            <>\\n              <line x1=\\\"0\\\" y1={h} x2={w} y2=\\\"0\\\" stroke=\\\"currentColor\\\" />\\n              <line x1={-w} y1={h} x2=\\\"0\\\" y2=\\\"0\\\" stroke=\\\"currentColor\\\" />\\n              <line x1={w} y1={h} x2={w * 2} y2=\\\"0\\\" stroke=\\\"currentColor\\\" />\\n            </>\\n          ) : (\\n            <>\\n              <line x1=\\\"0\\\" y1=\\\"0\\\" x2={w} y2={h} stroke=\\\"currentColor\\\" />\\n              <line x1={-w} y1=\\\"0\\\" x2=\\\"0\\\" y2={h} stroke=\\\"currentColor\\\" />\\n              <line x1={w} y1=\\\"0\\\" x2={w * 2} y2={h} stroke=\\\"currentColor\\\" />\\n            </>\\n          )}\\n        </pattern>\\n      </defs>\\n      <rect width=\\\"100%\\\" height=\\\"100%\\\" fill={`url(#${id})`} />\\n    </svg>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\",\n      \"target\": \"components/magicui/striped-pattern.tsx\"\n    }\n  ]\n}",
+      "sha256": "e28ad3543fef53dde91e68be992d4b93d13cbea83623e4be3cce706fecde4bde"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"striped-pattern\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Striped Pattern\",\n  \"description\": \"A background striped pattern made with SVGs, fully customizable using Tailwind CSS.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/striped-pattern.tsx\",\n      \"type\": \"registry:ui\",\n      \"target\": \"components/magicui/striped-pattern.tsx\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

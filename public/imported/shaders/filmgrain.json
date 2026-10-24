@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--filmgrain",
+    "name": "Film Grain",
+    "description": "Film Grain shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/FilmGrain/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "1e10a154af7ed95c1f79dcc677a568811e81c5c14ff6dc294ca365e7b1ec4bf3",
+    "dataUrl": "/imported/shaders/filmgrain.json",
+    "downloadUrl": "/imported/shaders/filmgrain.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/FilmGrain/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p, crosses, isZero, schema} from \"@coreroot/std\"\nimport {filmGrain} from \"@coreroot/std/effects/color\"\n\nexport interface ComponentProps {\n    strength: number\n    bias: number\n    animated: boolean\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"FilmGrain\",\n    role: 'filter',\n    species: 'pointwise',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Stylize\",\n    description: \"Analog film grain texture overlay, weighted toward darker areas\",\n    // `animTime` is the grain clock the `filmGrain` noun drives each frame (only when `animated`).\n    extraFields: {\n        animTime: { schema: schema.f32, initial: 0 }\n    },\n    props: {\n        strength: {\n            default: 0.5,\n            description: 'Intensity of the film grain noise',\n            // Recompile only when strength crosses 0 (identity ↔ grain) — drives the bypass below.\n            recompile: crosses(0),\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.025, label: 'Strength', group: 'Effect' }\n        },\n        bias: {\n            default: 2.0,\n            description: 'Concentrates grain in darker areas. Higher values focus grain more heavily on shadows; 0 applies grain uniformly.',\n            ui: { type: 'range', min: 0, max: 10, step: 0.1, label: 'Bias', group: 'Effect' }\n        },\n        animated: {\n            default: false,\n            description: 'When enabled, the grain pattern changes each frame for a dynamic film effect',\n            ui: { type: 'checkbox', label: 'Animated', group: 'Effect' },\n            transform: (value: boolean) => value ? 1.0 : 0.0\n        }\n    },\n    // No `missingChildMessage`: FilmGrain fails silently (transparent) when childless.\n    effect: filmGrain({strength: p('strength'), bias: p('bias'), animated: p('animated')}),\n    // strength=0 zeroes the grain amplitude — skips the hash AND the grain clock entirely.\n    identityWhen: isZero('strength'),\n})\n\nexport default componentDefinition\n",
+      "sha256": "bc51157e62205aedcaa8544cfaa259f23c0fe8401407ba9c08e34c2da79945ec"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

@@ -1,0 +1,117 @@
+name: CI and deployment
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Lint, typecheck, and build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:catalog
+      - run: npm test
+      - run: npm run test:consumer
+      - run: npm run test:community
+      - run: npm run lint
+      - run: npm run build:cloudflare
+      - run: npx tsc --noEmit
+      - name: Validate Worker bundle
+        run: npx wrangler deploy --dry-run
+      - name: Verify preinstalled Chrome for component interaction checks
+        run: google-chrome --version
+      - name: Smoke test Workers runtime
+        shell: bash
+        env:
+          SMOKE_BASE_URL: http://127.0.0.1:8787
+          E2E_BASE_URL: http://127.0.0.1:8787
+        run: |
+          npm run preview:cloudflare -- --port 8787 > /tmp/migbits-worker.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid" 2>/dev/null || true' EXIT
+          ready=false
+          for attempt in {1..30}; do
+            if curl --silent --fail --max-time 2 "$SMOKE_BASE_URL/" > /dev/null; then
+              ready=true
+              break
+            fi
+            sleep 1
+          done
+          if [ "$ready" != true ]; then
+            cat /tmp/migbits-worker.log
+            exit 1
+          fi
+          npm run test:hosting
+          npm run test:browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: component-layout-previews
+          path: tmp/browser/
+          retention-days: 3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cloudflare-worker
+          path: .open-next/
+          include-hidden-files: true
+          retention-days: 3
+
+  deploy:
+    name: Deploy production to Cloudflare Workers
+    needs: checks
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.CLOUDFLARE_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment:
+      name: production
+      url: ${{ vars.PRODUCTION_URL }}
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+      NEXT_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Check deployment configuration
+        shell: bash
+        run: |
+          for name in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Missing GitHub Actions configuration: $name"
+              exit 1
+            fi
+          done
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: cloudflare-worker
+          path: .open-next/
+      - name: Deploy tested production artifact
+        run: npm run deploy:cloudflare
+      - name: Smoke test production
+        if: vars.PRODUCTION_URL != ''
+        env:
+          SMOKE_BASE_URL: ${{ vars.PRODUCTION_URL }}
+        run: npm run test:hosting

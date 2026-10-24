@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--cursorripples",
+    "name": "Cursor Ripples",
+    "description": "Cursor Ripples shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/CursorRipples/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "4357d78d2d00288ff4b4b66deb60ec5a4aa503477a7e92813623c8086162d5bd",
+    "dataUrl": "/imported/shaders/cursorripples.json",
+    "downloadUrl": "/imported/shaders/cursorripples.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/CursorRipples/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p, simulate, op, pointer, pointerSpeed, displaceBy} from \"@coreroot/std\"\nimport {transformEdges} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    intensity: number\n    decay: number\n    radius: number\n    chromaticSplit: number\n    edges: string\n}\n\n// std gather filter driven by a declared simulation: a damped wave equation over\n// a 128² height field (2-history ping-pong — engine-owned), stirred by the pointer (velocity\n// tracked, teleport-guarded), its gradient derived as an RG vector field that displaces the child\n// with a chromatic R/B split. Rest semantics are declared: the engine derives the settle window\n// from the damping value and stops dispatching once the field has decayed. GPU bodies live in the\n// kit behind the nouns: `waves.buildWaveFieldKernels` (propagate + gradient) and\n// `displace.chromaticDisplaceUVs`.\nconst waves = simulate.grid({\n    resolution: 128,\n    history: 2, // the wave equation reads t−1 AND t−2\n    step: [\n        op.wave({ damping: p('decay') }),\n        op.splat({\n            at: pointer({ teleportGuard: 'on' }),\n            amount: pointerSpeed({ max: 2 }),\n            radius: p('radius'),\n        }),\n    ],\n    derive: { displacement: op.gradient() },\n    rest: { settlesWhen: 'derived-from-damping' },\n})\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"CursorRipples\",\n    role: 'filter',\n    species: 'gather',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Interactive\",\n    description: \"Fluid-like ripple distortion\",\n    props: {\n        intensity: {\n            default: 10,\n            description: 'Strength of the ripple distortion',\n            ui: { type: ['range', 'map'], min: 0, max: 20, step: 0.1, label: 'Intensity', group: 'Effect' }\n        },\n        decay: {\n            default: 10,\n            description: 'How quickly ripples fade (higher = faster)',\n            ui: { type: 'range', min: 0, max: 20, step: 0.1, label: 'Decay', group: 'Effect' }\n        },\n        radius: {\n            default: 0.5,\n            description: 'Radius of cursor influence',\n            ui: { type: 'range', min: 0.1, max: 1, step: 0.1, label: 'Radius', group: 'Effect' }\n        },\n        chromaticSplit: {\n            default: 1,\n            description: 'RGB channel separation along ripple edges',\n            ui: { type: ['range', 'map'], min: 0, max: 3, step: 0.1, label: 'Chromatic Split', group: 'Effect' }\n        },\n        edges: {\n            default: 'stretch',\n            description: 'How to handle edges when distortion pushes content out of bounds',\n            transform: transformEdges,\n            compileTime: true,\n            ui: {\n                type: 'select',\n                options: [\n                    {label: 'Stretch', value: 'stretch'},\n                    {label: 'Transparent', value: 'transparent'},\n                    {label: 'Mirror', value: 'mirror'},\n                    {label: 'Wrap', value: 'wrap'}\n                ],\n                label: 'Edges',\n                group: 'Effect'\n            }\n        }\n    },\n    effect: displaceBy(waves.output('displacement'), {\n        strength: p('intensity'),\n        chromatic: p('chromaticSplit'),\n        edges: p('edges'),\n    }),\n})\n\nexport default componentDefinition\n",
+      "sha256": "dc3904201ccdae0c2d3a732699c9415d6d421fe9fb123f695b64980bf8b3e72d"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

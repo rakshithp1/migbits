@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--kinetic-text",
+    "name": "Kinetic Text",
+    "description": "A text component that animates font weight of characters on hover.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Typography & text",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/kinetic-text.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "4b8fc8816388fb36dec65b271f408ea578612f62c6e1c39c2dad1c99f00197f5",
+    "dataUrl": "/imported/magic-ui/kinetic-text.json",
+    "downloadUrl": "/imported/magic-ui/kinetic-text.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/kinetic-text.tsx",
+      "content": "import React from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\ntype As = \"h1\" | \"h2\" | \"h3\" | \"h4\" | \"h5\" | \"h6\" | \"p\" | \"span\"\n\ntype KineticTextProps = React.HTMLAttributes<HTMLElement> & {\n  text: string\n  as?: As\n}\n\nexport function KineticText({\n  text,\n  as: Tag = \"h1\",\n  className = \"\",\n  style,\n  ...rest\n}: KineticTextProps) {\n  const mergedStyle = {\n    \"--hover-padding\": \"calc(1em / 12)\",\n    \"--text-stroke-width\": \"calc(1em * 125 / 6000)\",\n    ...(style as React.CSSProperties | undefined),\n  } as React.CSSProperties\n\n  return (\n    <Tag\n      {...rest}\n      className={cn(\"flex flex-wrap font-[300]\", className)}\n      style={mergedStyle}\n    >\n      {text.split(\"\").map((letter, i) => (\n        <span\n          key={i}\n          aria-hidden=\"true\"\n          className=\"[will-change:font-weight,-webkit-text-stroke-width,padding] [-webkit-text-stroke-color:transparent] [-webkit-text-stroke-width:var(--text-stroke-width)] [transition:font-weight_0.4s,_-webkit-text-stroke-color_0.4s,_padding_0.4s] hover:[padding-inline:var(--hover-padding)] hover:font-[900] hover:[-webkit-text-stroke-color:currentcolor] hover:[-webkit-text-stroke-width:calc(var(--text-stroke-width)*2)] has-[+span+span:hover]:font-[400] has-[+span:hover]:[padding-inline:var(--hover-padding)] has-[+span:hover]:font-[600] [:hover+&]:[padding-inline:var(--hover-padding)] [:hover+&]:font-[600] [:hover+span+&]:font-[400]\"\n        >\n          {letter === \" \" ? \"\\u00A0\" : letter}\n        </span>\n      ))}\n      <span className=\"sr-only\">{text}</span>\n    </Tag>\n  )\n}\n",
+      "sha256": "a02ab6c77ae376778fec3c27b0b1c9d0d7ec0f7e0ac9434d0716eb217556c355"
+    },
+    {
+      "path": "apps/www/public/r/kinetic-text.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"kinetic-text\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Kinetic Text\",\n  \"description\": \"A text component that animates font weight of characters on hover.\",\n  \"dependencies\": [],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/kinetic-text.tsx\",\n      \"content\": \"import React from \\\"react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\ntype As = \\\"h1\\\" | \\\"h2\\\" | \\\"h3\\\" | \\\"h4\\\" | \\\"h5\\\" | \\\"h6\\\" | \\\"p\\\" | \\\"span\\\"\\n\\ntype KineticTextProps = React.HTMLAttributes<HTMLElement> & {\\n  text: string\\n  as?: As\\n}\\n\\nexport function KineticText({\\n  text,\\n  as: Tag = \\\"h1\\\",\\n  className = \\\"\\\",\\n  style,\\n  ...rest\\n}: KineticTextProps) {\\n  const mergedStyle = {\\n    \\\"--hover-padding\\\": \\\"calc(1em / 12)\\\",\\n    \\\"--text-stroke-width\\\": \\\"calc(1em * 125 / 6000)\\\",\\n    ...(style as React.CSSProperties | undefined),\\n  } as React.CSSProperties\\n\\n  return (\\n    <Tag\\n      {...rest}\\n      className={cn(\\\"flex flex-wrap font-[300]\\\", className)}\\n      style={mergedStyle}\\n    >\\n      {text.split(\\\"\\\").map((letter, i) => (\\n        <span\\n          key={i}\\n          aria-hidden=\\\"true\\\"\\n          className=\\\"[will-change:font-weight,-webkit-text-stroke-width,padding] [-webkit-text-stroke-color:transparent] [-webkit-text-stroke-width:var(--text-stroke-width)] [transition:font-weight_0.4s,_-webkit-text-stroke-color_0.4s,_padding_0.4s] hover:[padding-inline:var(--hover-padding)] hover:font-[900] hover:[-webkit-text-stroke-color:currentcolor] hover:[-webkit-text-stroke-width:calc(var(--text-stroke-width)*2)] has-[+span+span:hover]:font-[400] has-[+span:hover]:[padding-inline:var(--hover-padding)] has-[+span:hover]:font-[600] [:hover+&]:[padding-inline:var(--hover-padding)] [:hover+&]:font-[600] [:hover+span+&]:font-[400]\\\"\\n        >\\n          {letter === \\\" \\\" ? \\\"\\\\u00A0\\\" : letter}\\n        </span>\\n      ))}\\n      <span className=\\\"sr-only\\\">{text}</span>\\n    </Tag>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "122915cf9e5c6c2bf9504ddc61eb8cc3fb507e4fce96d0f1dcca1c0639e38195"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"kinetic-text\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Kinetic Text\",\n  \"description\": \"A text component that animates font weight of characters on hover.\",\n  \"dependencies\": [],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/kinetic-text.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

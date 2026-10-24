@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--concentricspin",
+    "name": "Concentric Spin",
+    "description": "Concentric Spin shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/ConcentricSpin/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "3e1091b2d0451a822ee54d61e093b6ffbb69c571065e5a4a64ffee6712369897",
+    "dataUrl": "/imported/shaders/concentricspin.json",
+    "downloadUrl": "/imported/shaders/concentricspin.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/ConcentricSpin/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {concentricRings} from \"@coreroot/std/warps\"\nimport {centerPropConfig, edgesPropConfig} from \"@coreroot/utilities/propConfigs\"\n// Type-only: `center` accepts the same input shape `transformPosition` does (numbers or px strings).\nimport type {transformPosition} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    intensity: number\n    rings: number\n    smoothness: number\n    seed: number\n    speed: number\n    speedRandomness: number\n    edges: string\n    center: Parameters<typeof transformPosition>[0]\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"ConcentricSpin\",\n    role: 'warp',\n    category: \"Distortions\",\n    description: \"Concentric rings that each rotate the underlying image by different amounts\",\n    boundingBoxDeclaration: { aspectRatio: null },\n    // Per-node animated time: rings spin continuously by speed.\n    animatedTime: { speed: 'speed' },\n    props: {\n        intensity: {\n            default: 20,\n            description: 'Maximum rotation angle per ring',\n            ui: { type: ['range', 'map'], min: 0, max: 100, step: 1, label: 'Intensity', group: 'Effect' }\n        },\n        rings: {\n            default: 8,\n            description: 'Number of concentric rings',\n            ui: { type: ['range', 'map'], min: 1, max: 30, step: 1, label: 'Rings', group: 'Effect' }\n        },\n        smoothness: {\n            default: 0.03,\n            description: 'Softness of transitions between rings',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Smoothness', group: 'Effect' }\n        },\n        seed: {\n            default: 0,\n            description: 'Randomization seed for per-ring rotation variation',\n            ui: { type: 'range', min: 0, max: 100, step: 1, label: 'Seed', group: 'Effect' }\n        },\n        speed: {\n            default: 0.1,\n            description: 'Speed of continuous ring rotation',\n            ui: { type: 'range', min: -5, max: 5, step: 0.1, label: 'Speed', group: 'Animation' }\n        },\n        speedRandomness: {\n            default: 0.5,\n            description: 'How much each ring varies in rotation speed and direction',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Speed Randomness', group: 'Animation' }\n        },\n        edges: edgesPropConfig('mirror', 'How to handle edges when distortion pushes content out of bounds'),\n        center: centerPropConfig('Center point of the concentric rings', {label: 'Center Position'})\n    },\n    map: concentricRings({\n        center: p('center'),\n        intensity: p('intensity'),\n        rings: p('rings'),\n        smoothness: p('smoothness'),\n        seed: p('seed'),\n        speedRandomness: p('speedRandomness'),\n    }),\n    missingChildMessage: 'You must pass a child component into the ConcentricSpin shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "e6cbd961ae96132e0a7a394152d0cdf2b91ca2a1db07222807fcc8c1a738e322"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--chevron",
+    "name": "Chevron",
+    "description": "Chevron shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Chevron/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "31a833583448fc326cb3c7a5f0f3f2f8cd64303b4d2a0928c541467f2b7d24b5",
+    "dataUrl": "/imported/shaders/chevron.json",
+    "downloadUrl": "/imported/shaders/chevron.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Chevron/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {alphaOf, mixOf, strokeOver, withAlpha, zigzagBands} from \"@coreroot/std/paint/patterns\"\nimport {transformColor, transformAngle, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    colorA: Parameters<typeof transformColor>[0]\n    colorB: Parameters<typeof transformColor>[0]\n    count: number\n    angle: Parameters<typeof transformAngle>[0]\n    balance: number\n    softness: number\n    speed: number\n    offset: number\n    colorSpace: string\n}\n\n// The anti-aliased zigzag stripe mask, scrolled by the animation clock plus `offset` — shared\n// by the color mix and the separate alpha mix.\nconst bands = zigzagBands({\n    count: p('count'),\n    angle: p('angle'),\n    balance: p('balance'),\n    softness: p('softness'),\n    offset: p('offset'),\n})\n\n// std generator: paints from coordinates, no child consumed.\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"Chevron\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Animated chevron / zigzag stripe pattern\",\n    // When a UV-propagating distortion wraps this generator, the composer supplies a per-pixel\n    // `uvContext` and this generator rasterises at full canvas resolution against that distorted UV.\n    acceptsUVContext: true,\n    // Per-node animated time driven by `speed`; the paint noun reads it as the scroll phase.\n    animatedTime: { speed: 'speed' },\n    props: {\n        colorA: {\n            default: \"#000000\",\n            transform: transformColor,\n            description: \"First color\",\n            ui: { type: 'color', label: 'Color A', group: 'Colors' }\n        },\n        colorB: {\n            default: \"#ffffff\",\n            transform: transformColor,\n            description: \"Second color\",\n            ui: { type: 'color', label: 'Color B', group: 'Colors' }\n        },\n        count: {\n            default: 5,\n            description: \"Number of chevron pairs visible\",\n            ui: { type: ['range', 'map'], min: 1, max: 30, step: 1, label: 'Count', group: 'Effect' }\n        },\n        angle: {\n            default: 0,\n            transform: transformAngle,\n            description: \"Rotation angle of the chevrons\",\n            ui: { type: ['range', 'map'], min: -180, max: 180, step: 1, label: 'Angle', group: 'Effect' }\n        },\n        balance: {\n            default: 0.5,\n            description: \"Ratio of the two colors\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Balance', group: 'Effect' }\n        },\n        softness: {\n            default: 0,\n            description: \"Edge softness\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Softness', group: 'Effect' }\n        },\n        speed: {\n            default: 0,\n            description: \"Animation speed\",\n            ui: { type: 'range', min: -2, max: 2, step: 0.1, label: 'Speed', group: 'Animation' }\n        },\n        offset: {\n            default: 0,\n            description: \"Phase offset for pattern positioning\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Offset', group: 'Animation' }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for interpolation',\n            ui: { type: 'select', options: colorSpaceOptions, label: 'Color Space', group: 'Colors' }\n        }\n    },\n\n    // The recipe: the zigzag mask mixes the two colors in the chosen color space, with the\n    // alpha channel interpolated separately (a straight mix of the two color alphas).\n    paint: withAlpha(\n        strokeOver({fill: p('colorA'), stroke: p('colorB'), mask: bands, space: p('colorSpace')}),\n        mixOf(alphaOf(p('colorA')), alphaOf(p('colorB')), bands),\n    )\n})\n\nexport default componentDefinition\n",
+      "sha256": "4cb3a52d407bac287e212972cbd1520b3b5797a2a7c88bbe0aeb82866bff7c6d"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

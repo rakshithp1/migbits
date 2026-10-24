@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--spiral",
+    "name": "Spiral",
+    "description": "Spiral shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Spiral/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "b973ca7f08891711746c30379946c6656a3497d89b5b0e681791d052b5571430",
+    "dataUrl": "/imported/shaders/spiral.json",
+    "downloadUrl": "/imported/shaders/spiral.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Spiral/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {rampOver, dist, pair} from \"@coreroot/std/paint/fields\"\nimport {transformColor, transformPosition, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    colorA: Parameters<typeof transformColor>[0],\n    colorB: Parameters<typeof transformColor>[0],\n    strokeWidth: number,\n    strokeFalloff: number,\n    softness: number,\n    speed: number,\n    center: Parameters<typeof transformPosition>[0],\n    scale: number,\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"Spiral\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Rotating spiral pattern with animated movement\",\n    acceptsUVContext: true,\n    // Per-node animated time: the renderer registers `_animTime` and advances it by\n    // `deltaTime * speed` (speed=0 pauses, negative reverses).\n    animatedTime: { speed: 'speed' },\n    props: {\n        colorA: {\n            default: \"#000000\",\n            transform: transformColor,\n            description: \"Background color\",\n            ui: { type: 'color', label: 'Color A', group: 'Colors' }\n        },\n        colorB: {\n            default: \"#ffffff\",\n            transform: transformColor,\n            description: \"Spiral stroke color\",\n            ui: { type: 'color', label: 'Color B', group: 'Colors' }\n        },\n        strokeWidth: {\n            default: 0.5,\n            description: \"Thickness of spiral stroke\",\n            ui: { type: ['range', 'map'], min: 0, max: 2, step: 0.1, label: 'Stroke Width', group: 'Effect' }\n        },\n        strokeFalloff: {\n            default: 0,\n            description: \"Stroke losing width further from center\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Stroke Falloff', group: 'Effect' }\n        },\n        softness: {\n            default: 0,\n            description: \"Color transition sharpness (0 = hard edge, 1 = smooth fade)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Softness', group: 'Effect' }\n        },\n        speed: {\n            default: 1.0,\n            description: \"Animation speed (negative values reverse direction)\",\n            ui: { type: 'range', min: -3, max: 3, step: 0.1, label: 'Speed', group: 'Animation' }\n        },\n        center: {\n            default: {\n                x: 0.5,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: \"The center point of the spiral\",\n            ui: { type: 'position', label: 'Center', group: 'Position' }\n        },\n        scale: {\n            default: 1.0,\n            description: \"Scale factor for spiral bands (higher = more bands, lower = fewer bands)\",\n            ui: { type: ['range', 'map'], min: 0.1, max: 5, step: 0.1, label: 'Scale', group: 'Effect' }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: {\n                type: 'select',\n                options: colorSpaceOptions,\n                label: 'Color Space',\n                group: 'Colors'\n            }\n        }\n    },\n    paint: rampOver(\n        dist.spiral({center: p('center'), scale: p('scale'), width: p('strokeWidth'), falloff: p('strokeFalloff'), softness: p('softness')}),\n        pair(p('colorA'), p('colorB'), p('colorSpace')),\n    )\n})\n\nexport default componentDefinition\n",
+      "sha256": "2f6f036ddeb36f7dce4a762ffde4612eaed7fb88aabc0c71a34cfe6d989331c6"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

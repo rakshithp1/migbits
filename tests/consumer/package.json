@@ -1,0 +1,9 @@
+﻿{
+  "name": "migbits-clean-consumer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": { "typecheck": "tsc --noEmit", "build": "esbuild main.tsx --bundle --outfile=dist/app.js --jsx=automatic --minify" },
+  "dependencies": { "react": "19.3.0", "react-dom": "19.3.0" },
+  "devDependencies": { "esbuild": "0.28.2", "typescript": "5.9.3", "@types/react": "19.2.17", "@types/react-dom": "19.2.3" }
+}

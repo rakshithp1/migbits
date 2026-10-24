@@ -1,0 +1,15 @@
+{
+  "revision": "190fafd94a5008b5b18a1dfc5fdb85a74a9faabc",
+  "licenseSha256": "bf4f127cb7d82ed5c00d7095616440211225f4ca3b0195a0ecd0051720df5c18",
+  "archiveSha256": "d2096d4ef325eccd3e42a659705214c96fdd1a5fbc886f9da0e2ab1b6300110f",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-primer--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bbbfb2f134aa188a2e193f2f57a6196a0cb89ea1a64bddb1e2ae8061c11acd5b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

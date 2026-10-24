@@ -1,0 +1,1223 @@
+{
+  "revision": "fa2079f101353f1fa1c9463f5ba9709a0ca3d3bf",
+  "licenseSha256": "1bf0dc3f7727723e5a032ed12164a47cf92c05204cb1a3485f123c24e2833ed1",
+  "archiveSha256": "b634a90981705a4b9a00bc5146701f7e618228f66a62bd92dba014627e04f6b5",
+  "items": [
+    {
+      "key": "AnimatePresence-image-gallery",
+      "id": "motion--animatepresence-image-gallery",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "71e3e74cbfc7aff3d3e6fa3c138b1fc3beb487c582d31f1093612e460b4e293f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "AnimatePresence-layout-animations-siblings",
+      "id": "motion--animatepresence-layout-animations-siblings",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a1d6693d24fb9d363c0e1961dbe0450b10c55f60330e0d88caa9e3bf9cdb3161",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "AnimatePresence-notifications-list-pop",
+      "id": "motion--animatepresence-notifications-list-pop",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c9fd46daaf66a2999649d24ddd577057b7dbdd1771f6d4ea3817e7c5eb977b34",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "AnimatePresence-notifications-list",
+      "id": "motion--animatepresence-notifications-list",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2038fd768d6cfa42b97f5deea5150596aa6495877ac9027cb3eee9dcc189d41b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "AnimatePresence-parallel-children",
+      "id": "motion--animatepresence-parallel-children",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a92f44f3ea9b94d23a3e870a8b90d3f0c7bd6b5ad73f71c175ca277782a4a30e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "AnimatePresence-siblings",
+      "id": "motion--animatepresence-siblings",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "94f8e74ad70e41d2e27596c6e04d5f569ea4fdbf6471f24a896d5f17490a6345",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "AnimatePresence-switch",
+      "id": "motion--animatepresence-switch",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2fdf735be5f4fff38f5bcdcc523c5928849cc9a320f60a77489213196b1c48bd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "AnimatePresence-variants",
+      "id": "motion--animatepresence-variants",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a293edfe44d0fc32e0875acf4ada857dc274d4ae461c43ed1869f19aa8c3b657",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "AnimatePresence-wait",
+      "id": "motion--animatepresence-wait",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1117b53f4da7d60b4b48149a8af2f5b2517f96a17c3b558e0f604e1009b5edbd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "AnimatePresence",
+      "id": "motion--animatepresence",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "23fe27d3dc31fcb938044a3d340549da7e1a9ef77d2165ec8210d883b7414752",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-CSS-variables",
+      "id": "motion--animation-css-variables",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "31f2f66a998308bdbf1104c2ff9e983231e42721faeaeb8a1267eab5c5093629",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-animate",
+      "id": "motion--animation-animate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6b47f434ad4f25bbc84bb4e8e33f073a3cba665862852f9c6fb436674a19e3d0",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-batch-read-writes",
+      "id": "motion--animation-batch-read-writes",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "748a2714b55accf99d75e4fefd8395dac89f5d6424fdaf1b6e9bdac5f5e4782d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-between-value-types-x",
+      "id": "motion--animation-between-value-types-x",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d75308ed6d5faab80996bcc8758063a68dffef97094245ce2594884a35a64750",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-between-value-types",
+      "id": "motion--animation-between-value-types",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b39b59e1587ac4c628fea8f23b73bdb7b421d547a1381409a2ab3ca6c4e223b2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-boxShadow",
+      "id": "motion--animation-boxshadow",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "76cf2c31133fb26c089b08fa9a5fc4a8cccbee35a9f7e03d248a820ee1fe9597",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-cleanup",
+      "id": "motion--animation-cleanup",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ba4b306801e2c810944095718f44472a144a969ed149b65c0c224c46bc6a32c9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-display-visibility",
+      "id": "motion--animation-display-visibility",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "efd9db53984eb7ee0d8927d7e101146ac8b9d1b9e93300b328777bc81c139d1a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-filter",
+      "id": "motion--animation-filter",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e32bb69912b79034505c56f901844b0cdf4f0383baa139f5f9bed66ce8d70451",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-height-auto-display-none",
+      "id": "motion--animation-height-auto-display-none",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fe153b1a85a13327f858133608d380b2498fdee241382767d98bc793daf77bb3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-height-auto-padding",
+      "id": "motion--animation-height-auto-padding",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5f83accb49f873f456da7abb54e05a4f91bdf5aa2d3779287bb4c3edb62d0dae",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-height-auto-rotate-scale",
+      "id": "motion--animation-height-auto-rotate-scale",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a24372d071c14573397c3e74a878da0b10b9a08689517f76c70a8dea7acfd43f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-keyframes",
+      "id": "motion--animation-keyframes",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1552432c08e2b910274e2f4a268823d4f58b9395f522567bf5346fb73068ebaf",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-layout-delay-children",
+      "id": "motion--animation-layout-delay-children",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "be75c3669259ce2590165550048d461d81ea09d58963f0fe8e2e790d2b69c99e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-layout-nested-position",
+      "id": "motion--animation-layout-nested-position",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3b366e735b2ea4ca646e7908236c85cddd0445ddf009be08df40c014d4850abd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-layout-scale-correction",
+      "id": "motion--animation-layout-scale-correction",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3d0799cc93480cbd81d42bbbee746dd69f71fe12b5e8deb68420cfcc85e477f6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-layout-seperate-children",
+      "id": "motion--animation-layout-seperate-children",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "449f2030e4c441dc5f18df8d8ce738e66ee28437a831928d7f15e70c1600f3a5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-layout-size",
+      "id": "motion--animation-layout-size",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e2364a5f67a3ab45c5200cfa519dd203322dccd2ec246981fc64c03fdb3b5836",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-layout-text-size",
+      "id": "motion--animation-layout-text-size",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ffe55e74bd2eb3cfcb9ec497e042a73e662206f9bb9636e6cf9790d1856fb325",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-layout-transform-template",
+      "id": "motion--animation-layout-transform-template",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b6af535cb7840db04ba36fcbc21f82f3e7302b91829dc8f60c5f696ccf2f25ab",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-layout-update-stress",
+      "id": "motion--animation-layout-update-stress",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f9ba4592964a0c0774d1b505c12d19d012ebd8416c00d02e11c82725a31a00e4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-repeat-spring",
+      "id": "motion--animation-repeat-spring",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1394094b2079d63c39c431202a9c9bbbbe1216f193df4787d3497b011b3add9e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-reverse",
+      "id": "motion--animation-reverse",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1637674eeba48a729871688ab61017afa8713fd6bf3af10795f8c2b6ec39bc15",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-spring-css",
+      "id": "motion--animation-spring-css",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c742e27448c8e5d886ce6eedba9e88c1b02279057859ca1b5dd3f4d37bd02b63",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-stagger-custom",
+      "id": "motion--animation-stagger-custom",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "06333b09b3e69cd20c71faeaf596915e44161347a6779256d9f25201f027bdfb",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-stagger",
+      "id": "motion--animation-stagger",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "93c99c26d3aecc2c1c53a5e31f619cef47e1453c44b8ac754f00b7342cd8c05c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-stress-mount",
+      "id": "motion--animation-stress-mount",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6b5b01faee5e3b31a6be807de68dabb3cedb44894375fb4972f0c90e1c357bf0",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-transition-tween",
+      "id": "motion--animation-transition-tween",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "de3d3d63833efdff95f5c6325d45dde8bb8dabb9791d74b01a5866f1a4022133",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-useAnimate-initial-transform",
+      "id": "motion--animation-useanimate-initial-transform",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e73c0149a3bd69c5f7dd1e5ed179330a5df874445cee22c7bb2700497e390d8b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Animation-variants",
+      "id": "motion--animation-variants",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a2d27c1c7320965bcad8b471bf39f439128e53a41574cfbfd2810dba2f280022",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Benchmark-cold-start-gsap",
+      "id": "motion--benchmark-cold-start-gsap",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a7a42fb1dd95ebea950ee816f19ef64e7108f99d48230b05fbae09ce85bfd73f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Benchmark-cold-start-motion",
+      "id": "motion--benchmark-cold-start-motion",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8b69678406df0d64269221ced3c3735519b4827a12ac9e8b5f63c5bba7f7b83b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-SharedLayout",
+      "id": "motion--drag-sharedlayout",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4085342bb0578cc12eb410f8526ed98906db844056ce8d8b65f86f2d471a2253",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-block-viewport-conditionally",
+      "id": "motion--drag-block-viewport-conditionally",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "16535da46c2d07c673cee38ca9aae39574f0857f70c76bc0dcb87236a7b2dcca",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-constraints-ref-small-container-layout",
+      "id": "motion--drag-constraints-ref-small-container-layout",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "28eed330a2b4589014ce023c424c3f0b8195178a4e59c5834c29a2a241375f02",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-constraints-ref-small-container",
+      "id": "motion--drag-constraints-ref-small-container",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a0fbe2a175627208cab0c80759343fe71fd8fe09e8fb7dfb29f97245f44d1c2d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-constraints-ref",
+      "id": "motion--drag-constraints-ref",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c4bc9cbe642c055f62dab4809e7b2adcb2a0b973d85315c9a1c0b9432facba79",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-constraints-relative",
+      "id": "motion--drag-constraints-relative",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2995eac7c5aeef6ffbc7982bde1eb9b801fdaa279dc7351a3c9248835454bdb5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-constraints-resize",
+      "id": "motion--drag-constraints-resize",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8b2726c831baf58e92490516bce77f12162a0ec9caec4d4d440a51b57238dfdd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-draggable",
+      "id": "motion--drag-draggable",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "456ee516f615cf93ac1d453e47c3f655e006f16c20df494d879722b2f9745aa5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-external-handlers",
+      "id": "motion--drag-external-handlers",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "49b76acbb1da3437024276b30c32a22dfdde676bb33d0fd8cf4234a37f329bb2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-nested",
+      "id": "motion--drag-nested",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ac6edc7a609b87187aefded972eb13bc2df6d200506a60d4bee7dce2554886b3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-svg-viewbox",
+      "id": "motion--drag-svg-viewbox",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "78ad4cebbd6c9d84ca61afe2c1ca443e6aa62fc1c12319247cb76fbea27fe71d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-svg",
+      "id": "motion--drag-svg",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1dc8d345bc5530baa1da625f45a3630718c041aa34c839121dea8a1cce2ca1c6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-to-reorder",
+      "id": "motion--drag-to-reorder",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4412b5048d6ca4dafd09a480f366b48454d9810ee0590675cd0437b72f2ed849",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-useDragControls-snapToCursor",
+      "id": "motion--drag-usedragcontrols-snaptocursor",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8a8fbe4031a85a4e88f369fd94772c372889c05363b8327bc033967cd25e7fd3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Drag-useDragControls",
+      "id": "motion--drag-usedragcontrols",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ab82402268d81ddbaa0e03a65f45400d0295a3c9d6447d4b1ff5a8252eb70368",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Events-onTap",
+      "id": "motion--events-ontap",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b4543c45029829acd338071ee5b1c04d7b3afbb631e44fe46a5e10765517b8a2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Events-pan",
+      "id": "motion--events-pan",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8393a2fe519a2c00a8caf1c3e7b745444688450eab3aea28e163a73f57719d80",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Events-whileFocus-variants",
+      "id": "motion--events-whilefocus-variants",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a60093dafc6c2ad21b0ac7b8d9fc3fa0bf7bf436cce6686e5567fa81ee877960",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Events-whileFocus",
+      "id": "motion--events-whilefocus",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6c06bd41c37e3c9f06351c069eade9fe6d40e17848f6395a724e4802b221fb97",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Events-whileHover-unit-conversion",
+      "id": "motion--events-whilehover-unit-conversion",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2f2887af0b382c9e341118517ffacf0fee5cec8053d6ba9853c6774b159b8ddb",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Events-whileHover",
+      "id": "motion--events-whilehover",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f10e70ecba1012ea6609dba5c9821d578394654534b1cf304a04205902b91261",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Events-whileTap-cancel-on-scroll",
+      "id": "motion--events-whiletap-cancel-on-scroll",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c622390cc6689d9f73e1eb881110b47eb010949a2987d79e30c0fa427bdf3d4d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Events-whileTap-global",
+      "id": "motion--events-whiletap-global",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "69fa3069e20213931d0c63b6c297761aaeacd97973445cf3344258fc01f7cd93",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Events-whileTap-variants",
+      "id": "motion--events-whiletap-variants",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e64e87b995e1a0eaf6893f096d1058626368529d7f6a10457782575701e2251c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Events-whileTap",
+      "id": "motion--events-whiletap",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cde3e6b923bceaf936d6372dab49a8ee7b5978981481ff92ce71e7b045de84b9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Layout-Projection-correct-style-border-radius",
+      "id": "motion--layout-projection-correct-style-border-radius",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "490d8f7579c2483f98d266fc9b4deb0b41a26285e9c31497fb804cca018f8b1d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Layout-Projection-custom-values",
+      "id": "motion--layout-projection-custom-values",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a8ef7072ca6b4e473cb2317f4d0a70a4db73213964f065472a9d286138d75150",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Layout-Projection-scale-correction-border-radius",
+      "id": "motion--layout-projection-scale-correction-border-radius",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "356af014f0e16606fb51160425ed65f1ea4e2da2b9065132caf001497abbd17f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Layout-Projection-scale-correction-shadow",
+      "id": "motion--layout-projection-scale-correction-shadow",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bf3ee43a45ad723ebdc6b290108e1bb36205ac214dc3018dd25760c1f5b83397",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Layout-Projection-scale-position",
+      "id": "motion--layout-projection-scale-position",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c43f1fb756edb5fad2efbdb8c276a45dd1ac861bbf6daa79d3e0cd7a5f0258d3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Layout-Projection-scale-size",
+      "id": "motion--layout-projection-scale-size",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "36dac25ce5800733f72c9de05b321340789c62929a49ebd11a31c5edf8295523",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Layout-SVG",
+      "id": "motion--layout-svg",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "354f4ef6a858cf12d70a7eedc8ec21ab5c71bf589a9259cec322bc63eb3263c5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Layout-rotate",
+      "id": "motion--layout-rotate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "643c306d326318643a19d8ac85dc7ca341b7c84c184d630e72bb290945289896",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Layout-skew",
+      "id": "motion--layout-skew",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "06142e150b442a0ebd500263c11b664b35e27f347ce77985dbe63ccdc6abed34",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "LazyMotion-async",
+      "id": "motion--lazymotion-async",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f0c80b0a3515be03288b89e05d02aa9435f48e92062481bc15c96c9b653c60d9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "LazyMotion-sync",
+      "id": "motion--lazymotion-sync",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bb03986b8a5e457138347d69c16ba187df6eb69ee029a54c7a4f31ee27b3f151",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "MotionConfig-isStatic",
+      "id": "motion--motionconfig-isstatic",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5ad766d6aeeae8d3d899735435e2a4898c524613bf81b28e74f452e4cc8df0f1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "MotionConfig-nonce",
+      "id": "motion--motionconfig-nonce",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "75d90abdfcd090ea087aa454b94b88ec7f0a9dd7bda3b183c67ef93526693ec7",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Prop-ref",
+      "id": "motion--prop-ref",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5b86cf145e3f81072370cc70e0a0178641076565d610c4dd39578049c37e63c5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Prop-style",
+      "id": "motion--prop-style",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "61a4fd7e96c9aae749ebc1c6832d858c0a2151851bd10d51c03e07ae97780c9e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Reorder-grid-variable-width",
+      "id": "motion--reorder-grid-variable-width",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5b61b05dd3bac1b156b243e20bf0dc4516ac03ae879c03b7bf90a23649763a43",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Reorder-grid",
+      "id": "motion--reorder-grid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "701a0a23069b86fb4037f8dcb2d295326f06c6189476d46c5395c165e080783b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SVG-MotionValue",
+      "id": "motion--svg-motionvalue",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "755d289c87bbd308c6f5353f3bffbf9eed8db587e438db666b481cd3c3abf5cd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SVG-Text-MotionValue-Child",
+      "id": "motion--svg-text-motionvalue-child",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2c66401006f66b6d3f829aea6f498f2f5220ddc99b68fb27d61fb6d930a9eee1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SVG-layout-animation",
+      "id": "motion--svg-layout-animation",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "83b57e47c8ac06d244efab8d770eb6f83431b9d85d931d70c7f92059b69ddd62",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SVG-path",
+      "id": "motion--svg-path",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "59f12efb66d7b0928776fe78ab8f6cecf016a57434d707cab8f059a513517831",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SVG-transform",
+      "id": "motion--svg-transform",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6b83caa27e84c61d33ce331de5abb2b901ea6c405f62d68b81d7b22a3a496472",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SVG-without-initial-values",
+      "id": "motion--svg-without-initial-values",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5abaed730c4a1ea8bf730f5fe956c173e42ac4e942cd4c9f5d2c69afd3f7aad8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-continuity-crossfade",
+      "id": "motion--shared-layout-continuity-crossfade",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "008d3d73222578497c7abe92b714aa302b1099e519c2890ea8a3ad18c526f65b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-continuity",
+      "id": "motion--shared-layout-continuity",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "df2c19a3d04cdc382e9db4caf3bde24b52b57e217d7c043837f998fe56ec7ad6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-lightbox-crossfade",
+      "id": "motion--shared-layout-lightbox-crossfade",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2d9b1ec6308d585d637584e799493bc4ed89d896e138c55b78693ee51f5ad9cd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-lightbox",
+      "id": "motion--shared-layout-lightbox",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0925c2e05cb8259c4cc01bbfe93247096f2b5042ff4e1cbcbc25e1ab77981d75",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-lists",
+      "id": "motion--shared-layout-lists",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4a68061be662a3d46c34f3fe69c60a869a425bbd01204c9cc2f088c02c803c21",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-motion-value-continuity",
+      "id": "motion--shared-layout-motion-value-continuity",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "475433f46445127ec43991398d663ed4eabb198e2c2361d3ab71950e980cd1a9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-nested-inset-elements-no-layout",
+      "id": "motion--shared-layout-nested-inset-elements-no-layout",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3f16f65e5cbd41c4a64e84dc43dedb48dca03d7cff428a184c2cd1b5ea282952",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-nested-inset-elements",
+      "id": "motion--shared-layout-nested-inset-elements",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d72aee3fbe75a84c0fe71e5735ac45d8c21136b196c0d8c53959f8029ff804bc",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-reparenting-transform-template",
+      "id": "motion--shared-layout-reparenting-transform-template",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b6f7dc066dc8d7159cdbbd81a533d325cb706d9b26b81df97b2bd913bfd0b972",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-reparenting",
+      "id": "motion--shared-layout-reparenting",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1bf2414eb85b8f17072cd2abeacaf9cecda89d2fd487dba49fa00443c570a48d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-rotate",
+      "id": "motion--shared-layout-rotate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e3dcc000cb41b865e65683472f9b34a9ac74bffea7ddb8655f96c1fa915c5266",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-sibling-to-child",
+      "id": "motion--shared-layout-sibling-to-child",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e518eb2d7420432351a5bc7bc134d1fd08777f17bfb66a6fbc9aec664381e757",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-skew",
+      "id": "motion--shared-layout-skew",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b7304682c8de3b48f27e04f321f7732ca353eafea37c36b199c2ded4ac27d7e3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shared-layout-toggle-details",
+      "id": "motion--shared-layout-toggle-details",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "db572356b03e9a90e2be9fa064348dc8ec9c6b74137748405f02f44697a2c979",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "WAAPI-background-color",
+      "id": "motion--waapi-background-color",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1464b914ee7dc198dff6855e4f58df62f053ab8a01f1c9b844cf885a5303ad1e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "WAAPI-interrupt",
+      "id": "motion--waapi-interrupt",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ab557dde1980e5c036439015847f0e5ea43d8750cbfddb1a8ccc1659fbf7b5bb",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "WAAPI-opacity-orchestration",
+      "id": "motion--waapi-opacity-orchestration",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "493d4a3734c602b93926493767de949fa7d5f7247d4dc4d253cd177ea211b013",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "WAAPI-opacity",
+      "id": "motion--waapi-opacity",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "99b8cace6b18fc3da8389a560d83cb5e61ad727bfaba12af545d5d1f8e30270b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_SVG-layout-animation-correction",
+      "id": "motion--svg-layout-animation-correction",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ad09d988aea9a21e146dcb738e6069380a396836334a0cfd43eaf2ba3f8f1383",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_conditionalDraggable",
+      "id": "motion--conditionaldraggable",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b14d6a09615813d0471f70de2160a4fcd04aa2e2824226e1eed8c8fdd3dc42e3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragClickable",
+      "id": "motion--dragclickable",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a467c954b1c63553ee15e20c6c2b521267c4471e2b66a428699cdc70ceb676e6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragConstraintChanges",
+      "id": "motion--dragconstraintchanges",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7b5f36ae7cd57f941ec4485a38574a6e231b35999c4de7be8767d7ae6c35a4c3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragConstraints",
+      "id": "motion--dragconstraints",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "706e2a8626f038c380b1c7784f0f49091644abcbc9636c36253bb97c61f1a811",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragConstraintsRef",
+      "id": "motion--dragconstraintsref",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "376e013a3b7faf5281c767e54bbaad3cb2e502bf389bbebe2b133fda7a17612c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragConstraintsRefScale",
+      "id": "motion--dragconstraintsrefscale",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "591c5762f668cba473a1490e95d866e2c8c945ebc2e7b357380a77527026ace6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragConstraintsRefSmallerThanChild",
+      "id": "motion--dragconstraintsrefsmallerthanchild",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d1cc55dbd27c39516ef9af7f023e93469d57521dde597fec1a4926fdd680815a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragContainingInput",
+      "id": "motion--dragcontaininginput",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ff040dea756af7495d7acb1a43f30b09fecd707b60eb9a3626675ca634b74731",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragControls",
+      "id": "motion--dragcontrols",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "da3c1a847e118b8eeea45c3a26259b91afecf11be6eb70d6ebea7e6256f18285",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragDevice",
+      "id": "motion--dragdevice",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2a6171bc6e6fb2beb56874029e62d01175936f0caa7ccc5677b538197356e48b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragExternalControl",
+      "id": "motion--dragexternalcontrol",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "581a844992f562ac24d1f28402e1892381659ffa9a6253cfc169b5a29dab6ee2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragOverdrag",
+      "id": "motion--dragoverdrag",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e4dde19f064842295370ada7d05170b4fff25f5bf22ff9069a5d0061caeec871",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragPropagation",
+      "id": "motion--dragpropagation",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9c30f60aa29980b940f8e1c21665888603293b7fc36887870b17b975b7427d36",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_dragSetState",
+      "id": "motion--dragsetstate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3970259fce5473caacc1d7110d8b5415c7bd3e01e8966e6caf5343718c85afe5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_layoutDragTransform",
+      "id": "motion--layoutdragtransform",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9883214c9977f2bc8d2ebb444c5820284b6448a2f840d45f37df3a96b2a1f578",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "_layoutTransform",
+      "id": "motion--layouttransform",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "322e51b714c32ce39e91d5d5e67808c4508eb125d468023da2d86b972e63ded2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animate-stress-empty-transforms",
+      "id": "motion--animate-stress-empty-transforms",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2bc0ee970de56434dd9ae92c0056161f562a118164dec9f3f5937a3668fa225a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animate-stress-external-motion-value",
+      "id": "motion--animate-stress-external-motion-value",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b7fa2ec22a3fe168cdc15b82f6d023ce37ffce3d8860d3cefbe6fce8f095227a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animate-stress-headless-color",
+      "id": "motion--animate-stress-headless-color",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "10aee6f05fe541bca680cf6702f220127f48168d94ff528aa16d036b8510e6db",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "animate-stress-headless-x",
+      "id": "motion--animate-stress-headless-x",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "98a14a302923548a8a1e55f9abea4dc7fc90281d3cbedf23dfe5d64339eb7ede",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "layout-memory",
+      "id": "motion--layout-memory",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0af923f602285a1f79d2d01f5dfa57239f0b51409dbf3052358897ecee0b5102",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "layout-stress-limit-propagation",
+      "id": "motion--layout-stress-limit-propagation",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0fe77dcc364fdc10774818e48035004a958289d33ff73daa24def0313f694756",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "layout-stress-scale-correction",
+      "id": "motion--layout-stress-scale-correction",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2d6d7658821f1185601763cfb8f2825108bc51e3663886b16e9a6113e90cf508",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "layout-stress-scroll",
+      "id": "motion--layout-stress-scroll",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c1957315d68a1bf7cf1eb95e3404f2a114ee4a3c41f211be3da7e251a9907da4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "layout-stress-subtree",
+      "id": "motion--layout-stress-subtree",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b5fbf40ac2812f5a0c88c2f20d7d9c4ff4aa8f6e7364a0a6bda392915d0feb28",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "layout-stress-transform-only",
+      "id": "motion--layout-stress-transform-only",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5ed9e4ef39c3ebb8d6399542e96187ba6a02b814317da66e1e1194806555b1ee",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "layout-stress-transform",
+      "id": "motion--layout-stress-transform",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b6f77154288aae35510660c007d0d69caa8e7e5cab876392fef98589a088a35f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "layout-stress-translate",
+      "id": "motion--layout-stress-translate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0e15e05a82dc3ad2934c2fbd67d9e8b1053cc68f5990c7dd002d9b3e96512a62",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "layout-stress",
+      "id": "motion--layout-stress",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fcb8f79003afbec22569c4a96576d81dbc42b8759f69558d99d0a54d902f2aad",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "motion-custom-tag",
+      "id": "motion--motion-custom-tag",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c57069289552d62846cc6a74e216b09eda1045f4013dcd012f272da1ba17fa5d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "transition-arc-playground",
+      "id": "motion--transition-arc-playground",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9024e53492441dfd3557f0b7c5fc0537f5a766a49dbf536d2a366d6e4e30c46a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "transition-arc-spring-playground",
+      "id": "motion--transition-arc-spring-playground",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0f7baa5c63ab0beb21f848d2b59049049c44f07ecaf12e91c6f67fb913abf865",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "useAnimatedState",
+      "id": "motion--useanimatedstate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "78640a6b9278389030e350faca955139329aa7a95e15a237ae90b43bad241f19",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "useAnimation",
+      "id": "motion--useanimation",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3bba7277eecb3ffc05dcb41f37ff1c2cdaeaeb3246d625c0b9882e0f42e0e336",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "useInstantTransition",
+      "id": "motion--useinstanttransition",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "91ea6d1d2e2692c3101e1302caaef17d0b78d923045fe8b1e6b030af56de59d9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "usePresence",
+      "id": "motion--usepresence",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "36209c23556f00be20bb7ca608b9410d832a8dbea381a7b3655fb59e33c94f53",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "useReducedMotion",
+      "id": "motion--usereducedmotion",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f53e3607100e82a306bf7dd1e66935815da5b0a11972c48f818c6d8d35b689ca",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "useScroll",
+      "id": "motion--usescroll",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "584cfe7be8ab041bea85d096c4430c9f44e0ce9b50d13fe7671b93e1e60d5a5c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "useSpring",
+      "id": "motion--usespring",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b58ad8e81c0fd9298deafd496baf47744b30acd3a37a0674d8502de4cfe2cb81",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "useTransform-with-useLayoutEffect",
+      "id": "motion--usetransform-with-uselayouteffect",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3af652bda06e36a8ae8bac9ae4b2df4ebc63f7db49e79079c3e141536bbb1405",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "useVelocity",
+      "id": "motion--usevelocity",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "23b0c679106aaa6681efd1617d40157b7f5c789ddd512ec9d82bb543d5efdfaa",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "useViewportScroll",
+      "id": "motion--useviewportscroll",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "65966bdd4bd5805e1cfd8313f97637a8f1d769f4efd6a748d1a20b2c3ec680f3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "variants-race",
+      "id": "motion--variants-race",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "57ac96344c4109b41e6214a37c0ca79a628b4c7c8e29b7d68baad14b43ed9763",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

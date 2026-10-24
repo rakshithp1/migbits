@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ui-guideline-vuetify",
+    "spdx": "MIT",
+    "licenseSha256": "70bfef859a7eed41e630a7257ee3772cd98345d21219e3ae3c3e75f91ff55e9c",
+    "reason": "Standard MIT text headed The MIT License (MIT); no additional restriction."
+  },
+  {
+    "id": "ui-guideline-polaris",
+    "decision": "excluded",
+    "licenseSha256": "172d300fa7873e23b0aef00408b1429541e0bd33794e998296742fcfc44540ac",
+    "reason": "Additional Shopify-only use conditions."
+  }
+]

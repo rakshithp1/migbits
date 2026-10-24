@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--colorwheel",
+    "name": "Color Wheel",
+    "description": "Color Wheel shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/ColorWheel/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "aaf11a99a5a91fcd8947a1e537f0f1b4107d00f39f3d22ac75259259b5954b5c",
+    "dataUrl": "/imported/shaders/colorwheel.json",
+    "downloadUrl": "/imported/shaders/colorwheel.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/ColorWheel/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {colorWheel} from \"@coreroot/std/paint/gradients\"\nimport {transformColor, transformAngle, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    mode: string\n    colorA: Parameters<typeof transformColor>[0]\n    colorB: Parameters<typeof transformColor>[0]\n    colorC: Parameters<typeof transformColor>[0]\n    scale: number\n    angle: Parameters<typeof transformAngle>[0]\n    speed: number\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"ColorWheel\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"A directional gradient that smoothly cycles through rainbow colors or a custom set of three colors\",\n    acceptsUVContext: true,\n    // Per-node animated time driven by `speed`.\n    animatedTime: { speed: 'speed' },\n    props: {\n        mode: {\n            default: 'rainbow',\n            compileTime: true,\n            description: 'Rainbow cycles through the full spectrum; Custom loops through your three chosen colors',\n            ui: {\n                type: 'select',\n                options: [\n                    { label: 'Rainbow', value: 'rainbow' },\n                    { label: 'Custom', value: 'custom' }\n                ],\n                label: 'Mode',\n                group: 'Colors'\n            }\n        },\n        colorA: {\n            default: \"#ff0000\",\n            transform: transformColor,\n            description: \"First color in the cycle\",\n            ui: { type: 'color', label: 'Color 1', group: 'Colors', condition: { mode: 'custom' } }\n        },\n        colorB: {\n            default: \"#00ff88\",\n            transform: transformColor,\n            description: \"Second color in the cycle\",\n            ui: { type: 'color', label: 'Color 2', group: 'Colors', condition: { mode: 'custom' } }\n        },\n        colorC: {\n            default: \"#0066ff\",\n            transform: transformColor,\n            description: \"Third color in the cycle\",\n            ui: { type: 'color', label: 'Color 3', group: 'Colors', condition: { mode: 'custom' } }\n        },\n        scale: {\n            default: 1.0,\n            description: \"Number of color cycles across the viewport\",\n            ui: { type: ['range', 'map'], min: 0.1, max: 10, step: 0.1, label: 'Scale', group: 'Effect' }\n        },\n        angle: {\n            default: 0,\n            transform: transformAngle,\n            description: \"Direction the gradient flows\",\n            ui: { type: ['range', 'map'], min: -180, max: 180, step: 1, label: 'Angle', group: 'Effect' }\n        },\n        speed: {\n            default: 0.05,\n            description: \"Speed at which the gradient cycles\",\n            ui: { type: 'range', min: -1, max: 1, step: 0.01, label: 'Speed', group: 'Animation' }\n        },\n        colorSpace: {\n            default: 'oklch',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for blending between custom colors',\n            ui: { type: 'select', options: colorSpaceOptions, label: 'Color Space', group: 'Colors', condition: { mode: 'custom' } }\n        }\n    },\n    paint: colorWheel({\n        mode: p('mode'),\n        direction: p('angle'),\n        scale: p('scale'),\n        palette: {a: p('colorA'), b: p('colorB'), c: p('colorC')},\n        space: p('colorSpace'),\n    })\n})\n\nexport default componentDefinition\n",
+      "sha256": "663995db41fe47ed626ececdbb4ce50bde6837806f7e4ee71966c4403f3ef3be"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

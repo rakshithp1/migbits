@@ -1,0 +1,50 @@
+{
+  "resource": {
+    "id": "magic-ui--number-ticker",
+    "name": "Number Ticker",
+    "description": "Animate numbers to count up or down to a target number",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Typography & text",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/number-ticker.tsx",
+    "files": 2,
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "57580081ac7af3070e22a805a0cdb2fb2178a5ced34476f4ecd4a430bb477275",
+    "dataUrl": "/imported/magic-ui/number-ticker.json",
+    "downloadUrl": "/imported/magic-ui/number-ticker.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/number-ticker.tsx",
+      "content": "\"use client\"\n\nimport { useEffect, useRef, type ComponentPropsWithoutRef } from \"react\"\nimport { useInView, useMotionValue, useSpring } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface NumberTickerProps extends ComponentPropsWithoutRef<\"span\"> {\n  value: number\n  startValue?: number\n  direction?: \"up\" | \"down\"\n  delay?: number\n  decimalPlaces?: number\n}\n\nexport function NumberTicker({\n  value,\n  startValue = 0,\n  direction = \"up\",\n  delay = 0,\n  className,\n  decimalPlaces = 0,\n  ...props\n}: NumberTickerProps) {\n  const ref = useRef<HTMLSpanElement>(null)\n  const motionValue = useMotionValue(direction === \"down\" ? value : startValue)\n  const springValue = useSpring(motionValue, {\n    damping: 60,\n    stiffness: 100,\n  })\n  const isInView = useInView(ref, { once: true, margin: \"0px\" })\n\n  useEffect(() => {\n    let timer: ReturnType<typeof setTimeout> | null = null\n\n    if (isInView) {\n      timer = setTimeout(() => {\n        motionValue.set(direction === \"down\" ? startValue : value)\n      }, delay * 1000)\n    }\n\n    return () => {\n      if (timer !== null) {\n        clearTimeout(timer)\n      }\n    }\n  }, [motionValue, isInView, delay, value, direction, startValue])\n\n  useEffect(\n    () =>\n      springValue.on(\"change\", (latest) => {\n        if (ref.current) {\n          ref.current.textContent = Intl.NumberFormat(\"en-US\", {\n            minimumFractionDigits: decimalPlaces,\n            maximumFractionDigits: decimalPlaces,\n          }).format(Number(latest.toFixed(decimalPlaces)))\n        }\n      }),\n    [springValue, decimalPlaces]\n  )\n\n  return (\n    <span\n      ref={ref}\n      className={cn(\n        \"inline-block tracking-wider text-black tabular-nums dark:text-white\",\n        className\n      )}\n      {...props}\n    >\n      {startValue}\n    </span>\n  )\n}\n",
+      "sha256": "0f7dcbc6a1962615a877590304e846f33d390002a51f2226f544938577c220f4"
+    },
+    {
+      "path": "apps/www/public/r/number-ticker.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"number-ticker\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Number Ticker\",\n  \"description\": \"Animate numbers to count up or down to a target number\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/number-ticker.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport { useEffect, useRef, type ComponentPropsWithoutRef } from \\\"react\\\"\\nimport { useInView, useMotionValue, useSpring } from \\\"motion/react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\ninterface NumberTickerProps extends ComponentPropsWithoutRef<\\\"span\\\"> {\\n  value: number\\n  startValue?: number\\n  direction?: \\\"up\\\" | \\\"down\\\"\\n  delay?: number\\n  decimalPlaces?: number\\n}\\n\\nexport function NumberTicker({\\n  value,\\n  startValue = 0,\\n  direction = \\\"up\\\",\\n  delay = 0,\\n  className,\\n  decimalPlaces = 0,\\n  ...props\\n}: NumberTickerProps) {\\n  const ref = useRef<HTMLSpanElement>(null)\\n  const motionValue = useMotionValue(direction === \\\"down\\\" ? value : startValue)\\n  const springValue = useSpring(motionValue, {\\n    damping: 60,\\n    stiffness: 100,\\n  })\\n  const isInView = useInView(ref, { once: true, margin: \\\"0px\\\" })\\n\\n  useEffect(() => {\\n    let timer: ReturnType<typeof setTimeout> | null = null\\n\\n    if (isInView) {\\n      timer = setTimeout(() => {\\n        motionValue.set(direction === \\\"down\\\" ? startValue : value)\\n      }, delay * 1000)\\n    }\\n\\n    return () => {\\n      if (timer !== null) {\\n        clearTimeout(timer)\\n      }\\n    }\\n  }, [motionValue, isInView, delay, value, direction, startValue])\\n\\n  useEffect(\\n    () =>\\n      springValue.on(\\\"change\\\", (latest) => {\\n        if (ref.current) {\\n          ref.current.textContent = Intl.NumberFormat(\\\"en-US\\\", {\\n            minimumFractionDigits: decimalPlaces,\\n            maximumFractionDigits: decimalPlaces,\\n          }).format(Number(latest.toFixed(decimalPlaces)))\\n        }\\n      }),\\n    [springValue, decimalPlaces]\\n  )\\n\\n  return (\\n    <span\\n      ref={ref}\\n      className={cn(\\n        \\\"inline-block tracking-wider text-black tabular-nums dark:text-white\\\",\\n        className\\n      )}\\n      {...props}\\n    >\\n      {startValue}\\n    </span>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "c4808c7218100b218df9ada8e5d1ff21ce99045b41468131534b3d8db61122a7"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"number-ticker\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Number Ticker\",\n  \"description\": \"Animate numbers to count up or down to a target number\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/number-ticker.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

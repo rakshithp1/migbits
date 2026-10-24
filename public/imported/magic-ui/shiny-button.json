@@ -1,0 +1,50 @@
+{
+  "resource": {
+    "id": "magic-ui--shiny-button",
+    "name": "Shiny Button",
+    "description": "A shiny button component with dynamic styles in the dark mode or light mode.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Components",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/shiny-button.tsx",
+    "files": 2,
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "837bc1681a56cfdf645c18b2093f5d0f4ed2bc86a57696f8ae43b415a6591c5a",
+    "dataUrl": "/imported/magic-ui/shiny-button.json",
+    "downloadUrl": "/imported/magic-ui/shiny-button.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/shiny-button.tsx",
+      "content": "\"use client\"\n\nimport React from \"react\"\nimport { motion, type MotionProps } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst animationProps: MotionProps = {\n  initial: { \"--x\": \"100%\", scale: 0.8 },\n  animate: { \"--x\": \"-100%\", scale: 1 },\n  whileTap: { scale: 0.95 },\n  transition: {\n    repeat: Infinity,\n    repeatType: \"loop\",\n    repeatDelay: 1,\n    type: \"spring\",\n    stiffness: 20,\n    damping: 15,\n    mass: 2,\n    scale: {\n      type: \"spring\",\n      stiffness: 200,\n      damping: 5,\n      mass: 0.5,\n    },\n  },\n}\n\ninterface ShinyButtonProps\n  extends\n    Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps>,\n    MotionProps {\n  children: React.ReactNode\n  className?: string\n}\n\nexport const ShinyButton = React.forwardRef<\n  HTMLButtonElement,\n  ShinyButtonProps\n>(({ children, className, ...props }, ref) => {\n  return (\n    <motion.button\n      ref={ref}\n      className={cn(\n        \"relative cursor-pointer rounded-lg border px-6 py-2 font-medium backdrop-blur-xl transition-shadow duration-300 ease-in-out hover:shadow dark:bg-[radial-gradient(circle_at_50%_0%,var(--primary)/10%_0%,transparent_60%)] dark:hover:shadow-[0_0_20px_var(--primary)/10%]\",\n        className\n      )}\n      {...animationProps}\n      {...props}\n    >\n      <span\n        className=\"relative block size-full text-sm tracking-wide text-[rgb(0,0,0,65%)] uppercase dark:font-light dark:text-[rgb(255,255,255,90%)]\"\n        style={{\n          maskImage:\n            \"linear-gradient(-75deg,var(--primary) calc(var(--x) + 20%),transparent calc(var(--x) + 30%),var(--primary) calc(var(--x) + 100%))\",\n        }}\n      >\n        {children}\n      </span>\n      <span\n        style={{\n          mask: \"linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box exclude,linear-gradient(rgb(0,0,0), rgb(0,0,0))\",\n          WebkitMask:\n            \"linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box exclude,linear-gradient(rgb(0,0,0), rgb(0,0,0))\",\n          backgroundImage:\n            \"linear-gradient(-75deg,var(--primary)/10% calc(var(--x)+20%),var(--primary)/50% calc(var(--x)+25%),var(--primary)/10% calc(var(--x)+100%))\",\n        }}\n        className=\"absolute inset-0 z-10 block rounded-[inherit] p-px\"\n      />\n    </motion.button>\n  )\n})\n\nShinyButton.displayName = \"ShinyButton\"\n",
+      "sha256": "916c8b8ffe1a018b560dff80aed78cdfaeded889bcbec70e3fe34618d5073abf"
+    },
+    {
+      "path": "apps/www/public/r/shiny-button.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"shiny-button\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Shiny Button\",\n  \"description\": \"A shiny button component with dynamic styles in the dark mode or light mode.\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/shiny-button.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport React from \\\"react\\\"\\nimport { motion, type MotionProps } from \\\"motion/react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\nconst animationProps: MotionProps = {\\n  initial: { \\\"--x\\\": \\\"100%\\\", scale: 0.8 },\\n  animate: { \\\"--x\\\": \\\"-100%\\\", scale: 1 },\\n  whileTap: { scale: 0.95 },\\n  transition: {\\n    repeat: Infinity,\\n    repeatType: \\\"loop\\\",\\n    repeatDelay: 1,\\n    type: \\\"spring\\\",\\n    stiffness: 20,\\n    damping: 15,\\n    mass: 2,\\n    scale: {\\n      type: \\\"spring\\\",\\n      stiffness: 200,\\n      damping: 5,\\n      mass: 0.5,\\n    },\\n  },\\n}\\n\\ninterface ShinyButtonProps\\n  extends\\n    Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps>,\\n    MotionProps {\\n  children: React.ReactNode\\n  className?: string\\n}\\n\\nexport const ShinyButton = React.forwardRef<\\n  HTMLButtonElement,\\n  ShinyButtonProps\\n>(({ children, className, ...props }, ref) => {\\n  return (\\n    <motion.button\\n      ref={ref}\\n      className={cn(\\n        \\\"relative cursor-pointer rounded-lg border px-6 py-2 font-medium backdrop-blur-xl transition-shadow duration-300 ease-in-out hover:shadow dark:bg-[radial-gradient(circle_at_50%_0%,var(--primary)/10%_0%,transparent_60%)] dark:hover:shadow-[0_0_20px_var(--primary)/10%]\\\",\\n        className\\n      )}\\n      {...animationProps}\\n      {...props}\\n    >\\n      <span\\n        className=\\\"relative block size-full text-sm tracking-wide text-[rgb(0,0,0,65%)] uppercase dark:font-light dark:text-[rgb(255,255,255,90%)]\\\"\\n        style={{\\n          maskImage:\\n            \\\"linear-gradient(-75deg,var(--primary) calc(var(--x) + 20%),transparent calc(var(--x) + 30%),var(--primary) calc(var(--x) + 100%))\\\",\\n        }}\\n      >\\n        {children}\\n      </span>\\n      <span\\n        style={{\\n          mask: \\\"linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box exclude,linear-gradient(rgb(0,0,0), rgb(0,0,0))\\\",\\n          WebkitMask:\\n            \\\"linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box exclude,linear-gradient(rgb(0,0,0), rgb(0,0,0))\\\",\\n          backgroundImage:\\n            \\\"linear-gradient(-75deg,var(--primary)/10% calc(var(--x)+20%),var(--primary)/50% calc(var(--x)+25%),var(--primary)/10% calc(var(--x)+100%))\\\",\\n        }}\\n        className=\\\"absolute inset-0 z-10 block rounded-[inherit] p-px\\\"\\n      />\\n    </motion.button>\\n  )\\n})\\n\\nShinyButton.displayName = \\\"ShinyButton\\\"\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "b378d37c3c762caae89b5f43fde7f9bc7f1ecfce0b5e59c07fcde6351fded76d"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"shiny-button\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Shiny Button\",\n  \"description\": \"A shiny button component with dynamic styles in the dark mode or light mode.\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/shiny-button.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

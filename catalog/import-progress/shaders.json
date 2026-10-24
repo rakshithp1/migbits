@@ -1,0 +1,1607 @@
+{
+  "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+  "licenseSha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4",
+  "archiveSha256": "0ec5b14fe2de99f804dbf3d18a390dd26816bd58665f8958b9a19c47cf52081e",
+  "items": [
+    {
+      "key": "AngularBlur",
+      "id": "shaders--angularblur",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "24114293faa3e88bac46b787466661d77bff5c15301d71d173edb9a155af641e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Arc",
+      "id": "shaders--arc",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "00899c3106ed8f541234d7aa8c23f0c90dfb5e0a2d32880f4f357f6cf53ae04f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Ascii",
+      "id": "shaders--ascii",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "97ce01df8f63f6bc290ace5b279eeba21fd3781c529f891dc474082b6dc2087e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Aurora",
+      "id": "shaders--aurora",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ef48ddcf1ed878eda51bb1d2199e92c17512d6fe1cef093975452735f2531a7a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "BarShift",
+      "id": "shaders--barshift",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7ef4a6cea37d778d4a49a63929092de4ff1afac5bf53d1ac4f1d82a7b2c41070",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "BarnDoors",
+      "id": "shaders--barndoors",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b8b1f7ea047126a6802c5b70b5f3d5f0594a0148360c3dab06969bf07ab96057",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Beam",
+      "id": "shaders--beam",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a00c4143033bd71e960dde7e918872426bb23c0c002905e8fe81dc27ba85819e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Bend",
+      "id": "shaders--bend",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f4a5e003322c5828f7c36852d209852b5494010b1f2329d7661cd88dccdc2169",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Blob",
+      "id": "shaders--blob",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "80c6add50afde4e4ed42fd71f1c6286c211939ffa4d067309854db15fc608547",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "BlockDissolve",
+      "id": "shaders--blockdissolve",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1d2cd3e3f70cfc781cb84138de43065254e4e87169c0fbbcb2b77059b3a57b70",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "BlockNoise",
+      "id": "shaders--blocknoise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "de6f44c104efa890d9746b6ccb8d9aa5355a7e42b2f78a2f2c1f825eda8aec70",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "BlueNoise",
+      "id": "shaders--bluenoise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "225d47d51128716517f2c1e7143e7dcde9e78d6e7431c22e696bc574f0c3ab1d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Blur",
+      "id": "shaders--blur",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ef87cbc4be5d0910a7ec495d1bd2fa314f0aa7528fcd429e24a5fc2e755cae4d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Boids",
+      "id": "shaders--boids",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "aafe9ea3a7694185045bd22ef29ac59f5c72c3680eb2336d70ac8f706ae1693e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "BokehBlur",
+      "id": "shaders--bokehblur",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fe0da4e940d51415dba5a76ddd6b5e6b05fafd9c03d0de9dce2e9c21f20024b4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "BrickPattern",
+      "id": "shaders--brickpattern",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d77f0d2ca626efcf1355b4ce3301a789a68b58ce451ee7ec8b63585a7a802504",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "BrightnessContrast",
+      "id": "shaders--brightnesscontrast",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "90ff5afead8e0804d942c2dc066b38def437ac619da46a06b862295ef257c337",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "BrushedMetal",
+      "id": "shaders--brushedmetal",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0e4d3268bc94df4e9b81dfc20cef8a5ce5f1394a212c77991d347cd2d784fbff",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Bulge",
+      "id": "shaders--bulge",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9f3b4ccf5fd7ac9a0f9cb347f38e2e57efc686f7d58a35e5ae3d30f19e1c15d3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "CRTScreen",
+      "id": "shaders--crtscreen",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b6aa3361139e9ac517b69045045030edee33bf9c0ff726548b401ec7ac303813",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "CarbonFiber",
+      "id": "shaders--carbonfiber",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b45d5baf2a72b5829685bae526a85326251ec40da5573841dcb4aa2821689e49",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Chalkboard",
+      "id": "shaders--chalkboard",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5fa55fe7b6a95abf94270b1be6218ae7ddb0338a968ede7b6b08388f5a3e7113",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ChannelBlur",
+      "id": "shaders--channelblur",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "53df25ddfb09c463c8914d3b7866f6cedebd71f2a407b1c21ad566fbdda14a6d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "CheckerWipe",
+      "id": "shaders--checkerwipe",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "22863d9c9550aa56093803158cc76dd4d648babfe2a0a9074a274d6b6eb0f280",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Checkerboard",
+      "id": "shaders--checkerboard",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8f289775bec9256d3741dd691fe1a1c57fedd50e168bbff67ee08357173cbfd8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Chevron",
+      "id": "shaders--chevron",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "31a833583448fc326cb3c7a5f0f3f2f8cd64303b4d2a0928c541467f2b7d24b5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ChromaFlow",
+      "id": "shaders--chromaflow",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fc8a82dc74a0a5d47179fd58330c86eb49046f5226accc3c6c29253e9ed4d77e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ChromaticAberration",
+      "id": "shaders--chromaticaberration",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8b99fa3a0220ad3ef5c58618c0b3d0328b6f6276d16d0428d3739322248bfcf7",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Chrome",
+      "id": "shaders--chrome",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "17ca4d1db77f04bf14a6124e0c2cce81bb99cd6b768ac0775a361521193f6358",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Circle",
+      "id": "shaders--circle",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2d4d3ece231c0c01deb9f7b2f378284b87b49c076de880cfb0feded4364719ef",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ColorWheel",
+      "id": "shaders--colorwheel",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "aaf11a99a5a91fcd8947a1e537f0f1b4107d00f39f3d22ac75259259b5954b5c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "CompressionArtifacts",
+      "id": "shaders--compressionartifacts",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b1badd427479c69ba371b192c7ba36fdf13a627dca5186a8da0305ee62012557",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ConcentricSpin",
+      "id": "shaders--concentricspin",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3e1091b2d0451a822ee54d61e093b6ffbb69c571065e5a4a64ffee6712369897",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ConicGradient",
+      "id": "shaders--conicgradient",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ac1a5f4f2f2f359b27daafbec4317ea00bd364c7e5ca398d089eed42624910e1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ContourLines",
+      "id": "shaders--contourlines",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "633ad9b758f285ff63ae630408be3e4c4cb6413c645bca8e4dd9fdb9815a4653",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "CornerPin",
+      "id": "shaders--cornerpin",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "543af93788dff8dd5a5d324a8cf56a01a45f4b4a79e0eeec320f69702b56e8a2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Crescent",
+      "id": "shaders--crescent",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9a88875eb4489c37c2d4cbb0409b80c2983294adbbaebc1362865ea6f16436f1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Cross",
+      "id": "shaders--cross",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3e7734524f0fc162d821979ae19610446a31428570f57df0226c90142d62406b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Crystal",
+      "id": "shaders--crystal",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "dd6688751396773e71a54d9497f11dd29011ba2a1d9ae3a9ea4bd127f13733f7",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "CurlNoise",
+      "id": "shaders--curlnoise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f69f9a8fa8c68923f7424b47e31971ce94c68213588d5943b7e69d51f5b81d3a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "CursorRipples",
+      "id": "shaders--cursorripples",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4357d78d2d00288ff4b4b66deb60ec5a4aa503477a7e92813623c8086162d5bd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "CursorTrail",
+      "id": "shaders--cursortrail",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5fcc64f3e714a1fcccb18fef7556d1352fb2ddf2c9c30e532ac5a2f24da748ed",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "DataMosh",
+      "id": "shaders--datamosh",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "af55236a922223874b9d3b4e57d0b5ee63597aebcd7402693c481436e6771ea9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "DiamondGradient",
+      "id": "shaders--diamondgradient",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fb81279a95911a3406677de782f5222a680150089faa2e35dbe7784cfaa42188",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "DiamondWipe",
+      "id": "shaders--diamondwipe",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "daf6052273e4013a13b61bd225add218e3af0ecb8119f45c0fc112413b59fa53",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "DiffuseBlur",
+      "id": "shaders--diffuseblur",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ee55080ba47d761336ac44a758437d0441c89556ffe34fe4bbe31fdceaefcb3a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "DisplacementMap",
+      "id": "shaders--displacementmap",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d3586c95286c7e91ceb96afd6050313700c26a55aa9d6a9bf067a9dfda2472ac",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Dither",
+      "id": "shaders--dither",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b0a0b676cd5f99a19690ca092ff4970544a64e765f9e383829dc4a1dd9764e47",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "DotGrid",
+      "id": "shaders--dotgrid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b33c2e5f625405237b58b09162341762f443c3a56d8a262ed4c3f64fa8873af3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "DropShadow",
+      "id": "shaders--dropshadow",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "440482255c045dd603e75977b8d88d654c0491261cf70690c4d9f5021ec369da",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Duotone",
+      "id": "shaders--duotone",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "164cc2143ed13efefb9a3c0f7b2c9770f8cc3ea65bb38d9e7521f458af17f643",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Ellipse",
+      "id": "shaders--ellipse",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f9bf278106c6b2cdbb295c7107529309f3621ef47d95e385f5c14c00b5a4361a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Emboss",
+      "id": "shaders--emboss",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1d6dcba2a6df3391a935500ac26e22a9decb37edb63b49308799747300220394",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Engraving",
+      "id": "shaders--engraving",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9b9088f50707a07301478d1e2b12292e92c07bbde6bc145745c8da5f162befe5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ErosionNoise",
+      "id": "shaders--erosionnoise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e9e383c85546bffba7c1fa1e626bb9d1dc76b3d13331163a07eb118c98f8840d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Exposure",
+      "id": "shaders--exposure",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d216fb6e96440cc91896ee6e27ee111ed48f58e4c2a904c2d2d4c373aad7dce9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "FallingLines",
+      "id": "shaders--fallinglines",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "36fb1174552b10ff5370d883d8bfb5943850f4377162c97eb50abc8eacb8fd65",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "FilmGrain",
+      "id": "shaders--filmgrain",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1e10a154af7ed95c1f79dcc677a568811e81c5c14ff6dc294ca365e7b1ec4bf3",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "FilmStock",
+      "id": "shaders--filmstock",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3846df05f4b63b634fa7fbf2db8e22909b45aeb674d3cce34d47badf6c17ad7f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Flip",
+      "id": "shaders--flip",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "446e4863f90b87b43ef1814dd1039cf9b39fb6788f3de4917edb636bcdf298a8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "FloatingParticles",
+      "id": "shaders--floatingparticles",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bded0291b9bae1c011635fa79a9ef9795d4083284ff2c6f922bd31e3bfc645f9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "FlowField",
+      "id": "shaders--flowfield",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2e73df88061868289f9cb498061163ee67cdd0f14922f4cfc509de314c2ac128",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Flower",
+      "id": "shaders--flower",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "98fe1d7373fb580252d4d498bc23aabf4f902f403422630f4909d1feb1ad85a1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "FlowingGradient",
+      "id": "shaders--flowinggradient",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a8ce3e2cd804e9be6d5a2453693a46b1a5ef61fd62db0125d77f172915572686",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "FlutedGlass",
+      "id": "shaders--flutedglass",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c4fd243e0d52010a30aeae78ab96cb98f28744a0df07fd6523dc252b68d4b911",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Fog",
+      "id": "shaders--fog",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "612f8eca4a4ffd437427a6e4cf541597d3c837709ee1510761520378cb20f95f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Form3D",
+      "id": "shaders--form3d",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f1943df5e8ea13d5d08a654c17469edcae7f8d29172c922682540ef391d9097a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "FractalNoise",
+      "id": "shaders--fractalnoise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e7eadd8b1756b8bfc335786722ec8c6493a0c330584436753afbc66f83c2c4da",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Frost",
+      "id": "shaders--frost",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1fed56f41c661c832c4703358941235639b2888e5e69016d71b3175d4260c614",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "GaborNoise",
+      "id": "shaders--gabornoise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3cd7ef22ad834f963914a5f46278ff9ff40d508a1a55ff4504a8a60a5f23c3ec",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Glass",
+      "id": "shaders--glass",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "875297191f440033d78258067df56ba79dbbec30818714a595e66989b50bd91a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "GlassTiles",
+      "id": "shaders--glasstiles",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0d08d1a835163c5dc24d540652915b8800cc4425ec1ff4092d78866c672d4e6c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Glitch",
+      "id": "shaders--glitch",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9d1dbbcf20c4dbaf2f82890b0d727edca5cc7e2be317ae4591d350760506e9f1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Glow",
+      "id": "shaders--glow",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6504e56122764831083b55327deeca371a447da7f32da5f73df7f4e1f6580ea4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Godrays",
+      "id": "shaders--godrays",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "95d574493423afca2fcfe59f32820d98576c6dd5fe48edb7ccdc46806d12bda4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Goo",
+      "id": "shaders--goo",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "99291773815445f5463f81ac277f9da44547f5a6cfb67e0753fdf3bb7e823dd5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "GradientMap",
+      "id": "shaders--gradientmap",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ef606feb589a528b8fa6787d96b33c84cc2f38e3c4ff80e849185ca9ebe17dcf",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Grayscale",
+      "id": "shaders--grayscale",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c1f33d321dc303109bcf1aa5bb651b543cbbc0344859caaf08cacef67d6e67dd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Grid",
+      "id": "shaders--grid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ab82f742c9b2fb03644f732d306dbef803ae6b13665c3a7e82553a93cecd5042",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "GridDistortion",
+      "id": "shaders--griddistortion",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1f017ead09d94d2b6390f09caec82a942d20dcfec9de061e8934bb46ec9d9ffe",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Group",
+      "id": "shaders--group",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "30bf0270e3d8ecc89d08360ebd00f4075d6731fe40ef2a05ad61f80ac8276f7b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "HTMLInCanvas",
+      "id": "shaders--htmlincanvas",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9c58031e1f2f4b5e064635f16e0303268f2c5d09942e144310b5a47ae9d550a1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Halftone",
+      "id": "shaders--halftone",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "184f9897080d8eceb18e6efe12eeb3bcf3f83de12b9a45deddc1f689f186e866",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Heart",
+      "id": "shaders--heart",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "56ebd2ada2d5339a57689368aa4b2fbe9a917eafd0c05b620bf01b04107cb864",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Heatmap",
+      "id": "shaders--heatmap",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "56ed015a37ea80751527198c3c0fbaa2eef7ff0256cbe013361697ba58f4110f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "HexGrid",
+      "id": "shaders--hexgrid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "99078cc2cfc702e99c91629f0627b8f59442ea802802c30d8a3f9179e61065fc",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Hologram",
+      "id": "shaders--hologram",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "850d89062273bb64bda2997766b0dac27fd75d5bf697ba6c538355c25fb6d027",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Holographic",
+      "id": "shaders--holographic",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fdb37967c98b46b8cd49f42d78cac3353c22deb97cd7ef06b757f3736543aa0c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "HueShift",
+      "id": "shaders--hueshift",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a7ed7c1ec0c8ae96ca3a730eb3f6859f5f2edcd6790c7bf965bd7bbee785a0b2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ImageTexture",
+      "id": "shaders--imagetexture",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "13247d5e550bd95682b754b9e08e8520fc2c26494c34485a718095156662d862",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "InkFlow",
+      "id": "shaders--inkflow",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "83d6360e5888547c52570d803fd950ec016af0ee4363b7cf7f53c5ffacdf7081",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Invert",
+      "id": "shaders--invert",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e4ec2067b8478fcc3f2be6c0ddbde38bcb1441d81ef8f1e0366d67ae76198354",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "IrisWipe",
+      "id": "shaders--iriswipe",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d8c81e60218367ce111d3561dcdd561be051cf2349a9c5b88559ae8c4c7276ac",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Irradiance",
+      "id": "shaders--irradiance",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cb6646f07316dc2f07a28e60d24a97b10828746a7f67f2fc71336b07f4b13655",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "IsometricCubes",
+      "id": "shaders--isometriccubes",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "af4664ff209b0ecb03247cb9efd7f4cf717e584f60df88b6f818719a15999788",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Kaleidoscope",
+      "id": "shaders--kaleidoscope",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ce79942cfcef6b75bd6f749420545b9496f3a38da2ff02b46b8a1e651e8838e2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "KeyFrames",
+      "id": "shaders--keyframes",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f138cc5a938f154bbc8b4d55eb3022e791c58a256d3ec897de5dfaadbdb6d9f8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "LensDistortion",
+      "id": "shaders--lensdistortion",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "06aecc52699e6e7977935def25dea4394e2618b17584d1da1206d48bd866496b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "LensFlare",
+      "id": "shaders--lensflare",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "53beef3a7e9b63546e6a80f5614afb7f2eaa421d7b8aec279a566f85632ae1a9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "LightEdge",
+      "id": "shaders--lightedge",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4ae0e88588c77f2a8dba62c702f37a3ddf3b33a7bf1b81a83bfdcfccd0a80584",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "LightLeak",
+      "id": "shaders--lightleak",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a34f1b72249b3e47689dc842b2c0c0c8fd99a7fa856cc7db04c57c5fef77e2ae",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Line",
+      "id": "shaders--line",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "6c2b4de92ab4ae3bca509ec531b8ab22852288443e3fae29d214dedbf480b804",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "LinearBlur",
+      "id": "shaders--linearblur",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1f2e749c584e87b71f9ab40133628480968b20b81c56e798761de0706b92c02f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "LinearGradient",
+      "id": "shaders--lineargradient",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "27a415820997910af3d7f0329b0fcfbe32fc13919079e2b116e01d35811206f8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "LinearWipe",
+      "id": "shaders--linearwipe",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5c96bbb2a9227708568fcbd37273d09133ab2bcf2c4c8cb67eb24f09c184aa33",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "LiquidMetal",
+      "id": "shaders--liquidmetal",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5f605c2e0a0b1d6e9581535e9c0723b48545266d389657ad71f154fe896e9ac1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Liquify",
+      "id": "shaders--liquify",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "105ac8c6cbe4a7c0e9a43240455241f1995c0e628b81904cead33e4343229517",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "MagneticFilings",
+      "id": "shaders--magneticfilings",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c888f81143c561b799beac4585394562cce29808d7d3e86fd60c81217222a98e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Marble",
+      "id": "shaders--marble",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2135e5e0a6c6d4a9af985c13f54c84906bb58298dcca556a91c570599f518c09",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "MeshGradient",
+      "id": "shaders--meshgradient",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c0c8aa3f9328e277dba4469ee78a6c8df0bcd7b10db6901ad62117fd6e5b711a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Mirror",
+      "id": "shaders--mirror",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "121b7860b9caee81f97a76fcb46e102ce02452d84dca77fe0e2bc0120c35fbc2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "MultiPointGradient",
+      "id": "shaders--multipointgradient",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a880e1a53c25a0ef75086f08c1460f81b271fab34a66674f2cee35c2d7cdfa43",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Nebula",
+      "id": "shaders--nebula",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2ff367855a91e5fa2c3b42fca9c9d7539ff01cd0b88e4f5fcb9741e5063927ef",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Neon",
+      "id": "shaders--neon",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d7834922fae6d505168942c37831a844258a3a293d3edf3663e601e48374e79e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "NoiseDissolve",
+      "id": "shaders--noisedissolve",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8a301d0a5f9cba19f2769348414d3c854c5244a41cf071da5169a06b2319aa49",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ObjectTracker",
+      "id": "shaders--objecttracker",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "90a65261cb177fc851c11a6d2a5eebcd139918da88f73549dec35b8a2cf3e0fc",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Obsidian",
+      "id": "shaders--obsidian",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "24da10be12afdef9443a78654909b28f24dc8512e8b89c292236eaf3d2a1e1f6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "PagePeel",
+      "id": "shaders--pagepeel",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a0e7fd452dd8c2151918bf6d4d9a5702f0dcac43b31a7a2045ad7aff06cb5258",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Paper",
+      "id": "shaders--paper",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "542615b53fa5e4ba8bb57878a6b6d47dcd68c4fd31f7337aeb9efa929258ba59",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Parallelogram",
+      "id": "shaders--parallelogram",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cfaabde7eca22e018acb4820cb4856540604bf1edbbf49efee089960d20fd897",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ParticleField",
+      "id": "shaders--particlefield",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "51b9f98ef03e4cab6d72c69f2cc6d1f422bfef99d98129e9ef17398e3f2866ad",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ParticleFlow",
+      "id": "shaders--particleflow",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5df856c29f9bd2ba5a49c5e35b78adb579040c126c54b3a61090df8d467f9490",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Particles",
+      "id": "shaders--particles",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "599693c47e41c06257a30d0e1c216d441f0f811eb1ca1647cf810aeeffd1de65",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "PerlinNoise",
+      "id": "shaders--perlinnoise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7b4705d307987dfb84e753678e2160a54c5dceb1a787584ccb841309c5276690",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Perspective",
+      "id": "shaders--perspective",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0112a263c5280819dc98f776b9b6a3f41f92c91d6ca438aff90098b72d2ec0e7",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "PixelSort",
+      "id": "shaders--pixelsort",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1a09caa4c056862b7d5e27b772211fbc023718d617b955860bbc03c98fbcd93d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "PixelThrow",
+      "id": "shaders--pixelthrow",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "942909a567bac8d9288475ca02687b4ad2d1cf308339f3da5a0229ff12e36704",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Pixelate",
+      "id": "shaders--pixelate",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "16a255c9ecf98c3ed725618c0a649105a54c14f8bb21f1046096e71f69d250ca",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Plasma",
+      "id": "shaders--plasma",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0cb0023aeb61e8819027d658b84c195f754897acfd0192a56da1980e9f650028",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Plastic",
+      "id": "shaders--plastic",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "fd37e2f9c93e60ddac385d1244674cf888998a610910467a5dfb8f23cc18e51e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "PolarCoordinates",
+      "id": "shaders--polarcoordinates",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "21a1e7f7cc6dce67bfc4038bfed04bea007afbb0cd375e123c78170a9f9f6087",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Polygon",
+      "id": "shaders--polygon",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "174957a0666813fc8de962ca8b9caa38eb4035d565bf544c77420184e5594999",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Posterize",
+      "id": "shaders--posterize",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2a576bf97066d708bb842d89342d95afbdd28f3ab98444d2623e9bda0a59be15",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Prism",
+      "id": "shaders--prism",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ddb07818c87156ac1e66cb39746b02ee47d61c75a6f9b413e1949425d40dd92c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ProgressiveBlur",
+      "id": "shaders--progressiveblur",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e4758be15d8661dbc2d557b3133fe8c88847ee57aaf124df03cb7febb9a6fcd6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "RadialGradient",
+      "id": "shaders--radialgradient",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e338b14e329ea996be2563d45bb4d9ac3b29e86b6781a3eb47d2717aaba02d05",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "RadialWipe",
+      "id": "shaders--radialwipe",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4e8d22be3db09c4eab2e11b4a36653c60acf3815c6d54a78f9b40ac57ffd93f8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "RandomBars",
+      "id": "shaders--randombars",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4a777eb4cfd110fac636c51faf5376feb0ce91936d2cd8b505b47d7a2ea01c72",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ReactionDiffusion",
+      "id": "shaders--reactiondiffusion",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d413cc016c03b06ac9cb6c629cf16d7dc4cd7d8c3c8277a343923b54da714a72",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "RectangularCoordinates",
+      "id": "shaders--rectangularcoordinates",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "673b698a82106e97196ba348b41add46e8ae705aa480ce64df38f2ee6fcb66b9",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ReflectivePlane",
+      "id": "shaders--reflectiveplane",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "540ad4a98aa063f2e16fe89457a151a28242d03fb03ef170fff71454babd78f4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Repeater",
+      "id": "shaders--repeater",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "15ffaad8c378b311b0a83d3d6aed16849afd8120404b1aeb4ec1edda9717ba25",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Ring",
+      "id": "shaders--ring",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "aadefdadaddd17bc009564cb4fb0af5a221244c7efa68c7a159898e336a53e86",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "RippleWipe",
+      "id": "shaders--ripplewipe",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "680036e70fa20d71c394890c6a575f29a3109f0ac580bc96638c56ec0f5e78fb",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Ripples",
+      "id": "shaders--ripples",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "0b082967108c571c1fca731dc3f6c6bfe09310eee19f161967508db73873d92a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "RoundedRect",
+      "id": "shaders--roundedrect",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3014f344b76a9af00cfc4d3304f4b52eff04150620d1087c76b3b33ada0e0e5e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Satin",
+      "id": "shaders--satin",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2ebe4368292c2a3ce53bc39194f5ebe32c53faad7cac02e20fae6fbf27b8afd1",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Saturation",
+      "id": "shaders--saturation",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "37dc860015e7bbae8b1f8f792cd83236a1aeb530a06ea864f8d40efd4f38efef",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Scratches",
+      "id": "shaders--scratches",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b37b3973798243075010e8bbedb0b210012462f1f6ded06e2873ca3a611c0eb5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Sharpness",
+      "id": "shaders--sharpness",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "1a399703dca6119ae3c57903885ab4e18c6223788926662e3c752510a81ae578",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Shatter",
+      "id": "shaders--shatter",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ac95a8c9e2227e6331aed17b555a4ecde0a00bbd1019a91ee7535ec168d269a8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SimplexNoise",
+      "id": "shaders--simplexnoise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "43479425673171b6e94c33dca7420a9271f4314e571454d7e070b592ee650224",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SineWave",
+      "id": "shaders--sinewave",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8cd32d618fbfe9141be909d835dbcc3cafad2c192b592a750d6f922625e582fa",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SliceWipe",
+      "id": "shaders--slicewipe",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "92859f4ba83509f5c5ee73013b9b232e122cb0afdfdec31f4cadcb2cd69bc6f4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Smoke",
+      "id": "shaders--smoke",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e52ad32dcc06796596e55463f9a02d2a19a698b48099119e9abcacf8b0546e66",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SmokeFill",
+      "id": "shaders--smokefill",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "70e9ef563f4e4ba4aae11da04b8d6af1a813ae0df379e58fb21f59ae060e6fff",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SmokeFlow",
+      "id": "shaders--smokeflow",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "f30ae22c914fbb221ca60d2db0a2567b60e84a42a6e14873f86b10bebe2c8f4e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Solarize",
+      "id": "shaders--solarize",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "18cd413b75f926e59adbd74723776416c3b1b0bca26bfbfebf9d6487e30c2533",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SolidColor",
+      "id": "shaders--solidcolor",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c50676f6321cf966591487d037bb0805c1301f87d2bbdf04f0b0978918ed9a98",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Sparkle",
+      "id": "shaders--sparkle",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d14b71e76353538e9927936dfbf46617f14fb86c1525b010e6b5050e96660ca6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Spherize",
+      "id": "shaders--spherize",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e767bcb3c45610e00fd3b4ffcfdf4cc5dd6d6ba40aa1b02a924e736cb163ef67",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Spiral",
+      "id": "shaders--spiral",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b973ca7f08891711746c30379946c6656a3497d89b5b0e681791d052b5571430",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Star",
+      "id": "shaders--star",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a489ee276d3814d6aa0b3318cf9012a4d5b89af977cc783bce135879727e81dd",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Stone",
+      "id": "shaders--stone",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "43ce7d3c5c179f1fdbcd9a6aa657bc28c5e330043f88507a27b5719ac8f27f0f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Strands",
+      "id": "shaders--strands",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "991035a2a2181aac22dcd1dc946a40fedf73681c9024d8bc4d31ba3bf5a029bf",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Stretch",
+      "id": "shaders--stretch",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a5911f55c6029f32f83252f2a174a8f34ff617f5de725e4f9d672512c24d1990",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Stripes",
+      "id": "shaders--stripes",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "183dcd5dcd5e9b60cfd15d393fa5be674d812b8b2055be60d70a472da5e10d47",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "StudioBackground",
+      "id": "shaders--studiobackground",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "8981da0a02e4ef5e4dc3b4275dc0b527555d962d43d4179ecb5f52d370a34450",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "SunBurst",
+      "id": "shaders--sunburst",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "bd42271f66eeb40c8d65c2bff745709e781d3d056e0cc8d7fbc7bcacb6166ed5",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Surface3D",
+      "id": "shaders--surface3d",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d49f51057389014b3de51f6727c99705d7908d584d8fe46ca29c9e908b0ebb4b",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Swirl",
+      "id": "shaders--swirl",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "37a55b2d52388ef70a56b87b662d902b514cc97ba083e0d6d67bcc878a120e23",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Teardrop",
+      "id": "shaders--teardrop",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ae1741a42676a784a1689f198378f2162ae32b0c6401adde386a7ccaf4111a8e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Text",
+      "id": "shaders--text",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d27262c555e8ff17cf4346db97ab8d41feb31e6eeacf67e9350da33f18d7bdf2",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ThinFilm",
+      "id": "shaders--thinfilm",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "63fa6e15d77e863af1f5ad2d8a4331e558c6c4db279ec425c8277456857a5f11",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "TiltShift",
+      "id": "shaders--tiltshift",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7e9fccd983d846a13174411470151d4654c1dc43f9f3390632e0958f3f13e733",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "TimeTrail",
+      "id": "shaders--timetrail",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "514bbba15c16f71ce0b7d15a32499d27401445b307d523ebab2ee2c832229445",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Tint",
+      "id": "shaders--tint",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "aefa0e8cd6432377e33657863bec5d91489c29110f3df8c8064a0d6ab884b746",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Trapezoid",
+      "id": "shaders--trapezoid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5656806f6ae8aabac3c6da9dd735d7aec1f250e2178cebc578fbea63fe8be1de",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "TriangularGrid",
+      "id": "shaders--triangulargrid",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ef1591a02b58472da22bf426e9348ddd10b1505b4c7b8ffcf92b6c9f117941af",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Tritone",
+      "id": "shaders--tritone",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5a27694409ae763b4e458b8243f5dd2278f1f2216f4496416f40a823558eb28e",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Truchet",
+      "id": "shaders--truchet",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "507412a14bd0aa4a3a6a0b839d58b2bd4ef9876c190511f7c5fc1750238c0d97",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Twirl",
+      "id": "shaders--twirl",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b7f38b67a3aedd1d916b8555ea9357e836513a56937fad87846a0e0cd442b37d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "VHS",
+      "id": "shaders--vhs",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "5b5cb52ab51ae039067872228aeff18e78807571d29012658b537e8af6459fbb",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "VenetianBlinds",
+      "id": "shaders--venetianblinds",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "aa0b176f6c08a2ec8540b5d13ea3e8bccc1f94b973a117d12c93f18ab7545206",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Vesica",
+      "id": "shaders--vesica",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "041973827e07f93f088644687837559724db10f1aa14a992aa7f27ff719f23f8",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Vibrance",
+      "id": "shaders--vibrance",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "9dcfb02ede80ae35f918f4d97e78ae1b85f8da41bff4a16ee7c93bfb619f5d1d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "VideoTexture",
+      "id": "shaders--videotexture",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "e4f5ea9124643ffab1837dbfd4c1df0ccbe025c82d75542adb5a30256b650d11",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Vignette",
+      "id": "shaders--vignette",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "50d63a708c8369b5720083840fb725104e66724ff6be19f6aa5190cbf9605140",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Voronoi",
+      "id": "shaders--voronoi",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "513d18ef513a0d526e8d3d06a26689f1cd51fd8fd1354b20888f994d1e04c8d4",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Voxels",
+      "id": "shaders--voxels",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a7fe8e5123fef70f39d625fa81c8edcb3e5c8e153e6ff806d8fbfedaa5c88357",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Water",
+      "id": "shaders--water",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "c61b562e585fe3f6e6b7d3abf629d0d23c9284797c391b5ec6cb7b38040295bc",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Watercolor",
+      "id": "shaders--watercolor",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "3d1c366c3ea7ee20c0700e572a33b5957edabf0fd5f81e7440f5db1dffdb1b32",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "WaveDistortion",
+      "id": "shaders--wavedistortion",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "524d3c216f58ec9181b722c7ce8b3e60a51bb3c613db89d637e46314c9bd5d45",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Waveform",
+      "id": "shaders--waveform",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "ef803efb64f56731bfeee2166567d2bd37a742f709b415af1938767306046d1f",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "WaveletNoise",
+      "id": "shaders--waveletnoise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4d0698d4183001701214d142f601f1ba0c84ec093c99626090eab5c9788cbed6",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Weave",
+      "id": "shaders--weave",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "4c3eb45c91b3669c3df31d7d06c6e16bd1e123c9d1df8d6edc529e6df3855959",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "WebcamTexture",
+      "id": "shaders--webcamtexture",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "a0ce84f2d374f696791fcf586e936936c121ac6709524cf6a3d0deabe080cc1c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "Wool",
+      "id": "shaders--wool",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7d9db2256e4b39a193ee0072d2abc03900729399d3b129b659b77a141058f81a",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "WorleyNoise",
+      "id": "shaders--worleynoise",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "043c9d5c5bb14695bfca69b51ab183521b4e2a949f51f9234788784fdffe5695",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    },
+    {
+      "key": "ZoomBlur",
+      "id": "shaders--zoomblur",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "7cbe4f67d787a13e4ba1f730f2746b35daded0edb4a36627486cd2e7ceb22427",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

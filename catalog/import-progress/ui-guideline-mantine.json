@@ -1,0 +1,15 @@
+{
+  "revision": "194d652452ee060aad3796c121f9b6a9f74cb453",
+  "licenseSha256": "61c765e625bc25d55143f14de7554685c52f21d9e671d3d204304691a163d06a",
+  "archiveSha256": "8b23c21403fe2bd4737f7bbe00ca0a6fb7c2a4334c070b9f499991af6a1cb99d",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-mantine--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "cf693967b94317d51e9e78daeebbfc2683b57a36b13ae97ba0440683f3662733",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

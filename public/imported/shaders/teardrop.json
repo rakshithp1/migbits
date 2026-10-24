@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--teardrop",
+    "name": "Teardrop",
+    "description": "Teardrop shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Teardrop/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "ae1741a42676a784a1689f198378f2162ae32b0c6401adde386a7ccaf4111a8e",
+    "dataUrl": "/imported/shaders/teardrop.json",
+    "downloadUrl": "/imported/shaders/teardrop.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Teardrop/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd} from \"@coreroot/std\"\nimport {teardrop} from \"@coreroot/std/shape\"\nimport type {transformColor, transformPosition} from \"@coreroot/utilities/transformations\"\nimport type {BoundingBoxOrigin, DimensionalString, DimensionalValue} from \"@coreroot/types\"\n\nexport interface ComponentProps {\n    origin: BoundingBoxOrigin\n    color: Parameters<typeof transformColor>[0]\n    center: Parameters<typeof transformPosition>[0]\n    radius: number | DimensionalValue | DimensionalString\n    height: number | DimensionalValue | DimensionalString\n    rotation: number\n    softness: number\n    strokeThickness: number\n    strokeColor: Parameters<typeof transformColor>[0]\n    strokePosition: string\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd({\n    role: 'shape',\n    name: \"Teardrop\",\n    description: \"Teardrop — a rounded bulb tapering to a sharp point\",\n    shape: {\n        // Bulb `radius`, length `height` from bulb to point.\n        distance: ({x, y}, u) => teardrop(x, y, u('radius'), u('height')),\n        colorDescription: \"Fill color of the teardrop\",\n        centerDescription: \"Center position of the teardrop\",\n        bounds: {size: {width: 'radius', height: 'height'}},\n        shapeProps: {\n            radius: {\n                default: 0.22,\n                description: \"Radius of the rounded bulb\",\n                ui: { type: 'range', min: 0.02, max: 0.6, step: 0.01, label: 'Width', group: 'Shape' }\n            },\n            height: {\n                default: 0.4,\n                description: \"Length from the bulb to the point\",\n                ui: { type: 'range', min: 0.1, max: 0.7, step: 0.01, label: 'Length', group: 'Shape' }\n            }\n        }\n    },\n})\n\nexport default componentDefinition\n",
+      "sha256": "845ac426c16b9b8a1c8a5c5884e2b23dcb9da4eac953a04f9dc4d62f54e7a033"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

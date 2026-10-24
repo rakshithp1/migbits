@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--triangulargrid",
+    "name": "Triangular Grid",
+    "description": "Triangular Grid shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/TriangularGrid/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "ef1591a02b58472da22bf426e9348ddd10b1505b4c7b8ffcf92b6c9f117941af",
+    "dataUrl": "/imported/shaders/triangulargrid.json",
+    "downloadUrl": "/imported/shaders/triangulargrid.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/TriangularGrid/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {cellFrame, strokeOver, triangleLines, vary} from \"@coreroot/std/paint/patterns\"\nimport {transformColor, transformColorSpace, colorSpaceOptions, transformAngle} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    colorA: Parameters<typeof transformColor>[0]\n    colorB: Parameters<typeof transformColor>[0]\n    cells: number\n    thickness: number\n    rotation: Parameters<typeof transformAngle>[0]\n    softness: number\n    variation: number\n    speed: number\n    speedVariance: number\n    colorSpace: string\n}\n\n// The skewed equilateral-triangle line field (with per-row animated drift), drawn in a\n// flipped-Y square lattice frame: `lines` masks the strokes, `shade` carries the per-cell\n// variation factor.\nconst field = triangleLines({\n    frame: cellFrame({cells: p('cells'), rotation: p('rotation'), convention: 'flippedY'}),\n    thickness: p('thickness'),\n    softness: p('softness'),\n    variation: p('variation'),\n    speedVariance: p('speedVariance'),\n})\n\n// std generator: paints from coordinates, no child consumed.\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"TriangularGrid\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Tiling grid of equilateral triangles with optional animated row offsets\",\n    // When a UV-propagating distortion wraps this generator, the composer supplies a per-pixel\n    // `uvContext` and TriangularGrid rasterises at full canvas resolution against that distorted UV.\n    acceptsUVContext: true,\n    // Per-node animated time (createAnimatedTime equivalent); the paint noun reads it as the drift.\n    animatedTime: { speed: 'speed' },\n    props: {\n        colorA: {\n            default: \"#1a1a1a\",\n            transform: transformColor,\n            description: \"Triangle fill color\",\n            ui: { type: 'color', label: 'Fill', group: 'Colors' }\n        },\n        colorB: {\n            default: \"#ffffff\",\n            transform: transformColor,\n            description: \"Grid line color\",\n            ui: { type: 'color', label: 'Lines', group: 'Colors' }\n        },\n        cells: {\n            default: 8,\n            description: \"Number of triangle rows down the shortest canvas edge\",\n            ui: { type: ['range', 'map'], min: 1, max: 40, step: 1, label: 'Cells', group: 'Effect' }\n        },\n        thickness: {\n            default: 1,\n            description: \"Thickness of the grid lines (0 = no lines)\",\n            ui: { type: ['range', 'map'], min: 0, max: 10, step: 0.1, label: 'Thickness', group: 'Effect' }\n        },\n        rotation: {\n            default: 0,\n            transform: transformAngle,\n            description: \"Rotation of the grid in degrees\",\n            ui: { type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Rotation', group: 'Effect' }\n        },\n        softness: {\n            default: 0,\n            description: \"Softness of the line edges (0 = crisp, 1 = very soft)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Softness', group: 'Effect' }\n        },\n        variation: {\n            default: 0,\n            description: \"Per-triangle random lightening/darkening of the fill color\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Variation', group: 'Effect' }\n        },\n        speed: {\n            default: 0,\n            description: \"Animates the triangle rows drifting horizontally (0 = static)\",\n            ui: { type: 'range', min: -3, max: 3, step: 0.01, label: 'Speed', group: 'Animation' }\n        },\n        speedVariance: {\n            default: 0.3,\n            description: \"Per-row random speed variance for irregular drifting motion\",\n            ui: { type: 'range', min: 0, max: 1, step: 0.01, label: 'Speed Variance', group: 'Animation' }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: { type: 'select', options: colorSpaceOptions, label: 'Color Space', group: 'Colors' }\n        }\n    },\n\n    // The recipe: a flipped-Y lattice, the triangle line field drawn in it, per-cell variation\n    // on the fill, lines stroked over in the chosen color space.\n    paint: strokeOver({\n        fill: vary(p('colorA'), field.shade),\n        stroke: p('colorB'),\n        mask: field.lines,\n        space: p('colorSpace'),\n    })\n})\n\nexport default componentDefinition\n",
+      "sha256": "22e27c9bd0490e9a47fc042c1d67d8ad725f5d13925adfa3a46c2ac389f6cb86"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

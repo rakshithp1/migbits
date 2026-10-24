@@ -1,0 +1,50 @@
+{
+  "resource": {
+    "id": "magic-ui--blur-fade",
+    "name": "Blur Fade",
+    "description": "Blur fade in and out animation. Used to smoothly fade in and out content.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Components",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/blur-fade.tsx",
+    "files": 2,
+    "dependencies": [
+      "motion"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "3addc38e5b1504ef999dfa387b3c6bab4efaf95917c0c6b8f750cf398a401bcc",
+    "dataUrl": "/imported/magic-ui/blur-fade.json",
+    "downloadUrl": "/imported/magic-ui/blur-fade.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/blur-fade.tsx",
+      "content": "\"use client\"\n\nimport { useRef } from \"react\"\nimport {\n  AnimatePresence,\n  motion,\n  useInView,\n  type MotionProps,\n  type UseInViewOptions,\n  type Variants,\n} from \"motion/react\"\n\ntype MarginType = UseInViewOptions[\"margin\"]\n\ninterface BlurFadeProps extends MotionProps {\n  children: React.ReactNode\n  className?: string\n  variant?: {\n    hidden: { y: number }\n    visible: { y: number }\n  }\n  duration?: number\n  delay?: number\n  offset?: number\n  direction?: \"up\" | \"down\" | \"left\" | \"right\"\n  inView?: boolean\n  inViewMargin?: MarginType\n  blur?: string\n}\n\nconst getFilter = (v: Variants[string]) =>\n  typeof v === \"function\" ? undefined : v.filter\n\nexport function BlurFade({\n  children,\n  className,\n  variant,\n  duration = 0.4,\n  delay = 0,\n  offset = 6,\n  direction = \"down\",\n  inView = false,\n  inViewMargin = \"-50px\",\n  blur = \"6px\",\n  ...props\n}: BlurFadeProps) {\n  const ref = useRef(null)\n  const inViewResult = useInView(ref, { once: true, margin: inViewMargin })\n  const isInView = !inView || inViewResult\n  const defaultVariants: Variants = {\n    hidden: {\n      [direction === \"left\" || direction === \"right\" ? \"x\" : \"y\"]:\n        direction === \"right\" || direction === \"down\" ? -offset : offset,\n      opacity: 0,\n      filter: `blur(${blur})`,\n    },\n    visible: {\n      [direction === \"left\" || direction === \"right\" ? \"x\" : \"y\"]: 0,\n      opacity: 1,\n      filter: `blur(0px)`,\n    },\n  }\n  const combinedVariants = variant ?? defaultVariants\n\n  const hiddenFilter = getFilter(combinedVariants.hidden)\n  const visibleFilter = getFilter(combinedVariants.visible)\n\n  const shouldTransitionFilter =\n    hiddenFilter != null &&\n    visibleFilter != null &&\n    hiddenFilter !== visibleFilter\n\n  return (\n    <AnimatePresence>\n      <motion.div\n        ref={ref}\n        initial=\"hidden\"\n        animate={isInView ? \"visible\" : \"hidden\"}\n        exit=\"hidden\"\n        variants={combinedVariants}\n        transition={{\n          delay: 0.04 + delay,\n          duration,\n          ease: \"easeOut\",\n          ...(shouldTransitionFilter ? { filter: { duration } } : {}),\n        }}\n        className={className}\n        {...props}\n      >\n        {children}\n      </motion.div>\n    </AnimatePresence>\n  )\n}\n",
+      "sha256": "99a8e83aa8817f48e26d921e959ff9abefb5c2f1f0b72b166ed95e88e015949f"
+    },
+    {
+      "path": "apps/www/public/r/blur-fade.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"blur-fade\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Blur Fade\",\n  \"description\": \"Blur fade in and out animation. Used to smoothly fade in and out content.\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/blur-fade.tsx\",\n      \"content\": \"\\\"use client\\\"\\n\\nimport { useRef } from \\\"react\\\"\\nimport {\\n  AnimatePresence,\\n  motion,\\n  useInView,\\n  type MotionProps,\\n  type UseInViewOptions,\\n  type Variants,\\n} from \\\"motion/react\\\"\\n\\ntype MarginType = UseInViewOptions[\\\"margin\\\"]\\n\\ninterface BlurFadeProps extends MotionProps {\\n  children: React.ReactNode\\n  className?: string\\n  variant?: {\\n    hidden: { y: number }\\n    visible: { y: number }\\n  }\\n  duration?: number\\n  delay?: number\\n  offset?: number\\n  direction?: \\\"up\\\" | \\\"down\\\" | \\\"left\\\" | \\\"right\\\"\\n  inView?: boolean\\n  inViewMargin?: MarginType\\n  blur?: string\\n}\\n\\nconst getFilter = (v: Variants[string]) =>\\n  typeof v === \\\"function\\\" ? undefined : v.filter\\n\\nexport function BlurFade({\\n  children,\\n  className,\\n  variant,\\n  duration = 0.4,\\n  delay = 0,\\n  offset = 6,\\n  direction = \\\"down\\\",\\n  inView = false,\\n  inViewMargin = \\\"-50px\\\",\\n  blur = \\\"6px\\\",\\n  ...props\\n}: BlurFadeProps) {\\n  const ref = useRef(null)\\n  const inViewResult = useInView(ref, { once: true, margin: inViewMargin })\\n  const isInView = !inView || inViewResult\\n  const defaultVariants: Variants = {\\n    hidden: {\\n      [direction === \\\"left\\\" || direction === \\\"right\\\" ? \\\"x\\\" : \\\"y\\\"]:\\n        direction === \\\"right\\\" || direction === \\\"down\\\" ? -offset : offset,\\n      opacity: 0,\\n      filter: `blur(${blur})`,\\n    },\\n    visible: {\\n      [direction === \\\"left\\\" || direction === \\\"right\\\" ? \\\"x\\\" : \\\"y\\\"]: 0,\\n      opacity: 1,\\n      filter: `blur(0px)`,\\n    },\\n  }\\n  const combinedVariants = variant ?? defaultVariants\\n\\n  const hiddenFilter = getFilter(combinedVariants.hidden)\\n  const visibleFilter = getFilter(combinedVariants.visible)\\n\\n  const shouldTransitionFilter =\\n    hiddenFilter != null &&\\n    visibleFilter != null &&\\n    hiddenFilter !== visibleFilter\\n\\n  return (\\n    <AnimatePresence>\\n      <motion.div\\n        ref={ref}\\n        initial=\\\"hidden\\\"\\n        animate={isInView ? \\\"visible\\\" : \\\"hidden\\\"}\\n        exit=\\\"hidden\\\"\\n        variants={combinedVariants}\\n        transition={{\\n          delay: 0.04 + delay,\\n          duration,\\n          ease: \\\"easeOut\\\",\\n          ...(shouldTransitionFilter ? { filter: { duration } } : {}),\\n        }}\\n        className={className}\\n        {...props}\\n      >\\n        {children}\\n      </motion.div>\\n    </AnimatePresence>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}",
+      "sha256": "5161e38f05b5898ee42892daa9c133688f528b20817bb4c62ae79f68967a88ba"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"blur-fade\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Blur Fade\",\n  \"description\": \"Blur fade in and out animation. Used to smoothly fade in and out content.\",\n  \"dependencies\": [\n    \"motion\"\n  ],\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/blur-fade.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ]\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

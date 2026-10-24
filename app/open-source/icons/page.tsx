@@ -1,0 +1,7 @@
+﻿import type { Metadata } from "next";
+import Link from "next/link";
+import { ProductHeader } from "../../components/product-header";
+import { IconExplorer } from "./icon-explorer";
+import pack from "../../../catalog/community/component-pack.json";
+export const metadata:Metadata={title:"Open-source icon explorer | Migbits",description:"Explore a curated Lucide icon set, customize size and stroke, and copy or download SVGs with preserved license notices."};
+export default function IconsPage(){const notice=pack.files.find(file=>file.path==='licenses/lucide-react.txt')?.content;if(!notice)throw new Error('Lucide license notice missing');return <div className="product-shell"><ProductHeader/><main className="product-main"><Link className="back-link" href="/open-source">&#8592; Open-source collection</Link><div className="oss-gallery-heading"><span className="eyebrow">LUCIDE / LICENSE NOTICES PRESERVED</span><h1>A little clarity.<br/><em>In every detail.</em></h1><p>A curated icon explorer. Choose a symbol, tune its stroke,<br/>and take a properly attributed SVG into your project.</p></div><IconExplorer licenseNotice={notice} version={pack.dependencies['lucide-react']}/></main><footer className="product-footer">Migbits / Lucide Icons and Contributors.<a href="https://github.com/lucide-icons/lucide/blob/main/LICENSE" target="_blank" rel="noreferrer">Upstream license &#8599;</a></footer></div>;}

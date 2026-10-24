@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--brightnesscontrast",
+    "name": "Brightness Contrast",
+    "description": "Brightness Contrast shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/BrightnessContrast/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "90ff5afead8e0804d942c2dc066b38def437ac619da46a06b862295ef257c337",
+    "dataUrl": "/imported/shaders/brightnesscontrast.json",
+    "downloadUrl": "/imported/shaders/brightnesscontrast.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/BrightnessContrast/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p, crosses, isZero, allOf} from \"@coreroot/std\"\nimport {brightnessContrast} from \"@coreroot/std/effects/color\"\n\nexport interface ComponentProps {\n    brightness: number\n    contrast: number\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"BrightnessContrast\",\n    role: 'filter',\n    species: 'pointwise',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Adjustments\",\n    description: \"Adjust brightness and contrast of the image\",\n    props: {\n        brightness: {\n            default: 0,\n            description: 'Brightness adjustment (-1 to 1)',\n            // Recompile only when brightness crosses 0 — drives the identity bypass below.\n            recompile: crosses(0),\n            ui: { type: ['range', 'map'], min: -1, max: 1, step: 0.01, label: 'Brightness', group: 'Adjustments' }\n        },\n        contrast: {\n            default: 0,\n            description: 'Contrast adjustment (-1 to 1)',\n            // The `+ 1` value transform is folded into the GPU body, so the identity value here is\n            // the RAW 0, not 1.\n            recompile: crosses(0),\n            ui: { type: ['range', 'map'], min: -1, max: 1, step: 0.01, label: 'Contrast', group: 'Adjustments' }\n        }\n    },\n    // Both uniforms carry the RAW slider values; the body folds contrast's `+ 1`.\n    effect: brightnessContrast({brightness: p('brightness'), contrast: p('contrast')}),\n    // brightness=0 AND raw contrast=0 (→ contrast factor 1) is an exact no-op: (rgb-0.5)*1+0.5+0.\n    // Both defaults are 0, so a freshly-added BrightnessContrast is free until it is adjusted.\n    identityWhen: allOf(isZero('brightness'), isZero('contrast')),\n    missingChildMessage: 'You must pass a child component into the Brightness Contrast shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "46af03bc1a913730d38ee85db1255afc7b4c704f3e783261d088ff5b968c0900"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

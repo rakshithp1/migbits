@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--wavedistortion",
+    "name": "Wave Distortion",
+    "description": "Wave Distortion shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/WaveDistortion/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "524d3c216f58ec9181b722c7ce8b3e60a51bb3c613db89d637e46314c9bd5d45",
+    "dataUrl": "/imported/shaders/wavedistortion.json",
+    "downloadUrl": "/imported/shaders/wavedistortion.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/WaveDistortion/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {wave} from \"@coreroot/std/warps\"\nimport {edgesPropConfig} from \"@coreroot/utilities/propConfigs\"\n\nexport interface ComponentProps {\n    strength: number\n    frequency: number\n    speed: number\n    angle: number\n    waveType: string\n    edges: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"WaveDistortion\",\n    role: 'warp',\n    category: \"Distortions\",\n    description: \"Wave-based distortion with multiple waveform types\",\n    boundingBoxDeclaration: { aspectRatio: null },\n    // Per-node animated time (createAnimatedTime equivalent): the renderer registers `_animTime`\n    // and advances it by `deltaTime * speed` (speed=0 pauses). The wave producer reads it.\n    animatedTime: { speed: 'speed' },\n    props: {\n        strength: {\n            default: 0.3,\n            description: 'Distortion intensity',\n            ui: {\n                type: ['range', 'map'],\n                min: 0.0,\n                max: 1.0,\n                step: 0.01,\n                label: 'Strength',\n                group: 'Effect'\n            }\n        },\n        frequency: {\n            default: 1,\n            description: 'Number of bends/waves',\n            ui: {\n                type: ['range', 'map'],\n                min: 0.1,\n                max: 10.0,\n                step: 0.1,\n                label: 'Frequency',\n                group: 'Effect'\n            }\n        },\n        speed: {\n            default: 1,\n            description: 'Animation speed',\n            ui: {\n                type: 'range',\n                min: 0,\n                max: 5,\n                step: 0.1,\n                label: 'Speed',\n                group: 'Animation'\n            }\n        },\n        angle: {\n            default: 0,\n            description: 'Direction of wave distortion in degrees',\n            ui: {\n                type: ['range', 'map'],\n                min: 0,\n                max: 360,\n                step: 1,\n                label: 'Angle',\n                group: 'Effect'\n            }\n        },\n        waveType: {\n            default: 'sine',\n            description: 'Shape of the distortion wave',\n            compileTime: true,\n            transform: (value: string) => {\n                const types: Record<string, number> = {\n                    'sine': 0,\n                    'triangle': 1,\n                    'square': 2,\n                    'sawtooth': 3,\n                    'bounce': 4\n                }\n                return types[value] ?? 0\n            },\n            ui: {\n                type: 'select',\n                options: [\n                    {label: 'Sine', value: 'sine'},\n                    {label: 'Triangle', value: 'triangle'},\n                    {label: 'Square', value: 'square'},\n                    {label: 'Sawtooth', value: 'sawtooth'},\n                    {label: 'Bounce', value: 'bounce'}\n                ],\n                label: 'Wave Type',\n                group: 'Effect'\n            }\n        },\n        edges: edgesPropConfig('stretch', 'How to handle edges when distortion pushes content out of bounds')\n    },\n\n    // `waveType` is compileTime, so the producer branches once per composition and only the\n    // active waveform body is emitted — no runtime branch on a compileTime prop.\n    map: wave({strength: p('strength'), frequency: p('frequency'), angle: p('angle'), waveType: p('waveType')}),\n    missingChildMessage: 'You must pass a child component into the WaveDistortion shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "44506fdd226dadef842c9ec93ea5826924f9da9bf0f29795cb4368034842883b"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

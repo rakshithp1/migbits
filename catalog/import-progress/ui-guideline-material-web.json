@@ -1,0 +1,15 @@
+{
+  "revision": "fd45953c77876d7964dfe1181e1e30ae55b69a73",
+  "licenseSha256": "295cdb4364b782931c914f5ca8c47fac87c732fa7e448b788a47aa5b25728212",
+  "archiveSha256": "489bedfc9828385536ab60f0a3a2546f1e535a0542078028136a6bcb7b0a2d7b",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-material-web--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "d5fe7229a476d15d9f488cc1b5e2cba020e71b74fc81ab804f08ebb73abc1936",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

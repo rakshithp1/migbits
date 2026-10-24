@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--cta-inverted",
+    "name": "Cta / Inverted",
+    "description": "Black ground, paper button. The contrast does the work - no accent, no gradient, no chrome.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/cta/inverted.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "fb29063309877a841e0e69ae4edc043d2c2ea58ff46b8f043d338d16286c1b73",
+    "dataUrl": "/imported/inspo/cta-inverted.json",
+    "downloadUrl": "/imported/inspo/cta-inverted.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/cta/inverted.tsx",
+      "content": "/* inspo-reference-component\n * type= cta | genre= editorial | theme= Inspo-paper\n * archetype= Inverted | diversification= ink ground, paper button -\n *   visually loud through contrast, not chrome\n * states= default · hover (button: paper-fill wipe) · focus-visible\n * contrast= pass (46-50)\n */\n\n/**\n * Inverted CTA - black ground, paper button. The contrast does the\n * work; no accent colour, no gradient, no chrome. Reach for it when\n * the brand has earned a quiet authoritative end-state.\n */\nexport function CtaInverted() {\n  return (\n    <section className=\"border-y rule bg-[var(--color-ink)] text-[var(--color-paper)] px-8 py-24 sm:px-14 sm:py-28\">\n      <div className=\"mx-auto max-w-4xl text-center\">\n        <p className=\"font-mono text-xs tracking-normal text-[var(--color-paper)]/60\">\n          Free, no account\n        </p>\n        <p\n          className=\"font-display mt-6 text-balance leading-[1.05] tracking-tight\"\n          style={{ fontSize: \"clamp(2rem, 5vw, 4rem)\" }}\n        >\n          A reference layer for the work,{\" \"}\n          <em className=\"italic\">not the workflow</em>.\n        </p>\n\n        <a\n          href=\"#\"\n          className=\"group/btn relative mt-12 inline-flex h-14 items-center gap-3 overflow-hidden bg-[var(--color-paper)] px-8 font-mono text-sm tracking-normal text-[var(--color-ink)] transition-colors duration-300 ease-out hover:text-[var(--color-accent-ink)]\"\n        >\n          <span\n            aria-hidden\n            className=\"absolute inset-0 origin-bottom scale-y-0 bg-[var(--color-accent)] transition-transform duration-300 ease-out group-hover/btn:scale-y-100\"\n          />\n          <span className=\"relative z-10\">Open the archive</span>\n          <span\n            aria-hidden\n            className=\"relative z-10 transition-transform duration-300 ease-out group-hover/btn:translate-x-0.5\"\n          >\n            →\n          </span>\n        </a>\n      </div>\n    </section>\n  );\n}\n",
+      "sha256": "aca1074c97c85e3760129e1292e4521261a48e995d210e40f1703cfb93b3ddf7"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Ink ground",
+    "Type": "cta"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

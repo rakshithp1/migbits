@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--perlinnoise",
+    "name": "Perlin Noise",
+    "description": "Perlin Noise shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/PerlinNoise/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "7b4705d307987dfb84e753678e2160a54c5dceb1a787584ccb841309c5276690",
+    "dataUrl": "/imported/shaders/perlinnoise.json",
+    "downloadUrl": "/imported/shaders/perlinnoise.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/PerlinNoise/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {rampOver, stops, noiseField} from \"@coreroot/std/paint/fields\"\nimport {seededPlane, evolving, noiseTone} from \"@coreroot/std/paint/noise\"\nimport {noiseColorProps, noiseToneProps, noiseSpeedProp} from \"@coreroot/utilities/noiseColor\"\nimport type {ColorStop} from \"@coreroot/utilities/colorStops\"\n\nexport type {ColorStop}\n\nexport interface ComponentProps {\n    colorA: string\n    colorB: string\n    stops: ColorStop[] | null\n    colorSpace: string\n    scale: number\n    contrast: number\n    balance: number\n    seed: number\n    speed: number\n}\n\n// std generator: 3D Perlin sampled over the aspect-corrected exp-scale domain, walking the z\n// (time) axis so the pattern MORPHS in place rather than sliding.\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"PerlinNoise\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Smooth gradient noise that morphs over time\",\n    acceptsUVContext: true,\n    // Per-node accumulated time driven by `speed` — the renderer registers + advances the\n    // `_animTime` field; the paint reads it as the z-walk phase.\n    animatedTime: { speed: 'speed' },\n    props: {\n        ...noiseColorProps(),\n        scale: {\n            default: 2,\n            description: 'Pattern scale (higher = finer, more detailed patterns; each +1 roughly doubles the frequency)',\n            ui: { type: 'range', min: -2, max: 5, step: 0.1, label: 'Scale', group: 'Effect' }\n        },\n        ...noiseToneProps(),\n        ...noiseSpeedProp()\n    },\n    paint: rampOver(\n        noiseTone(\n            seededPlane(evolving(noiseField('perlin'), {rate: 0.3}), {scale: p('scale'), seed: p('seed')}),\n            {contrast: p('contrast'), balance: p('balance')},\n        ),\n        stops(p('colorSpace')),\n    )\n})\n\nexport default componentDefinition\n",
+      "sha256": "ebadd93ab7622f034aa9012a68f16d12f62f906a7e565327203931ce75c93177"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

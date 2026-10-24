@@ -1,0 +1,15 @@
+{
+  "revision": "16091f970bf060e181dde8cb9180fab5a87b1320",
+  "licenseSha256": "6023c7a34fe57646ca0c858c7c0f5de1a4bb1a11b7a52f71ec67dbc428cbe1a9",
+  "archiveSha256": "1cadffbdf89fa4a431f4b20a501998b674d6817cc163c297cda879f4e1625909",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-pluralsight--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "2a305bffef8573335d2dabf11cc41755b1bd81bf34738d7491ab8425fefca63d",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

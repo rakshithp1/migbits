@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--tiltshift",
+    "name": "Tilt Shift",
+    "description": "Tilt Shift shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/TiltShift/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "7e9fccd983d846a13174411470151d4654c1dc43f9f3390632e0958f3f13e733",
+    "dataUrl": "/imported/shaders/tiltshift.json",
+    "downloadUrl": "/imported/shaders/tiltshift.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/TiltShift/index.ts",
+      "content": "import {defineStd, p, crosses} from \"@coreroot/std\"\nimport {tiltShift} from \"@coreroot/std/effects/blurs\"\n\nimport {transformAngle, transformPosition} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    intensity: number\n    width: number\n    falloff: number\n    angle: Parameters<typeof transformAngle>[0]\n    center: Parameters<typeof transformPosition>[0]\n    dispersion: number\n    jitter: number\n}\n\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"TiltShift\",\n    role: 'filter',\n    species: 'custom',\n    boundingBoxDeclaration: {aspectRatio: null},\n    category: \"Blurs\",\n    description: \"Selective focus blur mimicking tilt-shift photography\",\n    requiresRTT: true,\n    requiresChild: true,\n    props: {\n        intensity: {\n            default: 50,\n            description: 'Maximum blur intensity at edges',\n            ui: {type: ['range', 'map'], min: 0, max: 100, step: 1, label: 'Intensity', group: 'Effect'}\n        },\n        width: {\n            default: 0.3,\n            description: 'Width of the sharp focus area',\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Width', group: 'Effect'}\n        },\n        falloff: {\n            default: 0.3,\n            description: 'Distance over which blur transitions to full strength',\n            ui: {type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Falloff', group: 'Effect'}\n        },\n        angle: {\n            default: 0,\n            transform: transformAngle,\n            description: 'Rotation angle of the focus line (in degrees)',\n            ui: {type: ['range', 'map'], min: 0, max: 360, step: 1, label: 'Angle', group: 'Effect'}\n        },\n        center: {\n            default: {\n                x: 0.5,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: 'Center point of the focus line',\n            ui: {type: 'position', label: 'Center', group: 'Position'}\n        },\n        dispersion: {\n            default: 0,\n            description: 'Blurs red and blue by different amounts for a lens-like color fringe outside the focus band; negative swaps the colors',\n            recompile: crosses(0),\n            ui: {type: 'range', min: -1, max: 1, step: 0.01, label: 'Dispersion', group: 'Lens'}\n        },\n        jitter: {\n            default: 0,\n            description: 'Per-pixel noise on the tap spacing that hides banding at large blur radii',\n            ui: {type: 'range', min: 0, max: 1, step: 0.01, label: 'Jitter', group: 'Lens'}\n        }\n    },\n\n    // Compute-backed: variable-radius Gaussian banded around the focus line; the fragment\n    // re-derives the same blur amount to keep in-focus pixels crisp at canvas resolution.\n    // The lens dials are off at 0; the chromatic kernel is only built while dispersion is set.\n    ...tiltShift({\n        intensity: p('intensity'), width: p('width'), falloff: p('falloff'), angle: p('angle'), center: p('center'),\n        detail: {dispersion: p('dispersion'), jitter: p('jitter')},\n    }),\n})\n\nexport default componentDefinition\n",
+      "sha256": "eda0ae8811f81aa56c694335130556f0e243901198c2e562381f26b6429d7077"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

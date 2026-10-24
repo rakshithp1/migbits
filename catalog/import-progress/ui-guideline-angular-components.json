@@ -1,0 +1,15 @@
+{
+  "revision": "952685f9370ba718f832d745512db7c9a04e1bcd",
+  "licenseSha256": "adb40d7d256e33c3c20a67869de175e7ca249afee92f587ccc48b5bec0ac24e4",
+  "archiveSha256": "9a7c4dff7435d05f8636446893b1b2d8f884e9777b65e6a6e711be079ce3f4b8",
+  "items": [
+    {
+      "key": "source-collection",
+      "id": "ui-guideline-angular-components--source-collection",
+      "status": "imported",
+      "validation": "source-checked",
+      "digest": "b57dae0836699f128a4fca80400abec58ebedc29cc090c562d43069df6c3b14c",
+      "reason": "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    }
+  ]
+}

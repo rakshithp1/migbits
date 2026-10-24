@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--nav-floating-pill",
+    "name": "Nav / Floating pill",
+    "description": "Centred pill nav that doesn't sit on a full-width band. Good over full-bleed heroes.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/nav/floating-pill.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "c1f86ef40c1c40d0bacb330337a773f9b3c634bd7aaa853462ecde4bd8c002ae",
+    "dataUrl": "/imported/inspo/nav-floating-pill.json",
+    "downloadUrl": "/imported/inspo/nav-floating-pill.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/nav/floating-pill.tsx",
+      "content": "/* inspo-reference-component\n * type= nav | genre= editorial | theme= Inspo-paper\n * archetype= N5 Floating pill | diversification= differs from N1 Inline\n *   on shape (centred pill vs full-width row) + edge (floating vs banded)\n * states= default · hover (link colour) · focus-visible (ring)\n * contrast= pass (46-50)\n */\n\n/**\n * Floating pill - centred nav that doesn't sit on a full-width band.\n * Sits over content with a hairline border + paper bg + subtle shadow.\n * Useful when the hero is full-bleed imagery and a banded nav would\n * cut the composition.\n */\nexport function NavFloatingPill() {\n  return (\n    <div className=\"relative bg-[color-mix(in_oklab,var(--color-fg)_6%,var(--color-bg))] px-8 py-10\">\n      <header className=\"mx-auto flex w-fit items-center gap-1 rounded-full border rule bg-[var(--color-bg)] px-2 py-1.5 shadow-[0_2px_20px_-8px_rgba(0,0,0,0.15)]\">\n        <a\n          href=\"#\"\n          className=\"font-display rounded-full px-4 py-1.5 text-lg leading-none tracking-tight transition-opacity hover:opacity-70\"\n        >\n          Inspo<span className=\"text-[var(--color-accent)]\">.</span>\n        </a>\n        <span aria-hidden className=\"h-4 w-px bg-[var(--color-border)]\" />\n        <nav aria-label=\"Primary\" className=\"flex items-center gap-1\">\n          {[\"Archive\", \"Components\", \"MCP\", \"About\"].map((l) => (\n            <a\n              key={l}\n              href=\"#\"\n              className=\"rounded-full px-3 py-1.5 font-mono text-xs tracking-normal text-[var(--color-fg-muted)] transition-colors hover:bg-[color-mix(in_oklab,var(--color-fg)_5%,transparent)] hover:text-[var(--color-fg)]\"\n            >\n              {l}\n            </a>\n          ))}\n        </nav>\n      </header>\n    </div>\n  );\n}\n",
+      "sha256": "47ec32172d6097c6744c3183075a221be7d59cabb337461cda481214bfc13875"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "N5 Floating pill",
+    "Type": "nav"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

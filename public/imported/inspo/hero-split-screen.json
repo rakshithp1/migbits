@@ -1,0 +1,47 @@
+{
+  "resource": {
+    "id": "inspo--hero-split-screen",
+    "name": "Hero / Split-screen",
+    "description": "Typography on one half, atmospheric pure-CSS panel on the other. No image placeholder.",
+    "source": "inspo",
+    "sourceName": "inspo",
+    "category": "Blocks & sections",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "0e1e6363f980eb303a75428bcf3de4969c69a7df",
+    "upstream": "https://github.com/Nutlope/inspo/tree/0e1e6363f980eb303a75428bcf3de4969c69a7df/apps/web/src/components/reference/hero/split-screen.tsx",
+    "files": 1,
+    "dependencies": [
+      "react",
+      "tailwindcss"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "f9ee8b4c12ce83fe38da1223b0b51b2844e8379d17ca44ec7cae33ac01fab198",
+    "dataUrl": "/imported/inspo/hero-split-screen.json",
+    "downloadUrl": "/imported/inspo/hero-split-screen.zip"
+  },
+  "files": [
+    {
+      "path": "apps/web/src/components/reference/hero/split-screen.tsx",
+      "content": "/* inspo-reference-component\n * type= hero | genre= editorial | theme= Inspo-paper\n * archetype= Split-screen | diversification= half typography, half\n *   atmospheric panel (accent-tinted)\n * states= default (static)\n * contrast= pass (46-50)\n */\n\n/**\n * Split-screen - typography lives on one half, an atmospheric panel\n * fills the other. The panel is a pure CSS composition (gradient + a\n * single rule of marginalia) - not an image placeholder. Honours\n * the \"never ship invented stock photos\" rule.\n */\nexport function HeroSplitScreen() {\n  return (\n    <section className=\"border rule overflow-hidden\">\n      <div className=\"grid grid-cols-1 lg:grid-cols-2\">\n        <div className=\"bg-[var(--color-bg)] px-8 py-20 sm:px-14 sm:py-24\">\n          <p className=\"text-meta\">Volume Two</p>\n          <h1\n            className=\"font-display mt-10 max-w-[15ch] text-balance leading-[1] tracking-tight\"\n            style={{ fontSize: \"clamp(2.5rem, 5.5vw, 4.5rem)\" }}\n          >\n            One half is what,{\" \"}\n            <em className=\"italic\">the other is feel</em>.\n          </h1>\n          <p className=\"text-meta mt-8 max-w-[44ch] normal-case tracking-normal text-[var(--color-fg-muted)]\">\n            The split runs the full bleed on desktop. On mobile the\n            panel slides under the type, not over it.\n          </p>\n        </div>\n\n        {/* Atmospheric panel - pure CSS, no image. Two-step gradient\n            with a faint paper texture overlay. */}\n        <div\n          className=\"relative min-h-[24rem] lg:min-h-0\"\n          style={{\n            background: `\n              radial-gradient(120% 80% at 0% 0%, color-mix(in oklab, var(--color-accent) 30%, var(--color-bg)), transparent 60%),\n              linear-gradient(180deg, color-mix(in oklab, var(--color-accent) 8%, var(--color-bg)), var(--color-bg))\n            `,\n          }}\n        >\n          <div className=\"absolute inset-0 flex flex-col justify-end p-8 sm:p-14\">\n            <p className=\"font-mono text-xs tracking-normal text-[var(--color-fg-muted)]\">\n              Panel - accent tint, no imagery\n            </p>\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n}\n",
+      "sha256": "bf44b240e339f0afae8a3d142a2e26019781f77b67d600a97283add6ff91b011"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Together AI and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "519b947b8086f3ccb2f660927415f191a94a02cd0eebf7d1c28dd03da1700d55"
+    }
+  ],
+  "record": {
+    "Pattern": "Split-screen",
+    "Type": "hero"
+  },
+  "installation": [
+    "Copy the original JSX into a React/Tailwind project. Inspect the original imports and CSS variables before use. The support pack includes reference styles and package manifests.",
+    "Replace placeholder links and demonstration content. Runtime, keyboard, contrast and reduced-motion checks remain specific to your integration."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--gradientmap",
+    "name": "Gradient Map",
+    "description": "Gradient Map shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/GradientMap/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "ef606feb589a528b8fa6787d96b33c84cc2f38e3c4ff80e849185ca9ebe17dcf",
+    "dataUrl": "/imported/shaders/gradientmap.json",
+    "downloadUrl": "/imported/shaders/gradientmap.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/GradientMap/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p, crosses, isZero} from \"@coreroot/std\"\nimport {gradientMap} from \"@coreroot/std/effects/color\"\nimport {transformColor, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    palette: string\n    colorLow: Parameters<typeof transformColor>[0]\n    colorMid: Parameters<typeof transformColor>[0]\n    colorHigh: Parameters<typeof transformColor>[0]\n    speed: number\n    contrast: number\n    blackPoint: number\n    whitePoint: number\n    strength: number\n    colorSpace: string\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"GradientMap\",\n    role: 'filter',\n    species: 'pointwise',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Stylize\",\n    description: \"Maps source luminance through an animated color gradient (Photoshop-style gradient map)\",\n    props: {\n        palette: {\n            default: \"rainbow\",\n            compileTime: true,\n            description: \"Built-in cosine palette, or Custom Colors to pick your own stops\",\n            ui: {\n                type: 'select',\n                options: [\n                    { label: 'Rainbow', value: 'rainbow' },\n                    { label: 'Sunset', value: 'sunset' },\n                    { label: 'Ocean', value: 'ocean' },\n                    { label: 'Fire', value: 'fire' },\n                    { label: 'Pastel', value: 'pastel' },\n                    { label: 'Neon', value: 'neon' },\n                    { label: 'Custom Colors', value: 'custom' }\n                ],\n                label: 'Palette',\n                group: 'Colors'\n            }\n            // NOTE: no `transform` here — palette is a cpu-only compile-time string; the noun maps\n            // it to a palette at builder level.\n        },\n        colorLow: {\n            default: \"#1a0b2e\",\n            transform: transformColor,\n            description: \"Color for the darkest tones\",\n            ui: { type: 'color', label: 'Shadows', group: 'Colors', condition: { palette: 'custom' } }\n        },\n        colorMid: {\n            default: \"#e94560\",\n            transform: transformColor,\n            description: \"Color for the midtones\",\n            ui: { type: 'color', label: 'Midtones', group: 'Colors', condition: { palette: 'custom' } }\n        },\n        colorHigh: {\n            default: \"#f9ed69\",\n            transform: transformColor,\n            description: \"Color for the brightest tones\",\n            ui: { type: 'color', label: 'Highlights', group: 'Colors', condition: { palette: 'custom' } }\n        },\n        speed: {\n            default: 0.15,\n            description: \"Gradient animation speed (0 = static). The gradient cycles seamlessly.\",\n            ui: { type: ['range', 'map'], min: -2, max: 2, step: 0.01, label: 'Speed', group: 'Animation' }\n        },\n        contrast: {\n            default: 1,\n            description: \"Steepness of the luminance-to-gradient mapping\",\n            ui: { type: ['range', 'map'], min: 0, max: 3, step: 0.01, label: 'Contrast', group: 'Effect' }\n        },\n        blackPoint: {\n            default: 0,\n            description: \"Input shadow clip — luminance at/below this maps to the start of the gradient\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Black Point', group: 'Effect' }\n        },\n        whitePoint: {\n            default: 1,\n            description: \"Input highlight clip — luminance at/above this maps to the end of the gradient\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'White Point', group: 'Effect' }\n        },\n        strength: {\n            default: 1,\n            description: \"Blend between the original image (0) and the gradient-mapped result (1)\",\n            // Recompile only when strength crosses 0 (identity ↔ effect) — drives the bypass below.\n            recompile: crosses(0),\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Strength', group: 'Effect' }\n        },\n        colorSpace: {\n            default: 'oklch',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for interpolating custom colors',\n            ui: { type: 'select', options: colorSpaceOptions, label: 'Color Space', group: 'Colors', condition: { palette: 'custom' } }\n        }\n    },\n\n    effect: gradientMap({\n        palette: p('palette'),\n        colorLow: p('colorLow'),\n        colorMid: p('colorMid'),\n        colorHigh: p('colorHigh'),\n        speed: p('speed'),\n        contrast: p('contrast'),\n        blackPoint: p('blackPoint'),\n        whitePoint: p('whitePoint'),\n        strength: p('strength'),\n        colorSpace: p('colorSpace'),\n    }),\n    // strength=0 collapses the final mix back to the child color, so the whole palette path\n    // (and the animation clock read) can be skipped.\n    identityWhen: isZero('strength'),\n    missingChildMessage: 'You must pass a child component into the GradientMap shader.',\n})\n\nexport default componentDefinition\n",
+      "sha256": "37ee499067375c48b4ab67c39b3743830ec8ccccdc51e38703ad4a03494b88b1"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

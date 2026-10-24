@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--multipointgradient",
+    "name": "Multi Point Gradient",
+    "description": "Multi Point Gradient shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/MultiPointGradient/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "a880e1a53c25a0ef75086f08c1460f81b271fab34a66674f2cee35c2d7cdfa43",
+    "dataUrl": "/imported/shaders/multipointgradient.json",
+    "downloadUrl": "/imported/shaders/multipointgradient.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/MultiPointGradient/index.ts",
+      "content": "import type {GpuShaderDefinition} from \"@coreroot/gpu/porters\"\nimport {defineStd, p} from \"@coreroot/std\"\nimport {pointCloudGradient} from \"@coreroot/std/paint/gradients\"\nimport {transformColor, transformPosition, transformColorSpace, colorSpaceOptions} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    colorA: Parameters<typeof transformColor>[0]\n    positionA: Parameters<typeof transformPosition>[0]\n    colorB: Parameters<typeof transformColor>[0]\n    positionB: Parameters<typeof transformPosition>[0]\n    colorC: Parameters<typeof transformColor>[0]\n    positionC: Parameters<typeof transformPosition>[0]\n    colorD: Parameters<typeof transformColor>[0]\n    positionD: Parameters<typeof transformPosition>[0]\n    colorE: Parameters<typeof transformColor>[0]\n    positionE: Parameters<typeof transformPosition>[0]\n    colorSpace: string\n    smoothness: number\n}\n\nexport const componentDefinition: GpuShaderDefinition<ComponentProps> = defineStd<ComponentProps>({\n    name: \"MultiPointGradient\",\n    role: 'generator',\n    boundingBoxDeclaration: { aspectRatio: null, supportsResizeFit: true },\n    category: \"Textures\",\n    description: \"Five individually placed color points blended together by proximity — drag each point to shape the gradient\",\n    acceptsUVContext: true,\n    props: {\n        colorA: {\n            default: \"#4776E6\",\n            transform: transformColor,\n            description: \"Color of control point A\",\n            ui: { type: 'color', label: 'Color A', group: 'Colors' }\n        },\n        positionA: {\n            default: { x: 0.2, y: 0.2 },\n            transform: transformPosition,\n            description: \"Position of control point A\",\n            ui: { type: 'position', label: 'Position A', group: 'Position' }\n        },\n        colorB: {\n            default: \"#C44DFF\",\n            transform: transformColor,\n            description: \"Color of control point B\",\n            ui: { type: 'color', label: 'Color B', group: 'Colors' }\n        },\n        positionB: {\n            default: { x: 0.8, y: 0.2 },\n            transform: transformPosition,\n            description: \"Position of control point B\",\n            ui: { type: 'position', label: 'Position B', group: 'Position' }\n        },\n        colorC: {\n            default: \"#1ABC9C\",\n            transform: transformColor,\n            description: \"Color of control point C\",\n            ui: { type: 'color', label: 'Color C', group: 'Colors' }\n        },\n        positionC: {\n            default: { x: 0.2, y: 0.8 },\n            transform: transformPosition,\n            description: \"Position of control point C\",\n            ui: { type: 'position', label: 'Position C', group: 'Position' }\n        },\n        colorD: {\n            default: \"#F8BBD9\",\n            transform: transformColor,\n            description: \"Color of control point D\",\n            ui: { type: 'color', label: 'Color D', group: 'Colors' }\n        },\n        positionD: {\n            default: { x: 0.8, y: 0.8 },\n            transform: transformPosition,\n            description: \"Position of control point D\",\n            ui: { type: 'position', label: 'Position D', group: 'Position' }\n        },\n        colorE: {\n            default: \"#FF8C42\",\n            transform: transformColor,\n            description: \"Color of control point E\",\n            ui: { type: 'color', label: 'Color E', group: 'Colors' }\n        },\n        positionE: {\n            default: { x: 0.5, y: 0.5 },\n            transform: transformPosition,\n            description: \"Position of control point E\",\n            ui: { type: 'position', label: 'Position E', group: 'Position' }\n        },\n        colorSpace: {\n            default: 'linear',\n            transform: transformColorSpace,\n            compileTime: true,\n            description: 'Color space for color interpolation',\n            ui: { type: 'select', options: colorSpaceOptions, label: 'Color Space', group: 'Colors' }\n        },\n        smoothness: {\n            default: 2,\n            description: \"Controls how smoothly colors blend.\",\n            ui: { type: ['range', 'map'], min: 0, max: 5, step: 0.01, label: 'Smoothness', group: 'Effect' }\n        }\n    },\n    paint: pointCloudGradient({\n        points: [\n            {color: p('colorA'), position: p('positionA')},\n            {color: p('colorB'), position: p('positionB')},\n            {color: p('colorC'), position: p('positionC')},\n            {color: p('colorD'), position: p('positionD')},\n            {color: p('colorE'), position: p('positionE')},\n        ],\n        smoothness: p('smoothness'),\n        space: p('colorSpace'),\n    })\n})\n\nexport default componentDefinition\n",
+      "sha256": "3ba6f153bc781cc0754bcb45965196e585a67c12388ed60d2c8eb65b8b415519"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

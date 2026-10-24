@@ -1,0 +1,48 @@
+{
+  "resource": {
+    "id": "magic-ui--animated-gradient-text",
+    "name": "Animated Gradient Text",
+    "description": "An animated gradient background which transitions between colors for text.",
+    "source": "magic-ui",
+    "sourceName": "magicui",
+    "category": "Typography & text",
+    "framework": "React · TypeScript · Tailwind",
+    "license": "MIT",
+    "revision": "efe76fc5755eca1142dd4f74c1d6f0ace2887e3c",
+    "upstream": "https://github.com/magicuidesign/magicui/tree/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/magicui/animated-gradient-text.tsx",
+    "files": 2,
+    "dependencies": [],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "a31f0e99f8350de3bef513826a173bb6dee64634713408d3c17d60b6ce4b787b",
+    "dataUrl": "/imported/magic-ui/animated-gradient-text.json",
+    "downloadUrl": "/imported/magic-ui/animated-gradient-text.zip"
+  },
+  "files": [
+    {
+      "path": "apps/www/registry/magicui/animated-gradient-text.tsx",
+      "content": "import { type ComponentPropsWithoutRef } from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport interface AnimatedGradientTextProps extends ComponentPropsWithoutRef<\"div\"> {\n  speed?: number\n  colorFrom?: string\n  colorTo?: string\n}\n\nexport function AnimatedGradientText({\n  children,\n  className,\n  speed = 1,\n  colorFrom = \"#ffaa40\",\n  colorTo = \"#9c40ff\",\n  ...props\n}: AnimatedGradientTextProps) {\n  return (\n    <span\n      style={\n        {\n          \"--bg-size\": `${speed * 300}%`,\n          \"--color-from\": colorFrom,\n          \"--color-to\": colorTo,\n        } as React.CSSProperties\n      }\n      className={cn(\n        `animate-gradient inline bg-linear-to-r from-(--color-from) via-(--color-to) to-(--color-from) bg-size-[var(--bg-size)_100%] bg-clip-text text-transparent`,\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </span>\n  )\n}\n",
+      "sha256": "e5f0b81be1a9dc707199c2fd10c588bde872c72a02e2eb6d195d080112a34692"
+    },
+    {
+      "path": "apps/www/public/r/animated-gradient-text.json",
+      "content": "{\n  \"$schema\": \"https://ui.shadcn.com/schema/registry-item.json\",\n  \"name\": \"animated-gradient-text\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Animated Gradient Text\",\n  \"description\": \"An animated gradient background which transitions between colors for text.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/animated-gradient-text.tsx\",\n      \"content\": \"import { type ComponentPropsWithoutRef } from \\\"react\\\"\\n\\nimport { cn } from \\\"@/lib/utils\\\"\\n\\nexport interface AnimatedGradientTextProps extends ComponentPropsWithoutRef<\\\"div\\\"> {\\n  speed?: number\\n  colorFrom?: string\\n  colorTo?: string\\n}\\n\\nexport function AnimatedGradientText({\\n  children,\\n  className,\\n  speed = 1,\\n  colorFrom = \\\"#ffaa40\\\",\\n  colorTo = \\\"#9c40ff\\\",\\n  ...props\\n}: AnimatedGradientTextProps) {\\n  return (\\n    <span\\n      style={\\n        {\\n          \\\"--bg-size\\\": `${speed * 300}%`,\\n          \\\"--color-from\\\": colorFrom,\\n          \\\"--color-to\\\": colorTo,\\n        } as React.CSSProperties\\n      }\\n      className={cn(\\n        `animate-gradient inline bg-linear-to-r from-(--color-from) via-(--color-to) to-(--color-from) bg-size-[var(--bg-size)_100%] bg-clip-text text-transparent`,\\n        className\\n      )}\\n      {...props}\\n    >\\n      {children}\\n    </span>\\n  )\\n}\\n\",\n      \"type\": \"registry:ui\"\n    }\n  ],\n  \"cssVars\": {\n    \"theme\": {\n      \"animate-gradient\": \"gradient 8s linear infinite\"\n    }\n  },\n  \"css\": {\n    \"@keyframes gradient\": {\n      \"to\": {\n        \"background-position\": \"var(--bg-size, 300%) 0\"\n      }\n    }\n  }\n}",
+      "sha256": "7ad5ffebc064485fdfec12b2fc365cfc30fce09518e52301090475c899c4b0e1"
+    },
+    {
+      "path": "LICENSE.md",
+      "content": "MIT License\n\nCopyright (c) Magic UI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    }
+  ],
+  "record": {
+    "Registry definition": "{\n  \"name\": \"animated-gradient-text\",\n  \"type\": \"registry:ui\",\n  \"title\": \"Animated Gradient Text\",\n  \"description\": \"An animated gradient background which transitions between colors for text.\",\n  \"files\": [\n    {\n      \"path\": \"registry/magicui/animated-gradient-text.tsx\",\n      \"type\": \"registry:ui\"\n    }\n  ],\n  \"cssVars\": {\n    \"theme\": {\n      \"animate-gradient\": \"gradient 8s linear infinite\"\n    }\n  },\n  \"css\": {\n    \"@keyframes gradient\": {\n      \"to\": {\n        \"background-position\": \"var(--bg-size, 300%) 0\"\n      }\n    }\n  }\n}"
+  },
+  "installation": [
+    "Use the included registry definition with the shadcn CLI in a separate React/Tailwind project.",
+    "Resolve registryDependencies and apply css/cssVars from the definition. Media URLs in upstream demos are references; external media is not redistributed."
+  ]
+}

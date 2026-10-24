@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--glitch",
+    "name": "Glitch",
+    "description": "Glitch shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Glitch/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "9d1dbbcf20c4dbaf2f82890b0d727edca5cc7e2be317ae4591d350760506e9f1",
+    "dataUrl": "/imported/shaders/glitch.json",
+    "downloadUrl": "/imported/shaders/glitch.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Glitch/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {gatherStack, glitchFrame, glitchRgbSplit, colorBarFills, distortedScanlines} from \"@coreroot/std/effects/blurs\"\n\nexport interface ComponentProps {\n    intensity: number\n    speed: number\n    rgbShift: number\n    blockDensity: number\n    colorBarIntensity: number\n    mirrorAmount: number\n    scanlineIntensity: number\n}\n\n// The shared glitch geometry every stage reads — computed once per composition.\nconst glitchGeometry = glitchFrame({\n    intensity: p('intensity'),\n    speed: p('speed'),\n    blockDensity: p('blockDensity'),\n    mirrorAmount: p('mirrorAmount'),\n})\n\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"Glitch\",\n    role: 'filter',\n    species: 'gather',\n    boundingBoxDeclaration: { aspectRatio: null },\n    category: \"Stylize\",\n    description: \"Digital glitch that melts pixels and distorts colors\",\n    props: {\n        intensity: {\n            default: 0.5,\n            description: 'Overall glitch strength and frequency of glitch bursts',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Intensity', group: 'Effect' }\n        },\n        speed: {\n            default: 1,\n            description: 'How fast the glitch pattern evolves',\n            ui: { type: 'range', min: 0.1, max: 5, step: 0.1, label: 'Speed', group: 'Effect' }\n        },\n        rgbShift: {\n            default: 5,\n            description: 'Amount of chromatic aberration (RGB channel splitting)',\n            ui: { type: ['range', 'map'], min: 0, max: 20, step: 0.5, label: 'RGB Shift', group: 'Effect' }\n        },\n        blockDensity: {\n            default: 10,\n            description: 'Base number of horizontal glitch bands',\n            ui: { type: ['range', 'map'], min: 2, max: 50, step: 1, label: 'Block Density', group: 'Effect' }\n        },\n        colorBarIntensity: {\n            default: 0.2,\n            description: 'Intensity of vivid neon color bar overlay in glitch regions',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Color Bars', group: 'Effect' }\n        },\n        mirrorAmount: {\n            default: 0.3,\n            description: 'Chance of glitch blocks showing mirrored/flipped content',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Mirror', group: 'Effect' }\n        },\n        scanlineIntensity: {\n            default: 0.2,\n            description: 'Visibility of CRT-style horizontal scanlines in distorted areas',\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.01, label: 'Scanlines', group: 'Effect' }\n        }\n    },\n\n    // Digital corruption over one shared geometry frame (burst pulse, jitter bands, block\n    // shifts, mirror flips) — its hashes feed the RGB-split sampling, then color-bar fills and\n    // distortion-gated scanlines. `ctx.time` is the global clock.\n    effect: gatherStack(glitchRgbSplit(glitchGeometry, {shift: p('rgbShift')}), [\n        colorBarFills(glitchGeometry, {intensity: p('colorBarIntensity')}),\n        distortedScanlines(glitchGeometry, {intensity: p('scanlineIntensity')}),\n    ]),\n})\n\nexport default componentDefinition\n",
+      "sha256": "0ac41bee0d66f2c9a31d68a35c999901c23d9154e0d914485567d006e85e9742"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}

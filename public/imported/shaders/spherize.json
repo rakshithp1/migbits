@@ -1,0 +1,43 @@
+{
+  "resource": {
+    "id": "shaders--spherize",
+    "name": "Spherize",
+    "description": "Spherize shader definition from the open-source Shaders engine.",
+    "source": "shaders",
+    "sourceName": "shaders",
+    "category": "Shaders & graphics",
+    "framework": "WebGPU · React · Vue · Svelte · Solid · JavaScript",
+    "license": "MIT",
+    "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
+    "upstream": "https://github.com/shader-effects-inc/shaders/tree/eb3df5cedc826008be8e1037c1182e649037c74a/packages/core/src/shaders/Spherize/index.ts",
+    "files": 1,
+    "dependencies": [
+      "shaders-core",
+      "shaders/react"
+    ],
+    "registryDependencies": [],
+    "validation": "source-checked",
+    "validationNotes": [
+      "Pinned source, license and file integrity checked. Runtime, accessibility and dependency compatibility are not yet validated."
+    ],
+    "digest": "e767bcb3c45610e00fd3b4ffcfdf4cc5dd6d6ba40aa1b02a924e736cb163ef67",
+    "dataUrl": "/imported/shaders/spherize.json",
+    "downloadUrl": "/imported/shaders/spherize.zip"
+  },
+  "files": [
+    {
+      "path": "packages/core/src/shaders/Spherize/index.ts",
+      "content": "import {defineStd, p} from \"@coreroot/std\"\nimport {gatherStack, sphereFrame, crispTap, rimLit} from \"@coreroot/std/effects/blurs\"\nimport {transformPosition, transformColor} from \"@coreroot/utilities/transformations\"\n\nexport interface ComponentProps {\n    radius: number\n    depth: number\n    center: Parameters<typeof transformPosition>[0]\n    lightPosition: Parameters<typeof transformPosition>[0]\n    lightIntensity: number\n    lightSoftness: number\n    lightColor: Parameters<typeof transformColor>[0]\n}\n\n// The sphere-bulge geometry (bulged UV + boundary coverage + surface normal) both stages read.\nconst sphere = sphereFrame({center: p('center'), radius: p('radius'), depth: p('depth')})\n\nexport const componentDefinition = defineStd<ComponentProps>({\n    name: \"Spherize\",\n    role: 'filter',\n    species: 'gather',\n    category: \"Distortions\",\n    description: \"Map content onto a 3D sphere surface with depth distortion\",\n    boundingBoxDeclaration: { aspectRatio: null },\n    props: {\n        radius: {\n            default: 1,\n            description: 'Radius of the sphere (1 = half viewport height)',\n            ui: { type: ['range', 'map'], min: 0.1, max: 3, step: 0.1, label: 'Radius', group: 'Effect' }\n        },\n        depth: {\n            default: 1,\n            description: 'How much the sphere bulges toward viewer (0 = flat, higher = more bulge)',\n            ui: { type: ['range', 'map'], min: 0, max: 3, step: 0.1, label: 'Depth', group: 'Effect' }\n        },\n        center: {\n            default: {\n                x: 0.5,\n                y: 0.5\n            },\n            transform: transformPosition,\n            description: \"The center point of the sphere\",\n            ui: { type: 'position', label: 'Center', group: 'Position' }\n        },\n        lightPosition: {\n            default: {\n                x: 0.3,\n                y: 0.3\n            },\n            transform: transformPosition,\n            description: \"Position of the specular light source\",\n            ui: { type: 'position', label: 'Light Position', group: 'Position' }\n        },\n        lightIntensity: {\n            default: 0.5,\n            description: \"Intensity of the rim light (0 = off)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Light Intensity', group: 'Effect' }\n        },\n        lightSoftness: {\n            default: 0.5,\n            description: \"Softness of the rim light falloff (0 = hard edge, 1 = soft glow)\",\n            ui: { type: ['range', 'map'], min: 0, max: 1, step: 0.1, label: 'Light Softness', group: 'Effect' }\n        },\n        lightColor: {\n            default: \"#ffffff\",\n            transform: transformColor,\n            description: \"Color of the specular highlight\",\n            ui: { type: 'color', label: 'Light Color', group: 'Effect' }\n        }\n    },\n\n    // Geometry → one crisp Catmull-Rom tap at the bulged UV → the fresnel rim. No uvRemap: the\n    // rim ADDS color, which a uv+mask analytic fold can't carry — so Spherize stays on the RTT\n    // fragment path to keep the specular highlight.\n    effect: gatherStack(\n        crispTap(sphere),\n        [rimLit(sphere, {\n            position: p('lightPosition'),\n            intensity: p('lightIntensity'),\n            softness: p('lightSoftness'),\n            color: p('lightColor'),\n        })],\n        {resultAlpha: 'straight'},\n    ),\n})\n\nexport default componentDefinition\n",
+      "sha256": "b725e45bd5597275385b7e66adbb24d6f8056aea9c475d40280564cfe25bf1fe"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2026 Shader Effects Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "eeaaa26f5c65cb6dfebf1c098ac2375fdcdb497cebf105b0542f229482b106f4"
+    }
+  ],
+  "installation": [
+    "Use the upstream Shaders framework package and its documented component exports. The definition relies on the engine and is not a standalone React component.",
+    "Supporting engine source and all framework package manifests are in the collection support pack. WebGPU device support is required; provide a static fallback and respect reduced motion."
+  ]
+}
