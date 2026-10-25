@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { communitySources } from "../../catalog/community";
 export function ProductHeader() {
   return (
     <header className="product-header">
@@ -7,14 +6,11 @@ export function ProductHeader() {
         <span aria-hidden="true">✳</span> Migbits
       </Link>
       <nav aria-label="Library navigation">
-        <Link href="/open-source/components">
-          Components <span>65</span>
-        </Link>
-        <Link href="/library">Resources</Link>
-        <Link href="/open-source/imports">Imported collection</Link>
-        <Link href="/open-source">
-          Open source <span>{communitySources.length}</span>
-        </Link>
+        <Link href="/library">Library</Link>
+        <Link href="/library/components">Components</Link>
+        <Link href="/library/blocks">Blocks</Link>
+        <Link href="/library/templates">Templates</Link>
+        <Link href="/library/figma">Figma kits</Link>
         <a
           href="https://github.com/rakshithp1/migbits"
           target="_blank"

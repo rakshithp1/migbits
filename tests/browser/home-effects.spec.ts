@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("call-to-action effects preserve links, keyboard focus and live reduced motion", async ({ page }) => {
   const errors: string[] = [];
   page.on("pageerror", error => errors.push(error.message));
-  await page.goto("/");
+  await page.goto("/playground");
   const cta = page.getByRole("region", { name: "Start exploring components" });
   await cta.scrollIntoViewIfNeeded();
   await expect(cta.locator(".spotlight-card")).toHaveCount(0);
@@ -27,7 +27,7 @@ test("call-to-action effects preserve links, keyboard focus and live reduced mot
 test("mobile reduced-motion layout keeps the call-to-action inside the viewport", async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.goto("/");
+  await page.goto("/playground");
   const cta = page.getByRole("region", { name: "Start exploring components" });
   await cta.scrollIntoViewIfNeeded();
   await expect(cta.getByRole("link", { name: "Find your first bit" })).toBeVisible();
@@ -40,7 +40,7 @@ test("mobile reduced-motion layout keeps the call-to-action inside the viewport"
 test("call-to-action remains readable without JavaScript", async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
-  await page.goto("/");
+  await page.goto("/playground");
   const cta = page.getByRole("region", { name: "Start exploring components" });
   await expect(cta.getByRole("heading", { name: "Build something people remember." })).toBeVisible();
   await expect(cta.getByRole("link", { name: "Find your first bit" })).toHaveAttribute("href", "#components");

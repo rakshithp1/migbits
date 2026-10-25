@@ -1,5 +1,7 @@
 # Migbits
 
+A visual UI resource gallery with 361 entries across components, blocks, templates, typography, color theory, illustrations and Figma kits. Browse at `/library`; the original motion playground remains at `/playground`. See [the gallery guide](docs/RESOURCE-GALLERY.md) for counts, licensing, previews and the repeatable build workflow.
+
 ## Imported source catalog
 
 `/open-source/imports` contains 530 retained, attributed entries after the owner's rights cleanup. 4,672 records and their generated downloads were removed, along with the restricted React Bits homepage effects. Retained records include 68 isolated block previews; source checking does not establish production readiness.

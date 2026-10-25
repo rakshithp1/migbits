@@ -1,5 +1,11 @@
 # Third-party notices
 
+## Visual resource gallery
+
+The gallery reuses the reviewed, pinned shadcn/ui, Inspo and UI UX Pro Max source already attributed in this project. Their exact notices remain in source payloads and ZIP downloads. Font-family notices and OFL licenses are preserved separately under public/library/fonts and in each font ZIP. OFL fonts are excluded from the standalone resale filter.
+
+New Migbits templates, illustrations and Figma generator kits are original works under resources/library/LICENSE. Each original ZIP preserves that notice; standalone illustration and kit SVGs embed it in metadata. Figma generator packages contain original source and editable SVGs, not third-party Community .fig files. 21st.dev was studied as a UI navigation reference; its screenshots, branding and submissions are not redistributed by Migbits.
+
 ## Removed application effects
 
 React Bits Blur Text and Spotlight Card have been removed from the application and current source tree. The call-to-action now uses original static markup. The removed effects are not distributed in current downloads.

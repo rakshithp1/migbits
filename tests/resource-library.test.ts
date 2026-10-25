@@ -1,0 +1,87 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync, existsSync } from "node:fs";
+import { Script } from "node:vm";
+import { unzipSync, strFromU8 } from "fflate";
+import {
+  findLibraryResources,
+  libraryResources,
+  resourceCategories,
+} from "../lib/resource-library";
+import { contrastRatio, relativeLuminance } from "../lib/color-theory";
+import { figmaKits, kitPlugin } from "../resources/library/figma-kits";
+test("gallery categories contain real resources and search combines terms within a category", () => {
+  assert.equal(
+    new Set(libraryResources.map((r) => r.id)).size,
+    libraryResources.length,
+  );
+  for (const category of resourceCategories)
+    assert.ok(
+      findLibraryResources({ category: category.id }).length > 0,
+      category.id,
+    );
+  assert.ok(
+    findLibraryResources({ category: "blocks", query: "hero split" }).length >
+      0,
+  );
+  assert.equal(
+    findLibraryResources({ category: "illustrations", query: "hero split" })
+      .length,
+    0,
+  );
+  assert.equal(
+    findLibraryResources({ query: "no-such-gallery-resource-zz" }).length,
+    0,
+  );
+});
+test("every gallery source and asset exists and original downloads preserve licenses", () => {
+  for (const item of libraryResources) {
+    assert.ok(item.author && item.license && item.downloadUrl);
+    if (item.dataUrl) assert.ok(existsSync("public" + item.dataUrl), item.id);
+    if (item.image && !item.image.endsWith(".png"))
+      assert.ok(existsSync("public" + item.image), item.id);
+    if (item.previewUrl)
+      assert.ok(existsSync("public" + item.previewUrl), item.id);
+    if (item.downloadUrl?.endsWith(".zip")) {
+      const zip = unzipSync(
+        new Uint8Array(readFileSync("public" + item.downloadUrl)),
+      );
+      assert.ok(
+        Object.keys(zip).some((p) => /LICENSE|OFL|LICENCE/i.test(p)),
+        item.id,
+      );
+      for (const path of Object.keys(zip))
+        assert.ok(!path.startsWith("/") && !path.split("/").includes(".."));
+      if (item.author === "Migbits")
+        assert.match(strFromU8(zip.LICENSE), /sell\s+copies/);
+    }
+  }
+  for (const item of libraryResources.filter((r) => r.license === "OFL-1.1"))
+    assert.equal(item.category, "typography");
+  assert.ok(libraryResources.filter((r) => r.license === "MIT").length > 300);
+});
+test("contrast calculations match WCAG reference endpoints and reject invalid input", () => {
+  assert.equal(relativeLuminance("#000000"), 0);
+  assert.equal(relativeLuminance("#FFFFFF"), 1);
+  assert.equal(contrastRatio("#000000", "#FFFFFF"), 21);
+  assert.equal(contrastRatio("#7957D5", "#7957D5"), 1);
+  assert.ok(Math.abs(contrastRatio("#777777", "#FFFFFF") - 4.478) < 0.001);
+  assert.throws(() => relativeLuminance("#fff"), /six-digit/);
+});
+test("Figma kit sources parse and include native variants without network or font binaries", () => {
+  for (const kit of figmaKits) {
+    assert.doesNotThrow(() => new Script(kitPlugin(kit.id)));
+    const zip = unzipSync(
+      new Uint8Array(
+        readFileSync("public/library/downloads/figma-" + kit.id + ".zip"),
+      ),
+    );
+    const manifest = JSON.parse(strFromU8(zip["manifest.json"]));
+    assert.deepEqual(manifest.networkAccess.allowedDomains, ["none"]);
+    assert.equal(manifest.documentAccess, "dynamic-page");
+    assert.ok(zip["board.svg"] && zip["tokens.json"] && zip["code.js"]);
+    assert.match(strFromU8(zip["code.js"]), /combineAsVariants/);
+    assert.match(strFromU8(zip["README.md"]), /not been verified/);
+    assert.ok(!Object.keys(zip).some((p) => /\.(fig|ttf|woff2?)$/.test(p)));
+  }
+});
