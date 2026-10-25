@@ -1,10 +1,10 @@
 {
-  "releasedAt": "2026-10-25T17:55:21.421Z",
+  "releasedAt": "2026-10-25T20:12:20.491944+00:00",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "9167b8970c2e7fffa9a6fad7ba329750b15ddc59",
-  "deploymentVersion": "afbfe782-b545-4cf8-93d3-f6c644e0956d",
-  "resources": 358,
+  "sourceCommit": "ca09d5964475ca33d189d792c3ae43daf8819f74",
+  "deploymentVersion": "e8fed9c3-b2f3-4770-8bc2-3d28bb52375d",
+  "resources": 371,
   "categories": {
     "components": 92,
     "blocks": 19,
@@ -16,35 +16,41 @@
     "shaders": 171,
     "foundations": 6,
     "backgrounds": 6,
-    "icons": 1
+    "icons": 2,
+    "themes": 12
   },
   "licenses": {
-    "MIT": 344,
+    "MIT": 357,
     "OFL-1.1": 12,
     "CC0-1.0": 2
   },
   "changes": [
-    "15 reviewed complete native-motion template kits containing 32 pages",
-    "18 total template kits with category, animation and multi-page filters",
-    "Lazy isolated previews with per-page selection, complete source ZIPs and separate original/adapted code",
-    "Original MigBits artwork substitutes for excluded third-party photos/fonts/vendor assets; notices preserved",
-    "Existing blue atmosphere, motion controls and Usage-navigation removal retained"
+    "12 original ready themes with light/dark semantic roles, typography, CSS/JSON downloads and persistent site controls",
+    "16 individually reviewed generic Microsoft Fluent color SVGs with complete MIT/NOTICE preservation; one collection, not16 template kits",
+    "Six original CSS motion recipes with static reduced-motion behavior; no restricted animation collection copied",
+    "Gradient angle/color/animation editor with portable reduced-motion CSS export",
+    "Four responsive type scales across12 existing licensed font families; font binaries not relicensed or bundled into theme ZIPs",
+    "Five-color editing and palette presets for12 existing original illustrations; existing third-party illustrations retained unchanged"
   ],
   "checks": {
-    "unit": 40,
-    "localBrowser": 26,
-    "liveBrowser": 5,
+    "unit": 42,
+    "ciBrowser": 32,
+    "localBrowserBeforeFinalContrastPolish": 31,
+    "localFocusedFinalBrowser": 6,
+    "liveBrowser": 6,
+    "semanticContrastPairs": 168,
+    "liveArtifactsHashMatched": 57,
     "hostingGroups": 9,
-    "newTemplateKitsValidated": 15,
-    "newTemplatePagesValidated": 32,
     "lint": "passed",
     "typecheck": "passed",
+    "cleanConsumer": "passed",
+    "communityBundles": "passed",
     "nextBuild": "passed",
     "cloudflareBuild": "passed",
     "workerDryRun": "passed",
     "liveHosting": "passed",
     "sourceCommitCI": "passed",
-    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40218101117"
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40229054942"
   },
   "remaining": {
     "requestedCompleteTemplates": 1000,
@@ -54,10 +60,18 @@
     "freePro": "deferred",
     "accessibility": "Per-entry comprehensive accessibility certification remains pending"
   },
+  "previousDeployment": {
+    "releasedAt": "2026-10-25T17:55:21.421Z",
+    "sourceCommit": "9167b8970c2e7fffa9a6fad7ba329750b15ddc59",
+    "deploymentVersion": "afbfe782-b545-4cf8-93d3-f6c644e0956d",
+    "resources": 358
+  },
   "evidence": [
-    "docs/MOTION-TEMPLATE-EXPANSION.md",
-    "catalog/template-research/progress.json",
-    "catalog/template-research/render-validation.json",
-    "catalog/template-research/web-sources.json"
+    "docs/VISUAL-EXPANSION.md",
+    "resources/visual/fluent-color/review.json",
+    "resources/visual/fluent-color/LICENSE",
+    "resources/visual/fluent-color/NOTICE",
+    "tests/theme-expansion.test.ts",
+    "tests/browser/theme-expansion.spec.ts"
   ]
 }
