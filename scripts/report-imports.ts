@@ -1,37 +1,88 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import type { ImportedResource } from "../lib/import-catalog";
-import type { ImportSourceStatus, ImportPreviewStatus } from "../lib/import-status";
+import type {
+  ImportSourceStatus,
+  ImportPreviewStatus,
+} from "../lib/import-status";
 
-const index: ImportedResource[] = JSON.parse(readFileSync("catalog/import-index.json", "utf8"));
-const report: { reviewedAt: string; sources: ImportSourceStatus[] } = JSON.parse(readFileSync("catalog/import-report.json", "utf8"));
-const previews: ImportPreviewStatus[] = JSON.parse(readFileSync("catalog/import-previews.json", "utf8"));
+const index: ImportedResource[] = JSON.parse(
+  readFileSync("catalog/import-index.json", "utf8"),
+);
+const report: { reviewedAt: string; sources: ImportSourceStatus[] } =
+  JSON.parse(readFileSync("catalog/import-report.json", "utf8"));
+const previews: ImportPreviewStatus[] = JSON.parse(
+  readFileSync("catalog/import-previews.json", "utf8"),
+);
 if (existsSync("catalog/rights-cleanup.json")) {
-  const cleanup = JSON.parse(readFileSync("catalog/rights-cleanup.json", "utf8"));
-  const rows = report.sources.map(source => `| ${source.id} | ${source.discovered ?? "Unknown"} | ${source.imported || 0} | ${source.removed || 0} | ${source.status}: ${source.reason.replace(/\|/g, "/")} |`);
-  writeFileSync("docs/IMPORT-REPORT.md", [
-    "# Current distribution after rights cleanup", "",
-    `Reviewed ${cleanup.reviewedAt}. ${index.length} source-checked records remain; ${cleanup.removed.length} records and their generated public files were removed.`, "",
-    "React Bits Blur Text and Spotlight Card were removed from the homepage and source tree. Broad source mirrors, scene/runtime packs, brand artwork and unreviewed media are no longer distributed. No third-party Figma kits are imported. Required notices remain with retained MIT source.", "",
-    "## Source reconciliation", "",
-    "Discovered totals describe the earlier pinned inventory. Removed records are historical discoveries, not current downloads. Retained resources are not all runtime or accessibility validated.", "",
-    "| Source | Previously discovered | Retained | Removed | Status / reason |",
-    "| --- | ---: | ---: | ---: | --- |", ...rows, "",
-    "## Resuming imports", "",
-    "The importer is paused while catalog/rights-cleanup.json exists. Explicit source and asset rights review is required before changing that policy. The item-level removal audit is preserved there; catalog/import-progress retains historical discovery evidence.", "",
-    "The public branch history was replaced with a clean root snapshot after cleanup. GitHub-managed caches and previously downloaded external copies are outside repository history control. Previous build and deployment evidence in catalog/import-validation.json predates this cleanup unless explicitly marked otherwise.", "",
-  ].join("\n"));
-  console.log(`Wrote current rights report for ${index.length} retained entries.`);
+  const cleanup = JSON.parse(
+    readFileSync("catalog/rights-cleanup.json", "utf8"),
+  );
+  const rows = report.sources.map(
+    (source) =>
+      `| ${source.id} | ${source.discovered ?? "Unknown"} | ${source.imported || 0} | ${source.removed || 0} | ${source.status}: ${source.reason.replace(/\|/g, "/")} |`,
+  );
+  writeFileSync(
+    "docs/IMPORT-REPORT.md",
+    [
+      "# Current distribution after rights cleanup",
+      "",
+      `Reviewed ${cleanup.reviewedAt}. ${index.length} source-checked records remain; ${cleanup.removed.length} records and their generated public files were removed.`,
+      "",
+      ...(existsSync("catalog/library/curation.json")
+        ? [
+            "A later visual curation removed 247 repetitive gallery entries, including 229 additional imported records. The primary gallery now contains 114 distinct resources. Details and replacements are preserved in catalog/library/curation.json.",
+            "",
+          ]
+        : []),
+      "React Bits Blur Text and Spotlight Card were removed from the homepage and source tree. Broad source mirrors, scene/runtime packs, brand artwork and unreviewed media are no longer distributed. No third-party Figma kits are imported. Required notices remain with retained MIT source.",
+      "",
+      "## Source reconciliation",
+      "",
+      "Discovered totals describe the earlier pinned inventory. Removed records are historical discoveries, not current downloads. Retained resources are not all runtime or accessibility validated.",
+      "",
+      "| Source | Previously discovered | Retained | Removed | Status / reason |",
+      "| --- | ---: | ---: | ---: | --- |",
+      ...rows,
+      "",
+      "## Resuming imports",
+      "",
+      "The importer is paused while catalog/rights-cleanup.json exists. Explicit source and asset rights review is required before changing that policy. The item-level removal audit is preserved there; catalog/import-progress retains historical discovery evidence.",
+      "",
+      "The public branch history was replaced with a clean root snapshot after cleanup. GitHub-managed caches and previously downloaded external copies are outside repository history control. Previous build and deployment evidence in catalog/import-validation.json predates this cleanup unless explicitly marked otherwise.",
+      "",
+    ].join("\n"),
+  );
+  console.log(
+    `Wrote current rights report for ${index.length} retained entries.`,
+  );
   process.exit(0);
 }
-const table = ["| Source | Discovered in pinned scope | Imported, not fully runtime validated | Fully runtime validated | Duplicates | Status / reason |", "| --- | ---: | ---: | ---: | ---: | --- |"];
-for (const source of report.sources.filter(item => !item.id.startsWith("ui-guideline-"))) {
+const table = [
+  "| Source | Discovered in pinned scope | Imported, not fully runtime validated | Fully runtime validated | Duplicates | Status / reason |",
+  "| --- | ---: | ---: | ---: | ---: | --- |",
+];
+for (const source of report.sources.filter(
+  (item) => !item.id.startsWith("ui-guideline-"),
+)) {
   if (source.id === "ui-guideline") {
-    const children = report.sources.filter(item => item.id.startsWith("ui-guideline-"));
-    table.push(`| uiguideline.com | ${children.length} linked systems | ${children.reduce((n, s) => n + (s.imported || 0), 0)} source collections | 0 | 0 | See per-system table below; collections contain source trees, not individually validated components. |`);
-  } else table.push(`| ${source.requested} | ${source.discovered ?? "Unknown"} | ${source.imported || 0} | 0 | ${source.duplicates || 0} | ${source.status}: ${source.reason.replace(/\|/g, "/")} |`);
+    const children = report.sources.filter((item) =>
+      item.id.startsWith("ui-guideline-"),
+    );
+    table.push(
+      `| uiguideline.com | ${children.length} linked systems | ${children.reduce((n, s) => n + (s.imported || 0), 0)} source collections | 0 | 0 | See per-system table below; collections contain source trees, not individually validated components. |`,
+    );
+  } else
+    table.push(
+      `| ${source.requested} | ${source.discovered ?? "Unknown"} | ${source.imported || 0} | 0 | ${source.duplicates || 0} | ${source.status}: ${source.reason.replace(/\|/g, "/")} |`,
+    );
 }
-const linked = report.sources.filter(item => item.id.startsWith("ui-guideline-")).map(item => `| ${item.id.replace("ui-guideline-", "")} | ${item.imported || 0} | ${item.status} | ${item.reason.replace(/\|/g, "/")} |`);
-const categories = [...new Set(index.map(item => item.category))].sort();
+const linked = report.sources
+  .filter((item) => item.id.startsWith("ui-guideline-"))
+  .map(
+    (item) =>
+      `| ${item.id.replace("ui-guideline-", "")} | ${item.imported || 0} | ${item.status} | ${item.reason.replace(/\|/g, "/")} |`,
+  );
+const categories = [...new Set(index.map((item) => item.category))].sort();
 const bencho = JSON.parse(readFileSync("catalog/upstream/bencho.json", "utf8"));
 const text = `# Resumable source import report
 
@@ -43,7 +94,7 @@ ${index.length.toLocaleString("en-US")} imported catalog entries in ${categories
 
 Browse \`/open-source/imports\` for server-rendered search, collection/category filters and pagination. Detail pages include original source viewing, code copying, dependencies, usage notes, attribution, revision evidence, ZIP downloads and available sandbox previews. The existing 65-component shadcn gallery, six-component Motion Primitives playground and icon explorer remain intact.
 
-All imported entries have pinned provenance and file integrity records. ${previews.filter(item => ["compiled", "render-checked", "runtime-error"].includes(item.status)).length} previews compile; compilation is not a runtime or accessibility audit. ${previews.filter(item => item.status === "render-checked").length} previews passed a browser render check with reduced motion. This does not establish complete keyboard or accessibility coverage. There is no claim that the entire web catalog of any source is exhausted.
+All imported entries have pinned provenance and file integrity records. ${previews.filter((item) => ["compiled", "render-checked", "runtime-error"].includes(item.status)).length} previews compile; compilation is not a runtime or accessibility audit. ${previews.filter((item) => item.status === "render-checked").length} previews passed a browser render check with reduced motion. This does not establish complete keyboard or accessibility coverage. There is no claim that the entire web catalog of any source is exhausted.
 
 ## Requested sources
 
@@ -61,7 +112,7 @@ ${linked.join("\n")}
 
 ## Categories
 
-${categories.map(value => `- ${value}: ${index.filter(item => item.category === value).length}`).join("\n")}
+${categories.map((value) => `- ${value}: ${index.filter((item) => item.category === value).length}`).join("\n")}
 
 ## Repeatable workflow
 
@@ -91,18 +142,29 @@ Development examples can exercise unpublished APIs, require dependency workspace
 
 Verification commands and browser results are recorded in the implementation summary after the final pass. Do not replace source-check labels with runtime-validated labels merely because TypeScript parsing or a page build passes.
 `;
-const evidence = existsSync("catalog/import-validation.json") ? JSON.parse(readFileSync("catalog/import-validation.json", "utf8")) : null;
-const verification = evidence ? [
-  "", "## Verification and deployment", "",
-  `Published to ${evidence.productionUrl} on ${evidence.reviewedAt}.`, "",
-  `- Production version: ${evidence.deploymentVersion}. Previous version retained for rollback: ${evidence.previousDeploymentVersion}.`,
-  `- ${evidence.unitTestsPassed} unit tests, lint, type checks, Next.js production build and Cloudflare adapter build passed.`,
-  `- ${evidence.localNextBrowserTestsPassed} Next.js browser tests and ${evidence.localWorkersBrowserTestsPassed} local Workers browser tests passed.`,
-  `- ${evidence.liveBrowserTestsPassed} live browser tests and ${evidence.liveHostingCheckGroupsPassed} hosting check groups passed against the custom domain.`,
-  `- ${evidence.previewRenderChecksPassed} isolated examples passed basic browser render checks with reduced motion; original source and broader integration checks remain separate.`,
-  `- Worker dry run passed at ${evidence.workerGzipKiB} KiB compressed. Imported files and split support archives passed the static file size check.`,
-  `- Build environment workaround: ${evidence.buildWorkaround}`, "",
-  "Detailed machine-readable evidence is in catalog/import-validation.json. No feedback report was submitted automatically.", "",
-].join("\n") : "";
+const evidence = existsSync("catalog/import-validation.json")
+  ? JSON.parse(readFileSync("catalog/import-validation.json", "utf8"))
+  : null;
+const verification = evidence
+  ? [
+      "",
+      "## Verification and deployment",
+      "",
+      `Published to ${evidence.productionUrl} on ${evidence.reviewedAt}.`,
+      "",
+      `- Production version: ${evidence.deploymentVersion}. Previous version retained for rollback: ${evidence.previousDeploymentVersion}.`,
+      `- ${evidence.unitTestsPassed} unit tests, lint, type checks, Next.js production build and Cloudflare adapter build passed.`,
+      `- ${evidence.localNextBrowserTestsPassed} Next.js browser tests and ${evidence.localWorkersBrowserTestsPassed} local Workers browser tests passed.`,
+      `- ${evidence.liveBrowserTestsPassed} live browser tests and ${evidence.liveHostingCheckGroupsPassed} hosting check groups passed against the custom domain.`,
+      `- ${evidence.previewRenderChecksPassed} isolated examples passed basic browser render checks with reduced motion; original source and broader integration checks remain separate.`,
+      `- Worker dry run passed at ${evidence.workerGzipKiB} KiB compressed. Imported files and split support archives passed the static file size check.`,
+      `- Build environment workaround: ${evidence.buildWorkaround}`,
+      "",
+      "Detailed machine-readable evidence is in catalog/import-validation.json. No feedback report was submitted automatically.",
+      "",
+    ].join("\n")
+  : "";
 writeFileSync("docs/IMPORT-REPORT.md", text + verification);
-console.log(`Wrote report for ${index.length} entries and ${report.sources.length} inventory sources.`);
+console.log(
+  `Wrote report for ${index.length} entries and ${report.sources.length} inventory sources.`,
+);

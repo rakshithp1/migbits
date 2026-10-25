@@ -10,6 +10,31 @@ import {
 } from "../lib/resource-library";
 import { contrastRatio, relativeLuminance } from "../lib/color-theory";
 import { figmaKits, kitPlugin } from "../resources/library/figma-kits";
+import curation from "../catalog/library/curation.json";
+test("visual curation excludes retired entries and repeated color families from delivery", () => {
+  const ids = new Set(libraryResources.map((r) => r.id));
+  assert.equal(ids.size, curation.retainedIds.length);
+  for (const item of curation.removed) {
+    assert.equal(ids.has(item.id), false, item.id);
+    for (const url of [
+      item.dataUrl,
+      item.image,
+      item.downloadUrl,
+      item.previewUrl,
+    ].filter((u): u is string => Boolean(u && u.startsWith("/library/")))) {
+      assert.equal(existsSync("public" + url), false, url);
+    }
+  }
+  const palettes = libraryResources.filter((r) => r.category === "colors");
+  assert.equal(
+    new Set(palettes.map((p) => p.colors!.Primary)).size,
+    palettes.length,
+  );
+  assert.equal(
+    libraryResources.filter((r) => r.category === "figma").length,
+    1,
+  );
+});
 test("gallery categories contain real resources and search combines terms within a category", () => {
   assert.equal(
     new Set(libraryResources.map((r) => r.id)).size,
@@ -58,7 +83,11 @@ test("every gallery source and asset exists and original downloads preserve lice
   }
   for (const item of libraryResources.filter((r) => r.license === "OFL-1.1"))
     assert.equal(item.category, "typography");
-  assert.ok(libraryResources.filter((r) => r.license === "MIT").length > 300);
+  assert.equal(
+    libraryResources.filter((r) => r.license === "MIT").length,
+    libraryResources.length -
+      libraryResources.filter((r) => r.license === "OFL-1.1").length,
+  );
 });
 test("contrast calculations match WCAG reference endpoints and reject invalid input", () => {
   assert.equal(relativeLuminance("#000000"), 0);
@@ -69,7 +98,9 @@ test("contrast calculations match WCAG reference endpoints and reject invalid in
   assert.throws(() => relativeLuminance("#fff"), /six-digit/);
 });
 test("Figma kit sources parse and include native variants without network or font binaries", () => {
-  for (const kit of figmaKits) {
+  for (const kit of figmaKits.filter((k) =>
+    libraryResources.some((r) => r.id === "figma-" + k.id),
+  )) {
     assert.doesNotThrow(() => new Script(kitPlugin(kit.id)));
     const zip = unzipSync(
       new Uint8Array(

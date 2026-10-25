@@ -1,6 +1,8 @@
 # Current distribution after rights cleanup
 
-Reviewed 2026-10-24. 530 source-checked records remain; 4672 records and their generated public files were removed.
+Reviewed 2026-10-24. 301 source-checked records remain; 4672 records and their generated public files were removed.
+
+A later visual curation removed 247 repetitive gallery entries, including 229 additional imported records. The primary gallery now contains 114 distinct resources. Details and replacements are preserved in catalog/library/curation.json.
 
 React Bits Blur Text and Spotlight Card were removed from the homepage and source tree. Broad source mirrors, scene/runtime packs, brand artwork and unreviewed media are no longer distributed. No third-party Figma kits are imported. Required notices remain with retained MIT source.
 
@@ -19,13 +21,13 @@ Discovered totals describe the earlier pinned inventory. Removed records are his
 | shaders | 200 | 200 | 0 | imported: Only the retained, reviewed source scope is distributed. |
 | spline | 4 | 0 | 4 | removed: Removed from current public catalog and all generated public downloads. |
 | framer | Unknown | 0 | 0 | blocked: Marketplace templates and assets have separate licenses. Motion is tracked separately; no blanket redistribution grant for Framer marketplace content identified. |
-| ui-ux-pro-max | 4319 | 192 | 4127 | imported: Only the retained, reviewed source scope is distributed. |
+| ui-ux-pro-max | 4319 | 16 | 4303 | imported: Retained after rights review and visual similarity curation; repetitive records removed from current delivery. |
 | magic-ui | 250 | 70 | 180 | imported: Only the retained, reviewed source scope is distributed. |
 | motion | 152 | 0 | 152 | removed: Removed from current public catalog and all generated public downloads. |
 | impeccable | 45 | 0 | 45 | removed: Removed from current public catalog and all generated public downloads. |
 | scrolltide | Unknown | 0 | 0 | excluded: Terms prohibit redistribution of templates and prompts, including modified versions. |
 | 21st | Unknown | 0 | 0 | blocked: Community submissions need individual authorship and license evidence. A platform page or root platform license does not grant rights over every submitted component. Bulk item-level rights have not been established. |
-| inspo | 68 | 68 | 0 | imported: Only the retained, reviewed source scope is distributed. |
+| inspo | 68 | 15 | 53 | imported: Retained after rights review and visual similarity curation; repetitive records removed from current delivery. |
 | bencho | 44 | 0 | 44 | removed: Removed from current public catalog and all generated public downloads. |
 | threeui | 103 | 0 | 103 | removed: Removed from current public catalog and all generated public downloads. |
 | originkit | Unknown | 0 | 0 | excluded: License explicitly prohibits component-library redistribution and systematic catalog mirroring through MCP. |

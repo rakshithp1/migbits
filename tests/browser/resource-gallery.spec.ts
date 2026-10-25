@@ -1,4 +1,22 @@
 import { test, expect } from "@playwright/test";
+test("retired lookalikes and their individual downloads return 404", async ({
+  request,
+}) => {
+  for (const url of [
+    "/library/resource/figma-saas",
+    "/library/data/figma-saas.json",
+    "/library/downloads/figma-saas.zip",
+    "/library/resource/template-forma",
+    "/library/previews/templates/forma.html",
+    "/library/preview/component-sonner",
+    "/library/data/component-sonner.json",
+    "/open-source/imports/inspo--hero-question",
+    "/imported/inspo/hero-question.json",
+    "/library/downloads/ui-ux-pro-max--colors-162.zip",
+    "/imported/ui-ux-pro-max/colors-162.json",
+  ])
+    expect((await request.get(url)).status(), url).toBe(404);
+});
 test("all seven gallery categories expose real downloadable resources", async ({
   page,
   request,
@@ -55,7 +73,7 @@ test("gallery search, pagination and resale filter work without JavaScript", asy
   await expect(
     page.getByRole("heading", { name: "No matching resources" }),
   ).toBeVisible();
-  await page.goto("/library/colors");
+  await page.goto("/library/components");
   const first = await page.locator(".mb-card h3").first().innerText();
   await page.getByRole("link", { name: "Next →", exact: true }).click();
   expect(await page.locator(".mb-card h3").first().innerText()).not.toBe(first);

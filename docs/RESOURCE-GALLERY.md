@@ -4,15 +4,15 @@ The primary site and /library now browse the same visual catalog. The previous m
 
 | Category | Entries | Origin / terms |
 | --- | ---: | --- |
-| Components | 68 | 65 shadcn modules and 3 compositions; MIT with separate dependency notices |
-| Blocks | 68 | Pinned Inspo reference blocks; MIT, original source and adapted sandbox previews |
-| Templates | 6 | Original Migbits standalone HTML/CSS/JS; MIT |
+| Components | 55 | Distinct shadcn examples; helper-only and overlapping cards omitted; complete attributed source pack retained |
+| Blocks | 15 | Visually reviewed Inspo blocks; repetitive editorial variants removed |
+| Templates | 3 | Original SaaS, dashboard and dark event starting points; repeated hero layouts removed |
 | Typography | 12 | Google Fonts families, each with pinned revision and exact OFL notice |
-| Colors & theory | 192 | Reviewed UI UX Pro Max semantic palettes; MIT notices preserved |
+| Colors & theory | 16 | Visually diverse UI UX Pro Max palettes with unique primary colors; MIT notices preserved |
 | Illustrations | 12 | Original Migbits editable SVGs; MIT notice embedded in downloadable SVG |
-| Figma UI kits | 3 | Original boards, tokens and native component generator source; MIT |
+| Figma UI kits | 1 | Original Studio kit; the two recolored copies of its structure removed |
 
-361 entries total. The secondary archive still holds 70 Magic UI core records and 200 shader definitions that are not promoted as ready visual-gallery entries. Previously removed resources stay removed; the broad source importer remains paused by catalog/rights-cleanup.json.
+114 entries total, after removing 247 repetitive gallery records. The removal audit, replacements and persistent allowlist are in catalog/library/curation.json. All 12 fonts and 12 genuinely different illustration subjects remain. The secondary archive holds 70 Magic UI core records and 200 shader definitions that are not promoted as ready visual-gallery entries. Previously removed resources stay removed; the broad source importer remains paused by catalog/rights-cleanup.json.
 
 ## Browsing and previews
 
@@ -37,5 +37,7 @@ Template forms, dashboard data and store checkout are frontend demonstrations, d
 npm run build:catalog generates the existing source packs and the visual catalog's metadata, per-resource code payloads, original assets and attributed ZIPs. It does not reimport removed sources or install example dependencies into the application.
 
 Set GALLERY_BASE_URL to the production preview server, then run node scripts/capture-library-previews.mjs to capture missing thumbnails. --all refreshes them. catalog/library/preview-validation.json records results per resource. Render checks establish a basic browser render, not full keyboard, accessibility or integration validation.
+
+Component thumbnails focus on actual content and open menus, dialogs or popovers when applicable. They no longer present most examples as tiny controls on an otherwise blank canvas. Run node scripts/prune-similar-resources.mjs to reapply the saved curation policy; the builder's allowlist prevents excluded cards and assets being regenerated.
 
 catalog/library/build-report.json records category counts. Fonts retain their revision/hash inventory in catalog/library/fonts.json; imported resources retain pinned evidence in catalog/import-index.json and each attributed ZIP.

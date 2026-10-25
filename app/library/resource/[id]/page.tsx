@@ -97,17 +97,21 @@ export default async function ResourcePage({
             )}
           </aside>
         </div>
-        <section className="mb-related">
-          <h2>A few more good starting points</h2>
-          <div className="mb-grid">
-            {libraryResources
-              .filter((r) => r.category === item.category && r.id !== id)
-              .slice(0, 4)
-              .map((r) => (
-                <ResourceCard key={r.id} item={r} />
-              ))}
-          </div>
-        </section>
+        {libraryResources.some(
+          (r) => r.category === item.category && r.id !== id,
+        ) && (
+          <section className="mb-related">
+            <h2>A few more good starting points</h2>
+            <div className="mb-grid">
+              {libraryResources
+                .filter((r) => r.category === item.category && r.id !== id)
+                .slice(0, 4)
+                .map((r) => (
+                  <ResourceCard key={r.id} item={r} />
+                ))}
+            </div>
+          </section>
+        )}
       </main>
       <GalleryFooter />
     </div>

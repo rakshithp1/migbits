@@ -1,10 +1,10 @@
 # Migbits
 
-A visual UI resource gallery with 361 entries across components, blocks, templates, typography, color theory, illustrations and Figma kits. Browse at `/library`; the original motion playground remains at `/playground`. See [the gallery guide](docs/RESOURCE-GALLERY.md) for counts, licensing, previews and the repeatable build workflow.
+A visual UI resource gallery with 114 distinct entries after removing 247 repetitive variants. Categories cover components, blocks, templates, typography, color theory, illustrations and Figma kits. Browse at `/library`; the original motion playground remains at `/playground`. See [the gallery guide](docs/RESOURCE-GALLERY.md) for counts, licensing, previews and the repeatable build workflow.
 
 ## Imported source catalog
 
-`/open-source/imports` contains 530 retained, attributed entries after the owner's rights cleanup. 4,672 records and their generated downloads were removed, along with the restricted React Bits homepage effects. Retained records include 68 isolated block previews; source checking does not establish production readiness.
+`/open-source/imports` contains 301 retained, attributed records after rights and visual reviews. The initial rights cleanup removed 4,672 records; subsequent visual curation removed 229 additional imported records and 18 other gallery entries. Retained records include 15 isolated block previews. Source checking does not establish production readiness.
 
 See [docs/IMPORT-REPORT.md](docs/IMPORT-REPORT.md) for current counts and removals. The importer is paused by `catalog/rights-cleanup.json` to prevent removed content returning. `npm run report:imports` refreshes the reconciliation report. Source archives stay outside the site's application bundles.
 

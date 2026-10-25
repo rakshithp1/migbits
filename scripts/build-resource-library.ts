@@ -21,6 +21,10 @@ const json = (p: string, value: unknown) =>
   save(p, JSON.stringify(value, null, 2) + "\n");
 const license = readFileSync("resources/library/LICENSE", "utf8");
 const list: LibraryResource[] = [];
+const curation: { retainedIds: string[] } = read(
+  "catalog/library/curation.json",
+);
+const allowedIds = new Set(curation.retainedIds);
 const pack = read("catalog/community/component-pack.json");
 function zip(id: string, files: Record<string, string>) {
   const url = `/library/downloads/${id}.zip`;
@@ -39,6 +43,7 @@ function zip(id: string, files: Record<string, string>) {
 save("public/library/LICENSE.txt", license);
 for (const [i, item] of shadcnCatalog.entries()) {
   const id = "component-" + item.id;
+  if (!allowedIds.has(id)) continue;
   const files = pack.files.filter(
     (f: { path: string }) =>
       f.path === item.sourcePath ||
@@ -83,6 +88,7 @@ const previews: { id: string; url?: string }[] = read(
   "catalog/import-previews.json",
 );
 for (const [i, item] of imports.filter((r) => r.source === "inspo").entries()) {
+  if (!allowedIds.has(item.id)) continue;
   const preview = previews.find((p) => p.id === item.id);
   if (!preview?.url) continue;
   list.push({
@@ -109,6 +115,7 @@ for (const [i, item] of imports.filter((r) => r.source === "inspo").entries()) {
   });
 }
 for (const [i, t] of templateDefinitions.entries()) {
+  if (!allowedIds.has("template-" + t.id)) continue;
   const id = "template-" + t.id,
     html = templateHtml(t.id),
     previewUrl = `/library/previews/templates/${t.id}.html`;
@@ -148,6 +155,7 @@ for (const [i, t] of templateDefinitions.entries()) {
   });
 }
 for (const [i, f] of read("catalog/library/fonts.json").entries()) {
+  if (!allowedIds.has(f.id)) continue;
   list.push({
     id: f.id,
     name: f.name,
@@ -174,6 +182,7 @@ for (const [i, f] of read("catalog/library/fonts.json").entries()) {
 for (const [i, item] of imports
   .filter((r) => r.source === "ui-ux-pro-max")
   .entries()) {
+  if (!allowedIds.has(item.id)) continue;
   const payload: ImportedPayload & { record: Record<string, string> } = read(
     "public" + item.dataUrl,
   );
@@ -217,6 +226,7 @@ for (const [i, item] of imports
   });
 }
 for (const [i, [key, name, description]] of originalIllustrations.entries()) {
+  if (!allowedIds.has("illustration-" + key)) continue;
   const id = "illustration-" + key,
     svg = illustrationSvg(key).replace(
       "</metadata>",
@@ -254,6 +264,7 @@ for (const [i, [key, name, description]] of originalIllustrations.entries()) {
   });
 }
 for (const [i, k] of figmaKits.entries()) {
+  if (!allowedIds.has("figma-" + k.id)) continue;
   const id = "figma-" + k.id,
     image = `/library/figma/${k.id}.svg`;
   const board = kitSvg(k.id).replace(
