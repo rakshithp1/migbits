@@ -6,8 +6,77 @@
   --mb-muted: #a1a1aa;
   --mb-accent: #1649ff;
   --accent: #6480ff;
-  background: #050505;
+  background-color: #06080e;
+  background-image:
+    radial-gradient(ellipse 75% 600px at 90% 8%, #12336d55, transparent 75%),
+    radial-gradient(ellipse 60% 850px at 0% 45%, #24225345, transparent 75%),
+    radial-gradient(ellipse 80% 700px at 95% 90%, #103b5740, transparent 75%),
+    radial-gradient(#a6bcff16 0.7px, transparent 0.7px);
+  background-size:
+    auto,
+    auto,
+    auto,
+    24px 24px;
   font-size: 14px;
+}
+.mb-home-main {
+  position: relative;
+  isolation: isolate;
+}
+.mb-home-main::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 calc((1104px - 100vw) / 2);
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 65% 19% at 15% 26%, #1649ff20, transparent 80%),
+    radial-gradient(ellipse 60% 22% at 90% 60%, #6952d925, transparent 80%),
+    radial-gradient(ellipse 70% 17% at 50% 96%, #125adc30, transparent 80%);
+}
+.mb-home-category-grid > a,
+.mb-home-steps > article {
+  box-shadow:
+    inset 0 1px 0 #bacaff0a,
+    0 15px 50px #0002;
+}
+.mb-dotted-signoff {
+  position: relative;
+  overflow: hidden;
+  padding: 50px max(24px, calc((100vw - 1200px) / 2)) 0;
+  text-align: center;
+  background: radial-gradient(
+    ellipse 65% 100% at 50% 100%,
+    #1745a83d,
+    transparent 80%
+  );
+}
+.mb-signoff-kicker {
+  color: #9eacc9;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.mb-dotted-signoff svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 24px auto 0;
+  max-width: 1200px;
+}
+@media (max-width: 1152px) {
+  .mb-home-main::before {
+    inset-inline: -24px;
+  }
+}
+@media (max-width: 600px) {
+  .mb-dotted-signoff {
+    padding: 32px 16px 0;
+  }
+  .mb-signoff-kicker {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
 }
 .mb-header {
   max-width: 1152px;
@@ -641,7 +710,7 @@
 .mb-home-main {
   position: relative;
   z-index: 2;
-  background: #050505;
+  background: transparent;
 }
 .mb-home-section {
   padding: 80px 0 20px;

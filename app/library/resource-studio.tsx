@@ -516,6 +516,8 @@ export function ResourceStudio({
               )}
             </div>
             <p className="mb-preview-note">
+              {item.category === "shaders" &&
+                "WebGPU required · starts paused · "}
               Isolated preview ·{" "}
               {item.previewType === "template"
                 ? "frontend demo; forms do not send data"

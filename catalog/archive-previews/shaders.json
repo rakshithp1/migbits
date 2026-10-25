@@ -1,0 +1,5013 @@
+[
+  {
+    "id": "shaders--angularblur",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--angularblur.png",
+    "definition": "AngularBlur",
+    "preset": {
+      "components": [
+        {
+          "type": "AngularBlur",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--arc",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--arc.png",
+    "definition": "Arc",
+    "preset": {
+      "components": [
+        {
+          "type": "Arc",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--ascii",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--ascii.png",
+    "definition": "Ascii",
+    "preset": {
+      "components": [
+        {
+          "type": "Ascii",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--aurora",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--aurora.png",
+    "definition": "Aurora",
+    "preset": {
+      "components": [
+        {
+          "type": "Aurora",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--barshift",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--barshift.png",
+    "definition": "BarShift",
+    "preset": {
+      "components": [
+        {
+          "type": "BarShift",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--barndoors",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--barndoors.png",
+    "definition": "BarnDoors",
+    "preset": {
+      "components": [
+        {
+          "type": "BarnDoors",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--beam",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--beam.png",
+    "definition": "Beam",
+    "preset": {
+      "components": [
+        {
+          "type": "Beam",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--bend",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--bend.png",
+    "definition": "Bend",
+    "preset": {
+      "components": [
+        {
+          "type": "Bend",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--blob",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--blob.png",
+    "definition": "Blob",
+    "preset": {
+      "components": [
+        {
+          "type": "Blob",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--blockdissolve",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--blockdissolve.png",
+    "definition": "BlockDissolve",
+    "preset": {
+      "components": [
+        {
+          "type": "BlockDissolve",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--blocknoise",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--blocknoise.png",
+    "definition": "BlockNoise",
+    "preset": {
+      "components": [
+        {
+          "type": "BlockNoise",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--bluenoise",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--bluenoise.png",
+    "definition": "BlueNoise",
+    "preset": {
+      "components": [
+        {
+          "type": "BlueNoise",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--blur",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--blur.png",
+    "definition": "Blur",
+    "preset": {
+      "components": [
+        {
+          "type": "Blur",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--boids",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--boids.png",
+    "definition": "Boids",
+    "preset": {
+      "components": [
+        {
+          "type": "Boids",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--bokehblur",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--bokehblur.png",
+    "definition": "BokehBlur",
+    "preset": {
+      "components": [
+        {
+          "type": "BokehBlur",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--brickpattern",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--brickpattern.png",
+    "definition": "BrickPattern",
+    "preset": {
+      "components": [
+        {
+          "type": "BrickPattern",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--brightnesscontrast",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--brightnesscontrast.png",
+    "definition": "BrightnessContrast",
+    "preset": {
+      "components": [
+        {
+          "type": "BrightnessContrast",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--brushedmetal",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--brushedmetal.png",
+    "definition": "BrushedMetal",
+    "preset": {
+      "components": [
+        {
+          "type": "BrushedMetal",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--bulge",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--bulge.png",
+    "definition": "Bulge",
+    "preset": {
+      "components": [
+        {
+          "type": "Bulge",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--carbonfiber",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--carbonfiber.png",
+    "definition": "CarbonFiber",
+    "preset": {
+      "components": [
+        {
+          "type": "CarbonFiber",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--chalkboard",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--chalkboard.png",
+    "definition": "Chalkboard",
+    "preset": {
+      "components": [
+        {
+          "type": "Chalkboard",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--channelblur",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--channelblur.png",
+    "definition": "ChannelBlur",
+    "preset": {
+      "components": [
+        {
+          "type": "ChannelBlur",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--checkerwipe",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--checkerwipe.png",
+    "definition": "CheckerWipe",
+    "preset": {
+      "components": [
+        {
+          "type": "CheckerWipe",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--checkerboard",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--checkerboard.png",
+    "definition": "Checkerboard",
+    "preset": {
+      "components": [
+        {
+          "type": "Checkerboard",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--chevron",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--chevron.png",
+    "definition": "Chevron",
+    "preset": {
+      "components": [
+        {
+          "type": "Chevron",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--chromaflow",
+    "status": "blocked",
+    "reason": "Transparent output: a different input or configuration is required"
+  },
+  {
+    "id": "shaders--chromaticaberration",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--chromaticaberration.png",
+    "definition": "ChromaticAberration",
+    "preset": {
+      "components": [
+        {
+          "type": "ChromaticAberration",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--chrome",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--chrome.png",
+    "definition": "Chrome",
+    "preset": {
+      "components": [
+        {
+          "type": "Chrome",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--circle",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--circle.png",
+    "definition": "Circle",
+    "preset": {
+      "components": [
+        {
+          "type": "Circle",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--colorwheel",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--colorwheel.png",
+    "definition": "ColorWheel",
+    "preset": {
+      "components": [
+        {
+          "type": "ColorWheel",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--compressionartifacts",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--compressionartifacts.png",
+    "definition": "CompressionArtifacts",
+    "preset": {
+      "components": [
+        {
+          "type": "CompressionArtifacts",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--concentricspin",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--concentricspin.png",
+    "definition": "ConcentricSpin",
+    "preset": {
+      "components": [
+        {
+          "type": "ConcentricSpin",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--conicgradient",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--conicgradient.png",
+    "definition": "ConicGradient",
+    "preset": {
+      "components": [
+        {
+          "type": "ConicGradient",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--contourlines",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--contourlines.png",
+    "definition": "ContourLines",
+    "preset": {
+      "components": [
+        {
+          "type": "ContourLines",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--cornerpin",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--cornerpin.png",
+    "definition": "CornerPin",
+    "preset": {
+      "components": [
+        {
+          "type": "CornerPin",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--crescent",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--crescent.png",
+    "definition": "Crescent",
+    "preset": {
+      "components": [
+        {
+          "type": "Crescent",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--cross",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--cross.png",
+    "definition": "Cross",
+    "preset": {
+      "components": [
+        {
+          "type": "Cross",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--crtscreen",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--crtscreen.png",
+    "definition": "CRTScreen",
+    "preset": {
+      "components": [
+        {
+          "type": "CRTScreen",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--crystal",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--crystal.png",
+    "definition": "Crystal",
+    "preset": {
+      "components": [
+        {
+          "type": "Crystal",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--curlnoise",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--curlnoise.png",
+    "definition": "CurlNoise",
+    "preset": {
+      "components": [
+        {
+          "type": "CurlNoise",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--cursorripples",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--cursorripples.png",
+    "definition": "CursorRipples",
+    "preset": {
+      "components": [
+        {
+          "type": "CursorRipples",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--cursortrail",
+    "status": "blocked",
+    "reason": "Transparent output: a different input or configuration is required"
+  },
+  {
+    "id": "shaders--datamosh",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--datamosh.png",
+    "definition": "DataMosh",
+    "preset": {
+      "components": [
+        {
+          "type": "DataMosh",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--diamondgradient",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--diamondgradient.png",
+    "definition": "DiamondGradient",
+    "preset": {
+      "components": [
+        {
+          "type": "DiamondGradient",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--diamondwipe",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--diamondwipe.png",
+    "definition": "DiamondWipe",
+    "preset": {
+      "components": [
+        {
+          "type": "DiamondWipe",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--diffuseblur",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--diffuseblur.png",
+    "definition": "DiffuseBlur",
+    "preset": {
+      "components": [
+        {
+          "type": "DiffuseBlur",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--displacementmap",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--displacementmap.png",
+    "definition": "DisplacementMap",
+    "preset": {
+      "components": [
+        {
+          "type": "DisplacementMap",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--dither",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--dither.png",
+    "definition": "Dither",
+    "preset": {
+      "components": [
+        {
+          "type": "Dither",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--dotgrid",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--dotgrid.png",
+    "definition": "DotGrid",
+    "preset": {
+      "components": [
+        {
+          "type": "DotGrid",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--dropshadow",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--dropshadow.png",
+    "definition": "DropShadow",
+    "preset": {
+      "components": [
+        {
+          "type": "DropShadow",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--duotone",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--duotone.png",
+    "definition": "Duotone",
+    "preset": {
+      "components": [
+        {
+          "type": "Duotone",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--ellipse",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--ellipse.png",
+    "definition": "Ellipse",
+    "preset": {
+      "components": [
+        {
+          "type": "Ellipse",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--emboss",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--emboss.png",
+    "definition": "Emboss",
+    "preset": {
+      "components": [
+        {
+          "type": "Emboss",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--engraving",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--engraving.png",
+    "definition": "Engraving",
+    "preset": {
+      "components": [
+        {
+          "type": "Engraving",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--erosionnoise",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--erosionnoise.png",
+    "definition": "ErosionNoise",
+    "preset": {
+      "components": [
+        {
+          "type": "ErosionNoise",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--exposure",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--exposure.png",
+    "definition": "Exposure",
+    "preset": {
+      "components": [
+        {
+          "type": "Exposure",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--fallinglines",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--fallinglines.png",
+    "definition": "FallingLines",
+    "preset": {
+      "components": [
+        {
+          "type": "FallingLines",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--filmgrain",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--filmgrain.png",
+    "definition": "FilmGrain",
+    "preset": {
+      "components": [
+        {
+          "type": "FilmGrain",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--filmstock",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--filmstock.png",
+    "definition": "FilmStock",
+    "preset": {
+      "components": [
+        {
+          "type": "FilmStock",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--flip",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--flip.png",
+    "definition": "Flip",
+    "preset": {
+      "components": [
+        {
+          "type": "Flip",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--floatingparticles",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--floatingparticles.png",
+    "definition": "FloatingParticles",
+    "preset": {
+      "components": [
+        {
+          "type": "FloatingParticles",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--flowfield",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--flowfield.png",
+    "definition": "FlowField",
+    "preset": {
+      "components": [
+        {
+          "type": "FlowField",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--flower",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--flower.png",
+    "definition": "Flower",
+    "preset": {
+      "components": [
+        {
+          "type": "Flower",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--flowinggradient",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--flowinggradient.png",
+    "definition": "FlowingGradient",
+    "preset": {
+      "components": [
+        {
+          "type": "FlowingGradient",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--flutedglass",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--flutedglass.png",
+    "definition": "FlutedGlass",
+    "preset": {
+      "components": [
+        {
+          "type": "FlutedGlass",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--fog",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--fog.png",
+    "definition": "Fog",
+    "preset": {
+      "components": [
+        {
+          "type": "Fog",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--form3d",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--form3d.png",
+    "definition": "Form3D",
+    "preset": {
+      "components": [
+        {
+          "type": "Form3D",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--fractalnoise",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--fractalnoise.png",
+    "definition": "FractalNoise",
+    "preset": {
+      "components": [
+        {
+          "type": "FractalNoise",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--frost",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--frost.png",
+    "definition": "Frost",
+    "preset": {
+      "components": [
+        {
+          "type": "Frost",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--gabornoise",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--gabornoise.png",
+    "definition": "GaborNoise",
+    "preset": {
+      "components": [
+        {
+          "type": "GaborNoise",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--glass",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--glass.png",
+    "definition": "Glass",
+    "preset": {
+      "components": [
+        {
+          "type": "Glass",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--glasstiles",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--glasstiles.png",
+    "definition": "GlassTiles",
+    "preset": {
+      "components": [
+        {
+          "type": "GlassTiles",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--glitch",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--glitch.png",
+    "definition": "Glitch",
+    "preset": {
+      "components": [
+        {
+          "type": "Glitch",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--glow",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--glow.png",
+    "definition": "Glow",
+    "preset": {
+      "components": [
+        {
+          "type": "Glow",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--godrays",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--godrays.png",
+    "definition": "Godrays",
+    "preset": {
+      "components": [
+        {
+          "type": "Godrays",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--goo",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--goo.png",
+    "definition": "Goo",
+    "preset": {
+      "components": [
+        {
+          "type": "Goo",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--gradientmap",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--gradientmap.png",
+    "definition": "GradientMap",
+    "preset": {
+      "components": [
+        {
+          "type": "GradientMap",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--grayscale",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--grayscale.png",
+    "definition": "Grayscale",
+    "preset": {
+      "components": [
+        {
+          "type": "Grayscale",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--grid",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--grid.png",
+    "definition": "Grid",
+    "preset": {
+      "components": [
+        {
+          "type": "Grid",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--griddistortion",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--griddistortion.png",
+    "definition": "GridDistortion",
+    "preset": {
+      "components": [
+        {
+          "type": "GridDistortion",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--group",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--group.png",
+    "definition": "Group",
+    "preset": {
+      "components": [
+        {
+          "type": "Group",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--halftone",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--halftone.png",
+    "definition": "Halftone",
+    "preset": {
+      "components": [
+        {
+          "type": "Halftone",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--heart",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--heart.png",
+    "definition": "Heart",
+    "preset": {
+      "components": [
+        {
+          "type": "Heart",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--heatmap",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--heatmap.png",
+    "definition": "Heatmap",
+    "preset": {
+      "components": [
+        {
+          "type": "Heatmap",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--hexgrid",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--hexgrid.png",
+    "definition": "HexGrid",
+    "preset": {
+      "components": [
+        {
+          "type": "HexGrid",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--hologram",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--hologram.png",
+    "definition": "Hologram",
+    "preset": {
+      "components": [
+        {
+          "type": "Hologram",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--holographic",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--holographic.png",
+    "definition": "Holographic",
+    "preset": {
+      "components": [
+        {
+          "type": "Holographic",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--htmlincanvas",
+    "status": "blocked",
+    "reason": "Transparent output: a different input or configuration is required"
+  },
+  {
+    "id": "shaders--hueshift",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--hueshift.png",
+    "definition": "HueShift",
+    "preset": {
+      "components": [
+        {
+          "type": "HueShift",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--imagetexture",
+    "status": "blocked",
+    "reason": "Transparent output: a different input or configuration is required"
+  },
+  {
+    "id": "shaders--inkflow",
+    "status": "blocked",
+    "reason": "Transparent output: a different input or configuration is required"
+  },
+  {
+    "id": "shaders--invert",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--invert.png",
+    "definition": "Invert",
+    "preset": {
+      "components": [
+        {
+          "type": "Invert",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--iriswipe",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--iriswipe.png",
+    "definition": "IrisWipe",
+    "preset": {
+      "components": [
+        {
+          "type": "IrisWipe",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--irradiance",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--irradiance.png",
+    "definition": "Irradiance",
+    "preset": {
+      "components": [
+        {
+          "type": "Irradiance",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--isometriccubes",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--isometriccubes.png",
+    "definition": "IsometricCubes",
+    "preset": {
+      "components": [
+        {
+          "type": "IsometricCubes",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--kaleidoscope",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--kaleidoscope.png",
+    "definition": "Kaleidoscope",
+    "preset": {
+      "components": [
+        {
+          "type": "Kaleidoscope",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--keyframes",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--keyframes.png",
+    "definition": "KeyFrames",
+    "preset": {
+      "components": [
+        {
+          "type": "KeyFrames",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--lensdistortion",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--lensdistortion.png",
+    "definition": "LensDistortion",
+    "preset": {
+      "components": [
+        {
+          "type": "LensDistortion",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--lensflare",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--lensflare.png",
+    "definition": "LensFlare",
+    "preset": {
+      "components": [
+        {
+          "type": "LensFlare",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--lightedge",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--lightedge.png",
+    "definition": "LightEdge",
+    "preset": {
+      "components": [
+        {
+          "type": "LightEdge",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--lightleak",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--lightleak.png",
+    "definition": "LightLeak",
+    "preset": {
+      "components": [
+        {
+          "type": "LightLeak",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--line",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--line.png",
+    "definition": "Line",
+    "preset": {
+      "components": [
+        {
+          "type": "Line",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--linearblur",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--linearblur.png",
+    "definition": "LinearBlur",
+    "preset": {
+      "components": [
+        {
+          "type": "LinearBlur",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--lineargradient",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--lineargradient.png",
+    "definition": "LinearGradient",
+    "preset": {
+      "components": [
+        {
+          "type": "LinearGradient",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--linearwipe",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--linearwipe.png",
+    "definition": "LinearWipe",
+    "preset": {
+      "components": [
+        {
+          "type": "LinearWipe",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--liquidmetal",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--liquidmetal.png",
+    "definition": "LiquidMetal",
+    "preset": {
+      "components": [
+        {
+          "type": "LiquidMetal",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--liquify",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--liquify.png",
+    "definition": "Liquify",
+    "preset": {
+      "components": [
+        {
+          "type": "Liquify",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--magneticfilings",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--magneticfilings.png",
+    "definition": "MagneticFilings",
+    "preset": {
+      "components": [
+        {
+          "type": "MagneticFilings",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--marble",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--marble.png",
+    "definition": "Marble",
+    "preset": {
+      "components": [
+        {
+          "type": "Marble",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--meshgradient",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--meshgradient.png",
+    "definition": "MeshGradient",
+    "preset": {
+      "components": [
+        {
+          "type": "MeshGradient",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--mirror",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--mirror.png",
+    "definition": "Mirror",
+    "preset": {
+      "components": [
+        {
+          "type": "Mirror",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--multipointgradient",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--multipointgradient.png",
+    "definition": "MultiPointGradient",
+    "preset": {
+      "components": [
+        {
+          "type": "MultiPointGradient",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--nebula",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--nebula.png",
+    "definition": "Nebula",
+    "preset": {
+      "components": [
+        {
+          "type": "Nebula",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--neon",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--neon.png",
+    "definition": "Neon",
+    "preset": {
+      "components": [
+        {
+          "type": "Neon",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--noisedissolve",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--noisedissolve.png",
+    "definition": "NoiseDissolve",
+    "preset": {
+      "components": [
+        {
+          "type": "NoiseDissolve",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--objecttracker",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--objecttracker.png",
+    "definition": "ObjectTracker",
+    "preset": {
+      "components": [
+        {
+          "type": "ObjectTracker",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--obsidian",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--obsidian.png",
+    "definition": "Obsidian",
+    "preset": {
+      "components": [
+        {
+          "type": "Obsidian",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--pagepeel",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--pagepeel.png",
+    "definition": "PagePeel",
+    "preset": {
+      "components": [
+        {
+          "type": "PagePeel",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--paper",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--paper.png",
+    "definition": "Paper",
+    "preset": {
+      "components": [
+        {
+          "type": "Paper",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--parallelogram",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--parallelogram.png",
+    "definition": "Parallelogram",
+    "preset": {
+      "components": [
+        {
+          "type": "Parallelogram",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--particlefield",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--particlefield.png",
+    "definition": "ParticleField",
+    "preset": {
+      "components": [
+        {
+          "type": "ParticleField",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--particleflow",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--particleflow.png",
+    "definition": "ParticleFlow",
+    "preset": {
+      "components": [
+        {
+          "type": "ParticleFlow",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--particles",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--particles.png",
+    "definition": "Particles",
+    "preset": {
+      "components": [
+        {
+          "type": "Particles",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--perlinnoise",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--perlinnoise.png",
+    "definition": "PerlinNoise",
+    "preset": {
+      "components": [
+        {
+          "type": "PerlinNoise",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--perspective",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--perspective.png",
+    "definition": "Perspective",
+    "preset": {
+      "components": [
+        {
+          "type": "Perspective",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--pixelsort",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--pixelsort.png",
+    "definition": "PixelSort",
+    "preset": {
+      "components": [
+        {
+          "type": "PixelSort",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--pixelthrow",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--pixelthrow.png",
+    "definition": "PixelThrow",
+    "preset": {
+      "components": [
+        {
+          "type": "PixelThrow",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--pixelate",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--pixelate.png",
+    "definition": "Pixelate",
+    "preset": {
+      "components": [
+        {
+          "type": "Pixelate",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--plasma",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--plasma.png",
+    "definition": "Plasma",
+    "preset": {
+      "components": [
+        {
+          "type": "Plasma",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--plastic",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--plastic.png",
+    "definition": "Plastic",
+    "preset": {
+      "components": [
+        {
+          "type": "Plastic",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--polarcoordinates",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--polarcoordinates.png",
+    "definition": "PolarCoordinates",
+    "preset": {
+      "components": [
+        {
+          "type": "PolarCoordinates",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--polygon",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--polygon.png",
+    "definition": "Polygon",
+    "preset": {
+      "components": [
+        {
+          "type": "Polygon",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--posterize",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--posterize.png",
+    "definition": "Posterize",
+    "preset": {
+      "components": [
+        {
+          "type": "Posterize",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--prism",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--prism.png",
+    "definition": "Prism",
+    "preset": {
+      "components": [
+        {
+          "type": "Prism",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--progressiveblur",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--progressiveblur.png",
+    "definition": "ProgressiveBlur",
+    "preset": {
+      "components": [
+        {
+          "type": "ProgressiveBlur",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--radialgradient",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--radialgradient.png",
+    "definition": "RadialGradient",
+    "preset": {
+      "components": [
+        {
+          "type": "RadialGradient",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--radialwipe",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--radialwipe.png",
+    "definition": "RadialWipe",
+    "preset": {
+      "components": [
+        {
+          "type": "RadialWipe",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--randombars",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--randombars.png",
+    "definition": "RandomBars",
+    "preset": {
+      "components": [
+        {
+          "type": "RandomBars",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--reactiondiffusion",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--reactiondiffusion.png",
+    "definition": "ReactionDiffusion",
+    "preset": {
+      "components": [
+        {
+          "type": "ReactionDiffusion",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--rectangularcoordinates",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--rectangularcoordinates.png",
+    "definition": "RectangularCoordinates",
+    "preset": {
+      "components": [
+        {
+          "type": "RectangularCoordinates",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--reflectiveplane",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--reflectiveplane.png",
+    "definition": "ReflectivePlane",
+    "preset": {
+      "components": [
+        {
+          "type": "ReflectivePlane",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--repeater",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--repeater.png",
+    "definition": "Repeater",
+    "preset": {
+      "components": [
+        {
+          "type": "Repeater",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--ring",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--ring.png",
+    "definition": "Ring",
+    "preset": {
+      "components": [
+        {
+          "type": "Ring",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--ripplewipe",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--ripplewipe.png",
+    "definition": "RippleWipe",
+    "preset": {
+      "components": [
+        {
+          "type": "RippleWipe",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--ripples",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--ripples.png",
+    "definition": "Ripples",
+    "preset": {
+      "components": [
+        {
+          "type": "Ripples",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--roundedrect",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--roundedrect.png",
+    "definition": "RoundedRect",
+    "preset": {
+      "components": [
+        {
+          "type": "RoundedRect",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--satin",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--satin.png",
+    "definition": "Satin",
+    "preset": {
+      "components": [
+        {
+          "type": "Satin",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--saturation",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--saturation.png",
+    "definition": "Saturation",
+    "preset": {
+      "components": [
+        {
+          "type": "Saturation",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--scratches",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--scratches.png",
+    "definition": "Scratches",
+    "preset": {
+      "components": [
+        {
+          "type": "Scratches",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--sharpness",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--sharpness.png",
+    "definition": "Sharpness",
+    "preset": {
+      "components": [
+        {
+          "type": "Sharpness",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--shatter",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--shatter.png",
+    "definition": "Shatter",
+    "preset": {
+      "components": [
+        {
+          "type": "Shatter",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--simplexnoise",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--simplexnoise.png",
+    "definition": "SimplexNoise",
+    "preset": {
+      "components": [
+        {
+          "type": "SimplexNoise",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--sinewave",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--sinewave.png",
+    "definition": "SineWave",
+    "preset": {
+      "components": [
+        {
+          "type": "SineWave",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--slicewipe",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--slicewipe.png",
+    "definition": "SliceWipe",
+    "preset": {
+      "components": [
+        {
+          "type": "SliceWipe",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--smoke",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--smoke.png",
+    "definition": "Smoke",
+    "preset": {
+      "components": [
+        {
+          "type": "Smoke",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--smokefill",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--smokefill.png",
+    "definition": "SmokeFill",
+    "preset": {
+      "components": [
+        {
+          "type": "SmokeFill",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--smokeflow",
+    "status": "blocked",
+    "reason": "Transparent output: a different input or configuration is required"
+  },
+  {
+    "id": "shaders--solarize",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--solarize.png",
+    "definition": "Solarize",
+    "preset": {
+      "components": [
+        {
+          "type": "Solarize",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--solidcolor",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--solidcolor.png",
+    "definition": "SolidColor",
+    "preset": {
+      "components": [
+        {
+          "type": "SolidColor",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--sparkle",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--sparkle.png",
+    "definition": "Sparkle",
+    "preset": {
+      "components": [
+        {
+          "type": "Sparkle",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--spherize",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--spherize.png",
+    "definition": "Spherize",
+    "preset": {
+      "components": [
+        {
+          "type": "Spherize",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--spiral",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--spiral.png",
+    "definition": "Spiral",
+    "preset": {
+      "components": [
+        {
+          "type": "Spiral",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--star",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--star.png",
+    "definition": "Star",
+    "preset": {
+      "components": [
+        {
+          "type": "Star",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--stone",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--stone.png",
+    "definition": "Stone",
+    "preset": {
+      "components": [
+        {
+          "type": "Stone",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--strands",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--strands.png",
+    "definition": "Strands",
+    "preset": {
+      "components": [
+        {
+          "type": "Strands",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--stretch",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--stretch.png",
+    "definition": "Stretch",
+    "preset": {
+      "components": [
+        {
+          "type": "Stretch",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--stripes",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--stripes.png",
+    "definition": "Stripes",
+    "preset": {
+      "components": [
+        {
+          "type": "Stripes",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--studiobackground",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--studiobackground.png",
+    "definition": "StudioBackground",
+    "preset": {
+      "components": [
+        {
+          "type": "StudioBackground",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--sunburst",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--sunburst.png",
+    "definition": "SunBurst",
+    "preset": {
+      "components": [
+        {
+          "type": "SunBurst",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--surface3d",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--surface3d.png",
+    "definition": "Surface3D",
+    "preset": {
+      "components": [
+        {
+          "type": "Surface3D",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--swirl",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--swirl.png",
+    "definition": "Swirl",
+    "preset": {
+      "components": [
+        {
+          "type": "Swirl",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--teardrop",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--teardrop.png",
+    "definition": "Teardrop",
+    "preset": {
+      "components": [
+        {
+          "type": "Teardrop",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--text",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--text.png",
+    "definition": "Text",
+    "preset": {
+      "components": [
+        {
+          "type": "Text",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--thinfilm",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--thinfilm.png",
+    "definition": "ThinFilm",
+    "preset": {
+      "components": [
+        {
+          "type": "ThinFilm",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--tiltshift",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--tiltshift.png",
+    "definition": "TiltShift",
+    "preset": {
+      "components": [
+        {
+          "type": "TiltShift",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--timetrail",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--timetrail.png",
+    "definition": "TimeTrail",
+    "preset": {
+      "components": [
+        {
+          "type": "TimeTrail",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--tint",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--tint.png",
+    "definition": "Tint",
+    "preset": {
+      "components": [
+        {
+          "type": "Tint",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--trapezoid",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--trapezoid.png",
+    "definition": "Trapezoid",
+    "preset": {
+      "components": [
+        {
+          "type": "Trapezoid",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--triangulargrid",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--triangulargrid.png",
+    "definition": "TriangularGrid",
+    "preset": {
+      "components": [
+        {
+          "type": "TriangularGrid",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--tritone",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--tritone.png",
+    "definition": "Tritone",
+    "preset": {
+      "components": [
+        {
+          "type": "Tritone",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--truchet",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--truchet.png",
+    "definition": "Truchet",
+    "preset": {
+      "components": [
+        {
+          "type": "Truchet",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--twirl",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--twirl.png",
+    "definition": "Twirl",
+    "preset": {
+      "components": [
+        {
+          "type": "Twirl",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--venetianblinds",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--venetianblinds.png",
+    "definition": "VenetianBlinds",
+    "preset": {
+      "components": [
+        {
+          "type": "VenetianBlinds",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--vesica",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--vesica.png",
+    "definition": "Vesica",
+    "preset": {
+      "components": [
+        {
+          "type": "Vesica",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--vhs",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--vhs.png",
+    "definition": "VHS",
+    "preset": {
+      "components": [
+        {
+          "type": "VHS",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--vibrance",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--vibrance.png",
+    "definition": "Vibrance",
+    "preset": {
+      "components": [
+        {
+          "type": "Vibrance",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--videotexture",
+    "status": "blocked",
+    "reason": "Transparent output: a different input or configuration is required"
+  },
+  {
+    "id": "shaders--vignette",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--vignette.png",
+    "definition": "Vignette",
+    "preset": {
+      "components": [
+        {
+          "type": "Vignette",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--voronoi",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--voronoi.png",
+    "definition": "Voronoi",
+    "preset": {
+      "components": [
+        {
+          "type": "Voronoi",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--voxels",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--voxels.png",
+    "definition": "Voxels",
+    "preset": {
+      "components": [
+        {
+          "type": "Voxels",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--water",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--water.png",
+    "definition": "Water",
+    "preset": {
+      "components": [
+        {
+          "type": "Water",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--watercolor",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--watercolor.png",
+    "definition": "Watercolor",
+    "preset": {
+      "components": [
+        {
+          "type": "Watercolor",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--wavedistortion",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--wavedistortion.png",
+    "definition": "WaveDistortion",
+    "preset": {
+      "components": [
+        {
+          "type": "WaveDistortion",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--waveform",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--waveform.png",
+    "definition": "Waveform",
+    "preset": {
+      "components": [
+        {
+          "type": "Waveform",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--waveletnoise",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--waveletnoise.png",
+    "definition": "WaveletNoise",
+    "preset": {
+      "components": [
+        {
+          "type": "WaveletNoise",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--weave",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--weave.png",
+    "definition": "Weave",
+    "preset": {
+      "components": [
+        {
+          "type": "Weave",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--webcamtexture",
+    "status": "blocked",
+    "reason": "Transparent output: a different input or configuration is required"
+  },
+  {
+    "id": "shaders--wool",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--wool.png",
+    "definition": "Wool",
+    "preset": {
+      "components": [
+        {
+          "type": "Wool",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  },
+  {
+    "id": "shaders--worleynoise",
+    "status": "blocked",
+    "reason": "[WebcamTexture] Camera permission denied by user"
+  },
+  {
+    "id": "shaders--zoomblur",
+    "status": "render-checked",
+    "thumbnail": "/imported/shaders/thumbnails/shaders--zoomblur.png",
+    "definition": "ZoomBlur",
+    "preset": {
+      "components": [
+        {
+          "type": "ZoomBlur",
+          "props": {},
+          "children": [
+            {
+              "type": "Checkerboard",
+              "props": {
+                "colorA": "#ce83dc",
+                "colorB": "#122856",
+                "cells": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "backend": "Native Chromium WebGPU",
+    "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate."
+  }
+]

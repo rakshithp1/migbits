@@ -1,0 +1,486 @@
+[
+  {
+    "id": "magic-ui--animated-circular-progress-bar",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--animated-circular-progress-bar.html",
+    "export": "AnimatedCircularProgressBar",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--animated-gradient-text",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--animated-gradient-text.html",
+    "export": "AnimatedGradientText",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--animated-grid-pattern",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--animated-grid-pattern.html",
+    "export": "AnimatedGridPattern",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--animated-list",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--animated-list.html",
+    "export": "AnimatedList",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--animated-shiny-text",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--animated-shiny-text.html",
+    "export": "AnimatedShinyText",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--aurora-text",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--aurora-text.html",
+    "export": "AuroraText",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--backlight",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--backlight.html",
+    "export": "Backlight",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--bento-grid",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--bento-grid.html",
+    "export": "BentoGrid",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--blur-fade",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--blur-fade.html",
+    "export": "BlurFade",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--border-beam",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--border-beam.html",
+    "export": "BorderBeam",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--client-tweet-card",
+    "status": "blocked",
+    "reason": "Error: Requires an independently licensed media fixture or external service; no external content copied."
+  },
+  {
+    "id": "magic-ui--code-comparison",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--code-comparison.html",
+    "export": "CodeComparison",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--comic-text",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--comic-text.html",
+    "export": "ComicText",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--confetti",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--confetti.html",
+    "export": "ConfettiButton",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--cool-mode",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--cool-mode.html",
+    "export": "CoolMode",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--dia-text-reveal",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--dia-text-reveal.html",
+    "export": "DiaTextReveal",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--dock",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--dock.html",
+    "export": "Dock",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--dot-pattern",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--dot-pattern.html",
+    "export": "DotPattern",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--dotted-map",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--dotted-map.html",
+    "export": "DottedMap",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--file-tree",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--file-tree.html",
+    "export": "Tree",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--flickering-grid",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--flickering-grid.html",
+    "export": "FlickeringGrid",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--floating-3d-particles",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--floating-3d-particles.html",
+    "export": "Floating3DParticles",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--glare-hover",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--glare-hover.html",
+    "export": "GlareHover",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--globe",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--globe.html",
+    "export": "Globe",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--glyph-matrix",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--glyph-matrix.html",
+    "export": "GlyphMatrix",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--grid-pattern",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--grid-pattern.html",
+    "export": "GridPattern",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--hexagon-pattern",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--hexagon-pattern.html",
+    "export": "HexagonPattern",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--highlighter",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--highlighter.html",
+    "export": "Highlighter",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--hyper-text",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--hyper-text.html",
+    "export": "HyperText",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--icon-cloud",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--icon-cloud.html",
+    "export": "IconCloud",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--interactive-grid-pattern",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--interactive-grid-pattern.html",
+    "export": "InteractiveGridPattern",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--interactive-hover-button",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--interactive-hover-button.html",
+    "export": "InteractiveHoverButton",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--kinetic-text",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--kinetic-text.html",
+    "export": "KineticText",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--lens",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--lens.html",
+    "export": "Lens",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--light-rays",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--light-rays.html",
+    "export": "LightRays",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--line-shadow-text",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--line-shadow-text.html",
+    "export": "LineShadowText",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--magic-card",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--magic-card.html",
+    "export": "MagicCard",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--marquee",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--marquee.html",
+    "export": "Marquee",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--meteors",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--meteors.html",
+    "export": "Meteors",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--morphing-text",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--morphing-text.html",
+    "export": "MorphingText",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--neon-gradient-card",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--neon-gradient-card.html",
+    "export": "NeonGradientCard",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--noise-texture",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--noise-texture.html",
+    "export": "NoiseTexture",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--number-ticker",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--number-ticker.html",
+    "export": "NumberTicker",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--orbiting-circles",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--orbiting-circles.html",
+    "export": "OrbitingCircles",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--particles",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--particles.html",
+    "export": "Particles",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--pointer",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--pointer.html",
+    "export": "Pointer",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--progressive-blur",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--progressive-blur.html",
+    "export": "ProgressiveBlur",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--pulsating-button",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--pulsating-button.html",
+    "export": "PulsatingButton",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--rainbow-button",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--rainbow-button.html",
+    "export": "RainbowButton",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--retro-grid",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--retro-grid.html",
+    "export": "RetroGrid",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--ripple",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--ripple.html",
+    "export": "Ripple",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--ripple-button",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--ripple-button.html",
+    "export": "RippleButton",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--scroll-based-velocity",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--scroll-based-velocity.html",
+    "export": "ScrollVelocityContainer",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--scroll-progress",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--scroll-progress.html",
+    "export": "ScrollProgress",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--shimmer-button",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--shimmer-button.html",
+    "export": "ShimmerButton",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--shine-border",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--shine-border.html",
+    "export": "ShineBorder",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--shiny-button",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--shiny-button.html",
+    "export": "ShinyButton",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--smooth-cursor",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--smooth-cursor.html",
+    "export": "SmoothCursor",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--sparkles-text",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--sparkles-text.html",
+    "export": "SparklesText",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--spinning-text",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--spinning-text.html",
+    "export": "SpinningText",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--striped-pattern",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--striped-pattern.html",
+    "export": "StripedPattern",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--terminal",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--terminal.html",
+    "export": "Terminal",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--text-3d-flip",
+    "status": "blocked",
+    "reason": "Error: No exported component"
+  },
+  {
+    "id": "magic-ui--text-animate",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--text-animate.html",
+    "export": "TextAnimate",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--text-reveal",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--text-reveal.html",
+    "export": "TextReveal",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--animated-theme-toggler",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--animated-theme-toggler.html",
+    "export": "AnimatedThemeToggler",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--typing-animation",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--typing-animation.html",
+    "export": "TypingAnimation",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--video-text",
+    "status": "blocked",
+    "reason": "Error: Requires an independently licensed media fixture or external service; no external content copied."
+  },
+  {
+    "id": "magic-ui--warp-background",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--warp-background.html",
+    "export": "WarpBackground",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  },
+  {
+    "id": "magic-ui--word-rotate",
+    "status": "compiled",
+    "url": "/imported/magic-ui/previews/magic-ui--word-rotate.html",
+    "export": "WordRotate",
+    "adaptation": "Migbits sample props and standalone Tailwind theme; original source preserved in download."
+  }
+]

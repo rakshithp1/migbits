@@ -67,3 +67,6 @@ The collection also includes `/open-source/icons`: 36 curated Lucide icons with 
 ## Motion collection
 
 `/open-source/motion` adds six Motion Primitives-derived components: text loop, animated background, transition panel, border trail, magnetic interaction and staggered group. The 21-file source pack includes complete reusable examples, scoped styles, motion policy, dependencies, checksums, provenance and MIT notices. The collection now has 71 integrated UI/motion primitives, plus 3 composition recipes, in addition to the 36-icon explorer.
+
+
+Archive review and current preview validation: [docs/ARCHIVE-PROMOTION.md](docs/ARCHIVE-PROMOTION.md). The public archive now redirects to the library; only successful visual demonstrations are promoted.

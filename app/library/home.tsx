@@ -310,6 +310,48 @@ export function LibraryHome() {
         </section>
       </main>
       <GalleryFooter />
+      <div className="mb-dotted-signoff" role="img" aria-label="MigBits">
+        <span className="mb-signoff-kicker">
+          A little detail. Endless possibilities.
+        </span>
+        <svg viewBox="0 0 1200 265" aria-hidden="true" focusable="false">
+          <defs>
+            <pattern
+              id="mb-brand-dots"
+              width="7"
+              height="7"
+              patternUnits="userSpaceOnUse"
+            >
+              <circle cx="3.5" cy="3.5" r="2.1" fill="white" />
+            </pattern>
+            <linearGradient id="mb-brand-glow" x1="0" y1="0" x2="1" y2="1">
+              <stop stopColor="#a5baff" />
+              <stop offset=".48" stopColor="#e2e9ff" />
+              <stop offset="1" stopColor="#3461ef" />
+            </linearGradient>
+            <mask id="mb-dotted-brand-mask">
+              <text
+                x="20"
+                y="213"
+                fontFamily="Arial, sans-serif"
+                fontSize="250"
+                fontWeight="800"
+                textLength="1160"
+                lengthAdjust="spacingAndGlyphs"
+                fill="url(#mb-brand-dots)"
+              >
+                MigBits
+              </text>
+            </mask>
+          </defs>
+          <rect
+            width="1200"
+            height="265"
+            fill="url(#mb-brand-glow)"
+            mask="url(#mb-dotted-brand-mask)"
+          />
+        </svg>
+      </div>
     </div>
   );
 }

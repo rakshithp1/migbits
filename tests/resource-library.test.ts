@@ -11,9 +11,13 @@ import {
 import { contrastRatio, relativeLuminance } from "../lib/color-theory";
 import { figmaKits, kitPlugin } from "../resources/library/figma-kits";
 import curation from "../catalog/library/curation.json";
+import promotions from "../catalog/archive-previews/promotion.json";
 test("visual curation excludes retired entries and repeated color families from delivery", () => {
   const ids = new Set(libraryResources.map((r) => r.id));
-  assert.equal(ids.size, curation.retainedIds.length);
+  assert.equal(
+    ids.size,
+    new Set([...curation.retainedIds, ...promotions.map((r) => r.id)]).size,
+  );
   for (const item of curation.removed) {
     assert.equal(ids.has(item.id), false, item.id);
     for (const url of [

@@ -40,6 +40,7 @@ const sectionIcons: Record<string, typeof Component> = {
   figma: Shapes,
   icons: Grid3X3,
   motion: Sparkles,
+  shaders: Sparkles,
 };
 export const topics = [
   { id: "heroes", label: "Heroes", pattern: /hero/i },
@@ -99,7 +100,6 @@ export function GalleryHeader() {
             <div>
               <Link href="/library/motion">Motion &amp; backgrounds</Link>
               <Link href="/library/icons">Icon explorer</Link>
-              <Link href="/open-source/imports">Source archive</Link>
               <Link href="/library/licenses">Licenses & resale</Link>
             </div>
           </details>
@@ -506,7 +506,6 @@ export function GalleryFooter() {
       <nav aria-label="Footer">
         <Link href="/library/licenses">Licenses & attribution</Link>
         <Link href="/library/icons">Icons</Link>
-        <Link href="/open-source/imports">Source archive</Link>
         <a href="https://github.com/rakshithp1/migbits">GitHub ↗</a>
       </nav>
     </footer>

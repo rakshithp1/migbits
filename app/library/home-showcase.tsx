@@ -28,6 +28,7 @@ const sections = [
   ["illustrations", "Illustrations", PenTool],
   ["figma", "Figma kits", Shapes],
   ["motion", "Motion", Sparkles],
+  ["shaders", "Shaders", Sparkles],
 ] as const;
 export function HomeShowcase({ cards }: { cards: Card[] }) {
   const [open, setOpen] = useState(true);

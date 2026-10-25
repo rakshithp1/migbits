@@ -324,6 +324,48 @@ for (const [i, k] of figmaKits.entries()) {
     usage: [files["README.md"]],
   });
 }
+// Only items that passed the isolated browser audit may leave the internal archive.
+const archiveValidation = existsSync("catalog/archive-previews/promotion.json")
+  ? (read("catalog/archive-previews/promotion.json") as {
+      id: string;
+      thumbnail: string;
+      url: string;
+      validation: string;
+    }[])
+  : [];
+for (const tested of archiveValidation) {
+  if (list.some((r) => r.id === tested.id)) continue;
+  const upstream = imports.find((r) => r.id === tested.id);
+  if (!upstream || upstream.license !== "MIT")
+    throw Error("Unreviewed promotion " + tested.id);
+  const shader = upstream.source === "shaders";
+  list.push({
+    id: upstream.id,
+    name: upstream.name,
+    description: upstream.description,
+    category: shader ? "shaders" : "components",
+    author: shader ? "Shader Effects Inc." : "Magic UI",
+    license: upstream.license,
+    tags: [shader ? "WebGPU" : "React", upstream.category, "Render checked"],
+    format: upstream.framework,
+    previewType: "block",
+    image: tested.thumbnail,
+    previewUrl: tested.url,
+    dataUrl: upstream.dataUrl,
+    sourceUrl: upstream.upstream,
+    downloadUrl: upstream.downloadUrl,
+    licenseUrl: `/imported/${upstream.source}/previews/LICENSES.txt`,
+    featured: 2000,
+    usage: [
+      tested.validation,
+      "Original upstream source is preserved in the source download; Migbits preview fixtures and standalone styling are separate adaptations.",
+      `Download the original source and supporting engine or collection files: /imported/${upstream.source}/support.zip . Preserve all copyright and license notices.`,
+      shader
+        ? "Requires WebGPU. The preview starts paused; choose Play animation to animate. Supply a static fallback on unsupported devices. This definition needs the upstream engine; it is not a standalone React component."
+        : "Use the included registry definition in a separate React/Tailwind project. Apply its CSS, variables and registry dependencies; review keyboard interaction, contrast and reduced motion in your app.",
+    ],
+  });
+}
 for (const item of list) {
   const first = [
     "inspo--hero-split-screen",

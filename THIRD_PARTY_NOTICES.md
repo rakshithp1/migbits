@@ -23,12 +23,10 @@ The collection is documented in docs/OPEN-SOURCE-COLLECTION.md and catalog/commu
 ## Motion Primitives collection
 
 The six core files under components/motion/ derive from Motion Primitives at the commit recorded in ORIGIN.json and retain its MIT notice. Local policy/type/interaction changes are documented in the same record. The original examples and visibility policy accompany those adapted components. The motion ZIP preserves upstream, helper and dependency notices; it does not relicense unrelated Migbits resources.
-# Imported source collections (24 October 2026)
+## Reviewed imported resources (25 October 2026)
 
-The new `/open-source/imports` catalog distributes original upstream source as separate attributed resource and support archives. Magic UI, Shaders, Inspo reference components, UI UX Pro Max design data, Motion development examples, Spline React wrappers, ThreeUI Community and Bencho's free-plan blocks retain their upstream MIT notices. Impeccable references retain Apache-2.0 and NOTICE text. Linked design-system collections retain their own MIT/Apache notices rather than being relicensed by Migbits.
+The public Source archive is retired. The library includes reviewed Inspo blocks, UI UX Pro Max palettes, 171 Shaders definitions and 29 Magic UI components, with original MIT notices and pinned revisions. Removed Bencho, ThreeUI and other excluded source packages remain outside delivery; older historical inventory descriptions do not authorize redistribution.
 
-ThreeUI's bundled fonts retain OFL 1.1 and its asset/third-party license documents. Pro source, separately licensed remote catalog media, captured production websites, paid templates and unverified submissions are outside these imports. Bencho's Pro code is excluded; the free block snapshot records the exact public eligibility list and source hashes.
+Each original source ZIP preserves its notices. Isolated preview adaptations retain complete upstream and bundled dependency notices in the adjacent previews/LICENSES.txt. Magic UI uses the React/Tailwind preview runtime; the Shaders runtime uses pinned TypeGPU and colorjs.io dependencies. These lazy static preview bundles are separate from the main application's dependency graph. Camera, unlicensed remote media and experimental HTML capture demonstrations are not promoted.
 
-Every resource ZIP includes its source notices; split support ZIPs repeat the notices in every part. Preview bundles retain source/dependency notices in their adjacent `previews/LICENSES.txt`, referenced by a metadata link in each HTML document. Original files remain separate from Migbits mounting, sandbox and utility adaptations.
-
-See `docs/IMPORT-REPORT.md`, `catalog/import-sources.json`, and `catalog/import-progress/` for repository revisions, rights decisions, scope, and checksums. Directory links alone do not mean that an upstream project has been runtime-validated.
+See docs/ARCHIVE-PROMOTION.md and catalog/archive-previews/reconciliation.json for all 270 attempts and held-entry reasons. The existing rights-cleanup and curation records remain in effect. Render checks do not certify every browser, GPU or accessibility behavior.

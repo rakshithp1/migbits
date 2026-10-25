@@ -2,6 +2,13 @@ import catalog from "../catalog/library/resources.json";
 
 export const resourceCategories = [
   {
+    id: "shaders",
+    label: "Shaders",
+    description:
+      "GPU effects and backgrounds with verified renders. Live previews require WebGPU.",
+    icon: "shaders",
+  },
+  {
     id: "components",
     label: "Components",
     description:
@@ -95,6 +102,7 @@ const sectionOrder = [
   "illustrations",
   "figma",
   "motion",
+  "shaders",
 ];
 export const librarySections = [
   ...resourceCategories.map((category) => ({
