@@ -1,57 +1,61 @@
 {
-  "releasedAt": "2026-10-25",
+  "releasedAt": "2026-10-25T15:52:04.035Z",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "57e352fc17e46198845f24a39cb17330d07e583c",
-  "deploymentVersion": "7d7c1715-2ee7-43f7-8a47-f7deb49c128b",
-  "uiReference": [
-    "https://21st.dev",
-    "https://21st.dev/community/components"
-  ],
-  "uiChanges": "Continuous blue/violet/teal ambient homepage and library backgrounds, dotted texture, and original dotted SVG MigBits footer wordmark. Public Source archive retired; successful isolated previews integrated into the library.",
-  "resources": 314,
-  "mainSections": 10,
-  "additionalToolCollections": {
-    "icons": 36,
-    "motionComponents": 6,
-    "decorativeBackgrounds": 2
-  },
-  "removedRepetitiveGalleryEntries": 247,
-  "curationAudit": "catalog/library/curation.json",
+  "sourceCommit": "1de0ceb2dd1ab74125db76b9b550245725bae69a",
+  "deploymentVersion": "ca7030e2-60ab-4e19-8a1a-f9e44a93f787",
+  "resources": 343,
   "categories": {
-    "components": 84,
-    "blocks": 15,
+    "components": 92,
+    "blocks": 19,
     "templates": 3,
     "typography": 12,
-    "colors": 16,
-    "illustrations": 12,
+    "colors": 18,
+    "illustrations": 14,
     "figma": 1,
-    "shaders": 171
+    "shaders": 171,
+    "foundations": 6,
+    "backgrounds": 6,
+    "icons": 1
   },
-  "mitEntriesRequiringNotices": 302,
-  "oflFontFamiliesNoStandaloneSale": 12,
-  "previewRenderChecksPassed": 273,
-  "unitTestsPassed": 39,
-  "localFullBrowserSuitePassed": 22,
-  "localGalleryAndTemplateTestsPassed": 7,
-  "liveBrowserTestsPassed": 7,
-  "liveBrowserTestScope": "Dotted brand and backgrounds, mobile navigation, retired downloads, archive redirects, isolated WebGPU preview, server-rendered shader search, icons and motion workflows.",
-  "liveHostingCheckGroupsPassed": 9,
-  "lintPassed": true,
-  "typecheckPassed": true,
-  "nextProductionBuildPassed": true,
-  "cloudflareBuildPassed": true,
-  "missingPreviewImages": 0,
-  "nativeFigmaExecutionVerified": false,
-  "limitations": [
-    "New resource validation covers native Chrome renders inside an opaque sandbox, visible output, GPU validation and visual review; full cross-browser, GPU-device and accessibility certification is not claimed.",
-    "Seventy archive records remain held with per-item reasons; only the successful 200 were promoted.",
-    "Live shader previews require WebGPU and start paused; thumbnails remain available without GPU support.",
-    "Figma packages contain original editable SVG boards and component-generator source, not .fig binaries; native execution is unverified.",
-    "Template forms and checkout are frontend demos requiring production services."
+  "licenses": {
+    "MIT": 329,
+    "OFL-1.1": 12,
+    "CC0-1.0": 2
+  },
+  "changes": [
+    "Moving blue atmosphere, entrance animations and hover/click/focus effects",
+    "Motion pause control and live OS reduced-motion support",
+    "29 new grouped gallery entries preserving 43 reviewed source scopes",
+    "Eight official shadcn registry installations verified in isolated consumer"
   ],
-  "archiveRecordsAttempted": 270,
-  "newRenderCheckedResources": 200,
-  "heldArchiveRecords": 70,
-  "archiveReconciliation": "catalog/archive-previews/reconciliation.json"
+  "checks": {
+    "unit": 40,
+    "localBrowser": 24,
+    "workerBrowser": 2,
+    "liveBrowser": 5,
+    "hostingGroups": 9,
+    "reviewedSourceRenders": 43,
+    "registryConsumerInstalls": 8,
+    "lint": "passed",
+    "typecheck": "passed",
+    "nextBuild": "passed",
+    "cloudflareBuild": "passed",
+    "workerDryRun": "passed",
+    "liveHosting": "passed"
+  },
+  "remaining": {
+    "approvedScopesPending": 388,
+    "conditionalHeld": 25,
+    "unverifiedHeld": 1,
+    "freePro": "deferred",
+    "nativeFigmaExecution": "not verified",
+    "accessibility": "Full per-entry accessibility certification remains pending"
+  },
+  "evidence": [
+    "docs/APPROVED-EXPANSION.md",
+    "catalog/approved-registry-validation.json",
+    "catalog/approved-resource-validation.json",
+    "catalog/resource-processing-queue.json"
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-25T15:34:04.081Z",
+  "checkedAt": "2026-10-25T15:49:17.461Z",
   "cli": "shadcn@4.22.1",
   "items": [
     "migbits-content-scan",
@@ -11,11 +11,6 @@
     "migbits-signature-pad",
     "migbits-wheel-picker"
   ],
-  "installed": 8,
-  "typecheck": "passed",
-  "bundle": "passed",
-  "noticeRetention": "passed",
-  "scope": "Disposable React 19.3/TypeScript ES2022 consumer; not universal framework/accessibility validation",
   "artifactDigests": {
     "migbits-content-scan": "0d2ad2a456c3ab1cabad96c40e4a9714b49de19ceab9252a8a605aac87accc75",
     "migbits-status-button": "c56c575e37bcf56313b7565a70c060cfea5df6f74a81744bdb1419c0bfcb4180",
@@ -25,5 +20,10 @@
     "migbits-liquid-slider": "3314191d5614d77c231f71c883a3071217a45c9fbd71e11d5a0231baa4fbd855",
     "migbits-signature-pad": "e96ca2d4b56c711e29b1d5572aba1db0423c0a2cb5a50666fa1bb44e45049944",
     "migbits-wheel-picker": "7aad3c47e4ea1ea43c00bf3b1a572bdcb73cce7177ab9655dbc9fac6e3fd7351"
-  }
+  },
+  "installed": 8,
+  "typecheck": "passed",
+  "bundle": "passed",
+  "noticeRetention": "passed",
+  "scope": "Disposable React 19.3/TypeScript ES2022 consumer; not universal framework/accessibility validation"
 }
