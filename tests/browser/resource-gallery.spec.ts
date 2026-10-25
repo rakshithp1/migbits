@@ -3,9 +3,9 @@ test("all seven gallery categories expose real downloadable resources", async ({
   page,
   request,
 }) => {
-  await page.goto("/");
+  await page.goto("/library");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "Good design starts here.",
+    "The library",
   );
   await expect(page.locator(".mb-card")).toHaveCount(24);
   for (const category of [

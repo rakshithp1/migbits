@@ -18,6 +18,8 @@ The primary site and /library now browse the same visual catalog. The previous m
 
 The gallery follows the navigation pattern researched on [21st.dev's component gallery](https://21st.dev/community/components): dark browse surface, primary category tabs, type-filter chips, search and a four-column visual grid. Migbits uses its own branding, copy, implementation and previews; 21st screenshots, logos and submissions are not imported.
 
+The homepage now also follows the reference's overall composition: an original flowing blue SVG backdrop, centered two-line hero, paired browse actions, a framed library showcase, resource/category sections, workflow cards, FAQs and a final call to action. Header menus, keyboard search and the showcase controls work. The gallery uses a 1,104-pixel desktop content area, inline search, compact cards and a single-column mobile grid. Migbits keeps its real resource counts and license information.
+
 Search, categories, type filters, sorting, usage filters and pagination work on the server without JavaScript. Source panels load files only when opened. Interactive examples load on request in an iframe sandbox allowing scripts without same-origin access. Preview code receives no server environment variables. Static thumbnails are lazy-loaded; component bundles do not load in gallery cards.
 
 Typography provides editable specimens and weight/size controls. Palettes provide hex/CSS copying, a WCAG contrast calculator and complementary, analogous and triadic harmonies. Illustrations support accent recoloring with an editable SVG download.

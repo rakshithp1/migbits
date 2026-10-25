@@ -13,6 +13,9 @@ import {
   PanelsTopLeft,
   Component,
   Layers,
+  ChevronDown,
+  SlidersHorizontal,
+  Menu,
 } from "lucide-react";
 import {
   categoryLabel,
@@ -22,6 +25,8 @@ import {
   type LibraryResource,
 } from "../../lib/resource-library";
 import "./gallery.css";
+import "./reference-layout.css";
+import { SearchShortcut } from "./search-shortcut";
 const icons = [
   Component,
   Layers,
@@ -66,22 +71,63 @@ export function GalleryHeader() {
             <i />
             <i />
           </span>
-          migbits<span className="mb-beta">library</span>
+          migbits
         </Link>
         <nav aria-label="Library navigation">
-          <Link href="/library">Explore</Link>
-          <Link href="/library/templates">Templates</Link>
-          <Link href="/library/figma">Figma kits</Link>
-          <Link href="/playground">Playground</Link>
+          <details className="mb-nav-menu">
+            <summary>
+              Library <ChevronDown size={12} />
+            </summary>
+            <div>
+              {resourceCategories.map((c) => (
+                <Link key={c.id} href={"/library/" + c.id}>
+                  {c.label}
+                </Link>
+              ))}
+              <Link href="/library">Browse everything ↗</Link>
+            </div>
+          </details>
+          <details className="mb-nav-menu">
+            <summary>
+              Resources <ChevronDown size={12} />
+            </summary>
+            <div>
+              <Link href="/playground">Motion playground</Link>
+              <Link href="/open-source/icons">Icon explorer</Link>
+              <Link href="/open-source/imports">Source archive</Link>
+              <Link href="/library/licenses">Licenses & resale</Link>
+            </div>
+          </details>
+          <Link href="/library/licenses">Usage</Link>
         </nav>
-        <a
-          className="mb-source-link"
-          href="https://github.com/rakshithp1/migbits"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Open source <ArrowUpRight size={13} />
-        </a>
+        <div className="mb-header-actions">
+          <SearchShortcut />
+          <a
+            className="mb-header-github"
+            href="https://github.com/rakshithp1/migbits"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          <Link className="mb-header-primary" href="/library">
+            Explore free
+          </Link>
+          <details className="mb-mobile-menu">
+            <summary aria-label="Open navigation">
+              <Menu size={20} />
+            </summary>
+            <nav aria-label="Mobile library navigation">
+              {resourceCategories.map((c) => (
+                <Link key={c.id} href={"/library/" + c.id}>
+                  {c.label}
+                </Link>
+              ))}
+              <Link href="/playground">Playground</Link>
+              <Link href="/library/licenses">Licenses & usage</Link>
+            </nav>
+          </details>
+        </div>
       </header>
     </>
   );
@@ -179,15 +225,17 @@ export function ResourceCard({
       <div className="mb-card-info">
         <Link href={`/library/resource/${item.id}`}>
           <h3>{item.name}</h3>
-          <span className="mb-card-byline">
+          <span className="mb-card-byline" title={item.author}>
             <span className="mb-author-avatar">{item.author[0]}</span>
-            {item.author === "Migbits"
-              ? "Migbits originals"
-              : item.previewType === "font"
-                ? "Google Fonts"
-                : item.author
-                    .replace(" and contributors", "")
-                    .replace(" contributors", "")}
+            <span className="mb-card-author-name">
+              {item.author === "Migbits"
+                ? "Migbits originals"
+                : item.previewType === "font"
+                  ? "Google Fonts"
+                  : item.author
+                      .replace(" and contributors", "")
+                      .replace(" contributors", "")}
+            </span>
           </span>
         </Link>
         <span
@@ -258,79 +306,89 @@ export async function ResourceGallery({
       <GalleryHeader />
       <main className="mb-main">
         <section className="mb-intro">
-          <p className="mb-eyebrow">THE MIGBITS RESOURCE LIBRARY</p>
+          <p className="mb-eyebrow">Components, templates & design resources</p>
           <h1>
-            {category === "all"
-              ? "Good design starts here."
-              : categoryLabel(category)}
+            {category === "all" ? "The library" : categoryLabel(category)}
           </h1>
           <p>
             {resourceCategories.find((c) => c.id === category)?.description ||
-              "Components, complete layouts and design essentials. Explore the details, make them your own, and build something worth sharing."}
+              "Thoughtful resources for people who build. Explore live previews, discover the source, and make every detail your own."}
           </p>
-          <span className="mb-intro-note">
-            <span />
-            Free downloads. Clear licenses. Real source.
-          </span>
         </section>
         <div className="mb-browser">
-          <nav className="mb-category-tabs" aria-label="Resource categories">
-            <Link
-              href="/library"
-              aria-current={category === "all" ? "page" : undefined}
-            >
-              <Grid2X2 size={14} />
-              All<span>{libraryResources.length}</span>
-            </Link>
-            {resourceCategories.map((c, i) => {
-              const Icon = icons[i];
-              return (
-                <Link
-                  key={c.id}
-                  href={`/library/${c.id}`}
-                  aria-current={category === c.id ? "page" : undefined}
-                >
-                  <Icon size={14} />
-                  {c.label}
-                  <span>
-                    {libraryResources.filter((r) => r.category === c.id).length}
-                  </span>
-                </Link>
-              );
-            })}
-          </nav>
-          <form className="mb-search-row" action={base}>
-            <div className="mb-search">
-              <Search size={16} />
-              <input
-                id="gallery-search"
-                type="search"
-                name="q"
-                placeholder={`Search ${category === "all" ? "all resources" : categoryLabel(category).toLowerCase()}…`}
-                defaultValue={query}
-                aria-label="Search resources"
-              />
-              <button type="submit">Search</button>
-            </div>
-            {topic && <input type="hidden" name="topic" value={topic} />}
-            <label className="mb-filter">
-              <span>Usage</span>
-              <select name="rights" defaultValue={rights}>
-                <option value="">All licenses</option>
-                <option value="resale">Sale of copies allowed</option>
-              </select>
-            </label>
-            <label className="mb-filter">
-              <span>Sort</span>
-              <select name="sort" defaultValue={sort}>
-                <option value="">Featured</option>
-                <option value="name">Name A–Z</option>
-              </select>
-            </label>
-            <button className="mb-filter-apply" type="submit">
-              Apply filters
-            </button>
-          </form>
+          <div className="mb-browse-toolbar">
+            <nav className="mb-category-tabs" aria-label="Resource categories">
+              <Link
+                href="/library"
+                aria-current={category === "all" ? "page" : undefined}
+              >
+                <Grid2X2 size={14} />
+                All<span>{libraryResources.length}</span>
+              </Link>
+              {resourceCategories.map((c, i) => {
+                const Icon = icons[i];
+                return (
+                  <Link
+                    key={c.id}
+                    href={`/library/${c.id}`}
+                    aria-current={category === c.id ? "page" : undefined}
+                  >
+                    <Icon size={14} />
+                    {c.label}
+                    <span>
+                      {
+                        libraryResources.filter((r) => r.category === c.id)
+                          .length
+                      }
+                    </span>
+                  </Link>
+                );
+              })}
+            </nav>
+            <form className="mb-search-row" action={base}>
+              <div className="mb-search">
+                <Search size={16} />
+                <input
+                  id="gallery-search"
+                  type="search"
+                  name="q"
+                  placeholder={`Search ${category === "all" ? "all resources" : categoryLabel(category).toLowerCase()}…`}
+                  defaultValue={query}
+                  aria-label="Search resources"
+                />
+                <button type="submit">Search</button>
+              </div>
+              {topic && <input type="hidden" name="topic" value={topic} />}
+              <details className="mb-advanced-filters">
+                <summary aria-label="Usage and sort filters">
+                  <SlidersHorizontal size={15} />
+                </summary>
+                <div>
+                  <label className="mb-filter">
+                    <span>Usage</span>
+                    <select
+                      name="rights"
+                      aria-label="Usage"
+                      defaultValue={rights}
+                    >
+                      <option value="">All licenses</option>
+                      <option value="resale">Sale of copies allowed</option>
+                    </select>
+                  </label>
+                  <label className="mb-filter">
+                    <span>Sort</span>
+                    <select name="sort" aria-label="Sort" defaultValue={sort}>
+                      <option value="">Featured</option>
+                      <option value="name">Name A–Z</option>
+                    </select>
+                  </label>
+                  <button className="mb-filter-apply" type="submit">
+                    Apply filters
+                  </button>
+                </div>
+              </details>
+            </form>
+          </div>
           {["all", "components", "blocks"].includes(category) && (
             <nav className="mb-topic-tabs" aria-label="Component types">
               <Link
