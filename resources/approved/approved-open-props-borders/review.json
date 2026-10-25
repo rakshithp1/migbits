@@ -1,0 +1,25 @@
+{
+  "id": "approved-open-props-borders",
+  "kind": "tokens",
+  "family": "open-props",
+  "name": "borders",
+  "primary": "src/props.borders.css",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+  "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.borders.css",
+  "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+  "author": "Copyright (c) 2021 Adam Argyle",
+  "sourceDigest": "42e165db5a710c15fd88f8df35e6f5574ed8976d1947f00b54fa9034b69605e9",
+  "files": [
+    "src/props.borders.css",
+    "LICENSE"
+  ],
+  "checksums": {
+    "src/props.borders.css": "90a7d2cc5664647983d80d5c25fea69bc8b0a57ad9898ecd2c22f33cb742fda6",
+    "LICENSE": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e"
+  },
+  "status": "APPROVED",
+  "batch": "B1-foundations-assets",
+  "originalReviewKey": "p3:open-props:borders"
+}

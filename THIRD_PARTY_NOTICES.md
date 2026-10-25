@@ -25,6 +25,12 @@ The collection is documented in docs/OPEN-SOURCE-COLLECTION.md and catalog/commu
 The six core files under components/motion/ derive from Motion Primitives at the commit recorded in ORIGIN.json and retain its MIT notice. Local policy/type/interaction changes are documented in the same record. The original examples and visibility policy accompany those adapted components. The motion ZIP preserves upstream, helper and dependency notices; it does not relicense unrelated Migbits resources.
 ## Reviewed imported resources (25 October 2026)
 
+### Approved expansion
+
+The 43 reviewed source scopes under `resources/approved/` add 29 gallery entries, grouping four light/dark pairs and two six-file illustration collections. They derive from Animata, Cult UI, Kokonut UI, HyperUI, PatternCraft, Open Props, Radix Colors/Icons, Open Color, Open Doodles and Open Peeps. Each `review.json` records the exact source revision, source hashes, creator and license evidence. Original source files retain their upstream notices. The illustration selections retain their creators' CC0 dedication evidence.
+
+Complete notices accompany each downloadable ZIP and preview at `/library/approved/notices/`. Eight standard shadcn registry items preserve the original license and bundled dependency notices. Registry adaptations add a client boundary and a scoped class-merging helper where required; they do not replace the separately preserved upstream originals. See `docs/APPROVED-EXPANSION.md` for validation scope and remaining work.
+
 The public Source archive is retired. The library includes reviewed Inspo blocks, UI UX Pro Max palettes, 171 Shaders definitions and 29 Magic UI components, with original MIT notices and pinned revisions. Removed Bencho, ThreeUI and other excluded source packages remain outside delivery; older historical inventory descriptions do not authorize redistribution.
 
 Each original source ZIP preserves its notices. Isolated preview adaptations retain complete upstream and bundled dependency notices in the adjacent previews/LICENSES.txt. Magic UI uses the React/Tailwind preview runtime; the Shaders runtime uses pinned TypeGPU and colorjs.io dependencies. These lazy static preview bundles are separate from the main application's dependency graph. Camera, unlicensed remote media and experimental HTML capture demonstrations are not promoted.

@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "path": "markup.html",
+      "content": "\n    <div\n      class=\"flex items-center justify-between border-b border-gray-200 bg-gray-100 px-4 py-2 text-gray-900\"\n    >\n      <span> </span>\n\n      <p class=\"text-center font-medium\">\n        Lorem, ipsum dolor\n        <a href=\"#\" class=\"inline-block underline\"> sit amet consectetur </a>\n      </p>\n\n      <button\n        type=\"button\"\n        aria-label=\"Dismiss\"\n        class=\"rounded border border-gray-300 bg-white p-1.5 shadow-sm transition-colors hover:bg-gray-50\"\n      >\n        <svg\n          aria-hidden=\"true\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          fill=\"none\"\n          viewBox=\"0 0 24 24\"\n          stroke-width=\"1.5\"\n          stroke=\"currentColor\"\n          class=\"size-5\"\n        >\n          <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M6 18 18 6M6 6l12 12\" />\n        </svg>\n      </button>\n    </div>\n  ",
+      "sha256": "0498685e58b5007c8908677ae451011d279e03bfba5542a0b0312b602d4ab691"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) Mark Mead\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98"
+    },
+    {
+      "path": "ORIGIN.json",
+      "content": "{\n  \"id\": \"approved-hyperui-announcements-2-html\",\n  \"kind\": \"block\",\n  \"family\": \"hyperui\",\n  \"name\": \"announcements/2.html\",\n  \"primary\": \"markup.html\",\n  \"license\": \"MIT\",\n  \"declaredLicense\": \"MIT\",\n  \"revision\": \"252efcfe39161db6e67cd877da001ee248d2bbf6\",\n  \"sourceURL\": \"https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/2.html\",\n  \"evidence\": \"https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE\",\n  \"author\": \"Copyright (c) Mark Mead\",\n  \"sourceDigest\": \"a58bac5ffce97c0a94040c1822b347162cad90c39b6d2abd0073874493370a19\",\n  \"files\": [\n    \"markup.html\",\n    \"LICENSE\"\n  ],\n  \"checksums\": {\n    \"markup.html\": \"0498685e58b5007c8908677ae451011d279e03bfba5542a0b0312b602d4ab691\",\n    \"LICENSE\": \"60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98\"\n  },\n  \"status\": \"APPROVED\",\n  \"batch\": \"B3-block-variants\",\n  \"originalReviewKey\": \"p3:hyperui:announcements/2.html\",\n  \"adaptations\": [\n    \"Original source files retained unchanged; MigBits isolated preview scaffold, fixture props and utility wiring are separate adaptations.\",\n    \"HyperUI body-only preview excludes upstream website wrapper, scripts and fonts. Decorative background names do not imply animation.\"\n  ]\n}",
+      "sha256": "064333722294bfa245478c51a3075b24477ae9496b10a8614f9f2ae4316c2b79"
+    },
+    {
+      "path": "README-MIGBITS.md",
+      "content": "# HyperUI announcements 2\n\nSource: https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/2.html\nRevision: 252efcfe39161db6e67cd877da001ee248d2bbf6\nLicense: MIT\n\nRetain all original source and dependency notices. Original files are unchanged. Previews use separate MigBits fixtures; review original prop interfaces, framework and dependency requirements before use. Native Figma and complete template packages are not implied.\n",
+      "sha256": "51bd5a60cc7078ed21bf1c70d887201a92a7d0fcef013e7753521d21732dab9f"
+    }
+  ],
+  "installation": [
+    "Copy the original source files and their required CSS together. Retain LICENSE and all accompanying notices.",
+    "Inspect the original interfaces and install only the dependencies your consuming example uses. Isolated preview validation is not a consumer-project or accessibility certification."
+  ],
+  "resource": {
+    "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6"
+  }
+}

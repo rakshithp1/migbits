@@ -1,0 +1,27 @@
+{
+  "id": "approved-animata-survey-card",
+  "kind": "component",
+  "family": "animata",
+  "name": "survey-card",
+  "primary": "animata/card/survey-card.tsx",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "e7478b835a3b5c4153e71f60666634e91bb38813",
+  "sourceURL": "https://github.com/codse/animata/blob/e7478b835a3b5c4153e71f60666634e91bb38813/animata/card/survey-card.tsx",
+  "evidence": "https://raw.githubusercontent.com/codse/animata/e7478b835a3b5c4153e71f60666634e91bb38813/LICENSE.md",
+  "author": "Copyright (c) Animata",
+  "sourceDigest": "97cc26835a5c82de1001f7d5a30a8c902c569be42b4afb57231b39884eacc2da",
+  "files": [
+    "animata/card/survey-card.tsx",
+    "LICENSE",
+    "DEPENDENCY_NOTICES.txt"
+  ],
+  "checksums": {
+    "animata/card/survey-card.tsx": "6e67a2e4f02db1b59b856cf8e63fa79bcfaa1ba66d4170b922961440cc6bb27c",
+    "LICENSE": "ff78804659cbc28380d087cae79c494f243f8ef22b1e2ac5ec119b5de9314f05",
+    "DEPENDENCY_NOTICES.txt": "d639c22ae6118efec406e1b9c56041f3ae27eac13f94542ce67fc7107eb5c6cb"
+  },
+  "status": "APPROVED",
+  "batch": "B2-specialist-controls",
+  "originalReviewKey": "p3:animata:survey-card"
+}

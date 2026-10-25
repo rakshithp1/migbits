@@ -1,0 +1,24 @@
+{
+  "id": "approved-open-doodles-doggie-svg",
+  "kind": "illustration",
+  "family": "open-doodles",
+  "name": "Doggie.svg",
+  "license": "CC0-1.0",
+  "declaredLicense": "CC0-1.0",
+  "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+  "sourceURL": "https://opendoodles.s3-us-west-1.amazonaws.com/Doggie.svg",
+  "evidence": "https://www.opendoodles.com/about",
+  "author": "Pablo Stanley; CC0 dedication",
+  "sourceDigest": "9db92bd09ad74b4bb31199e054d044b36df99d12ed8c4399857aa5c1d4e1d131",
+  "files": [
+    "illustration.svg",
+    "LICENSE"
+  ],
+  "checksums": {
+    "illustration.svg": "902bc544f1edb1131c9a56dcbdb07a6a8c30427c70e3243a49164adf592c3f7b",
+    "LICENSE": "372f70d283209ea3e7dcefe8a97dbb326a6ce3f72b8568b291c8a5e1f2e69896"
+  },
+  "status": "APPROVED",
+  "batch": "B5-illustration-samples",
+  "originalReviewKey": "p3:open-doodles:Doggie.svg"
+}

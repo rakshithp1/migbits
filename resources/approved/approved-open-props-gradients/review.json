@@ -1,0 +1,25 @@
+{
+  "id": "approved-open-props-gradients",
+  "kind": "tokens",
+  "family": "open-props",
+  "name": "gradients",
+  "primary": "src/props.gradients.css",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+  "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.gradients.css",
+  "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+  "author": "Copyright (c) 2021 Adam Argyle",
+  "sourceDigest": "c252d4407df14573a629bffe9b681943c34c1eb83c2b4eb898868b5fb47046d0",
+  "files": [
+    "src/props.gradients.css",
+    "LICENSE"
+  ],
+  "checksums": {
+    "src/props.gradients.css": "15643c50e9bb668b11e320d1f7ead5712444afbbe50486dd7de2b4dbf4faa520",
+    "LICENSE": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e"
+  },
+  "status": "APPROVED",
+  "batch": "B1-foundations-assets",
+  "originalReviewKey": "p3:open-props:gradients"
+}

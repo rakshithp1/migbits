@@ -1,0 +1,1717 @@
+[
+  {
+    "id": "approved-animata-content-scan",
+    "name": "Content Scan",
+    "description": "Content Scan, with pinned upstream source, required notices and an isolated preview.",
+    "category": "components",
+    "author": "animata",
+    "license": "MIT",
+    "tags": [
+      "animata",
+      "component",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "format": "React · TypeScript · Tailwind",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-animata-content-scan.png",
+    "previewUrl": "/library/approved/previews/approved-animata-content-scan.html",
+    "downloadUrl": "/library/approved/downloads/approved-animata-content-scan.zip",
+    "dataUrl": "/library/approved/data/approved-animata-content-scan.json",
+    "sourceUrl": "https://github.com/codse/animata/blob/e7478b835a3b5c4153e71f60666634e91bb38813/animata/feature-cards/content-scan.tsx",
+    "licenseUrl": "/library/approved/notices/approved-animata-content-scan.txt",
+    "revision": "e7478b835a3b5c4153e71f60666634e91bb38813",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "c755d6fd6d384b017792c6402a2f0709c6562c7e50ddd25419fc6643665c662b",
+      "evidence": "https://raw.githubusercontent.com/codse/animata/e7478b835a3b5c4153e71f60666634e91bb38813/LICENSE.md",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:03.011Z",
+      "previewDigest": "5e48b84e97fd5fe2a4dbfb0c5b2e517fd2e0e422ee5617c4c80423e4d99faa92"
+    },
+    "originalReviewKey": "p3:animata:content-scan"
+  },
+  {
+    "id": "approved-animata-status-button",
+    "name": "Status Button",
+    "description": "Status Button, with pinned upstream source, required notices and an isolated preview.",
+    "category": "components",
+    "author": "animata",
+    "license": "MIT",
+    "tags": [
+      "animata",
+      "component",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "format": "React · TypeScript · Tailwind",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-animata-status-button.png",
+    "previewUrl": "/library/approved/previews/approved-animata-status-button.html",
+    "downloadUrl": "/library/approved/downloads/approved-animata-status-button.zip",
+    "dataUrl": "/library/approved/data/approved-animata-status-button.json",
+    "sourceUrl": "https://github.com/codse/animata/blob/e7478b835a3b5c4153e71f60666634e91bb38813/animata/button/status-button.tsx",
+    "licenseUrl": "/library/approved/notices/approved-animata-status-button.txt",
+    "revision": "e7478b835a3b5c4153e71f60666634e91bb38813",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "2e5c8182f02066b6c588ea45af55b33a4d9ae8d0f7a70ee691f60e70acbfdf52",
+      "evidence": "https://raw.githubusercontent.com/codse/animata/e7478b835a3b5c4153e71f60666634e91bb38813/LICENSE.md",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:04.919Z",
+      "previewDigest": "d74ecd695db57c3eee32d8eed8b7de821e1e801268adccde9129f91adb4becee"
+    },
+    "originalReviewKey": "p3:animata:status-button"
+  },
+  {
+    "id": "approved-animata-survey-card",
+    "name": "Survey Card",
+    "description": "Survey Card, with pinned upstream source, required notices and an isolated preview.",
+    "category": "components",
+    "author": "animata",
+    "license": "MIT",
+    "tags": [
+      "animata",
+      "component",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "format": "React · TypeScript · Tailwind",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-animata-survey-card.png",
+    "previewUrl": "/library/approved/previews/approved-animata-survey-card.html",
+    "downloadUrl": "/library/approved/downloads/approved-animata-survey-card.zip",
+    "dataUrl": "/library/approved/data/approved-animata-survey-card.json",
+    "sourceUrl": "https://github.com/codse/animata/blob/e7478b835a3b5c4153e71f60666634e91bb38813/animata/card/survey-card.tsx",
+    "licenseUrl": "/library/approved/notices/approved-animata-survey-card.txt",
+    "revision": "e7478b835a3b5c4153e71f60666634e91bb38813",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "97cc26835a5c82de1001f7d5a30a8c902c569be42b4afb57231b39884eacc2da",
+      "evidence": "https://raw.githubusercontent.com/codse/animata/e7478b835a3b5c4153e71f60666634e91bb38813/LICENSE.md",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:06.696Z",
+      "previewDigest": "f812f69c6d5333a0e8db9f9015196486b6020664f1776e7d6b9a8c041f03fe20"
+    },
+    "originalReviewKey": "p3:animata:survey-card"
+  },
+  {
+    "id": "approved-cult-ui-choice-poll",
+    "name": "Choice Poll",
+    "description": "Choice Poll, with pinned upstream source, required notices and an isolated preview.",
+    "category": "components",
+    "author": "cult-ui",
+    "license": "MIT",
+    "tags": [
+      "cult-ui",
+      "component",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "format": "React · TypeScript · Tailwind",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-cult-ui-choice-poll.png",
+    "previewUrl": "/library/approved/previews/approved-cult-ui-choice-poll.html",
+    "downloadUrl": "/library/approved/downloads/approved-cult-ui-choice-poll.zip",
+    "dataUrl": "/library/approved/data/approved-cult-ui-choice-poll.json",
+    "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/7f031dc812f7bda10213bab62752dd6d080297ff/apps/www/registry/default/ui/choice-poll.tsx",
+    "licenseUrl": "/library/approved/notices/approved-cult-ui-choice-poll.txt",
+    "revision": "7f031dc812f7bda10213bab62752dd6d080297ff",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "2bc3726ef59c1c84682914189a5be7414e25911e06c3995fec3cc5b7bd134c44",
+      "evidence": "https://raw.githubusercontent.com/nolly-studio/cult-ui/7f031dc812f7bda10213bab62752dd6d080297ff/LICENSE.md",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:09.325Z",
+      "previewDigest": "9575c07c1fb840102a817ba73e17569bf99eb1e53cb94053c7a40952a84e702b"
+    },
+    "originalReviewKey": "p3:cult-ui:choice-poll"
+  },
+  {
+    "id": "approved-hyperui-announcements-1-dark-html",
+    "name": "HyperUI announcements 1 · Dark",
+    "description": "HyperUI announcements 1 · Dark, with pinned upstream source, required notices and an isolated preview.",
+    "category": "blocks",
+    "author": "hyperui",
+    "license": "MIT",
+    "tags": [
+      "hyperui",
+      "block",
+      "HTML",
+      "Tailwind"
+    ],
+    "format": "HTML · Tailwind CSS",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-hyperui-announcements-1-dark-html.png",
+    "previewUrl": "/library/approved/previews/approved-hyperui-announcements-1-dark-html.html",
+    "downloadUrl": "/library/approved/downloads/approved-hyperui-announcements-1-dark-html.zip",
+    "dataUrl": "/library/approved/data/approved-hyperui-announcements-1-dark-html.json",
+    "sourceUrl": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/1-dark.html",
+    "licenseUrl": "/library/approved/notices/approved-hyperui-announcements-1-dark-html.txt",
+    "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "c90bfa931209215bf29d84203ae32cc3e84a0ebaec8d43b4087c3505580276b9",
+      "evidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:09.593Z",
+      "previewDigest": "4ec0cffb6e11835d1ff42e3e4435f0a1db03fab1017a05818b8747b7626d399f"
+    },
+    "originalReviewKey": "p3:hyperui:announcements/1-dark.html"
+  },
+  {
+    "id": "approved-hyperui-announcements-1-html",
+    "name": "HyperUI announcements 1",
+    "description": "HyperUI announcements 1, with pinned upstream source, required notices and an isolated preview.",
+    "category": "blocks",
+    "author": "hyperui",
+    "license": "MIT",
+    "tags": [
+      "hyperui",
+      "block",
+      "HTML",
+      "Tailwind"
+    ],
+    "format": "HTML · Tailwind CSS",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-hyperui-announcements-1-html.png",
+    "previewUrl": "/library/approved/previews/approved-hyperui-announcements-1-html.html",
+    "downloadUrl": "/library/approved/downloads/approved-hyperui-announcements-1-html.zip",
+    "dataUrl": "/library/approved/data/approved-hyperui-announcements-1-html.json",
+    "sourceUrl": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/1.html",
+    "licenseUrl": "/library/approved/notices/approved-hyperui-announcements-1-html.txt",
+    "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "f069f1da872cd54ba242a41539ec963ad383329df9f825afe0b045e149895211",
+      "evidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:09.958Z",
+      "previewDigest": "c31c04f743cdcbc37340b960a795343364513506144594d402122c24d274dcd4"
+    },
+    "originalReviewKey": "p3:hyperui:announcements/1.html"
+  },
+  {
+    "id": "approved-hyperui-announcements-2-dark-html",
+    "name": "HyperUI announcements 2 · Dark",
+    "description": "HyperUI announcements 2 · Dark, with pinned upstream source, required notices and an isolated preview.",
+    "category": "blocks",
+    "author": "hyperui",
+    "license": "MIT",
+    "tags": [
+      "hyperui",
+      "block",
+      "HTML",
+      "Tailwind"
+    ],
+    "format": "HTML · Tailwind CSS",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-hyperui-announcements-2-dark-html.png",
+    "previewUrl": "/library/approved/previews/approved-hyperui-announcements-2-dark-html.html",
+    "downloadUrl": "/library/approved/downloads/approved-hyperui-announcements-2-dark-html.zip",
+    "dataUrl": "/library/approved/data/approved-hyperui-announcements-2-dark-html.json",
+    "sourceUrl": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/2-dark.html",
+    "licenseUrl": "/library/approved/notices/approved-hyperui-announcements-2-dark-html.txt",
+    "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "2e5d7f76269ba2b78ae667ee747b55a3f0b6583337f7cb8e8156c82a917eccd6",
+      "evidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:10.245Z",
+      "previewDigest": "cb2216640ac728a239bcbb330e2ebd4fcbf9e6e6d7a4f956cfc2ad3ba14de5d8"
+    },
+    "originalReviewKey": "p3:hyperui:announcements/2-dark.html"
+  },
+  {
+    "id": "approved-hyperui-announcements-2-html",
+    "name": "HyperUI announcements 2",
+    "description": "HyperUI announcements 2, with pinned upstream source, required notices and an isolated preview.",
+    "category": "blocks",
+    "author": "hyperui",
+    "license": "MIT",
+    "tags": [
+      "hyperui",
+      "block",
+      "HTML",
+      "Tailwind"
+    ],
+    "format": "HTML · Tailwind CSS",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-hyperui-announcements-2-html.png",
+    "previewUrl": "/library/approved/previews/approved-hyperui-announcements-2-html.html",
+    "downloadUrl": "/library/approved/downloads/approved-hyperui-announcements-2-html.zip",
+    "dataUrl": "/library/approved/data/approved-hyperui-announcements-2-html.json",
+    "sourceUrl": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/2.html",
+    "licenseUrl": "/library/approved/notices/approved-hyperui-announcements-2-html.txt",
+    "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "a58bac5ffce97c0a94040c1822b347162cad90c39b6d2abd0073874493370a19",
+      "evidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:10.540Z",
+      "previewDigest": "95662bcd99fde98f026ee5d21f323ab3f03594c8fce9435e1330a74ff7005dd2"
+    },
+    "originalReviewKey": "p3:hyperui:announcements/2.html"
+  },
+  {
+    "id": "approved-hyperui-contact-forms-1-dark-html",
+    "name": "HyperUI contact-forms 1 · Dark",
+    "description": "HyperUI contact-forms 1 · Dark, with pinned upstream source, required notices and an isolated preview.",
+    "category": "blocks",
+    "author": "hyperui",
+    "license": "MIT",
+    "tags": [
+      "hyperui",
+      "block",
+      "HTML",
+      "Tailwind"
+    ],
+    "format": "HTML · Tailwind CSS",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-hyperui-contact-forms-1-dark-html.png",
+    "previewUrl": "/library/approved/previews/approved-hyperui-contact-forms-1-dark-html.html",
+    "downloadUrl": "/library/approved/downloads/approved-hyperui-contact-forms-1-dark-html.zip",
+    "dataUrl": "/library/approved/data/approved-hyperui-contact-forms-1-dark-html.json",
+    "sourceUrl": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/contact-forms/1-dark.html",
+    "licenseUrl": "/library/approved/notices/approved-hyperui-contact-forms-1-dark-html.txt",
+    "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "d026b483b9ec92611395e8b3f39fc3e8a95ac6573dcbf1993d70d53cec0b1604",
+      "evidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:10.848Z",
+      "previewDigest": "a36f01e1906679eb278d1af6206a0e61e253901581060cca694d8f8229559f71"
+    },
+    "originalReviewKey": "p3:hyperui:contact-forms/1-dark.html"
+  },
+  {
+    "id": "approved-hyperui-contact-forms-1-html",
+    "name": "HyperUI contact-forms 1",
+    "description": "HyperUI contact-forms 1, with pinned upstream source, required notices and an isolated preview.",
+    "category": "blocks",
+    "author": "hyperui",
+    "license": "MIT",
+    "tags": [
+      "hyperui",
+      "block",
+      "HTML",
+      "Tailwind"
+    ],
+    "format": "HTML · Tailwind CSS",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-hyperui-contact-forms-1-html.png",
+    "previewUrl": "/library/approved/previews/approved-hyperui-contact-forms-1-html.html",
+    "downloadUrl": "/library/approved/downloads/approved-hyperui-contact-forms-1-html.zip",
+    "dataUrl": "/library/approved/data/approved-hyperui-contact-forms-1-html.json",
+    "sourceUrl": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/contact-forms/1.html",
+    "licenseUrl": "/library/approved/notices/approved-hyperui-contact-forms-1-html.txt",
+    "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "1e8ca937d6753893938456df74d8f81078d111a9faaf6f2656b76b81df5acdb8",
+      "evidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:11.143Z",
+      "previewDigest": "55068f2eb5a4c1dd6fc6b5a4996dad645943c27287277b338bb53ae799a014bf"
+    },
+    "originalReviewKey": "p3:hyperui:contact-forms/1.html"
+  },
+  {
+    "id": "approved-hyperui-contact-forms-2-dark-html",
+    "name": "HyperUI contact-forms 2 · Dark",
+    "description": "HyperUI contact-forms 2 · Dark, with pinned upstream source, required notices and an isolated preview.",
+    "category": "blocks",
+    "author": "hyperui",
+    "license": "MIT",
+    "tags": [
+      "hyperui",
+      "block",
+      "HTML",
+      "Tailwind"
+    ],
+    "format": "HTML · Tailwind CSS",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-hyperui-contact-forms-2-dark-html.png",
+    "previewUrl": "/library/approved/previews/approved-hyperui-contact-forms-2-dark-html.html",
+    "downloadUrl": "/library/approved/downloads/approved-hyperui-contact-forms-2-dark-html.zip",
+    "dataUrl": "/library/approved/data/approved-hyperui-contact-forms-2-dark-html.json",
+    "sourceUrl": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/contact-forms/2-dark.html",
+    "licenseUrl": "/library/approved/notices/approved-hyperui-contact-forms-2-dark-html.txt",
+    "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "15a1b0329aec442ed08981a223fa9e69b55d5070ceff3602a80455861f4f9a67",
+      "evidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:11.431Z",
+      "previewDigest": "bfc3c1f09488e9e78073a1a126cd4fe180b52f71b8a526880f078a87a1a83a40"
+    },
+    "originalReviewKey": "p3:hyperui:contact-forms/2-dark.html"
+  },
+  {
+    "id": "approved-hyperui-contact-forms-2-html",
+    "name": "HyperUI contact-forms 2",
+    "description": "HyperUI contact-forms 2, with pinned upstream source, required notices and an isolated preview.",
+    "category": "blocks",
+    "author": "hyperui",
+    "license": "MIT",
+    "tags": [
+      "hyperui",
+      "block",
+      "HTML",
+      "Tailwind"
+    ],
+    "format": "HTML · Tailwind CSS",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-hyperui-contact-forms-2-html.png",
+    "previewUrl": "/library/approved/previews/approved-hyperui-contact-forms-2-html.html",
+    "downloadUrl": "/library/approved/downloads/approved-hyperui-contact-forms-2-html.zip",
+    "dataUrl": "/library/approved/data/approved-hyperui-contact-forms-2-html.json",
+    "sourceUrl": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/contact-forms/2.html",
+    "licenseUrl": "/library/approved/notices/approved-hyperui-contact-forms-2-html.txt",
+    "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "2ddcd22fd66c82d69147cbf2c4da02cd61a394d668b4bb79894a4d5e06248cb7",
+      "evidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:11.741Z",
+      "previewDigest": "cae58bbd2dc03390feb17324031d0e460e64a0a9045f46a5fd0d90abbe3673f6"
+    },
+    "originalReviewKey": "p3:hyperui:contact-forms/2.html"
+  },
+  {
+    "id": "approved-kokonut-ui-detent-dial",
+    "name": "Detent Dial",
+    "description": "Detent Dial, with pinned upstream source, required notices and an isolated preview.",
+    "category": "components",
+    "author": "kokonut-ui",
+    "license": "MIT",
+    "tags": [
+      "kokonut-ui",
+      "component",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "format": "React · TypeScript · Tailwind",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-kokonut-ui-detent-dial.png",
+    "previewUrl": "/library/approved/previews/approved-kokonut-ui-detent-dial.html",
+    "downloadUrl": "/library/approved/downloads/approved-kokonut-ui-detent-dial.zip",
+    "dataUrl": "/library/approved/data/approved-kokonut-ui-detent-dial.json",
+    "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/3456b061a3371e7b9aa158c0bb75dca04f227239/components/kokonutui/detent-dial.tsx",
+    "licenseUrl": "/library/approved/notices/approved-kokonut-ui-detent-dial.txt",
+    "revision": "3456b061a3371e7b9aa158c0bb75dca04f227239",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "1f104ad51c46cd760cda8b9c48dae7c42ba7f60cc7c80d9dcf51d5b77d42aa8e",
+      "evidence": "https://raw.githubusercontent.com/kokonut-labs/kokonutui/3456b061a3371e7b9aa158c0bb75dca04f227239/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:13.743Z",
+      "previewDigest": "673d6f2172fe1c4ba5fa5672d6d860bbc141d5c895ffdf65b903783a0155bc9e"
+    },
+    "originalReviewKey": "p3:kokonut-ui:detent-dial"
+  },
+  {
+    "id": "approved-kokonut-ui-liquid-slider",
+    "name": "Liquid Slider",
+    "description": "Liquid Slider, with pinned upstream source, required notices and an isolated preview.",
+    "category": "components",
+    "author": "kokonut-ui",
+    "license": "MIT",
+    "tags": [
+      "kokonut-ui",
+      "component",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "format": "React · TypeScript · Tailwind",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-kokonut-ui-liquid-slider.png",
+    "previewUrl": "/library/approved/previews/approved-kokonut-ui-liquid-slider.html",
+    "downloadUrl": "/library/approved/downloads/approved-kokonut-ui-liquid-slider.zip",
+    "dataUrl": "/library/approved/data/approved-kokonut-ui-liquid-slider.json",
+    "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/3456b061a3371e7b9aa158c0bb75dca04f227239/components/kokonutui/liquid-slider.tsx",
+    "licenseUrl": "/library/approved/notices/approved-kokonut-ui-liquid-slider.txt",
+    "revision": "3456b061a3371e7b9aa158c0bb75dca04f227239",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "6cfc10b364190189fcc2a1d5b799738b24081151dfe8406db0b355611a2246be",
+      "evidence": "https://raw.githubusercontent.com/kokonut-labs/kokonutui/3456b061a3371e7b9aa158c0bb75dca04f227239/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:15.702Z",
+      "previewDigest": "169fd7c53c9a3caa9ff92031e8382b401af0ea52600e7a8698cb38fdd9cadb59"
+    },
+    "originalReviewKey": "p3:kokonut-ui:liquid-slider"
+  },
+  {
+    "id": "approved-kokonut-ui-signature-pad",
+    "name": "Signature Pad",
+    "description": "Signature Pad, with pinned upstream source, required notices and an isolated preview.",
+    "category": "components",
+    "author": "kokonut-ui",
+    "license": "MIT",
+    "tags": [
+      "kokonut-ui",
+      "component",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "format": "React · TypeScript · Tailwind",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-kokonut-ui-signature-pad.png",
+    "previewUrl": "/library/approved/previews/approved-kokonut-ui-signature-pad.html",
+    "downloadUrl": "/library/approved/downloads/approved-kokonut-ui-signature-pad.zip",
+    "dataUrl": "/library/approved/data/approved-kokonut-ui-signature-pad.json",
+    "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/3456b061a3371e7b9aa158c0bb75dca04f227239/components/kokonutui/signature-pad.tsx",
+    "licenseUrl": "/library/approved/notices/approved-kokonut-ui-signature-pad.txt",
+    "revision": "3456b061a3371e7b9aa158c0bb75dca04f227239",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "85f3db3805c539e6652b0a0411797c2b2e5ce296bdcba81abbabc667ecbf060d",
+      "evidence": "https://raw.githubusercontent.com/kokonut-labs/kokonutui/3456b061a3371e7b9aa158c0bb75dca04f227239/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:17.358Z",
+      "previewDigest": "fd005caf71e46fdd618b0d728366419d9911a1354f8a7226c359c360f31e6822"
+    },
+    "originalReviewKey": "p3:kokonut-ui:signature-pad"
+  },
+  {
+    "id": "approved-kokonut-ui-wheel-picker",
+    "name": "Wheel Picker",
+    "description": "Wheel Picker, with pinned upstream source, required notices and an isolated preview.",
+    "category": "components",
+    "author": "kokonut-ui",
+    "license": "MIT",
+    "tags": [
+      "kokonut-ui",
+      "component",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "format": "React · TypeScript · Tailwind",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-kokonut-ui-wheel-picker.png",
+    "previewUrl": "/library/approved/previews/approved-kokonut-ui-wheel-picker.html",
+    "downloadUrl": "/library/approved/downloads/approved-kokonut-ui-wheel-picker.zip",
+    "dataUrl": "/library/approved/data/approved-kokonut-ui-wheel-picker.json",
+    "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/3456b061a3371e7b9aa158c0bb75dca04f227239/components/kokonutui/wheel-picker.tsx",
+    "licenseUrl": "/library/approved/notices/approved-kokonut-ui-wheel-picker.txt",
+    "revision": "3456b061a3371e7b9aa158c0bb75dca04f227239",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "e03f128fc041574420b39812505648eb0e49f30caf118a4e14d4f7e56bba89c8",
+      "evidence": "https://raw.githubusercontent.com/kokonut-labs/kokonutui/3456b061a3371e7b9aa158c0bb75dca04f227239/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:19.347Z",
+      "previewDigest": "ce2c7d261c2d6ce12efa64d96c5c2c3bf7db0274dfb76e64415c655678101f6d"
+    },
+    "originalReviewKey": "p3:kokonut-ui:wheel-picker"
+  },
+  {
+    "id": "approved-open-color",
+    "name": "Open Color · Shade scales",
+    "description": "Open Color · Shade scales, with pinned upstream source, required notices and an isolated preview.",
+    "category": "colors",
+    "author": "heeyeun",
+    "license": "MIT",
+    "tags": [
+      "open-color",
+      "palette",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "palette",
+    "colors": {
+      "Primary": "#228be6",
+      "Secondary": "#5c7cfa",
+      "Accent": "#22b8cf",
+      "Background": "#f8f9fa",
+      "Foreground": "#212529"
+    },
+    "image": "/library/approved/thumbnails/approved-open-color.png",
+    "previewUrl": "/library/approved/previews/approved-open-color.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-color.zip",
+    "dataUrl": "/library/approved/data/approved-open-color.json",
+    "sourceUrl": "https://github.com/yeun/open-color/blob/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/open-color.json",
+    "licenseUrl": "/library/approved/notices/approved-open-color.txt",
+    "revision": "3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "02f64b2366aa69cb073d427697b38e19d8cf9cc253ac583e5f9ffd707785ca27",
+      "evidence": "https://github.com/yeun/open-color/blob/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:19.652Z",
+      "previewDigest": "82b3b647cd8ffb94048f731249e3ceaeb0f2d5a1739ad06ac237ee3ba57c561b"
+    },
+    "originalReviewKey": "p5:open-color"
+  },
+  {
+    "id": "approved-open-doodles-ballet-svg",
+    "name": "Open Doodles · ballet",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-doodles",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-doodles-ballet-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-doodles-ballet-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-doodles-ballet-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-doodles-ballet-svg.json",
+    "sourceUrl": "https://opendoodles.s3-us-west-1.amazonaws.com/ballet.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-doodles-ballet-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "02152d14a7f51b33d7eaf0ac0906d252086438b5f4875a1ed15e9a447239e159",
+      "evidence": "https://www.opendoodles.com/about",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:19.947Z",
+      "previewDigest": "2e6f2635fd8b8fcfe5a14e6d79791f4e7641795d51ccab999bb2f803c3fb15d5"
+    },
+    "originalReviewKey": "p3:open-doodles:ballet.svg"
+  },
+  {
+    "id": "approved-open-doodles-chilling-svg",
+    "name": "Open Doodles · chilling",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-doodles",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-doodles-chilling-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-doodles-chilling-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-doodles-chilling-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-doodles-chilling-svg.json",
+    "sourceUrl": "https://opendoodles.s3-us-west-1.amazonaws.com/chilling.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-doodles-chilling-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "aaab6518d4313478cbd15cc724c4a79670cc93ea91d5d93eb368334a1f5b6be3",
+      "evidence": "https://www.opendoodles.com/about",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:20.241Z",
+      "previewDigest": "f8b1c59c1269d0ce904429cb1f150c6a28f8a7cf9be6aa218601ddab952708e7"
+    },
+    "originalReviewKey": "p3:open-doodles:chilling.svg"
+  },
+  {
+    "id": "approved-open-doodles-dancing-svg",
+    "name": "Open Doodles · dancing",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-doodles",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-doodles-dancing-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-doodles-dancing-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-doodles-dancing-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-doodles-dancing-svg.json",
+    "sourceUrl": "https://opendoodles.s3-us-west-1.amazonaws.com/dancing.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-doodles-dancing-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "c00e37c4ae293d8661226a0483722773b59e7fc97bcf30993b264dbac278b7c2",
+      "evidence": "https://www.opendoodles.com/about",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:20.536Z",
+      "previewDigest": "0427e7a5fbbbbf4902aa8fc3206401fb11379ca013d03a0e0a963b18adfb1f3c"
+    },
+    "originalReviewKey": "p3:open-doodles:dancing.svg"
+  },
+  {
+    "id": "approved-open-doodles-doggie-svg",
+    "name": "Open Doodles · Doggie",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-doodles",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-doodles-doggie-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-doodles-doggie-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-doodles-doggie-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-doodles-doggie-svg.json",
+    "sourceUrl": "https://opendoodles.s3-us-west-1.amazonaws.com/Doggie.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-doodles-doggie-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "9db92bd09ad74b4bb31199e054d044b36df99d12ed8c4399857aa5c1d4e1d131",
+      "evidence": "https://www.opendoodles.com/about",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:20.837Z",
+      "previewDigest": "c4fa8e7fb5d3d0e1041612794a4a485c5a1188d69513ec692b587f0ed018e3ed"
+    },
+    "originalReviewKey": "p3:open-doodles:Doggie.svg"
+  },
+  {
+    "id": "approved-open-doodles-groovy-svg",
+    "name": "Open Doodles · groovy",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-doodles",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-doodles-groovy-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-doodles-groovy-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-doodles-groovy-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-doodles-groovy-svg.json",
+    "sourceUrl": "https://opendoodles.s3-us-west-1.amazonaws.com/groovy.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-doodles-groovy-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "c47972851cca0dbb44ba9b8b68206f2f6b438bf6befa7dc7e9c15db763889e0e",
+      "evidence": "https://www.opendoodles.com/about",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:21.129Z",
+      "previewDigest": "b87c4faa3616afec92f1ec0a9281904d6bc3facf0cc38f7cd7551f70addf6062"
+    },
+    "originalReviewKey": "p3:open-doodles:groovy.svg"
+  },
+  {
+    "id": "approved-open-doodles-sprinting-svg",
+    "name": "Open Doodles · sprinting",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-doodles",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-doodles-sprinting-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-doodles-sprinting-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-doodles-sprinting-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-doodles-sprinting-svg.json",
+    "sourceUrl": "https://opendoodles.s3-us-west-1.amazonaws.com/sprinting.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-doodles-sprinting-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "c0e2a397007fa76025d85ca4c8afb159b42066d70d1b03718bacc6dc8093f787",
+      "evidence": "https://www.opendoodles.com/about",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:21.425Z",
+      "previewDigest": "25d88cef959188b8c33d5c709bf03fa64c686d7a09cf846d2614523f04198db5"
+    },
+    "originalReviewKey": "p3:open-doodles:sprinting.svg"
+  },
+  {
+    "id": "approved-open-peeps-5e532a4c258ffe237b8ef2c1-peep-2-svg",
+    "name": "Open Peeps · 2",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-peeps",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-peeps-5e532a4c258ffe237b8ef2c1-peep-2-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-peeps-5e532a4c258ffe237b8ef2c1-peep-2-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-peeps-5e532a4c258ffe237b8ef2c1-peep-2-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-peeps-5e532a4c258ffe237b8ef2c1-peep-2-svg.json",
+    "sourceUrl": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e532a4c258ffe237b8ef2c1_peep-2.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-peeps-5e532a4c258ffe237b8ef2c1-peep-2-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "c9dc5e113c36e63a8c7c85346483ec15115d1af214e09dc6c4a6401be16a00ec",
+      "evidence": "https://www.openpeeps.com/",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:21.718Z",
+      "previewDigest": "0b2fc557ce433f08d31a41679f524c71010722a4b013edbadb3aa4663e8a9451"
+    },
+    "originalReviewKey": "p3:open-peeps:5e532a4c258ffe237b8ef2c1_peep-2.svg"
+  },
+  {
+    "id": "approved-open-peeps-5e535195d87131f9760b1c69-peep-12-svg",
+    "name": "Open Peeps · 12",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-peeps",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-peeps-5e535195d87131f9760b1c69-peep-12-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-peeps-5e535195d87131f9760b1c69-peep-12-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-peeps-5e535195d87131f9760b1c69-peep-12-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-peeps-5e535195d87131f9760b1c69-peep-12-svg.json",
+    "sourceUrl": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e535195d87131f9760b1c69_peep-12.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-peeps-5e535195d87131f9760b1c69-peep-12-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "10b9f4c8098eadfba7dca78775758e79e872b88f0c21358900c0d6ef2d93a1ce",
+      "evidence": "https://www.openpeeps.com/",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:22.016Z",
+      "previewDigest": "bbcd777958c9624cefd09c74424357c39b8966864b907dda7e518071d50a2783"
+    },
+    "originalReviewKey": "p3:open-peeps:5e535195d87131f9760b1c69_peep-12.svg"
+  },
+  {
+    "id": "approved-open-peeps-5e5351b17371bb6c489ad0cc-peep-13-svg",
+    "name": "Open Peeps · 13",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-peeps",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-peeps-5e5351b17371bb6c489ad0cc-peep-13-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-peeps-5e5351b17371bb6c489ad0cc-peep-13-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-peeps-5e5351b17371bb6c489ad0cc-peep-13-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-peeps-5e5351b17371bb6c489ad0cc-peep-13-svg.json",
+    "sourceUrl": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e5351b17371bb6c489ad0cc_peep-13.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-peeps-5e5351b17371bb6c489ad0cc-peep-13-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "1cb32b788130affe9521061cd50314e173a74ff154a4f60e4ad54b29ef429993",
+      "evidence": "https://www.openpeeps.com/",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:22.389Z",
+      "previewDigest": "22d2bcc8b9cdb45c9a83e16cd5df68c6cfd8c81047bce20c3ce859973d7aaab2"
+    },
+    "originalReviewKey": "p3:open-peeps:5e5351b17371bb6c489ad0cc_peep-13.svg"
+  },
+  {
+    "id": "approved-open-peeps-5e535637d87131637b0e4379-peep-39-svg",
+    "name": "Open Peeps · 39",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-peeps",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-peeps-5e535637d87131637b0e4379-peep-39-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-peeps-5e535637d87131637b0e4379-peep-39-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-peeps-5e535637d87131637b0e4379-peep-39-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-peeps-5e535637d87131637b0e4379-peep-39-svg.json",
+    "sourceUrl": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e535637d87131637b0e4379_peep-39.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-peeps-5e535637d87131637b0e4379-peep-39-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "892fd5f5a7ec0681854ea25ad8b10205f380516607efe4b862fd0c77fd9abcc0",
+      "evidence": "https://www.openpeeps.com/",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:22.686Z",
+      "previewDigest": "30ea2258ca99a0164e82d0c5041073917ae13c423136aa5ef5c9d70926508205"
+    },
+    "originalReviewKey": "p3:open-peeps:5e535637d87131637b0e4379_peep-39.svg"
+  },
+  {
+    "id": "approved-open-peeps-5e535a0dd3992316ad553c2e-peep-72-svg",
+    "name": "Open Peeps · 72",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-peeps",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-peeps-5e535a0dd3992316ad553c2e-peep-72-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-peeps-5e535a0dd3992316ad553c2e-peep-72-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-peeps-5e535a0dd3992316ad553c2e-peep-72-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-peeps-5e535a0dd3992316ad553c2e-peep-72-svg.json",
+    "sourceUrl": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e535a0dd3992316ad553c2e_peep-72.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-peeps-5e535a0dd3992316ad553c2e-peep-72-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "f10724a21a620c8686f191817916ad4ca6b4455b6c0800d0b0add4b2c5e6bd19",
+      "evidence": "https://www.openpeeps.com/",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:22.973Z",
+      "previewDigest": "60107326b99b022a43ccd3776054520402d954cd479ab0621cc6bf6bd6957d02"
+    },
+    "originalReviewKey": "p3:open-peeps:5e535a0dd3992316ad553c2e_peep-72.svg"
+  },
+  {
+    "id": "approved-open-peeps-5e535cf47488c27eb04a70d1-peep-97-svg",
+    "name": "Open Peeps · 97",
+    "description": "Creator-linked CC0 illustration by Pablo Stanley. Original SVG preserved for reuse.",
+    "category": "illustrations",
+    "author": "Pablo Stanley",
+    "license": "CC0-1.0",
+    "tags": [
+      "open-peeps",
+      "illustration",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-peeps-5e535cf47488c27eb04a70d1-peep-97-svg.png",
+    "previewUrl": "/library/approved/previews/approved-open-peeps-5e535cf47488c27eb04a70d1-peep-97-svg.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-peeps-5e535cf47488c27eb04a70d1-peep-97-svg.zip",
+    "dataUrl": "/library/approved/data/approved-open-peeps-5e535cf47488c27eb04a70d1-peep-97-svg.json",
+    "sourceUrl": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e535cf47488c27eb04a70d1_peep-97.svg",
+    "licenseUrl": "/library/approved/notices/approved-open-peeps-5e535cf47488c27eb04a70d1-peep-97-svg.txt",
+    "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "219874eec111cbbb2ae821e93cb8e838386bef56fc7a8e1b1d89ae76f04b3359",
+      "evidence": "https://www.openpeeps.com/",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:23.261Z",
+      "previewDigest": "40ca7e8133dc27bda183bca7decd2ac410882273fd9148c69186b6ceb2a96e74"
+    },
+    "originalReviewKey": "p3:open-peeps:5e535cf47488c27eb04a70d1_peep-97.svg"
+  },
+  {
+    "id": "approved-open-props-borders",
+    "name": "Open Props · borders",
+    "description": "Open Props · borders, with pinned upstream source, required notices and an isolated preview.",
+    "category": "foundations",
+    "author": "Adam Argyle",
+    "license": "MIT",
+    "tags": [
+      "open-props",
+      "tokens",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-props-borders.png",
+    "previewUrl": "/library/approved/previews/approved-open-props-borders.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-props-borders.zip",
+    "dataUrl": "/library/approved/data/approved-open-props-borders.json",
+    "sourceUrl": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.borders.css",
+    "licenseUrl": "/library/approved/notices/approved-open-props-borders.txt",
+    "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "42e165db5a710c15fd88f8df35e6f5574ed8976d1947f00b54fa9034b69605e9",
+      "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:23.553Z",
+      "previewDigest": "d4a0c975d34b60a217b90e1e3c9271e99b82ce298b9a7e222fb144d5de65558c"
+    },
+    "originalReviewKey": "p3:open-props:borders"
+  },
+  {
+    "id": "approved-open-props-easing",
+    "name": "Open Props · easing",
+    "description": "Open Props · easing, with pinned upstream source, required notices and an isolated preview.",
+    "category": "foundations",
+    "author": "Adam Argyle",
+    "license": "MIT",
+    "tags": [
+      "open-props",
+      "tokens",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-props-easing.png",
+    "previewUrl": "/library/approved/previews/approved-open-props-easing.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-props-easing.zip",
+    "dataUrl": "/library/approved/data/approved-open-props-easing.json",
+    "sourceUrl": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.easing.css",
+    "licenseUrl": "/library/approved/notices/approved-open-props-easing.txt",
+    "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "1433fe896c087051b99342f5e2417492106d52b841606631300415802419afba",
+      "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:23.837Z",
+      "previewDigest": "ee10769a20b72ae7836ccc3d5e9617d1a68b994ddd147944c45c878ee13137ea"
+    },
+    "originalReviewKey": "p3:open-props:easing"
+  },
+  {
+    "id": "approved-open-props-fonts",
+    "name": "Open Props · fonts",
+    "description": "Open Props · fonts, with pinned upstream source, required notices and an isolated preview.",
+    "category": "foundations",
+    "author": "Adam Argyle",
+    "license": "MIT",
+    "tags": [
+      "open-props",
+      "tokens",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-props-fonts.png",
+    "previewUrl": "/library/approved/previews/approved-open-props-fonts.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-props-fonts.zip",
+    "dataUrl": "/library/approved/data/approved-open-props-fonts.json",
+    "sourceUrl": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.fonts.css",
+    "licenseUrl": "/library/approved/notices/approved-open-props-fonts.txt",
+    "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "d0023ee1636410f34c7c33487bbb4ae9f887374d1be1833f127fd6516cab9a25",
+      "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:24.138Z",
+      "previewDigest": "848e8c1b81235e470758535c3e8fe92886edb48a984613053ca4cb6cc2bbcb09"
+    },
+    "originalReviewKey": "p3:open-props:fonts"
+  },
+  {
+    "id": "approved-open-props-gradients",
+    "name": "Open Props · gradients",
+    "description": "Open Props · gradients, with pinned upstream source, required notices and an isolated preview.",
+    "category": "foundations",
+    "author": "Adam Argyle",
+    "license": "MIT",
+    "tags": [
+      "open-props",
+      "tokens",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-props-gradients.png",
+    "previewUrl": "/library/approved/previews/approved-open-props-gradients.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-props-gradients.zip",
+    "dataUrl": "/library/approved/data/approved-open-props-gradients.json",
+    "sourceUrl": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.gradients.css",
+    "licenseUrl": "/library/approved/notices/approved-open-props-gradients.txt",
+    "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "c252d4407df14573a629bffe9b681943c34c1eb83c2b4eb898868b5fb47046d0",
+      "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:24.469Z",
+      "previewDigest": "0b038d51f3aa273ffe1d3e79068d0a1d451b9946820b7d7ef9ae1c830fcb8af3"
+    },
+    "originalReviewKey": "p3:open-props:gradients"
+  },
+  {
+    "id": "approved-open-props-shadows",
+    "name": "Open Props · shadows",
+    "description": "Open Props · shadows, with pinned upstream source, required notices and an isolated preview.",
+    "category": "foundations",
+    "author": "Adam Argyle",
+    "license": "MIT",
+    "tags": [
+      "open-props",
+      "tokens",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-props-shadows.png",
+    "previewUrl": "/library/approved/previews/approved-open-props-shadows.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-props-shadows.zip",
+    "dataUrl": "/library/approved/data/approved-open-props-shadows.json",
+    "sourceUrl": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.shadows.css",
+    "licenseUrl": "/library/approved/notices/approved-open-props-shadows.txt",
+    "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "aebef34c2846072017a2030ad8b5101c5e928804f8422d39b31f176b8dc6ace0",
+      "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:24.784Z",
+      "previewDigest": "2d8f4c1c80a4a33376cf77d86b2ae07ba311204d6c19fc67d6b217b818471236"
+    },
+    "originalReviewKey": "p3:open-props:shadows"
+  },
+  {
+    "id": "approved-open-props-sizes",
+    "name": "Open Props · sizes",
+    "description": "Open Props · sizes, with pinned upstream source, required notices and an isolated preview.",
+    "category": "foundations",
+    "author": "Adam Argyle",
+    "license": "MIT",
+    "tags": [
+      "open-props",
+      "tokens",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-open-props-sizes.png",
+    "previewUrl": "/library/approved/previews/approved-open-props-sizes.html",
+    "downloadUrl": "/library/approved/downloads/approved-open-props-sizes.zip",
+    "dataUrl": "/library/approved/data/approved-open-props-sizes.json",
+    "sourceUrl": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.sizes.css",
+    "licenseUrl": "/library/approved/notices/approved-open-props-sizes.txt",
+    "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "91ea45b255e9c95f8ce75c03e15781aa4ef5a0e055025c39ea49b66601bc7438",
+      "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:25.107Z",
+      "previewDigest": "c7442bdd862cc7048562df8315757b07539bb09eecb60f775ac7bccee2f6306b"
+    },
+    "originalReviewKey": "p3:open-props:sizes"
+  },
+  {
+    "id": "approved-patterncraft-aurora-waves",
+    "name": "Aurora Waves",
+    "description": "A static CSS background. Original snippet and MIT notice included; previewed in isolation.",
+    "category": "backgrounds",
+    "author": "patterncraft",
+    "license": "MIT",
+    "tags": [
+      "patterncraft",
+      "background",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-patterncraft-aurora-waves.png",
+    "previewUrl": "/library/approved/previews/approved-patterncraft-aurora-waves.html",
+    "downloadUrl": "/library/approved/downloads/approved-patterncraft-aurora-waves.zip",
+    "dataUrl": "/library/approved/data/approved-patterncraft-aurora-waves.json",
+    "sourceUrl": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L3206",
+    "licenseUrl": "/library/approved/notices/approved-patterncraft-aurora-waves.txt",
+    "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "cc82f9b2f7e89845a210706c10fd2504f70728f3e409f4189ca51f1d7f5aa359",
+      "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:26.946Z",
+      "previewDigest": "4d55a2577e17b685dc7e5c69abdb481668c36a70fd1d80d81aa1db58a7250477"
+    },
+    "originalReviewKey": "p3:patterncraft:aurora-waves"
+  },
+  {
+    "id": "approved-patterncraft-beach",
+    "name": "Beach",
+    "description": "A static CSS background. Original snippet and MIT notice included; previewed in isolation.",
+    "category": "backgrounds",
+    "author": "patterncraft",
+    "license": "MIT",
+    "tags": [
+      "patterncraft",
+      "background",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-patterncraft-beach.png",
+    "previewUrl": "/library/approved/previews/approved-patterncraft-beach.html",
+    "downloadUrl": "/library/approved/downloads/approved-patterncraft-beach.zip",
+    "dataUrl": "/library/approved/data/approved-patterncraft-beach.json",
+    "sourceUrl": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L4",
+    "licenseUrl": "/library/approved/notices/approved-patterncraft-beach.txt",
+    "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "e17de4b0a58a1cbe8f862361b3cebe6eb789c4611e54ad9f7067fcc6902b7d87",
+      "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:28.761Z",
+      "previewDigest": "aaacb540e71fc16c17ba3a8b043c2875eda38d4fc24c598035c4901b37f3351b"
+    },
+    "originalReviewKey": "p3:patterncraft:beach"
+  },
+  {
+    "id": "approved-patterncraft-dark-grid-lines",
+    "name": "Dark Grid Lines",
+    "description": "A static CSS background. Original snippet and MIT notice included; previewed in isolation.",
+    "category": "backgrounds",
+    "author": "patterncraft",
+    "license": "MIT",
+    "tags": [
+      "patterncraft",
+      "background",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-patterncraft-dark-grid-lines.png",
+    "previewUrl": "/library/approved/previews/approved-patterncraft-dark-grid-lines.html",
+    "downloadUrl": "/library/approved/downloads/approved-patterncraft-dark-grid-lines.zip",
+    "dataUrl": "/library/approved/data/approved-patterncraft-dark-grid-lines.json",
+    "sourceUrl": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L5302",
+    "licenseUrl": "/library/approved/notices/approved-patterncraft-dark-grid-lines.txt",
+    "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "087e2460e06bd224b28b3361b83d0446b803d8d410954060dc28cc78f3a1801b",
+      "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:30.554Z",
+      "previewDigest": "d6fbceac11307779ac2b34ce2d027ed59e71c5698725b5223780e8355214bcab"
+    },
+    "originalReviewKey": "p3:patterncraft:dark-grid-lines"
+  },
+  {
+    "id": "approved-patterncraft-hexagonal-lines",
+    "name": "Hexagonal Lines",
+    "description": "A static CSS background. Original snippet and MIT notice included; previewed in isolation.",
+    "category": "backgrounds",
+    "author": "patterncraft",
+    "license": "MIT",
+    "tags": [
+      "patterncraft",
+      "background",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-patterncraft-hexagonal-lines.png",
+    "previewUrl": "/library/approved/previews/approved-patterncraft-hexagonal-lines.html",
+    "downloadUrl": "/library/approved/downloads/approved-patterncraft-hexagonal-lines.zip",
+    "dataUrl": "/library/approved/data/approved-patterncraft-hexagonal-lines.json",
+    "sourceUrl": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L5783",
+    "licenseUrl": "/library/approved/notices/approved-patterncraft-hexagonal-lines.txt",
+    "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "011bc8bc3f33c3e135bb87103e820dae158a071efbf02f6314f737665f4699da",
+      "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:32.332Z",
+      "previewDigest": "d49a57436bde0d1a4dd30afeb4fc461c4da62721a3eca804f190d36530a135a2"
+    },
+    "originalReviewKey": "p3:patterncraft:hexagonal-lines"
+  },
+  {
+    "id": "approved-patterncraft-pastel-wave",
+    "name": "Pastel Wave",
+    "description": "A static CSS background. Original snippet and MIT notice included; previewed in isolation.",
+    "category": "backgrounds",
+    "author": "patterncraft",
+    "license": "MIT",
+    "tags": [
+      "patterncraft",
+      "background",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-patterncraft-pastel-wave.png",
+    "previewUrl": "/library/approved/previews/approved-patterncraft-pastel-wave.html",
+    "downloadUrl": "/library/approved/downloads/approved-patterncraft-pastel-wave.zip",
+    "dataUrl": "/library/approved/data/approved-patterncraft-pastel-wave.json",
+    "sourceUrl": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L6632",
+    "licenseUrl": "/library/approved/notices/approved-patterncraft-pastel-wave.txt",
+    "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "b86fad81d98bc815294c18303dd4fea8ae57ba441b0420ff9bc54a07a5bd1ef2",
+      "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:34.435Z",
+      "previewDigest": "f1e062fadc594ead25a1eecb3745f6510d9f7af55876c39674c9aee45adab64c"
+    },
+    "originalReviewKey": "p3:patterncraft:pastel-wave"
+  },
+  {
+    "id": "approved-patterncraft-top-gradient-radial",
+    "name": "Top Gradient Radial",
+    "description": "A static CSS background. Original snippet and MIT notice included; previewed in isolation.",
+    "category": "backgrounds",
+    "author": "patterncraft",
+    "license": "MIT",
+    "tags": [
+      "patterncraft",
+      "background",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-patterncraft-top-gradient-radial.png",
+    "previewUrl": "/library/approved/previews/approved-patterncraft-top-gradient-radial.html",
+    "downloadUrl": "/library/approved/downloads/approved-patterncraft-top-gradient-radial.zip",
+    "dataUrl": "/library/approved/data/approved-patterncraft-top-gradient-radial.json",
+    "sourceUrl": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L44",
+    "licenseUrl": "/library/approved/notices/approved-patterncraft-top-gradient-radial.txt",
+    "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "eee3dddd439ffd3e7d687837995101da15fb5947db5ff5402806f2b11de692d1",
+      "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:36.300Z",
+      "previewDigest": "a48d7f58532a6314eaa4478d6dbbfe309b573145937e3a5727f8d5c2ecda0ef2"
+    },
+    "originalReviewKey": "p3:patterncraft:top-gradient-radial"
+  },
+  {
+    "id": "approved-radix-colors-complete-color-scales",
+    "name": "Radix Colors · Light & dark scales",
+    "description": "Radix Colors · Light & dark scales, with pinned upstream source, required notices and an isolated preview.",
+    "category": "colors",
+    "author": "WorkOS",
+    "license": "MIT",
+    "tags": [
+      "radix-colors",
+      "palette",
+      "CSS"
+    ],
+    "format": "CSS · source data",
+    "previewType": "palette",
+    "colors": {
+      "Primary": "#3e63dd",
+      "Secondary": "#8e4ec6",
+      "Accent": "#12a594",
+      "Background": "#fcfcfc",
+      "Foreground": "#1c2024"
+    },
+    "image": "/library/approved/thumbnails/approved-radix-colors-complete-color-scales.png",
+    "previewUrl": "/library/approved/previews/approved-radix-colors-complete-color-scales.html",
+    "downloadUrl": "/library/approved/downloads/approved-radix-colors-complete-color-scales.zip",
+    "dataUrl": "/library/approved/data/approved-radix-colors-complete-color-scales.json",
+    "sourceUrl": "https://github.com/radix-ui/colors/blob/dbdb85470547c7d34b9001f48fddb08ded335979/src/index.ts",
+    "licenseUrl": "/library/approved/notices/approved-radix-colors-complete-color-scales.txt",
+    "revision": "dbdb85470547c7d34b9001f48fddb08ded335979",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "4ca1b937c8937ae83cf347d097779eb098b2110f1db8d51d0fec2919806744bf",
+      "evidence": "https://raw.githubusercontent.com/radix-ui/colors/dbdb85470547c7d34b9001f48fddb08ded335979/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:36.625Z",
+      "previewDigest": "921db1b5b91404d0a5d115d28416cc1f022b78ad8fb1daeb1403e06d3c04041e"
+    },
+    "originalReviewKey": "p3:radix-colors:complete-color-scales"
+  },
+  {
+    "id": "approved-radix-icons",
+    "name": "Radix Icons · 318 SVGs",
+    "description": "Radix Icons · 318 SVGs, with pinned upstream source, required notices and an isolated preview.",
+    "category": "icons",
+    "author": "WorkOS",
+    "license": "MIT",
+    "tags": [
+      "radix-icons",
+      "icons",
+      "SVG"
+    ],
+    "format": "SVG",
+    "previewType": "block",
+    "image": "/library/approved/thumbnails/approved-radix-icons.png",
+    "previewUrl": "/library/approved/previews/approved-radix-icons.html",
+    "downloadUrl": "/library/approved/downloads/approved-radix-icons.zip",
+    "dataUrl": "/library/approved/data/approved-radix-icons.json",
+    "sourceUrl": "https://github.com/radix-ui/icons/blob/112af91ad275a63c3a29b0da2588342af74ef9bf/LICENSE",
+    "licenseUrl": "/library/approved/notices/approved-radix-icons.txt",
+    "revision": "112af91ad275a63c3a29b0da2588342af74ef9bf",
+    "featured": 1200,
+    "usage": [
+      "Original source and notices are included in the download.",
+      "This isolated example has fixture data. Review production integration, keyboard behavior, contrast and reduced motion for your application."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "5f8156ab49b28f2076a872046af7191736afb7465fc1ac70171607a557b38bee",
+      "evidence": "https://github.com/radix-ui/icons/blob/112af91ad275a63c3a29b0da2588342af74ef9bf/LICENSE",
+      "notices": [
+        "LICENSE"
+      ],
+      "preview": "passed",
+      "checkedAt": "2026-10-25T15:24:36.953Z",
+      "previewDigest": "dfe41df44e61118a7332c38ef1c7fb1a96456562535f910861f2e43fe5494c64"
+    },
+    "originalReviewKey": "p5:radix-icons"
+  }
+]

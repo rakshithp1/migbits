@@ -1,0 +1,27 @@
+{
+  "id": "approved-cult-ui-choice-poll",
+  "kind": "component",
+  "family": "cult-ui",
+  "name": "choice-poll",
+  "primary": "apps/www/registry/default/ui/choice-poll.tsx",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "7f031dc812f7bda10213bab62752dd6d080297ff",
+  "sourceURL": "https://github.com/nolly-studio/cult-ui/blob/7f031dc812f7bda10213bab62752dd6d080297ff/apps/www/registry/default/ui/choice-poll.tsx",
+  "evidence": "https://raw.githubusercontent.com/nolly-studio/cult-ui/7f031dc812f7bda10213bab62752dd6d080297ff/LICENSE.md",
+  "author": "Copyright (c) 2023 Jordan-Gilliam",
+  "sourceDigest": "2bc3726ef59c1c84682914189a5be7414e25911e06c3995fec3cc5b7bd134c44",
+  "files": [
+    "apps/www/registry/default/ui/choice-poll.tsx",
+    "LICENSE",
+    "DEPENDENCY_NOTICES.txt"
+  ],
+  "checksums": {
+    "apps/www/registry/default/ui/choice-poll.tsx": "070403fec259f28bbb01d8d12370bf8c5ed2fdf4dc72880e6f05b8d2d162257a",
+    "LICENSE": "78045e58dfd5f039ad350ad293da2ad9a2c0362b82dadb069b1c10be382ddac7",
+    "DEPENDENCY_NOTICES.txt": "d639c22ae6118efec406e1b9c56041f3ae27eac13f94542ce67fc7107eb5c6cb"
+  },
+  "status": "APPROVED",
+  "batch": "B2-specialist-controls",
+  "originalReviewKey": "p3:cult-ui:choice-poll"
+}

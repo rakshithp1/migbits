@@ -62,6 +62,7 @@ jobs:
           fi
           npm run test:hosting
           npm run test:browser
+          APPROVED_PREVIEW_ORIGIN="$SMOKE_BASE_URL" npm run test:approved-registry
       - uses: actions/upload-artifact@v4
         if: always()
         with:

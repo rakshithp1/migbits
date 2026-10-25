@@ -1,0 +1,24 @@
+{
+  "id": "approved-open-doodles-dancing-svg",
+  "kind": "illustration",
+  "family": "open-doodles",
+  "name": "dancing.svg",
+  "license": "CC0-1.0",
+  "declaredLicense": "CC0-1.0",
+  "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+  "sourceURL": "https://opendoodles.s3-us-west-1.amazonaws.com/dancing.svg",
+  "evidence": "https://www.opendoodles.com/about",
+  "author": "Pablo Stanley; CC0 dedication",
+  "sourceDigest": "c00e37c4ae293d8661226a0483722773b59e7fc97bcf30993b264dbac278b7c2",
+  "files": [
+    "illustration.svg",
+    "LICENSE"
+  ],
+  "checksums": {
+    "illustration.svg": "595e589dfd0927cb3cf71174543c05a940ca3743dd99a3dcdd1f3cb757168edf",
+    "LICENSE": "372f70d283209ea3e7dcefe8a97dbb326a6ce3f72b8568b291c8a5e1f2e69896"
+  },
+  "status": "APPROVED",
+  "batch": "B5-illustration-samples",
+  "originalReviewKey": "p3:open-doodles:dancing.svg"
+}

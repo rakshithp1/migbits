@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
-import { zipSync, strToU8 } from "fflate";
+import { zipSync, strToU8, unzipSync } from "fflate";
 import { shadcnCatalog } from "../catalog/shadcn";
 import {
   originalIllustrations,
@@ -12,6 +12,8 @@ import {
 import { figmaKits, kitSvg, kitPlugin } from "../resources/library/figma-kits";
 import type { LibraryResource } from "../lib/resource-library";
 import type { ImportedResource, ImportedPayload } from "../lib/import-catalog";
+import { createHash } from "node:crypto";
+import { validateLibrary } from "../lib/library-validation";
 const read = (p: string) => JSON.parse(readFileSync(p, "utf8"));
 const save = (p: string, value: string) => {
   mkdirSync(p.slice(0, p.lastIndexOf("/")), { recursive: true });
@@ -366,6 +368,47 @@ for (const tested of archiveValidation) {
     ],
   });
 }
+// Exact, reviewed source and browser evidence are required for every new item.
+const approved = existsSync("catalog/approved-resources.json") ? read("catalog/approved-resources.json") as (LibraryResource & { originalReviewKey: string })[] : [];
+for (const item of approved) {
+  const sourceReview = read(`resources/approved/${item.id}/review.json`);
+  if (sourceReview.status !== "APPROVED" || sourceReview.sourceDigest !== item.review?.sourceDigest || item.review?.preview !== "passed") throw Error("Unreviewed source/preview " + item.id);
+  const expectedDigest = (item.review as LibraryResource["review"] & { previewDigest: string }).previewDigest;
+  if (!item.previewUrl || createHash("sha256").update(readFileSync("public" + item.previewUrl)).digest("hex") !== expectedDigest) throw Error("Stale preview validation " + item.id);
+  if (!item.image || !existsSync("public" + item.image)) throw Error("Missing approved thumbnail " + item.id);
+  if (sourceReview.kind === "component" && existsSync("catalog/approved-registry-validation.json")) {
+    const validation = read("catalog/approved-registry-validation.json");
+    const name = `migbits-${sourceReview.name}`;
+    const file = `public/r/${name}.json`;
+    if (validation.typecheck === "passed" && validation.bundle === "passed" && existsSync(file) && validation.artifactDigests?.[name] === createHash("sha256").update(readFileSync(file)).digest("hex")) {
+      item.registryItem = name;
+      item.usage = [`npx shadcn@4.22.1 add https://migbits.com/r/${name}.json`, "Tested in a React 19.3 / TypeScript ES2022 consumer. Keep all included copyright and dependency notices.", ...(item.usage || [])];
+    }
+  }
+  for (const [file, digest] of Object.entries(sourceReview.checksums)) {
+    if (createHash("sha256").update(readFileSync(`resources/approved/${item.id}/original/${file}`)).digest("hex") !== digest) throw Error("Source changed since approval " + item.id);
+  }
+  // Light/dark variants keep their source, evidence and downloads but share a card.
+  if (item.originalReviewKey.includes("-dark.html")) continue;
+  const family = sourceReview.family;
+  if (["open-doodles", "open-peeps"].includes(family)) {
+    const members = approved.filter(r => r.originalReviewKey.startsWith(`p3:${family}:`));
+    if (members[0].id !== item.id) continue;
+    item.name = family === "open-doodles" ? "Open Doodles · 6 illustration poses" : "Open Peeps · 6 portrait variants";
+    item.description = "A creator-linked CC0 illustration collection by Pablo Stanley. Choose an individual variant, inspect its original SVG or download all six with provenance.";
+    item.variants = members.map(r => ({ label: r.name.replace(/^Open (Doodles|Peeps) · /, ""), previewUrl: r.previewUrl!, dataUrl: r.dataUrl!, downloadUrl: r.downloadUrl! }));
+    const collectionFiles: Record<string, string> = {};
+    for (const member of members) {
+      const archive = unzipSync(new Uint8Array(readFileSync("public" + member.downloadUrl)));
+      for (const [file, content] of Object.entries(archive)) collectionFiles[`${member.id}/${file}`] = new TextDecoder().decode(content);
+    }
+    collectionFiles["SOURCE_COLLECTION.json"] = JSON.stringify(members.map(r => ({ id: r.id, source: r.sourceUrl, revision: r.revision, review: r.review })), null, 2);
+    item.downloadUrl = zip(item.id + "-collection", collectionFiles);
+  }
+  const dark = item.originalReviewKey.endsWith(".html") ? approved.find((r) => r.originalReviewKey === item.originalReviewKey.replace(".html", "-dark.html")) : undefined;
+  if (dark) item.variants = [item, dark].map((r, i) => ({ label: i ? "Dark" : "Light", previewUrl: r.previewUrl!, dataUrl: r.dataUrl!, downloadUrl: r.downloadUrl! }));
+  list.push(item);
+}
 for (const item of list) {
   const first = [
     "inspo--hero-split-screen",
@@ -377,7 +420,7 @@ for (const item of list) {
     "illustration-workspace",
   ].indexOf(item.id);
   item.featured = first >= 0 ? first : (item.featured ?? 1000) + 20;
-  item.revision =
+  item.revision ||=
     imports.find((r) => r.id === item.id)?.revision ||
     (item.previewType === "component"
       ? JSON.parse(
@@ -396,6 +439,8 @@ for (const item of list) {
   )
     throw Error("Missing download " + item.id);
 }
+const libraryErrors = validateLibrary(list);
+if (libraryErrors.length) throw Error(libraryErrors.join("\n"));
 json("catalog/library/resources.json", list);
 json("catalog/library/build-report.json", {
   generatedAt: "2026-10-25",

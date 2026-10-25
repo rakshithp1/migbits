@@ -1,0 +1,29 @@
+{
+  "id": "approved-animata-content-scan",
+  "kind": "component",
+  "family": "animata",
+  "name": "content-scan",
+  "primary": "animata/feature-cards/content-scan.tsx",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "e7478b835a3b5c4153e71f60666634e91bb38813",
+  "sourceURL": "https://github.com/codse/animata/blob/e7478b835a3b5c4153e71f60666634e91bb38813/animata/feature-cards/content-scan.tsx",
+  "evidence": "https://raw.githubusercontent.com/codse/animata/e7478b835a3b5c4153e71f60666634e91bb38813/LICENSE.md",
+  "author": "Copyright (c) Animata",
+  "sourceDigest": "c755d6fd6d384b017792c6402a2f0709c6562c7e50ddd25419fc6643665c662b",
+  "files": [
+    "animata/feature-cards/content-scan.tsx",
+    "animata/feature-cards/content-scan.css",
+    "LICENSE",
+    "DEPENDENCY_NOTICES.txt"
+  ],
+  "checksums": {
+    "animata/feature-cards/content-scan.tsx": "cf15f90e0a25d694d54e8ddaeb7ee1a76720b4e3f2936536e571db0c412ed235",
+    "animata/feature-cards/content-scan.css": "214b3f8b3178e1064be53926bc6e1cec14aa2a75edede4f5b771094c711ef6f9",
+    "LICENSE": "ff78804659cbc28380d087cae79c494f243f8ef22b1e2ac5ec119b5de9314f05",
+    "DEPENDENCY_NOTICES.txt": "d639c22ae6118efec406e1b9c56041f3ae27eac13f94542ce67fc7107eb5c6cb"
+  },
+  "status": "APPROVED",
+  "batch": "B2-specialist-controls",
+  "originalReviewKey": "p3:animata:content-scan"
+}

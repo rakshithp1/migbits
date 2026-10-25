@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "path": "markup.html",
+      "content": "\n    <div class=\"border-b border-gray-200 bg-gray-100 px-4 py-2 text-gray-900\">\n      <p class=\"text-center font-medium\">\n        Lorem, ipsum dolor\n        <a href=\"#\" class=\"inline-block underline\"> sit amet consectetur </a>\n      </p>\n    </div>\n  ",
+      "sha256": "a7d1541312b445f701626e58f44c076360494fb0f574cd0c9091e122b250b7d2"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) Mark Mead\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98"
+    },
+    {
+      "path": "ORIGIN.json",
+      "content": "{\n  \"id\": \"approved-hyperui-announcements-1-html\",\n  \"kind\": \"block\",\n  \"family\": \"hyperui\",\n  \"name\": \"announcements/1.html\",\n  \"primary\": \"markup.html\",\n  \"license\": \"MIT\",\n  \"declaredLicense\": \"MIT\",\n  \"revision\": \"252efcfe39161db6e67cd877da001ee248d2bbf6\",\n  \"sourceURL\": \"https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/1.html\",\n  \"evidence\": \"https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE\",\n  \"author\": \"Copyright (c) Mark Mead\",\n  \"sourceDigest\": \"f069f1da872cd54ba242a41539ec963ad383329df9f825afe0b045e149895211\",\n  \"files\": [\n    \"markup.html\",\n    \"LICENSE\"\n  ],\n  \"checksums\": {\n    \"markup.html\": \"a7d1541312b445f701626e58f44c076360494fb0f574cd0c9091e122b250b7d2\",\n    \"LICENSE\": \"60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98\"\n  },\n  \"status\": \"APPROVED\",\n  \"batch\": \"B3-block-variants\",\n  \"originalReviewKey\": \"p3:hyperui:announcements/1.html\",\n  \"adaptations\": [\n    \"Original source files retained unchanged; MigBits isolated preview scaffold, fixture props and utility wiring are separate adaptations.\",\n    \"HyperUI body-only preview excludes upstream website wrapper, scripts and fonts. Decorative background names do not imply animation.\"\n  ]\n}",
+      "sha256": "f28aee52c05225543349b6fae81f3c508555741f966543bb8732673314f46a88"
+    },
+    {
+      "path": "README-MIGBITS.md",
+      "content": "# HyperUI announcements 1\n\nSource: https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/1.html\nRevision: 252efcfe39161db6e67cd877da001ee248d2bbf6\nLicense: MIT\n\nRetain all original source and dependency notices. Original files are unchanged. Previews use separate MigBits fixtures; review original prop interfaces, framework and dependency requirements before use. Native Figma and complete template packages are not implied.\n",
+      "sha256": "12ccd839ca83979c69466a4ffd9ecd5503609cc68d4d641c0588855aade9ae48"
+    }
+  ],
+  "installation": [
+    "Copy the original source files and their required CSS together. Retain LICENSE and all accompanying notices.",
+    "Inspect the original interfaces and install only the dependencies your consuming example uses. Isolated preview validation is not a consumer-project or accessibility certification."
+  ],
+  "resource": {
+    "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6"
+  }
+}

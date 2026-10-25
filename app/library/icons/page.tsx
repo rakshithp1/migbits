@@ -1,4 +1,5 @@
-import { GalleryHeader, GalleryFooter } from "../gallery";
+import { GalleryHeader, GalleryFooter, ResourceCard } from "../gallery";
+import { libraryResources } from "../../../lib/resource-library";
 import { SectionNavigation } from "../section-navigation";
 import { IconExplorer } from "../../open-source/icons/icon-explorer";
 import pack from "../../../catalog/community/component-pack.json";
@@ -27,6 +28,7 @@ export default function IconsPage() {
           </p>
         </section>
         <SectionNavigation active="icons" />
+        {libraryResources.some(r => r.category === "icons") && <section aria-label="SVG icon collections" className="mb-grid">{libraryResources.filter(r => r.category === "icons").map(item => <ResourceCard key={item.id} item={item} />)}</section>}
         <IconExplorer
           licenseNotice={notice}
           version={pack.dependencies["lucide-react"]}

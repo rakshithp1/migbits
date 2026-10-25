@@ -1,0 +1,24 @@
+{
+  "id": "approved-open-color",
+  "kind": "palette",
+  "family": "open-color",
+  "name": "Open Color palette data",
+  "license": "MIT",
+  "declaredLicense": "MIT, heeyeun 2016",
+  "revision": "3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3",
+  "sourceURL": "https://github.com/yeun/open-color/blob/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/open-color.json",
+  "evidence": "https://github.com/yeun/open-color/blob/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/LICENSE",
+  "author": "Copyright (c) 2016 heeyeun",
+  "sourceDigest": "02f64b2366aa69cb073d427697b38e19d8cf9cc253ac583e5f9ffd707785ca27",
+  "files": [
+    "open-color.json",
+    "LICENSE"
+  ],
+  "checksums": {
+    "open-color.json": "fdf2f910ba6dc9c907a46274ea74668813e65d6a5707f03167368bd3a671eb98",
+    "LICENSE": "62f1f7f590dd772b61fe8e07eff8c52de11d545f3ba079bc25b38a82a6ea4bae"
+  },
+  "status": "APPROVED",
+  "batch": "B1-foundations-assets",
+  "originalReviewKey": "p5:open-color"
+}

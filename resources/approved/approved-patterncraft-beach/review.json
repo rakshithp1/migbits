@@ -1,0 +1,25 @@
+{
+  "id": "approved-patterncraft-beach",
+  "kind": "background",
+  "family": "patterncraft",
+  "name": "Beach",
+  "primary": "src/data/patterns.ts",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+  "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L4",
+  "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+  "author": "Copyright (c) 2025 Megh Bari",
+  "sourceDigest": "e17de4b0a58a1cbe8f862361b3cebe6eb789c4611e54ad9f7067fcc6902b7d87",
+  "files": [
+    "pattern.tsx",
+    "LICENSE"
+  ],
+  "checksums": {
+    "pattern.tsx": "36d845e94084acc3edd25ee963adbaa6cb62d5dd86cded6a0136c6c20e513505",
+    "LICENSE": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca"
+  },
+  "status": "APPROVED",
+  "batch": "B4-backgrounds",
+  "originalReviewKey": "p3:patterncraft:beach"
+}

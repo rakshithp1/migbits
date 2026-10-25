@@ -1,0 +1,25 @@
+{
+  "id": "approved-patterncraft-aurora-waves",
+  "kind": "background",
+  "family": "patterncraft",
+  "name": "Aurora Waves",
+  "primary": "src/data/patterns.ts",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+  "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L3206",
+  "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+  "author": "Copyright (c) 2025 Megh Bari",
+  "sourceDigest": "cc82f9b2f7e89845a210706c10fd2504f70728f3e409f4189ca51f1d7f5aa359",
+  "files": [
+    "pattern.tsx",
+    "LICENSE"
+  ],
+  "checksums": {
+    "pattern.tsx": "6f65b811421eb3e240fc81048497ead234aeffa0ee99a0f9d0c394d20c2a2825",
+    "LICENSE": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca"
+  },
+  "status": "APPROVED",
+  "batch": "B4-backgrounds",
+  "originalReviewKey": "p3:patterncraft:aurora-waves"
+}

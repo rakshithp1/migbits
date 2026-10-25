@@ -105,7 +105,7 @@ test("reference geometry stays responsive and dropdowns expose every category", 
   await page.getByLabel("Open navigation", { exact: true }).click();
   await page
     .getByRole("navigation", { name: "Mobile library navigation", exact: true })
-    .getByRole("link", { name: "Figma UI kits", exact: true })
+    .getByRole("link", { name: "Figma resources", exact: true })
     .click();
   await expect(page).toHaveURL(/\/library\/figma$/);
   await page.goto("/library");

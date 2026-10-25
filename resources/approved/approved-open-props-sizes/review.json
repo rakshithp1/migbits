@@ -1,0 +1,25 @@
+{
+  "id": "approved-open-props-sizes",
+  "kind": "tokens",
+  "family": "open-props",
+  "name": "sizes",
+  "primary": "src/props.sizes.css",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+  "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.sizes.css",
+  "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+  "author": "Copyright (c) 2021 Adam Argyle",
+  "sourceDigest": "91ea45b255e9c95f8ce75c03e15781aa4ef5a0e055025c39ea49b66601bc7438",
+  "files": [
+    "src/props.sizes.css",
+    "LICENSE"
+  ],
+  "checksums": {
+    "src/props.sizes.css": "9df4d9369105ef74288efcf9c0261d2ef9893e09669f25637e46a87f8109d583",
+    "LICENSE": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e"
+  },
+  "status": "APPROVED",
+  "batch": "B1-foundations-assets",
+  "originalReviewKey": "p3:open-props:sizes"
+}

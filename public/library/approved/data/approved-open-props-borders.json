@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "path": "src/props.borders.css",
+      "content": ":where(html) {\n  --border-size-1: 1px;\n  --border-size-2: 2px;\n  --border-size-3: 5px;\n  --border-size-4: 10px;\n  --border-size-5: 25px;\n  --radius-1: 2px;\n  --radius-2: 5px;\n  --radius-3: 1rem;\n  --radius-4: 2rem;\n  --radius-5: 4rem;\n  --radius-6: 8rem;\n  --radius-drawn-1: 255px 15px 225px 15px / 15px 225px 15px 255px;\n  --radius-drawn-2: 125px 10px 20px 185px / 25px 205px 205px 25px;\n  --radius-drawn-3: 15px 255px 15px 225px / 225px 15px 255px 15px;\n  --radius-drawn-4: 15px 25px 155px 25px / 225px 150px 25px 115px;\n  --radius-drawn-5: 250px 25px 15px 20px / 15px 80px 105px 115px;\n  --radius-drawn-6: 28px 100px 20px 15px / 150px 30px 205px 225px;\n  --radius-round: 1e5px;\n  --radius-blob-1: 30% 70% 70% 30% / 53% 30% 70% 47%;\n  --radius-blob-2: 53% 47% 34% 66% / 63% 46% 54% 37%;\n  --radius-blob-3: 37% 63% 56% 44% / 49% 56% 44% 51%;\n  --radius-blob-4: 63% 37% 37% 63% / 43% 37% 63% 57%;\n  --radius-blob-5: 49% 51% 48% 52% / 57% 44% 56% 43%;\n  --radius-conditional-1: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-1));\n  --radius-conditional-2: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-2));\n  --radius-conditional-3: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-3));\n  --radius-conditional-4: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-4));\n  --radius-conditional-5: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-5));\n  --radius-conditional-6: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-6));\n}\n",
+      "sha256": "90a7d2cc5664647983d80d5c25fea69bc8b0a57ad9898ecd2c22f33cb742fda6"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2021 Adam Argyle\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e"
+    },
+    {
+      "path": "ORIGIN.json",
+      "content": "{\n  \"id\": \"approved-open-props-borders\",\n  \"kind\": \"tokens\",\n  \"family\": \"open-props\",\n  \"name\": \"borders\",\n  \"primary\": \"src/props.borders.css\",\n  \"license\": \"MIT\",\n  \"declaredLicense\": \"MIT\",\n  \"revision\": \"f39ab7c377a0e047f930982e3611bbc95254a260\",\n  \"sourceURL\": \"https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.borders.css\",\n  \"evidence\": \"https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE\",\n  \"author\": \"Copyright (c) 2021 Adam Argyle\",\n  \"sourceDigest\": \"42e165db5a710c15fd88f8df35e6f5574ed8976d1947f00b54fa9034b69605e9\",\n  \"files\": [\n    \"src/props.borders.css\",\n    \"LICENSE\"\n  ],\n  \"checksums\": {\n    \"src/props.borders.css\": \"90a7d2cc5664647983d80d5c25fea69bc8b0a57ad9898ecd2c22f33cb742fda6\",\n    \"LICENSE\": \"fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e\"\n  },\n  \"status\": \"APPROVED\",\n  \"batch\": \"B1-foundations-assets\",\n  \"originalReviewKey\": \"p3:open-props:borders\",\n  \"adaptations\": [\n    \"Original source files retained unchanged; MigBits isolated preview scaffold, fixture props and utility wiring are separate adaptations.\",\n    \"HyperUI body-only preview excludes upstream website wrapper, scripts and fonts. Decorative background names do not imply animation.\"\n  ]\n}",
+      "sha256": "3d3e3f55a5731d9bda0c7a218ec390880cb1828c909cf698d90d73bc79384f4a"
+    },
+    {
+      "path": "README-MIGBITS.md",
+      "content": "# Open Props · borders\n\nSource: https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.borders.css\nRevision: f39ab7c377a0e047f930982e3611bbc95254a260\nLicense: MIT\n\nRetain all original source and dependency notices. Original files are unchanged. Previews use separate MigBits fixtures; review original prop interfaces, framework and dependency requirements before use. Native Figma and complete template packages are not implied.\n",
+      "sha256": "63ecb8fcb0e688a9d6f459bad3fd4f254c5610d263c4e00913228d73f1f247e1"
+    }
+  ],
+  "installation": [
+    "Copy the original source files and their required CSS together. Retain LICENSE and all accompanying notices.",
+    "Inspect the original interfaces and install only the dependencies your consuming example uses. Isolated preview validation is not a consumer-project or accessibility certification."
+  ],
+  "resource": {
+    "revision": "f39ab7c377a0e047f930982e3611bbc95254a260"
+  }
+}

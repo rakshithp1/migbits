@@ -1,0 +1,27 @@
+{
+  "id": "approved-kokonut-ui-signature-pad",
+  "kind": "component",
+  "family": "kokonut-ui",
+  "name": "signature-pad",
+  "primary": "components/kokonutui/signature-pad.tsx",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "3456b061a3371e7b9aa158c0bb75dca04f227239",
+  "sourceURL": "https://github.com/kokonut-labs/kokonutui/blob/3456b061a3371e7b9aa158c0bb75dca04f227239/components/kokonutui/signature-pad.tsx",
+  "evidence": "https://raw.githubusercontent.com/kokonut-labs/kokonutui/3456b061a3371e7b9aa158c0bb75dca04f227239/LICENSE",
+  "author": "Copyright (c) 2025 kokonutUI",
+  "sourceDigest": "85f3db3805c539e6652b0a0411797c2b2e5ce296bdcba81abbabc667ecbf060d",
+  "files": [
+    "components/kokonutui/signature-pad.tsx",
+    "LICENSE",
+    "DEPENDENCY_NOTICES.txt"
+  ],
+  "checksums": {
+    "components/kokonutui/signature-pad.tsx": "361c6f35d6fb2b6155d1f3b0d80ccd5c6fabc8fc78b85dd0508c48849886ce45",
+    "LICENSE": "b2e018ad1fd564608cc1ee0c2ad675ce5202c8ed9f5f68e6d09e7b6bc881d5d2",
+    "DEPENDENCY_NOTICES.txt": "d639c22ae6118efec406e1b9c56041f3ae27eac13f94542ce67fc7107eb5c6cb"
+  },
+  "status": "APPROVED",
+  "batch": "B2-specialist-controls",
+  "originalReviewKey": "p3:kokonut-ui:signature-pad"
+}

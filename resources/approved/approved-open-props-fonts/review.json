@@ -1,0 +1,25 @@
+{
+  "id": "approved-open-props-fonts",
+  "kind": "tokens",
+  "family": "open-props",
+  "name": "fonts",
+  "primary": "src/props.fonts.css",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+  "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.fonts.css",
+  "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+  "author": "Copyright (c) 2021 Adam Argyle",
+  "sourceDigest": "d0023ee1636410f34c7c33487bbb4ae9f887374d1be1833f127fd6516cab9a25",
+  "files": [
+    "src/props.fonts.css",
+    "LICENSE"
+  ],
+  "checksums": {
+    "src/props.fonts.css": "ba041962ded7cb37a69021fc8ebb84ca586269bb36e6a4a8b4de34630068727b",
+    "LICENSE": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e"
+  },
+  "status": "APPROVED",
+  "batch": "B1-foundations-assets",
+  "originalReviewKey": "p3:open-props:fonts"
+}

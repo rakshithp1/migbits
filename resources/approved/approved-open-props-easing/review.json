@@ -1,0 +1,25 @@
+{
+  "id": "approved-open-props-easing",
+  "kind": "tokens",
+  "family": "open-props",
+  "name": "easing",
+  "primary": "src/props.easing.css",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+  "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.easing.css",
+  "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+  "author": "Copyright (c) 2021 Adam Argyle",
+  "sourceDigest": "1433fe896c087051b99342f5e2417492106d52b841606631300415802419afba",
+  "files": [
+    "src/props.easing.css",
+    "LICENSE"
+  ],
+  "checksums": {
+    "src/props.easing.css": "0767db9d3c7a630d21cd399cf9797357713a4b675e48c8281af62cddd8f01ee0",
+    "LICENSE": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e"
+  },
+  "status": "APPROVED",
+  "batch": "B1-foundations-assets",
+  "originalReviewKey": "p3:open-props:easing"
+}

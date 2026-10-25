@@ -1,0 +1,25 @@
+{
+  "id": "approved-patterncraft-dark-grid-lines",
+  "kind": "background",
+  "family": "patterncraft",
+  "name": "Dark Grid Lines",
+  "primary": "src/data/patterns.ts",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+  "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L5302",
+  "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+  "author": "Copyright (c) 2025 Megh Bari",
+  "sourceDigest": "087e2460e06bd224b28b3361b83d0446b803d8d410954060dc28cc78f3a1801b",
+  "files": [
+    "pattern.tsx",
+    "LICENSE"
+  ],
+  "checksums": {
+    "pattern.tsx": "ea6277bae50915c522b53c552526492fcd2e6ba85a87ac4b3689b24560db57d0",
+    "LICENSE": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca"
+  },
+  "status": "APPROVED",
+  "batch": "B4-backgrounds",
+  "originalReviewKey": "p3:patterncraft:dark-grid-lines"
+}

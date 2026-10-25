@@ -1,0 +1,25 @@
+{
+  "id": "approved-patterncraft-top-gradient-radial",
+  "kind": "background",
+  "family": "patterncraft",
+  "name": "Top Gradient Radial",
+  "primary": "src/data/patterns.ts",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+  "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L44",
+  "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+  "author": "Copyright (c) 2025 Megh Bari",
+  "sourceDigest": "eee3dddd439ffd3e7d687837995101da15fb5947db5ff5402806f2b11de692d1",
+  "files": [
+    "pattern.tsx",
+    "LICENSE"
+  ],
+  "checksums": {
+    "pattern.tsx": "482c99e44d556b984c49304376723526bc59664cf0cd251a41cda46e54e5754e",
+    "LICENSE": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca"
+  },
+  "status": "APPROVED",
+  "batch": "B4-backgrounds",
+  "originalReviewKey": "p3:patterncraft:top-gradient-radial"
+}

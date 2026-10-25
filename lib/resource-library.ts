@@ -1,6 +1,9 @@
 import catalog from "../catalog/library/resources.json";
 
-export const resourceCategories = [
+const categoryDefinitions = [
+  { id: "backgrounds", label: "Backgrounds", description: "Static CSS patterns and decorative backgrounds, with original source and notices.", icon: "backgrounds" },
+  { id: "foundations", label: "Design tokens", description: "Reusable spacing, typography, shadows and theme foundations.", icon: "foundations" },
+  { id: "icons", label: "Icons", description: "Explore coherent SVG collections with their original attribution.", icon: "icons" },
   {
     id: "shaders",
     label: "Shaders",
@@ -38,7 +41,7 @@ export const resourceCategories = [
   },
   {
     id: "colors",
-    label: "Colors & theory",
+    label: "Colour theory",
     description:
       "Explore palettes, build color harmonies and check text contrast.",
     icon: "colors",
@@ -47,17 +50,19 @@ export const resourceCategories = [
     id: "illustrations",
     label: "Illustrations",
     description:
-      "Original, editable SVGs. Pick a color and make them your own.",
+      "Editable SVG illustrations with source, creator and license information.",
     icon: "illustrations",
   },
   {
     id: "figma",
-    label: "Figma UI kits",
+    label: "Figma resources",
     description:
       "Original UI kits, editable vectors and native component generators for Figma.",
     icon: "figma",
   },
 ] as const;
+const sectionOrder = ["templates", "blocks", "components", "typography", "colors", "illustrations", "figma", "icons", "backgrounds", "foundations", "motion", "shaders"];
+export const resourceCategories = [...categoryDefinitions].sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
 export type ResourceCategory = (typeof resourceCategories)[number]["id"];
 export interface LibraryResource {
   id: string;
@@ -90,33 +95,16 @@ export interface LibraryResource {
   licenseUrl?: string;
   usage?: string[];
   revision?: string;
+  registryItem?: string;
+  variants?: { label: string; previewUrl: string; dataUrl: string; downloadUrl: string }[];
+  review?: { status: "APPROVED"; sourceDigest: string; evidence: string; notices: string[]; preview: "passed"; checkedAt: string };
 }
 export const libraryResources = catalog as LibraryResource[];
-const sectionOrder = [
-  "components",
-  "icons",
-  "blocks",
-  "templates",
-  "typography",
-  "colors",
-  "illustrations",
-  "figma",
-  "motion",
-  "shaders",
-];
 export const librarySections = [
   ...resourceCategories.map((category) => ({
     ...category,
     count: libraryResources.filter((r) => r.category === category.id).length,
   })),
-  {
-    id: "icons",
-    label: "Icons",
-    description:
-      "Find, customize, copy and download 36 Lucide SVG icons with their notices.",
-    icon: "icons",
-    count: 36,
-  },
   {
     id: "motion",
     label: "Motion & backgrounds",
@@ -125,18 +113,25 @@ export const librarySections = [
     icon: "motion",
     count: 8,
   },
-].sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
+].filter((section) => section.count > 0 || section.id === "icons").sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
+
+export function resourceUsage(item: Pick<LibraryResource, "license">) {
+  if (item.license === "OFL-1.1") return { saleOfCopies: false, summary: "Commercial design use and redistribution with the OFL notice. Font files cannot be sold by themselves; preserve reserved-name requirements." };
+  if (item.license === "CC0-1.0") return { saleOfCopies: true, summary: "Copy, modify and redistribute under the creator’s CC0 dedication. Creator credit is appreciated; trademark and endorsement rights are separate." };
+  if (["MIT", "ISC", "BSD-2-Clause", "BSD-3-Clause", "Apache-2.0"].includes(item.license)) return { saleOfCopies: true, summary: "Commercial use, modification and redistribution permitted for the reviewed source. Preserve the complete copyright, license and applicable notices; retain required change notices." };
+  return { saleOfCopies: false, summary: "Read this item’s exact license and attribution requirements before redistributing source or assets." };
+}
 export function findLibraryResources({
   category = "all",
   query = "",
 }: { category?: string; query?: string } = {}) {
-  const words = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  const words = query.toLowerCase().replace(/colour/g, "color").replace(/templets?/g, "template").trim().split(/\s+/).filter(Boolean);
   return libraryResources
     .filter(
       (item) =>
         (category === "all" || item.category === category) &&
         words.every((word) =>
-          [item.name, item.description, item.author, item.format, ...item.tags]
+          [item.name, item.description, item.category, item.author, item.format, ...item.tags]
             .join(" ")
             .toLowerCase()
             .includes(word),

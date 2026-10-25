@@ -1,0 +1,24 @@
+{
+  "id": "approved-open-doodles-sprinting-svg",
+  "kind": "illustration",
+  "family": "open-doodles",
+  "name": "sprinting.svg",
+  "license": "CC0-1.0",
+  "declaredLicense": "CC0-1.0",
+  "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+  "sourceURL": "https://opendoodles.s3-us-west-1.amazonaws.com/sprinting.svg",
+  "evidence": "https://www.opendoodles.com/about",
+  "author": "Pablo Stanley; CC0 dedication",
+  "sourceDigest": "c0e2a397007fa76025d85ca4c8afb159b42066d70d1b03718bacc6dc8093f787",
+  "files": [
+    "illustration.svg",
+    "LICENSE"
+  ],
+  "checksums": {
+    "illustration.svg": "de4c130718c40ec50599361df3ba3db12e1d199dc8d26302f95c8b2cf03e5af0",
+    "LICENSE": "372f70d283209ea3e7dcefe8a97dbb326a6ce3f72b8568b291c8a5e1f2e69896"
+  },
+  "status": "APPROVED",
+  "batch": "B5-illustration-samples",
+  "originalReviewKey": "p3:open-doodles:sprinting.svg"
+}

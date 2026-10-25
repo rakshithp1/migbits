@@ -1,0 +1,25 @@
+{
+  "id": "approved-patterncraft-pastel-wave",
+  "kind": "background",
+  "family": "patterncraft",
+  "name": "Pastel Wave",
+  "primary": "src/data/patterns.ts",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+  "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L6632",
+  "evidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+  "author": "Copyright (c) 2025 Megh Bari",
+  "sourceDigest": "b86fad81d98bc815294c18303dd4fea8ae57ba441b0420ff9bc54a07a5bd1ef2",
+  "files": [
+    "pattern.tsx",
+    "LICENSE"
+  ],
+  "checksums": {
+    "pattern.tsx": "c54dc868c4312d52ba22bf876e3f47edeb575d0d71dd3f41eb028570840b31a8",
+    "LICENSE": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca"
+  },
+  "status": "APPROVED",
+  "batch": "B4-backgrounds",
+  "originalReviewKey": "p3:patterncraft:pastel-wave"
+}

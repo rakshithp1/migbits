@@ -1,0 +1,57 @@
+/* Original blue atmosphere. Only transform/opacity animate on the ambient layer. */
+.mb-site { position: relative; isolation: isolate; }
+.mb-site::before {
+  content: "";
+  position: fixed;
+  inset: -14vh -12vw;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 45% 38% at 20% 25%, #145cff32, transparent 75%),
+    radial-gradient(ellipse 42% 48% at 85% 65%, #196bd638, transparent 75%),
+    radial-gradient(ellipse 40% 30% at 30% 90%, #414bdb24, transparent 75%);
+  animation: mb-blue-atmosphere 24s ease-in-out infinite alternate;
+}
+@keyframes mb-blue-atmosphere {
+  0% { transform: translate3d(-2%, -2%, 0) scale(1); opacity: .65; }
+  55% { transform: translate3d(3%, 2%, 0) scale(1.06); opacity: 1; }
+  100% { transform: translate3d(-1%, 4%, 0) scale(1.02); opacity: .8; }
+}
+.mb-home-hero .mb-flow-background svg { animation: mb-hero-current 17s ease-in-out infinite alternate; transform-origin: center; }
+@keyframes mb-hero-current {
+  from { transform: translate3d(-2%, -1%, 0) scale(1.04) rotate(-3deg); }
+  to { transform: translate3d(3%, 3%, 0) scale(1.13) rotate(4deg); }
+}
+.mb-site :where(a, button, input, select, textarea, summary) {
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.mb-site :where(button, .mb-button, .mb-blue-button, .mb-dark-button):active { transform: scale(.97); }
+.mb-site :where(input, select, textarea):focus-visible { outline: 2px solid #8eb7ff; outline-offset: 3px; box-shadow: 0 0 0 5px #2779ff1a; }
+.mb-site :where(a, button, summary):focus-visible { outline: 2px solid #8eb7ff; outline-offset: 4px; }
+.mb-site .mb-card { transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease; }
+@media (hover: hover) {
+  .mb-site .mb-card:hover { transform: translateY(-5px); box-shadow: 0 16px 44px #124bb31c; }
+  .mb-site .mb-home-category-grid > a:hover { transform: translateY(-4px); border-color: #528bf377; }
+  .mb-site :where(.mb-blue-button, .mb-header-primary):hover { box-shadow: 0 5px 28px #2672ff50; }
+  .mb-site .mb-header nav a:hover { transform: translateY(-1px); }
+}
+.mb-motion-toggle {
+  position: fixed; left: 16px; bottom: 16px; z-index: 80;
+  display: inline-flex; align-items: center; gap: 7px; padding: 9px 12px;
+  color: #dce8ff; background: #101a2eea; border: 1px solid #5076b566;
+  border-radius: 999px; font-size: 11px; cursor: pointer;
+  box-shadow: 0 5px 24px #0004;
+}
+.mb-motion-toggle:focus-visible { outline: 2px solid #8eb7ff; outline-offset: 3px; }
+.mb-motion-toggle:disabled { cursor: default; }
+html[data-mb-motion="paused"] .mb-site::before,
+html[data-mb-motion="paused"] .mb-flow-background svg { animation-play-state: paused; }
+html[data-mb-motion="paused"] .mb-site *, html[data-mb-motion="paused"] .mb-site *::before, html[data-mb-motion="paused"] .mb-site *::after { animation-play-state: paused !important; }
+html[data-mb-motion="paused"] .mb-site :where(a, button, input, select, textarea, summary, .mb-card) { transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .mb-site::before, .mb-flow-background svg { animation: none !important; transform: none !important; }
+  .mb-site *, .mb-site *::before, .mb-site *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition: none !important; scroll-behavior: auto !important; }
+}
+.mb-registry-install { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px; border-bottom: 1px solid #314262; background: #0d172a; }
+.mb-registry-install code { font-size: 11px; overflow-wrap: anywhere; color: #d9e8ff; }
+@media(max-width:600px) { .mb-registry-install { align-items: stretch; flex-direction: column; } }

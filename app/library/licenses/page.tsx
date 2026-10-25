@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { GalleryHeader, GalleryFooter } from "../gallery";
+import { libraryResources } from "../../../lib/resource-library";
 export const metadata = { title: "Licenses & resale — Migbits" };
 export default function Licenses() {
   return (
@@ -67,6 +68,16 @@ export default function Licenses() {
             execution inside a Figma account is not yet verified. The README
             explains quick SVG import and how to run the development plugin.
           </p>
+        </section>
+        <section>
+          <h2>CC0 illustration sources</h2>
+          <p>Selected Open Doodles and Open Peeps SVGs retain Pablo Stanley&apos;s creator-linked CC0 dedication. You may copy, modify and redistribute these exact assets. Credit is appreciated; CC0 does not grant trademark, privacy or endorsement rights.</p>
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode.en">Read the CC0 dedication ↗</a>
+        </section>
+        <section>
+          <h2>New reviewed collections and examples</h2>
+          <p>Original source, pinned revisions and complete notices are retained separately from Migbits preview and installation adaptations. These isolated renders are not a blanket accessibility or backend certification.</p>
+          <ul>{libraryResources.filter(item => item.review).map(item => <li key={item.id}><Link href={`/library/resource/${item.id}`}>{item.name}</Link>{" · "}{item.author}{" · "}{item.license}{" · "}<a href={item.licenseUrl}>Complete notices</a></li>)}</ul>
         </section>
         <section>
           <h2>Attribution records</h2>

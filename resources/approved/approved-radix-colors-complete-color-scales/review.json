@@ -1,0 +1,33 @@
+{
+  "id": "approved-radix-colors-complete-color-scales",
+  "kind": "palette",
+  "family": "radix-colors",
+  "name": "complete-color-scales",
+  "primary": "src/index.ts",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "dbdb85470547c7d34b9001f48fddb08ded335979",
+  "sourceURL": "https://github.com/radix-ui/colors/blob/dbdb85470547c7d34b9001f48fddb08ded335979/src/index.ts",
+  "evidence": "https://raw.githubusercontent.com/radix-ui/colors/dbdb85470547c7d34b9001f48fddb08ded335979/LICENSE",
+  "author": "Copyright (c) 2021-2022 Modulz; Copyright (c) 2022-Present WorkOS",
+  "sourceDigest": "4ca1b937c8937ae83cf347d097779eb098b2110f1db8d51d0fec2919806744bf",
+  "files": [
+    "src/index.ts",
+    "src/dark.ts",
+    "src/light.ts",
+    "src/blackA.ts",
+    "src/whiteA.ts",
+    "LICENSE"
+  ],
+  "checksums": {
+    "src/index.ts": "80673dd8ffc131129bf797f57e288d1fa429bb817fcdea4012c2ab64cf4d2e52",
+    "src/dark.ts": "d8599fe69a4454340b2bc82e003a210caa6b79082be9a1b7f13429ff03826c68",
+    "src/light.ts": "1a9725486609d36b469caa3b84b8de4348b7f2f05d45905127637b988329acbd",
+    "src/blackA.ts": "930205059fbb077241db60753dc338d2354c85fe7ce86ccbccc734836e3371fb",
+    "src/whiteA.ts": "2b8ed559a91709560e51c847e5a20cd14473334acbf26e34fb253f0ab61c9868",
+    "LICENSE": "d981bc30e0d78b9ffc8f279fcaa274ea0444ff51d983548a609397d5c8a42dc2"
+  },
+  "status": "APPROVED",
+  "batch": "B1-foundations-assets",
+  "originalReviewKey": "p3:radix-colors:complete-color-scales"
+}

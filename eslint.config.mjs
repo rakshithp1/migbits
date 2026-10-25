@@ -16,6 +16,9 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     "tmp/**",
     "public/imported/**/previews/**",
+    // Immutable upstream snapshots are linted in their own environments, not
+    // rewritten to match the host application's React compiler conventions.
+    "resources/approved/**/original/**",
   ]),
 ]);
 

@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "path": "src/props.sizes.css",
+      "content": ":where(html) {\n  --size-000: -.5rem;\n  --size-00: -.25rem;\n  --size-1: .25rem;\n  --size-2: .5rem;\n  --size-3: 1rem;\n  --size-4: 1.25rem;\n  --size-5: 1.5rem;\n  --size-6: 1.75rem;\n  --size-7: 2rem;\n  --size-8: 3rem;\n  --size-9: 4rem;\n  --size-10: 5rem;\n  --size-11: 7.5rem;\n  --size-12: 10rem;\n  --size-13: 15rem;\n  --size-14: 20rem;\n  --size-15: 30rem;\n  --size-px-000: -8px;\n  --size-px-00: -4px;\n  --size-px-1: 4px;\n  --size-px-2: 8px;\n  --size-px-3: 16px;\n  --size-px-4: 20px;\n  --size-px-5: 24px;\n  --size-px-6: 28px;\n  --size-px-7: 32px;\n  --size-px-8: 48px;\n  --size-px-9: 64px;\n  --size-px-10: 80px;\n  --size-px-11: 120px;\n  --size-px-12: 160px;\n  --size-px-13: 240px;\n  --size-px-14: 320px;\n  --size-px-15: 480px;\n  --size-fluid-1: clamp(.5rem, 1vw, 1rem);\n  --size-fluid-2: clamp(1rem, 2vw, 1.5rem);\n  --size-fluid-3: clamp(1.5rem, 3vw, 2rem);\n  --size-fluid-4: clamp(2rem, 4vw, 3rem);\n  --size-fluid-5: clamp(4rem, 5vw, 5rem);\n  --size-fluid-6: clamp(5rem, 7vw, 7.5rem);\n  --size-fluid-7: clamp(7.5rem, 10vw, 10rem);\n  --size-fluid-8: clamp(10rem, 20vw, 15rem);\n  --size-fluid-9: clamp(15rem, 30vw, 20rem);\n  --size-fluid-10: clamp(20rem, 40vw, 30rem);\n  --size-content-1: 20ch;\n  --size-content-2: 45ch;\n  --size-content-3: 60ch;\n  --size-header-1: 20ch;\n  --size-header-2: 25ch;\n  --size-header-3: 35ch;\n  --size-xxs: 240px;\n  --size-xs: 360px;\n  --size-sm: 480px;\n  --size-md: 768px;\n  --size-lg: 1024px;\n  --size-xl: 1440px;\n  --size-xxl: 1920px;\n  --size-relative-000: -.5ch;\n  --size-relative-00: -.25ch;\n  --size-relative-1: .25ch;\n  --size-relative-2: .5ch;\n  --size-relative-3: 1ch;\n  --size-relative-4: 1.25ch;\n  --size-relative-5: 1.5ch;\n  --size-relative-6: 1.75ch;\n  --size-relative-7: 2ch;\n  --size-relative-8: 3ch;\n  --size-relative-9: 4ch;\n  --size-relative-10: 5ch;\n  --size-relative-11: 7.5ch;\n  --size-relative-12: 10ch;\n  --size-relative-13: 15ch;\n  --size-relative-14: 20ch;\n  --size-relative-15: 30ch;\n}\n",
+      "sha256": "9df4d9369105ef74288efcf9c0261d2ef9893e09669f25637e46a87f8109d583"
+    },
+    {
+      "path": "LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2021 Adam Argyle\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "sha256": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e"
+    },
+    {
+      "path": "ORIGIN.json",
+      "content": "{\n  \"id\": \"approved-open-props-sizes\",\n  \"kind\": \"tokens\",\n  \"family\": \"open-props\",\n  \"name\": \"sizes\",\n  \"primary\": \"src/props.sizes.css\",\n  \"license\": \"MIT\",\n  \"declaredLicense\": \"MIT\",\n  \"revision\": \"f39ab7c377a0e047f930982e3611bbc95254a260\",\n  \"sourceURL\": \"https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.sizes.css\",\n  \"evidence\": \"https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE\",\n  \"author\": \"Copyright (c) 2021 Adam Argyle\",\n  \"sourceDigest\": \"91ea45b255e9c95f8ce75c03e15781aa4ef5a0e055025c39ea49b66601bc7438\",\n  \"files\": [\n    \"src/props.sizes.css\",\n    \"LICENSE\"\n  ],\n  \"checksums\": {\n    \"src/props.sizes.css\": \"9df4d9369105ef74288efcf9c0261d2ef9893e09669f25637e46a87f8109d583\",\n    \"LICENSE\": \"fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e\"\n  },\n  \"status\": \"APPROVED\",\n  \"batch\": \"B1-foundations-assets\",\n  \"originalReviewKey\": \"p3:open-props:sizes\",\n  \"adaptations\": [\n    \"Original source files retained unchanged; MigBits isolated preview scaffold, fixture props and utility wiring are separate adaptations.\",\n    \"HyperUI body-only preview excludes upstream website wrapper, scripts and fonts. Decorative background names do not imply animation.\"\n  ]\n}",
+      "sha256": "7b8f1507ea04004301b559b46ab018a4ff836f1128c023da1172fba30967cb54"
+    },
+    {
+      "path": "README-MIGBITS.md",
+      "content": "# Open Props · sizes\n\nSource: https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.sizes.css\nRevision: f39ab7c377a0e047f930982e3611bbc95254a260\nLicense: MIT\n\nRetain all original source and dependency notices. Original files are unchanged. Previews use separate MigBits fixtures; review original prop interfaces, framework and dependency requirements before use. Native Figma and complete template packages are not implied.\n",
+      "sha256": "12c90c4fd93706766214a66731a804498f922d86b323cf67dbad5356ee80dfec"
+    }
+  ],
+  "installation": [
+    "Copy the original source files and their required CSS together. Retain LICENSE and all accompanying notices.",
+    "Inspect the original interfaces and install only the dependencies your consuming example uses. Isolated preview validation is not a consumer-project or accessibility certification."
+  ],
+  "resource": {
+    "revision": "f39ab7c377a0e047f930982e3611bbc95254a260"
+  }
+}

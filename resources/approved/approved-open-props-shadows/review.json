@@ -1,0 +1,27 @@
+{
+  "id": "approved-open-props-shadows",
+  "kind": "tokens",
+  "family": "open-props",
+  "name": "shadows",
+  "primary": "src/props.shadows.css",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+  "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.shadows.css",
+  "evidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+  "author": "Copyright (c) 2021 Adam Argyle",
+  "sourceDigest": "aebef34c2846072017a2030ad8b5101c5e928804f8422d39b31f176b8dc6ace0",
+  "files": [
+    "src/props.shadows.css",
+    "src/props.media.css",
+    "LICENSE"
+  ],
+  "checksums": {
+    "src/props.shadows.css": "188e84bdc985e4b779b7566dfcf9458f81ddd1217fe21b8c02a5a2a8a12b57cb",
+    "src/props.media.css": "d898e8904fb72caf3ffc08b1a5d8b06712ccbcafde0e59c8717647fa170280b1",
+    "LICENSE": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e"
+  },
+  "status": "APPROVED",
+  "batch": "B1-foundations-assets",
+  "originalReviewKey": "p3:open-props:shadows"
+}

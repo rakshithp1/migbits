@@ -12,12 +12,14 @@ import { contrastRatio, relativeLuminance } from "../lib/color-theory";
 import { figmaKits, kitPlugin } from "../resources/library/figma-kits";
 import curation from "../catalog/library/curation.json";
 import promotions from "../catalog/archive-previews/promotion.json";
+import approved from "../catalog/approved-resources.json";
+import { validateLibrary } from "../lib/library-validation";
 test("visual curation excludes retired entries and repeated color families from delivery", () => {
   const ids = new Set(libraryResources.map((r) => r.id));
-  assert.equal(
-    ids.size,
-    new Set([...curation.retainedIds, ...promotions.map((r) => r.id)]).size,
-  );
+  const baseline = new Set([...curation.retainedIds, ...promotions.map(r => r.id)]);
+  for (const id of baseline) assert.ok(ids.has(id), `Existing resource lost: ${id}`);
+  for (const item of libraryResources) assert.ok(baseline.has(item.id) || approved.some(r => r.id === item.id), `Unreviewed gallery addition: ${item.id}`);
+  for (const item of approved) assert.ok(ids.has(item.id) || libraryResources.some(r => r.variants?.some(v => v.previewUrl === item.previewUrl)), `Source variant lost: ${item.id}`);
   for (const item of curation.removed) {
     assert.equal(ids.has(item.id), false, item.id);
     for (const url of [
@@ -87,11 +89,16 @@ test("every gallery source and asset exists and original downloads preserve lice
   }
   for (const item of libraryResources.filter((r) => r.license === "OFL-1.1"))
     assert.equal(item.category, "typography");
-  assert.equal(
-    libraryResources.filter((r) => r.license === "MIT").length,
-    libraryResources.length -
-      libraryResources.filter((r) => r.license === "OFL-1.1").length,
-  );
+  assert.deepEqual(validateLibrary(libraryResources), []);
+  assert.ok(libraryResources.every(r => ["MIT", "OFL-1.1", "CC0-1.0"].includes(r.license)));
+});
+
+test("new resources cannot bypass source/preview approval or safe artifact paths", () => {
+  const item = libraryResources.find(r => r.id.startsWith("approved-"))!;
+  assert.ok(item);
+  assert.ok(validateLibrary([{ ...item, review: undefined }]).length);
+  assert.ok(validateLibrary([{ ...item, downloadUrl: "/../private.zip" }]).length);
+  assert.ok(validateLibrary([item, item]).length);
 });
 test("contrast calculations match WCAG reference endpoints and reject invalid input", () => {
   assert.equal(relativeLuminance("#000000"), 0);

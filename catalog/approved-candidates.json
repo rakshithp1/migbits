@@ -1,0 +1,1566 @@
+[
+  {
+    "key": "p3:patterncraft:beach",
+    "batch": "B4-backgrounds",
+    "review": {
+      "id": "patterncraft:beach",
+      "sourceFamily": "patterncraft",
+      "name": "Beach",
+      "category": "backgrounds",
+      "repository": "https://github.com/megh-bari/pattern-craft",
+      "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+      "licenseEvidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "copyrightHolder": "Copyright (c) 2025 Megh Bari",
+      "licenseSha256": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca",
+      "file": "src/data/patterns.ts",
+      "fileSha256": "4adb118e91366473a748727b896fad7266fb4fa61eafac3bed46df8450863d74",
+      "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L4",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Literal CSS/JSX background snippet; no external asset URL or executable import found",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "snippetId": "beach",
+      "snippetSha256": "36d845e94084acc3edd25ee963adbaa6cb62d5dd86cded6a0136c6c20e513505",
+      "line": 4,
+      "upstreamCategory": "effects",
+      "scope": "Only the individually hashed literal code snippet; not the entire upstream app",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:patterncraft:top-gradient-radial",
+    "batch": "B4-backgrounds",
+    "review": {
+      "id": "patterncraft:top-gradient-radial",
+      "sourceFamily": "patterncraft",
+      "name": "Top Gradient Radial",
+      "category": "backgrounds",
+      "repository": "https://github.com/megh-bari/pattern-craft",
+      "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+      "licenseEvidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "copyrightHolder": "Copyright (c) 2025 Megh Bari",
+      "licenseSha256": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca",
+      "file": "src/data/patterns.ts",
+      "fileSha256": "4adb118e91366473a748727b896fad7266fb4fa61eafac3bed46df8450863d74",
+      "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L44",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Literal CSS/JSX background snippet; no external asset URL or executable import found",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "snippetId": "top-gradient-radial",
+      "snippetSha256": "482c99e44d556b984c49304376723526bc59664cf0cd251a41cda46e54e5754e",
+      "line": 44,
+      "upstreamCategory": "decorative",
+      "scope": "Only the individually hashed literal code snippet; not the entire upstream app",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:patterncraft:aurora-waves",
+    "batch": "B4-backgrounds",
+    "review": {
+      "id": "patterncraft:aurora-waves",
+      "sourceFamily": "patterncraft",
+      "name": "Aurora Waves",
+      "category": "backgrounds",
+      "repository": "https://github.com/megh-bari/pattern-craft",
+      "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+      "licenseEvidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "copyrightHolder": "Copyright (c) 2025 Megh Bari",
+      "licenseSha256": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca",
+      "file": "src/data/patterns.ts",
+      "fileSha256": "4adb118e91366473a748727b896fad7266fb4fa61eafac3bed46df8450863d74",
+      "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L3206",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Literal CSS/JSX background snippet; no external asset URL or executable import found",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "snippetId": "aurora-waves",
+      "snippetSha256": "6f65b811421eb3e240fc81048497ead234aeffa0ee99a0f9d0c394d20c2a2825",
+      "line": 3206,
+      "upstreamCategory": "gradients",
+      "scope": "Only the individually hashed literal code snippet; not the entire upstream app",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:patterncraft:dark-grid-lines",
+    "batch": "B4-backgrounds",
+    "review": {
+      "id": "patterncraft:dark-grid-lines",
+      "sourceFamily": "patterncraft",
+      "name": "Dark Grid Lines",
+      "category": "backgrounds",
+      "repository": "https://github.com/megh-bari/pattern-craft",
+      "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+      "licenseEvidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "copyrightHolder": "Copyright (c) 2025 Megh Bari",
+      "licenseSha256": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca",
+      "file": "src/data/patterns.ts",
+      "fileSha256": "4adb118e91366473a748727b896fad7266fb4fa61eafac3bed46df8450863d74",
+      "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L5302",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Literal CSS/JSX background snippet; no external asset URL or executable import found",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "snippetId": "dark-grid-lines",
+      "snippetSha256": "ea6277bae50915c522b53c552526492fcd2e6ba85a87ac4b3689b24560db57d0",
+      "line": 5302,
+      "upstreamCategory": "geometric",
+      "scope": "Only the individually hashed literal code snippet; not the entire upstream app",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:patterncraft:hexagonal-lines",
+    "batch": "B4-backgrounds",
+    "review": {
+      "id": "patterncraft:hexagonal-lines",
+      "sourceFamily": "patterncraft",
+      "name": "Hexagonal Lines",
+      "category": "backgrounds",
+      "repository": "https://github.com/megh-bari/pattern-craft",
+      "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+      "licenseEvidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "copyrightHolder": "Copyright (c) 2025 Megh Bari",
+      "licenseSha256": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca",
+      "file": "src/data/patterns.ts",
+      "fileSha256": "4adb118e91366473a748727b896fad7266fb4fa61eafac3bed46df8450863d74",
+      "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L5783",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Literal CSS/JSX background snippet; no external asset URL or executable import found",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "snippetId": "hexagonal-lines",
+      "snippetSha256": "ae1afd0a03520c0dcd40aae4cc320f23cb15c7a222acbbba65a1ee3d8c3a9e4f",
+      "line": 5783,
+      "upstreamCategory": "geometric",
+      "scope": "Only the individually hashed literal code snippet; not the entire upstream app",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:patterncraft:pastel-wave",
+    "batch": "B4-backgrounds",
+    "review": {
+      "id": "patterncraft:pastel-wave",
+      "sourceFamily": "patterncraft",
+      "name": "Pastel Wave",
+      "category": "backgrounds",
+      "repository": "https://github.com/megh-bari/pattern-craft",
+      "revision": "1550af7903f50b4f19a1b44786f27ca01f3ef6ab",
+      "licenseEvidence": "https://raw.githubusercontent.com/megh-bari/pattern-craft/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+      "copyrightHolder": "Copyright (c) 2025 Megh Bari",
+      "licenseSha256": "939281af86bbfb04989214783a8c502ea263c5b7e4439fbcac6b02d0792120ca",
+      "file": "src/data/patterns.ts",
+      "fileSha256": "4adb118e91366473a748727b896fad7266fb4fa61eafac3bed46df8450863d74",
+      "sourceURL": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/src/data/patterns.ts#L6632",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Literal CSS/JSX background snippet; no external asset URL or executable import found",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "snippetId": "pastel-wave",
+      "snippetSha256": "c54dc868c4312d52ba22bf876e3f47edeb575d0d71dd3f41eb028570840b31a8",
+      "line": 6632,
+      "upstreamCategory": "effects",
+      "scope": "Only the individually hashed literal code snippet; not the entire upstream app",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:hyperui:announcements/1-dark.html",
+    "batch": "B3-block-variants",
+    "review": {
+      "id": "hyperui:announcements/1-dark.html",
+      "sourceFamily": "hyperui",
+      "name": "announcements/1-dark.html",
+      "category": "blocks",
+      "repository": "https://github.com/markmead/hyperui",
+      "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+      "licenseEvidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "copyrightHolder": "Copyright (c) Mark Mead",
+      "licenseSha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98",
+      "file": "public/examples/marketing/announcements/1-dark.html",
+      "fileSha256": "ea4efce2b74eb2b4c69e305320a560ab7cac228d3df616415b29ad3961ac30e5",
+      "sourceURL": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/1-dark.html",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Static HTML/Tailwind snippet; no remote src/href dependency detected",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "scope": "Body markup only; wrapper component.css, component.js and Google Sans Flex import are excluded from approval",
+      "bodySha256": "f494719aac27a2cf71444d87253f2e354a0ce98c9d98fa5ae6f259503b152dea",
+      "variant": "dark",
+      "runtimeDependencies": [
+        "Tailwind CSS compatible with source classes"
+      ],
+      "designGroup": "hyperui:announcements/1.html",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:hyperui:announcements/1.html",
+    "batch": "B3-block-variants",
+    "review": {
+      "id": "hyperui:announcements/1.html",
+      "sourceFamily": "hyperui",
+      "name": "announcements/1.html",
+      "category": "blocks",
+      "repository": "https://github.com/markmead/hyperui",
+      "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+      "licenseEvidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "copyrightHolder": "Copyright (c) Mark Mead",
+      "licenseSha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98",
+      "file": "public/examples/marketing/announcements/1.html",
+      "fileSha256": "0b181f211fc843af65de2f30dcd8d7abd160ce5417aa75d7a640d28d8f986932",
+      "sourceURL": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/1.html",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Static HTML/Tailwind snippet; no remote src/href dependency detected",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "scope": "Body markup only; wrapper component.css, component.js and Google Sans Flex import are excluded from approval",
+      "bodySha256": "a7d1541312b445f701626e58f44c076360494fb0f574cd0c9091e122b250b7d2",
+      "variant": "light",
+      "runtimeDependencies": [
+        "Tailwind CSS compatible with source classes"
+      ],
+      "designGroup": "hyperui:announcements/1.html",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:hyperui:announcements/2-dark.html",
+    "batch": "B3-block-variants",
+    "review": {
+      "id": "hyperui:announcements/2-dark.html",
+      "sourceFamily": "hyperui",
+      "name": "announcements/2-dark.html",
+      "category": "blocks",
+      "repository": "https://github.com/markmead/hyperui",
+      "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+      "licenseEvidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "copyrightHolder": "Copyright (c) Mark Mead",
+      "licenseSha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98",
+      "file": "public/examples/marketing/announcements/2-dark.html",
+      "fileSha256": "567147fd6d9c7fe33642d0fc715e1a1a88da1c9906771a09f52814b0309567dd",
+      "sourceURL": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/2-dark.html",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Static HTML/Tailwind snippet; no remote src/href dependency detected",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [
+        "http://www.w3.org/2000/svg"
+      ],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "scope": "Body markup only; wrapper component.css, component.js and Google Sans Flex import are excluded from approval",
+      "bodySha256": "dacf4ec3efa38a0034960498b781ba9eb5427b9fba9fa7b730460100506ff189",
+      "variant": "dark",
+      "runtimeDependencies": [
+        "Tailwind CSS compatible with source classes"
+      ],
+      "designGroup": "hyperui:announcements/2.html",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:hyperui:announcements/2.html",
+    "batch": "B3-block-variants",
+    "review": {
+      "id": "hyperui:announcements/2.html",
+      "sourceFamily": "hyperui",
+      "name": "announcements/2.html",
+      "category": "blocks",
+      "repository": "https://github.com/markmead/hyperui",
+      "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+      "licenseEvidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "copyrightHolder": "Copyright (c) Mark Mead",
+      "licenseSha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98",
+      "file": "public/examples/marketing/announcements/2.html",
+      "fileSha256": "2b905c25a362d92847ca5b390b6364486f4cb972277048ca06164f9cf9b6a0cc",
+      "sourceURL": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/2.html",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Static HTML/Tailwind snippet; no remote src/href dependency detected",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [
+        "http://www.w3.org/2000/svg"
+      ],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "scope": "Body markup only; wrapper component.css, component.js and Google Sans Flex import are excluded from approval",
+      "bodySha256": "0498685e58b5007c8908677ae451011d279e03bfba5542a0b0312b602d4ab691",
+      "variant": "light",
+      "runtimeDependencies": [
+        "Tailwind CSS compatible with source classes"
+      ],
+      "designGroup": "hyperui:announcements/2.html",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:hyperui:contact-forms/1-dark.html",
+    "batch": "B3-block-variants",
+    "review": {
+      "id": "hyperui:contact-forms/1-dark.html",
+      "sourceFamily": "hyperui",
+      "name": "contact-forms/1-dark.html",
+      "category": "blocks",
+      "repository": "https://github.com/markmead/hyperui",
+      "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+      "licenseEvidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "copyrightHolder": "Copyright (c) Mark Mead",
+      "licenseSha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98",
+      "file": "public/examples/marketing/contact-forms/1-dark.html",
+      "fileSha256": "a2034feff2915fa382c698e90c0a3c7807aefc2d7c65d6a0417b1dc01ce52bf3",
+      "sourceURL": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/contact-forms/1-dark.html",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Static HTML/Tailwind snippet; no remote src/href dependency detected",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "scope": "Body markup only; wrapper component.css, component.js and Google Sans Flex import are excluded from approval",
+      "bodySha256": "abf9d23ac0d07bdb14288e8596fe5c4fbf98354f36e0c9b507ab597e950074dc",
+      "variant": "dark",
+      "runtimeDependencies": [
+        "Tailwind CSS compatible with source classes"
+      ],
+      "designGroup": "hyperui:contact-forms/1.html",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:hyperui:contact-forms/1.html",
+    "batch": "B3-block-variants",
+    "review": {
+      "id": "hyperui:contact-forms/1.html",
+      "sourceFamily": "hyperui",
+      "name": "contact-forms/1.html",
+      "category": "blocks",
+      "repository": "https://github.com/markmead/hyperui",
+      "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+      "licenseEvidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "copyrightHolder": "Copyright (c) Mark Mead",
+      "licenseSha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98",
+      "file": "public/examples/marketing/contact-forms/1.html",
+      "fileSha256": "ce65039ac4e9a1f737523bb9f3121266d14556cc70873142123647e00d0a4d0e",
+      "sourceURL": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/contact-forms/1.html",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Static HTML/Tailwind snippet; no remote src/href dependency detected",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "scope": "Body markup only; wrapper component.css, component.js and Google Sans Flex import are excluded from approval",
+      "bodySha256": "a4a0d7d264f0b2beab63eba74a6c095d23f726807ebd01b509e795e2bdfe8694",
+      "variant": "light",
+      "runtimeDependencies": [
+        "Tailwind CSS compatible with source classes"
+      ],
+      "designGroup": "hyperui:contact-forms/1.html",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:hyperui:contact-forms/2-dark.html",
+    "batch": "B3-block-variants",
+    "review": {
+      "id": "hyperui:contact-forms/2-dark.html",
+      "sourceFamily": "hyperui",
+      "name": "contact-forms/2-dark.html",
+      "category": "blocks",
+      "repository": "https://github.com/markmead/hyperui",
+      "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+      "licenseEvidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "copyrightHolder": "Copyright (c) Mark Mead",
+      "licenseSha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98",
+      "file": "public/examples/marketing/contact-forms/2-dark.html",
+      "fileSha256": "1676834eb60dd8fb32c995918a7455857d3ec471ea58efab1ed40b702c8ef4d5",
+      "sourceURL": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/contact-forms/2-dark.html",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Static HTML/Tailwind snippet; no remote src/href dependency detected",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "scope": "Body markup only; wrapper component.css, component.js and Google Sans Flex import are excluded from approval",
+      "bodySha256": "2d1a73194d1177aaae041da5f7dc76721bdf220391e18ce741156b2a46e15eaf",
+      "variant": "dark",
+      "runtimeDependencies": [
+        "Tailwind CSS compatible with source classes"
+      ],
+      "designGroup": "hyperui:contact-forms/2.html",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:hyperui:contact-forms/2.html",
+    "batch": "B3-block-variants",
+    "review": {
+      "id": "hyperui:contact-forms/2.html",
+      "sourceFamily": "hyperui",
+      "name": "contact-forms/2.html",
+      "category": "blocks",
+      "repository": "https://github.com/markmead/hyperui",
+      "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+      "licenseEvidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+      "copyrightHolder": "Copyright (c) Mark Mead",
+      "licenseSha256": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98",
+      "file": "public/examples/marketing/contact-forms/2.html",
+      "fileSha256": "1f622e7c7fe2676b297238a0b54f19081909dcfced092ed9db59747e08cf5362",
+      "sourceURL": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/contact-forms/2.html",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Static HTML/Tailwind snippet; no remote src/href dependency detected",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "scope": "Body markup only; wrapper component.css, component.js and Google Sans Flex import are excluded from approval",
+      "bodySha256": "ca7716165d4632e8a1e5913acb792369a286c7ca1ac757818e5f9099ff1892ae",
+      "variant": "light",
+      "runtimeDependencies": [
+        "Tailwind CSS compatible with source classes"
+      ],
+      "designGroup": "hyperui:contact-forms/2.html",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:animata:status-button",
+    "batch": "B2-specialist-controls",
+    "review": {
+      "id": "animata:status-button",
+      "sourceFamily": "animata",
+      "name": "status-button",
+      "category": "components",
+      "repository": "https://github.com/codse/animata",
+      "revision": "e7478b835a3b5c4153e71f60666634e91bb38813",
+      "licenseEvidence": "https://raw.githubusercontent.com/codse/animata/e7478b835a3b5c4153e71f60666634e91bb38813/LICENSE.md",
+      "copyrightHolder": "Copyright (c) Animata",
+      "licenseSha256": "ff78804659cbc28380d087cae79c494f243f8ef22b1e2ac5ec119b5de9314f05",
+      "file": "animata/button/status-button.tsx",
+      "fileSha256": "08d0ff2c78ef4bdf8304ce4ae4a89d71a99a53ec18738890a785f90239e6fa55",
+      "sourceURL": "https://github.com/codse/animata/blob/e7478b835a3b5c4153e71f60666634e91bb38813/animata/button/status-button.tsx",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Source and resolved local files covered by pinned MIT grant. Required installed runtime dependency license texts retained in dependency ledger; preserve MIT, ISC/Feather MIT, Apache-2.0 and 0BSD notices as applicable. This is legal source-scope approval, not runtime validation.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes for recorded source closure with license notices",
+      "paidLibraryResale": "Yes, nonexclusive, preserve original licenses",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [
+        "lucide-react",
+        "motion/react",
+        "react"
+      ],
+      "localImports": [
+        "@/lib/utils"
+      ],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "animata/button/status-button.tsx",
+          "sha256": "08d0ff2c78ef4bdf8304ce4ae4a89d71a99a53ec18738890a785f90239e6fa55"
+        },
+        {
+          "file": "lib/utils.ts",
+          "sha256": "5110cb256546ec57496878e69c7e8f338a0ba9caf3ac75eed9babb51dad06ecd"
+        }
+      ],
+      "dependencyEvidence": "dependency-license-evidence.json",
+      "compatibility": "Installed dependency versions are proposed targets, not proof of upstream runtime compatibility",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:animata:survey-card",
+    "batch": "B2-specialist-controls",
+    "review": {
+      "id": "animata:survey-card",
+      "sourceFamily": "animata",
+      "name": "survey-card",
+      "category": "components",
+      "repository": "https://github.com/codse/animata",
+      "revision": "e7478b835a3b5c4153e71f60666634e91bb38813",
+      "licenseEvidence": "https://raw.githubusercontent.com/codse/animata/e7478b835a3b5c4153e71f60666634e91bb38813/LICENSE.md",
+      "copyrightHolder": "Copyright (c) Animata",
+      "licenseSha256": "ff78804659cbc28380d087cae79c494f243f8ef22b1e2ac5ec119b5de9314f05",
+      "file": "animata/card/survey-card.tsx",
+      "fileSha256": "6e67a2e4f02db1b59b856cf8e63fa79bcfaa1ba66d4170b922961440cc6bb27c",
+      "sourceURL": "https://github.com/codse/animata/blob/e7478b835a3b5c4153e71f60666634e91bb38813/animata/card/survey-card.tsx",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Source and resolved local files covered by pinned MIT grant. Required installed runtime dependency license texts retained in dependency ledger; preserve MIT, ISC/Feather MIT, Apache-2.0 and 0BSD notices as applicable. This is legal source-scope approval, not runtime validation.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes for recorded source closure with license notices",
+      "paidLibraryResale": "Yes, nonexclusive, preserve original licenses",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [
+        "react"
+      ],
+      "localImports": [
+        "@/lib/utils"
+      ],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "animata/card/survey-card.tsx",
+          "sha256": "6e67a2e4f02db1b59b856cf8e63fa79bcfaa1ba66d4170b922961440cc6bb27c"
+        },
+        {
+          "file": "lib/utils.ts",
+          "sha256": "5110cb256546ec57496878e69c7e8f338a0ba9caf3ac75eed9babb51dad06ecd"
+        }
+      ],
+      "dependencyEvidence": "dependency-license-evidence.json",
+      "compatibility": "Installed dependency versions are proposed targets, not proof of upstream runtime compatibility",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:animata:content-scan",
+    "batch": "B2-specialist-controls",
+    "review": {
+      "id": "animata:content-scan",
+      "sourceFamily": "animata",
+      "name": "content-scan",
+      "category": "components",
+      "repository": "https://github.com/codse/animata",
+      "revision": "e7478b835a3b5c4153e71f60666634e91bb38813",
+      "licenseEvidence": "https://raw.githubusercontent.com/codse/animata/e7478b835a3b5c4153e71f60666634e91bb38813/LICENSE.md",
+      "copyrightHolder": "Copyright (c) Animata",
+      "licenseSha256": "ff78804659cbc28380d087cae79c494f243f8ef22b1e2ac5ec119b5de9314f05",
+      "file": "animata/feature-cards/content-scan.tsx",
+      "fileSha256": "cf15f90e0a25d694d54e8ddaeb7ee1a76720b4e3f2936536e571db0c412ed235",
+      "sourceURL": "https://github.com/codse/animata/blob/e7478b835a3b5c4153e71f60666634e91bb38813/animata/feature-cards/content-scan.tsx",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Source and resolved local files covered by pinned MIT grant. Required installed runtime dependency license texts retained in dependency ledger; preserve MIT, ISC/Feather MIT, Apache-2.0 and 0BSD notices as applicable. This is legal source-scope approval, not runtime validation.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes for recorded source closure with license notices",
+      "paidLibraryResale": "Yes, nonexclusive, preserve original licenses",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [
+        "motion/react",
+        "react"
+      ],
+      "localImports": [
+        "./content-scan.css"
+      ],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "animata/feature-cards/content-scan.tsx",
+          "sha256": "cf15f90e0a25d694d54e8ddaeb7ee1a76720b4e3f2936536e571db0c412ed235"
+        },
+        {
+          "file": "animata/feature-cards/content-scan.css",
+          "sha256": "214b3f8b3178e1064be53926bc6e1cec14aa2a75edede4f5b771094c711ef6f9"
+        }
+      ],
+      "dependencyEvidence": "dependency-license-evidence.json",
+      "compatibility": "Installed dependency versions are proposed targets, not proof of upstream runtime compatibility",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:kokonut-ui:detent-dial",
+    "batch": "B2-specialist-controls",
+    "review": {
+      "id": "kokonut-ui:detent-dial",
+      "sourceFamily": "kokonut-ui",
+      "name": "detent-dial",
+      "category": "components",
+      "repository": "https://github.com/kokonut-labs/kokonutui",
+      "revision": "3456b061a3371e7b9aa158c0bb75dca04f227239",
+      "licenseEvidence": "https://raw.githubusercontent.com/kokonut-labs/kokonutui/3456b061a3371e7b9aa158c0bb75dca04f227239/LICENSE",
+      "copyrightHolder": "Copyright (c) 2025 kokonutUI",
+      "licenseSha256": "b2e018ad1fd564608cc1ee0c2ad675ce5202c8ed9f5f68e6d09e7b6bc881d5d2",
+      "file": "components/kokonutui/detent-dial.tsx",
+      "fileSha256": "7cb2fb8f318049478803a310897fcb7fa9812874f4fa17b0eff744a9eafbeec0",
+      "sourceURL": "https://github.com/kokonut-labs/kokonutui/blob/3456b061a3371e7b9aa158c0bb75dca04f227239/components/kokonutui/detent-dial.tsx",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Source and resolved local files covered by pinned MIT grant. Required installed runtime dependency license texts retained in dependency ledger; preserve MIT, ISC/Feather MIT, Apache-2.0 and 0BSD notices as applicable. This is legal source-scope approval, not runtime validation.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes for recorded source closure with license notices",
+      "paidLibraryResale": "Yes, nonexclusive, preserve original licenses",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [
+        "motion/react",
+        "react"
+      ],
+      "localImports": [
+        "@/lib/utils"
+      ],
+      "referencedURLs": [
+        "https://kokonutui.com",
+        "https://github.com/kokonut-labs/kokonutui"
+      ],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "components/kokonutui/detent-dial.tsx",
+          "sha256": "7cb2fb8f318049478803a310897fcb7fa9812874f4fa17b0eff744a9eafbeec0"
+        },
+        {
+          "file": "lib/utils.ts",
+          "sha256": "4acbc7165a8d54738ff62b51414e772c08fe78434e524e6d8770180d3ba2925f"
+        }
+      ],
+      "dependencyEvidence": "dependency-license-evidence.json",
+      "compatibility": "Installed dependency versions are proposed targets, not proof of upstream runtime compatibility",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:kokonut-ui:wheel-picker",
+    "batch": "B2-specialist-controls",
+    "review": {
+      "id": "kokonut-ui:wheel-picker",
+      "sourceFamily": "kokonut-ui",
+      "name": "wheel-picker",
+      "category": "components",
+      "repository": "https://github.com/kokonut-labs/kokonutui",
+      "revision": "3456b061a3371e7b9aa158c0bb75dca04f227239",
+      "licenseEvidence": "https://raw.githubusercontent.com/kokonut-labs/kokonutui/3456b061a3371e7b9aa158c0bb75dca04f227239/LICENSE",
+      "copyrightHolder": "Copyright (c) 2025 kokonutUI",
+      "licenseSha256": "b2e018ad1fd564608cc1ee0c2ad675ce5202c8ed9f5f68e6d09e7b6bc881d5d2",
+      "file": "components/kokonutui/wheel-picker.tsx",
+      "fileSha256": "cde3515ea492971a497ab32a4ef50ea9ddff9f73b248b806b1ddce7237c6c81d",
+      "sourceURL": "https://github.com/kokonut-labs/kokonutui/blob/3456b061a3371e7b9aa158c0bb75dca04f227239/components/kokonutui/wheel-picker.tsx",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Source and resolved local files covered by pinned MIT grant. Required installed runtime dependency license texts retained in dependency ledger; preserve MIT, ISC/Feather MIT, Apache-2.0 and 0BSD notices as applicable. This is legal source-scope approval, not runtime validation.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes for recorded source closure with license notices",
+      "paidLibraryResale": "Yes, nonexclusive, preserve original licenses",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [
+        "motion/react",
+        "react"
+      ],
+      "localImports": [
+        "@/lib/utils"
+      ],
+      "referencedURLs": [
+        "https://kokonutui.com",
+        "https://github.com/kokonut-labs/kokonutui"
+      ],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "components/kokonutui/wheel-picker.tsx",
+          "sha256": "cde3515ea492971a497ab32a4ef50ea9ddff9f73b248b806b1ddce7237c6c81d"
+        },
+        {
+          "file": "lib/utils.ts",
+          "sha256": "4acbc7165a8d54738ff62b51414e772c08fe78434e524e6d8770180d3ba2925f"
+        }
+      ],
+      "dependencyEvidence": "dependency-license-evidence.json",
+      "compatibility": "Installed dependency versions are proposed targets, not proof of upstream runtime compatibility",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:kokonut-ui:signature-pad",
+    "batch": "B2-specialist-controls",
+    "review": {
+      "id": "kokonut-ui:signature-pad",
+      "sourceFamily": "kokonut-ui",
+      "name": "signature-pad",
+      "category": "components",
+      "repository": "https://github.com/kokonut-labs/kokonutui",
+      "revision": "3456b061a3371e7b9aa158c0bb75dca04f227239",
+      "licenseEvidence": "https://raw.githubusercontent.com/kokonut-labs/kokonutui/3456b061a3371e7b9aa158c0bb75dca04f227239/LICENSE",
+      "copyrightHolder": "Copyright (c) 2025 kokonutUI",
+      "licenseSha256": "b2e018ad1fd564608cc1ee0c2ad675ce5202c8ed9f5f68e6d09e7b6bc881d5d2",
+      "file": "components/kokonutui/signature-pad.tsx",
+      "fileSha256": "361c6f35d6fb2b6155d1f3b0d80ccd5c6fabc8fc78b85dd0508c48849886ce45",
+      "sourceURL": "https://github.com/kokonut-labs/kokonutui/blob/3456b061a3371e7b9aa158c0bb75dca04f227239/components/kokonutui/signature-pad.tsx",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Source and resolved local files covered by pinned MIT grant. Required installed runtime dependency license texts retained in dependency ledger; preserve MIT, ISC/Feather MIT, Apache-2.0 and 0BSD notices as applicable. This is legal source-scope approval, not runtime validation.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes for recorded source closure with license notices",
+      "paidLibraryResale": "Yes, nonexclusive, preserve original licenses",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [
+        "react"
+      ],
+      "localImports": [
+        "@/lib/utils"
+      ],
+      "referencedURLs": [
+        "https://kokonutui.com",
+        "https://github.com/kokonut-labs/kokonutui",
+        "http://www.w3.org/2000/svg"
+      ],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "components/kokonutui/signature-pad.tsx",
+          "sha256": "361c6f35d6fb2b6155d1f3b0d80ccd5c6fabc8fc78b85dd0508c48849886ce45"
+        },
+        {
+          "file": "lib/utils.ts",
+          "sha256": "4acbc7165a8d54738ff62b51414e772c08fe78434e524e6d8770180d3ba2925f"
+        }
+      ],
+      "dependencyEvidence": "dependency-license-evidence.json",
+      "compatibility": "Installed dependency versions are proposed targets, not proof of upstream runtime compatibility",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:kokonut-ui:liquid-slider",
+    "batch": "B2-specialist-controls",
+    "review": {
+      "id": "kokonut-ui:liquid-slider",
+      "sourceFamily": "kokonut-ui",
+      "name": "liquid-slider",
+      "category": "components",
+      "repository": "https://github.com/kokonut-labs/kokonutui",
+      "revision": "3456b061a3371e7b9aa158c0bb75dca04f227239",
+      "licenseEvidence": "https://raw.githubusercontent.com/kokonut-labs/kokonutui/3456b061a3371e7b9aa158c0bb75dca04f227239/LICENSE",
+      "copyrightHolder": "Copyright (c) 2025 kokonutUI",
+      "licenseSha256": "b2e018ad1fd564608cc1ee0c2ad675ce5202c8ed9f5f68e6d09e7b6bc881d5d2",
+      "file": "components/kokonutui/liquid-slider.tsx",
+      "fileSha256": "004893db99ac8c3349362d88f8aea893b7d88ed2234991bff0b8923ef6e12eb5",
+      "sourceURL": "https://github.com/kokonut-labs/kokonutui/blob/3456b061a3371e7b9aa158c0bb75dca04f227239/components/kokonutui/liquid-slider.tsx",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Source and resolved local files covered by pinned MIT grant. Required installed runtime dependency license texts retained in dependency ledger; preserve MIT, ISC/Feather MIT, Apache-2.0 and 0BSD notices as applicable. This is legal source-scope approval, not runtime validation.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes for recorded source closure with license notices",
+      "paidLibraryResale": "Yes, nonexclusive, preserve original licenses",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [
+        "react"
+      ],
+      "localImports": [
+        "@/lib/utils"
+      ],
+      "referencedURLs": [
+        "https://kokonutui.com",
+        "https://github.com/kokonut-labs/kokonutui"
+      ],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "components/kokonutui/liquid-slider.tsx",
+          "sha256": "004893db99ac8c3349362d88f8aea893b7d88ed2234991bff0b8923ef6e12eb5"
+        },
+        {
+          "file": "lib/utils.ts",
+          "sha256": "4acbc7165a8d54738ff62b51414e772c08fe78434e524e6d8770180d3ba2925f"
+        }
+      ],
+      "dependencyEvidence": "dependency-license-evidence.json",
+      "compatibility": "Installed dependency versions are proposed targets, not proof of upstream runtime compatibility",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:cult-ui:choice-poll",
+    "batch": "B2-specialist-controls",
+    "review": {
+      "id": "cult-ui:choice-poll",
+      "sourceFamily": "cult-ui",
+      "name": "choice-poll",
+      "category": "components",
+      "repository": "https://github.com/nolly-studio/cult-ui",
+      "revision": "7f031dc812f7bda10213bab62752dd6d080297ff",
+      "licenseEvidence": "https://raw.githubusercontent.com/nolly-studio/cult-ui/7f031dc812f7bda10213bab62752dd6d080297ff/LICENSE.md",
+      "copyrightHolder": "Copyright (c) 2023 Jordan-Gilliam",
+      "licenseSha256": "78045e58dfd5f039ad350ad293da2ad9a2c0362b82dadb069b1c10be382ddac7",
+      "file": "apps/www/registry/default/ui/choice-poll.tsx",
+      "fileSha256": "070403fec259f28bbb01d8d12370bf8c5ed2fdf4dc72880e6f05b8d2d162257a",
+      "sourceURL": "https://github.com/nolly-studio/cult-ui/blob/7f031dc812f7bda10213bab62752dd6d080297ff/apps/www/registry/default/ui/choice-poll.tsx",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Source and resolved local files covered by pinned MIT grant. Required installed runtime dependency license texts retained in dependency ledger; preserve MIT, ISC/Feather MIT, Apache-2.0 and 0BSD notices as applicable. This is legal source-scope approval, not runtime validation.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes for recorded source closure with license notices",
+      "paidLibraryResale": "Yes, nonexclusive, preserve original licenses",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [
+        "react",
+        "@radix-ui/react-use-controllable-state",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "localImports": [
+        "@/lib/utils"
+      ],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "apps/www/registry/default/ui/choice-poll.tsx",
+          "sha256": "070403fec259f28bbb01d8d12370bf8c5ed2fdf4dc72880e6f05b8d2d162257a"
+        },
+        {
+          "file": "apps/www/lib/utils.ts",
+          "sha256": "7cf92ac6e9a70c0c68a993becf674ec7c373653bc5dc3379e366c352e5ee1a41"
+        },
+        {
+          "file": "apps/www/config/site.ts",
+          "sha256": "204248fa4d13b2e06f723b476304df36d80512d918b93ed4d7fa7c1a784f5962"
+        }
+      ],
+      "dependencyEvidence": "dependency-license-evidence.json",
+      "compatibility": "Installed dependency versions are proposed targets, not proof of upstream runtime compatibility",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-props:sizes",
+    "batch": "B1-foundations-assets",
+    "review": {
+      "id": "open-props:sizes",
+      "sourceFamily": "open-props",
+      "name": "sizes",
+      "category": "foundations",
+      "repository": "https://github.com/argyleink/open-props",
+      "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+      "licenseEvidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "copyrightHolder": "Copyright (c) 2021 Adam Argyle",
+      "licenseSha256": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e",
+      "file": "src/props.sizes.css",
+      "fileSha256": "9df4d9369105ef74288efcf9c0261d2ef9893e09669f25637e46a87f8109d583",
+      "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.sizes.css",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Pure CSS token source; preserve MIT notice. CSS custom-media/build syntax must be validated during integration.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "src/props.sizes.css",
+          "sha256": "9df4d9369105ef74288efcf9c0261d2ef9893e09669f25637e46a87f8109d583"
+        }
+      ],
+      "notes": "",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-props:borders",
+    "batch": "B1-foundations-assets",
+    "review": {
+      "id": "open-props:borders",
+      "sourceFamily": "open-props",
+      "name": "borders",
+      "category": "foundations",
+      "repository": "https://github.com/argyleink/open-props",
+      "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+      "licenseEvidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "copyrightHolder": "Copyright (c) 2021 Adam Argyle",
+      "licenseSha256": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e",
+      "file": "src/props.borders.css",
+      "fileSha256": "90a7d2cc5664647983d80d5c25fea69bc8b0a57ad9898ecd2c22f33cb742fda6",
+      "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.borders.css",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Pure CSS token source; preserve MIT notice. CSS custom-media/build syntax must be validated during integration.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "src/props.borders.css",
+          "sha256": "90a7d2cc5664647983d80d5c25fea69bc8b0a57ad9898ecd2c22f33cb742fda6"
+        }
+      ],
+      "notes": "",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-props:shadows",
+    "batch": "B1-foundations-assets",
+    "review": {
+      "id": "open-props:shadows",
+      "sourceFamily": "open-props",
+      "name": "shadows",
+      "category": "foundations",
+      "repository": "https://github.com/argyleink/open-props",
+      "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+      "licenseEvidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "copyrightHolder": "Copyright (c) 2021 Adam Argyle",
+      "licenseSha256": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e",
+      "file": "src/props.shadows.css",
+      "fileSha256": "188e84bdc985e4b779b7566dfcf9458f81ddd1217fe21b8c02a5a2a8a12b57cb",
+      "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.shadows.css",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Pure CSS token source; preserve MIT notice. CSS custom-media/build syntax must be validated during integration.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [
+        "props.media.css"
+      ],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "src/props.shadows.css",
+          "sha256": "188e84bdc985e4b779b7566dfcf9458f81ddd1217fe21b8c02a5a2a8a12b57cb"
+        },
+        {
+          "file": "src/props.media.css",
+          "sha256": "d898e8904fb72caf3ffc08b1a5d8b06712ccbcafde0e59c8717647fa170280b1"
+        }
+      ],
+      "notes": "",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-props:fonts",
+    "batch": "B1-foundations-assets",
+    "review": {
+      "id": "open-props:fonts",
+      "sourceFamily": "open-props",
+      "name": "fonts",
+      "category": "foundations",
+      "repository": "https://github.com/argyleink/open-props",
+      "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+      "licenseEvidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "copyrightHolder": "Copyright (c) 2021 Adam Argyle",
+      "licenseSha256": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e",
+      "file": "src/props.fonts.css",
+      "fileSha256": "ba041962ded7cb37a69021fc8ebb84ca586269bb36e6a4a8b4de34630068727b",
+      "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.fonts.css",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Pure CSS token source; preserve MIT notice. CSS custom-media/build syntax must be validated during integration.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "src/props.fonts.css",
+          "sha256": "ba041962ded7cb37a69021fc8ebb84ca586269bb36e6a4a8b4de34630068727b"
+        }
+      ],
+      "notes": "Family-name and scale tokens only; no font binaries licensed by this approval",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-props:easing",
+    "batch": "B1-foundations-assets",
+    "review": {
+      "id": "open-props:easing",
+      "sourceFamily": "open-props",
+      "name": "easing",
+      "category": "foundations",
+      "repository": "https://github.com/argyleink/open-props",
+      "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+      "licenseEvidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "copyrightHolder": "Copyright (c) 2021 Adam Argyle",
+      "licenseSha256": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e",
+      "file": "src/props.easing.css",
+      "fileSha256": "0767db9d3c7a630d21cd399cf9797357713a4b675e48c8281af62cddd8f01ee0",
+      "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.easing.css",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Pure CSS token source; preserve MIT notice. CSS custom-media/build syntax must be validated during integration.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "src/props.easing.css",
+          "sha256": "0767db9d3c7a630d21cd399cf9797357713a4b675e48c8281af62cddd8f01ee0"
+        }
+      ],
+      "notes": "",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-props:gradients",
+    "batch": "B1-foundations-assets",
+    "review": {
+      "id": "open-props:gradients",
+      "sourceFamily": "open-props",
+      "name": "gradients",
+      "category": "foundations",
+      "repository": "https://github.com/argyleink/open-props",
+      "revision": "f39ab7c377a0e047f930982e3611bbc95254a260",
+      "licenseEvidence": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE",
+      "copyrightHolder": "Copyright (c) 2021 Adam Argyle",
+      "licenseSha256": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e",
+      "file": "src/props.gradients.css",
+      "fileSha256": "15643c50e9bb668b11e320d1f7ead5712444afbbe50486dd7de2b4dbf4faa520",
+      "sourceURL": "https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.gradients.css",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Pure CSS token source; preserve MIT notice. CSS custom-media/build syntax must be validated during integration.",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [],
+      "referencedURLs": [
+        "http://www.w3.org/2000/svg"
+      ],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "src/props.gradients.css",
+          "sha256": "15643c50e9bb668b11e320d1f7ead5712444afbbe50486dd7de2b4dbf4faa520"
+        }
+      ],
+      "notes": "",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:radix-colors:complete-color-scales",
+    "batch": "B1-foundations-assets",
+    "review": {
+      "id": "radix-colors:complete-color-scales",
+      "sourceFamily": "radix-colors",
+      "name": "complete-color-scales",
+      "category": "foundations",
+      "repository": "https://github.com/radix-ui/colors",
+      "revision": "dbdb85470547c7d34b9001f48fddb08ded335979",
+      "licenseEvidence": "https://raw.githubusercontent.com/radix-ui/colors/dbdb85470547c7d34b9001f48fddb08ded335979/LICENSE",
+      "copyrightHolder": "Copyright (c) 2021-2022 Modulz; Copyright (c) 2022-Present WorkOS",
+      "licenseSha256": "d981bc30e0d78b9ffc8f279fcaa274ea0444ff51d983548a609397d5c8a42dc2",
+      "file": "src/index.ts",
+      "fileSha256": "80673dd8ffc131129bf797f57e288d1fa429bb817fcdea4012c2ab64cf4d2e52",
+      "sourceURL": "https://github.com/radix-ui/colors/blob/dbdb85470547c7d34b9001f48fddb08ded335979/src/index.ts",
+      "license": "MIT",
+      "status": "APPROVED",
+      "reason": "Pure TypeScript color data; preserve MIT notice; no font/image/runtime dependency",
+      "commercialUse": "Yes under recorded source license",
+      "redistribution": "Yes; preserve applicable notices",
+      "paidLibraryResale": "Permitted under recorded license; nonexclusive",
+      "attribution": "Preserve copyright and full license",
+      "externalImports": [],
+      "localImports": [
+        "./dark",
+        "./light",
+        "./blackA",
+        "./whiteA"
+      ],
+      "referencedURLs": [],
+      "validation": "Static source inspection only; runtime, accessibility and integration not validated",
+      "closure": [
+        {
+          "file": "src/index.ts",
+          "sha256": "80673dd8ffc131129bf797f57e288d1fa429bb817fcdea4012c2ab64cf4d2e52"
+        },
+        {
+          "file": "src/dark.ts",
+          "sha256": "d8599fe69a4454340b2bc82e003a210caa6b79082be9a1b7f13429ff03826c68"
+        },
+        {
+          "file": "src/light.ts",
+          "sha256": "1a9725486609d36b469caa3b84b8de4348b7f2f05d45905127637b988329acbd"
+        },
+        {
+          "file": "src/blackA.ts",
+          "sha256": "930205059fbb077241db60753dc338d2354c85fe7ce86ccbccc734836e3371fb"
+        },
+        {
+          "file": "src/whiteA.ts",
+          "sha256": "2b8ed559a91709560e51c847e5a20cd14473334acbf26e34fb253f0ab61c9868"
+        }
+      ],
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-doodles:chilling.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-doodles:chilling.svg",
+      "sourceFamily": "open-doodles",
+      "name": "chilling.svg",
+      "category": "illustrations",
+      "sourceURL": "https://opendoodles.s3-us-west-1.amazonaws.com/chilling.svg",
+      "website": "https://www.opendoodles.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.opendoodles.com/about",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "bd2d45ec903eb4ed3eb87109098a079ec63d021ed8ff8a3e9d057307e4ed5e04",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-doodles:ballet.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-doodles:ballet.svg",
+      "sourceFamily": "open-doodles",
+      "name": "ballet.svg",
+      "category": "illustrations",
+      "sourceURL": "https://opendoodles.s3-us-west-1.amazonaws.com/ballet.svg",
+      "website": "https://www.opendoodles.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.opendoodles.com/about",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "9e9446cdad7b39b76dff2111a9b7352c8cb432b96ef93e92798902bcf0091d2d",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-doodles:groovy.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-doodles:groovy.svg",
+      "sourceFamily": "open-doodles",
+      "name": "groovy.svg",
+      "category": "illustrations",
+      "sourceURL": "https://opendoodles.s3-us-west-1.amazonaws.com/groovy.svg",
+      "website": "https://www.opendoodles.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.opendoodles.com/about",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "12c591694ce270e464ebe99b61b5d0a638326b13c47876aba39eeb716258792d",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-doodles:dancing.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-doodles:dancing.svg",
+      "sourceFamily": "open-doodles",
+      "name": "dancing.svg",
+      "category": "illustrations",
+      "sourceURL": "https://opendoodles.s3-us-west-1.amazonaws.com/dancing.svg",
+      "website": "https://www.opendoodles.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.opendoodles.com/about",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "595e589dfd0927cb3cf71174543c05a940ca3743dd99a3dcdd1f3cb757168edf",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-doodles:Doggie.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-doodles:Doggie.svg",
+      "sourceFamily": "open-doodles",
+      "name": "Doggie.svg",
+      "category": "illustrations",
+      "sourceURL": "https://opendoodles.s3-us-west-1.amazonaws.com/Doggie.svg",
+      "website": "https://www.opendoodles.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.opendoodles.com/about",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "902bc544f1edb1131c9a56dcbdb07a6a8c30427c70e3243a49164adf592c3f7b",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-doodles:sprinting.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-doodles:sprinting.svg",
+      "sourceFamily": "open-doodles",
+      "name": "sprinting.svg",
+      "category": "illustrations",
+      "sourceURL": "https://opendoodles.s3-us-west-1.amazonaws.com/sprinting.svg",
+      "website": "https://www.opendoodles.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.opendoodles.com/about",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "de4c130718c40ec50599361df3ba3db12e1d199dc8d26302f95c8b2cf03e5af0",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-peeps:5e5351b17371bb6c489ad0cc_peep-13.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-peeps:5e5351b17371bb6c489ad0cc_peep-13.svg",
+      "sourceFamily": "open-peeps",
+      "name": "5e5351b17371bb6c489ad0cc_peep-13.svg",
+      "category": "illustrations",
+      "sourceURL": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e5351b17371bb6c489ad0cc_peep-13.svg",
+      "website": "https://www.openpeeps.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.openpeeps.com/",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "829e09851dee7485d0e77dea6c3f2487ecf87b64dd76ff2609d2f7738e805d8c",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-peeps:5e535195d87131f9760b1c69_peep-12.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-peeps:5e535195d87131f9760b1c69_peep-12.svg",
+      "sourceFamily": "open-peeps",
+      "name": "5e535195d87131f9760b1c69_peep-12.svg",
+      "category": "illustrations",
+      "sourceURL": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e535195d87131f9760b1c69_peep-12.svg",
+      "website": "https://www.openpeeps.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.openpeeps.com/",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "aec461d88d45338a178f1df67f8739f16a9a6ab0fe342d2240de3fbcfc92e74c",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-peeps:5e532a4c258ffe237b8ef2c1_peep-2.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-peeps:5e532a4c258ffe237b8ef2c1_peep-2.svg",
+      "sourceFamily": "open-peeps",
+      "name": "5e532a4c258ffe237b8ef2c1_peep-2.svg",
+      "category": "illustrations",
+      "sourceURL": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e532a4c258ffe237b8ef2c1_peep-2.svg",
+      "website": "https://www.openpeeps.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.openpeeps.com/",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "6dcdec15ec142e1bbb7c22b4eb3c78fa4da8922d7b65e9315da42b9d856e6b34",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-peeps:5e535cf47488c27eb04a70d1_peep-97.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-peeps:5e535cf47488c27eb04a70d1_peep-97.svg",
+      "sourceFamily": "open-peeps",
+      "name": "5e535cf47488c27eb04a70d1_peep-97.svg",
+      "category": "illustrations",
+      "sourceURL": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e535cf47488c27eb04a70d1_peep-97.svg",
+      "website": "https://www.openpeeps.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.openpeeps.com/",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "96dfeabba71db9741be210070ee7fca6c632a26e166fa85e3258f90a04ed03ee",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-peeps:5e535637d87131637b0e4379_peep-39.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-peeps:5e535637d87131637b0e4379_peep-39.svg",
+      "sourceFamily": "open-peeps",
+      "name": "5e535637d87131637b0e4379_peep-39.svg",
+      "category": "illustrations",
+      "sourceURL": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e535637d87131637b0e4379_peep-39.svg",
+      "website": "https://www.openpeeps.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.openpeeps.com/",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "048fb4da33ea8dc58b47f0aa3e3b69afef94fc2f548bfbe037c72f2ae1d47075",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p3:open-peeps:5e535a0dd3992316ad553c2e_peep-72.svg",
+    "batch": "B5-illustration-samples",
+    "review": {
+      "id": "open-peeps:5e535a0dd3992316ad553c2e_peep-72.svg",
+      "sourceFamily": "open-peeps",
+      "name": "5e535a0dd3992316ad553c2e_peep-72.svg",
+      "category": "illustrations",
+      "sourceURL": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e535a0dd3992316ad553c2e_peep-72.svg",
+      "website": "https://www.openpeeps.com",
+      "repository": "Creator-hosted download; no repository asserted",
+      "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+      "license": "CC0-1.0",
+      "licenseEvidence": "https://www.openpeeps.com/",
+      "copyrightHolder": "Pablo Stanley; CC0 dedication",
+      "fileSha256": "bc8e60b3677a9d53701415c08ca6d55e4186be56f58c36ee2ed10597f6862a62",
+      "status": "APPROVED",
+      "reason": "Explicit standalone SVG download linked by creator; CC0 grant; static scan found no script, event handler, foreignObject or remote/embedded href",
+      "commercialUse": "Yes",
+      "redistribution": "Yes under CC0",
+      "paidLibraryResale": "Yes under CC0; nonexclusive",
+      "attribution": "Not required by CC0; creator credit recommended",
+      "validation": "Static SVG inspection only; visual and accessibility validation pending",
+      "existingCatalogCheck": "No exact byte match in scanned published payloads/local library assets; semantic duplication still requires visual review"
+    }
+  },
+  {
+    "key": "p5:open-color",
+    "batch": "B1-foundations-assets",
+    "review": {
+      "id": "open-color",
+      "name": "Open Color palette data",
+      "category": "foundations",
+      "website": "https://yeun.github.io/open-color/",
+      "repository": "https://github.com/yeun/open-color",
+      "revision": "3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3",
+      "reviewedFile": "open-color.json",
+      "sourceURL": "https://github.com/yeun/open-color/blob/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/open-color.json",
+      "fileSha256": "fdf2f910ba6dc9c907a46274ea74668813e65d6a5707f03167368bd3a671eb98",
+      "license": "MIT, heeyeun 2016",
+      "status": "APPROVED",
+      "commercialApplicationUse": "YES for reviewed source scope; preserve copyright/license notices and no implied endorsement",
+      "sourceRedistribution": "Yes for the reviewed scope with notices",
+      "paidLibraryResale": "Permitted for approved exact source; nonexclusive, retain notices",
+      "offers": "Static white/black and named shade-scale JSON",
+      "existingCoverage": "Existing 16 palettes are industry-themed combinations, not an interactive shade-scale foundation",
+      "recommendedTier": "Free, attributed nonexclusive foundation",
+      "recommendedAction": "Import only exact palette JSON plus license after implementation approval; one bundle, not a card per swatch",
+      "conditions": "No runtime dependencies in package manifest. Accessibility/contrast must be measured per actual color pairing; avoid blanket accessible-palette claims.",
+      "runtimeValidated": false,
+      "imported": false,
+      "licenseEvidence": "https://github.com/yeun/open-color/blob/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/LICENSE",
+      "licenseSha256": "62f1f7f590dd772b61fe8e07eff8c52de11d545f3ba079bc25b38a82a6ea4bae",
+      "copyrightHolder": "Copyright (c) 2016 heeyeun",
+      "attribution": "Preserve full project and nested copyright/license notices; third-party source remains nonexclusive"
+    }
+  },
+  {
+    "key": "p5:radix-icons",
+    "batch": "B1-foundations-assets",
+    "review": {
+      "id": "radix-icons",
+      "name": "Radix non-logo SVG icon pack",
+      "category": "ui-elements",
+      "website": "https://www.radix-ui.com/icons",
+      "repository": "https://github.com/radix-ui/icons",
+      "revision": "112af91ad275a63c3a29b0da2588342af74ef9bf",
+      "reviewedFile": "LICENSE",
+      "sourceURL": "https://github.com/radix-ui/icons/blob/112af91ad275a63c3a29b0da2588342af74ef9bf/LICENSE",
+      "fileSha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138",
+      "license": "MIT, WorkOS 2022",
+      "status": "APPROVED",
+      "commercialApplicationUse": "YES for reviewed source scope; preserve copyright/license notices and no implied endorsement",
+      "sourceRedistribution": "Yes for the reviewed scope with notices",
+      "paidLibraryResale": "Permitted for approved exact source; nonexclusive, retain notices",
+      "offers": "318 non-logo 15\u00d715 SVG files from reviewed 332-file icon directory",
+      "existingCoverage": "36 Lucide icons already exist outside main gallery; add a coherent 15px style, not another default icon runtime",
+      "recommendedTier": "Free one-pack explorer/download with notices",
+      "recommendedAction": "Use raw SVGs and on-demand exports, grouped as one collection; preserve MIT; do not install all icons into global page bundle",
+      "conditions": "All 332 SVGs parsed; 14 logo-named files excluded from proposed pack for branding/trademark review. Static scans found no script/foreignObject/javascript or href. Names and byte hashes retained individually. Visual overlap and SVG sanitization still need integration checks.",
+      "runtimeValidated": false,
+      "imported": false,
+      "licenseEvidence": "https://github.com/radix-ui/icons/blob/112af91ad275a63c3a29b0da2588342af74ef9bf/LICENSE",
+      "licenseSha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138",
+      "copyrightHolder": "Copyright (c) 2022 WorkOS",
+      "attribution": "Preserve full project and nested copyright/license notices; third-party source remains nonexclusive"
+    }
+  }
+]

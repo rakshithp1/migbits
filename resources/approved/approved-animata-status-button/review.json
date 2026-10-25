@@ -1,0 +1,27 @@
+{
+  "id": "approved-animata-status-button",
+  "kind": "component",
+  "family": "animata",
+  "name": "status-button",
+  "primary": "animata/button/status-button.tsx",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "e7478b835a3b5c4153e71f60666634e91bb38813",
+  "sourceURL": "https://github.com/codse/animata/blob/e7478b835a3b5c4153e71f60666634e91bb38813/animata/button/status-button.tsx",
+  "evidence": "https://raw.githubusercontent.com/codse/animata/e7478b835a3b5c4153e71f60666634e91bb38813/LICENSE.md",
+  "author": "Copyright (c) Animata",
+  "sourceDigest": "2e5c8182f02066b6c588ea45af55b33a4d9ae8d0f7a70ee691f60e70acbfdf52",
+  "files": [
+    "animata/button/status-button.tsx",
+    "LICENSE",
+    "DEPENDENCY_NOTICES.txt"
+  ],
+  "checksums": {
+    "animata/button/status-button.tsx": "08d0ff2c78ef4bdf8304ce4ae4a89d71a99a53ec18738890a785f90239e6fa55",
+    "LICENSE": "ff78804659cbc28380d087cae79c494f243f8ef22b1e2ac5ec119b5de9314f05",
+    "DEPENDENCY_NOTICES.txt": "d639c22ae6118efec406e1b9c56041f3ae27eac13f94542ce67fc7107eb5c6cb"
+  },
+  "status": "APPROVED",
+  "batch": "B2-specialist-controls",
+  "originalReviewKey": "p3:animata:status-button"
+}

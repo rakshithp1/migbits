@@ -1,0 +1,24 @@
+{
+  "id": "approved-open-peeps-5e535637d87131637b0e4379-peep-39-svg",
+  "kind": "illustration",
+  "family": "open-peeps",
+  "name": "5e535637d87131637b0e4379_peep-39.svg",
+  "license": "CC0-1.0",
+  "declaredLicense": "CC0-1.0",
+  "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+  "sourceURL": "https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e535637d87131637b0e4379_peep-39.svg",
+  "evidence": "https://www.openpeeps.com/",
+  "author": "Pablo Stanley; CC0 dedication",
+  "sourceDigest": "892fd5f5a7ec0681854ea25ad8b10205f380516607efe4b862fd0c77fd9abcc0",
+  "files": [
+    "illustration.svg",
+    "LICENSE"
+  ],
+  "checksums": {
+    "illustration.svg": "048fb4da33ea8dc58b47f0aa3e3b69afef94fc2f548bfbe037c72f2ae1d47075",
+    "LICENSE": "5f970177ceed060db67cd67c7239b03ebb0707df6d6f8b5b085f3738dd8db441"
+  },
+  "status": "APPROVED",
+  "batch": "B5-illustration-samples",
+  "originalReviewKey": "p3:open-peeps:5e535637d87131637b0e4379_peep-39.svg"
+}

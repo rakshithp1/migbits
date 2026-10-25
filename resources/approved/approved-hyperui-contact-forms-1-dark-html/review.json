@@ -1,0 +1,25 @@
+{
+  "id": "approved-hyperui-contact-forms-1-dark-html",
+  "kind": "block",
+  "family": "hyperui",
+  "name": "contact-forms/1-dark.html",
+  "primary": "markup.html",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+  "sourceURL": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/contact-forms/1-dark.html",
+  "evidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+  "author": "Copyright (c) Mark Mead",
+  "sourceDigest": "d026b483b9ec92611395e8b3f39fc3e8a95ac6573dcbf1993d70d53cec0b1604",
+  "files": [
+    "markup.html",
+    "LICENSE"
+  ],
+  "checksums": {
+    "markup.html": "abf9d23ac0d07bdb14288e8596fe5c4fbf98354f36e0c9b507ab597e950074dc",
+    "LICENSE": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98"
+  },
+  "status": "APPROVED",
+  "batch": "B3-block-variants",
+  "originalReviewKey": "p3:hyperui:contact-forms/1-dark.html"
+}

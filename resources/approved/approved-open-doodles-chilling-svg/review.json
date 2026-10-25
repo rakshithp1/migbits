@@ -1,0 +1,24 @@
+{
+  "id": "approved-open-doodles-chilling-svg",
+  "kind": "illustration",
+  "family": "open-doodles",
+  "name": "chilling.svg",
+  "license": "CC0-1.0",
+  "declaredLicense": "CC0-1.0",
+  "revision": "Snapshot 2026-10-25; content-addressed SHA256",
+  "sourceURL": "https://opendoodles.s3-us-west-1.amazonaws.com/chilling.svg",
+  "evidence": "https://www.opendoodles.com/about",
+  "author": "Pablo Stanley; CC0 dedication",
+  "sourceDigest": "aaab6518d4313478cbd15cc724c4a79670cc93ea91d5d93eb368334a1f5b6be3",
+  "files": [
+    "illustration.svg",
+    "LICENSE"
+  ],
+  "checksums": {
+    "illustration.svg": "bd2d45ec903eb4ed3eb87109098a079ec63d021ed8ff8a3e9d057307e4ed5e04",
+    "LICENSE": "372f70d283209ea3e7dcefe8a97dbb326a6ce3f72b8568b291c8a5e1f2e69896"
+  },
+  "status": "APPROVED",
+  "batch": "B5-illustration-samples",
+  "originalReviewKey": "p3:open-doodles:chilling.svg"
+}

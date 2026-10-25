@@ -26,11 +26,14 @@ import {
   resourceCategories,
   librarySections,
   type LibraryResource,
+  resourceUsage,
 } from "../../lib/resource-library";
 import "./gallery.css";
 import "./reference-layout.css";
 import { SearchShortcut } from "./search-shortcut";
 const sectionIcons: Record<string, typeof Component> = {
+  backgrounds: Sparkles,
+  foundations: Shapes,
   components: Component,
   blocks: Layers,
   templates: PanelsTopLeft,
@@ -116,7 +119,7 @@ export function GalleryHeader() {
             GitHub
           </a>
           <Link className="mb-header-primary" href="/library">
-            Explore free
+            Explore library
           </Link>
           <details className="mb-mobile-menu">
             <summary aria-label="Open navigation">
@@ -245,9 +248,7 @@ export function ResourceCard({
         <span
           className={`mb-license ${item.license === "OFL-1.1" ? "mb-license-font" : ""}`}
           title={
-            item.license === "OFL-1.1"
-              ? "Commercial use; no standalone font sales"
-              : "Selling copies permitted with required notices"
+            resourceUsage(item).summary
           }
         >
           {item.license === "OFL-1.1" ? "OFL" : item.license}
@@ -279,12 +280,14 @@ export async function ResourceGallery({
   const query = get("q").slice(0, 200),
     topic = get("topic"),
     rights = get("rights"),
+    framework = get("framework"),
     sort = get("sort");
   const base = category === "all" ? "/library" : `/library/${category}`;
   const all = findLibraryResources({ category, query });
   const filtered = all.filter(
     (r) =>
-      (rights !== "resale" || r.license === "MIT") &&
+      (rights !== "resale" || resourceUsage(r).saleOfCopies) &&
+      (!framework || `${r.format} ${r.tags.join(" ")}`.toLowerCase().includes(framework.toLowerCase())) &&
       (!topic ||
         !topics.some((t) => t.id === topic) ||
         topics
@@ -297,7 +300,7 @@ export async function ResourceGallery({
     shown = filtered.slice((page - 1) * 24, page * 24);
   function url(values: Record<string, string>) {
     const next = new URLSearchParams();
-    for (const key of ["q", "topic", "rights", "sort"])
+    for (const key of ["q", "topic", "rights", "sort", "framework"])
       if (get(key)) next.set(key, get(key));
     for (const [k, v] of Object.entries(values)) {
       if (v) next.set(k, v);
@@ -363,6 +366,13 @@ export async function ResourceGallery({
                   <SlidersHorizontal size={15} />
                 </summary>
                 <div>
+                  <label className="mb-filter">
+                    <span>Technology</span>
+                    <select name="framework" aria-label="Technology" defaultValue={framework}>
+                      <option value="">All technologies</option>
+                      {["React", "HTML", "CSS", "SVG", "WebGPU"].map((value) => <option key={value} value={value}>{value}</option>)}
+                    </select>
+                  </label>
                   <label className="mb-filter">
                     <span>Usage</span>
                     <select

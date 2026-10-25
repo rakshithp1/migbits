@@ -393,10 +393,12 @@ function SourcePanel({ item }: { item: LibraryResource }) {
   );
 }
 export function ResourceStudio({
-  resource: item,
+  resource,
 }: {
   resource: LibraryResource;
 }) {
+  const [variant, setVariant] = useState(0);
+  const item = { ...resource, ...resource.variants?.[variant] };
   const [tab, setTab] = useState("preview"),
     [mobile, setMobile] = useState(false),
     [loaded, setLoaded] = useState(false);
@@ -406,6 +408,7 @@ export function ResourceStudio({
       : item.previewUrl;
   return (
     <div className="mb-studio">
+      {item.registryItem && <div className="mb-registry-install"><code>npx shadcn@4.22.1 add https://migbits.com/r/{item.registryItem}.json</code><CopyButton label="Copy install command" text={`npx shadcn@4.22.1 add https://migbits.com/r/${item.registryItem}.json`} /></div>}
       <div className="mb-studio-bar">
         <div role="tablist" aria-label="Resource view">
           {[
@@ -452,6 +455,7 @@ export function ResourceStudio({
         </div>
         {iframeUrl && tab === "preview" && (
           <div className="mb-device-controls">
+            {resource.variants && <><select aria-label="Preview variant" value={variant} onChange={(event) => setVariant(Number(event.target.value))}>{resource.variants.map((entry, index) => <option key={entry.label} value={index}>{entry.label}</option>)}</select><a href={item.downloadUrl} aria-label="Download selected variant"><Download size={15}/></a></>}
             <button
               aria-label="Desktop preview"
               aria-pressed={!mobile}

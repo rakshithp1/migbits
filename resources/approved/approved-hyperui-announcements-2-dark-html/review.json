@@ -1,0 +1,25 @@
+{
+  "id": "approved-hyperui-announcements-2-dark-html",
+  "kind": "block",
+  "family": "hyperui",
+  "name": "announcements/2-dark.html",
+  "primary": "markup.html",
+  "license": "MIT",
+  "declaredLicense": "MIT",
+  "revision": "252efcfe39161db6e67cd877da001ee248d2bbf6",
+  "sourceURL": "https://github.com/markmead/hyperui/blob/252efcfe39161db6e67cd877da001ee248d2bbf6/public/examples/marketing/announcements/2-dark.html",
+  "evidence": "https://raw.githubusercontent.com/markmead/hyperui/252efcfe39161db6e67cd877da001ee248d2bbf6/LICENSE",
+  "author": "Copyright (c) Mark Mead",
+  "sourceDigest": "2e5d7f76269ba2b78ae667ee747b55a3f0b6583337f7cb8e8156c82a917eccd6",
+  "files": [
+    "markup.html",
+    "LICENSE"
+  ],
+  "checksums": {
+    "markup.html": "dacf4ec3efa38a0034960498b781ba9eb5427b9fba9fa7b730460100506ff189",
+    "LICENSE": "60e0bb845a95da072acc1ada114cf8ce325347ed9d5f802d8d7fd9b511248f98"
+  },
+  "status": "APPROVED",
+  "batch": "B3-block-variants",
+  "originalReviewKey": "p3:hyperui:announcements/2-dark.html"
+}

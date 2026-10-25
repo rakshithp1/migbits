@@ -4,6 +4,7 @@ import { ArrowUpRight, Download } from "lucide-react";
 import {
   libraryResources,
   categoryLabel,
+  resourceUsage,
 } from "../../../../lib/resource-library";
 import { GalleryHeader, GalleryFooter, ResourceCard } from "../../gallery";
 import { ResourceStudio } from "../../resource-studio";
@@ -57,9 +58,7 @@ export default async function ResourcePage({
               <h2>License & usage</h2>
               <strong className="mb-license">{item.license}</strong>
               <p>
-                {item.license === "OFL-1.1"
-                  ? "Commercial design use. Font files cannot be sold by themselves; bundling requires the OFL notice."
-                  : "Commercial use, modification and selling copies permitted. Preserve copyright and license notices."}
+                {resourceUsage(item).summary}
               </p>
               <Link href="/library/licenses">Read the usage guide ↗</Link>
             </div>
