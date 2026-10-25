@@ -7,7 +7,17 @@ import { createHash } from "node:crypto";
 const directory = "catalog/template-research";
 mkdirSync(directory, { recursive: true });
 mkdirSync("tmp/template-research", { recursive: true });
-const write = (file: string, value: unknown) => writeFileSync(file, JSON.stringify(value, null, 2) + "\n");
+const write = (file: string, value: unknown) => {
+  const content = JSON.stringify(value, null, 2) + "\n";
+  for (let attempt = 0; ; attempt++) {
+    try { writeFileSync(file, content); return; }
+    catch (error) {
+      // Synced Windows folders can briefly lock a progress file.
+      if (attempt >= 9 || !["EBUSY", "EPERM", "EACCES", "UNKNOWN"].includes((error as NodeJS.ErrnoException).code || "")) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 50);
+    }
+  }
+};
 function api(args: string[]) {
   const response = spawnSync("gh", ["api", ...args], { encoding: "utf8", maxBuffer: 32 * 1024 * 1024, windowsHide: true });
   if (response.status !== 0) throw Error(response.stderr);
@@ -18,6 +28,7 @@ interface Candidate {
   discovery: string[]; spdxHint: string | null; status: string; reason: string; imported: boolean;
   revision?: string; licenseFile?: string; licenseURL?: string; codeLicenseVerified?: boolean;
   licenseSha256?: string;
+  public?: boolean;
   motion: string; templateScope: string;
 }
 const file = path.join(directory, "candidates.json");
@@ -29,16 +40,17 @@ const queries = [
   "landing-page template animation in:readme license:mit fork:false archived:false stars:>5",
 ];
 const manifest = [];
-if (!process.argv.includes("--licenses-only")) for (const query of queries) {
+if (!process.argv.includes("--licenses-only") && !process.argv.includes("--verify-visibility")) for (const query of queries) {
   let fetched = 0, total = 0;
   for (let page = 1; page <= 10; page++) {
     const response = api(["search/repositories", "-X", "GET", "-f", `q=${query}`, "-f", "per_page=100", "-f", `page=${page}`, "-f", "sort=stars", "-f", "order=desc"]);
     total = response.total_count;
     for (const item of response.items) {
+      if (item.private !== false) continue;
       const key = item.full_name.toLowerCase();
       const old = candidates.get(key);
       if (old) { if (!old.discovery.includes(query)) old.discovery.push(query); continue; }
-      candidates.set(key, { repository: item.full_name, url: item.html_url, owner: item.owner.login, branch: item.default_branch, stars: item.stargazers_count, topics: item.topics, spdxHint: item.license?.spdx_id || null, discovery: [query], status: "UNVERIFIED", reason: "Search candidate only. Verify creator, actual license, complete-template scope, animation, dependency/artwork rights, uniqueness and isolated build before import.", imported: false, motion: "unverified", templateScope: "unverified" });
+      candidates.set(key, { repository: item.full_name, public: true, url: item.html_url, owner: item.owner.login, branch: item.default_branch, stars: item.stargazers_count, topics: item.topics, spdxHint: item.license?.spdx_id || null, discovery: [query], status: "UNVERIFIED", reason: "Search candidate only. Verify creator, actual license, complete-template scope, animation, dependency/artwork rights, uniqueness and isolated build before import.", imported: false, motion: "unverified", templateScope: "unverified" });
     }
     fetched += response.items.length;
     write(file, [...candidates.values()]);
@@ -73,12 +85,26 @@ if (process.argv.includes("--verify-license-files") || process.argv.includes("--
     console.log(`License-file pass: ${Math.min(offset + batch.length, pending.length)}/${pending.length}`);
   }
 }
+if (process.argv.includes("--verify-visibility")) {
+  const rows = [...candidates.values()].filter(row => row.public !== true);
+  for (let offset = 0; offset < rows.length; offset += 40) {
+    const batch = rows.slice(offset, offset + 40);
+    const query = batch.map((row, index) => { const [owner, name] = row.repository.split("/"); return `r${index}:repository(owner:${JSON.stringify(owner)},name:${JSON.stringify(name)}){isPrivate}`; });
+    const result = api(["graphql", "-f", `query={${query.join("\n")}}`]);
+    for (const [index, row] of batch.entries()) {
+      if (!result.data[`r${index}`] || result.data[`r${index}`].isPrivate) candidates.delete(row.repository.toLowerCase());
+      else row.public = true;
+    }
+    write(file, [...candidates.values()]);
+    console.log(`Public visibility verified: ${Math.min(offset + 40, rows.length)}/${rows.length}`);
+  }
+}
 if (existsSync("catalog/approved-templates.json")) {
   const imported = JSON.parse(readFileSync("catalog/approved-templates.json", "utf8"));
   for (const item of imported) {
     const review = JSON.parse(readFileSync(`resources/template-imports/${item.id}/review.json`, "utf8"));
     const old = candidates.get(review.repository.toLowerCase());
-    candidates.set(review.repository.toLowerCase(), { ...old, repository: review.repository, url: `https://github.com/${review.repository}`, owner: review.repository.split("/")[0], topics: old?.topics || ["website-template"], spdxHint: "MIT", discovery: old?.discovery || ["Official creator repository; individual scope review"], status: "IMPORTED_VALIDATED", reason: "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.", imported: true, revision: review.revision, licenseFile: "LICENSE", licenseURL: review.evidence, licenseSha256: review.checksums.LICENSE, codeLicenseVerified: true, motion: "Native MigBits adaptation verified; upstream code preserved separately", templateScope: `Complete template kit, ${item.template.pages} pages` });
+    candidates.set(review.repository.toLowerCase(), { ...old, repository: review.repository, public: true, url: `https://github.com/${review.repository}`, owner: review.repository.split("/")[0], topics: old?.topics || ["website-template"], spdxHint: "MIT", discovery: old?.discovery || ["Official creator repository; individual scope review"], status: "IMPORTED_VALIDATED", reason: "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.", imported: true, revision: review.revision, licenseFile: "LICENSE", licenseURL: review.evidence, licenseSha256: review.checksums.LICENSE, codeLicenseVerified: true, motion: "Native MigBits adaptation verified; upstream code preserved separately", templateScope: `Complete template kit, ${item.template.pages} pages` });
   }
 }
 const rows = [...candidates.values()];

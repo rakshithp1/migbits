@@ -1,14 +1,14 @@
 {
-  "releasedAt": "2026-10-25T15:52:04.035Z",
+  "releasedAt": "2026-10-25T17:55:21.421Z",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "1de0ceb2dd1ab74125db76b9b550245725bae69a",
-  "deploymentVersion": "ca7030e2-60ab-4e19-8a1a-f9e44a93f787",
-  "resources": 343,
+  "sourceCommit": "9167b8970c2e7fffa9a6fad7ba329750b15ddc59",
+  "deploymentVersion": "afbfe782-b545-4cf8-93d3-f6c644e0956d",
+  "resources": 358,
   "categories": {
     "components": 92,
     "blocks": 19,
-    "templates": 3,
+    "templates": 18,
     "typography": 12,
     "colors": 18,
     "illustrations": 14,
@@ -19,43 +19,45 @@
     "icons": 1
   },
   "licenses": {
-    "MIT": 329,
+    "MIT": 344,
     "OFL-1.1": 12,
     "CC0-1.0": 2
   },
   "changes": [
-    "Moving blue atmosphere, entrance animations and hover/click/focus effects",
-    "Motion pause control and live OS reduced-motion support",
-    "29 new grouped gallery entries preserving 43 reviewed source scopes",
-    "Eight official shadcn registry installations verified in isolated consumer"
+    "15 reviewed complete native-motion template kits containing 32 pages",
+    "18 total template kits with category, animation and multi-page filters",
+    "Lazy isolated previews with per-page selection, complete source ZIPs and separate original/adapted code",
+    "Original MigBits artwork substitutes for excluded third-party photos/fonts/vendor assets; notices preserved",
+    "Existing blue atmosphere, motion controls and Usage-navigation removal retained"
   ],
   "checks": {
     "unit": 40,
-    "localBrowser": 24,
-    "workerBrowser": 2,
+    "localBrowser": 26,
     "liveBrowser": 5,
     "hostingGroups": 9,
-    "reviewedSourceRenders": 43,
-    "registryConsumerInstalls": 8,
+    "newTemplateKitsValidated": 15,
+    "newTemplatePagesValidated": 32,
     "lint": "passed",
     "typecheck": "passed",
     "nextBuild": "passed",
     "cloudflareBuild": "passed",
     "workerDryRun": "passed",
-    "liveHosting": "passed"
+    "liveHosting": "passed",
+    "sourceCommitCI": "passed",
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40218101117"
   },
   "remaining": {
-    "approvedScopesPending": 388,
-    "conditionalHeld": 25,
-    "unverifiedHeld": 1,
+    "requestedCompleteTemplates": 1000,
+    "currentCompleteTemplateKits": 18,
+    "remainingToTarget": 982,
+    "candidateRepositoriesStillUnverified": 1799,
     "freePro": "deferred",
-    "nativeFigmaExecution": "not verified",
-    "accessibility": "Full per-entry accessibility certification remains pending"
+    "accessibility": "Per-entry comprehensive accessibility certification remains pending"
   },
   "evidence": [
-    "docs/APPROVED-EXPANSION.md",
-    "catalog/approved-registry-validation.json",
-    "catalog/approved-resource-validation.json",
-    "catalog/resource-processing-queue.json"
+    "docs/MOTION-TEMPLATE-EXPANSION.md",
+    "catalog/template-research/progress.json",
+    "catalog/template-research/render-validation.json",
+    "catalog/template-research/web-sources.json"
   ]
 }
