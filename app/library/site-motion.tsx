@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
 import { Pause, Play } from "lucide-react";
 import "./site-motion.css";
@@ -18,11 +18,12 @@ export function SiteMotion() {
   const reduced = useSyncExternalStore(subscribe, preference, () => false);
   const [paused, setPaused] = useState(false);
   const stopped = paused || reduced;
+  const revealed = useRef(new WeakSet<Element>());
 
   useEffect(() => {
     document.documentElement.dataset.mbMotion = stopped ? "paused" : "running";
     if (stopped || !window.IntersectionObserver) return;
-    const seen = new WeakSet<Element>();
+    const seen = revealed.current;
     const animations = new Set<Animation>();
     const observer = new IntersectionObserver((entries) => {
       let order = 0;
@@ -30,24 +31,30 @@ export function SiteMotion() {
         if (!entry.isIntersecting) continue;
         observer.unobserve(entry.target);
         const animation = entry.target.animate(
-          [{ opacity: 0, transform: "translate3d(0, 16px, 0)" }, { opacity: 1, transform: "translate3d(0, 0, 0)" }],
-          { duration: 540, delay: Math.min(order++ * 40, 180), easing: "cubic-bezier(.2,.7,.2,1)" },
+          [{ opacity: 0.82, translate: "0 8px" }, { opacity: 1, translate: "0 0" }],
+          { duration: 650, delay: Math.min(order++ * 30, 120), easing: "cubic-bezier(.16,1,.3,1)" },
         );
         animations.add(animation);
         animation.finished.then(() => animations.delete(animation)).catch(() => {});
       }
-    }, { threshold: 0.06 });
-    const scan = () => {
-      document.querySelectorAll(
-        ".mb-site .mb-card, .mb-site .mb-home-category-grid > a, .mb-site .mb-home-workflow > article, .mb-site .mb-home-section-heading > *, .mb-site .mb-home-hero-copy > *, .mb-site .mb-home-frame, .mb-site .mb-intro > *, .mb-site .mb-detail-heading > *, .mb-site .mb-resource-aside > div, .mb-site .mb-dotted-signoff",
-      ).forEach((element) => {
+    }, { threshold: 0.12 });
+    const selector = ".mb-site .mb-card-preview, .mb-site .mb-home-category-grid > a, .mb-site .mb-home-workflow > article, .mb-site .mb-home-section-heading, .mb-site .mb-home-hero-copy > *, .mb-site .mb-intro, .mb-site .mb-detail-heading";
+    const scan = (root: Document | Element) => {
+      const elements = [...root.querySelectorAll(selector)];
+      if (root instanceof Element && root.matches(selector)) elements.push(root);
+      elements.forEach((element) => {
         if (seen.has(element)) return;
         seen.add(element);
         observer.observe(element);
       });
     };
-    scan();
-    const updates = new MutationObserver(scan);
+    scan(document);
+    // Inspect inserted subtrees only; text changes must not replay the page.
+    const updates = new MutationObserver((records) => {
+      for (const record of records) for (const node of record.addedNodes) {
+        if (node instanceof Element) scan(node);
+      }
+    });
     updates.observe(document.body, { childList: true, subtree: true });
     return () => {
       observer.disconnect();

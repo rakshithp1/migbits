@@ -69,10 +69,20 @@ test("archive routes redirect to the library and passing resources use isolated 
     "sandbox",
     "allow-scripts",
   );
-  await expect(page.frameLocator("iframe").locator("body")).toHaveAttribute(
-    "data-preview-state",
-    "rendered",
-  );
+  const preview = page.frameLocator("iframe");
+  const gpuAvailable = await preview.locator("body").evaluate(async () => {
+    const gpu = (navigator as Navigator & { gpu?: { requestAdapter(): Promise<unknown> } }).gpu;
+    return Boolean(gpu && await gpu.requestAdapter());
+  });
+  if (gpuAvailable) {
+    await expect(preview.locator("body")).toHaveAttribute("data-preview-state", "rendered");
+  } else {
+    // Headless CI may have no GPU. Verify the real fallback instead of claiming a render.
+    await expect(preview.locator("body")).toHaveAttribute("data-preview-state", "error");
+    await expect(preview.getByRole("status")).toContainText("Live WebGPU preview unavailable on this device");
+    await expect(preview.getByRole("button", { name: "Play animation" })).toBeDisabled();
+    test.info().annotations.push({ type: "GPU unavailable", description: "Verified unsupported-device fallback; shader rendering requires a compatible GPU." });
+  }
   expect(
     (await request.get("/open-source/imports/shaders--webcamtexture")).status(),
   ).toBe(404);

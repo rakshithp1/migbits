@@ -1,39 +1,58 @@
-/* Original blue atmosphere. Only transform/opacity animate on the ambient layer. */
+/* Original liquid-blue atmosphere. Only transform/opacity animate. */
 .mb-site { position: relative; isolation: isolate; }
-.mb-site::before {
+.mb-site::before, .mb-site::after {
   content: "";
   position: fixed;
-  inset: -14vh -12vw;
+  inset: -22vh -20vw;
   z-index: -1;
   pointer-events: none;
+  transform-origin: center;
+}
+.mb-site::before {
   background:
-    radial-gradient(ellipse 45% 38% at 20% 25%, #145cff32, transparent 75%),
-    radial-gradient(ellipse 42% 48% at 85% 65%, #196bd638, transparent 75%),
-    radial-gradient(ellipse 40% 30% at 30% 90%, #414bdb24, transparent 75%);
-  animation: mb-blue-atmosphere 24s ease-in-out infinite alternate;
+    radial-gradient(ellipse 44% 36% at 20% 28%, #125bff55, transparent 76%),
+    radial-gradient(ellipse 38% 48% at 82% 72%, #007fff38, transparent 78%);
+  animation: mb-blue-tide 18s cubic-bezier(.45,0,.55,1) infinite;
 }
-@keyframes mb-blue-atmosphere {
-  0% { transform: translate3d(-2%, -2%, 0) scale(1); opacity: .65; }
-  55% { transform: translate3d(3%, 2%, 0) scale(1.06); opacity: 1; }
-  100% { transform: translate3d(-1%, 4%, 0) scale(1.02); opacity: .8; }
+.mb-site::after {
+  background:
+    radial-gradient(ellipse 35% 32% at 72% 20%, #2349e54d, transparent 78%),
+    radial-gradient(ellipse 48% 26% at 28% 85%, #326df52b, transparent 80%);
+  animation: mb-blue-undertow 25s cubic-bezier(.45,0,.55,1) infinite;
 }
-.mb-home-hero .mb-flow-background svg { animation: mb-hero-current 17s ease-in-out infinite alternate; transform-origin: center; }
-@keyframes mb-hero-current {
-  from { transform: translate3d(-2%, -1%, 0) scale(1.04) rotate(-3deg); }
-  to { transform: translate3d(3%, 3%, 0) scale(1.13) rotate(4deg); }
+@keyframes mb-blue-tide {
+  0%, 100% { transform: translate3d(-6%, -3%, 0) scale(1); opacity: .8; }
+  35% { transform: translate3d(7%, 4%, 0) scale(1.07); opacity: 1; }
+  70% { transform: translate3d(1%, 8%, 0) scale(1.03); opacity: .85; }
+}
+@keyframes mb-blue-undertow {
+  0%, 100% { transform: translate3d(6%, 3%, 0) scale(1.05); opacity: .75; }
+  40% { transform: translate3d(-7%, -4%, 0) scale(1); opacity: 1; }
+  75% { transform: translate3d(-2%, 6%, 0) scale(1.08); opacity: .8; }
+}
+/* Independently flowing ribbons replace the rotating hero sheet. */
+.mb-home-hero .mb-flow-background svg { animation: none; transform: none; opacity: .95; }
+.mb-flow-background path { transform-box: view-box; transform-origin: center; animation: mb-blue-ribbon 14s ease-in-out infinite; }
+.mb-flow-background path:nth-child(2) { animation-duration: 19s; animation-delay: -7s; }
+.mb-flow-background path:nth-child(3) { animation-duration: 23s; animation-delay: -12s; }
+@keyframes mb-blue-ribbon {
+  0%, 100% { transform: translate3d(-55px, -25px, 0) scale(1.03, .94); opacity: .8; }
+  50% { transform: translate3d(65px, 55px, 0) scale(1.06, 1.12); opacity: 1; }
 }
 .mb-site :where(a, button, input, select, textarea, summary) {
-  transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .25s ease;
 }
-.mb-site :where(button, .mb-button, .mb-blue-button, .mb-dark-button):active { transform: scale(.97); }
 .mb-site :where(input, select, textarea):focus-visible { outline: 2px solid #8eb7ff; outline-offset: 3px; box-shadow: 0 0 0 5px #2779ff1a; }
 .mb-site :where(a, button, summary):focus-visible { outline: 2px solid #8eb7ff; outline-offset: 4px; }
-.mb-site .mb-card { transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease; }
-@media (hover: hover) {
-  .mb-site .mb-card:hover { transform: translateY(-5px); box-shadow: 0 16px 44px #124bb31c; }
-  .mb-site .mb-home-category-grid > a:hover { transform: translateY(-4px); border-color: #528bf377; }
-  .mb-site :where(.mb-blue-button, .mb-header-primary):hover { box-shadow: 0 5px 28px #2672ff50; }
-  .mb-site .mb-header nav a:hover { transform: translateY(-1px); }
+.mb-site .mb-card { transition: none; }
+.mb-site .mb-card-preview { transition: box-shadow .3s ease, border-color .3s ease; }
+.mb-site .mb-card-preview > img { transition: transform .65s cubic-bezier(.16,1,.3,1); }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .mb-site .mb-card:hover { transform: none; box-shadow: none; }
+  .mb-site .mb-card:hover .mb-card-preview { box-shadow: 0 0 0 1px #6a9fff55, 0 8px 30px #082e7226; }
+  .mb-site .mb-card:hover .mb-card-preview > img { transform: scale(1.025); }
+  .mb-site .mb-home-category-grid > a:hover { transform: none; border-color: #528bf377; background-color: #15264a55; }
+  .mb-site :where(.mb-blue-button, .mb-header-primary):hover { box-shadow: 0 0 0 3px #387cff20, 0 4px 20px #165dd633; }
 }
 .mb-motion-toggle {
   position: fixed; left: 16px; bottom: 16px; z-index: 80;
@@ -45,12 +64,13 @@
 .mb-motion-toggle:focus-visible { outline: 2px solid #8eb7ff; outline-offset: 3px; }
 .mb-motion-toggle:disabled { cursor: default; }
 html[data-mb-motion="paused"] .mb-site::before,
-html[data-mb-motion="paused"] .mb-flow-background svg { animation-play-state: paused; }
+html[data-mb-motion="paused"] .mb-site::after { animation-play-state: paused !important; }
 html[data-mb-motion="paused"] .mb-site *, html[data-mb-motion="paused"] .mb-site *::before, html[data-mb-motion="paused"] .mb-site *::after { animation-play-state: paused !important; }
-html[data-mb-motion="paused"] .mb-site :where(a, button, input, select, textarea, summary, .mb-card) { transition: none; }
+html[data-mb-motion="paused"] .mb-site :where(a, button, input, select, textarea, summary, .mb-card-preview, .mb-card-preview > img) { transition: none; }
+html[data-mb-motion="paused"] .mb-site .mb-card-preview > img { transform: none; }
 @media (prefers-reduced-motion: reduce) {
-  .mb-site::before, .mb-flow-background svg { animation: none !important; transform: none !important; }
-  .mb-site *, .mb-site *::before, .mb-site *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition: none !important; scroll-behavior: auto !important; }
+  .mb-site::before, .mb-site::after, .mb-flow-background svg, .mb-flow-background path { animation: none !important; transform: none !important; }
+  .mb-site *, .mb-site *::before, .mb-site *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
 .mb-registry-install { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px; border-bottom: 1px solid #314262; background: #0d172a; }
 .mb-registry-install code { font-size: 11px; overflow-wrap: anywhere; color: #d9e8ff; }
