@@ -1,0 +1,36 @@
+{
+  "id": "approved-template-modern-business",
+  "repository": "StartBootstrap/startbootstrap-modern-business",
+  "revision": "7d297106cbda2f04db4696752fcdb5b4dc9cd936",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-modern-business/7d297106cbda2f04db4696752fcdb5b4dc9cd936/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+    "README.md": "b322fb60be952c27bb729bb452bcacdd5927f22337fbff8e6a6beae5bd9920a8",
+    "dist/about.html": "55e419c44cecff9e5b145a3ec4593646801386e7131903fa07b2fb4c1986d2b0",
+    "dist/blog-home.html": "1aced57de8e3498d9f32c10fa3589972ec61d08ea28f4f88ccfda349821f1c05",
+    "dist/blog-post.html": "c8cc03c7f1853692f0e166e425bdc7cf2a6f39285d2b7ddbcc5e16e21c2ca431",
+    "dist/contact.html": "797ef25f80da7ddd9eb6c9fa50144539805e404ebad30ebc7cd7d03fb75b917a",
+    "dist/css/styles.css": "c97338db14e66a26fb733a982d3c51f55acff638de3444767e4f6f09646a1063",
+    "dist/faq.html": "546cab2b30b5fba6cd4a224366392704eb3fa8b74694924f06b8b4c5158f259a",
+    "dist/index.html": "c19b4c03d3e37b666c74684696205111d2fa3553f99326648665510ef88ff08d",
+    "dist/js/scripts.js": "8205c4d73320348888e46ebfb2796ee701dc2416801e54d8f491620a9c6f6c1f",
+    "dist/portfolio-item.html": "27197439b48b96d3d01613a5fa27a3311e2bf4a1a750959954f3e57b8449e7a6",
+    "dist/portfolio-overview.html": "b7d991bb60701db483fc2a9f533a34f1ff46491ae406e4248488cd60a530c173",
+    "dist/pricing.html": "9a05cacfc04f1fae1814fa879a671f811216b465c457ca7dde84dc8cde44746f",
+    "package.json": "0b565c1ad4eab36099d74ccfcc25a8b691fc19c05cd02cc146ab9e6afc348d03",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "7f5b40e7bf5c462e223f77e492bd3d8ab3142274150884da4a4a95698437031b",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/favicon.ico"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}

@@ -408,6 +408,18 @@
 .mb-card-preview > img {
   object-fit: cover;
 }
+.mb-template-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 8px;
+  border: 1px solid #a4c0ff33;
+  border-radius: 20px;
+  background: #0b162de8;
+  color: #e2ecff;
+  font-size: 10px;
+  pointer-events: none;
+}
 .mb-palette-art {
   padding: 17px;
 }

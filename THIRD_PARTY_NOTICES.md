@@ -10,6 +10,12 @@ New Migbits templates, illustrations and Figma generator kits are original works
 
 React Bits Blur Text and Spotlight Card have been removed from the application and current source tree. The call-to-action now uses original static markup. The removed effects are not distributed in current downloads.
 
+## Complete template motion editions
+
+Fifteen template kits derive from individually pinned official Start Bootstrap repositories under MIT. `resources/template-imports/<id>/review.json` records each reviewed file, SHA256, creator, commit and exact license evidence. Embedded Bootstrap 5.2.3 CSS retains its separate MIT notice. Root runnable pages are MigBits adaptations; unchanged reviewed upstream HTML, CSS and author scripts are retained under `upstream/` in each ZIP.
+
+Original upstream photographs, logos, favicons, external fonts and executable vendor bundles are not redistributed by these kits. Runnable editions contain original MigBits SVG artwork and native browser motion/navigation/form-demo controllers, separately licensed and described in `MIGBITS-MODIFICATIONS.json` and `MIGBITS-ADAPTATION-LICENSE`. The adaptations do not claim parity with original paid/form/animation services. Each kit includes the original author notice and `BOOTSTRAP-LICENSE`. See `docs/MOTION-TEMPLATE-EXPANSION.md`.
+
 ## Integrated source
 
 The 65 modules under components/ui/ derive from shadcn/ui, licensed MIT. Preserve components/ui/LICENSE and ORIGIN.json with redistributed copies. The source pack includes both and records its local modifications. The original Migbits settings block and the rest of this application are not relicensed by the pack.

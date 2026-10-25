@@ -1,0 +1,37 @@
+{
+  "id": "approved-template-business-casual",
+  "repository": "StartBootstrap/startbootstrap-business-casual",
+  "revision": "b6f928934386a54e08c2e7f40ebd9e4d7510bba4",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-business-casual/b6f928934386a54e08c2e7f40ebd9e4d7510bba4/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+    "README.md": "cbd4c4bfa0523ce00b487d2395ac64cb102aa71d970a7b5fa1823e303a75f296",
+    "dist/about.html": "823b275d2ee03b22baf4eb523117eb3e38543783c7fe7aa766ca4109211071e9",
+    "dist/css/styles.css": "70394295e52762aa534f2d446b5d2399fd13d4dee1bbac9b4cefb813fc61b418",
+    "dist/index.html": "1004c28bb0453c2c25ad2813824710df3e7fdf74881f9198e8fc671d6d948573",
+    "dist/js/scripts.js": "fd2c24cf59180d17cdb8ee336e9d8f811191513b36888d442d817f9fb302a23b",
+    "dist/products.html": "2827ace4fa153bb60d9fbae14e687aa8f46db36299728b2f13eea89363a2b93c",
+    "dist/store.html": "d375e12b04e873e50967c50bba34e0bc8d39bfa1c63a67ff589443c165f00998",
+    "package.json": "6e76c4f6f679934b83aa5b4b4b806c340cf03adfaaf8c58164a66d5b7302018a",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "863024f5764fc5b0331fbbc8b85215fd508c9031ed3a862631d838d21d96ef3a",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/favicon.ico",
+    "dist/assets/img/about.jpg",
+    "dist/assets/img/bg.jpg",
+    "dist/assets/img/intro.jpg",
+    "dist/assets/img/products-01.jpg",
+    "dist/assets/img/products-02.jpg",
+    "dist/assets/img/products-03.jpg"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}

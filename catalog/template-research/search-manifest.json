@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-25T17:16:32.240Z",
+  "source": "https://docs.github.com/en/rest/search/search#search-repositories",
+  "queries": [
+    {
+      "query": "template motion in:readme language:TypeScript license:mit fork:false archived:false stars:>100",
+      "total": 235,
+      "fetched": 235,
+      "capped": false
+    },
+    {
+      "query": "template motion in:readme language:TypeScript license:mit fork:false archived:false stars:6..100",
+      "total": 863,
+      "fetched": 863,
+      "capped": false
+    },
+    {
+      "query": "animated template license:mit fork:false archived:false",
+      "total": 264,
+      "fetched": 264,
+      "capped": false
+    },
+    {
+      "query": "landing-page template animation in:readme license:mit fork:false archived:false stars:>5",
+      "total": 559,
+      "fetched": 559,
+      "capped": false
+    }
+  ],
+  "warning": "Candidate repositories are not counts of complete, animated, redistributable templates. GitHub search is bounded and changes over time."
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "approved-template-agency",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "874d0647992f60cb051a48b670f207131a549b246c265a13e7fb39f0ae02d487"
+  },
+  {
+    "id": "approved-template-creative",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "186f9af7e5f65ca55c06ebc0a6c5056a1461a8bffaabc31c1805fe207a61d8dc"
+  },
+  {
+    "id": "approved-template-grayscale",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "546e7e497f49846e3be95e410b08a4ebb3d1973d0dde8392eba4dff7cc7fed0b"
+  },
+  {
+    "id": "approved-template-freelancer",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "6f4eb9c9ce55aeb9d8baf087f126702d1ef1eda186a096dfe2d4fcc696c6e998"
+  },
+  {
+    "id": "approved-template-landing-page",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "de1650d07b9720e0ba99132b8bc5c941205f890c64f25dba4d84298440e83f8b"
+  },
+  {
+    "id": "approved-template-new-age",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "26f641d61796724bfd0d948f74f12b6f5d786e2e377b752f3dbfaec8c59818fc"
+  },
+  {
+    "id": "approved-template-personal",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "67399dea12df89a0613d91ff90aea134df7b36f3e65276d708eb491fc40bb738"
+  },
+  {
+    "id": "approved-template-resume",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "64c7339e8d931e941b72e6a7d9fdf09c9b390ef16ac377fc02add41c64f9024d"
+  },
+  {
+    "id": "approved-template-business-casual",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "c670b044ecea70830c225568be71479b3f3ab02dbdf075292199f9774a04731f"
+  },
+  {
+    "id": "approved-template-modern-business",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "64dd663639f7ac3c7aaa74054a56fc1895146299c8978cbfe1ecfdd0059f06d1"
+  },
+  {
+    "id": "approved-template-stylish-portfolio",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "ce3a2eeadc4275527ceeba68c1c36d1c16f39c492647d30730a40d062b221bd6"
+  },
+  {
+    "id": "approved-template-clean-blog",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "e0e8a4caadac5e82ff3627b20aa8139dc15f1f210e912ec6bb185aa061b2a9c0"
+  },
+  {
+    "id": "approved-template-small-business",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "e55ddbf8b7448cb49a4097c23944ff36825e68738ddf3b162bba73c36ebe6a60"
+  },
+  {
+    "id": "approved-template-business-frontpage",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "69cdb253a0151c2d4cef573f0ff87a2d6f87dc55ede2a5076f88049087659aaa"
+  },
+  {
+    "id": "approved-template-scrolling-nav",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "bd00d2b1a634ca771e899c48e727ab7d6921a845b696a3e6feee3f6013a0ab53"
+  }
+]

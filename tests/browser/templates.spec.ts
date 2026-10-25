@@ -6,7 +6,7 @@ test("original templates provide frontend controls, honest form states and mobil
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   for (const id of libraryResources
-    .filter((r) => r.category === "templates")
+    .filter((r) => r.category === "templates" && r.author === "Migbits")
     .map((r) => r.id.replace("template-", ""))) {
     await page.goto("/library/previews/templates/" + id + ".html");
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();

@@ -1,0 +1,33 @@
+{
+  "id": "approved-template-grayscale",
+  "repository": "StartBootstrap/startbootstrap-grayscale",
+  "revision": "d974402542d05abcbaa8d21d4dd78e53680f2edd",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-grayscale/d974402542d05abcbaa8d21d4dd78e53680f2edd/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+    "README.md": "a9defd313908d3466323f007297427b782fe94cc0663c44e3bbe8ab6c2723c35",
+    "dist/css/styles.css": "9fd76ca3867d2bf177c1648f68ca8f7113f2c67096b5ef8d6a0258eae045ab37",
+    "dist/index.html": "666ef3b2e6af2d6a167172e23e58f7e5eac2f514cd0f4dba2b83c5f707ecfa4a",
+    "dist/js/scripts.js": "c4636779aad0ee3ea0ad730a2eb31f57890314eef8e0296df54935f8575f7c04",
+    "package.json": "4dc52521721d8569965f20745ea35a3c8cb90731c1a19208d825c318f51b4e29",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "c4764f02eaae73d480d9d1d631ed8b56456b40230c30e1b25180ef979bd1dba3",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/favicon.ico",
+    "dist/assets/img/bg-masthead.jpg",
+    "dist/assets/img/bg-signup.jpg",
+    "dist/assets/img/demo-image-01.jpg",
+    "dist/assets/img/demo-image-02.jpg",
+    "dist/assets/img/ipad.png"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}

@@ -222,6 +222,7 @@ export function ResourceCard({
         aria-label={`Explore ${item.name}`}
       >
         <ResourceVisual item={item} priority={index < 4} />
+        {item.template && <span className="mb-template-badge">{item.template.motion ? "Motion" : "Static"} · {item.template.pages} {item.template.pages === 1 ? "page" : "pages"}</span>}
         <span className="mb-preview-open">
           Explore resource <ArrowUpRight size={13} />
         </span>
@@ -278,12 +279,16 @@ export async function ResourceGallery({
     topic = get("topic"),
     rights = get("rights"),
     framework = get("framework"),
+    templateKind = get("kind"),
+    motion = get("motion"),
+    pageCount = get("pages"),
     sort = get("sort");
   const base = category === "all" ? "/library" : `/library/${category}`;
   const all = findLibraryResources({ category, query });
   const filtered = all.filter(
     (r) =>
       (rights !== "resale" || resourceUsage(r).saleOfCopies) &&
+      (category !== "templates" || ((!templateKind || r.template?.kind === templateKind) && (motion !== "animated" || r.template?.motion) && (pageCount !== "multi" || (r.template?.pages || 1) > 1))) &&
       (!framework || `${r.format} ${r.tags.join(" ")}`.toLowerCase().includes(framework.toLowerCase())) &&
       (!topic ||
         !topics.some((t) => t.id === topic) ||
@@ -297,7 +302,7 @@ export async function ResourceGallery({
     shown = filtered.slice((page - 1) * 24, page * 24);
   function url(values: Record<string, string>) {
     const next = new URLSearchParams();
-    for (const key of ["q", "topic", "rights", "sort", "framework"])
+    for (const key of ["q", "topic", "rights", "sort", "framework", "kind", "motion", "pages"])
       if (get(key)) next.set(key, get(key));
     for (const [k, v] of Object.entries(values)) {
       if (v) next.set(k, v);
@@ -358,11 +363,16 @@ export async function ResourceGallery({
                 <button type="submit">Search</button>
               </div>
               {topic && <input type="hidden" name="topic" value={topic} />}
+              {templateKind && <input type="hidden" name="kind" value={templateKind} />}
               <details className="mb-advanced-filters">
                 <summary aria-label="Usage and sort filters">
                   <SlidersHorizontal size={15} />
                 </summary>
                 <div>
+                  {category === "templates" && <>
+                    <label className="mb-filter"><span>Animation</span><select name="motion" aria-label="Template animation" defaultValue={motion}><option value="">All templates</option><option value="animated">Animated templates</option></select></label>
+                    <label className="mb-filter"><span>Pages</span><select name="pages" aria-label="Template pages" defaultValue={pageCount}><option value="">Any page count</option><option value="multi">Multi-page kits</option></select></label>
+                  </>}
                   <label className="mb-filter">
                     <span>Technology</span>
                     <select name="framework" aria-label="Technology" defaultValue={framework}>
@@ -395,6 +405,10 @@ export async function ResourceGallery({
               </details>
             </form>
           </div>
+          {category === "templates" && <nav className="mb-topic-tabs" aria-label="Template categories">
+            <Link href={url({ kind: "", page: "" })} aria-current={!templateKind ? "page" : undefined}>All templates<span>{all.length}</span></Link>
+            {[...new Set(all.map(item => item.template?.kind).filter((kind): kind is string => Boolean(kind)))].sort().map(kind => <Link key={kind} href={url({ kind, page: "" })} aria-current={templateKind === kind ? "page" : undefined}>{kind}<span>{all.filter(item => item.template?.kind === kind).length}</span></Link>)}
+          </nav>}
           {["all", "components", "blocks"].includes(category) && (
             <nav className="mb-topic-tabs" aria-label="Component types">
               <Link
@@ -432,7 +446,7 @@ export async function ResourceGallery({
               <span>{filtered.length}</span>
             </h2>
             <Link href="/library/licenses">
-              License & resale guide <ArrowUpRight size={12} />
+              Attribution &amp; licenses <ArrowUpRight size={12} />
             </Link>
           </div>
           {category === "figma" && (

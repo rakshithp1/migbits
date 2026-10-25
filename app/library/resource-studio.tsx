@@ -455,7 +455,7 @@ export function ResourceStudio({
         </div>
         {iframeUrl && tab === "preview" && (
           <div className="mb-device-controls">
-            {resource.variants && <><select aria-label="Preview variant" value={variant} onChange={(event) => setVariant(Number(event.target.value))}>{resource.variants.map((entry, index) => <option key={entry.label} value={index}>{entry.label}</option>)}</select><a href={item.downloadUrl} aria-label="Download selected variant"><Download size={15}/></a></>}
+            {resource.variants && <><select aria-label={resource.category === "templates" ? "Preview page" : "Preview variant"} value={variant} onChange={(event) => setVariant(Number(event.target.value))}>{resource.variants.map((entry, index) => <option key={entry.label} value={index}>{entry.label}</option>)}</select><a href={item.downloadUrl} aria-label="Download selected variant"><Download size={15}/></a></>}
             <button
               aria-label="Desktop preview"
               aria-pressed={!mobile}

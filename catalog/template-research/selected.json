@@ -1,0 +1,17 @@
+[
+  {"slug":"agency","kind":"Agency","title":"Agency","color":"#d2a52b"},
+  {"slug":"creative","kind":"Agency","title":"Creative","color":"#f4623a"},
+  {"slug":"grayscale","kind":"Portfolio","title":"Grayscale","color":"#64a19d"},
+  {"slug":"freelancer","kind":"Portfolio","title":"Freelancer","color":"#1abc9c"},
+  {"slug":"landing-page","kind":"SaaS","title":"Landing Page","color":"#0d6efd"},
+  {"slug":"new-age","kind":"App","title":"New Age","color":"#7649c3"},
+  {"slug":"personal","kind":"Portfolio","title":"Personal","color":"#1e30f3"},
+  {"slug":"resume","kind":"Resume","title":"Resume","color":"#bd5d38"},
+  {"slug":"business-casual","kind":"Business","title":"Business Casual","color":"#e6a756"},
+  {"slug":"modern-business","kind":"Business","title":"Modern Business","color":"#0d6efd"},
+  {"slug":"stylish-portfolio","kind":"Portfolio","title":"Stylish Portfolio","color":"#1d809f"},
+  {"slug":"clean-blog","kind":"Editorial","title":"Clean Blog","color":"#0085a1"},
+  {"slug":"small-business","kind":"Business","title":"Small Business","color":"#1568e3"},
+  {"slug":"business-frontpage","kind":"Business","title":"Business Frontpage","color":"#0d6efd"},
+  {"slug":"scrolling-nav","kind":"Business","title":"Scrolling Navigation","color":"#1267e9"}
+]

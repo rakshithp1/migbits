@@ -1,0 +1,92 @@
+[
+  {
+    "id": "approved-template-agency",
+    "status": "source-approved",
+    "revision": "b2d5d5c6b1396bc5b0e8dd92c693b106cfb7cee1",
+    "excludedAssets": 22
+  },
+  {
+    "id": "approved-template-creative",
+    "status": "source-approved",
+    "revision": "b1762d8c690a2379c078c776dc0830bdd81c6f55",
+    "excludedAssets": 14
+  },
+  {
+    "id": "approved-template-grayscale",
+    "status": "source-approved",
+    "revision": "d974402542d05abcbaa8d21d4dd78e53680f2edd",
+    "excludedAssets": 6
+  },
+  {
+    "id": "approved-template-freelancer",
+    "status": "source-approved",
+    "revision": "5bc65b4bd01e4ab63186395d5f95c7fdaa26216d",
+    "excludedAssets": 8
+  },
+  {
+    "id": "approved-template-landing-page",
+    "status": "source-approved",
+    "revision": "247a46a2503c91d1157179eab297953438ec498b",
+    "excludedAssets": 8
+  },
+  {
+    "id": "approved-template-new-age",
+    "status": "source-approved",
+    "revision": "5f619773a873e44545b9e1e049d6565d3a9e81d7",
+    "excludedAssets": 6
+  },
+  {
+    "id": "approved-template-personal",
+    "status": "source-approved",
+    "revision": "6a1ebcc76a93ead054412fcbdf417d9c83dc762b",
+    "excludedAssets": 2
+  },
+  {
+    "id": "approved-template-resume",
+    "status": "source-approved",
+    "revision": "c6fbe5ef431642984d0f17960194632f20cf67bc",
+    "excludedAssets": 2
+  },
+  {
+    "id": "approved-template-business-casual",
+    "status": "source-approved",
+    "revision": "b6f928934386a54e08c2e7f40ebd9e4d7510bba4",
+    "excludedAssets": 7
+  },
+  {
+    "id": "approved-template-modern-business",
+    "status": "source-approved",
+    "revision": "7d297106cbda2f04db4696752fcdb5b4dc9cd936",
+    "excludedAssets": 1
+  },
+  {
+    "id": "approved-template-stylish-portfolio",
+    "status": "source-approved",
+    "revision": "a658eb7130db599f69572384ef2dd6221757f028",
+    "excludedAssets": 7
+  },
+  {
+    "id": "approved-template-clean-blog",
+    "status": "source-approved",
+    "revision": "1ebc4f8f3b6194335df237a2a7837955a5a4a9aa",
+    "excludedAssets": 6
+  },
+  {
+    "id": "approved-template-small-business",
+    "status": "source-approved",
+    "revision": "9c5ef57a25c2c8e1223b274ef7312375925e281c",
+    "excludedAssets": 1
+  },
+  {
+    "id": "approved-template-business-frontpage",
+    "status": "source-approved",
+    "revision": "b330ff68d31fca0950dcce5687796d71432fbd5f",
+    "excludedAssets": 1
+  },
+  {
+    "id": "approved-template-scrolling-nav",
+    "status": "source-approved",
+    "revision": "45ee8f6a5503ec6d4b41ec86cf5be2c930b606df",
+    "excludedAssets": 1
+  }
+]

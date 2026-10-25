@@ -143,6 +143,8 @@ for (const [i, t] of templateDefinitions.entries()) {
     tags: [t.kind, "HTML", "CSS", "JavaScript"],
     format: "HTML · CSS · JavaScript",
     previewType: "template",
+    revision: "migbits-original-1.1.0",
+    template: { kind: t.kind, pages: 1, motion: true, motionEngine: "Native browser APIs", original: true },
     previewUrl,
     image: `/library/thumbnails/${id}.png`,
     downloadUrl: zip(id, {
@@ -407,6 +409,26 @@ for (const item of approved) {
   }
   const dark = item.originalReviewKey.endsWith(".html") ? approved.find((r) => r.originalReviewKey === item.originalReviewKey.replace(".html", "-dark.html")) : undefined;
   if (dark) item.variants = [item, dark].map((r, i) => ({ label: i ? "Dark" : "Light", previewUrl: r.previewUrl!, dataUrl: r.dataUrl!, downloadUrl: r.downloadUrl! }));
+  list.push(item);
+}
+// Complete template kits require independent source and preview approval.
+const templateImports: LibraryResource[] = existsSync("catalog/approved-templates.json") ? read("catalog/approved-templates.json") : [];
+for (const item of templateImports) {
+  const review = read(`resources/template-imports/${item.id}/review.json`);
+  if (review.status !== "APPROVED" || review.license !== "MIT" || review.sourceDigest !== item.review?.sourceDigest || item.review?.preview !== "passed") throw Error("Unapproved template " + item.id);
+  const artifacts = (item.review as LibraryResource["review"] & { artifactDigests: Record<string, string> }).artifactDigests;
+  for (const url of [item.image, item.dataUrl, item.downloadUrl, item.licenseUrl]) {
+    if (!url || createHash("sha256").update(readFileSync("public" + url)).digest("hex") !== artifacts?.[url]) throw Error("Changed template artifact " + item.id);
+  }
+  const digest = (item.review as LibraryResource["review"] & { previewDigest: string }).previewDigest;
+  if (!item.previewUrl || createHash("sha256").update(readFileSync("public" + item.previewUrl)).digest("hex") !== digest) throw Error("Stale template render " + item.id);
+  for (const variant of item.variants || []) {
+    if (createHash("sha256").update(readFileSync("public" + variant.previewUrl)).digest("hex") !== item.review?.previewDigests?.[variant.previewUrl]) throw Error("Stale template page " + variant.previewUrl);
+  }
+  for (const [file, expected] of Object.entries(review.checksums)) {
+    if (createHash("sha256").update(readFileSync(`resources/template-imports/${item.id}/original/${file}`)).digest("hex") !== expected) throw Error("Changed template source " + item.id);
+  }
+  if (!item.image || !existsSync("public" + item.image) || !item.downloadUrl || !existsSync("public" + item.downloadUrl)) throw Error("Missing template artifact " + item.id);
   list.push(item);
 }
 for (const item of list) {

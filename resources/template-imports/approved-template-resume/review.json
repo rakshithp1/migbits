@@ -1,0 +1,29 @@
+{
+  "id": "approved-template-resume",
+  "repository": "StartBootstrap/startbootstrap-resume",
+  "revision": "c6fbe5ef431642984d0f17960194632f20cf67bc",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-resume/c6fbe5ef431642984d0f17960194632f20cf67bc/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+    "README.md": "a19177e4cdf20c202d048745ec1abcf9c77e4166c3b55dac0618d2342720a074",
+    "dist/css/styles.css": "786f6fecadcedd3808355d6daeddc4a1b47037390f018f9b534825b8f4d80a00",
+    "dist/index.html": "fb44286b638620af916dc30f401ccf94d7401cba2d9cf7bb4daf5ba6bb814268",
+    "dist/js/scripts.js": "9c80aa6aea01f41b33b7428ad7f6c74daecf5ed0bfd9ba897b0ed27de72fd5a7",
+    "package.json": "b7c0ab37331e42929ec6d525af25377f87410d7f66d8496c193239fca45b502e",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "dc4c4873598676b0423bd3f8b628e54cd238fa813911c84b95c7fce6b8dbd655",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/img/favicon.ico",
+    "dist/assets/img/profile.jpg"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}

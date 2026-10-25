@@ -50,6 +50,7 @@ export default async function ResourcePage({
         <div className="mb-detail-layout">
           <ResourceStudio resource={item} />
           <aside className="mb-resource-aside">
+            {item.template && <div><h2>Template kit</h2><p>{item.template.kind} · {item.template.pages} {item.template.pages === 1 ? "page" : "pages"}</p><p>{item.template.motionEngine} · Reduced-motion support</p></div>}
             <div>
               <h2>Made by</h2>
               <p>{item.author}</p>

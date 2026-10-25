@@ -13,12 +13,13 @@ import { figmaKits, kitPlugin } from "../resources/library/figma-kits";
 import curation from "../catalog/library/curation.json";
 import promotions from "../catalog/archive-previews/promotion.json";
 import approved from "../catalog/approved-resources.json";
+import templates from "../catalog/approved-templates.json";
 import { validateLibrary } from "../lib/library-validation";
 test("visual curation excludes retired entries and repeated color families from delivery", () => {
   const ids = new Set(libraryResources.map((r) => r.id));
   const baseline = new Set([...curation.retainedIds, ...promotions.map(r => r.id)]);
   for (const id of baseline) assert.ok(ids.has(id), `Existing resource lost: ${id}`);
-  for (const item of libraryResources) assert.ok(baseline.has(item.id) || approved.some(r => r.id === item.id), `Unreviewed gallery addition: ${item.id}`);
+  for (const item of libraryResources) assert.ok(baseline.has(item.id) || [...approved, ...templates].some(r => r.id === item.id), `Unreviewed gallery addition: ${item.id}`);
   for (const item of approved) assert.ok(ids.has(item.id) || libraryResources.some(r => r.variants?.some(v => v.previewUrl === item.previewUrl)), `Source variant lost: ${item.id}`);
   for (const item of curation.removed) {
     assert.equal(ids.has(item.id), false, item.id);

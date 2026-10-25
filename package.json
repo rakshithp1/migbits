@@ -30,7 +30,10 @@
     "report:imports": "tsx scripts/report-imports.ts",
     "build:approved-previews": "tsx scripts/build-approved-library.mts",
     "validate:approved-previews": "tsx scripts/validate-approved-previews.mts",
-    "test:approved-registry": "tsx scripts/test-approved-registry.mts"
+    "test:approved-registry": "tsx scripts/test-approved-registry.mts",
+    "research:templates": "tsx scripts/research-motion-templates.mts --verify-license-files",
+    "build:motion-templates": "tsx scripts/build-motion-templates.mts",
+    "validate:motion-templates": "tsx scripts/validate-approved-previews.mts --templates"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

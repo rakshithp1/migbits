@@ -1,0 +1,41 @@
+{
+  "id": "approved-template-creative",
+  "repository": "StartBootstrap/startbootstrap-creative",
+  "revision": "b1762d8c690a2379c078c776dc0830bdd81c6f55",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-creative/b1762d8c690a2379c078c776dc0830bdd81c6f55/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+    "README.md": "2db8e1bd86e7994f15b771e85bb6ed100e31f0d0ed8d27f91ebc66dd3d1dffb1",
+    "dist/css/styles.css": "5caca2c3ace316733b9b3750b34b67865b0cbf096a0c01b82e33fee5e682da9f",
+    "dist/index.html": "5eff9f1395ec8d3ff7059c8c79e9ca4dbe04f01de06dfc862b255194ea0fd53c",
+    "dist/js/scripts.js": "e0e65b9aa4f12964f81b136a4b8a17c5ee9603b1c6e6c57fd6369dead2743ebf",
+    "package.json": "004c197f651e6c9b400ea1b9a011dd332236c3cc988f714e7bbebd6f3d8e307b",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "aff52b0505ec4a11344047e9a0dd394d355e012bb6bb476dff8e38114e2f4c40",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/favicon.ico",
+    "dist/assets/img/bg-masthead.jpg",
+    "dist/assets/img/portfolio/fullsize/1.jpg",
+    "dist/assets/img/portfolio/fullsize/2.jpg",
+    "dist/assets/img/portfolio/fullsize/3.jpg",
+    "dist/assets/img/portfolio/fullsize/4.jpg",
+    "dist/assets/img/portfolio/fullsize/5.jpg",
+    "dist/assets/img/portfolio/fullsize/6.jpg",
+    "dist/assets/img/portfolio/thumbnails/1.jpg",
+    "dist/assets/img/portfolio/thumbnails/2.jpg",
+    "dist/assets/img/portfolio/thumbnails/3.jpg",
+    "dist/assets/img/portfolio/thumbnails/4.jpg",
+    "dist/assets/img/portfolio/thumbnails/5.jpg",
+    "dist/assets/img/portfolio/thumbnails/6.jpg"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}

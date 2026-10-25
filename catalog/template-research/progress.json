@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-25T17:39:24.975Z",
+  "targetPublishedTemplates": 1000,
+  "targetUnit": "Complete template kits; individual pages and source repositories do not count as extra templates",
+  "discoveredRepositories": 1814,
+  "licenseFilesWithMitGrant": 1790,
+  "importedFromThisResearch": 15,
+  "galleryTemplateCount": 18,
+  "includedPages": 35,
+  "remainingToTarget": 982,
+  "pendingVerification": 1799,
+  "source": "GitHub official search/API plus individually reviewed creator repositories; pagination recorded separately",
+  "coverage": "Research candidates only. No claim that these are 1,000 distinct complete animated templates. No candidate is published automatically."
+}

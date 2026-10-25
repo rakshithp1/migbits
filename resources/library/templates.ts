@@ -1,4 +1,5 @@
 import { illustrationSvg } from "../../lib/original-illustrations";
+import { templateMotionCss, templateMotionJs } from "./template-motion";
 
 export const templateDefinitions = [
   {
@@ -270,5 +271,5 @@ export function templateHtml(id: string) {
           "",
         )}</section><section class="section" id="register"><h2>There is a place for you.</h2>${form("Save my place")}</section></main>` +
       footer("Gather");
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${d.name} — ${d.subtitle}</title><meta name="description" content="${d.description}"><style>${css}</style></head><body ${id === "gather" ? 'class="event"' : ""} style="--accent:${d.color};${id === "forma" ? "--bg:#f6f3ed;" : id === "fieldnotes" ? "--bg:#f7f5ec;" : ""}">${content}<script>${script}</script></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${d.name} — ${d.subtitle}</title><meta name="description" content="${d.description}"><style>${css}${templateMotionCss}</style></head><body ${id === "gather" ? 'class="event"' : ""} style="--accent:${d.color};${id === "forma" ? "--bg:#f6f3ed;" : id === "fieldnotes" ? "--bg:#f7f5ec;" : ""}">${content}<script>${script}</script><script>${templateMotionJs}</script></body></html>`;
 }

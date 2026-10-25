@@ -96,8 +96,9 @@ export interface LibraryResource {
   usage?: string[];
   revision?: string;
   registryItem?: string;
+  template?: { kind: string; pages: number; motion: boolean; motionEngine: string; original: boolean };
   variants?: { label: string; previewUrl: string; dataUrl: string; downloadUrl: string }[];
-  review?: { status: "APPROVED"; sourceDigest: string; evidence: string; notices: string[]; preview: "passed"; checkedAt: string };
+  review?: { status: "APPROVED"; sourceDigest: string; evidence: string; notices: string[]; preview: "passed"; checkedAt: string; previewDigests?: Record<string, string> };
 }
 export const libraryResources = catalog as LibraryResource[];
 export const librarySections = [

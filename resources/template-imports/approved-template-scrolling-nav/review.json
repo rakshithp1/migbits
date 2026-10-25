@@ -1,0 +1,28 @@
+{
+  "id": "approved-template-scrolling-nav",
+  "repository": "StartBootstrap/startbootstrap-scrolling-nav",
+  "revision": "45ee8f6a5503ec6d4b41ec86cf5be2c930b606df",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-scrolling-nav/45ee8f6a5503ec6d4b41ec86cf5be2c930b606df/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+    "README.md": "04a655fc481cf035d1f6f85fd0c04e603e9fbf47d8984726184cd060aec284e3",
+    "dist/css/styles.css": "ff3860e3bef41f4a1712ed38392cc4a2fbeac0a1a11e0cd65a01dbd362dea241",
+    "dist/index.html": "e4be05d3f5778705b486fe1e7bdc66bd10b496f20d7f3114856b19a0fca51036",
+    "dist/js/scripts.js": "b6ad18b5c3f66361d8666de42f4bba68503518576be49e1426ab050eb74ebb8b",
+    "package.json": "62185f8ab156c714b01f0638c4e64c95dff78b0384824cba637c25ec36a2f4f6",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "e52dd2d2310b5288a12c0e26b924a3742db6a8be2364e6f0fbbbf7b9730804ec",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/favicon.ico"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}

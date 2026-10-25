@@ -1,0 +1,33 @@
+{
+  "id": "approved-template-new-age",
+  "repository": "StartBootstrap/startbootstrap-new-age",
+  "revision": "5f619773a873e44545b9e1e049d6565d3a9e81d7",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-new-age/5f619773a873e44545b9e1e049d6565d3a9e81d7/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+    "README.md": "158293d1e4c78098727c59edf2b4d2bfbb33a136bc7e16a3db47339c5fbe65c0",
+    "dist/css/styles.css": "5799bae460068255c18a886b37034e16166903471e1dfa9669bfa91daaa1e777",
+    "dist/index.html": "589d077ba5ebb1114490128a08cf3c68e925d7ca14ecf9aed67cd84b8b333d80",
+    "dist/js/scripts.js": "1f7274567214c21f0dba2d5ef4f85ef4e44ab0378741679bbd7bfd5aa906e367",
+    "package.json": "f810807789f2dd34f66a3b4068e2537f779df1fde1b3ceb7a0101389ab8e4d10",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "acacec23ed759274b712969ffe5b9be4f0f67f689e3e8a74a21a5bbd18906b2a",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/favicon.ico",
+    "dist/assets/img/app-store-badge.svg",
+    "dist/assets/img/demo-screen.mp4",
+    "dist/assets/img/google-play-badge.svg",
+    "dist/assets/img/portrait_black.png",
+    "dist/assets/img/tnw-logo.svg"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}

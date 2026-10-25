@@ -1,0 +1,28 @@
+{
+  "id": "approved-template-small-business",
+  "repository": "StartBootstrap/startbootstrap-small-business",
+  "revision": "9c5ef57a25c2c8e1223b274ef7312375925e281c",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-small-business/9c5ef57a25c2c8e1223b274ef7312375925e281c/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+    "README.md": "d3186fde40ab202a3bacb66b1b18792c8777c6941ccfe641f5eb086e538e06ac",
+    "dist/css/styles.css": "57d94ac8e8554c42315c037af5cc6b2ea9406b5648ca4143e5ffa9e036620e98",
+    "dist/index.html": "728445f678766b5245d08d046f0a7be472f8ac323045ad2520f53ad0ab2df901",
+    "dist/js/scripts.js": "47d10658a6387eacdcfe2f28b4df1536d8d1fd6e993a339c2ba714af805ec563",
+    "package.json": "9fd748045e90fa83592e603415f55f28191cdf9094099a9b50ca55bb9dce5a26",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "9121842ed4e67a2870eb9210f2724709a915824f6a7c51430e8f4c01f0f47e0b",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/favicon.ico"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}

@@ -1,0 +1,931 @@
+[
+  {
+    "id": "approved-template-agency",
+    "name": "Agency — motion edition",
+    "description": "Agency template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Agency",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-agency/index.html",
+    "image": "/library/approved/thumbnails/approved-template-agency.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-agency.zip",
+    "dataUrl": "/library/approved/data/approved-template-agency.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-agency/tree/b2d5d5c6b1396bc5b0e8dd92c693b106cfb7cee1",
+    "licenseUrl": "/library/approved/notices/approved-template-agency.txt",
+    "revision": "b2d5d5c6b1396bc5b0e8dd92c693b106cfb7cee1",
+    "featured": 600,
+    "template": {
+      "kind": "Agency",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "597a6279a084b55ce38d0e697abba7e3c2f6ff44eabd029c7ba9c1af79e2133a",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-agency/b2d5d5c6b1396bc5b0e8dd92c693b106cfb7cee1/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  },
+  {
+    "id": "approved-template-creative",
+    "name": "Creative — motion edition",
+    "description": "Agency template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Agency",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-creative/index.html",
+    "image": "/library/approved/thumbnails/approved-template-creative.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-creative.zip",
+    "dataUrl": "/library/approved/data/approved-template-creative.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-creative/tree/b1762d8c690a2379c078c776dc0830bdd81c6f55",
+    "licenseUrl": "/library/approved/notices/approved-template-creative.txt",
+    "revision": "b1762d8c690a2379c078c776dc0830bdd81c6f55",
+    "featured": 600,
+    "template": {
+      "kind": "Agency",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "aff52b0505ec4a11344047e9a0dd394d355e012bb6bb476dff8e38114e2f4c40",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-creative/b1762d8c690a2379c078c776dc0830bdd81c6f55/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  },
+  {
+    "id": "approved-template-grayscale",
+    "name": "Grayscale — motion edition",
+    "description": "Portfolio template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Portfolio",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-grayscale/index.html",
+    "image": "/library/approved/thumbnails/approved-template-grayscale.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-grayscale.zip",
+    "dataUrl": "/library/approved/data/approved-template-grayscale.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-grayscale/tree/d974402542d05abcbaa8d21d4dd78e53680f2edd",
+    "licenseUrl": "/library/approved/notices/approved-template-grayscale.txt",
+    "revision": "d974402542d05abcbaa8d21d4dd78e53680f2edd",
+    "featured": 600,
+    "template": {
+      "kind": "Portfolio",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "c4764f02eaae73d480d9d1d631ed8b56456b40230c30e1b25180ef979bd1dba3",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-grayscale/d974402542d05abcbaa8d21d4dd78e53680f2edd/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  },
+  {
+    "id": "approved-template-freelancer",
+    "name": "Freelancer — motion edition",
+    "description": "Portfolio template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Portfolio",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-freelancer/index.html",
+    "image": "/library/approved/thumbnails/approved-template-freelancer.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-freelancer.zip",
+    "dataUrl": "/library/approved/data/approved-template-freelancer.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-freelancer/tree/5bc65b4bd01e4ab63186395d5f95c7fdaa26216d",
+    "licenseUrl": "/library/approved/notices/approved-template-freelancer.txt",
+    "revision": "5bc65b4bd01e4ab63186395d5f95c7fdaa26216d",
+    "featured": 600,
+    "template": {
+      "kind": "Portfolio",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "59de07926d143bf3666fd3e9249b0ae0c396236817080f0b323f4adb0ceb82bd",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-freelancer/5bc65b4bd01e4ab63186395d5f95c7fdaa26216d/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  },
+  {
+    "id": "approved-template-landing-page",
+    "name": "Landing Page — motion edition",
+    "description": "SaaS template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "SaaS",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-landing-page/index.html",
+    "image": "/library/approved/thumbnails/approved-template-landing-page.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-landing-page.zip",
+    "dataUrl": "/library/approved/data/approved-template-landing-page.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-landing-page/tree/247a46a2503c91d1157179eab297953438ec498b",
+    "licenseUrl": "/library/approved/notices/approved-template-landing-page.txt",
+    "revision": "247a46a2503c91d1157179eab297953438ec498b",
+    "featured": 600,
+    "template": {
+      "kind": "SaaS",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "8b32b6843608b8a666bf3281c951099c91de36f95a3306f9e63bcc5f0a9e3521",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-landing-page/247a46a2503c91d1157179eab297953438ec498b/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  },
+  {
+    "id": "approved-template-new-age",
+    "name": "New Age — motion edition",
+    "description": "App template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "App",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-new-age/index.html",
+    "image": "/library/approved/thumbnails/approved-template-new-age.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-new-age.zip",
+    "dataUrl": "/library/approved/data/approved-template-new-age.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-new-age/tree/5f619773a873e44545b9e1e049d6565d3a9e81d7",
+    "licenseUrl": "/library/approved/notices/approved-template-new-age.txt",
+    "revision": "5f619773a873e44545b9e1e049d6565d3a9e81d7",
+    "featured": 600,
+    "template": {
+      "kind": "App",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "acacec23ed759274b712969ffe5b9be4f0f67f689e3e8a74a21a5bbd18906b2a",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-new-age/5f619773a873e44545b9e1e049d6565d3a9e81d7/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  },
+  {
+    "id": "approved-template-personal",
+    "name": "Personal — motion edition",
+    "description": "Portfolio template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 4 pages. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Portfolio",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-personal/index.html",
+    "image": "/library/approved/thumbnails/approved-template-personal.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-personal.zip",
+    "dataUrl": "/library/approved/data/approved-template-personal.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-personal/tree/6a1ebcc76a93ead054412fcbdf417d9c83dc762b",
+    "licenseUrl": "/library/approved/notices/approved-template-personal.txt",
+    "revision": "6a1ebcc76a93ead054412fcbdf417d9c83dc762b",
+    "featured": 600,
+    "template": {
+      "kind": "Portfolio",
+      "pages": 4,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "183a90c572fbdce50791143d2c04e5adcf3dcbfdb099ea243ea354d25c6b0a89",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-personal/6a1ebcc76a93ead054412fcbdf417d9c83dc762b/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    },
+    "variants": [
+      {
+        "label": "contact",
+        "previewUrl": "/library/approved/sites/approved-template-personal/contact.html",
+        "dataUrl": "/library/approved/data/approved-template-personal.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-personal.zip"
+      },
+      {
+        "label": "index",
+        "previewUrl": "/library/approved/sites/approved-template-personal/index.html",
+        "dataUrl": "/library/approved/data/approved-template-personal.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-personal.zip"
+      },
+      {
+        "label": "projects",
+        "previewUrl": "/library/approved/sites/approved-template-personal/projects.html",
+        "dataUrl": "/library/approved/data/approved-template-personal.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-personal.zip"
+      },
+      {
+        "label": "resume",
+        "previewUrl": "/library/approved/sites/approved-template-personal/resume.html",
+        "dataUrl": "/library/approved/data/approved-template-personal.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-personal.zip"
+      }
+    ]
+  },
+  {
+    "id": "approved-template-resume",
+    "name": "Resume — motion edition",
+    "description": "Resume template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Resume",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-resume/index.html",
+    "image": "/library/approved/thumbnails/approved-template-resume.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-resume.zip",
+    "dataUrl": "/library/approved/data/approved-template-resume.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-resume/tree/c6fbe5ef431642984d0f17960194632f20cf67bc",
+    "licenseUrl": "/library/approved/notices/approved-template-resume.txt",
+    "revision": "c6fbe5ef431642984d0f17960194632f20cf67bc",
+    "featured": 600,
+    "template": {
+      "kind": "Resume",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "dc4c4873598676b0423bd3f8b628e54cd238fa813911c84b95c7fce6b8dbd655",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-resume/c6fbe5ef431642984d0f17960194632f20cf67bc/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  },
+  {
+    "id": "approved-template-business-casual",
+    "name": "Business Casual — motion edition",
+    "description": "Business template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 4 pages. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Business",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-business-casual/index.html",
+    "image": "/library/approved/thumbnails/approved-template-business-casual.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-business-casual.zip",
+    "dataUrl": "/library/approved/data/approved-template-business-casual.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-business-casual/tree/b6f928934386a54e08c2e7f40ebd9e4d7510bba4",
+    "licenseUrl": "/library/approved/notices/approved-template-business-casual.txt",
+    "revision": "b6f928934386a54e08c2e7f40ebd9e4d7510bba4",
+    "featured": 600,
+    "template": {
+      "kind": "Business",
+      "pages": 4,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "863024f5764fc5b0331fbbc8b85215fd508c9031ed3a862631d838d21d96ef3a",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-business-casual/b6f928934386a54e08c2e7f40ebd9e4d7510bba4/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    },
+    "variants": [
+      {
+        "label": "about",
+        "previewUrl": "/library/approved/sites/approved-template-business-casual/about.html",
+        "dataUrl": "/library/approved/data/approved-template-business-casual.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-business-casual.zip"
+      },
+      {
+        "label": "index",
+        "previewUrl": "/library/approved/sites/approved-template-business-casual/index.html",
+        "dataUrl": "/library/approved/data/approved-template-business-casual.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-business-casual.zip"
+      },
+      {
+        "label": "products",
+        "previewUrl": "/library/approved/sites/approved-template-business-casual/products.html",
+        "dataUrl": "/library/approved/data/approved-template-business-casual.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-business-casual.zip"
+      },
+      {
+        "label": "store",
+        "previewUrl": "/library/approved/sites/approved-template-business-casual/store.html",
+        "dataUrl": "/library/approved/data/approved-template-business-casual.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-business-casual.zip"
+      }
+    ]
+  },
+  {
+    "id": "approved-template-modern-business",
+    "name": "Modern Business — motion edition",
+    "description": "Business template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 9 pages. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Business",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-modern-business/index.html",
+    "image": "/library/approved/thumbnails/approved-template-modern-business.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-modern-business.zip",
+    "dataUrl": "/library/approved/data/approved-template-modern-business.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-modern-business/tree/7d297106cbda2f04db4696752fcdb5b4dc9cd936",
+    "licenseUrl": "/library/approved/notices/approved-template-modern-business.txt",
+    "revision": "7d297106cbda2f04db4696752fcdb5b4dc9cd936",
+    "featured": 600,
+    "template": {
+      "kind": "Business",
+      "pages": 9,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "7f5b40e7bf5c462e223f77e492bd3d8ab3142274150884da4a4a95698437031b",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-modern-business/7d297106cbda2f04db4696752fcdb5b4dc9cd936/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    },
+    "variants": [
+      {
+        "label": "about",
+        "previewUrl": "/library/approved/sites/approved-template-modern-business/about.html",
+        "dataUrl": "/library/approved/data/approved-template-modern-business.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-modern-business.zip"
+      },
+      {
+        "label": "blog home",
+        "previewUrl": "/library/approved/sites/approved-template-modern-business/blog-home.html",
+        "dataUrl": "/library/approved/data/approved-template-modern-business.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-modern-business.zip"
+      },
+      {
+        "label": "blog post",
+        "previewUrl": "/library/approved/sites/approved-template-modern-business/blog-post.html",
+        "dataUrl": "/library/approved/data/approved-template-modern-business.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-modern-business.zip"
+      },
+      {
+        "label": "contact",
+        "previewUrl": "/library/approved/sites/approved-template-modern-business/contact.html",
+        "dataUrl": "/library/approved/data/approved-template-modern-business.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-modern-business.zip"
+      },
+      {
+        "label": "faq",
+        "previewUrl": "/library/approved/sites/approved-template-modern-business/faq.html",
+        "dataUrl": "/library/approved/data/approved-template-modern-business.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-modern-business.zip"
+      },
+      {
+        "label": "index",
+        "previewUrl": "/library/approved/sites/approved-template-modern-business/index.html",
+        "dataUrl": "/library/approved/data/approved-template-modern-business.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-modern-business.zip"
+      },
+      {
+        "label": "portfolio item",
+        "previewUrl": "/library/approved/sites/approved-template-modern-business/portfolio-item.html",
+        "dataUrl": "/library/approved/data/approved-template-modern-business.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-modern-business.zip"
+      },
+      {
+        "label": "portfolio overview",
+        "previewUrl": "/library/approved/sites/approved-template-modern-business/portfolio-overview.html",
+        "dataUrl": "/library/approved/data/approved-template-modern-business.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-modern-business.zip"
+      },
+      {
+        "label": "pricing",
+        "previewUrl": "/library/approved/sites/approved-template-modern-business/pricing.html",
+        "dataUrl": "/library/approved/data/approved-template-modern-business.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-modern-business.zip"
+      }
+    ]
+  },
+  {
+    "id": "approved-template-stylish-portfolio",
+    "name": "Stylish Portfolio — motion edition",
+    "description": "Portfolio template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Portfolio",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-stylish-portfolio/index.html",
+    "image": "/library/approved/thumbnails/approved-template-stylish-portfolio.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-stylish-portfolio.zip",
+    "dataUrl": "/library/approved/data/approved-template-stylish-portfolio.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/tree/a658eb7130db599f69572384ef2dd6221757f028",
+    "licenseUrl": "/library/approved/notices/approved-template-stylish-portfolio.txt",
+    "revision": "a658eb7130db599f69572384ef2dd6221757f028",
+    "featured": 600,
+    "template": {
+      "kind": "Portfolio",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "46b670e64038e1123e198c65df989dd2ebcd716be1427de5b02e46c240e85cc6",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-stylish-portfolio/a658eb7130db599f69572384ef2dd6221757f028/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  },
+  {
+    "id": "approved-template-clean-blog",
+    "name": "Clean Blog — motion edition",
+    "description": "Editorial template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 4 pages. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Editorial",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-clean-blog/index.html",
+    "image": "/library/approved/thumbnails/approved-template-clean-blog.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-clean-blog.zip",
+    "dataUrl": "/library/approved/data/approved-template-clean-blog.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-clean-blog/tree/1ebc4f8f3b6194335df237a2a7837955a5a4a9aa",
+    "licenseUrl": "/library/approved/notices/approved-template-clean-blog.txt",
+    "revision": "1ebc4f8f3b6194335df237a2a7837955a5a4a9aa",
+    "featured": 600,
+    "template": {
+      "kind": "Editorial",
+      "pages": 4,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "3cb12d3a9b8e25adbfb9658ddb06f1f6d713f0960c59ede93ac0744c25c6521a",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-clean-blog/1ebc4f8f3b6194335df237a2a7837955a5a4a9aa/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    },
+    "variants": [
+      {
+        "label": "about",
+        "previewUrl": "/library/approved/sites/approved-template-clean-blog/about.html",
+        "dataUrl": "/library/approved/data/approved-template-clean-blog.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-clean-blog.zip"
+      },
+      {
+        "label": "contact",
+        "previewUrl": "/library/approved/sites/approved-template-clean-blog/contact.html",
+        "dataUrl": "/library/approved/data/approved-template-clean-blog.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-clean-blog.zip"
+      },
+      {
+        "label": "index",
+        "previewUrl": "/library/approved/sites/approved-template-clean-blog/index.html",
+        "dataUrl": "/library/approved/data/approved-template-clean-blog.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-clean-blog.zip"
+      },
+      {
+        "label": "post",
+        "previewUrl": "/library/approved/sites/approved-template-clean-blog/post.html",
+        "dataUrl": "/library/approved/data/approved-template-clean-blog.json",
+        "downloadUrl": "/library/approved/downloads/approved-template-clean-blog.zip"
+      }
+    ]
+  },
+  {
+    "id": "approved-template-small-business",
+    "name": "Small Business — motion edition",
+    "description": "Business template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Business",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-small-business/index.html",
+    "image": "/library/approved/thumbnails/approved-template-small-business.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-small-business.zip",
+    "dataUrl": "/library/approved/data/approved-template-small-business.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-small-business/tree/9c5ef57a25c2c8e1223b274ef7312375925e281c",
+    "licenseUrl": "/library/approved/notices/approved-template-small-business.txt",
+    "revision": "9c5ef57a25c2c8e1223b274ef7312375925e281c",
+    "featured": 600,
+    "template": {
+      "kind": "Business",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "9121842ed4e67a2870eb9210f2724709a915824f6a7c51430e8f4c01f0f47e0b",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-small-business/9c5ef57a25c2c8e1223b274ef7312375925e281c/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  },
+  {
+    "id": "approved-template-business-frontpage",
+    "name": "Business Frontpage — motion edition",
+    "description": "Business template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Business",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-business-frontpage/index.html",
+    "image": "/library/approved/thumbnails/approved-template-business-frontpage.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-business-frontpage.zip",
+    "dataUrl": "/library/approved/data/approved-template-business-frontpage.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-business-frontpage/tree/b330ff68d31fca0950dcce5687796d71432fbd5f",
+    "licenseUrl": "/library/approved/notices/approved-template-business-frontpage.txt",
+    "revision": "b330ff68d31fca0950dcce5687796d71432fbd5f",
+    "featured": 600,
+    "template": {
+      "kind": "Business",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "a145bde31edf7ba2eaa7eca7629a06d91186f0e1acc7d2d295e154d9f9ecef1a",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-business-frontpage/b330ff68d31fca0950dcce5687796d71432fbd5f/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  },
+  {
+    "id": "approved-template-scrolling-nav",
+    "name": "Scrolling Navigation — motion edition",
+    "description": "Business template by Start Bootstrap, adapted with native motion, self-contained demo artwork and 1 page. Upstream source stays separate.",
+    "category": "templates",
+    "author": "Start Bootstrap",
+    "license": "MIT",
+    "tags": [
+      "Business",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Native motion",
+      "Animated",
+      "Reduced motion",
+      "Full template"
+    ],
+    "format": "HTML · CSS · JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/approved/sites/approved-template-scrolling-nav/index.html",
+    "image": "/library/approved/thumbnails/approved-template-scrolling-nav.png",
+    "downloadUrl": "/library/approved/downloads/approved-template-scrolling-nav.zip",
+    "dataUrl": "/library/approved/data/approved-template-scrolling-nav.json",
+    "sourceUrl": "https://github.com/StartBootstrap/startbootstrap-scrolling-nav/tree/45ee8f6a5503ec6d4b41ec86cf5be2c930b606df",
+    "licenseUrl": "/library/approved/notices/approved-template-scrolling-nav.txt",
+    "revision": "45ee8f6a5503ec6d4b41ec86cf5be2c930b606df",
+    "featured": 600,
+    "template": {
+      "kind": "Business",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native browser APIs",
+      "original": false
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. The runnable edition needs no package installation or CDN.",
+      "Original upstream HTML/CSS/scripts are in upstream/. The root pages use separate MigBits motion, navigation and original SVG artwork. Original stock photographs, fonts, favicons and icon libraries are not bundled.",
+      "Forms, purchases and external links are frontend demonstrations. Connect your own production backend and replace the demo content. Preserve LICENSE, BOOTSTRAP-LICENSE and MIGBITS-ADAPTATION-LICENSE.",
+      "Pause motion is available in every adapted page; OS reduced motion is respected. Render checks are not a full accessibility or production-readiness certification."
+    ],
+    "review": {
+      "status": "APPROVED",
+      "sourceDigest": "e52dd2d2310b5288a12c0e26b924a3742db6a8be2364e6f0fbbbf7b9730804ec",
+      "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-scrolling-nav/45ee8f6a5503ec6d4b41ec86cf5be2c930b606df/LICENSE",
+      "notices": [
+        "LICENSE",
+        "BOOTSTRAP-LICENSE",
+        "MIGBITS-ADAPTATION-LICENSE"
+      ],
+      "preview": "pending",
+      "checkedAt": ""
+    }
+  }
+]

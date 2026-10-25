@@ -1,0 +1,36 @@
+{
+  "id": "approved-template-clean-blog",
+  "repository": "StartBootstrap/startbootstrap-clean-blog",
+  "revision": "1ebc4f8f3b6194335df237a2a7837955a5a4a9aa",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-clean-blog/1ebc4f8f3b6194335df237a2a7837955a5a4a9aa/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+    "README.md": "e107eef706598bd0661fda47d334e4318799cdf806a4726ff465244abb093c9c",
+    "dist/about.html": "fd00d01f5a66f96b820b090775ebc3986f483d65be1f1eee407f767198dbcdd7",
+    "dist/contact.html": "02784423b73d7d6fcf017b7fe8a043f2920ea9489b1283b71dca410be22517dc",
+    "dist/css/styles.css": "186bc930a1ac74e723406db4a509fcfae961a53ae66e1a0af2373823b61c49ec",
+    "dist/index.html": "20e87ae8660b3f3d298a0a71364f4f7afda6a586070a65ddf2caedcd934466d8",
+    "dist/js/scripts.js": "38ff3c6890b951d0a555f5b4a22a166be252f82d5bfd3a4ab02738656b401432",
+    "dist/post.html": "d6885dd13e734e5315bc4cb36ba2406307812f54376dedfa776931023e0d1d56",
+    "package.json": "5d35727050f2c2d2b07aeffb1f0a70d0bb4c3a5f73c91645d6e6a8ff15606e7c",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "3cb12d3a9b8e25adbfb9658ddb06f1f6d713f0960c59ede93ac0744c25c6521a",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/favicon.ico",
+    "dist/assets/img/about-bg.jpg",
+    "dist/assets/img/contact-bg.jpg",
+    "dist/assets/img/home-bg.jpg",
+    "dist/assets/img/post-bg.jpg",
+    "dist/assets/img/post-sample-image.jpg"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}

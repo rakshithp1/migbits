@@ -1,0 +1,34 @@
+{
+  "id": "approved-template-stylish-portfolio",
+  "repository": "StartBootstrap/startbootstrap-stylish-portfolio",
+  "revision": "a658eb7130db599f69572384ef2dd6221757f028",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-stylish-portfolio/a658eb7130db599f69572384ef2dd6221757f028/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+    "README.md": "6c45978349bf875d17f31ac3e75bd21f725e33ee3caf249d7c642bdf0e7296a2",
+    "dist/css/styles.css": "b6cdd8e07c256ce3e62a613d208749225f340a1576a02777aa3d7ee0366148b1",
+    "dist/index.html": "2f5707b85d59654062d722511a533aabcdb3df633611949c3325fa4cdafbe2c6",
+    "dist/js/scripts.js": "d49bdf4692d623602933f7f009a55b4110f2741ed7674a271f70ec116f9da857",
+    "package.json": "34c2b19f53a41c187092b4e505483cf0a7c5a3350f9fe7ba1b6baf4b46e8fdcb",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "46b670e64038e1123e198c65df989dd2ebcd716be1427de5b02e46c240e85cc6",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/favicon.ico",
+    "dist/assets/img/bg-callout.jpg",
+    "dist/assets/img/bg-masthead.jpg",
+    "dist/assets/img/portfolio-1.jpg",
+    "dist/assets/img/portfolio-2.jpg",
+    "dist/assets/img/portfolio-3.jpg",
+    "dist/assets/img/portfolio-4.jpg"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}

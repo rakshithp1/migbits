@@ -1,0 +1,35 @@
+{
+  "id": "approved-template-freelancer",
+  "repository": "StartBootstrap/startbootstrap-freelancer",
+  "revision": "5bc65b4bd01e4ab63186395d5f95c7fdaa26216d",
+  "license": "MIT",
+  "evidence": "https://raw.githubusercontent.com/StartBootstrap/startbootstrap-freelancer/5bc65b4bd01e4ab63186395d5f95c7fdaa26216d/LICENSE",
+  "author": "Start Bootstrap",
+  "checksums": {
+    "LICENSE": "7cfb7483fa643abcce409ac1d6f4004b65ebbdcf6a419e02f6897eee3a4f1694",
+    "README.md": "9d5b9ae04cac0ed054c83c399383f8788576fd4630b2879199931c9089a254fb",
+    "dist/css/styles.css": "8ac9f7035a99c4db46fbcfb5ea5b43ca78513ddcd960cba53e4d97219da409c5",
+    "dist/index.html": "245671625fc645bc0e2373ab2a69e43e34de92c44cb4ec60283867b4a4769731",
+    "dist/js/scripts.js": "1795e1d8e0cd594241d7bd0ac15827b7d962194b6b7e35483dc5386c0889008e",
+    "package.json": "633fac613b688b4cb535753cb6d812b3f201c7d1d5d18d0e7ccbb1ce0a510d0f",
+    "BOOTSTRAP-LICENSE": "53d2513c8df48a817d70537cc906b8e9c7bf2513328ff66847894773e615b37e"
+  },
+  "sourceDigest": "59de07926d143bf3666fd3e9249b0ae0c396236817080f0b323f4adb0ceb82bd",
+  "bootstrap": "5.2.3",
+  "excludedAssets": [
+    "dist/assets/favicon.ico",
+    "dist/assets/img/avataaars.svg",
+    "dist/assets/img/portfolio/cabin.png",
+    "dist/assets/img/portfolio/cake.png",
+    "dist/assets/img/portfolio/circus.png",
+    "dist/assets/img/portfolio/game.png",
+    "dist/assets/img/portfolio/safe.png",
+    "dist/assets/img/portfolio/submarine.png"
+  ],
+  "adaptations": [
+    "Original HTML, CSS and author scripts are preserved separately; third-party artwork/fonts/favicon binaries are excluded, not relicensed.",
+    "Runnable edition replaces image references with original MigBits SVG art, removes remote scripts/styles/fonts, and uses original MigBits native motion/navigation/form-demo controllers.",
+    "Bootstrap embedded CSS retains its exact version license. Original external animation/icon/form services are not bundled or executed; preview parity with those services is not claimed."
+  ],
+  "status": "APPROVED"
+}
