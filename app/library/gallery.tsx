@@ -31,7 +31,9 @@ import {
 import "./gallery.css";
 import "./reference-layout.css";
 import { SearchShortcut } from "./search-shortcut";
+import { ThemeControls } from "./theme-controls";
 const sectionIcons: Record<string, typeof Component> = {
+  themes: Palette,
   backgrounds: Sparkles,
   foundations: Shapes,
   components: Component,
@@ -107,6 +109,7 @@ export function GalleryHeader() {
           </details>
         </nav>
         <div className="mb-header-actions">
+          <ThemeControls />
           <SearchShortcut />
           <a
             className="mb-header-github"

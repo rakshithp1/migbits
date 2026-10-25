@@ -14,3 +14,5 @@ resources/approved/**/original/** -text -whitespace
 resources/template-imports/**/original/** -text -whitespace
 public/library/approved/** -text -whitespace
 public/r/*.json -text
+# Pinned reviewed icon sources and notices are hash-verified across platforms.
+resources/visual/fluent-color/** -text -whitespace

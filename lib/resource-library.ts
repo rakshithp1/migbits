@@ -1,6 +1,7 @@
 import catalog from "../catalog/library/resources.json";
 
 const categoryDefinitions = [
+  { id: "themes", label: "Themes", description: "Ready light and dark themes, coordinated gradients and typography. Preview, copy and apply.", icon: "themes" },
   { id: "backgrounds", label: "Backgrounds", description: "Static CSS patterns and decorative backgrounds, with original source and notices.", icon: "backgrounds" },
   { id: "foundations", label: "Design tokens", description: "Reusable spacing, typography, shadows and theme foundations.", icon: "foundations" },
   { id: "icons", label: "Icons", description: "Explore coherent SVG collections with their original attribution.", icon: "icons" },
@@ -61,7 +62,7 @@ const categoryDefinitions = [
     icon: "figma",
   },
 ] as const;
-const sectionOrder = ["templates", "blocks", "components", "typography", "colors", "illustrations", "figma", "icons", "backgrounds", "foundations", "motion", "shaders"];
+const sectionOrder = ["templates", "blocks", "components", "themes", "typography", "colors", "illustrations", "figma", "icons", "backgrounds", "foundations", "motion", "shaders"];
 export const resourceCategories = [...categoryDefinitions].sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
 export type ResourceCategory = (typeof resourceCategories)[number]["id"];
 export interface LibraryResource {
@@ -74,6 +75,8 @@ export interface LibraryResource {
   tags: string[];
   format: string;
   previewType:
+    | "theme"
+    | "icons"
     | "component"
     | "block"
     | "template"

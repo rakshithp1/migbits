@@ -1,0 +1,143 @@
+{
+  "status": "APPROVED",
+  "scope": "Only these generic non-brand SVG files; code/asset license and unsafe SVG elements checked. Brand/product marks excluded. No other upstream files approved.",
+  "license": "MIT",
+  "author": "Microsoft Corporation",
+  "revision": "82ecf7cbdb43684403c7125efa160be04a33dca5",
+  "licenseUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/82ecf7cbdb43684403c7125efa160be04a33dca5/LICENSE",
+  "noticeUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/82ecf7cbdb43684403c7125efa160be04a33dca5/NOTICE",
+  "licenseSHA256": "69bc45dc42b9acb96a69823adbc6ae538374e3c0bde169b855b32c48eaaef52f",
+  "noticeSHA256": "2fb367a84df52c8b6f8401119708014b327f595554d41712d7407151c9ce73ef",
+  "checkedAt": "2026-10-26",
+  "adaptations": "Original SVGs kept unmodified. Published copies add full license/NOTICE metadata. Preview wrapper and optional CSS motion are original MigBits adaptations.",
+  "items": [
+    {
+      "id": "mail",
+      "name": "Mail",
+      "file": "mail.svg",
+      "upstreamPath": "assets/Mail/SVG/ic_fluent_mail_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Mail/SVG/ic_fluent_mail_48_color.svg",
+      "sha256": "0e44eb7e1a679ba6f565c890b004bb07d56ef062fd383d9a20d820d113ff23b8"
+    },
+    {
+      "id": "calendar",
+      "name": "Calendar",
+      "file": "calendar.svg",
+      "upstreamPath": "assets/Calendar/SVG/ic_fluent_calendar_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Calendar/SVG/ic_fluent_calendar_48_color.svg",
+      "sha256": "26c1258b373935970ede62c90fcb9ce259663737f098f9fc16b534f30238b11d"
+    },
+    {
+      "id": "clock",
+      "name": "Clock",
+      "file": "clock.svg",
+      "upstreamPath": "assets/Clock/SVG/ic_fluent_clock_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Clock/SVG/ic_fluent_clock_48_color.svg",
+      "sha256": "51bd508b4ba39ce5138ea4131b7419c522b1e1cad664b6bedc12250053018499"
+    },
+    {
+      "id": "heart",
+      "name": "Heart",
+      "file": "heart.svg",
+      "upstreamPath": "assets/Heart/SVG/ic_fluent_heart_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Heart/SVG/ic_fluent_heart_48_color.svg",
+      "sha256": "319b81000e26f0f71a160d67a01baaf2e79bb21589cf947e5da22c205efab4c5"
+    },
+    {
+      "id": "star",
+      "name": "Star",
+      "file": "star.svg",
+      "upstreamPath": "assets/Star/SVG/ic_fluent_star_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Star/SVG/ic_fluent_star_48_color.svg",
+      "sha256": "d4ee342c2169005d92873222da317ae0589dde103eb8088374f140d2301914d6"
+    },
+    {
+      "id": "home",
+      "name": "Home",
+      "file": "home.svg",
+      "upstreamPath": "assets/Home/SVG/ic_fluent_home_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Home/SVG/ic_fluent_home_48_color.svg",
+      "sha256": "ae35ac77254a1a198a88787b71de1101e849ed504a6e8210a14e9f7ad5a4ed59"
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "file": "settings.svg",
+      "upstreamPath": "assets/Settings/SVG/ic_fluent_settings_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Settings/SVG/ic_fluent_settings_48_color.svg",
+      "sha256": "6b57cd87eda688c801011999a435c596d0e2263316d87e8792dd1d124d520f9b"
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud",
+      "file": "cloud.svg",
+      "upstreamPath": "assets/Cloud/SVG/ic_fluent_cloud_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Cloud/SVG/ic_fluent_cloud_48_color.svg",
+      "sha256": "277e29c7d251d0b065dfc86a396101ca57725f5dcd82fa4754f8a63018473fd7"
+    },
+    {
+      "id": "camera",
+      "name": "Camera",
+      "file": "camera.svg",
+      "upstreamPath": "assets/Camera/SVG/ic_fluent_camera_24_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Camera/SVG/ic_fluent_camera_24_color.svg",
+      "sha256": "3189229c9c923c89ab1bf394e31c25c48245619b21828b710129240061597ce6"
+    },
+    {
+      "id": "shield",
+      "name": "Shield",
+      "file": "shield.svg",
+      "upstreamPath": "assets/Shield/SVG/ic_fluent_shield_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Shield/SVG/ic_fluent_shield_48_color.svg",
+      "sha256": "cc47f64255d0aa6381a76af26d752b3fc68e0e94d0bf457769eb2fbbebb54238"
+    },
+    {
+      "id": "lightbulb",
+      "name": "Lightbulb",
+      "file": "lightbulb.svg",
+      "upstreamPath": "assets/Lightbulb/SVG/ic_fluent_lightbulb_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Lightbulb/SVG/ic_fluent_lightbulb_48_color.svg",
+      "sha256": "f01db1d2ed5246c1ed2995ea4305730ed21d11d9e6ff4a013eb350a5eb585497"
+    },
+    {
+      "id": "gift",
+      "name": "Gift",
+      "file": "gift.svg",
+      "upstreamPath": "assets/Gift/SVG/ic_fluent_gift_24_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Gift/SVG/ic_fluent_gift_24_color.svg",
+      "sha256": "e0a15cfcfed3dc25d29287a9ffc5f3536c2baed243264e005dc13c0a45dc8428"
+    },
+    {
+      "id": "globe",
+      "name": "Globe",
+      "file": "globe.svg",
+      "upstreamPath": "assets/Globe/SVG/ic_fluent_globe_24_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Globe/SVG/ic_fluent_globe_24_color.svg",
+      "sha256": "b726489c1c3e0438b0d9f2d85495643c1e1d8dbaf44613290baf3efce115fd34"
+    },
+    {
+      "id": "people",
+      "name": "People",
+      "file": "people.svg",
+      "upstreamPath": "assets/People/SVG/ic_fluent_people_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/People/SVG/ic_fluent_people_48_color.svg",
+      "sha256": "11145c908413f610935f552a3e6bfc1b7758d3f04407b76ff5d2dfbefc71d3fa"
+    },
+    {
+      "id": "chart-multiple",
+      "name": "Chart Multiple",
+      "file": "chart-multiple.svg",
+      "upstreamPath": "assets/Chart Multiple/SVG/ic_fluent_chart_multiple_32_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Chart%20Multiple/SVG/ic_fluent_chart_multiple_32_color.svg",
+      "sha256": "32013fff6923de564c4b2f6ce4a2143c72dbfd0ef296da5d141e5e7b52da1aba"
+    },
+    {
+      "id": "document",
+      "name": "Document",
+      "file": "document.svg",
+      "upstreamPath": "assets/Document/SVG/ic_fluent_document_48_color.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-system-icons/blob/82ecf7cbdb43684403c7125efa160be04a33dca5/assets/Document/SVG/ic_fluent_document_48_color.svg",
+      "sha256": "806eaefed45088137496309ce60c9b5d994059f55ed386f92e323ed4752d5d0c"
+    }
+  ]
+}

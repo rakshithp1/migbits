@@ -1,0 +1,23 @@
+/* Original MigBits motion recipes, MIT. SVG geometry retains Microsoft's MIT license and NOTICE. */
+.migbits-color-glyph { transform-origin:center; will-change:auto; }
+[data-effect="bob"] { --glyph-animation:migbits-glyph-bob; }
+[data-effect="tilt"] { --glyph-animation:migbits-glyph-tilt; }
+[data-effect="pulse"] { --glyph-animation:migbits-glyph-pulse; }
+[data-effect="turn"] { --glyph-animation:migbits-glyph-turn; }
+[data-effect="pop"] { --glyph-animation:migbits-glyph-pop; }
+[data-effect="swing"] { --glyph-animation:migbits-glyph-swing; }
+[data-effect="none"] { --glyph-animation:none; }
+@media (prefers-reduced-motion:no-preference) {
+  [data-playing="true"] .migbits-color-glyph,
+  [data-effect] button:focus-visible .migbits-color-glyph { animation:var(--glyph-animation,none) 1.8s ease-in-out infinite; }
+}
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  [data-effect] button:hover .migbits-color-glyph { animation:var(--glyph-animation,none) 1.8s ease-in-out infinite; }
+}
+@keyframes migbits-glyph-bob { 50% { transform:translateY(-8px); } }
+@keyframes migbits-glyph-tilt { 25% { transform:rotate(-12deg); } 75% { transform:rotate(12deg); } }
+@keyframes migbits-glyph-pulse { 50% { transform:scale(1.13); } }
+@keyframes migbits-glyph-turn { to { transform:rotate(360deg); } }
+@keyframes migbits-glyph-pop { 30% { transform:translateY(-7px) scale(1.13); } 55% { transform:scale(.94); } }
+@keyframes migbits-glyph-swing { 25% { transform:translateX(-6px) rotate(-9deg); } 75% { transform:translateX(6px) rotate(9deg); } }
+@media (prefers-reduced-motion:reduce) { .migbits-color-glyph { animation:none!important;transform:none!important; } }

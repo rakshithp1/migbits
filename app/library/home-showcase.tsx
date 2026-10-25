@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 type Card = { id: string; name: string; image?: string; category: string };
 const sections = [
+  ["themes", "Themes", Palette],
   ["components", "Components", Component],
   ["icons", "Icons", Grid3X3],
   ["blocks", "Blocks", Layers],

@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./product.css";
 import "./community.css";
+import "./library/themes.css";
+import "../resources/visual/icon-motion.css";
 import { SiteMotion } from "./library/site-motion";
 
 const geistSans = Geist({
@@ -24,6 +26,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      data-mb-theme="ocean"
+      data-mb-appearance="dark"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}<SiteMotion /></body>

@@ -12,6 +12,8 @@ import {
 } from "lucide-react";
 import type { LibraryResource } from "../../lib/resource-library";
 import { contrastRatio } from "../../lib/color-theory";
+import { ThemeStudio } from "./theme-studio";
+import { ColorIcons } from "./color-icons";
 type Payload = {
   files: { path: string; content: string }[];
   installation?: string[];
@@ -47,6 +49,7 @@ function CopyButton({
   );
 }
 function FontStudio({ item }: { item: LibraryResource }) {
+  const [scale, setScale] = useState(1.25);
   const [text, setText] = useState("Good things take shape."),
     [size, setSize] = useState(64),
     [weight, setWeight] = useState(400);
@@ -97,10 +100,50 @@ function FontStudio({ item }: { item: LibraryResource }) {
         label="Copy font-family"
         text={`font-family: "${item.family}", sans-serif;`}
       />
+      <div
+        className="mb-type-scale"
+        style={{ fontFamily: `"${item.family}",serif` }}
+      >
+        <label>
+          Typography scale{" "}
+          <select
+            aria-label="Typography scale"
+            value={scale}
+            onChange={(e) => setScale(Number(e.target.value))}
+          >
+            <option value={1.125}>Compact · 1.125</option>
+            <option value={1.2}>Balanced · 1.2</option>
+            <option value={1.25}>Editorial · 1.25</option>
+            <option value={1.333}>Expressive · 1.333</option>
+          </select>
+        </label>
+        {[3, 2, 1, 0].map((step) => (
+          <p
+            key={step}
+            style={{
+              fontSize: `clamp(${(16 * Math.pow(scale, step)).toFixed(1)}px,${(1.6 + step * 0.6).toFixed(1)}vw,${(20 * Math.pow(scale, step)).toFixed(1)}px)`,
+            }}
+          >
+            <small>
+              {step === 0 ? "Body" : `Heading ${4 - step}`} · responsive type
+            </small>
+            {step === 0
+              ? "Clear, comfortable reading for the everyday details."
+              : "Good things take shape."}
+          </p>
+        ))}
+        <CopyButton
+          label="Copy typography scale"
+          text={`/* Font binaries and OFL notice: use the original font download. */\nfont-family: "${item.family}", sans-serif;\n${[0, 1, 2, 3].map((step) => `--type-${step}: clamp(${(16 * Math.pow(scale, step)).toFixed(1)}px, ${(1.6 + step * 0.6).toFixed(1)}vw, ${(20 * Math.pow(scale, step)).toFixed(1)}px);`).join("\n")}`}
+        />
+      </div>
     </div>
   );
 }
 function ColorStudio({ item }: { item: LibraryResource }) {
+  const [gradientEnd, setGradientEnd] = useState("#22d3ee");
+  const [angle, setAngle] = useState(125);
+  const [animateGradient, setAnimateGradient] = useState(false);
   const colors = item.colors || {},
     [fg, setFg] = useState(colors.Foreground || "#222222"),
     [bg, setBg] = useState(colors.Background || "#FFFFFF"),
@@ -228,11 +271,79 @@ function ColorStudio({ item }: { item: LibraryResource }) {
       </div>
       <CopyButton label="Copy all CSS tokens" text={tokens} />
       <pre className="mb-token-code">{tokens}</pre>
+      <div className="mb-studio-section">
+        <h3>Build a gradient</h3>
+        <p>
+          Decorative color, with optional gentle movement. Keep readable text on
+          a solid surface.
+        </p>
+        <div className="mb-studio-controls">
+          <label>
+            Gradient start
+            <input
+              type="color"
+              value={seed}
+              onChange={(e) => setSeed(e.target.value)}
+            />
+          </label>
+          <label>
+            Gradient end
+            <input
+              type="color"
+              value={gradientEnd}
+              onChange={(e) => setGradientEnd(e.target.value)}
+            />
+          </label>
+          <label>
+            Gradient angle · {angle}°
+            <input
+              type="range"
+              min={0}
+              max={360}
+              value={angle}
+              onChange={(e) => setAngle(Number(e.target.value))}
+            />
+          </label>
+          <button
+            className="mb-button"
+            aria-pressed={animateGradient}
+            onClick={() => setAnimateGradient(!animateGradient)}
+          >
+            {animateGradient ? "Pause gradient" : "Animate gradient"}
+          </button>
+        </div>
+        <div
+          className="mb-gradient-preview"
+          data-animated={animateGradient}
+          aria-label="Decorative gradient preview"
+        >
+          <div
+            style={{
+              background: `linear-gradient(${angle}deg, ${seed}, ${gradientEnd})`,
+            }}
+          />
+        </div>
+        <CopyButton
+          label="Copy gradient CSS"
+          text={
+            animateGradient
+              ? `/* Original MigBits motion. Keep text on a solid surface. */\n.gradient { position:relative; isolation:isolate; overflow:hidden; min-height:12rem; }\n.gradient::before { content:""; position:absolute; inset:-35%; z-index:-1; background:linear-gradient(${angle}deg, ${seed}, ${gradientEnd}); animation:gradient-drift 12s ease-in-out infinite alternate; }\n@keyframes gradient-drift { from { transform:translate3d(-8%,-4%,0) rotate(-5deg); } to { transform:translate3d(8%,4%,0) rotate(5deg); } }\n@media(prefers-reduced-motion:reduce) { .gradient::before { animation:none; transform:none; } }`
+              : `/* Decorative background; check any overlaid text separately. */\nbackground: linear-gradient(${angle}deg, ${seed}, ${gradientEnd});`
+          }
+        />
+      </div>
     </div>
   );
 }
 function IllustrationStudio({ item }: { item: LibraryResource }) {
-  const [accent, setAccent] = useState(item.accent || "#8B6CF8"),
+  const originalColors = {
+    Accent: item.accent || "#8B6CF8",
+    Ink: "#302B46",
+    Warmth: "#FFD3AE",
+    Secondary: "#DBECAD",
+    Paper: "#FFFFFF",
+  };
+  const [colors, setColors] = useState<Record<string, string>>(originalColors),
     [svg, setSvg] = useState(""),
     [failed, setFailed] = useState(false);
   useEffect(() => {
@@ -248,22 +359,89 @@ function IllustrationStudio({ item }: { item: LibraryResource }) {
       });
     return () => controller.abort();
   }, [item.image]);
-  const modified = svg.replaceAll(item.accent || "#8B6CF8", accent),
+  const replacements = new Map(
+    Object.entries(originalColors).map(([key, value]) => [
+      value.toLowerCase(),
+      colors[key],
+    ]),
+  );
+  const modified = svg.replace(
+      /#[a-f0-9]{6}\b/gi,
+      (value) => replacements.get(value.toLowerCase()) || value,
+    ),
     uri = modified
       ? "data:image/svg+xml;charset=utf-8," + encodeURIComponent(modified)
       : item.image;
   return (
     <div className="mb-illustration-studio">
+      <div
+        className="mb-illustration-palettes"
+        role="group"
+        aria-label="Illustration palette presets"
+      >
+        <button className="mb-button" onClick={() => setColors(originalColors)}>
+          Original palette
+        </button>
+        <button
+          className="mb-button"
+          onClick={() =>
+            setColors({
+              Accent: "#2563eb",
+              Ink: "#172554",
+              Warmth: "#fbcfe8",
+              Secondary: "#67e8f9",
+              Paper: "#eff6ff",
+            })
+          }
+        >
+          Ocean candy
+        </button>
+        <button
+          className="mb-button"
+          onClick={() =>
+            setColors({
+              Accent: "#e76f51",
+              Ink: "#2f3e46",
+              Warmth: "#f4a261",
+              Secondary: "#a7c4a0",
+              Paper: "#fff8e8",
+            })
+          }
+        >
+          Warm botanical
+        </button>
+        <button
+          className="mb-button"
+          onClick={() =>
+            setColors({
+              Accent: "#7c3aed",
+              Ink: "#312e81",
+              Warmth: "#fda4af",
+              Secondary: "#fcd34d",
+              Paper: "#faf5ff",
+            })
+          }
+        >
+          Playful studio
+        </button>
+      </div>
       <div className="mb-studio-controls">
-        <label>
-          Accent color
-          <input
-            type="color"
-            value={accent}
-            onChange={(e) => setAccent(e.target.value)}
-          />
-        </label>
-        <code>{accent.toUpperCase()}</code>
+        {Object.keys(originalColors).map((key) => (
+          <label key={key}>
+            {key === "Accent" ? "Accent color" : `${key} color`}
+            <input
+              type="color"
+              value={colors[key]}
+              onChange={(e) =>
+                setColors((previous) => ({
+                  ...previous,
+                  [key]: e.target.value,
+                }))
+              }
+            />
+          </label>
+        ))}
+        <code>{colors.Accent.toUpperCase()}</code>
         {modified && (
           <a className="mb-button" href={uri} download={item.id + ".svg"}>
             <Download size={13} />
@@ -392,11 +570,7 @@ function SourcePanel({ item }: { item: LibraryResource }) {
     </div>
   );
 }
-export function ResourceStudio({
-  resource,
-}: {
-  resource: LibraryResource;
-}) {
+export function ResourceStudio({ resource }: { resource: LibraryResource }) {
   const [variant, setVariant] = useState(0);
   const item = { ...resource, ...resource.variants?.[variant] };
   const [tab, setTab] = useState("preview"),
@@ -408,7 +582,17 @@ export function ResourceStudio({
       : item.previewUrl;
   return (
     <div className="mb-studio">
-      {item.registryItem && <div className="mb-registry-install"><code>npx shadcn@4.22.1 add https://migbits.com/r/{item.registryItem}.json</code><CopyButton label="Copy install command" text={`npx shadcn@4.22.1 add https://migbits.com/r/${item.registryItem}.json`} /></div>}
+      {item.registryItem && (
+        <div className="mb-registry-install">
+          <code>
+            npx shadcn@4.22.1 add https://migbits.com/r/{item.registryItem}.json
+          </code>
+          <CopyButton
+            label="Copy install command"
+            text={`npx shadcn@4.22.1 add https://migbits.com/r/${item.registryItem}.json`}
+          />
+        </div>
+      )}
       <div className="mb-studio-bar">
         <div role="tablist" aria-label="Resource view">
           {[
@@ -455,7 +639,31 @@ export function ResourceStudio({
         </div>
         {iframeUrl && tab === "preview" && (
           <div className="mb-device-controls">
-            {resource.variants && <><select aria-label={resource.category === "templates" ? "Preview page" : "Preview variant"} value={variant} onChange={(event) => setVariant(Number(event.target.value))}>{resource.variants.map((entry, index) => <option key={entry.label} value={index}>{entry.label}</option>)}</select><a href={item.downloadUrl} aria-label="Download selected variant"><Download size={15}/></a></>}
+            {resource.variants && (
+              <>
+                <select
+                  aria-label={
+                    resource.category === "templates"
+                      ? "Preview page"
+                      : "Preview variant"
+                  }
+                  value={variant}
+                  onChange={(event) => setVariant(Number(event.target.value))}
+                >
+                  {resource.variants.map((entry, index) => (
+                    <option key={entry.label} value={index}>
+                      {entry.label}
+                    </option>
+                  ))}
+                </select>
+                <a
+                  href={item.downloadUrl}
+                  aria-label="Download selected variant"
+                >
+                  <Download size={15} />
+                </a>
+              </>
+            )}
             <button
               aria-label="Desktop preview"
               aria-pressed={!mobile}
@@ -496,6 +704,10 @@ export function ResourceStudio({
               text={(item.usage || []).join("\n\n")}
             />
           </div>
+        ) : item.previewType === "theme" ? (
+          <ThemeStudio id={item.id.replace(/^theme-/, "")} />
+        ) : item.previewType === "icons" ? (
+          <ColorIcons />
         ) : iframeUrl ? (
           <div className="mb-frame-well">
             <div className={mobile ? "mb-frame-mobile" : "mb-frame-desktop"}>

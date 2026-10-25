@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-25",
-  "total": 358,
+  "total": 371,
   "categories": {
     "components": 92,
     "blocks": 19,
@@ -12,7 +12,8 @@
     "shaders": 171,
     "foundations": 6,
     "backgrounds": 6,
-    "icons": 1
+    "icons": 2,
+    "themes": 12
   },
   "scope": "Only reviewed retained imports and original resources. MIT sale permission requires preserving notices. OFL fonts are not standalone resale assets. Native Figma generator execution remains unverified."
 }

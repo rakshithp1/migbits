@@ -70,3 +70,9 @@ The collection also includes `/open-source/icons`: 36 curated Lucide icons with 
 
 
 Archive review and current preview validation: [docs/ARCHIVE-PROMOTION.md](docs/ARCHIVE-PROMOTION.md). The public archive now redirects to the library; only successful visual demonstrations are promoted.
+
+## Ready themes and visual tools
+
+`/library/themes` contains 12 original light/dark themes with semantic CSS export, typography roles, decorative gradients and interactive component-state previews. The header theme picker persists the selected theme and appearance. Theme presets live in `resources/library/theme-presets.json`; after editing reviewed presets, run `npx tsx scripts/sync-theme-tokens.ts`. The catalog build rejects stale generated site tokens.
+
+`/library/icons` adds 16 reviewed generic Fluent multicolor SVGs and six original CSS motion recipes. Copy/export preserves the full Microsoft MIT license and NOTICE. Original pinned SVGs and per-file hashes are in `resources/visual/fluent-color/`; no restricted animation collections were copied. Typography specimens now include responsive scales, palette editors include animated gradient CSS export, and original illustrations support five editable palette roles. See [visual expansion notes](docs/VISUAL-EXPANSION.md).

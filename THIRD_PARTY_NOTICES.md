@@ -42,3 +42,9 @@ The public Source archive is retired. The library includes reviewed Inspo blocks
 Each original source ZIP preserves its notices. Isolated preview adaptations retain complete upstream and bundled dependency notices in the adjacent previews/LICENSES.txt. Magic UI uses the React/Tailwind preview runtime; the Shaders runtime uses pinned TypeGPU and colorjs.io dependencies. These lazy static preview bundles are separate from the main application's dependency graph. Camera, unlicensed remote media and experimental HTML capture demonstrations are not promoted.
 
 See docs/ARCHIVE-PROMOTION.md and catalog/archive-previews/reconciliation.json for all 270 attempts and held-entry reasons. The existing rights-cleanup and curation records remain in effect. Render checks do not certify every browser, GPU or accessibility behavior.
+# Fluent System Icons — reviewed color subset
+
+16 generic color SVGs from Microsoft Fluent System Icons at commit `82ecf7cbdb43684403c7125efa160be04a33dca5`.
+Copyright (c) 2020 Microsoft Corporation. MIT license. Source SVGs are unchanged in `resources/visual/fluent-color/`; `review.json` records every source URL and SHA256.
+Full original [LICENSE](resources/visual/fluent-color/LICENSE) and [NOTICE](resources/visual/fluent-color/NOTICE) are retained in the repository, public attribution text, source payload and downloadable ZIP. Copied SVGs include both texts as metadata. Brand/product marks are excluded.
+Optional motion CSS and the preview wrapper are original MigBits MIT adaptations, kept separate from the original icon files. No ItsHover, React Bits or Animate UI source is included in this expansion.

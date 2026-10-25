@@ -14,6 +14,7 @@ import type { LibraryResource } from "../lib/resource-library";
 import type { ImportedResource, ImportedPayload } from "../lib/import-catalog";
 import { createHash } from "node:crypto";
 import { validateLibrary } from "../lib/library-validation";
+import { buildVisualLibrary } from "./build-visual-library";
 const read = (p: string) => JSON.parse(readFileSync(p, "utf8"));
 const save = (p: string, value: string) => {
   mkdirSync(p.slice(0, p.lastIndexOf("/")), { recursive: true });
@@ -461,6 +462,7 @@ for (const item of list) {
   )
     throw Error("Missing download " + item.id);
 }
+list.push(...buildVisualLibrary());
 const libraryErrors = validateLibrary(list);
 if (libraryErrors.length) throw Error(libraryErrors.join("\n"));
 json("catalog/library/resources.json", list);
