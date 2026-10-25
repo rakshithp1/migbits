@@ -1,0 +1,401 @@
+.mb-tools {
+  padding-bottom: 65px;
+}
+.mb-tools .mb-intro {
+  max-width: 800px;
+}
+.mb-tool-categories {
+  max-width: 100%;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.mb-tool-section {
+  margin: 36px 0 56px;
+}
+.mb-tool-section > h2,
+.mb-tool-section-heading h2 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+  margin-bottom: 12px;
+}
+.mb-tool-section > p,
+.mb-tool-section-heading p {
+  color: #a0a0ad;
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 700px;
+}
+.mb-tool-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 18px;
+}
+.mb-tool-section-heading > a {
+  flex-shrink: 0;
+  font-size: 11px;
+}
+.mb-background-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+.mb-background-card {
+  min-width: 0;
+  background: #111114;
+  border: 1px solid #2b2b31;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.mb-background-card > iframe {
+  display: block;
+  width: 100%;
+  height: 280px;
+  border: 0;
+  background: #090b12;
+}
+.mb-background-caption {
+  padding: 22px;
+}
+.mb-background-caption h3 {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  margin-bottom: 9px;
+}
+.mb-background-caption > p {
+  font-size: 12px;
+  color: #a1a1ae;
+  line-height: 1.8;
+}
+.mb-background-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 19px;
+}
+.mb-background-controls > label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  color: #aaa;
+  margin-right: auto;
+}
+.mb-background-controls input {
+  width: 30px;
+  height: 28px;
+  padding: 2px;
+  background: none;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+.mb-background-controls .mb-button {
+  font-size: 10px;
+  padding: 7px 9px;
+  gap: 5px;
+}
+.mb-background-caption details {
+  margin-top: 19px;
+  color: #b7b7c3;
+  font-size: 11px;
+}
+.mb-background-caption summary {
+  cursor: pointer;
+}
+.mb-background-caption pre {
+  max-height: 280px;
+  overflow: auto;
+  white-space: pre;
+  font:
+    10px/1.8 var(--font-geist-mono),
+    monospace;
+  background: #08080b;
+  border: 1px solid #2a2a31;
+  border-radius: 7px;
+  padding: 16px;
+  margin-top: 14px;
+}
+.mb-motion-page .motion-examples {
+  --mp-bg: #101014;
+  --mp-surface: #19191f;
+  --mp-text: #f1f1f5;
+  --mp-muted: #a1a1ae;
+  --mp-line: #ffffff16;
+}
+.mb-motion-page .mp-demo-caption h2 {
+  font-size: 20px;
+}
+.mb-motion-page .mp-demo-caption p {
+  font-size: 12px;
+}
+.mb-motion-page .mp-demo-caption > button {
+  font-size: 11px;
+}
+.mb-motion-page .mp-demo-stage {
+  min-height: 300px;
+}
+.mb-motion-page .mp-demo-top {
+  font-size: 8px;
+}
+.mb-motion-page .mp-controls > div:first-child > button {
+  font-size: 12px;
+}
+.mb-motion-page .mp-settings > label {
+  font-size: 11px;
+}
+.mb-motion-page .mp-theme button,
+.mb-motion-page .mp-settings select {
+  font-size: 10px;
+}
+.mb-motion-page .oss-source-dialog {
+  background: #15151b;
+  color: #eee;
+  border: 1px solid #383840;
+}
+.mb-motion-page .oss-source-dialog pre {
+  max-height: 450px;
+  overflow: auto;
+  font-size: 11px;
+}
+.mb-motion-page .oss-source-dialog .dialog-description {
+  color: #aaa;
+}
+.mb-icon-page .icon-choice-grid > button {
+  background: #151519;
+  border-color: #29292f;
+  color: #c9c9d3;
+  min-height: 105px;
+}
+.mb-icon-page .icon-choice-grid > button > span {
+  font-size: 9px;
+  color: #9292a0;
+}
+.mb-icon-page .icon-choice-grid > button.active,
+.mb-icon-page .icon-choice-grid > button:hover {
+  background: #232539;
+  border-color: #5667c4;
+  color: #fff;
+}
+.mb-icon-page .icon-choice-grid > button.active > span {
+  color: #c0c9fa;
+}
+.mb-icon-page .icon-customizer {
+  background: #141419;
+  border-color: #2d2d35;
+}
+.mb-icon-page .icon-customizer label {
+  color: #bbb;
+  font-size: 12px;
+}
+.mb-icon-page .icon-customizer label > span {
+  color: #aaa;
+  font-size: 11px;
+}
+.mb-icon-page .icon-customizer > .eyebrow {
+  font-size: 9px;
+}
+.mb-icon-page .icon-customizer > small {
+  font-size: 11px;
+  color: #a1a1ad;
+}
+.mb-icon-page .icon-copy-actions > button {
+  font-size: 11px;
+  background: #252537;
+  color: #c7c9f0;
+  border-color: #3c3d54;
+}
+.mb-icon-page .directory-search {
+  background: #151519;
+  border-color: #303036;
+}
+.mb-icon-page .directory-search input {
+  color: #eee;
+  font-size: 14px;
+}
+.mb-icon-page .icon-result-count {
+  font-size: 11px;
+  color: #aaa;
+}
+.mb-icon-page .oss-gallery-notice {
+  font-size: 12px;
+  color: #b1b1c0;
+}
+.mb-icon-page .oss-install-note {
+  margin: 35px 0;
+  padding: 24px;
+  background: #111115;
+  border: 1px solid #2b2b33;
+  border-radius: 12px;
+}
+.mb-icon-page .oss-install-note h2 {
+  font-size: 25px;
+  margin: 12px 0 20px;
+}
+.mb-icon-page .oss-install-note pre {
+  overflow: auto;
+  padding: 20px;
+  font-size: 12px;
+  background: #08080b;
+  color: #c6c8dd;
+}
+.mb-icon-page .oss-install-note > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #a1a1b0;
+}
+.mb-icon-page .icon-customizer .button.primary {
+  background: #003dff;
+  color: #fff;
+  border: 0;
+}
+.mb-icon-page .icon-customizer h2 {
+  color: #eee;
+}
+.mb-home-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 45px;
+  color: #b4bdd5;
+  padding: 30px;
+}
+.mb-home-motion-cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #0c0e1a;
+}
+.mb-home-motion-cover > span {
+  position: absolute;
+  width: 140%;
+  height: 80%;
+  background: linear-gradient(120deg, #0923ac, #5a58bf, transparent);
+  filter: blur(35px);
+  transform: rotate(-24deg);
+  opacity: 0.7;
+}
+.mb-home-motion-cover > strong {
+  z-index: 1;
+  font-size: 31px;
+  letter-spacing: -1.2px;
+  font-weight: 600;
+}
+.mb-home-motion-cover > small {
+  z-index: 1;
+  font-size: 11px;
+  color: #b7bed9;
+  margin-top: 12px;
+}
+@media (max-width: 800px) {
+  .mb-background-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .mb-tool-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .mb-icon-page .icon-explorer {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .mb-home-icon-grid {
+    gap: 24px 40px;
+  }
+}
+@media (max-width: 600px) {
+  .mb-tools {
+    padding-bottom: 35px;
+  }
+  .mb-tools .mb-intro {
+    padding-bottom: 30px;
+  }
+  .mb-tool-section {
+    margin-top: 30px;
+  }
+  .mb-tool-section > h2,
+  .mb-tool-section-heading h2 {
+    font-size: 23px;
+  }
+  .mb-background-card > iframe {
+    height: 240px;
+  }
+  .mb-background-caption {
+    padding: 18px;
+  }
+  .mb-background-controls {
+    gap: 8px;
+  }
+  .mb-background-controls > label {
+    flex-basis: 100%;
+    margin-bottom: 3px;
+  }
+  .mb-background-controls .mb-button {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+  .mb-motion-page .mp-demo-top {
+    font-size: 7px;
+  }
+  .mb-motion-page .mp-demo-caption {
+    padding: 20px;
+  }
+  .mb-motion-page .mp-demo-caption h2 {
+    font-size: 19px;
+  }
+  .mb-motion-page .mp-demo-caption p {
+    font-size: 12px;
+    max-width: 210px;
+  }
+  .mb-motion-page .mp-demo-caption > button {
+    font-size: 10px;
+  }
+  .mb-motion-page .mp-controls > div:first-child > span {
+    font-size: 10px;
+  }
+  .mb-motion-page .mp-settings {
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+  .mb-motion-page .mp-settings > label {
+    font-size: 10px;
+  }
+  .mb-motion-page .oss-source-dialog {
+    max-width: calc(100% - 30px);
+    padding: 18px;
+  }
+  .mb-icon-page .icon-choice-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .mb-icon-page .icon-choice-grid > button > span {
+    font-size: 9px;
+  }
+  .mb-icon-page .icon-customizer {
+    padding: 21px;
+  }
+  .mb-icon-page .oss-install-note {
+    padding: 18px;
+  }
+  .mb-icon-page .oss-install-note pre {
+    font-size: 10px;
+    padding: 14px;
+  }
+  .mb-icon-page .icon-customizer > small {
+    font-size: 11px;
+  }
+  .mb-home-icon-grid {
+    padding: 25px;
+    gap: 25px 45px;
+  }
+  .mb-home-motion-cover > strong {
+    font-size: 32px;
+  }
+}

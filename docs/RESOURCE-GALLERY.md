@@ -14,6 +14,8 @@ The primary site and /library now browse the same visual catalog. The previous m
 
 114 entries total, after removing 247 repetitive gallery records. The removal audit, replacements and persistent allowlist are in catalog/library/curation.json. All 12 fonts and 12 genuinely different illustration subjects remain. The secondary archive holds 70 Magic UI core records and 200 shader definitions that are not promoted as ready visual-gallery entries. Previously removed resources stay removed; the broad source importer remains paused by catalog/rights-cleanup.json.
 
+Icons and Motion & backgrounds are now first-class section destinations alongside the seven catalog categories. The homepage category grid, library tabs and navigation all link to them. Icons provides the existing 36-symbol Lucide explorer with stroke, size, color, copying and attributed SVG downloads. Motion & backgrounds opens a focused page with two original CSS backgrounds (Aurora flow and Spotlight dot grid) plus the six attributed Motion Primitives examples. Background HTML exports embed the complete Migbits MIT notice and respect reduced motion. The old marketing-style playground remains available at its existing URL but is no longer the motion menu destination.
+
 ## Browsing and previews
 
 The gallery follows the navigation pattern researched on [21st.dev's component gallery](https://21st.dev/community/components): dark browse surface, primary category tabs, type-filter chips, search and a four-column visual grid. Migbits uses its own branding, copy, implementation and previews; 21st screenshots, logos and submissions are not imported.

@@ -14,16 +14,20 @@ import {
   Shapes,
   Layers,
   House,
+  Grid3X3,
+  Sparkles,
 } from "lucide-react";
 type Card = { id: string; name: string; image?: string; category: string };
 const sections = [
   ["components", "Components", Component],
+  ["icons", "Icons", Grid3X3],
   ["blocks", "Blocks", Layers],
   ["templates", "Templates", PanelsTopLeft],
   ["typography", "Typography", Type],
   ["colors", "Color theory", Palette],
   ["illustrations", "Illustrations", PenTool],
   ["figma", "Figma kits", Shapes],
+  ["motion", "Motion", Sparkles],
 ] as const;
 export function HomeShowcase({ cards }: { cards: Card[] }) {
   const [open, setOpen] = useState(true);

@@ -7,15 +7,25 @@ import {
   Download,
   Eye,
   Check,
+  Heart,
+  Camera,
+  Star,
+  Globe,
+  Folder,
+  Mail,
+  Bell,
+  Layers,
+  Search,
 } from "lucide-react";
 import { GalleryHeader, GalleryFooter, ResourceCard } from "./gallery";
 import { HomeShowcase } from "./home-showcase";
 import {
   findLibraryResources,
   libraryResources,
-  resourceCategories,
+  librarySections,
 } from "../../lib/resource-library";
 import "./reference-layout.css";
+import "./tools.css";
 export function LibraryHome() {
   const featured = findLibraryResources()
     .filter((r) => r.image)
@@ -94,8 +104,8 @@ export function LibraryHome() {
                 <br />A real starting point.
               </h2>
               <p>
-                Explore {libraryResources.length} free resources, with live
-                previews and their source.
+                Explore {libraryResources.length} curated resources, plus icons,
+                working animation examples and decorative backgrounds.
               </p>
             </div>
             <Link href="/library">
@@ -121,7 +131,7 @@ export function LibraryHome() {
             </Link>
           </div>
           <div className="mb-home-category-grid">
-            {resourceCategories.map((c) => {
+            {librarySections.map((c) => {
               const example =
                 libraryResources.find((r) => r.category === c.id && r.image) ||
                 libraryResources.find((r) => r.category === c.id);
@@ -130,7 +140,34 @@ export function LibraryHome() {
                   <div
                     className={"mb-category-cover mb-category-cover-" + c.id}
                   >
-                    {example?.image ? (
+                    {c.id === "icons" ? (
+                      <div className="mb-home-icon-grid">
+                        {[
+                          Heart,
+                          Camera,
+                          Star,
+                          Globe,
+                          Folder,
+                          Mail,
+                          Bell,
+                          Layers,
+                          Search,
+                        ].map((Icon, i) => (
+                          <Icon
+                            key={i}
+                            size={30}
+                            strokeWidth={1.5}
+                            aria-hidden="true"
+                          />
+                        ))}
+                      </div>
+                    ) : c.id === "motion" ? (
+                      <div className="mb-home-motion-cover">
+                        <span />
+                        <strong>Make it move.</strong>
+                        <small>Backgrounds & animation demos ↗</small>
+                      </div>
+                    ) : example?.image ? (
                       <img src={example.image} alt="" loading="lazy" />
                     ) : c.id === "typography" ? (
                       <span>Aa Bb Cc</span>
@@ -150,12 +187,7 @@ export function LibraryHome() {
                   </div>
                   <h3>
                     {c.label}
-                    <span>
-                      {
-                        libraryResources.filter((r) => r.category === c.id)
-                          .length
-                      }
-                    </span>
+                    <span>{c.count}</span>
                     <ArrowUpRight size={16} />
                   </h3>
                   <p>{c.description}</p>

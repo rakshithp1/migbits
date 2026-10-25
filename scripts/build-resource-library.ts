@@ -20,6 +20,7 @@ const save = (p: string, value: string) => {
 const json = (p: string, value: unknown) =>
   save(p, JSON.stringify(value, null, 2) + "\n");
 const license = readFileSync("resources/library/LICENSE", "utf8");
+json("catalog/library/original-license.json", { text: license });
 const list: LibraryResource[] = [];
 const curation: { retainedIds: string[] } = read(
   "catalog/library/curation.json",

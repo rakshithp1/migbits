@@ -85,6 +85,39 @@ export interface LibraryResource {
   revision?: string;
 }
 export const libraryResources = catalog as LibraryResource[];
+const sectionOrder = [
+  "components",
+  "icons",
+  "blocks",
+  "templates",
+  "typography",
+  "colors",
+  "illustrations",
+  "figma",
+  "motion",
+];
+export const librarySections = [
+  ...resourceCategories.map((category) => ({
+    ...category,
+    count: libraryResources.filter((r) => r.category === category.id).length,
+  })),
+  {
+    id: "icons",
+    label: "Icons",
+    description:
+      "Find, customize, copy and download 36 Lucide SVG icons with their notices.",
+    icon: "icons",
+    count: 36,
+  },
+  {
+    id: "motion",
+    label: "Motion & backgrounds",
+    description:
+      "Two decorative backgrounds and six real animation demos with source and downloads.",
+    icon: "motion",
+    count: 8,
+  },
+].sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
 export function findLibraryResources({
   category = "all",
   query = "",

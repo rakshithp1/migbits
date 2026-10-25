@@ -16,26 +16,31 @@ import {
   ChevronDown,
   SlidersHorizontal,
   Menu,
+  Grid3X3,
+  Sparkles,
 } from "lucide-react";
 import {
   categoryLabel,
   findLibraryResources,
   libraryResources,
   resourceCategories,
+  librarySections,
   type LibraryResource,
 } from "../../lib/resource-library";
 import "./gallery.css";
 import "./reference-layout.css";
 import { SearchShortcut } from "./search-shortcut";
-const icons = [
-  Component,
-  Layers,
-  PanelsTopLeft,
-  Type,
-  Palette,
-  PenTool,
-  Shapes,
-];
+const sectionIcons: Record<string, typeof Component> = {
+  components: Component,
+  blocks: Layers,
+  templates: PanelsTopLeft,
+  typography: Type,
+  colors: Palette,
+  illustrations: PenTool,
+  figma: Shapes,
+  icons: Grid3X3,
+  motion: Sparkles,
+};
 export const topics = [
   { id: "heroes", label: "Heroes", pattern: /hero/i },
   { id: "features", label: "Features", pattern: /feature/i },
@@ -79,7 +84,7 @@ export function GalleryHeader() {
               Library <ChevronDown size={12} />
             </summary>
             <div>
-              {resourceCategories.map((c) => (
+              {librarySections.map((c) => (
                 <Link key={c.id} href={"/library/" + c.id}>
                   {c.label}
                 </Link>
@@ -92,8 +97,8 @@ export function GalleryHeader() {
               Resources <ChevronDown size={12} />
             </summary>
             <div>
-              <Link href="/playground">Motion playground</Link>
-              <Link href="/open-source/icons">Icon explorer</Link>
+              <Link href="/library/motion">Motion &amp; backgrounds</Link>
+              <Link href="/library/icons">Icon explorer</Link>
               <Link href="/open-source/imports">Source archive</Link>
               <Link href="/library/licenses">Licenses & resale</Link>
             </div>
@@ -118,12 +123,11 @@ export function GalleryHeader() {
               <Menu size={20} />
             </summary>
             <nav aria-label="Mobile library navigation">
-              {resourceCategories.map((c) => (
+              {librarySections.map((c) => (
                 <Link key={c.id} href={"/library/" + c.id}>
                   {c.label}
                 </Link>
               ))}
-              <Link href="/playground">Playground</Link>
               <Link href="/library/licenses">Licenses & usage</Link>
             </nav>
           </details>
@@ -325,8 +329,8 @@ export async function ResourceGallery({
                 <Grid2X2 size={14} />
                 All<span>{libraryResources.length}</span>
               </Link>
-              {resourceCategories.map((c, i) => {
-                const Icon = icons[i];
+              {librarySections.map((c) => {
+                const Icon = sectionIcons[c.id];
                 return (
                   <Link
                     key={c.id}
@@ -335,12 +339,7 @@ export async function ResourceGallery({
                   >
                     <Icon size={14} />
                     {c.label}
-                    <span>
-                      {
-                        libraryResources.filter((r) => r.category === c.id)
-                          .length
-                      }
-                    </span>
+                    <span>{c.count}</span>
                   </Link>
                 );
               })}
@@ -477,8 +476,8 @@ export async function ResourceGallery({
             <h2>Find your next starting point.</h2>
           </div>
           <div>
-            {resourceCategories.map((c, i) => {
-              const Icon = icons[i];
+            {librarySections.map((c) => {
+              const Icon = sectionIcons[c.id];
               return (
                 <Link key={c.id} href={`/library/${c.id}`}>
                   <Icon size={19} />
@@ -506,7 +505,7 @@ export function GalleryFooter() {
       <p>A considered collection. A better starting point.</p>
       <nav aria-label="Footer">
         <Link href="/library/licenses">Licenses & attribution</Link>
-        <Link href="/open-source/icons">Icons</Link>
+        <Link href="/library/icons">Icons</Link>
         <Link href="/open-source/imports">Source archive</Link>
         <a href="https://github.com/rakshithp1/migbits">GitHub ↗</a>
       </nav>
