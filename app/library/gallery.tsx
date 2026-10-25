@@ -103,10 +103,8 @@ export function GalleryHeader() {
             <div>
               <Link href="/library/motion">Motion &amp; backgrounds</Link>
               <Link href="/library/icons">Icon explorer</Link>
-              <Link href="/library/licenses">Licenses & resale</Link>
             </div>
           </details>
-          <Link href="/library/licenses">Usage</Link>
         </nav>
         <div className="mb-header-actions">
           <SearchShortcut />
@@ -131,7 +129,6 @@ export function GalleryHeader() {
                   {c.label}
                 </Link>
               ))}
-              <Link href="/library/licenses">Licenses & usage</Link>
             </nav>
           </details>
         </div>

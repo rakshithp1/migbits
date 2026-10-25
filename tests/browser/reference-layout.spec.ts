@@ -3,6 +3,7 @@ test("homepage has the blue hero, working showcase, navigation and browse action
   page,
 }) => {
   await page.goto("/");
+  await expect(page.locator('.mb-header a[href="/library/licenses"]')).toHaveCount(0);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Copy the details.Make them yours.",
   );

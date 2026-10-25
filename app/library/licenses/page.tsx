@@ -1,96 +1,27 @@
 import Link from "next/link";
 import { GalleryHeader, GalleryFooter } from "../gallery";
 import { libraryResources } from "../../../lib/resource-library";
-export const metadata = { title: "Licenses & resale — Migbits" };
-export default function Licenses() {
+
+export const metadata = { title: "Attribution & licenses — Migbits" };
+
+export default function Attribution() {
   return (
     <div className="mb-site">
       <GalleryHeader />
       <main className="mb-main mb-license-page">
         <Link href="/library">← Back to the library</Link>
-        <p className="mb-eyebrow">USE IT WITH CONFIDENCE</p>
-        <h1>Clear source. Clear terms.</h1>
-        <p>
-          Every resource has its own license. Free access and commercial use do
-          not always mean permission to sell the original files.
-        </p>
-        <section>
-          <h2>MIT: commercial use and selling copies</h2>
-          <p>
-            Resources labeled MIT permit use, modification, redistribution and
-            selling copies. Keep the original copyright and permission notice
-            with copies or substantial portions. Our original templates, SVG
-            illustrations and Figma generator kits include their MIT notice in
-            every ZIP.
-          </p>
-          <a
-            href="https://opensource.org/license/mit"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Read the MIT license ↗
-          </a>
-        </section>
-        <section>
-          <h2>OFL fonts: commercial use, with a bundling condition</h2>
-          <p>
-            Fonts can be used in commercial designs and bundled with software.
-            The font files cannot be sold by themselves. Keep each family&apos;s
-            copyright and OFL notice; modified fonts must comply with reserved
-            font names and remain under OFL. These fonts are excluded by the
-            “Sale of copies allowed” filter.
-          </p>
-          <a
-            href="https://openfontlicense.org/open-font-license-official-text/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Read the SIL Open Font License ↗
-          </a>
-        </section>
-        <section>
-          <h2>Original code and dependencies</h2>
-          <p>
-            Original upstream files stay distinguishable from Migbits preview
-            adaptations. The component download is the complete attributed
-            source pack with shared utilities and separate dependency notices.
-            Framework and dependency requirements remain in the source viewer
-            and README. Preserve those notices too when redistributing a
-            complete product.
-          </p>
-        </section>
-        <section>
-          <h2>Figma resources</h2>
-          <p>
-            Our kits are original editable SVG boards, tokens and native
-            component-generator source. They are not rehosted third-party
-            Community files or .fig exports. Generator source is checked;
-            execution inside a Figma account is not yet verified. The README
-            explains quick SVG import and how to run the development plugin.
-          </p>
-        </section>
-        <section>
-          <h2>CC0 illustration sources</h2>
-          <p>Selected Open Doodles and Open Peeps SVGs retain Pablo Stanley&apos;s creator-linked CC0 dedication. You may copy, modify and redistribute these exact assets. Credit is appreciated; CC0 does not grant trademark, privacy or endorsement rights.</p>
-          <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode.en">Read the CC0 dedication ↗</a>
-        </section>
-        <section>
-          <h2>New reviewed collections and examples</h2>
-          <p>Original source, pinned revisions and complete notices are retained separately from Migbits preview and installation adaptations. These isolated renders are not a blanket accessibility or backend certification.</p>
-          <ul>{libraryResources.filter(item => item.review).map(item => <li key={item.id}><Link href={`/library/resource/${item.id}`}>{item.name}</Link>{" · "}{item.author}{" · "}{item.license}{" · "}<a href={item.licenseUrl}>Complete notices</a></li>)}</ul>
-        </section>
-        <section>
-          <h2>Attribution records</h2>
-          <p>
-            Each detail page links to its author and original source when
-            applicable. Upstream revisions, exact notices and dependency records
-            are preserved in the downloads and source archive.
-          </p>
-          <Link href="/open-source/imports">Browse upstream provenance →</Link>{" "}
-          ·{" "}
-          <a href="https://github.com/rakshithp1/migbits/blob/main/THIRD_PARTY_NOTICES.md">
-            Project notices ↗
-          </a>
+        <h1>Attribution &amp; licenses</h1>
+        <p>Creator credits and original license notices for the library. Downloads retain applicable copyright and dependency notices.</p>
+        <p><a href="https://github.com/rakshithp1/migbits/blob/main/THIRD_PARTY_NOTICES.md">Project third-party notices ↗</a></p>
+        <section aria-label="Resource attribution records">
+          <ul>{libraryResources.map(item => (
+            <li key={item.id}>
+              <Link href={`/library/resource/${item.id}`}>{item.name}</Link>
+              {" · "}{item.author}{" · "}{item.license}{" · "}
+              <a href={item.licenseUrl}>License notice</a>
+              {item.sourceUrl && <>{" · "}<a href={item.sourceUrl}>Original source</a></>}
+            </li>
+          ))}</ul>
         </section>
       </main>
       <GalleryFooter />

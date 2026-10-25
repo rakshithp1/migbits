@@ -55,12 +55,12 @@ export default async function ResourcePage({
               <p>{item.author}</p>
             </div>
             <div>
-              <h2>License & usage</h2>
+              <h2>License</h2>
               <strong className="mb-license">{item.license}</strong>
               <p>
                 {resourceUsage(item).summary}
               </p>
-              <Link href="/library/licenses">Read the usage guide ↗</Link>
+              <Link href="/library/licenses">Attribution &amp; licenses ↗</Link>
             </div>
             <div>
               <h2>Good to know</h2>
