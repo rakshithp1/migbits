@@ -26,12 +26,29 @@
   "lint": "passed",
   "typecheck": "passed",
   "cloudflareProductionBuild": "passed",
-  "ci": "pending",
-  "live": "pending",
+  "ci": "passed",
+  "live": "passed",
   "evidence": [
     "docs/GALLERY-SCROLL-HERO-FIT.md",
     "catalog/partner-imports/render-validation.json",
     "tests/browser/gallery-scroll-hero.spec.ts",
     "tests/library-display-order.test.ts"
-  ]
+  ],
+  "sourceCommit": "2cd51b0b5b04db9adbbb578b76ddb7efdfc02317",
+  "ciBrowser": {
+    "passed": 42,
+    "failed": 0
+  },
+  "ciUrl": "https://github.com/rakshithp1/migbits/actions/runs/40360576814",
+  "liveBrowser": {
+    "passed": 6,
+    "failed": 0
+  },
+  "liveArtifacts": {
+    "checkedAt": "2026-10-26T16:37:34.291Z",
+    "artifacts": 595,
+    "passed": 595,
+    "failures": []
+  },
+  "deploymentVersion": "2b48e4f0-ed62-40f8-88c1-08b5e4c1e4bd"
 }

@@ -1,9 +1,9 @@
 {
-  "releasedAt": "2026-10-26T16:01:55.255091+00:00",
+  "releasedAt": "2026-10-26T16:44:28.201443+00:00",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "97c8afe754c864837eb3b995f8dca3b813dcfe77",
-  "deploymentVersion": "9a400844-3a67-499d-8d70-5efaf3c2d44e",
+  "sourceCommit": "2cd51b0b5b04db9adbbb578b76ddb7efdfc02317",
+  "deploymentVersion": "2b48e4f0-ed62-40f8-88c1-08b5e4c1e4bd",
   "resources": 479,
   "categories": {
     "components": 102,
@@ -27,20 +27,21 @@
     "Unlicense": 2
   },
   "changes": [
-    "Larger original animated Motion pattern overviews replace unreadable four-screenshot collages in the UI",
-    "Responsive Motion collection grid: three desktop, two medium and one mobile column",
-    "Resource detail previews mount immediately without a Load preview button; isolated sandbox permissions and source/variant controls retained",
-    "Every current default component and block detail preview audited: 102 components plus 19 blocks, no captured runtime failures",
-    "Current GetLayers/Nexus redistribution restrictions rechecked; restricted source remains excluded"
+    "Visually reviewed showcase resources first; simpler resources retained below, with name sort still available",
+    "All filtered gallery items shown in continuous server-rendered scrolling; no numbered pagination and native lazy image loading retained",
+    "Three original hero backgrounds rotate every 6.5 seconds with manual selection, global pause, visibility and reduced-motion handling",
+    "Motion viewport fitting, proportional SVGs, image descriptions and keyboard image-gallery navigation; upstream code snapshots remain unchanged",
+    "Theme-aware resource download contrast corrected"
   ],
   "checks": {
-    "unit": 44,
-    "ciBrowser": 39,
-    "localBrowserBeforeFinalGrammarPolish": 37,
-    "finalFocusedAndBulkAudit": 5,
-    "defaultComponentPreviewsAudited": 102,
-    "defaultBlockPreviewsAudited": 19,
-    "liveBrowser": 5,
+    "unit": 45,
+    "ciBrowser": 42,
+    "localFocusedBrowser": 18,
+    "liveBrowser": 6,
+    "individualMotionRenders": 109,
+    "sourceKitOverviewRenders": 2,
+    "sourceKitInstallationsTested": 0,
+    "liveArtifactsHashMatched": 595,
     "lint": "passed",
     "typecheck": "passed",
     "cloudflareBuild": "passed",
@@ -48,8 +49,7 @@
     "cleanConsumer": "passed",
     "communityBundles": "passed",
     "sourceCommitCI": "passed",
-    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40343958773",
-    "sourceArtifacts": "Existing source/preview data, ZIPs and notices unchanged by this UI-only update"
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40360576814"
   },
   "remaining": {
     "requestedCompleteTemplates": 500,
@@ -64,16 +64,16 @@
     "accessibility": "Full per-example production accessibility and strict consumer certification remain separate"
   },
   "previousDeployment": {
-    "releasedAt": "2026-10-26T14:19:10.552356+00:00",
-    "sourceCommit": "d4cab3c41e49bc1eb2042c84518d1f9748cf2363",
-    "deploymentVersion": "2988853c-b9e0-4ae7-83bf-75a385962f2d",
+    "releasedAt": "2026-10-26T16:01:55.255091+00:00",
+    "sourceCommit": "97c8afe754c864837eb3b995f8dca3b813dcfe77",
+    "deploymentVersion": "9a400844-3a67-499d-8d70-5efaf3c2d44e",
     "resources": 479
   },
   "evidence": [
-    "docs/MOTION-GALLERY-AUTOLOAD.md",
-    "catalog/library/ui-quality-validation.json",
-    "catalog/partner-imports/source-audit.json",
-    "tests/browser/resource-autoload.spec.ts",
-    "tests/browser/partner-resources.spec.ts"
+    "docs/GALLERY-SCROLL-HERO-FIT.md",
+    "catalog/library/scroll-hero-validation.json",
+    "catalog/partner-imports/render-validation.json",
+    "tests/browser/gallery-scroll-hero.spec.ts",
+    "tests/library-display-order.test.ts"
   ]
 }

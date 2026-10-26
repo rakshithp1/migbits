@@ -18,3 +18,7 @@ All 109 Motion variants and both developer-kit overview pages passed renewed iso
 Local checks: 45 unit tests, lint, type checking, Cloudflare production build and 18 focused browser journeys passed. The journeys cover continuous scrolling with and without JavaScript, preserved filters, visual ordering, hero auto-rotation/manual selection/reduced motion, image-gallery containment and keyboard navigation, source downloads and mobile layouts. Desktop screenshots of the homepage, gallery and fitted Presence example were inspected.
 
 Visual priority is editorial presentation, not a measured quality, popularity, accessibility or maintenance score. No resource is removed simply for being minimal, and no new templates are counted for the three decorative hero scenes.
+
+## Published verification
+
+Code commit `2cd51b0b5b04db9adbbb578b76ddb7efdfc02317` passed [CI](https://github.com/rakshithp1/migbits/actions/runs/40360576814) with 45 unit tests and 42 browser tests, including the existing default-preview audits for components and blocks. Six live journeys and all 595 live partner artifact hashes passed. Deployment: `2b48e4f0-ed62-40f8-88c1-08b5e4c1e4bd`. The two developer source kits remain installation-unverified; no claim of complete production accessibility or all prop combinations is made.
