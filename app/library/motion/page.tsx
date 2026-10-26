@@ -29,7 +29,7 @@ export default function MotionPage() {
         <section className="mb-tool-section" aria-labelledby="motion-collections-title">
           <h2 id="motion-collections-title">Motion collections</h2>
           <p>Presence, layout, drag, gestures, SVG and more. Each collection keeps related examples together, with selectable previews and source variants.</p>
-          <div className="mb-grid">
+          <div className="mb-grid mb-motion-collection-grid">
             {collections.map((item, index) => <ResourceCard key={item.id} item={item} index={index} />)}
           </div>
         </section>

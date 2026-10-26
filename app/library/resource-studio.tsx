@@ -575,8 +575,7 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
   const [variant, setVariant] = useState(0);
   const item = { ...resource, ...resource.variants?.[variant] };
   const [tab, setTab] = useState("preview"),
-    [mobile, setMobile] = useState(false),
-    [loaded, setLoaded] = useState(false);
+    [mobile, setMobile] = useState(false);
   const iframeUrl =
     item.previewType === "component"
       ? `/library/preview/${item.id}`
@@ -712,25 +711,13 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
         ) : iframeUrl ? (
           <div className="mb-frame-well">
             <div className={mobile ? "mb-frame-mobile" : "mb-frame-desktop"}>
-              {!loaded ? (
-                <div className="mb-preview-cover">
-                  <img src={item.image} alt={`${item.name} preview`} />
-                  <button
-                    className="mb-button mb-button-primary"
-                    onClick={() => setLoaded(true)}
-                  >
-                    {item.previewType === "source-kit" ? "Load source kit overview" : "Load interactive preview"} <Eye size={15} />
-                  </button>
-                </div>
-              ) : (
-                <iframe
+              <iframe
                   title={item.name + " interactive preview"}
                   src={iframeUrl}
                   sandbox="allow-scripts"
                   referrerPolicy="no-referrer"
-                  loading="lazy"
+                  loading="eager"
                 />
-              )}
             </div>
             <p className="mb-preview-note">
               {item.category === "shaders" &&

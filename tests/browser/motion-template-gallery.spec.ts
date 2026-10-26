@@ -21,7 +21,7 @@ test("template filters expose real motion kits and preserve search choices", asy
 test("multi-page template preview is isolated, switchable and downloadable with provenance", async ({ page, request }) => {
   const item = libraryResources.find(item => item.id === "approved-template-modern-business")!;
   await page.goto("/library/resource/" + item.id);
-  await page.getByRole("button", { name: "Load interactive preview" }).click();
+  await expect(page.locator("iframe")).toBeVisible();
   await expect(page.locator("iframe")).toHaveAttribute("sandbox", "allow-scripts");
   await page.getByRole("combobox", { name: "Preview page" }).selectOption({ label: "about" });
   await expect(page.locator("iframe")).toHaveAttribute("src", /about\.html$/);

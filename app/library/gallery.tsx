@@ -33,6 +33,7 @@ import "./gallery.css";
 import "./reference-layout.css";
 import { SearchShortcut } from "./search-shortcut";
 import { ThemeControls } from "./theme-controls";
+import { MotionCollectionCover } from "./motion-collection-cover";
 const sectionIcons: Record<string, typeof Component> = {
   tools: Wrench,
   themes: Palette,
@@ -148,6 +149,7 @@ export function ResourceVisual({
   item: LibraryResource;
   priority?: boolean;
 }) {
+  if (item.previewType === "motion-example") return <MotionCollectionCover item={item} />;
   if (item.previewType === "font")
     return (
       <div

@@ -64,7 +64,7 @@ test("archive routes redirect to the library and passing resources use isolated 
   await page.goto("/open-source/imports/shaders--aurora");
   await expect(page).toHaveURL(/\/library\/resource\/shaders--aurora$/);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Aurora");
-  await page.getByRole("button", { name: "Load interactive preview" }).click();
+  await expect(page.locator("iframe")).toBeVisible();
   await expect(page.locator("iframe")).toHaveAttribute(
     "sandbox",
     "allow-scripts",

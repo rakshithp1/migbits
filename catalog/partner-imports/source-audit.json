@@ -132,5 +132,11 @@
       "Shader Backgrounds"
     ],
     "scope": "Free to operate in browser. Generator/source redistribution is not approved by this audit; individual output asset resale remains unverified. No tool source, presets or prompts copied."
+  },
+  "redistributionTermsRechecked": {
+    "checkedAt": "2026-10-26T14:45:20.633009+00:00",
+    "getLayers": "https://www.getlayers.ai/terms-of-use",
+    "nexus": "https://www.nexus-ui.com/terms",
+    "result": "Restrictions remain in force in the published terms. Cancellation, removing notices or stopping a subscription is not recorded as a redistribution grant. Restricted catalog content was not imported."
   }
 }

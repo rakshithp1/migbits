@@ -85,7 +85,7 @@ test("component and block previews stay isolated and original code copies", asyn
 }) => {
   await context.grantPermissions(["clipboard-read", "clipboard-write"]);
   await page.goto("/library/resource/component-button");
-  await page.getByRole("button", { name: "Load interactive preview" }).click();
+  await expect(page.locator("iframe")).toBeVisible();
   const frame = page.frameLocator("iframe");
   await expect(frame.locator(".kit-preview-inner")).toBeVisible();
   await expect(frame.locator(".kit-preview-loading")).toHaveCount(0);
@@ -100,7 +100,7 @@ test("component and block previews stay isolated and original code copies", asyn
     page.getByRole("button", { name: "Copied", exact: true }),
   ).toBeVisible();
   await page.goto("/library/resource/inspo--hero-split-screen");
-  await page.getByRole("button", { name: "Load interactive preview" }).click();
+  await expect(page.locator("iframe")).toBeVisible();
   await expect(page.frameLocator("iframe").locator("body")).toHaveAttribute(
     "data-preview-state",
     "rendered",

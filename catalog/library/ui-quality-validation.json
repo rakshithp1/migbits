@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-26T14:53:41.707334+00:00",
+  "changes": [
+    "Original animated collection overview covers replace unreadable thumbnail collages in the UI",
+    "Motion grid uses 3/2/1 columns for desktop/tablet/mobile",
+    "Resource detail iframes mount eagerly without activation buttons",
+    "Sandbox permissions, source/variant controls, pause and reduced-motion behavior preserved"
+  ],
+  "unit": {
+    "passed": 44,
+    "failed": 0
+  },
+  "existingWorkerBrowserSuite": {
+    "passed": 37,
+    "failed": 0
+  },
+  "finalFocusedAndBulkAudit": {
+    "passed": 5,
+    "failed": 0
+  },
+  "defaultResourcePreviewsAudited": {
+    "components": 102,
+    "blocks": 19,
+    "passed": 121,
+    "failed": 0,
+    "scope": "Default example iframe and rendered content/runtime errors; not every prop combination or production accessibility certification"
+  },
+  "lint": "passed",
+  "typecheck": "passed",
+  "cloudflareBuild": "passed",
+  "visualReview": [
+    "Desktop gallery capture",
+    "Mobile gallery capture"
+  ],
+  "rights": "Current GetLayers/Nexus restrictions rechecked; restricted source not imported",
+  "sourceCommitCI": "pending",
+  "liveValidation": "pending"
+}

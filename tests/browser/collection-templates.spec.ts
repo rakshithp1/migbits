@@ -5,7 +5,7 @@ test("Collection template can be found, previewed in isolation and downloaded wi
   await page.goto("/library/templates?q=corporate");
   await expect(page.getByRole("link", { name: /Corporate Company/ }).first()).toBeVisible();
   await page.goto("/library/resource/approved-collection-corporate-company");
-  await page.getByRole("button", { name: "Load interactive preview" }).click();
+  await expect(page.locator("iframe")).toBeVisible();
   await expect(page.locator("iframe")).toHaveAttribute("sandbox", "allow-scripts");
   const frame = page.frameLocator("iframe");
   await expect(frame.getByRole("heading", { level: 1 })).toBeVisible();
