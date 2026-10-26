@@ -4,11 +4,14 @@
   "work": [
     {
       "id": "motion-layers-nexus-import",
-      "status": "validated-pending-release",
+      "status": "released",
       "approvedMotionExamples": 109,
       "motionCollections": 10,
       "sourceKitsInstallUnverified": 2,
-      "audit": "catalog/partner-imports/source-audit.json"
+      "audit": "catalog/partner-imports/source-audit.json",
+      "sourceCommit": "d4cab3c41e49bc1eb2042c84518d1f9748cf2363",
+      "deploymentVersion": "2988853c-b9e0-4ae7-83bf-75a385962f2d",
+      "restrictions": "GetLayers/Nexus catalog code not imported; primary rights restrictions preserved in audit."
     },
     {
       "id": "template-expansion",

@@ -1,12 +1,12 @@
 {
-  "releasedAt": "2026-10-26T03:36:55.093253+00:00",
+  "releasedAt": "2026-10-26T14:19:10.552356+00:00",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "9b7303ef59a6bf186bd96debe5b6ff656c412dce",
-  "deploymentVersion": "6dfd2782-31ae-4a82-9b3e-ee5692955df4",
-  "resources": 467,
+  "sourceCommit": "d4cab3c41e49bc1eb2042c84518d1f9748cf2363",
+  "deploymentVersion": "2988853c-b9e0-4ae7-83bf-75a385962f2d",
+  "resources": 479,
   "categories": {
-    "components": 92,
+    "components": 102,
     "blocks": 19,
     "templates": 114,
     "typography": 12,
@@ -17,62 +17,68 @@
     "foundations": 6,
     "backgrounds": 6,
     "icons": 2,
+    "tools": 2,
     "themes": 12
   },
   "licenses": {
-    "MIT": 453,
+    "MIT": 463,
     "OFL-1.1": 12,
-    "CC0-1.0": 2
+    "CC0-1.0": 2,
+    "Unlicense": 2
   },
   "changes": [
-    "96 distinct MIT single-file website template kits, pinned original code and creator notices retained separately",
-    "Original geometric demo artwork replaces excluded stock photos; remote fonts and services are disabled",
-    "Isolated thumbnails, mobile layouts, native motion controls and reduced-motion validation",
-    "Persistent collection discovery, individual outcomes, approved-source hashes and resumable validation checkpoints",
-    "Sitemap, crawl exclusions and canonical URLs for the homepage, catalog categories and resources"
+    "109 MIT Motion React examples grouped into 10 collections, with isolated variant previews, source and attributed downloads",
+    "Two Unlicense Textura/GetLayers developer source kits and a Developer tools section; install/backend execution explicitly unverified",
+    "All Motion collections discoverable from the existing Motion & backgrounds page, with mobile layouts and derived counts",
+    "Two external-photo examples use original separately licensed MigBits artwork; original sources remain separate",
+    "595 deployed artifact hashes verified; 570 upstream text files matched pinned Git blob hashes",
+    "GetLayers catalog and Nexus UI source excluded under redistribution restrictions; Motion+ and AI Kit source not imported without applicable grants",
+    "Copied source documents excluded from Tailwind class scanning; scoped preview contrast corrected"
   ],
   "checks": {
-    "unit": 43,
-    "ciBrowser": 34,
-    "localBrowser": 34,
+    "unit": 44,
+    "ciBrowser": 36,
     "localFocusedFinalBrowser": 4,
     "liveBrowser": 4,
-    "individualTemplateRenders": 96,
-    "liveArtifactsHashMatched": 480,
+    "individualMotionRenders": 109,
+    "sourceKitOverviewRenders": 2,
+    "sourceKitInstallationsTested": 0,
+    "upstreamSourceBytesMatched": 570,
+    "liveArtifactsHashMatched": 595,
     "lint": "passed",
     "typecheck": "passed",
-    "cleanConsumer": "passed",
-    "communityBundles": "passed",
     "cloudflareBuild": "passed",
     "workerDryRun": "passed",
+    "cleanConsumer": "passed",
+    "communityBundles": "passed",
     "sourceCommitCI": "passed",
-    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40264572361"
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40337656130"
   },
   "remaining": {
     "requestedCompleteTemplates": 500,
     "currentCompleteTemplateKits": 114,
     "remainingToTarget": 386,
-    "candidateRepositoriesStillUnverified": 1799,
     "requested3DModels": 150,
     "modelsStatus": "queued after template expansion",
     "requestedMotionBackgrounds": 100,
     "motionBackgroundStatus": "queued after 3D models",
     "freePro": "deferred",
-    "accessibility": "Comprehensive per-entry accessibility and multi-browser verification remain pending"
+    "sourceKits": "2 imported source kits have unverified installation, backend and hook execution",
+    "accessibility": "Full per-example production accessibility and strict consumer certification remain separate"
   },
   "previousDeployment": {
-    "releasedAt": "2026-10-25T20:12:20.491944+00:00",
-    "sourceCommit": "ca09d5964475ca33d189d792c3ae43daf8819f74",
-    "deploymentVersion": "e8fed9c3-b2f3-4770-8bc2-3d28bb52375d",
-    "resources": 371
+    "releasedAt": "2026-10-26T03:36:55.093253+00:00",
+    "sourceCommit": "9b7303ef59a6bf186bd96debe5b6ff656c412dce",
+    "deploymentVersion": "6dfd2782-31ae-4a82-9b3e-ee5692955df4",
+    "resources": 467
   },
   "evidence": [
-    "docs/TEMPLATE-COLLECTION-EXPANSION.md",
-    "catalog/template-research/collection-items.json",
-    "catalog/template-research/reviewed-single-file-source.json",
-    "catalog/template-research/expansion-validation.json",
-    "catalog/template-research/visual-dedup-review.json",
-    "tests/collection-template-safety.test.ts",
-    "tests/browser/collection-templates.spec.ts"
+    "docs/MOTION-LAYERS-NEXUS-IMPORT.md",
+    "catalog/partner-imports/source-audit.json",
+    "catalog/partner-imports/inventory.json",
+    "catalog/partner-imports/upstream-byte-verification.json",
+    "catalog/partner-imports/validation-summary.json",
+    "tests/partner-resources.test.ts",
+    "tests/browser/partner-resources.spec.ts"
   ]
 }

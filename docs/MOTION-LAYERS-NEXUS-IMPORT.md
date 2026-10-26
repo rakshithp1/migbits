@@ -70,3 +70,7 @@ The Motion website exposes many examples across several frameworks and premium p
 5. Run `npm run build:catalog`, lint, types, unit/browser checks and the Cloudflare build before publishing.
 
 Individual Chrome checks cover render errors, actual example-root content, screenshots, image completeness, pause/resume, live reduced-motion handling and mobile **document** overflow. Fixed-width upstream demos can scroll inside their isolated canvas. These checks do not certify strict consumer TypeScript, all browsers, production responsiveness, complete keyboard accessibility or backend integrations. Per-item status remains explicit.
+
+## Verified release
+
+Published code commit `d4cab3c41e49bc1eb2042c84518d1f9748cf2363` passed [CI](https://github.com/rakshithp1/migbits/actions/runs/40337656130): 44 unit tests and 36 browser tests, consumer/community checks, lint, types, production build and Worker checks. Four final local journeys and four live journeys passed. All 595 published partner preview/data/ZIP/notice/thumbnail files matched the tested hashes. Cloudflare deployment: `2988853c-b9e0-4ae7-83bf-75a385962f2d`. The two source kits still have unverified upstream installations; this release does not change that status.

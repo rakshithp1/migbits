@@ -37,12 +37,31 @@
   "typecheck": "passed",
   "cloudflareProductionBuild": "passed",
   "productionCssOptimizationWarnings": 0,
-  "sourceCommitCI": "pending",
-  "liveValidation": "pending",
+  "sourceCommitCI": "passed",
+  "liveValidation": "passed",
   "limits": [
     "No per-example strict TypeScript consumer or full accessibility certification",
     "No source-kit install, agent hook or backend execution",
     "No Nexus catalog or restricted GetLayers source imported",
     "Motion+ and Motion AI Kit redistribution not approved by this audit"
-  ]
+  ],
+  "sourceCommit": "d4cab3c41e49bc1eb2042c84518d1f9748cf2363",
+  "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40337656130",
+  "ciBrowser": {
+    "passed": 36,
+    "failed": 0
+  },
+  "liveBrowser": {
+    "passed": 4,
+    "failed": 0
+  },
+  "liveArtifacts": {
+    "checkedAt": "2026-10-26T14:15:37.904Z",
+    "origin": "https://migbits.com",
+    "collectionsAndKits": 12,
+    "artifacts": 595,
+    "passed": 595,
+    "failures": []
+  },
+  "deploymentVersion": "2988853c-b9e0-4ae7-83bf-75a385962f2d"
 }
