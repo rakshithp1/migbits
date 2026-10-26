@@ -603,6 +603,7 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
       : item.previewUrl;
   return (
     <div className="mb-studio">
+      {item.originalPrompt && <div className="mb-registry-install"><p>Original MigBits template ? editable build brief included</p><CopyButton label="Copy build prompt" text={item.originalPrompt} /></div>}
       {item.registryItem && (
         <div className="mb-registry-install">
           <code>

@@ -104,6 +104,7 @@ export interface LibraryResource {
   revision?: string;
   registryItem?: string;
   template?: { kind: string; pages: number; motion: boolean; motionEngine: string; original: boolean };
+  originalPrompt?: string;
   variants?: { label: string; previewUrl: string; dataUrl: string; downloadUrl: string }[];
   review?: { status: "APPROVED"; sourceDigest: string; evidence: string; notices: string[]; preview: "passed"; checkedAt: string; previewDigests?: Record<string, string> };
 }

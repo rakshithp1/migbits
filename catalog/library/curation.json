@@ -129,7 +129,10 @@
     "theme-berry-commerce",
     "theme-slate-enterprise",
     "theme-electric-mint",
-    "fluent-color-motion"
+    "fluent-color-motion",
+    "template-sonic",
+    "template-margin",
+    "template-stride"
   ],
   "removed": [
     {

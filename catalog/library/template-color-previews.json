@@ -1582,5 +1582,44 @@
       }
     ],
     "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-sonic",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-sonic/sonic.html",
+        "sha256": "0e7514c7c459056bd781cd7ccc2343db85791d1e1fbf3b9aa17ea450fb07d9c3",
+        "originalUrl": "/library/previews/showcases/sonic.html",
+        "originalSha256": "50e3e54ac43977165225abfe1e137b849b19e0b84a1f6b4479dced056abb62e1"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-margin",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-margin/margin.html",
+        "sha256": "66be895b5ddfe6e0c10f9004c02bd036444d1f1ed58d79c47b5a6e747e83d726",
+        "originalUrl": "/library/previews/showcases/margin.html",
+        "originalSha256": "8b141025235a1654ac92be7e2109bde468f6f43621caacf4eaac1f621b93e383"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-stride",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-stride/stride.html",
+        "sha256": "7e7aa94cb28ebd145f307d0ec1bde48cf23e8b5bf573c639815a92351ca2aa24",
+        "originalUrl": "/library/previews/showcases/stride.html",
+        "originalSha256": "7c9776fa33b6b1ffd3e2f06c4f5bc288feb35341c728fd5736489686389133d1"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
   }
 ]

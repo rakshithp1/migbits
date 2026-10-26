@@ -16116,5 +16116,131 @@
     "dataUrl": "/library/data/fluent-color-motion.json",
     "downloadUrl": "/library/downloads/fluent-color-motion.zip",
     "featured": 8
+  },
+  {
+    "id": "template-sonic",
+    "name": "Sonic Atelier",
+    "description": "An immersive audio storefront with sculpted vector headphones, finish selection, a local cart and editorial product storytelling.",
+    "category": "templates",
+    "author": "MigBits contributors",
+    "license": "MIT",
+    "licenseUrl": "/library/LICENSE.txt",
+    "sourceUrl": "https://github.com/rakshithp1/migbits/blob/main/resources/library/original-showcases.ts",
+    "format": "HTML · CSS · JavaScript · SVG",
+    "tags": [
+      "Commerce",
+      "Original",
+      "Animated",
+      "Build prompt",
+      "No dependencies",
+      "Colour options",
+      "Reduced motion"
+    ],
+    "previewType": "template",
+    "previewUrl": "/library/customized/template-sonic/sonic.html",
+    "image": "/library/thumbnails/template-sonic.png",
+    "dataUrl": "/library/data/template-sonic.json",
+    "downloadUrl": "/library/downloads/template-sonic.zip",
+    "originalPrompt": "Design Sonic Atelier, a fictional premium audio storefront. Use a warm ivory editorial canvas, oversized tightly spaced sans headings and a cobalt product stage with mint accents. Create original vector over-ear headphones with a machined-metal headband, cushioned earcups and detailed speaker mesh; no stock imagery. Arrange the hero as an asymmetric product magazine, followed by a specification strip, three listening scenarios, a selectable finish and price panel, FAQ and footer. Provide working finish buttons, a local demo cart, native keyboard focus and a real mobile menu. Animate a small vertical product float, rotating acoustic rings and a slow decorative waveform without WebGL or animation dependencies. Start automatically, stop when hidden or paused and respect reduced motion. Include honest demo checkout status, responsive layouts and system fonts. Keep color tokens centralized. Write original HTML, CSS, JavaScript and SVG with no external network calls; provide MIT notices and clearly document that checkout has no payment backend.",
+    "revision": "migbits-original-showcases-1.0.0",
+    "featured": 2,
+    "template": {
+      "kind": "Commerce",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native CSS and SVG",
+      "original": true
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. No package installation or network connection is needed.",
+      "PROMPT.md is an original MigBits build brief. Use it to extend or rebuild the design in your preferred framework.",
+      "All names, products, prices and booking times are fictional examples. Forms and cart actions have no backend.",
+      "Keep LICENSE.txt when modifying, distributing or selling copies. Review the final accessibility and connect your own services before production use.",
+      "Use the template colour selector and copy the resulting CSS after the original stylesheet. Original vector artwork and source remain separate from that adaptation."
+    ]
+  },
+  {
+    "id": "template-margin",
+    "name": "Margin Works",
+    "description": "An editorial design studio with a kinetic type composition, original architectural artwork, filterable work and a project enquiry form.",
+    "category": "templates",
+    "author": "MigBits contributors",
+    "license": "MIT",
+    "licenseUrl": "/library/LICENSE.txt",
+    "sourceUrl": "https://github.com/rakshithp1/migbits/blob/main/resources/library/original-showcases.ts",
+    "format": "HTML · CSS · JavaScript · SVG",
+    "tags": [
+      "Agency",
+      "Original",
+      "Animated",
+      "Build prompt",
+      "No dependencies",
+      "Colour options",
+      "Reduced motion"
+    ],
+    "previewType": "template",
+    "previewUrl": "/library/customized/template-margin/margin.html",
+    "image": "/library/thumbnails/template-margin.png",
+    "dataUrl": "/library/data/template-margin.json",
+    "downloadUrl": "/library/downloads/template-margin.zip",
+    "originalPrompt": "Create Margin Works, a fictional independent design studio with a light architectural editorial identity. Use paper white, near-black type, cobalt link details and a restrained acid-yellow marker. Build a split masthead with an oversized original typographic composition and an architectural folded-ribbon SVG in a dark inset. Use a numbered case-study index, alternating wide and narrow project cards, service disclosures, a three-stage process and an enquiry form. Create all project artwork from original vector grids, custom letterforms and material studies, with no borrowed photography, brand marks or template code. Make case-study category buttons filter the grid and expose selection accessibly. Animate the folded structure subtly, introduce a moving type baseline and reveal sections without hiding essential text. Include a local mobile menu and clear form-demo confirmation. Respect pause, visibility and reduced-motion settings. Deliver a complete responsive dependency-free HTML/CSS/JS page, editable CSS tokens, original build prompt and MIT notices.",
+    "revision": "migbits-original-showcases-1.0.0",
+    "featured": 3,
+    "template": {
+      "kind": "Agency",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native CSS and SVG",
+      "original": true
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. No package installation or network connection is needed.",
+      "PROMPT.md is an original MigBits build brief. Use it to extend or rebuild the design in your preferred framework.",
+      "All names, products, prices and booking times are fictional examples. Forms and cart actions have no backend.",
+      "Keep LICENSE.txt when modifying, distributing or selling copies. Review the final accessibility and connect your own services before production use.",
+      "Use the template colour selector and copy the resulting CSS after the original stylesheet. Original vector artwork and source remain separate from that adaptation."
+    ]
+  },
+  {
+    "id": "template-stride",
+    "name": "Stride Method",
+    "description": "A performance coaching website with an animated training track, selectable goal plans, session scheduling and a frontend consultation form.",
+    "category": "templates",
+    "author": "MigBits contributors",
+    "license": "MIT",
+    "licenseUrl": "/library/LICENSE.txt",
+    "sourceUrl": "https://github.com/rakshithp1/migbits/blob/main/resources/library/original-showcases.ts",
+    "format": "HTML · CSS · JavaScript · SVG",
+    "tags": [
+      "Fitness",
+      "Original",
+      "Animated",
+      "Build prompt",
+      "No dependencies",
+      "Colour options",
+      "Reduced motion"
+    ],
+    "previewType": "template",
+    "previewUrl": "/library/customized/template-stride/stride.html",
+    "image": "/library/thumbnails/template-stride.png",
+    "dataUrl": "/library/data/template-stride.json",
+    "downloadUrl": "/library/downloads/template-stride.zip",
+    "originalPrompt": "Build Stride Method, a fictional performance coaching practice. Give it a precise athletic editorial aesthetic with off-white surfaces, deep navy, restrained vermilion and wide numeric typography. Compose an expansive headline on the left and an original diagrammatic running-track illustration with animated route markers on the right. Follow with a three-goal plan selector that changes weekly session details, a coach methodology section, a selectable example session schedule, transparent pricing and an enquiry form. Draw the track, timing markers and all illustrations yourself using SVG and CSS rather than photographs. Avoid claims of real client results or real booking availability. Native buttons and inputs must support keyboard use and visible focus. Use automatic low-amplitude route motion, bounded transitions and visibility-aware pause, with a complete reduced-motion alternative. Include functional mobile navigation and explicit demo-only form states. Keep colors configurable and use system fonts. Deliver self-contained original HTML/CSS/JS/SVG and an editable original prompt under MIT.",
+    "revision": "migbits-original-showcases-1.0.0",
+    "featured": 4,
+    "template": {
+      "kind": "Fitness",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native CSS and SVG",
+      "original": true
+    },
+    "usage": [
+      "Extract the ZIP and open index.html. No package installation or network connection is needed.",
+      "PROMPT.md is an original MigBits build brief. Use it to extend or rebuild the design in your preferred framework.",
+      "All names, products, prices and booking times are fictional examples. Forms and cart actions have no backend.",
+      "Keep LICENSE.txt when modifying, distributing or selling copies. Review the final accessibility and connect your own services before production use.",
+      "Use the template colour selector and copy the resulting CSS after the original stylesheet. Original vector artwork and source remain separate from that adaptation."
+    ]
   }
 ]

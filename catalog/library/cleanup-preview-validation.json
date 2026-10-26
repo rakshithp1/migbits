@@ -1013,5 +1013,26 @@
     "automaticPixelChange": 0.08719282945736434,
     "previewUrl": "/imported/shaders/previews/shaders--waveform.html",
     "previewDigest": "3b54031bb7cf73616f771a894553eae32a5157f7bd40f2fed62252e79c20177e"
+  },
+  {
+    "id": "template-sonic",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-sonic/sonic.html",
+    "previewDigest": "0e7514c7c459056bd781cd7ccc2343db85791d1e1fbf3b9aa17ea450fb07d9c3"
+  },
+  {
+    "id": "template-margin",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-margin/margin.html",
+    "previewDigest": "66be895b5ddfe6e0c10f9004c02bd036444d1f1ed58d79c47b5a6e747e83d726"
+  },
+  {
+    "id": "template-stride",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-stride/stride.html",
+    "previewDigest": "7e7aa94cb28ebd145f307d0ec1bde48cf23e8b5bf573c639815a92351ca2aa24"
   }
 ]

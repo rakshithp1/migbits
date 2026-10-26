@@ -1,3 +1,4 @@
+import { buildOriginalShowcases } from "./build-original-showcases";
 import { consolidateTemplateColors } from "./consolidate-template-colors";
 import { customizeTemplatePreviews } from "./customize-template-previews";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
@@ -481,6 +482,7 @@ for (const item of list) {
     throw Error("Missing download " + item.id);
 }
 list.push(...buildVisualLibrary());
+list.push(...buildOriginalShowcases());
 list = consolidateTemplateColors(list);
 customizeTemplatePreviews(list);
 const libraryErrors = validateLibrary(list);

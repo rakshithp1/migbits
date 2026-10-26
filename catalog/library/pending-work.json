@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
   "countingPolicy": "Distinct complete kits/models/backgrounds; pages, recolors and parameter variants do not inflate counts.",
   "work": [
     {
@@ -24,6 +24,13 @@
         "Visual deduplication",
         "Isolated render and thumbnail",
         "Usable source ZIP and notices"
+      ],
+      "published": 117,
+      "remaining": 383,
+      "originalShowcases": [
+        "template-sonic",
+        "template-margin",
+        "template-stride"
       ]
     },
     {

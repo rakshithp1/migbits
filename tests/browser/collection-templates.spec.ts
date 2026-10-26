@@ -8,6 +8,7 @@ test("Collection template can be found, previewed in isolation and downloaded wi
   await expect(page.locator("iframe")).toBeVisible();
   await expect(page.locator("iframe")).toHaveAttribute("sandbox", "allow-scripts");
   const frame = page.frameLocator("iframe");
+  await expect(frame.locator("body")).toHaveAttribute("data-preview-state", "rendered");
   await expect(frame.getByRole("heading", { level: 1 })).toBeVisible();
   await page.setViewportSize({ width: 375, height: 812 });
   const menu = frame.getByRole("button", { name: "Open menu" });

@@ -1,7 +1,7 @@
 {
   "date": "2026-10-27",
-  "resources": 339,
-  "templates": 114,
+  "resources": 342,
+  "templates": 117,
   "shaderScenes": 31,
   "formerlyPublishedShadersRemoved": 140,
   "individualShaderDownloadsRetired": 169,
@@ -9,12 +9,18 @@
   "templateColourOptions": 6,
   "checks": {
     "unit": 47,
-    "localBrowser": 8,
-    "isolatedPreview": 145,
+    "localBrowser": 12,
+    "isolatedPreview": 148,
     "lint": "passed",
     "types": "passed",
     "cloudflareProductionBuild": "passed"
   },
-  "ci": "pending",
-  "deployment": "pending"
+  "ci": "pending new source commit; obsolete Play-button expectation and early-menu test synchronization corrected",
+  "deployment": "pending original showcase release",
+  "originalBuildPrompts": 3,
+  "originalShowcases": [
+    "template-sonic",
+    "template-margin",
+    "template-stride"
+  ]
 }
