@@ -1,9 +1,9 @@
 {
-  "releasedAt": "2026-10-26T14:19:10.552356+00:00",
+  "releasedAt": "2026-10-26T16:01:55.255091+00:00",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "d4cab3c41e49bc1eb2042c84518d1f9748cf2363",
-  "deploymentVersion": "2988853c-b9e0-4ae7-83bf-75a385962f2d",
+  "sourceCommit": "97c8afe754c864837eb3b995f8dca3b813dcfe77",
+  "deploymentVersion": "9a400844-3a67-499d-8d70-5efaf3c2d44e",
   "resources": 479,
   "categories": {
     "components": 102,
@@ -27,24 +27,20 @@
     "Unlicense": 2
   },
   "changes": [
-    "109 MIT Motion React examples grouped into 10 collections, with isolated variant previews, source and attributed downloads",
-    "Two Unlicense Textura/GetLayers developer source kits and a Developer tools section; install/backend execution explicitly unverified",
-    "All Motion collections discoverable from the existing Motion & backgrounds page, with mobile layouts and derived counts",
-    "Two external-photo examples use original separately licensed MigBits artwork; original sources remain separate",
-    "595 deployed artifact hashes verified; 570 upstream text files matched pinned Git blob hashes",
-    "GetLayers catalog and Nexus UI source excluded under redistribution restrictions; Motion+ and AI Kit source not imported without applicable grants",
-    "Copied source documents excluded from Tailwind class scanning; scoped preview contrast corrected"
+    "Larger original animated Motion pattern overviews replace unreadable four-screenshot collages in the UI",
+    "Responsive Motion collection grid: three desktop, two medium and one mobile column",
+    "Resource detail previews mount immediately without a Load preview button; isolated sandbox permissions and source/variant controls retained",
+    "Every current default component and block detail preview audited: 102 components plus 19 blocks, no captured runtime failures",
+    "Current GetLayers/Nexus redistribution restrictions rechecked; restricted source remains excluded"
   ],
   "checks": {
     "unit": 44,
-    "ciBrowser": 36,
-    "localFocusedFinalBrowser": 4,
-    "liveBrowser": 4,
-    "individualMotionRenders": 109,
-    "sourceKitOverviewRenders": 2,
-    "sourceKitInstallationsTested": 0,
-    "upstreamSourceBytesMatched": 570,
-    "liveArtifactsHashMatched": 595,
+    "ciBrowser": 39,
+    "localBrowserBeforeFinalGrammarPolish": 37,
+    "finalFocusedAndBulkAudit": 5,
+    "defaultComponentPreviewsAudited": 102,
+    "defaultBlockPreviewsAudited": 19,
+    "liveBrowser": 5,
     "lint": "passed",
     "typecheck": "passed",
     "cloudflareBuild": "passed",
@@ -52,7 +48,8 @@
     "cleanConsumer": "passed",
     "communityBundles": "passed",
     "sourceCommitCI": "passed",
-    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40337656130"
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40343958773",
+    "sourceArtifacts": "Existing source/preview data, ZIPs and notices unchanged by this UI-only update"
   },
   "remaining": {
     "requestedCompleteTemplates": 500,
@@ -67,18 +64,16 @@
     "accessibility": "Full per-example production accessibility and strict consumer certification remain separate"
   },
   "previousDeployment": {
-    "releasedAt": "2026-10-26T03:36:55.093253+00:00",
-    "sourceCommit": "9b7303ef59a6bf186bd96debe5b6ff656c412dce",
-    "deploymentVersion": "6dfd2782-31ae-4a82-9b3e-ee5692955df4",
-    "resources": 467
+    "releasedAt": "2026-10-26T14:19:10.552356+00:00",
+    "sourceCommit": "d4cab3c41e49bc1eb2042c84518d1f9748cf2363",
+    "deploymentVersion": "2988853c-b9e0-4ae7-83bf-75a385962f2d",
+    "resources": 479
   },
   "evidence": [
-    "docs/MOTION-LAYERS-NEXUS-IMPORT.md",
+    "docs/MOTION-GALLERY-AUTOLOAD.md",
+    "catalog/library/ui-quality-validation.json",
     "catalog/partner-imports/source-audit.json",
-    "catalog/partner-imports/inventory.json",
-    "catalog/partner-imports/upstream-byte-verification.json",
-    "catalog/partner-imports/validation-summary.json",
-    "tests/partner-resources.test.ts",
+    "tests/browser/resource-autoload.spec.ts",
     "tests/browser/partner-resources.spec.ts"
   ]
 }

@@ -19,3 +19,7 @@ Desktop and mobile captures were visually reviewed against the supplied screensh
 ## Rights recheck
 
 The current [GetLayers terms](https://www.getlayers.ai/terms-of-use), [GetLayers docs](https://www.getlayers.ai/docs) and [Nexus UI terms](https://www.nexus-ui.com/terms) still restrict redistribution through a competing library. Ending a subscription or removing a notice is not treated as a new permission grant. Restricted catalogs remain excluded; the separately verified open-source imports retain their original licenses and notices. No restricted source was copied or superficially restyled for these original vector covers.
+
+## Verified release
+
+Code commit `97c8afe754c864837eb3b995f8dca3b813dcfe77` passed [CI](https://github.com/rakshithp1/migbits/actions/runs/40343958773) with 44 unit tests and 39 browser tests, including the default-preview audits of all 102 components and 19 blocks. Five final local audit/journey tests and five live journeys passed. Lint, types, production build, consumer/community checks and Worker checks passed. Deployment: `9a400844-3a67-499d-8d70-5efaf3c2d44e`. These results do not replace format-specific accessibility, strict consumer or source-kit installation reviews.

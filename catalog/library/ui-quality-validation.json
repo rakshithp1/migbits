@@ -33,6 +33,17 @@
     "Mobile gallery capture"
   ],
   "rights": "Current GetLayers/Nexus restrictions rechecked; restricted source not imported",
-  "sourceCommitCI": "pending",
-  "liveValidation": "pending"
+  "sourceCommitCI": "passed",
+  "liveValidation": "passed",
+  "sourceCommit": "97c8afe754c864837eb3b995f8dca3b813dcfe77",
+  "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40343958773",
+  "ciBrowser": {
+    "passed": 39,
+    "failed": 0
+  },
+  "liveBrowser": {
+    "passed": 5,
+    "failed": 0
+  },
+  "deploymentVersion": "9a400844-3a67-499d-8d70-5efaf3c2d44e"
 }
