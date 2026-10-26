@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-26T16:35:00.893176+00:00",
+  "scope": [
+    "Editorial visual order",
+    "Continuous server-rendered gallery",
+    "Three original hero backgrounds rotating every 6500ms",
+    "Fitted Motion canvases and accessible image navigation",
+    "Theme-aware resource download contrast"
+  ],
+  "resources": 479,
+  "unit": {
+    "passed": 45,
+    "failed": 0
+  },
+  "localFocusedBrowser": {
+    "passed": 18,
+    "failed": 0
+  },
+  "isolatedPreviewRevalidation": {
+    "motionVariants": 109,
+    "sourceKitOverviews": 2,
+    "passed": 111,
+    "failed": 0,
+    "sourceKitInstallation": "UNVERIFIED"
+  },
+  "lint": "passed",
+  "typecheck": "passed",
+  "cloudflareProductionBuild": "passed",
+  "ci": "pending",
+  "live": "pending",
+  "evidence": [
+    "docs/GALLERY-SCROLL-HERO-FIT.md",
+    "catalog/partner-imports/render-validation.json",
+    "tests/browser/gallery-scroll-hero.spec.ts",
+    "tests/library-display-order.test.ts"
+  ]
+}

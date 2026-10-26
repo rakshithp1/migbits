@@ -1,4 +1,5 @@
 import catalog from "../catalog/library/resources.json";
+import { compareLibraryPresentation } from "./library-display-order";
 
 const categoryDefinitions = [
   { id: "tools", label: "Developer tools", description: "Reviewed source kits and AI development workflows. Installation status is shown explicitly.", icon: "tools" },
@@ -145,11 +146,7 @@ export function findLibraryResources({
             .includes(word),
         ),
     )
-    .sort(
-      (a, b) =>
-        (a.featured ?? 1000) - (b.featured ?? 1000) ||
-        a.name.localeCompare(b.name, "en"),
-    );
+    .sort(compareLibraryPresentation);
 }
 export function categoryLabel(category: string) {
   return (

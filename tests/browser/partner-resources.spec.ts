@@ -35,7 +35,7 @@ test("Motion collection variants have isolated live previews, real pause and att
 test("Motion overview covers stay readable, animate and honor pause/reduced motion", async ({ page }) => {
   await page.goto("/library/motion");
   await expect(page.locator(".mb-motion-cover")).toHaveCount(10);
-  await expect(page.locator(".mb-motion-cover-label").first()).toContainText("10 examples");
+  await expect(page.locator(".mb-motion-cover-label").first()).toContainText("30 examples");
   expect(await page.locator(".mb-motion-cover .mb-cover-drift").first().evaluate(el => getComputedStyle(el).animationName)).not.toBe("none");
   await page.getByRole("button", { name: "Pause motion", exact: true }).click();
   expect(await page.locator(".mb-motion-cover .mb-cover-drift").first().evaluate(el => getComputedStyle(el).animationPlayState)).toBe("paused");

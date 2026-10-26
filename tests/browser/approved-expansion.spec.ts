@@ -10,7 +10,7 @@ test("blue atmosphere moves, pauses and respects live reduced-motion preferences
   const secondary = () => page.locator(".mb-site").first().evaluate(node => getComputedStyle(node, "::after").transform);
   const secondaryStart = await secondary();
   await expect.poll(secondary).not.toBe(secondaryStart);
-  const ribbon = page.locator(".mb-flow-background path").first();
+  const ribbon = page.locator(".mb-hero-aurora");
   const ribbonStart = await ribbon.evaluate(node => getComputedStyle(node).transform);
   await expect.poll(() => ribbon.evaluate(node => getComputedStyle(node).transform)).not.toBe(ribbonStart);
   await page.getByRole("button", { name: "Pause motion", exact: true }).click();

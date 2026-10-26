@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { GalleryHeader, GalleryFooter, ResourceCard } from "./gallery";
 import { HomeShowcase } from "./home-showcase";
+import { HeroBackgrounds } from "./hero-backgrounds";
 import {
   findLibraryResources,
   libraryResources,
@@ -34,37 +35,7 @@ export function LibraryHome() {
     <div className="mb-site mb-home">
       <GalleryHeader />
       <section className="mb-home-hero">
-        <div className="mb-flow-background" aria-hidden="true">
-          <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <filter id="mb-flow-blur">
-                <feGaussianBlur stdDeviation="29" />
-              </filter>
-              <linearGradient id="mb-flow-blue">
-                <stop stopColor="#001CFF" />
-                <stop offset=".5" stopColor="#334DB3" />
-                <stop offset="1" stopColor="#001057" />
-              </linearGradient>
-            </defs>
-            <g fill="none" filter="url(#mb-flow-blur)">
-              <path
-                d="M-160 230C60-70 350 95 590 90S1000 345 1600 290"
-                stroke="url(#mb-flow-blue)"
-                strokeWidth="94"
-              />
-              <path
-                d="M-100 140C100 410 330 445 610 730S1230 710 1510 1000"
-                stroke="#051679"
-                strokeWidth="160"
-              />
-              <path
-                d="M430-140C410 90 750 130 920 300S1170 380 1510 530"
-                stroke="#18245C"
-                strokeWidth="110"
-              />
-            </g>
-          </svg>
-        </div>
+        <HeroBackgrounds />
         <div className="mb-home-hero-copy">
           <h1>
             Copy the details.
@@ -133,8 +104,8 @@ export function LibraryHome() {
           <div className="mb-home-category-grid">
             {librarySections.map((c) => {
               const example =
-                libraryResources.find((r) => r.category === c.id && r.image) ||
-                libraryResources.find((r) => r.category === c.id);
+                findLibraryResources({ category: c.id }).find(r => r.image) ||
+                findLibraryResources({ category: c.id })[0];
               return (
                 <Link key={c.id} href={"/library/" + c.id}>
                   <div

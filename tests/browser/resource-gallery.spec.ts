@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { libraryResources } from "../../lib/resource-library";
 test("retired lookalikes and their individual downloads return 404", async ({
   request,
 }) => {
@@ -25,7 +26,7 @@ test("all seven gallery categories expose real downloadable resources", async ({
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "The library",
   );
-  await expect(page.locator(".mb-card")).toHaveCount(24);
+  await expect(page.locator(".mb-card")).toHaveCount(libraryResources.length);
   for (const category of [
     "components",
     "blocks",
@@ -58,7 +59,7 @@ test("all seven gallery categories expose real downloadable resources", async ({
   await expect(page).toHaveURL(/topic=pricing/);
   await expect(page.locator(".mb-card").first()).toContainText(/pricing/i);
 });
-test("gallery search, pagination and resale filter work without JavaScript", async ({
+test("gallery search, continuous scrolling and resale filter work without JavaScript", async ({
   browser,
 }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
@@ -74,9 +75,10 @@ test("gallery search, pagination and resale filter work without JavaScript", asy
     page.getByRole("heading", { name: "No matching resources" }),
   ).toBeVisible();
   await page.goto("/library/components");
-  const first = await page.locator(".mb-card h3").first().innerText();
-  await page.getByRole("link", { name: "Next →", exact: true }).click();
-  expect(await page.locator(".mb-card h3").first().innerText()).not.toBe(first);
+  await expect(page.locator(".mb-card")).toHaveCount(libraryResources.filter(item => item.category === "components").length);
+  await expect(page.getByRole("navigation", { name: "Gallery pages" })).toHaveCount(0);
+  await page.locator(".mb-card").last().scrollIntoViewIfNeeded();
+  await expect(page.locator(".mb-card").last()).toBeVisible();
   await context.close();
 });
 test("component and block previews stay isolated and original code copies", async ({

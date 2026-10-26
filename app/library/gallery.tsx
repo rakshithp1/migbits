@@ -304,9 +304,7 @@ export async function ResourceGallery({
           .pattern.test([r.name, ...r.tags].join(" "))),
   );
   if (sort === "name") filtered.sort((a, b) => a.name.localeCompare(b.name));
-  const pages = Math.max(1, Math.ceil(filtered.length / 24)),
-    page = Math.min(pages, Math.max(1, Number.parseInt(get("page")) || 1)),
-    shown = filtered.slice((page - 1) * 24, page * 24);
+  const shown = filtered;
   function url(values: Record<string, string>) {
     const next = new URLSearchParams();
     for (const key of ["q", "topic", "rights", "sort", "framework", "kind", "motion", "pages"])
@@ -401,7 +399,7 @@ export async function ResourceGallery({
                   <label className="mb-filter">
                     <span>Sort</span>
                     <select name="sort" aria-label="Sort" defaultValue={sort}>
-                      <option value="">Featured</option>
+                      <option value="">Best looking first</option>
                       <option value="name">Name A–Z</option>
                     </select>
                   </label>
@@ -482,21 +480,7 @@ export async function ResourceGallery({
               <Link href={base}>Clear filters →</Link>
             </div>
           )}
-          <nav className="mb-pagination" aria-label="Gallery pages">
-            {page > 1 ? (
-              <Link href={url({ page: String(page - 1) })}>← Previous</Link>
-            ) : (
-              <span />
-            )}
-            <p>
-              Page {page} of {pages}
-            </p>
-            {page < pages ? (
-              <Link href={url({ page: String(page + 1) })}>Next →</Link>
-            ) : (
-              <span />
-            )}
-          </nav>
+          {shown.length > 0 && <p className="mb-scroll-status">All {shown.length} resources · keep scrolling to explore</p>}
         </div>
         <section className="mb-collections">
           <div>

@@ -1,5 +1,5 @@
 import { GalleryHeader, GalleryFooter, ResourceCard } from "../gallery";
-import { libraryResources } from "../../../lib/resource-library";
+import { findLibraryResources } from "../../../lib/resource-library";
 import { SectionNavigation } from "../section-navigation";
 import { BackgroundDemos } from "../background-demos";
 import { MotionPlayground } from "../../open-source/motion/motion-playground";
@@ -12,7 +12,7 @@ export const metadata = {
 };
 export default function MotionPage() {
   const license = originalLicense.text;
-  const collections = libraryResources.filter(item => item.previewType === "motion-example");
+  const collections = findLibraryResources().filter(item => item.previewType === "motion-example");
   const examples = collections.reduce((count, item) => count + (item.variants?.length || 1), 0);
   return (
     <div className="mb-site">

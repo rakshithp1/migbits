@@ -5,7 +5,7 @@ import { unzipSync, strFromU8 } from "fflate";
 test("template filters expose real motion kits and preserve search choices", async ({ page }) => {
   const templates = libraryResources.filter(item => item.category === "templates");
   await page.goto("/library/templates");
-  await expect(page.locator(".mb-card")).toHaveCount(Math.min(24, templates.length));
+  await expect(page.locator(".mb-card")).toHaveCount(templates.length);
   await expect(page.getByRole("navigation", { name: "Template categories" })).toBeVisible();
   await page.goto("/library/templates?pages=multi&motion=animated");
   await expect(page.locator(".mb-card")).toHaveCount(templates.filter(item => item.template!.pages > 1 && item.template!.motion).length);
