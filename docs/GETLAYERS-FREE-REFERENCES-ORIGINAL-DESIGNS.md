@@ -37,3 +37,9 @@ The new colour-preview directory is excluded from crawling. Original downloads r
 New catalog totals: **342 resources**, **117 templates**, **31 shader scenes**. The long-term 500-template target is still incomplete: **383 remain**. No palette variants or hero decoration were counted as new templates.
 
 See the release ledger for final checks, source commit and deployment version.
+
+## Verified release
+
+Live at https://migbits.com . Source commit `d94e4de1dc5b91c00248c81e7ca72371a66e20de`; Cloudflare version `03bfda8c-ac5f-4447-b3d5-f7b288f53bc0`. GitHub CI passed with 47 unit and 48 browser tests. All 148 isolated preview checks, 12 focused local browser checks and six live browser checks passed; all 208 checked live artifacts matched the tested files. Lint, type checks, clean-consumer/community checks and the production Worker build passed.
+
+CI: https://github.com/rakshithp1/migbits/actions/runs/40385883876

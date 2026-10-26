@@ -13,14 +13,26 @@
     "isolatedPreview": 148,
     "lint": "passed",
     "types": "passed",
-    "cloudflareProductionBuild": "passed"
+    "cloudflareProductionBuild": "passed",
+    "ciBrowser": 48,
+    "liveBrowser": 6,
+    "liveArtifactsHashMatched": 208
   },
-  "ci": "pending new source commit; obsolete Play-button expectation and early-menu test synchronization corrected",
-  "deployment": "pending original showcase release",
+  "ci": "passed",
+  "deployment": "live",
   "originalBuildPrompts": 3,
   "originalShowcases": [
     "template-sonic",
     "template-margin",
     "template-stride"
-  ]
+  ],
+  "sourceCommit": "d94e4de1dc5b91c00248c81e7ca72371a66e20de",
+  "ciUrl": "https://github.com/rakshithp1/migbits/actions/runs/40385883876",
+  "deploymentVersion": "03bfda8c-ac5f-4447-b3d5-f7b288f53bc0",
+  "productionUrl": "https://migbits.com",
+  "protectedGetLayersPromptsImported": 0,
+  "supersededCi": {
+    "url": "https://github.com/rakshithp1/migbits/actions/runs/40380667159",
+    "result": "43/45 browser tests passed; obsolete manual-Play assertion and an early-menu readiness race corrected and covered by the successful 48-test run."
+  }
 }

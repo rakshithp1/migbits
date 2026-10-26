@@ -1,19 +1,19 @@
 {
-  "releasedAt": "2026-10-26T16:44:28.201443+00:00",
+  "releasedAt": "2026-10-26T19:30:19.870948+00:00",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "2cd51b0b5b04db9adbbb578b76ddb7efdfc02317",
-  "deploymentVersion": "2b48e4f0-ed62-40f8-88c1-08b5e4c1e4bd",
-  "resources": 479,
+  "sourceCommit": "d94e4de1dc5b91c00248c81e7ca72371a66e20de",
+  "deploymentVersion": "03bfda8c-ac5f-4447-b3d5-f7b288f53bc0",
+  "resources": 342,
   "categories": {
     "components": 102,
     "blocks": 19,
-    "templates": 114,
+    "templates": 117,
     "typography": 12,
     "colors": 18,
     "illustrations": 14,
     "figma": 1,
-    "shaders": 171,
+    "shaders": 31,
     "foundations": 6,
     "backgrounds": 6,
     "icons": 2,
@@ -21,27 +21,28 @@
     "themes": 12
   },
   "licenses": {
-    "MIT": 463,
+    "MIT": 326,
     "OFL-1.1": 12,
     "CC0-1.0": 2,
     "Unlicense": 2
   },
   "changes": [
-    "Visually reviewed showcase resources first; simpler resources retained below, with name sort still available",
-    "All filtered gallery items shown in continuous server-rendered scrolling; no numbered pagination and native lazy image loading retained",
-    "Three original hero backgrounds rotate every 6.5 seconds with manual selection, global pause, visibility and reduced-motion handling",
-    "Motion viewport fitting, proportional SVGs, image descriptions and keyboard image-gallery navigation; upstream code snapshots remain unchanged",
-    "Theme-aware resource download contrast corrected"
+    "Removed 140 published shader filter/checkerboard/blur/static test entries and retired 169 individual shader downloads; 31 temporally verified scenes remain",
+    "Automatic shader playback without an activation button; global pause, visibility and reduced-motion policies preserved",
+    "Six stylesheet colour options in each of 117 distinct templates, with luminance preservation, original reset and CSS copying",
+    "Three independently developed MIT motion templates with original vector artwork, editable build prompts, screenshots and deterministic source ZIPs: Sonic Atelier, Margin Works and Stride Method",
+    "Sandbox-safe frontend form confirmation, native cart/finish/project/plan/session controls and responsive navigation",
+    "Existing continuous visually ranked gallery, rotating hero, component/block functionality and source notices preserved"
   ],
   "checks": {
-    "unit": 45,
-    "ciBrowser": 42,
-    "localFocusedBrowser": 18,
+    "unit": 47,
+    "ciBrowser": 48,
+    "localFocusedBrowser": 12,
     "liveBrowser": 6,
-    "individualMotionRenders": 109,
-    "sourceKitOverviewRenders": 2,
-    "sourceKitInstallationsTested": 0,
-    "liveArtifactsHashMatched": 595,
+    "isolatedPreviewChecks": 148,
+    "shaderTemporalChecks": 31,
+    "templateLandingColorMobileChecks": 117,
+    "liveArtifactsHashMatched": 208,
     "lint": "passed",
     "typecheck": "passed",
     "cloudflareBuild": "passed",
@@ -49,12 +50,12 @@
     "cleanConsumer": "passed",
     "communityBundles": "passed",
     "sourceCommitCI": "passed",
-    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40360576814"
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40385883876"
   },
   "remaining": {
     "requestedCompleteTemplates": 500,
-    "currentCompleteTemplateKits": 114,
-    "remainingToTarget": 386,
+    "currentCompleteTemplateKits": 117,
+    "remainingToTarget": 383,
     "requested3DModels": 150,
     "modelsStatus": "queued after template expansion",
     "requestedMotionBackgrounds": 100,
@@ -64,16 +65,19 @@
     "accessibility": "Full per-example production accessibility and strict consumer certification remain separate"
   },
   "previousDeployment": {
-    "releasedAt": "2026-10-26T16:01:55.255091+00:00",
-    "sourceCommit": "97c8afe754c864837eb3b995f8dca3b813dcfe77",
-    "deploymentVersion": "9a400844-3a67-499d-8d70-5efaf3c2d44e",
-    "resources": 479
+    "sourceCommit": "de31618c7d78aaf97bc87f89bc33e37d19577a49",
+    "deploymentVersion": "07d9a321-a294-41e0-8928-50177b47cc2f",
+    "resources": 339,
+    "note": "Cleanup deployment; CI expectation/synchronization corrections included in the current passing release."
   },
   "evidence": [
-    "docs/GALLERY-SCROLL-HERO-FIT.md",
-    "catalog/library/scroll-hero-validation.json",
-    "catalog/partner-imports/render-validation.json",
-    "tests/browser/gallery-scroll-hero.spec.ts",
-    "tests/library-display-order.test.ts"
+    "docs/SHADER-CLEANUP-TEMPLATE-COLOURS.md",
+    "docs/GETLAYERS-FREE-REFERENCES-ORIGINAL-DESIGNS.md",
+    "catalog/library/cleanup-preview-validation.json",
+    "catalog/library/cleanup-release-validation.json",
+    "catalog/library/template-color-previews.json",
+    "catalog/library/template-consolidation.json",
+    "tests/browser/gallery-cleanup.spec.ts",
+    "tests/browser/original-showcases.spec.ts"
   ]
 }
