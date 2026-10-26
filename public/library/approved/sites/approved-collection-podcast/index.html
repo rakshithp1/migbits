@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Podcast Website Template (HTML) | Second Draft</title>
+<meta name="description" content="Free podcast website template in one HTML file. Episode list with search and topic filter, a player with speed and skip controls, guests and subscribe links.">
+<meta name="keywords" content="podcast website template, podcast HTML template free, podcast landing page, audio show website template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#003049">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--nv:#003049;--nv2:#00243A;--or:#F77F00;--sd:#EAE2B7;--sd2:#F6F2DE;--ink:#0B1F2C;--gr:#4D5E69;--ln:#DCD4AA;--h:"Anton",Impact,sans-serif;--b:"Radio Canada",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}body{margin:0;font-family:var(--b);font-size:17px;line-height:1.6;color:var(--ink);background:var(--sd2)}
+img{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{font-family:var(--h);font-weight:400;margin:0;line-height:1;text-transform:uppercase;letter-spacing:.01em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--or);padding:8px;z-index:99}
+:focus-visible{outline:3px solid var(--or);outline-offset:2px}
+.hdr{background:var(--nv);color:var(--sd)}.nav{display:flex;justify-content:space-between;align-items:center;height:76px;position:relative}.logo{font-family:var(--h);font-size:26px;text-decoration:none;text-transform:uppercase}.logo span{color:var(--or)}
+.menu{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:500}.menu a{text-decoration:none}.menu a:hover{color:var(--or)}
+.burger{display:none;background:none;border:2px solid var(--sd);color:var(--sd);width:44px;height:40px;font-size:20px;cursor:pointer}
+.hero{background:var(--nv);color:var(--sd);padding:30px 0 0;overflow:hidden}.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(70px,12vw,180px);color:var(--sd)}.hero h1 span{color:var(--or);display:block}.hero p{font-size:20px;color:#B9CCD6;max-width:30em;margin:18px 0 26px}
+.btn{display:inline-block;background:var(--or);color:var(--ink);text-decoration:none;font:600 17px var(--b);padding:13px 22px;border-radius:40px;border:0;cursor:pointer}.btn.s{background:transparent;color:var(--sd);box-shadow:inset 0 0 0 2px var(--sd)}
+.row{display:flex;flex-wrap:wrap;gap:10px}.hero .t{padding-bottom:60px}
+.hero img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:20px 20px 0 0;filter:grayscale(.3) contrast(1.05)}
+.bar{position:sticky;top:0;z-index:40;background:var(--or);color:var(--ink)}.bar .wrap{display:flex;align-items:center;gap:14px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.bar button{border:0;background:var(--ink);color:#fff;border-radius:30px;height:40px;min-width:40px;padding:0 12px;font:600 14px var(--b);cursor:pointer}.bar #pp{width:48px;height:48px;border-radius:50%;font-size:18px}
+.bar .now{flex:1;min-width:160px}.bar .now b{display:block;font-size:15px;line-height:1.3}.bar .now small{font-size:13px}.bar .pg{height:6px;background:rgba(0,0,0,.2);border-radius:6px;margin-top:4px;overflow:hidden}.bar .pg i{display:block;height:100%;background:var(--ink);width:0}
+section{padding:80px 0}.sh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:26px}.sh h2{font-size:clamp(46px,6vw,86px);color:var(--nv)}.sh p{color:var(--gr);margin:6px 0 0;max-width:30em}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}.tools input{flex:1 1 260px;font:17px var(--b);padding:12px 18px;border:2px solid var(--ln);border-radius:40px;background:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips button{font:600 15px var(--b);background:#fff;border:2px solid var(--ln);border-radius:30px;padding:8px 14px;cursor:pointer;color:var(--ink)}.chips button[aria-pressed=true]{background:var(--nv);color:var(--sd);border-color:var(--nv)}
+.ep{display:grid;grid-template-columns:80px 1fr auto;gap:18px;align-items:center;background:#fff;border-radius:18px;padding:18px 20px;margin-bottom:10px}
+.ep .no{font-family:var(--h);font-size:40px;color:var(--or);line-height:1}.ep h3{font-family:var(--b);font-weight:600;text-transform:none;font-size:20px;letter-spacing:0}.ep p{margin:4px 0 0;color:var(--gr);font-size:15px}.ep .mt{font-size:14px;color:var(--gr);margin-top:6px}.ep .mt span{background:var(--sd2);border-radius:20px;padding:2px 10px;margin-right:6px}
+.ep button{width:52px;height:52px;border-radius:50%;border:0;background:var(--nv);color:var(--sd);font-size:18px;cursor:pointer}.ep button[aria-pressed=true]{background:var(--or);color:var(--ink)}
+.none{background:#fff;border-radius:18px;padding:24px;text-align:center}
+.more{display:block;margin:14px auto 0;font:600 16px var(--b);background:none;border:2px solid var(--nv);border-radius:30px;padding:10px 22px;cursor:pointer;color:var(--nv)}
+.hosts{background:var(--nv);color:var(--sd)}.hosts .sh h2{color:var(--sd)}.hosts .sh p{color:#B9CCD6}.hg2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ho{display:flex;gap:18px;align-items:center;background:var(--nv2);border-radius:20px;padding:20px}.ho img{width:110px;height:110px;border-radius:50%;object-fit:cover;flex:none}.ho h3{font-size:30px}.ho p{margin:6px 0 0;color:#B9CCD6;font-size:16px}
+.gu{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.gu span{border:1px solid #2A5570;border-radius:30px;padding:6px 14px;font-size:15px}
+.sub{text-align:center}.sub h2{font-size:clamp(40px,6vw,80px);color:var(--nv)}.sub p{color:var(--gr);max-width:34em;margin:10px auto 22px}.apps{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.apps a,.apps button{display:inline-flex;align-items:center;gap:8px;background:#fff;border:2px solid var(--ln);border-radius:40px;padding:10px 18px;font:600 16px var(--b);text-decoration:none;cursor:pointer;color:var(--ink)}
+.msg{visibility:hidden;margin:12px 0 0;font-weight:600;color:var(--nv)}.msg.on{visibility:visible}
+footer{background:var(--nv2);color:#8FA7B4;padding:28px 0;font-size:15px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:900px){.hg,.hg2{grid-template-columns:1fr}.hero img{max-width:380px}}
+@media (max-width:760px){.burger{display:block}.menu{display:none;position:absolute;top:76px;left:0;right:0;background:var(--nv);flex-direction:column;padding:18px 22px;z-index:30}.menu.open{display:flex}.ep{grid-template-columns:1fr auto}.ep .no{grid-column:1/-1;font-size:28px}.ho{flex-direction:column;text-align:center}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<header class="hdr"><nav class="wrap nav" aria-label="Main"><a href="#" class="logo">Second <span>Draft</span></a><ul class="menu" id="menu"><li><a href="#episodes">Episodes</a></li><li><a href="#hosts">Hosts</a></li><li><a href="#listen">Listen</a></li></ul><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1"><div class="wrap hg"><div class="t"><h1 id="h1">Second <span>Draft</span></h1><p>A weekly podcast about people who changed careers after 30. Teachers who became coders, bankers who became bakers, and what they wish they'd known.</p><div class="row"><button class="btn" type="button" id="latest">▶ Play the latest episode</button><a class="btn s" href="#listen">Follow the show</a></div></div>
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjA0IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDk0IiByPSI1NSIgZmlsbD0iaHNsKDIwNCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI1MTIiIHI9IjY3IiBmaWxsPSJoc2woMjI3IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjUyMSIgcj0iNzkiIGZpbGw9ImhzbCgyNTAgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNTI1IiByPSI5MSIgZmlsbD0iaHNsKDI3MyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI1MjciIHI9IjEwMyIgZmlsbD0iaHNsKDI5NiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzNzgiIHI9IjExNSIgZmlsbD0iaHNsKDMxOSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzA0IiByPSIxMjciIGZpbGw9ImhzbCgzNDIgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgyMDQgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="700" height="875" fetchpriority="high"></div></section>
+<div class="bar" aria-label="Player"><div class="wrap"><button type="button" id="bk" aria-label="Back 15 seconds">−15</button><button type="button" id="pp" aria-label="Play" aria-pressed="false">▶</button><button type="button" id="fw" aria-label="Forward 30 seconds">+30</button><div class="now"><b id="nt"></b><small id="nm"></small><div class="pg" aria-hidden="true"><i id="npb"></i></div></div><button type="button" id="sp" aria-label="Playback speed">1x</button></div></div>
+
+<section id="episodes" aria-labelledby="e1"><div class="wrap"><div class="sh"><div><h2 id="e1">Episodes</h2><p>New episodes every Tuesday. About 40 minutes each.</p></div></div>
+<div class="tools"><label for="q" style="position:absolute;left:-999px">Search episodes</label><input id="q" type="search" placeholder="Search by guest or topic"><div class="chips" id="chips" role="group" aria-label="Topic"><button type="button" aria-pressed="true" data-t="all">All</button><button type="button" aria-pressed="false" data-t="Tech">Tech</button><button type="button" aria-pressed="false" data-t="Food">Food</button><button type="button" aria-pressed="false" data-t="Money">Money</button><button type="button" aria-pressed="false" data-t="Health">Health</button></div></div>
+<div id="eps" aria-live="polite"></div><button class="more" type="button" id="more">Show more episodes</button></div></section>
+
+<section class="hosts" id="hosts" aria-labelledby="h2"><div class="wrap"><div class="sh"><div><h2 id="h2">Your hosts</h2><p>Two friends who both changed careers, one on purpose and one by accident.</p></div></div>
+<div class="hg2"><div class="ho"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjAyIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzEyIiByPSI1NSIgZmlsbD0iaHNsKDIwMiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIyNzEiIHI9IjY3IiBmaWxsPSJoc2woMjI1IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQwMCIgcj0iNzkiIGZpbGw9ImhzbCgyNDggNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzE1IiByPSI5MSIgZmlsbD0iaHNsKDI3MSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIyNzIiIHI9IjEwMyIgZmlsbD0iaHNsKDI5NCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0MDEiIHI9IjExNSIgZmlsbD0iaHNsKDMxNyA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDY1IiByPSIxMjciIGZpbGw9ImhzbCgzNDAgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgyMDIgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="110" height="110" loading="eager"><div><h3>Dana</h3><p>Went from 12 years in accounting to running a small plant nursery. Still does her own taxes.</p></div></div>
+<div class="ho"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjggMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIzNzgiIHI9IjU1IiBmaWxsPSJoc2woMjggNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iMzA0IiByPSI2NyIgZmlsbD0iaHNsKDUxIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjI2NyIgcj0iNzkiIGZpbGw9ImhzbCg3NCA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSIzOTgiIHI9IjkxIiBmaWxsPSJoc2woOTcgNjUlIDU1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNzcwIiBjeT0iMzE0IiByPSIxMDMiIGZpbGw9ImhzbCgxMjAgNjUlIDYwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iOTMwIiBjeT0iMjcyIiByPSIxMTUiIGZpbGw9ImhzbCgxNDMgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjQwMSIgcj0iMTI3IiBmaWxsPSJoc2woMTY2IDY1JSA3MCUpIiBvcGFjaXR5PSIuOCIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjggMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="110" height="110" loading="eager"><div><h3>Omar</h3><p>Former chef, now a product designer. Asks every guest what they had for breakfast.</p></div></div></div>
+<div class="gu" aria-label="Recent guests"><span>A nurse turned game developer</span><span>A lawyer turned carpenter</span><span>A pilot turned primary teacher</span><span>A sales manager turned midwife</span><span>A banker turned baker</span></div></div></section>
+
+<section class="sub" id="listen" aria-labelledby="l1"><div class="wrap"><h2 id="l1">Listen anywhere</h2><p>Search "Second Draft" in your podcast app, or copy our RSS link into any player.</p>
+<div class="apps"><a href="#listen">🎧 Podcast app</a><a href="#listen">📺 Video version</a><button type="button" id="rss">🔗 Copy RSS link</button></div><p class="msg" id="rm" role="status"></p></div></section>
+</main>
+<footer><div class="wrap"><p>© <span id="yr"></span> Second Draft Podcast. hello@seconddraft.example</p><p><a href="https://unsplash.com">Photos: Unsplash</a> &nbsp;|&nbsp; <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">More free templates</a></p></div></footer>
+<script>
+(()=>{const $=id=>document.getElementById(id);
+const E=[[48,"From ward nurse to game developer","Kemi spent 9 years on night shifts. Now she makes calm puzzle games.","Tech",42],[47,"The £0 career change","How to test a new career before you quit, using weekends and free trials.","Money",38],[46,"Banker to baker at 41","Rosa left a trading floor for 4am starts and flour everywhere. She says she would do it again.","Food",45],[45,"Retraining as a midwife","What a 3-year degree at 36 really costs, in money and sleep.","Health",51],[44,"Learning to code with two kids","Short, boring and consistent beats long weekend binges.","Tech",39],[43,"Opening a café with savings","The numbers behind a 20-seat café, shared in full.","Food",47],[42,"Burnout was my career coach","Recognising when it's the job, not you.","Health",36],[41,"Negotiating a pay cut","How to talk money when you're starting at the bottom again.","Money",41],[40,"Lawyer to carpenter","Why working with your hands can feel like a holiday.","Tech",44]];
+let tp='all',shown=5,cur=0,pos=0,iv=null,spd=1;const f=s=>Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
+function eps(){const q=$('q').value.trim().toLowerCase();const r=E.map((e,i)=>[e,i]).filter(([e])=>(tp==='all'||e[3]===tp)&&(!q||(e[1]+' '+e[2]).toLowerCase().includes(q)));
+$('eps').innerHTML=r.length?r.slice(0,shown).map(([e,i])=>`<article class="ep"><span class="no">#${e[0]}</span><div><h3>${e[1]}</h3><p>${e[2]}</p><div class="mt"><span>${e[3]}</span>${e[4]} min</div></div><button type="button" data-i="${i}" aria-pressed="${i===cur&&!!iv}" aria-label="${i===cur&&iv?'Pause':'Play'} episode ${e[0]}">${i===cur&&iv?'⏸':'▶'}</button></article>`).join(''):'<p class="none">No episodes match. Try another word.</p>';$('more').hidden=r.length<=shown}
+function bar(){const e=E[cur],d=e[4]*60;$('nt').textContent=`#${e[0]} ${e[1]}`;$('nm').textContent=`${f(pos)} of ${f(d)}`;$('npb').style.width=pos/d*100+'%';$('pp').textContent=iv?'⏸':'▶';$('pp').setAttribute('aria-label',iv?'Pause':'Play');$('pp').setAttribute('aria-pressed',!!iv)}
+function play(on){clearInterval(iv);iv=null;if(on)iv=setInterval(()=>{pos=Math.min(E[cur][4]*60,pos+spd*6);bar()},200);bar();eps()}
+$('pp').onclick=()=>play(!iv);$('bk').onclick=()=>{pos=Math.max(0,pos-15);bar()};$('fw').onclick=()=>{pos=Math.min(E[cur][4]*60,pos+30);bar()};
+$('sp').onclick=()=>{spd=spd===1?1.5:spd===1.5?2:1;$('sp').textContent=spd+'x'};
+$('eps').onclick=e=>{const b=e.target.closest('button');if(!b)return;const i=+b.dataset.i;if(i===cur&&iv){play(false);return}if(i!==cur){cur=i;pos=0}play(true)};
+$('latest').onclick=()=>{cur=0;pos=0;play(true)};
+$('chips').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('chips').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));tp=b.dataset.t;eps()};
+$('q').addEventListener('input',eps);$('more').onclick=()=>{shown+=5;eps()};eps();bar();
+$('rss').onclick=()=>{const u='https://seconddraft.example/feed.xml';(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>{$('rm').textContent='RSS link copied: '+u}).catch(()=>{$('rm').textContent='Our RSS link: '+u});$('rm').classList.add('on')};
+})();
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script></body>
+</html>

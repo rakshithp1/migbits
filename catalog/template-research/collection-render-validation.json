@@ -1,0 +1,578 @@
+[
+  {
+    "id": "approved-collection-analytics-dashboard",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "3c5e158ea7a97d777550607bea3d1ae3c8548840c74536a2f40d328c86c23f6b"
+  },
+  {
+    "id": "approved-collection-crm-dashboard",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "75c4840a3c28589a0ff73687782048d8591cb3379e0f331f9b6e6e078f6748da"
+  },
+  {
+    "id": "approved-collection-ecommerce-admin",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "044cbc9752675281bc05a4e25c050f1ff8a5f2429fafc71527b1c338ede6dafe"
+  },
+  {
+    "id": "approved-collection-finance-dashboard",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "b8d5da3f1ba23130a1421007189609632436878d4e7ad5fa94dc4748801e84a5"
+  },
+  {
+    "id": "approved-collection-hospital-management",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "1e968d7d2ed22b1e0ecd22a828a9e2591660004a3a00b6c1fc4f5ada2ca4bfef"
+  },
+  {
+    "id": "approved-collection-hr-dashboard",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "58ca729a2888b3347268bb9674e79a4607c665aef0ad653a55ced1a5974e4091"
+  },
+  {
+    "id": "approved-collection-inventory-dashboard",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "c06d35a4b563f3fc12f5c81c2ab73e19beeb2a8885e13564c7d1d114923ea529"
+  },
+  {
+    "id": "approved-collection-project-management",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "66f1c6220d7606b400f0ff764e43f98397940b4311328064dab8dc70cdc69b5e"
+  },
+  {
+    "id": "approved-collection-saas-admin-panel",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "7ed15ad4a1a87a651663b03367210f47d8074501e462a46731c3a1a70a29ffcd"
+  },
+  {
+    "id": "approved-collection-school-management",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "ce1e02079aeed6bfc84e9ee828a8152054c45cc335aa049c9c551ae64bb4f9fb"
+  },
+  {
+    "id": "approved-collection-branding-studio",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "5d659fb6c04ddad5d1625ec3bd60905a4c1b0eba4ebce66f5dc6b893119b9d48"
+  },
+  {
+    "id": "approved-collection-consulting-firm",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "ccbc861a1cab0858d0f3ef05f62386a7fd85d17531f73b40ce6ce0557695919a"
+  },
+  {
+    "id": "approved-collection-corporate-company",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "6ace985cdcdee303813adb5ddaa90b85ae9f2bad44768347655f23928a5ec61d"
+  },
+  {
+    "id": "approved-collection-creative-agency",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "13a7eea2e5cb891d347b9a099fba846834faba58713b2386d8c85eff1b666f1b"
+  },
+  {
+    "id": "approved-collection-digital-marketing-agency",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "8b21aa894004459eab2c08423a58004e3e1762b605deb15a7ba79564911cbd6b"
+  },
+  {
+    "id": "approved-collection-freelancer-team",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "2ee8183a6902d3abefac7765dcdb6bd676e0eb57356ae2d8f231fda653c63eb7"
+  },
+  {
+    "id": "approved-collection-it-service-company",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "4ef5b41262f9886267bd8cac299709a96c1814f168938ea2fafff3ab9b8e29e7"
+  },
+  {
+    "id": "approved-collection-social-media-marketing",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "802c2386af788360e7e3062b7c390dc915ca74c7c9e8000110896eeda53932df"
+  },
+  {
+    "id": "approved-collection-startup-company",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "2f601a0cba2ce7a29f726a01d4537e9427e6ebbf2b48c7a3a4cd2fb295933d1d"
+  },
+  {
+    "id": "approved-collection-web-development-agency",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "49c048a6df0a922f3b7b5a9f628adda2da7ee8ea07cbc2ab9427c1a237418b40"
+  },
+  {
+    "id": "approved-collection-cosmetics-skincare-store",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "c3cffadcfdc67044765723c058ea51666b24f365d36c962fb0ad226dc1708f82"
+  },
+  {
+    "id": "approved-collection-electronics-store",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "8cc33e37b48abbc771dc894e90ee731a11171816a7d49ffd8a850142771fadc1"
+  },
+  {
+    "id": "approved-collection-fashion-store",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "374d1a61f0e328554a30dc8826f77a42a1bf62b870a62f82e8fcc7b77c0a343c"
+  },
+  {
+    "id": "approved-collection-grocery-store",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "c73ba972707a35fd8f36db2a961e73898f055c008a77ab6558e7b4d0aeae30f5"
+  },
+  {
+    "id": "approved-collection-handicraft-store",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "40634dfe886f0da528aaddf57bacc5ab9171d3ce708b51dbdc4889b5f44d66d0"
+  },
+  {
+    "id": "approved-collection-jewellery-store",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "2444f7533b077eb39c264032cc035e72cba98f64562a7b356c3271903e0065a3"
+  },
+  {
+    "id": "approved-collection-shoes-bags-store",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "31dfe29313ada4ea13e3afb9ca6087e793120a94912a4c901bc0056cb40951be"
+  },
+  {
+    "id": "approved-collection-single-product-store",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "110275b1566344dd938572adb447f405bef89ea8c19566e9683e1c1a72ed8a28"
+  },
+  {
+    "id": "approved-collection-coding-bootcamp",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "55aceaab388940a1ec4f92d0a17696405af725df2b17c8e27ed782babd30e8cb"
+  },
+  {
+    "id": "approved-collection-elearning-platform",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "c8e33ac1dae79e0c3f135e6e3dc717d5f6bd9e662b910030a49f4fc84ace6513"
+  },
+  {
+    "id": "approved-collection-kids-daycare",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "9f28f4098c3390e692e679c605fc4704d6dd73254298d5d4ead4094cccbaec35"
+  },
+  {
+    "id": "approved-collection-language-school",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "97a0ba9e42616f0c79e22a790768f1bed174a3051689ce1fda83a11dd0b3a674"
+  },
+  {
+    "id": "approved-collection-online-course",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "1307fc4caa71299e59726cef36248b36ffd55036df83065f5c0da74377c3f373"
+  },
+  {
+    "id": "approved-collection-school",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "60b30da942f3fadb91e39eb15397a699262edd333801be537773ad737c6495c1"
+  },
+  {
+    "id": "approved-collection-tutoring",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "d22bce3ce93dca04c11ab4eb0c8e05b4bc28052995cc40d073b49271bcda6b45"
+  },
+  {
+    "id": "approved-collection-university",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "a67f81195096219f70355bc5a2eacce3239f1a2301915583ec71cc66d6f4bd46"
+  },
+  {
+    "id": "approved-collection-community-center",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "80e4b31415d0c853774bcca65516beaf7241d769c8a261cf3e0d206c63815640"
+  },
+  {
+    "id": "approved-collection-conference-event",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "44156d4e7e689fab28f165d4eb51182b5ac4d66bfc7ddd006daf8c3ef925d5c0"
+  },
+  {
+    "id": "approved-collection-musician-band",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "cc15042350cf270d5af8bf5d5d033de83ec225e15afbd8bda926db5c07f8b1ef"
+  },
+  {
+    "id": "approved-collection-nonprofit-charity",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "0b9d3c13dfdf90a7e3efa2c32dcddc7446f477cc10b0543552b8c8d4ff02f27c"
+  },
+  {
+    "id": "approved-collection-podcast",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "08ab23de7a007331bf198e2c5a2aae6e1e1512c0217a168f3a87f434a9043876"
+  },
+  {
+    "id": "approved-collection-wedding",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "a392d20a47c7296cd77c640af72d2839e86996d652cbb0f770ef338d331ac947"
+  },
+  {
+    "id": "approved-collection-dental-clinic",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "3bff6b78d23410a01eab319ef4cef4389b53869154ae262d29f6fc46c8701a25"
+  },
+  {
+    "id": "approved-collection-gym-fitness",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "54082d064a53301121ab2de30197a4c6d6a4e6f7d93f03b85047312302ed76d0"
+  },
+  {
+    "id": "approved-collection-medical-clinic",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "353a94dc362a426c25618878bc60bb070a47c0141d58e71968b7aa4d3171337a"
+  },
+  {
+    "id": "approved-collection-nutritionist",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "1dc84ed2be0e4b1abab37fa3caeef942c7a2e60be5bfd494fc29ece6c7e50614"
+  },
+  {
+    "id": "approved-collection-personal-trainer",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "ddea7e3e5cb6ab9283c08d62c1db13ec1e04999d74682ce4ad817d1e79f69206"
+  },
+  {
+    "id": "approved-collection-physiotherapy",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "38f381b92a735d44765554f5ee4fe45259a44d827372012ecdd05f4248059d62"
+  },
+  {
+    "id": "approved-collection-spa-salon",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "a9c7ffa3e4b0ccc360b1ac90f678e8e0d519143b440bcc01159e4cc10dc36277"
+  },
+  {
+    "id": "approved-collection-yoga-studio",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "4818dccfc41eee97b2b4e77dd19c5c32a958eec5669bb4dc593e649492c25de9"
+  },
+  {
+    "id": "approved-collection-ebook-download",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "17f7044607c2aa2b74985fc351436921f91beb497c32078c710579d1cd934c8c"
+  },
+  {
+    "id": "approved-collection-event-ticket",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "1c5a7bd6c224e835ef208e9bace468625baad4df69f7633d34c27253504f1c2a"
+  },
+  {
+    "id": "approved-collection-job-board",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "df3d106d9b32a367ed0f940ddaa57f900279e0e32161bfdaf56ebb33ffd5dc43"
+  },
+  {
+    "id": "approved-collection-product-launch",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "8b0ad03945cdf95d0bbe84eebc9e9e0a6ef283cad299acef4332ba0e60960b7a"
+  },
+  {
+    "id": "approved-collection-webinar-signup",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "fd22747a49593b7e3decd1cc6986a4f2583d47df8f92dee8d82b00aa4094e454"
+  },
+  {
+    "id": "approved-collection-accounting-firm",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "1bc645199fb39ffb4ce45a61d0f026aa1fd2f173bd5bb1c04328d00cba0e2221"
+  },
+  {
+    "id": "approved-collection-auto-repair",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "a9aabe2e3ebccd6521f6c38deddb36eed57ca7fa7359ab18e9c7620df8dbc93a"
+  },
+  {
+    "id": "approved-collection-cleaning-company",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "3439e7fc90832f205b7dc9d23cfb4d45b182a6bca695d7bd05b3fd4cee1e67b2"
+  },
+  {
+    "id": "approved-collection-construction-company",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "707c7a750d68edee6ab5e683bb5b9bb7484b0f06a4c948c056a54ed61ebbdcef"
+  },
+  {
+    "id": "approved-collection-law-firm",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "a22ef3b56fcb8741e22fb3702b57001b32874ef6cd5ad6052948fcab565fdb97"
+  },
+  {
+    "id": "approved-collection-moving-company",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "fdaaaf2861697473e035d37b3567758d2f2cf04403e1d3e640854c0b676e7d60"
+  },
+  {
+    "id": "approved-collection-pet-care-vet",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "05d7417ab636d4da0ec7a2495fa99dd22d27e0209e575460710600bb0f1c9697"
+  },
+  {
+    "id": "approved-collection-plumber-home-services",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "64d3b6c41ae465d809b797ed02e389ee0f2e4ea4e11d64244167cbacb098248d"
+  },
+  {
+    "id": "approved-collection-architect-portfolio",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "b1e06a09a7758ee77206af741705b13bd63662a752b0564d990865ce2d7e504e"
+  },
+  {
+    "id": "approved-collection-artist-illustrator",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "7fc1059c55949061bbc927e272b0620238374d326ec3be9592d018f0886b418b"
+  },
+  {
+    "id": "approved-collection-designer-portfolio",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "f78b1f9b75e350f329e2f3025717c58c8287d8f2dfe971755e545dc8a3e2e9cd"
+  },
+  {
+    "id": "approved-collection-developer-portfolio",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "b987a6c81a7d376ee5451748a86bd1d9fa53fd4aaf157f6b4667691b9d645869"
+  },
+  {
+    "id": "approved-collection-photographer-portfolio",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "1a7208c04323391e448c0fe51993d733ea1c12180682d0381d878d8704fb192b"
+  },
+  {
+    "id": "approved-collection-resume-cv",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "0ffab1ac224fc8bd86c109852994a049e995fefeb3deeed9ca7db4c1f4e745d3"
+  },
+  {
+    "id": "approved-collection-video-editor-youtuber",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "12e9d1b05bdabd2c9862464ba0f0d9ffc59b2345e4fd8fc440302e32092e21b6"
+  },
+  {
+    "id": "approved-collection-writer-blogger",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "c9c6d6e889636221a4872e1773cb013bf6c34b45570773745f32a88139b981a1"
+  },
+  {
+    "id": "approved-collection-car-rental",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "06446afc2928f2b24d051593fd1886ad705b3aa5a2c2256133b5c71fe6e9c3df"
+  },
+  {
+    "id": "approved-collection-hotel-resort",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "8886f7e4d601dcb85ebb1839e054bdfed71d29301be0de43309d2668838f57d4"
+  },
+  {
+    "id": "approved-collection-interior-design",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "56942c9078eca5ac68749b4397708b64b058a6a0b9354aa5ed62bf61ea797577"
+  },
+  {
+    "id": "approved-collection-property-listing",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "1e115d863b7cca3f02943421b676967cf7f0430a986558a65795dd27d1a0e881"
+  },
+  {
+    "id": "approved-collection-real-estate-agency",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "bbde285277c9a0d95a96aed2afc814a5c053688c37e885279616877d2ca5078f"
+  },
+  {
+    "id": "approved-collection-travel-agency",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "289269b5d2af43c91c0e0ffb6fb8d6cc2456b22eaf225bcd1876b8672a7fe3cc"
+  },
+  {
+    "id": "approved-collection-vacation-rental",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "e1bb371ff174da6669bd191b29a56aa7db3656c8e320e99f8eeabe0edde1b472"
+  },
+  {
+    "id": "approved-collection-bakery",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "bc719cb6d6a7ea50bb928fc47dad2ee60261921181415c902374cc246099ef1b"
+  },
+  {
+    "id": "approved-collection-bar-lounge",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "a3ce44d9db2920806384640294269ff2dff21f756714425be660e803607b2b4f"
+  },
+  {
+    "id": "approved-collection-cafe-coffee-shop",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "012c795db86b32504304e222e9d776924f7db945e2c5904a8004aef688566d37"
+  },
+  {
+    "id": "approved-collection-catering",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "100928ef6e0fb788147d8f787df931ccf222115d69b7e71e21d4465c3b1dcbfd"
+  },
+  {
+    "id": "approved-collection-food-truck",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "5ceefefa4480ead8ea577ed2b3f94e571944357b2be20295664763946b2268f8"
+  },
+  {
+    "id": "approved-collection-pizza-delivery",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "e9975d588ead063621b0ed2364b1b6d2817ff2686c44bfe2cc05c9273b227ed7"
+  },
+  {
+    "id": "approved-collection-recipe-blog",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "78c38b82a7cca815ae8ddfafcbcb774b7c50864662824eeaa7348bc7666a4ab4"
+  },
+  {
+    "id": "approved-collection-restaurant",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "e8de5a0f01e111bf475df5a3ed48c82a935fc15af6bda115e8b5a49a9d2fffe2"
+  },
+  {
+    "id": "approved-collection-ai-chatbot",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "ff42ab20e934e768d8e66408e6f2780920528fb5a8403da8d013e288412d3331"
+  },
+  {
+    "id": "approved-collection-ai-image-generator",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "9e811abbd55afb72006740a3a239255f7a7f54601eb5c06a7f02b5619ee9e572"
+  },
+  {
+    "id": "approved-collection-chrome-extension",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "cecca3c2955982844071a5bb6b8b9c55421d055954e12223b5bbd535459652da"
+  },
+  {
+    "id": "approved-collection-cloud-hosting",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "8b977980a0256e8f7268be328936fbc13356c1b1b1248f915c19d580bc070d1b"
+  },
+  {
+    "id": "approved-collection-cyber-security",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "c8c169e7ff72e8998c6cc517b4c3ff75f5f4c7003a8c615c1eda65ec605c192f"
+  },
+  {
+    "id": "approved-collection-developer-api",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "f8c96352b0e557ce9475f758d4b71d5cb1873dddfd0c7da62678741b4b660936"
+  },
+  {
+    "id": "approved-collection-mobile-app",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "36061e97ba4b8227b3befac4791a4a72f3e804e239d3063d659f76b959f2cd8d"
+  },
+  {
+    "id": "approved-collection-newsletter-waitlist",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "467e24c75f1cfcda8c12f3abd9993cf8c76b99e706665e1d2eeefd06ed077437"
+  },
+  {
+    "id": "approved-collection-productivity-app",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "8c58a804b54270b790ba8ecc2d607e5a36f12a44571895cd578c0cc8a4218d9b"
+  },
+  {
+    "id": "approved-collection-saas-product",
+    "status": "passed",
+    "detail": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.",
+    "digest": "3aee85ff5299ebfe623f4359055d102af0cfecc965e6949a26a54083cbe48fe7"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "updatedAt": "2026-10-26",
+  "countingPolicy": "Distinct complete kits/models/backgrounds; pages, recolors and parameter variants do not inflate counts.",
+  "work": [
+    { "id": "template-expansion", "target": 500, "status": "in-progress", "progressFile": "catalog/template-research/progress.json", "requirements": ["Per-item source and redistribution review", "Dependency and artwork scope", "Visual deduplication", "Isolated render and thumbnail", "Usable source ZIP and notices"] },
+    { "id": "professional-3d-models", "target": 150, "status": "queued-after-template-expansion", "requirements": ["New 3D Models section", "Distinct professional-quality models", "Verify model and texture redistribution rights", "Lazy isolated viewers", "Original license and attribution", "Asset size and performance review"] },
+    { "id": "motion-background-expansion", "target": 100, "status": "queued-after-3d-models", "requirements": ["Distinct visually reviewed backgrounds", "Redistribution rights", "Rendered thumbnails", "Pause and reduced-motion fallback", "Performance checks"] },
+    { "id": "original-onboarding", "status": "pending", "requirements": ["Shared theme tokens", "Keyboard and responsive interaction checks"] },
+    { "id": "global-ecosystem-research", "status": "pending-reconciliation", "requirements": ["Do not mark requested research volumes complete without evidence", "Preserve primary source verification records"] },
+    { "id": "commerce-free-pro", "status": "deferred-by-user" }
+  ]
+}

@@ -1,0 +1,893 @@
+[
+  {
+    "id": "approved-collection-analytics-dashboard",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "admin-dashboard/analytics-dashboard/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/admin-dashboard/analytics-dashboard/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-crm-dashboard",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "admin-dashboard/crm-dashboard/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/admin-dashboard/crm-dashboard/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-ecommerce-admin",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "admin-dashboard/ecommerce-admin/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/admin-dashboard/ecommerce-admin/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-finance-dashboard",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "admin-dashboard/finance-dashboard/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/admin-dashboard/finance-dashboard/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-hospital-management",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "admin-dashboard/hospital-management/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/admin-dashboard/hospital-management/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-hr-dashboard",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "admin-dashboard/hr-dashboard/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/admin-dashboard/hr-dashboard/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-inventory-dashboard",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "admin-dashboard/inventory-dashboard/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/admin-dashboard/inventory-dashboard/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-project-management",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "admin-dashboard/project-management/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/admin-dashboard/project-management/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-saas-admin-panel",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "admin-dashboard/saas-admin-panel/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/admin-dashboard/saas-admin-panel/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-school-management",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "admin-dashboard/school-management/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/admin-dashboard/school-management/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-branding-studio",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "business/branding-studio/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/business/branding-studio/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-consulting-firm",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "business/consulting-firm/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/business/consulting-firm/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-corporate-company",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "business/corporate-company/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/business/corporate-company/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-creative-agency",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "business/creative-agency/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/business/creative-agency/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-digital-marketing-agency",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "business/digital-marketing-agency/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/business/digital-marketing-agency/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-freelancer-team",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "business/freelancer-team/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/business/freelancer-team/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-it-service-company",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "business/it-service-company/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/business/it-service-company/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-social-media-marketing",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "business/social-media-marketing/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/business/social-media-marketing/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-startup-company",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "business/startup-company/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/business/startup-company/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-web-development-agency",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "business/web-development-agency/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/business/web-development-agency/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-cosmetics-skincare-store",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "ecommerce/cosmetics-skincare-store/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/ecommerce/cosmetics-skincare-store/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-electronics-store",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "ecommerce/electronics-store/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/ecommerce/electronics-store/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-fashion-store",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "ecommerce/fashion-store/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/ecommerce/fashion-store/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-grocery-store",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "ecommerce/grocery-store/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/ecommerce/grocery-store/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-handicraft-store",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "ecommerce/handicraft-store/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/ecommerce/handicraft-store/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-jewellery-store",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "ecommerce/jewellery-store/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/ecommerce/jewellery-store/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-shoes-bags-store",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "ecommerce/shoes-bags-store/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/ecommerce/shoes-bags-store/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-single-product-store",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "ecommerce/single-product-store/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/ecommerce/single-product-store/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-coding-bootcamp",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "education/coding-bootcamp/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/education/coding-bootcamp/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-elearning-platform",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "education/elearning-platform/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/education/elearning-platform/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-kids-daycare",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "education/kids-daycare/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/education/kids-daycare/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-language-school",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "education/language-school/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/education/language-school/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-online-course",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "education/online-course/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/education/online-course/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-school",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "education/school/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/education/school/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-tutoring",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "education/tutoring/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/education/tutoring/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-university",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "education/university/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/education/university/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-community-center",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "events-community/community-center/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/events-community/community-center/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-conference-event",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "events-community/conference-event/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/events-community/conference-event/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-musician-band",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "events-community/musician-band/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/events-community/musician-band/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-nonprofit-charity",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "events-community/nonprofit-charity/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/events-community/nonprofit-charity/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-podcast",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "events-community/podcast/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/events-community/podcast/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-wedding",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "events-community/wedding/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/events-community/wedding/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-dental-clinic",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "health-fitness/dental-clinic/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/health-fitness/dental-clinic/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-gym-fitness",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "health-fitness/gym-fitness/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/health-fitness/gym-fitness/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-medical-clinic",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "health-fitness/medical-clinic/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/health-fitness/medical-clinic/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-nutritionist",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "health-fitness/nutritionist/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/health-fitness/nutritionist/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-personal-trainer",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "health-fitness/personal-trainer/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/health-fitness/personal-trainer/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-physiotherapy",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "health-fitness/physiotherapy/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/health-fitness/physiotherapy/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-spa-salon",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "health-fitness/spa-salon/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/health-fitness/spa-salon/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-yoga-studio",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "health-fitness/yoga-studio/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/health-fitness/yoga-studio/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-coming-soon",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "landing-pages/coming-soon/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/landing-pages/coming-soon/index.html",
+    "status": "EXCLUDED",
+    "reason": "Utility/holding page; does not count as a complete website kit."
+  },
+  {
+    "id": "approved-collection-ebook-download",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "landing-pages/ebook-download/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/landing-pages/ebook-download/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-error-404",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "landing-pages/error-404/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/landing-pages/error-404/index.html",
+    "status": "EXCLUDED",
+    "reason": "Utility/holding page; does not count as a complete website kit."
+  },
+  {
+    "id": "approved-collection-event-ticket",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "landing-pages/event-ticket/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/landing-pages/event-ticket/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-job-board",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "landing-pages/job-board/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/landing-pages/job-board/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-link-in-bio",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "landing-pages/link-in-bio/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/landing-pages/link-in-bio/index.html",
+    "status": "EXCLUDED",
+    "reason": "Utility/holding page; does not count as a complete website kit."
+  },
+  {
+    "id": "approved-collection-product-launch",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "landing-pages/product-launch/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/landing-pages/product-launch/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-webinar-signup",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "landing-pages/webinar-signup/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/landing-pages/webinar-signup/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-accounting-firm",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "local-services/accounting-firm/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/local-services/accounting-firm/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-auto-repair",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "local-services/auto-repair/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/local-services/auto-repair/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-cleaning-company",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "local-services/cleaning-company/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/local-services/cleaning-company/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-construction-company",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "local-services/construction-company/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/local-services/construction-company/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-law-firm",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "local-services/law-firm/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/local-services/law-firm/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-moving-company",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "local-services/moving-company/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/local-services/moving-company/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-pet-care-vet",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "local-services/pet-care-vet/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/local-services/pet-care-vet/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-plumber-home-services",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "local-services/plumber-home-services/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/local-services/plumber-home-services/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-architect-portfolio",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "portfolio/architect-portfolio/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/portfolio/architect-portfolio/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-artist-illustrator",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "portfolio/artist-illustrator/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/portfolio/artist-illustrator/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-designer-portfolio",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "portfolio/designer-portfolio/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/portfolio/designer-portfolio/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-developer-portfolio",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "portfolio/developer-portfolio/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/portfolio/developer-portfolio/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-photographer-portfolio",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "portfolio/photographer-portfolio/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/portfolio/photographer-portfolio/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-resume-cv",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "portfolio/resume-cv/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/portfolio/resume-cv/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-video-editor-youtuber",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "portfolio/video-editor-youtuber/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/portfolio/video-editor-youtuber/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-writer-blogger",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "portfolio/writer-blogger/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/portfolio/writer-blogger/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-car-rental",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "real-estate-travel/car-rental/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/real-estate-travel/car-rental/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-hotel-resort",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "real-estate-travel/hotel-resort/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/real-estate-travel/hotel-resort/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-interior-design",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "real-estate-travel/interior-design/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/real-estate-travel/interior-design/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-property-listing",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "real-estate-travel/property-listing/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/real-estate-travel/property-listing/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-real-estate-agency",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "real-estate-travel/real-estate-agency/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/real-estate-travel/real-estate-agency/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-travel-agency",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "real-estate-travel/travel-agency/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/real-estate-travel/travel-agency/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-vacation-rental",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "real-estate-travel/vacation-rental/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/real-estate-travel/vacation-rental/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-bakery",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "restaurant/bakery/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/restaurant/bakery/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-bar-lounge",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "restaurant/bar-lounge/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/restaurant/bar-lounge/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-cafe-coffee-shop",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "restaurant/cafe-coffee-shop/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/restaurant/cafe-coffee-shop/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-catering",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "restaurant/catering/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/restaurant/catering/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-food-truck",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "restaurant/food-truck/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/restaurant/food-truck/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-pizza-delivery",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "restaurant/pizza-delivery/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/restaurant/pizza-delivery/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-recipe-blog",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "restaurant/recipe-blog/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/restaurant/recipe-blog/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-restaurant",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "restaurant/restaurant/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/restaurant/restaurant/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-ai-chatbot",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "saas-landing/ai-chatbot/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/saas-landing/ai-chatbot/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-ai-image-generator",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "saas-landing/ai-image-generator/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/saas-landing/ai-image-generator/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-chrome-extension",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "saas-landing/chrome-extension/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/saas-landing/chrome-extension/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-cloud-hosting",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "saas-landing/cloud-hosting/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/saas-landing/cloud-hosting/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-cyber-security",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "saas-landing/cyber-security/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/saas-landing/cyber-security/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-developer-api",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "saas-landing/developer-api/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/saas-landing/developer-api/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-mobile-app",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "saas-landing/mobile-app/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/saas-landing/mobile-app/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-newsletter-waitlist",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "saas-landing/newsletter-waitlist/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/saas-landing/newsletter-waitlist/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-productivity-app",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "saas-landing/productivity-app/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/saas-landing/productivity-app/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  },
+  {
+    "id": "approved-collection-saas-product",
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "path": "saas-landing/saas-product/index.html",
+    "sourceUrl": "https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/saas-landing/saas-product/index.html",
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate."
+  }
+]

@@ -10,7 +10,7 @@ export async function generateMetadata({
   params: Promise<{ category: string }>;
 }) {
   const { category } = await params;
-  return { title: categoryLabel(category) + " — Migbits" };
+  return { title: categoryLabel(category) + " — Migbits", alternates: { canonical: `/library/${category}` } };
 }
 export default async function Category(props: {
   params: Promise<{ category: string }>;

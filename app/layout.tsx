@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://migbits.com"),
   title: "Migbits — Small bits. Big personality.",
   description: "Expressive React components for websites that refuse to blend in. Explore interactive motion, playful type, and unexpected backgrounds.",
 };

@@ -1,10 +1,13 @@
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { chromium } from "@playwright/test";
 import sharp from "sharp";
 
 const templates = process.argv.includes("--templates");
-const records = JSON.parse(readFileSync(templates ? "catalog/template-research/import-candidates.json" : "catalog/approved-resource-candidates.json", "utf8"));
+const collection = process.argv.includes("--collection");
+const requestedIds = process.argv.find(value => value.startsWith("--ids="))?.slice(6).split(",");
+const records = JSON.parse(readFileSync(collection ? "catalog/template-research/collection-import-candidates.json" : templates ? "catalog/template-research/import-candidates.json" : "catalog/approved-resource-candidates.json", "utf8")).filter((record: {id: string}) => !requestedIds || requestedIds.includes(record.id));
+if (collection && !templates) throw Error("Collection validation requires --templates");
 const base = process.env.APPROVED_PREVIEW_ORIGIN || "http://127.0.0.1:3212";
 const browser = await chromium.launch({ channel: "chrome" });
 const results: { id: string; status: string; detail: string; digest?: string }[] = [];
@@ -20,7 +23,7 @@ try {
       if (templates) await page.setViewportSize({ width: 1280, height: 900 });
       const response = await page.goto(base + record.previewUrl);
       if (!response?.ok()) throw Error("Preview response failed");
-      await page.waitForFunction(() => document.body.dataset.previewState === "rendered" || document.body.dataset.previewState === "error", { timeout: 15000 });
+      await page.waitForFunction(() => document.body.dataset.previewState === "rendered" || document.body.dataset.previewState === "error", undefined, { timeout: 15000 });
       if (await page.locator("body").getAttribute("data-preview-state") === "error" || errors.length) throw Error(errors.join("; ") || "Preview runtime error");
       if (await page.locator("body *").count() < 4) throw Error("Empty preview markup");
       const bytes = await page.screenshot({ animations: "disabled" });
@@ -55,9 +58,19 @@ try {
       results.push({ id: record.id, status: "passed", detail: "Chrome isolated render, no page errors, nonblank thumbnail. Consumer and full accessibility checks remain separate.", digest: record.review.previewDigest });
     } catch (error) {
       results.push({ id: record.id, status: "held", detail: String(error) });
-    } finally { page.off("pageerror", collect); }
+    } finally {
+      page.off("pageerror", collect);
+      if (collection) writeFileSync("catalog/template-research/collection-validation-checkpoint.json", JSON.stringify({ checkedAt: new Date().toISOString(), results, passed }, null, 2) + "\n");
+      console.log(`${results.length}/${records.length}: ${record.id} ${results.at(-1)?.status}`);
+    }
   }
 } finally { await browser.close(); }
-writeFileSync(templates ? "catalog/template-research/render-validation.json" : "catalog/approved-resource-validation.json", JSON.stringify(results, null, 2) + "\n");
-writeFileSync(templates ? "catalog/approved-templates.json" : "catalog/approved-resources.json", JSON.stringify(passed, null, 2) + "\n");
+const validationFile = collection ? "catalog/template-research/collection-render-validation.json" : templates ? "catalog/template-research/render-validation.json" : "catalog/approved-resource-validation.json";
+const priorResults = collection && existsSync(validationFile) ? JSON.parse(readFileSync(validationFile, "utf8")) : [];
+const resultIds = new Set(results.map(r => r.id));
+writeFileSync(validationFile, JSON.stringify([...priorResults.filter((r: {id: string}) => !resultIds.has(r.id)), ...results], null, 2) + "\n");
+const existing = templates ? JSON.parse(readFileSync("catalog/approved-templates.json", "utf8")) : [];
+const attempted = new Set(records.map((r: {id: string}) => r.id));
+const merged = templates ? [...existing.filter((r: {id: string}) => !attempted.has(r.id)), ...passed] : passed;
+writeFileSync(templates ? "catalog/approved-templates.json" : "catalog/approved-resources.json", JSON.stringify(merged, null, 2) + "\n");
 console.log(JSON.stringify({ attempted: records.length, passed: passed.length, held: results.filter(r => r.status === "held") }, null, 2));

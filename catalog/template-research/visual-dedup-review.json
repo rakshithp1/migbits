@@ -1,0 +1,108 @@
+{
+  "method": "256-bit difference hash of desktop screenshots; triage only, not proof of originality",
+  "compared": 96,
+  "pairsCompared": 4560,
+  "closestPairs": [
+    {
+      "a": "approved-collection-shoes-bags-store",
+      "b": "approved-collection-developer-api",
+      "distance": 77
+    },
+    {
+      "a": "approved-collection-fashion-store",
+      "b": "approved-collection-developer-api",
+      "distance": 78
+    },
+    {
+      "a": "approved-collection-consulting-firm",
+      "b": "approved-collection-productivity-app",
+      "distance": 79
+    },
+    {
+      "a": "approved-collection-spa-salon",
+      "b": "approved-collection-travel-agency",
+      "distance": 79
+    },
+    {
+      "a": "approved-collection-online-course",
+      "b": "approved-collection-tutoring",
+      "distance": 80
+    },
+    {
+      "a": "approved-collection-event-ticket",
+      "b": "approved-collection-real-estate-agency",
+      "distance": 80
+    },
+    {
+      "a": "approved-collection-tutoring",
+      "b": "approved-collection-accounting-firm",
+      "distance": 81
+    },
+    {
+      "a": "approved-collection-dental-clinic",
+      "b": "approved-collection-bakery",
+      "distance": 81
+    },
+    {
+      "a": "approved-collection-auto-repair",
+      "b": "approved-collection-restaurant",
+      "distance": 81
+    },
+    {
+      "a": "approved-collection-web-development-agency",
+      "b": "approved-collection-catering",
+      "distance": 82
+    },
+    {
+      "a": "approved-collection-online-course",
+      "b": "approved-collection-ebook-download",
+      "distance": 82
+    },
+    {
+      "a": "approved-collection-tutoring",
+      "b": "approved-collection-law-firm",
+      "distance": 82
+    },
+    {
+      "a": "approved-collection-accounting-firm",
+      "b": "approved-collection-law-firm",
+      "distance": 83
+    },
+    {
+      "a": "approved-collection-analytics-dashboard",
+      "b": "approved-collection-school-management",
+      "distance": 84
+    },
+    {
+      "a": "approved-collection-shoes-bags-store",
+      "b": "approved-collection-webinar-signup",
+      "distance": 84
+    },
+    {
+      "a": "approved-collection-single-product-store",
+      "b": "approved-collection-recipe-blog",
+      "distance": 84
+    },
+    {
+      "a": "approved-collection-nutritionist",
+      "b": "approved-collection-yoga-studio",
+      "distance": 84
+    },
+    {
+      "a": "approved-collection-inventory-dashboard",
+      "b": "approved-collection-school-management",
+      "distance": 85
+    },
+    {
+      "a": "approved-collection-photographer-portfolio",
+      "b": "approved-collection-restaurant",
+      "distance": 85
+    },
+    {
+      "a": "approved-collection-cafe-coffee-shop",
+      "b": "approved-collection-cloud-hosting",
+      "distance": 85
+    }
+  ],
+  "status": "Reviewed closest eight pairs in a screenshot contact sheet: distinct composition, hierarchy and content patterns. No exact CSS layout duplicate was found. Perceptual hash is triage, not proof of originality or exhaustive similarity detection."
+}

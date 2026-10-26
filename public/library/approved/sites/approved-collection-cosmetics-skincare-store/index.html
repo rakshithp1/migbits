@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Skincare & Cosmetics Store Template (HTML) | Dewline</title>
+<meta name="description" content="Free skincare and cosmetics store template in one editable file. Skin quiz with product routine, bestsellers with add to bag, ingredients, reviews and FAQ.">
+<meta name="keywords" content="skincare website template, cosmetics store HTML template free, beauty ecommerce template, skincare brand landing page, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#2F4A3A">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--pist:#E7EFE3;--pist-2:#F3F7F1;--forest:#2F4A3A;--forest-2:#46654F;--rose:#D9897A;--rose-l:#F7E3DE;--text:#2B3530;--muted:#66736B;--line:#DCE5D8;
+--serif:"Cormorant Garamond",Georgia,serif;--sans:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--wrap:1200px}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);font-size:17px;line-height:1.65;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}a{color:inherit}p{margin:0 0 1em}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;line-height:1.02;color:var(--forest)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--rose-l);padding:10px;z-index:99}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:6px}
+.promo{background:var(--forest);color:var(--pist);text-align:center;font-size:14px;padding:8px}
+.site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.95);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:var(--serif);font-size:32px;font-weight:600;text-decoration:none;color:var(--forest);font-style:italic}
+.menu{display:flex;gap:26px;list-style:none;margin:0;padding:0}.menu a{text-decoration:none;font-weight:600}.menu a:hover{color:var(--rose)}
+.bag{background:var(--pist);border-radius:999px;padding:8px 16px;font-weight:700;text-decoration:none;color:var(--forest)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer}.burger span{display:block;width:20px;height:2px;background:var(--forest);margin:4px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;border:1.5px solid transparent;font-family:var(--sans);font-size:16px;cursor:pointer}
+.btn-f{background:var(--forest);color:#fff}.btn-f:hover{background:var(--forest-2)}
+.btn-o{border-color:var(--forest);color:var(--forest);background:transparent}
+.hero{background:var(--pist);padding:0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;min-height:600px}
+.hero h1{font-size:clamp(52px,7vw,100px)}
+.hero h1 em{color:var(--rose)}
+.hero .lead{font-size:20px;color:var(--muted);max-width:42ch;margin:22px 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.clean{display:flex;gap:16px;flex-wrap:wrap;margin-top:30px;font-size:14px;font-weight:700;color:var(--forest-2);list-style:none;padding:0}.clean li::before{content:"✓ ";color:var(--rose)}
+.hero-img{position:relative;height:100%;min-height:520px}
+.hero-img img{position:absolute;right:0;top:40px;bottom:40px;width:92%;height:calc(100% - 80px);object-fit:cover;border-radius:200px 200px 24px 24px}
+.hero-img .pill{position:absolute;left:0;bottom:80px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 20px 40px -20px rgba(47,74,58,.5);font-size:14px}.pill b{display:block;font-family:var(--serif);font-size:28px;color:var(--forest)}
+section{padding:90px 0}
+.head{text-align:center;max-width:700px;margin:0 auto 46px}.head h2{font-size:clamp(40px,5vw,64px)}.head p{color:var(--muted);font-size:18px;margin-top:12px}
+.quiz{background:var(--rose-l);border-radius:32px;padding:44px;max-width:900px;margin:0 auto}
+.steps{display:flex;gap:8px;justify-content:center;margin-bottom:24px}.steps i{width:40px;height:5px;border-radius:3px;background:#EBC6BE}.steps i.on{background:var(--rose)}
+.q{display:none;text-align:center}.q.on{display:block}
+.q h3{font-size:36px;margin-bottom:20px}
+.opts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.opts button{background:#fff;border:1.5px solid #EBC6BE;border-radius:999px;padding:12px 22px;font:inherit;font-weight:700;cursor:pointer;color:var(--forest)}
+.opts button:hover{border-color:var(--rose)}
+.result{display:none}.result.on{display:block}
+.result h3{font-size:36px;text-align:center;margin-bottom:6px}.result>p{text-align:center;color:var(--muted)}
+.routine{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.routine div{background:#fff;border-radius:20px;padding:18px;text-align:center}
+.routine small{color:var(--rose);font-weight:700}.routine b{display:block;font-family:var(--serif);font-size:24px;color:var(--forest);margin:6px 0}
+.routine img{border-radius:14px;aspect-ratio:1/1;object-fit:cover;width:100%;margin-bottom:10px}
+.again{background:none;border:0;color:var(--forest);text-decoration:underline;cursor:pointer;font:inherit;display:block;margin:20px auto 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.p figure{margin:0 0 12px;border-radius:24px;overflow:hidden;background:var(--pist-2);aspect-ratio:4/5;position:relative}
+.p img{width:100%;height:100%;object-fit:cover}
+.p .tag{position:absolute;top:12px;left:12px;background:#fff;border-radius:999px;font-size:12px;font-weight:700;padding:3px 10px;color:var(--forest)}
+.p small{color:var(--rose);font-weight:700;font-size:13px}
+.p h3{font-size:24px;margin:2px 0}
+.p p{color:var(--muted);font-size:15px;margin:0 0 10px}
+.p .row{display:flex;justify-content:space-between;align-items:center}
+.p .pr{font-weight:700;font-size:18px}
+.p button{background:var(--forest);color:#fff;border:0;border-radius:999px;padding:9px 16px;font:inherit;font-weight:700;font-size:14px;cursor:pointer}
+.ingr{background:var(--forest);color:#C9D8CE}
+.ingr .head h2{color:#fff}.ingr .head p{color:#A9BDB0}
+.ig{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ig div{border:1px solid var(--forest-2);border-radius:20px;padding:24px}
+.ig b{font-family:var(--serif);font-size:30px;color:#fff;display:block;margin-bottom:6px}.ig p{margin:0;font-size:15px}
+.free{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:36px}
+.free span{border:1px solid var(--forest-2);border-radius:999px;padding:6px 14px;font-size:14px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.story img{border-radius:24px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.story h2{font-size:clamp(38px,4.6vw,58px);margin-bottom:16px}.story p{color:var(--muted);font-size:18px}
+.revs{background:var(--pist-2)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rv{background:#fff;border-radius:22px;padding:26px;margin:0}
+.rv .st{color:var(--rose);letter-spacing:3px}.rv p{font-family:var(--serif);font-size:24px;line-height:1.3;color:var(--forest);margin:10px 0}
+.rv cite{font-style:normal;font-size:14px;color:var(--muted)}.rv cite b{color:var(--text)}
+.faq{max-width:800px;margin:0 auto}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{list-style:none;cursor:pointer;font-weight:700;font-size:19px;display:flex;justify-content:space-between;gap:16px;color:var(--forest)}
+.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";color:var(--rose);font-size:24px;line-height:1}.faq details[open] summary::after{content:"−"}
+.faq details p{margin:10px 0 0;color:var(--muted)}
+footer{background:var(--pist);padding:50px 0 26px;font-size:15px;color:var(--muted)}
+.foot{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:30px;margin-bottom:30px}
+footer h3{font-family:var(--sans);font-size:15px;font-weight:700;color:var(--forest);margin-bottom:10px}footer ul{list-style:none;padding:0;margin:0}footer li{margin-bottom:6px}footer a{text-decoration:none}footer a:hover{color:var(--forest)}
+.legal{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--forest);color:#fff;padding:12px 22px;border-radius:999px;font-weight:600;transition:transform .3s;z-index:70}.toast.show{transform:translate(-50%,0)}
+@media (max-width:1000px){.menu{display:none}.burger{display:block}.menu.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:#fff;padding:20px;border-bottom:1px solid var(--line);gap:14px}
+.hero-grid,.story{grid-template-columns:1fr}.hero-grid{padding-top:50px}.grid,.ig{grid-template-columns:1fr 1fr}.rv-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){section{padding:64px 0}.quiz{padding:26px 18px}.routine{grid-template-columns:1fr}.grid,.ig{grid-template-columns:1fr}.hero-img .pill{display:none}}
+
+.toast{visibility:hidden}.toast.show{visibility:visible}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<div class="promo">Free mini cleanser with every order over $45 · Free delivery over $35</div>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="#" class="logo">dewline</a>
+    <ul class="menu" id="menu"><li><a href="#shop">Shop</a></li><li><a href="#quiz">Skin quiz</a></li><li><a href="#ingredients">Ingredients</a></li><li><a href="#story">Our story</a></li><li><a href="#faq">FAQ</a></li></ul>
+    <a href="#shop" class="bag">Bag (<span id="bc">0</span>)</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 id="hero-title">Calm skin starts with <em>fewer</em> products.</h1>
+        <p class="lead">Dewline makes simple, gentle skincare with short ingredient lists that dermatologists trust. Three steps, morning and night.</p>
+        <div class="actions"><a href="#quiz" class="btn btn-f">Take the 30-second skin quiz</a><a href="#shop" class="btn btn-o">Shop bestsellers</a></div>
+        <ul class="clean"><li>Fragrance free</li><li>Vegan and cruelty free</li><li>Tested on sensitive skin</li></ul>
+      </div>
+      <div class="hero-img"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTQ3IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjQxNyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDE0NyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNDgzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMTY0IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIzMTYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgxODEgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjIzMyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDE5OCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMTkxIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjE1IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIxNzAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgyMzIgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjM2MCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDI0OSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMTQ3IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="900" height="1100" fetchpriority="high"><div class="pill"><b>4.9 ★</b>from 21,000 reviews</div></div>
+    </div>
+  </section>
+
+  <section id="quiz" aria-labelledby="quiz-title">
+    <div class="wrap">
+      <div class="head"><h2 id="quiz-title">Find your routine</h2><p>Answer three questions and we'll suggest the right products for your skin.</p></div>
+      <div class="quiz" aria-live="polite">
+        <div class="steps" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+        <div class="q on" data-k="type"><h3>How does your skin feel by midday?</h3><div class="opts"><button type="button" data-v="dry">Tight or dry</button><button type="button" data-v="oily">Shiny or oily</button><button type="button" data-v="combo">Oily in places</button><button type="button" data-v="normal">Comfortable</button></div></div>
+        <div class="q" data-k="concern"><h3>What would you most like to improve?</h3><div class="opts"><button type="button" data-v="redness">Redness</button><button type="button" data-v="spots">Spots and breakouts</button><button type="button" data-v="lines">Fine lines</button><button type="button" data-v="dull">Dull skin</button></div></div>
+        <div class="q" data-k="time"><h3>How long do you want your routine to take?</h3><div class="opts"><button type="button" data-v="2">2 minutes</button><button type="button" data-v="5">About 5 minutes</button></div></div>
+        <div class="result" id="result"><h3 id="rtitle">Your routine</h3><p id="rtext"></p><div class="routine" id="routine"></div><button class="btn btn-f" type="button" id="addAll" style="display:flex;margin:22px auto 0">Add routine to bag</button><button class="again" type="button" id="again">Start again</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop" aria-labelledby="shop-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><h2 id="shop-title">Bestsellers</h2></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="ingr" id="ingredients" aria-labelledby="ing-title">
+    <div class="wrap">
+      <div class="head"><h2 id="ing-title">Four ingredients do most of the work.</h2><p>We only use ingredients with real evidence behind them, at the strength that actually works.</p></div>
+      <div class="ig"><div><b>Niacinamide</b><p>Calms redness, controls oil and makes pores look smaller.</p></div><div><b>Ceramides</b><p>Repair the skin barrier so moisture stays in.</p></div><div><b>Hyaluronic acid</b><p>Draws water into the skin for soft, plump hydration.</p></div><div><b>Mineral SPF</b><p>Zinc oxide protection with no white cast on any skin tone.</p></div></div>
+      <div class="free" aria-label="What we never use"><span>No fragrance</span><span>No essential oils</span><span>No parabens</span><span>No sulphates</span><span>No alcohol</span></div>
+    </div>
+  </section>
+
+  <section id="story" aria-labelledby="story-title">
+    <div class="wrap story">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjg4IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMjc4IiByPSI1NSIgZmlsbD0iaHNsKDI4OCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIyNTQiIHI9IjY3IiBmaWxsPSJoc2woMzExIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjI0MiIgcj0iNzkiIGZpbGw9ImhzbCgzMzQgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMjM2IiByPSI5MSIgZmlsbD0iaHNsKDM1NyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzODMiIHI9IjEwMyIgZmlsbD0iaHNsKDIwIDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjQ1NiIgcj0iMTE1IiBmaWxsPSJoc2woNDMgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjM0MyIgcj0iMTI3IiBmaWxsPSJoc2woNjYgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgyODggMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="800" height="1000" loading="eager">
+      <div><h2 id="story-title">Made with people who look after skin every day.</h2><p>Dewline was started by two dermatology nurses who were tired of telling patients to throw away products full of fragrance and filler.</p><p>Every formula is tested on people with sensitive skin and made in small batches in our lab in Bristol, England.</p><a href="#" class="btn btn-o">Read our story</a></div>
+    </div>
+  </section>
+
+  <section class="revs" aria-labelledby="rev-title">
+    <div class="wrap">
+      <div class="head"><h2 id="rev-title">Real skin, real reviews</h2></div>
+      <div class="rv-grid">
+        <blockquote class="rv"><div class="st" aria-label="5 stars">★★★★★</div><p>"My redness calmed down in two weeks. I've thrown out six other products."</p><cite><b>Sophie L.</b> · sensitive skin</cite></blockquote>
+        <blockquote class="rv"><div class="st" aria-label="5 stars">★★★★★</div><p>"The only moisturiser that doesn't make my skin break out. Light and soft."</p><cite><b>Daniel K.</b> · oily skin</cite></blockquote>
+        <blockquote class="rv"><div class="st" aria-label="5 stars">★★★★★</div><p>"Finally a sunscreen that works under make-up and doesn't sting my eyes."</p><cite><b>Amara O.</b> · combination skin</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="head"><h2 id="faq-title">Questions</h2></div>
+      <div class="faq">
+        <details open><summary>What is a simple skincare routine?</summary><p>A simple routine has three steps: cleanse, moisturise and, in the morning, protect with sunscreen. Add one treatment serum only if you have a specific concern like redness or spots.</p></details>
+        <details><summary>Are your products good for sensitive skin?</summary><p>Yes. Every product is fragrance free, tested on sensitive skin and suitable for people with eczema-prone or reactive skin.</p></details>
+        <details><summary>How long until I see results?</summary><p>Most people notice softer, calmer skin in one to two weeks. Changes to spots, texture or fine lines usually take six to eight weeks.</p></details>
+        <details><summary>Can I return a product I've opened?</summary><p>Yes. If your skin doesn't love it, return it within 60 days, even if it's opened, for a full refund.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot"><div><a href="#" class="logo">dewline</a><p style="margin-top:12px;max-width:32ch">Gentle, fragrance-free skincare, made in small batches in Bristol.</p></div>
+      <div><h3>Shop</h3><ul><li><a href="#shop">Cleansers</a></li><li><a href="#shop">Serums</a></li><li><a href="#shop">Moisturisers</a></li></ul></div>
+      <div><h3>Help</h3><ul><li><a href="#faq">Delivery</a></li><li><a href="#faq">Returns</a></li><li><a href="#quiz">Skin quiz</a></li></ul></div>
+      <div><h3>About</h3><ul><li><a href="#story">Our story</a></li><li><a href="#ingredients">Ingredients</a></li><li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li></ul></div></div>
+    <div class="legal"><span>© <span id="yr">2026</span> Dewline Skincare Ltd.</span><span>Geometric artwork: MigBits | <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">Free HTML Templates</a></span></div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const P={clean:["Gentle cream cleanser","Step 1 · Cleanse",18,"1631729371254-42c2892f0e6e","Removes make-up without stripping skin."],
+calm:["Niacinamide calm serum","Step 2 · Treat",32,"1617897903246-719242758050","10% niacinamide for redness and pores."],
+clear:["Clear skin BHA serum","Step 2 · Treat",29,"1612817288484-6f916006741a","Gentle salicylic acid for breakouts."],
+glow:["Vitamin C glow drops","Step 2 · Treat",34,"1617897903246-719242758050","Brightens dull, tired-looking skin."],
+rich:["Barrier repair cream","Step 3 · Moisturise",28,"1612817288484-6f916006741a","Ceramides for dry, tight skin."],
+light:["Oil-free gel cream","Step 3 · Moisturise",26,"1631729371254-42c2892f0e6e","Light hydration that won't clog pores."],
+spf:["Mineral SPF 50","Morning · Protect",30,"1596462502278-27bfdc403348","No white cast, works under make-up."]};
+const bag={n:0};const $=id=>document.getElementById(id);
+function toast(t){const x=$('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),2200)}
+function add(k,q=1){bag.n+=q;$('bc').textContent=bag.n}
+$('grid').innerHTML=['clean','calm','clear','spf'].map(k=>[k,P[k]]).map(([k,p],i)=>`<article class="p"><figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTQyIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDkyIiByPSI1NSIgZmlsbD0iaHNsKDE0MiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNjEiIHI9IjY3IiBmaWxsPSJoc2woMTY1IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ0NSIgcj0iNzkiIGZpbGw9ImhzbCgxODggNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzM3IiByPSI5MSIgZmlsbD0iaHNsKDIxMSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIyODMiIHI9IjEwMyIgZmlsbD0iaHNsKDIzNCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0MDYiIHI9IjExNSIgZmlsbD0iaHNsKDI1NyA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzE4IiByPSIxMjciIGZpbGw9ImhzbCgyODAgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxNDIgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="500" height="625" loading="eager">${i===0?'<span class="tag">Bestseller</span>':''}</figure><small>${p[1]}</small><h3>${p[0]}</h3><p>${p[4]}</p><div class="row"><span class="pr">$${p[2]}</span><button type="button" data-k="${k}">Add to bag</button></div></article>`).join('');
+$('grid').addEventListener('click',e=>{const b=e.target.closest('[data-k]');if(!b)return;add(b.dataset.k);toast(P[b.dataset.k][0]+' added to your bag')});
+const ans={},qs=[...document.querySelectorAll('.q')],dots=[...document.querySelectorAll('.steps i')];let step=0,picked=[];
+qs.forEach((q,i)=>q.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;ans[q.dataset.k]=b.dataset.v;q.classList.remove('on');step=i+1;dots.forEach((d,j)=>d.classList.toggle('on',j<=step));
+ if(step<qs.length)qs[step].classList.add('on');else show()}));
+function show(){const treat={redness:'calm',spots:'clear',lines:'glow',dull:'glow'}[ans.concern],moist=(ans.type==='dry'||ans.type==='normal')?'rich':'light';
+picked=ans.time==='2'?['clean',moist,'spf']:['clean',treat,moist];
+const names={dry:'dry',oily:'oily',combo:'combination',normal:'balanced'};
+$('rtitle').textContent='Your routine for '+names[ans.type]+' skin';$('rtext').textContent=ans.time==='2'?'Three quick steps you can do in two minutes.':'Three steps with a targeted treatment for '+({redness:'redness',spots:'breakouts',lines:'fine lines',dull:'dull skin'}[ans.concern])+'.';
+$('routine').innerHTML=picked.map(k=>`<div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzIwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzEwIiByPSI1NSIgZmlsbD0iaHNsKDMyMCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIyNzAiIHI9IjY3IiBmaWxsPSJoc2woMzQzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQwMCIgcj0iNzkiIGZpbGw9ImhzbCg2IDY1JSA1MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjYxMCIgY3k9IjMxNSIgcj0iOTEiIGZpbGw9ImhzbCgyOSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIyNzIiIHI9IjEwMyIgZmlsbD0iaHNsKDUyIDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjQwMSIgcj0iMTE1IiBmaWxsPSJoc2woNzUgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjMxNSIgcj0iMTI3IiBmaWxsPSJoc2woOTggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgzMjAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="300" height="300"><small>${P[k][1]}</small><b>${P[k][0]}</b>$${P[k][2]}</div>`).join('');
+$('result').classList.add('on')}
+$('addAll').addEventListener('click',()=>{add(null,3);toast('Your 3-step routine is in your bag')});
+$('again').addEventListener('click',()=>{$('result').classList.remove('on');step=0;qs[0].classList.add('on');dots.forEach((d,j)=>d.classList.toggle('on',j===0))});
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script></body>
+</html>

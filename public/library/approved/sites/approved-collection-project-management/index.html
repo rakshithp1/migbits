@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Project Management Dashboard Template (HTML) | Taskwise</title>
+<meta name="description" content="Free project management dashboard template in one editable file. Gantt timeline, sprint burndown chart, task checklist with live progress and team workload.">
+<meta name="keywords" content="project management dashboard template, gantt chart HTML template free, project tracker dashboard, sprint dashboard template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#17171A">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--bg:#17171A;--panel:#202024;--panel-2:#2A2A30;--line:#34343B;--text:#DEDEE3;--muted:#8E8E99;--head:#FFFFFF;--amber:#F5B700;--amber-d:#C99600;--grn:#4ADE80;--blue:#60A5FA;--pink:#F472B6;--red:#F87171;
+--font:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font);font-size:15px;line-height:1.5;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:inherit}img{display:block;max-width:100%}h1,h2,h3{margin:0;color:var(--head);font-weight:700;letter-spacing:-.01em}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--amber);color:#000;padding:10px;z-index:99}
+:focus-visible{outline:2px solid var(--amber);outline-offset:2px;border-radius:6px}
+.app{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+.side{background:var(--panel);border-right:1px solid var(--line);padding:20px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;text-decoration:none;color:var(--head);padding:0 8px 22px}
+.brand i{width:28px;height:28px;border-radius:8px;background:var(--amber)}
+.side b{display:block;font-size:12px;color:var(--muted);margin:14px 8px 6px;font-weight:600}
+.side ul{list-style:none;padding:0;margin:0}
+.side a{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--muted);font-weight:500}
+.side a:hover{background:var(--panel-2);color:var(--head)}.side a.on{background:var(--panel-2);color:var(--head)}
+.side a i{width:10px;height:10px;border-radius:3px}
+.side .me{margin-top:auto;display:flex;gap:10px;align-items:center;font-size:14px}.side .me img{width:34px;height:34px;border-radius:50%;object-fit:cover}.side .me small{display:block;color:var(--muted)}
+.main{min-width:0;padding:22px 26px 40px}
+.top{display:flex;align-items:center;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+.menu-btn{display:none;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:7px 10px;cursor:pointer}
+.top h1{font-size:24px}.top p{margin:2px 0 0;color:var(--muted);font-size:14px}
+.top .r{margin-left:auto;display:flex;gap:10px;align-items:center}
+.avs{display:flex}.avs img{width:30px;height:30px;border-radius:50%;border:2px solid var(--bg);margin-left:-8px;object-fit:cover}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:8px;font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--panel);cursor:pointer;font-family:var(--font);color:var(--head)}
+.btn.pri{background:var(--amber);border-color:var(--amber);color:#17171A}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.kpi small{color:var(--muted)}.kpi .v{font-size:26px;font-weight:800;color:var(--head);margin:4px 0}
+.prog{height:6px;background:var(--panel-2);border-radius:4px;overflow:hidden;margin-top:8px}.prog i{display:block;height:100%;background:var(--amber);border-radius:4px;transition:width .3s}
+.card-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;flex-wrap:wrap}
+.card h2{font-size:16px}
+.gantt{overflow-x:auto}
+.g-grid{min-width:720px;display:grid;grid-template-columns:190px repeat(8,1fr);font-size:13px}
+.g-grid .wk{color:var(--muted);text-align:center;padding:6px 0;border-bottom:1px solid var(--line)}
+.g-grid .wk.now{color:var(--amber);font-weight:700}
+.g-grid .nm{padding:10px 8px 10px 0;border-bottom:1px solid var(--line);color:var(--head);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.g-grid .lane{grid-column:2/-1;border-bottom:1px solid var(--line);position:relative;background:repeating-linear-gradient(90deg,transparent 0 calc(12.5% - 1px),var(--line) calc(12.5% - 1px) 12.5%)}
+.g-grid .bar{position:absolute;top:8px;height:22px;border-radius:6px;font-size:12px;font-weight:700;color:#17171A;padding:2px 8px;white-space:nowrap;overflow:hidden}
+.g-grid .ms{position:absolute;top:11px;width:14px;height:14px;background:var(--pink);transform:rotate(45deg)}
+.today{position:absolute;top:0;bottom:0;width:2px;background:var(--amber);opacity:.7}
+.row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:14px}
+#burn{width:100%;height:210px}
+.tasks label{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--line);cursor:pointer;font-size:14px}
+.tasks input{accent-color:var(--amber);width:16px;height:16px;margin-top:2px}
+.tasks input:checked+span{color:var(--muted);text-decoration:line-through}
+.tasks small{display:block;color:var(--muted);text-decoration:none}
+.tag{display:inline-block;font-size:11px;font-weight:700;border-radius:5px;padding:0 6px;margin-left:6px;vertical-align:1px}
+.wl{display:flex;align-items:center;gap:10px;padding:8px 0}
+.wl img{width:30px;height:30px;border-radius:50%;object-fit:cover}
+.wl div{flex:1}.wl b{font-size:14px;font-weight:600;color:var(--head)}.wl span{float:right;font-size:13px;color:var(--muted)}
+.wl .t{height:8px;background:var(--panel-2);border-radius:5px;overflow:hidden;margin-top:5px;clear:both}.wl .t i{display:block;height:100%;border-radius:5px}
+.over{color:var(--red)!important}
+.foot{color:var(--muted);font-size:13px;margin-top:24px;text-align:center}.foot a{color:var(--amber)}
+@media (max-width:1150px){.kpis{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr}}
+@media (max-width:860px){.app{grid-template-columns:1fr}.side{position:fixed;left:0;top:0;width:250px;z-index:30;transform:translateX(-100%);transition:transform .25s}.side.open{transform:none}.menu-btn{display:block}.main{padding:16px 12px}}
+@media (max-width:520px){.kpis{grid-template-columns:1fr}.avs{display:none}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<div class="app">
+  <aside class="side" id="menu" aria-label="Sidebar">
+    <a href="#" class="brand"><i aria-hidden="true"></i>Taskwise</a>
+    <ul><li><a href="#" class="on">Overview</a></li><li><a href="#">My tasks</a></li><li><a href="#">Inbox</a></li><li><a href="#">Reports</a></li></ul>
+    <b>PROJECTS</b>
+    <ul><li><a href="#" class="on"><i style="background:var(--amber)"></i>Mobile app 2.0</a></li><li><a href="#"><i style="background:var(--blue)"></i>Website relaunch</a></li><li><a href="#"><i style="background:var(--grn)"></i>Customer portal</a></li><li><a href="#"><i style="background:var(--pink)"></i>Q1 campaign</a></li></ul>
+    <div class="me"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjEwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzgwIiByPSI1NSIgZmlsbD0iaHNsKDIxMCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI0NTUiIHI9IjY3IiBmaWxsPSJoc2woMjMzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ5MiIgcj0iNzkiIGZpbGw9ImhzbCgyNTYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzYxIiByPSI5MSIgZmlsbD0iaHNsKDI3OSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIyOTUiIHI9IjEwMyIgZmlsbD0iaHNsKDMwMiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIyNjIiIHI9IjExNSIgZmlsbD0iaHNsKDMyNSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMjQ2IiByPSIxMjciIGZpbGw9ImhzbCgzNDggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgyMTAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="34" height="34"><div>Priya Shah<small>Project lead</small></div></div>
+  </aside>
+  <main class="main" id="main">
+    <div class="top">
+      <button class="menu-btn burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <div><h1>Mobile app 2.0</h1><p>Sprint 7 of 10 · Launch on 5 December</p></div>
+      <div class="r"><div class="avs"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woNDQgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIzMzQiIHI9IjU1IiBmaWxsPSJoc2woNDQgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iNDMyIiByPSI2NyIgZmlsbD0iaHNsKDY3IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjMzMSIgcj0iNzkiIGZpbGw9ImhzbCg5MCA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSIyODAiIHI9IjkxIiBmaWxsPSJoc2woMTEzIDY1JSA1NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9Ijc3MCIgY3k9IjQwNSIgcj0iMTAzIiBmaWxsPSJoc2woMTM2IDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjMxNyIgcj0iMTE1IiBmaWxsPSJoc2woMTU5IDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSI0MjMiIHI9IjEyNyIgZmlsbD0iaHNsKDE4MiA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDQ0IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="30" height="30"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTQwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDkwIiByPSI1NSIgZmlsbD0iaHNsKDE0MCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNjAiIHI9IjY3IiBmaWxsPSJoc2woMTYzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ0NSIgcj0iNzkiIGZpbGw9ImhzbCgxODYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzM3IiByPSI5MSIgZmlsbD0iaHNsKDIwOSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0MzMiIHI9IjEwMyIgZmlsbD0iaHNsKDIzMiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzMzEiIHI9IjExNSIgZmlsbD0iaHNsKDI1NSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDMwIiByPSIxMjciIGZpbGw9ImhzbCgyNzggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxNDAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="30" height="30"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woOTUgMjUlIDEyJSkiLz48cmVjdCB4PSI1MCIgeT0iNDQ1IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE4MCIgcng9IjEyIiBmaWxsPSJoc2woOTUgNjAlIDM1JSkiLz48cmVjdCB4PSIxOTUiIHk9IjI5NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyMDUiIHJ4PSIxNSIgZmlsbD0iaHNsKDExMiA2MCUgNDElKSIvPjxyZWN0IHg9IjM0MCIgeT0iMjIzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIzMCIgcng9IjE4IiBmaWxsPSJoc2woMTI5IDYwJSA0NyUpIi8+PHJlY3QgeD0iNDg1IiB5PSIxODYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjU1IiByeD0iMjEiIGZpbGw9ImhzbCgxNDYgNjAlIDUzJSkiLz48cmVjdCB4PSI2MzAiIHk9IjE2OCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyODAiIHJ4PSIyNCIgZmlsbD0iaHNsKDE2MyA2MCUgNTklKSIvPjxyZWN0IHg9Ijc3NSIgeT0iMzU5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMwNSIgcng9IjI3IiBmaWxsPSJoc2woMTgwIDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSI0NTQiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCgxOTcgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDk1IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="30" height="30"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjg2IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzk2IiByPSI1NSIgZmlsbD0iaHNsKDI4NiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzMTMiIHI9IjY3IiBmaWxsPSJoc2woMzA5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQyMSIgcj0iNzkiIGZpbGw9ImhzbCgzMzIgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNDc1IiByPSI5MSIgZmlsbD0iaHNsKDM1NSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzNTIiIHI9IjEwMyIgZmlsbD0iaHNsKDE4IDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjI5MSIgcj0iMTE1IiBmaWxsPSJoc2woNDEgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjQxMCIgcj0iMTI3IiBmaWxsPSJoc2woNjQgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgyODYgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="30" height="30"></div><button class="btn" type="button">Share</button><button class="btn pri" type="button">+ New task</button></div>
+    </div>
+    <section class="kpis" aria-label="Project numbers">
+      <div class="card kpi"><small>Overall progress</small><div class="v" id="pct">0%</div><div class="prog"><i id="pbar" style="width:0"></i></div></div>
+      <div class="card kpi"><small>Tasks done</small><div class="v"><span id="done">0</span> / <span id="tot">0</span></div><small>in this sprint</small></div>
+      <div class="card kpi"><small>Budget used</small><div class="v">$84,200</div><small>of $120,000 (70%)</small></div>
+      <div class="card kpi"><small>Days to launch</small><div class="v">52</div><small style="color:var(--grn)">On track</small></div>
+    </section>
+    <section class="card" aria-labelledby="g-t"><div class="card-h"><h2 id="g-t">Timeline</h2><span style="color:var(--muted);font-size:13px">October to December · 8 weeks</span></div>
+      <div class="gantt"><div class="g-grid" id="gantt"></div></div></section>
+    <div class="row">
+      <section class="card" aria-labelledby="b-t"><div class="card-h"><h2 id="b-t">Sprint 7 burndown</h2><span style="color:var(--muted);font-size:13px">Story points left</span></div><svg id="burn" role="img" aria-label="Burndown chart: actual work remaining is close to the ideal line"></svg></section>
+      <section class="card" aria-labelledby="t-t"><div class="card-h"><h2 id="t-t">Sprint tasks</h2><span style="color:var(--muted);font-size:13px">Tick to complete</span></div><div class="tasks" id="tasks"></div></section>
+      <section class="card" aria-labelledby="w-t"><div class="card-h"><h2 id="w-t">Team workload</h2><span style="color:var(--muted);font-size:13px">This week</span></div>
+        <div class="wl"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woNDQgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIzMzQiIHI9IjU1IiBmaWxsPSJoc2woNDQgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iNDMyIiByPSI2NyIgZmlsbD0iaHNsKDY3IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjMzMSIgcj0iNzkiIGZpbGw9ImhzbCg5MCA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSIyODAiIHI9IjkxIiBmaWxsPSJoc2woMTEzIDY1JSA1NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9Ijc3MCIgY3k9IjQwNSIgcj0iMTAzIiBmaWxsPSJoc2woMTM2IDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjMxNyIgcj0iMTE1IiBmaWxsPSJoc2woMTU5IDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSI0MjMiIHI9IjEyNyIgZmlsbD0iaHNsKDE4MiA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDQ0IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="30" height="30"><div><b>Lena</b><span>32h of 40h</span><div class="t"><i style="width:80%;background:var(--grn)"></i></div></div></div>
+        <div class="wl"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTQwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDkwIiByPSI1NSIgZmlsbD0iaHNsKDE0MCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNjAiIHI9IjY3IiBmaWxsPSJoc2woMTYzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ0NSIgcj0iNzkiIGZpbGw9ImhzbCgxODYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzM3IiByPSI5MSIgZmlsbD0iaHNsKDIwOSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0MzMiIHI9IjEwMyIgZmlsbD0iaHNsKDIzMiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzMzEiIHI9IjExNSIgZmlsbD0iaHNsKDI1NSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDMwIiByPSIxMjciIGZpbGw9ImhzbCgyNzggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxNDAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="30" height="30"><div><b>David</b><span class="over">46h of 40h</span><div class="t"><i style="width:100%;background:var(--red)"></i></div></div></div>
+        <div class="wl"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woOTUgMjUlIDEyJSkiLz48cmVjdCB4PSI1MCIgeT0iNDQ1IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE4MCIgcng9IjEyIiBmaWxsPSJoc2woOTUgNjAlIDM1JSkiLz48cmVjdCB4PSIxOTUiIHk9IjI5NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyMDUiIHJ4PSIxNSIgZmlsbD0iaHNsKDExMiA2MCUgNDElKSIvPjxyZWN0IHg9IjM0MCIgeT0iMjIzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIzMCIgcng9IjE4IiBmaWxsPSJoc2woMTI5IDYwJSA0NyUpIi8+PHJlY3QgeD0iNDg1IiB5PSIxODYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjU1IiByeD0iMjEiIGZpbGw9ImhzbCgxNDYgNjAlIDUzJSkiLz48cmVjdCB4PSI2MzAiIHk9IjE2OCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyODAiIHJ4PSIyNCIgZmlsbD0iaHNsKDE2MyA2MCUgNTklKSIvPjxyZWN0IHg9Ijc3NSIgeT0iMzU5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMwNSIgcng9IjI3IiBmaWxsPSJoc2woMTgwIDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSI0NTQiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCgxOTcgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDk1IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="30" height="30"><div><b>Leo</b><span>38h of 40h</span><div class="t"><i style="width:95%;background:var(--amber)"></i></div></div></div>
+        <div class="wl"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjg2IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzk2IiByPSI1NSIgZmlsbD0iaHNsKDI4NiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzMTMiIHI9IjY3IiBmaWxsPSJoc2woMzA5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQyMSIgcj0iNzkiIGZpbGw9ImhzbCgzMzIgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNDc1IiByPSI5MSIgZmlsbD0iaHNsKDM1NSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzNTIiIHI9IjEwMyIgZmlsbD0iaHNsKDE4IDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjI5MSIgcj0iMTE1IiBmaWxsPSJoc2woNDEgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjQxMCIgcj0iMTI3IiBmaWxsPSJoc2woNjQgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgyODYgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="30" height="30"><div><b>Aiko</b><span>24h of 40h</span><div class="t"><i style="width:60%;background:var(--grn)"></i></div></div></div>
+        <p style="color:var(--muted);font-size:13px;margin:12px 0 0">David is over capacity. Move 2 tasks to Aiko?</p></section>
+    </div>
+    <p class="foot">Taskwise project dashboard, a <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">free HTML template</a>. Sample data only. Geometric artwork: MigBits. © <span id="yr">2026</span></p>
+  </main>
+</div>
+<script>
+const W=["Oct 6","Oct 13","Oct 20","Oct 27","Nov 3","Nov 10","Nov 17","Nov 24"];
+const G=[["Research and planning",0,1.5,"#9CA3AF","Done"],["App design",0.8,3.2,"#60A5FA","Design"],["Login and accounts",2,4.5,"#4ADE80","Build"],["Payments",3,5.8,"#F5B700","Build"],["Notifications",4.2,6.5,"#F472B6","Build"],["Testing and fixes",5.5,7.6,"#A78BFA","QA"]];
+let g='<div class="wk" style="text-align:left">Workstream</div>'+W.map((w,i)=>`<div class="wk${i===2?' now':''}">${w}</div>`).join('');
+G.forEach(r=>{g+=`<div class="nm">${r[0]}</div><div class="lane">${r[0]==='App design'?'<span class="today" style="left:30%" aria-hidden="true"></span>':''}<span class="bar" style="left:${r[1]/8*100}%;width:${(r[2]-r[1])/8*100}%;background:${r[3]}">${r[4]}</span></div>`});
+g+='<div class="nm">Launch</div><div class="lane"><span class="ms" style="left:calc(97% - 7px)" title="Launch milestone"></span></div>';
+document.getElementById('gantt').innerHTML=g;
+const T=[["Design payment screens","Lena","Design",1],["Connect card payments API","David","Build",1],["Push notification settings","Leo","Build",0],["Write test cases for login","Aiko","QA",1],["Fix crash on older phones","David","Bug",0],["App store screenshots","Lena","Design",0]];
+const tc={Design:"#60A5FA",Build:"#4ADE80",QA:"#A78BFA",Bug:"#F87171"};
+document.getElementById('tasks').innerHTML=T.map((t,i)=>`<label><input type="checkbox" ${t[3]?'checked':''} data-i="${i}"><span>${t[0]}<span class="tag" style="background:${tc[t[2]]};color:#17171A">${t[2]}</span><small>${t[1]}</small></span></label>`).join('');
+function prog(){const b=[...document.querySelectorAll('#tasks input')],d=b.filter(x=>x.checked).length;document.getElementById('done').textContent=d;document.getElementById('tot').textContent=b.length;
+const p=Math.round(58+d/b.length*20);document.getElementById('pct').textContent=p+'%';document.getElementById('pbar').style.width=p+'%'}
+document.getElementById('tasks').addEventListener('change',prog);prog();
+function burn(){const s=document.getElementById('burn'),w=s.clientWidth||360,h=210,pl=30,pb=22,days=10,ideal=[60,54,48,42,36,30,24,18,12,6,0],act=[60,57,51,47,40,36,31];
+const X=i=>pl+i/days*(w-pl-8),Y=v=>h-pb-v/60*(h-pb-10);let o='';
+[0,20,40,60].forEach(v=>{o+=`<line x1="${pl}" x2="${w-8}" y1="${Y(v)}" y2="${Y(v)}" stroke="#34343B"/><text x="${pl-6}" y="${Y(v)+4}" text-anchor="end" font-size="11" fill="#8E8E99">${v}</text>`});
+o+=`<path d="${ideal.map((v,i)=>(i?'L':'M')+X(i)+' '+Y(v)).join(' ')}" fill="none" stroke="#8E8E99" stroke-dasharray="4 4" stroke-width="1.5"/>`;
+o+=`<path d="${act.map((v,i)=>(i?'L':'M')+X(i)+' '+Y(v)).join(' ')}" fill="none" stroke="#F5B700" stroke-width="3"/><circle cx="${X(6)}" cy="${Y(31)}" r="5" fill="#F5B700"/>`;
+o+=`<text x="${pl}" y="${h-4}" font-size="11" fill="#8E8E99">Day 1</text><text x="${w-8}" y="${h-4}" text-anchor="end" font-size="11" fill="#8E8E99">Day 10</text>`;
+s.setAttribute('viewBox',`0 0 ${w} ${h}`);s.innerHTML=o}
+burn();window.addEventListener('resize',burn);
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script></body>
+</html>

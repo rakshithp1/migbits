@@ -2,9 +2,9 @@
 
 ## Verified results and counting
 
-The catalog contains 18 complete template kits: 3 original MigBits templates and 15 new, reviewed Start Bootstrap motion editions. The imported kits contain 32 pages; the complete collection contains 35 pages. Pages, light/dark versions and animation variations do not count as extra templates. The complete resource gallery contains 358 entries across all categories.
+The built catalog contains 114 complete template kits: 3 original MigBits templates, 15 reviewed Start Bootstrap motion editions and 96 reviewed single-file collection kits. Together they contain 131 pages. Pages, light/dark versions and animation variations do not count as extra templates. The complete resource gallery contains 467 entries across all categories. See TEMPLATE-COLLECTION-EXPANSION.md for the latest batch, rights scope and checks.
 
-**The requested 1,000-template target is not complete.** `catalog/template-research/progress.json` tracks the target, actual gallery count and remaining gap. No 1,000-template claim is displayed in the application.
+**The requested 500-template target is not complete.** `catalog/template-research/progress.json` tracks the target, actual gallery count and remaining gap. No 500-template claim is displayed in the application.
 
 ## Research evidence
 
@@ -44,4 +44,4 @@ These checks are not a full per-entry accessibility, browser compatibility or pr
 
 ## Remaining work
 
-The remaining 1,799 broad-search candidates still require complete-template classification, creator/dependency/artwork review, deduplication and isolated validation. Missing rights or restricted redistribution must remain held; repository SPDX metadata alone is insufficient. Additional approved source families should be added in genuinely distinct kits rather than multiplying this batch by palette or animation changes. The gap to 1,000 complete published kits is 982.
+The remaining 1,799 broad-search candidates still require complete-template classification, creator/dependency/artwork review, deduplication and isolated validation. Missing rights or restricted redistribution must remain held; repository SPDX metadata alone is insufficient. Additional approved source families should be added in genuinely distinct kits rather than multiplying this batch by palette or animation changes. The gap to 500 complete kits is 386.

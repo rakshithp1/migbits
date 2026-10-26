@@ -1,5 +1,13 @@
 # Third-party notices
 
+## Single-file website template collection
+
+96 distinct single-page website kits derive from `mmrahmanbappi/100-free-html-templates` at commit `bab6ec6c8900450aab90989d217942a67ad9b16d`.
+Copyright (c) 2026 mmrahmanbappi. MIT license, including the original notice and permission grant, is retained in every original snapshot, source payload and ZIP.
+The exact [upstream license](https://github.com/mmrahmanbappi/100-free-html-templates/blob/bab6ec6c8900450aab90989d217942a67ad9b16d/LICENSE) and individual source URLs/hashes are recorded in `catalog/template-research/reviewed-single-file-source.json` and `resources/template-imports/<id>/review.json`.
+Unsplash photographs, externally downloaded Google Fonts, upstream screenshots and other binary artwork are excluded. Original source references remain text, not redistributed assets. Runnable pages use original MigBits geometric artwork, system font fallbacks and native motion controls. Upstream inline interactions are retained under the creator's MIT grant; remote services are disabled. Mobile corrections and other adaptations are documented separately in every ZIP.
+Three utility/holding pages are excluded from complete-template counting. Source approval does not certify full accessibility, production backends or framework portability.
+
 ## Visual resource gallery
 
 The gallery reuses the reviewed, pinned shadcn/ui, Inspo and UI UX Pro Max source already attributed in this project. Their exact notices remain in source payloads and ZIP downloads. Font-family notices and OFL licenses are preserved separately under public/library/fonts and in each font ZIP. OFL fonts are excluded from the standalone resale filter.

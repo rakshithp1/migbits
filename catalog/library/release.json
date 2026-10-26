@@ -53,9 +53,9 @@
     "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40229054942"
   },
   "remaining": {
-    "requestedCompleteTemplates": 1000,
+    "requestedCompleteTemplates": 500,
     "currentCompleteTemplateKits": 18,
-    "remainingToTarget": 982,
+    "remainingToTarget": 482,
     "candidateRepositoriesStillUnverified": 1799,
     "freePro": "deferred",
     "accessibility": "Per-entry comprehensive accessibility certification remains pending"

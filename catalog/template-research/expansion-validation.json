@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-26T03:31:11.986315+00:00",
+  "scope": "96 reviewed collection website kits; 500 target remains incomplete",
+  "isolatedTemplateChecks": {
+    "attempted": 96,
+    "passed": 96,
+    "held": 0,
+    "engine": "Installed Chrome",
+    "desktopWidth": 1280,
+    "mobileWidth": 375,
+    "checks": [
+      "runtime errors",
+      "nonblank thumbnail",
+      "image completeness",
+      "document overflow",
+      "motion pause/resume",
+      "live OS reduced motion"
+    ]
+  },
+  "unitTests": {
+    "passed": 43,
+    "failed": 0
+  },
+  "workerBrowserSuite": {
+    "passed": 34,
+    "failed": 0
+  },
+  "finalArtifactBrowserRecheck": {
+    "passed": 4,
+    "failed": 0
+  },
+  "lint": "passed",
+  "typecheck": "passed",
+  "cloudflareProductionBuild": "passed",
+  "limitations": [
+    "Not a full accessibility conformance audit",
+    "No Firefox or WebKit proof",
+    "Frontend services and payment flows are demonstrations",
+    "500-template goal remains incomplete",
+    "3D models and 100 backgrounds are queued, not published"
+  ]
+}

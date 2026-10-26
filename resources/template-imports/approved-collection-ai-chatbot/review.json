@@ -1,0 +1,28 @@
+{
+  "id": "approved-collection-ai-chatbot",
+  "status": "APPROVED",
+  "repository": "mmrahmanbappi/100-free-html-templates",
+  "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+  "license": "MIT",
+  "author": "mmrahmanbappi",
+  "evidence": "https://raw.githubusercontent.com/mmrahmanbappi/100-free-html-templates/bab6ec6c8900450aab90989d217942a67ad9b16d/LICENSE",
+  "checksums": {
+    "index.html": "994619440a26e397d7676420c4211747d76c297834c47b8f5b5a79079fc641cf",
+    "LICENSE": "5ead47eac39050d9e6115ee18b79a9d17aba29813b1ebb802e0878aa19f997f5"
+  },
+  "sourceDigest": "6c36f7125f81d53e321ed3ca7b430f8f2506a0ef3f19a0c0807b5591bbd41589",
+  "dependencies": [],
+  "excludedAssets": [
+    "Unsplash photographs",
+    "Google Fonts downloads",
+    "Upstream screenshot/branding files"
+  ],
+  "adaptations": [
+    "Original single-file HTML/CSS/inline JavaScript retained separately with creator MIT notice.",
+    "Stock photography, external fonts, favicons, metadata and remote services are excluded from the runnable edition; original HTML references are preserved as text only.",
+    "Original MigBits geometric demo artwork and motion controls are separate adaptations. Forms and checkout are frontend demonstrations, not backend services.",
+    "No React conversion is claimed. System font fallback changes the upstream typography. Render validation is not a complete accessibility audit.",
+    "Mobile grid minimum widths and word wrapping are corrected for community-center and nonprofit-charity. Dynamic photo references and initially empty image viewers use original artwork.",
+    "The original download-promotion toolbar is removed from runnable pages; creator attribution and complete copyright notices remain. Photo credit labels reflect the replacement MigBits artwork."
+  ]
+}

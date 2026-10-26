@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Language School Website Template (HTML) | Chatterbox</title>
+<meta name="description" content="Free language school website template in one editable file. Pick a language, take a quick level quiz, filter the course timetable and compare prices.">
+<meta name="keywords" content="language school website template, language course HTML template free, English school website template, language academy website, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#0A8754">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--gn:#0A8754;--gn2:#076A42;--sn:#FFB400;--ink:#202030;--rs:#EF476F;--bl:#3D7DD8;--pa:#F4F7F2;--gr:#585A6B;--ln:#E2E6DF;--h:"Righteous",system-ui,sans-serif;--b:"Hind",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--b);font-size:18px;line-height:1.6;color:var(--ink);background:#fff}
+img{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{font-family:var(--h);font-weight:400;margin:0;line-height:1.08}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--sn);padding:8px;z-index:99}
+:focus-visible{outline:3px solid var(--rs);outline-offset:2px}
+.nav{display:flex;justify-content:space-between;align-items:center;height:80px;position:relative}.logo{font-family:var(--h);font-size:28px;text-decoration:none;color:var(--gn);display:flex;gap:10px;align-items:center}
+.menu{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:500}.menu a{text-decoration:none}.menu a:hover{color:var(--gn)}
+.burger{display:none;background:none;border:2px solid var(--gn);color:var(--gn);width:44px;height:40px;border-radius:10px;font-size:20px;cursor:pointer}
+.hero{padding:40px 0 80px;position:relative;overflow:hidden}.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(46px,6vw,82px)}.hero p{font-size:20px;color:var(--gr);margin:20px 0 28px;max-width:28em}
+.btn{display:inline-block;background:var(--gn);color:#fff;text-decoration:none;font:600 18px var(--b);padding:14px 26px;border-radius:40px;border:0;cursor:pointer}.btn.y{background:var(--sn);color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.bubbles{position:relative;height:440px}
+.bb{position:absolute;font-family:var(--h);color:#fff;padding:18px 26px;border-radius:30px;font-size:clamp(26px,3vw,40px);line-height:1}
+.bb:after{content:"";position:absolute;bottom:-14px;width:0;height:0;border:14px solid transparent;border-top-color:inherit;border-bottom:0}
+.bb small{display:block;font-family:var(--b);font-size:14px;opacity:.9;margin-top:6px}
+.b1{background:var(--gn);border-color:var(--gn);top:10px;left:4%}.b1:after{left:30px;border-top-color:var(--gn)}
+.b2{background:var(--rs);top:110px;right:4%}.b2:after{right:30px;border-top-color:var(--rs)}
+.b3{background:var(--sn);color:var(--ink);top:230px;left:14%}.b3:after{left:40px;border-top-color:var(--sn)}
+.b4{background:var(--bl);top:330px;right:10%}.b4:after{right:40px;border-top-color:var(--bl)}
+.b5{background:var(--ink);top:20px;right:2%;font-size:24px;padding:12px 18px}.b5:after{left:20px;border-top-color:var(--ink)}
+section{padding:84px 0}.sh{max-width:640px;margin-bottom:30px}.sh h2{font-size:clamp(34px,4.4vw,54px)}.sh p{color:var(--gr);margin:12px 0 0}
+.lt{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}.lt button{font:600 17px var(--b);border:2px solid var(--ln);background:#fff;border-radius:40px;padding:9px 18px 7px;cursor:pointer;color:var(--ink);display:flex;gap:8px;align-items:center}
+.lt button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}.lt i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.quiz{background:var(--pa)}.qg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}.qg>div{min-width:0}
+.qq{background:#fff;border-radius:24px;padding:26px}.qi{padding:14px 0;border-bottom:1px solid var(--ln)}.qi:last-child{border:0}.qi p{margin:0 0 10px;font-weight:600}
+.ans{display:flex;flex-wrap:wrap;gap:8px}.ans label{cursor:pointer;position:relative}.ans input{position:absolute;opacity:0;left:0;top:0;width:1px;height:1px}.ans span{display:block;border:2px solid var(--ln);border-radius:30px;padding:6px 16px 4px;font-size:16px}
+.ans input:checked+span{background:var(--gn);border-color:var(--gn);color:#fff}.ans input:focus-visible+span{outline:3px solid var(--rs);outline-offset:2px}
+.lvl{background:var(--gn);color:#fff;border-radius:24px;padding:28px;position:sticky;top:20px}.lvl small{font-size:16px;opacity:.85}.lvl b{display:block;font-family:var(--h);font-weight:400;font-size:88px;line-height:1;margin:8px 0;color:var(--sn)}
+.lvl h3{font-size:28px}.lvl p{margin:8px 0 18px;color:#D5F0E2}.meter{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;margin:18px 0}.meter i{height:10px;border-radius:4px;background:rgba(255,255,255,.25)}.meter i.on{background:var(--sn)}
+.meter+div{display:flex;justify-content:space-between;font-size:13px;opacity:.8;margin:-10px 0 18px}
+.tt{overflow-x:auto}.tt table{width:100%;border-collapse:collapse;min-width:640px}.tt th,.tt td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--ln)}.tt th{font-size:15px;color:var(--gr);font-weight:500}
+.tt td b{font-family:var(--h);font-weight:400;font-size:20px}.tt .lv{display:inline-block;background:var(--pa);border-radius:8px;padding:2px 10px;font-weight:600;font-size:15px}.tt .low{color:var(--rs);font-weight:600}
+.tt button{font:600 15px var(--b);background:var(--sn);border:0;border-radius:30px;padding:7px 14px 5px;cursor:pointer}.tt button[aria-pressed=true]{background:var(--gn);color:#fff}
+.lvf{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap}.lvf select{font:17px var(--b);padding:9px 12px;border:2px solid var(--ln);border-radius:12px;background:#fff;color:var(--ink)}
+.price{background:var(--ink);color:#fff}.price .sh p{color:#B8B9C9}.pg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pc{border-radius:24px;padding:28px;background:#2C2C42}.pc:nth-child(2){background:var(--sn);color:var(--ink)}
+.pc h3{font-size:26px}.pc .pr{font-family:var(--h);font-size:52px;margin:12px 0 0;line-height:1}.pc .u{font-size:15px;opacity:.8;margin-bottom:16px}.pc ul{padding-left:20px;margin:0}.pc li{margin:6px 0}
+.ph{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:0}.ph img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:22px}
+footer{padding:30px 0;font-size:15px;color:var(--gr)}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:980px){.hero .wrap,.qg{grid-template-columns:1fr}.pg{grid-template-columns:1fr}.lvl{position:static}.bubbles{height:420px;max-width:520px}}
+@media (max-width:760px){.burger{display:block}.menu{display:none;position:absolute;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:18px 22px;z-index:30;box-shadow:0 10px 20px rgba(0,0,0,.06)}.menu.open{display:flex}.ph{grid-template-columns:1fr 1fr}.ph img:last-child{display:none}.b5{display:none}.bubbles{height:400px}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<header><nav class="wrap nav" aria-label="Main"><a href="#" class="logo"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 12h36a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6H24l-10 10V40H8z" fill="#0A8754"/><path d="M30 26h20a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6h-4v8l-8-8H30z" fill="#FFB400"/></svg>Chatterbox</a>
+<ul class="menu" id="menu"><li><a href="#quiz">Find your level</a></li><li><a href="#timetable">Timetable</a></li><li><a href="#prices">Prices</a></li></ul><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1"><div class="wrap"><div><h1 id="h1">Speak from the first lesson.</h1><p>Evening and weekend language classes in Chicago for adults. Small groups of 8, friendly native teachers, and lots of talking. Grammar comes along for the ride.</p><div class="row"><a class="btn" href="#quiz">Find your level in 1 minute</a><a class="btn y" href="#timetable">See this term's classes</a></div></div>
+<div class="bubbles" aria-hidden="true"><div class="bb b1">¡Hola!<small>Spanish</small></div><div class="bb b2">Bonjour<small>French</small></div><div class="bb b3">Ciao, come va?<small>Italian</small></div><div class="bb b4">こんにちは<small>Japanese</small></div><div class="bb b5">Hallo!</div></div></div></section>
+
+<section class="quiz" id="quiz" aria-labelledby="q1"><div class="wrap"><div class="sh"><h2 id="q1">What's your level?</h2><p>Choose a language, then answer honestly. There are no wrong answers, and you can change them any time.</p></div>
+<div class="lt" id="lt" role="group" aria-label="Choose a language"></div>
+<div class="qg"><form class="qq" id="qz" aria-label="Level quiz"></form>
+<aside class="lvl" aria-live="polite"><small>Your likely level in <span id="ln"></span></small><b id="lc">A1</b><h3 id="lh"></h3><div class="meter" id="mt"></div><div><span>A1</span><span>C1</span></div><p id="lp"></p><a class="btn y" href="#timetable" id="lb">Show my classes</a></aside></div></div></section>
+
+<section id="timetable" aria-labelledby="t1"><div class="wrap"><div class="sh"><h2 id="t1">Autumn timetable</h2><p>10-week courses starting the week of 12 October. Classes are 2 hours, once a week.</p></div>
+<div class="lvf"><label for="lf">Level</label><select id="lf"><option value="">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option></select><span id="tc" style="color:var(--gr)" aria-live="polite"></span></div>
+<div class="tt"><table><thead><tr><th scope="col">Course</th><th scope="col">Level</th><th scope="col">When</th><th scope="col">Teacher</th><th scope="col">Seats</th><th scope="col"><span style="position:absolute;left:-999px">Hold a seat</span></th></tr></thead><tbody id="tb"></tbody></table></div></div></section>
+
+<section class="price" id="prices" aria-labelledby="p1"><div class="wrap"><div class="sh"><h2 id="p1">Prices</h2><p>Books and materials included. Pay in two parts if that's easier.</p></div>
+<div class="pg"><div class="pc"><h3>Group class</h3><div class="pr">$340</div><p class="u">10 weeks, 20 hours</p><ul><li>Up to 8 students</li><li>Free level check</li><li>Switch class if it's not right</li></ul></div>
+<div class="pc"><h3>Small group</h3><div class="pr">$560</div><p class="u">10 weeks, 20 hours</p><ul><li>2 to 4 students</li><li>Choose your own time</li><li>Great for couples and friends</li></ul></div>
+<div class="pc"><h3>Private lessons</h3><div class="pr">$58</div><p class="u">per hour, packs of 5</p><ul><li>One-to-one, online or here</li><li>Built around your goals</li><li>Business and exam prep</li></ul></div></div></div></section>
+<section style="padding-top:60px" aria-label="Photos from our school"><div class="wrap ph"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjM3IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjM0NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDIzNyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNDQ4IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjU0IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIyOTkiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyNzEgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjQyNCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDI4OCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMjg3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMzA1IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIyMTgiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzMjIgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjE4NCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDMzOSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjM3IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="600" height="450" loading="eager"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjEwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNTAwIiByPSI1NSIgZmlsbD0iaHNsKDIxMCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI1MTUiIHI9IjY3IiBmaWxsPSJoc2woMjMzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjUyMiIgcj0iNzkiIGZpbGw9ImhzbCgyNTYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNTI2IiByPSI5MSIgZmlsbD0iaHNsKDI3OSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI1MjgiIHI9IjEwMyIgZmlsbD0iaHNsKDMwMiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzNzkiIHI9IjExNSIgZmlsbD0iaHNsKDMyNSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzA0IiByPSIxMjciIGZpbGw9ImhzbCgzNDggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgyMTAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="600" height="450" loading="eager"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzIwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzEwIiByPSI1NSIgZmlsbD0iaHNsKDMyMCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIyNzAiIHI9IjY3IiBmaWxsPSJoc2woMzQzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQwMCIgcj0iNzkiIGZpbGw9ImhzbCg2IDY1JSA1MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjYxMCIgY3k9IjMxNSIgcj0iOTEiIGZpbGw9ImhzbCgyOSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIyNzIiIHI9IjEwMyIgZmlsbD0iaHNsKDUyIDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjQwMSIgcj0iMTE1IiBmaWxsPSJoc2woNzUgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjMxNSIgcj0iMTI3IiBmaWxsPSJoc2woOTggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgzMjAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="600" height="450" loading="eager"></div></section>
+</main>
+<footer><div class="wrap"><p>© <span id="yr"></span> Chatterbox Languages, 1520 N Milwaukee Ave, Chicago. (312) 555-0187</p><p><a href="https://unsplash.com">Photos: Unsplash</a> &nbsp;|&nbsp; <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">More free templates</a></p></div></footer>
+<script>
+(()=>{const $=id=>document.getElementById(id);
+const L=[["Spanish","#0A8754"],["French","#EF476F"],["Italian","#FFB400"],["Japanese","#3D7DD8"],["German","#202030"]];let lang='Spanish';
+const Q=["Can you introduce yourself and say where you're from?","Could you order food and ask for the bill?","Can you talk about what you did last weekend?","Could you follow a TV show with subtitles in that language?","Could you give your opinion in a work meeting?","Can you read a newspaper article without a dictionary?"];
+$('qz').innerHTML=Q.map((q,i)=>`<fieldset class="qi" style="border:0;margin:0"><legend style="padding:0"><p>${i+1}. ${q}</p></legend><div class="ans"><label><input type="radio" name="q${i}" value="0" checked><span>Not yet</span></label><label><input type="radio" name="q${i}" value="1"><span>A bit</span></label><label><input type="radio" name="q${i}" value="2"><span>Yes, easily</span></label></div></fieldset>`).join('');
+const LV=[["A1","Complete beginner","Start from zero with greetings, numbers and everyday phrases."],["A2","Elementary","You know the basics. Now build confidence in real conversations."],["B1","Intermediate","You can get by. Time to talk about the past, plans and opinions."],["B2","Upper intermediate","You're comfortable. Work on fluency, idioms and faster speech."],["C1","Advanced","Polish your accent and handle complex topics with ease."]];
+let cur='A1';
+function lt(){$('lt').innerHTML=L.map(l=>`<button type="button" aria-pressed="${l[0]===lang}" data-l="${l[0]}"><i style="background:${l[1]}"></i>${l[0]}</button>`).join('')}
+function score(){let s=0;Q.forEach((q,i)=>s+=+document.querySelector(`input[name=q${i}]:checked`).value);const k=s<=1?0:s<=4?1:s<=7?2:s<=10?3:4;cur=LV[k][0];
+$('ln').textContent=lang;$('lc').textContent=cur;$('lh').textContent=LV[k][1];$('lp').textContent=LV[k][2];$('mt').innerHTML=[0,1,2,3,4,5].map(i=>`<i class="${i<=k+(k===4?1:0)?'on':''}"></i>`).join('')}
+$('lt').onclick=e=>{const b=e.target.closest('button');if(!b)return;lang=b.dataset.l;lt();score();tt()};$('qz').addEventListener('change',score);
+$('lb').addEventListener('click',()=>{$('lf').value=cur;tt()});
+const days=["Mon 6:30pm","Tue 6:30pm","Wed 7pm","Thu 6:30pm","Sat 10am","Sat 1pm","Sun 11am"],tch={Spanish:["Lucía","Mateo"],French:["Camille","Hugo"],Italian:["Giulia","Marco"],Japanese:["Yuki","Kenji"],German:["Anna","Felix"]};
+const held=new Set();
+function tt(){const lf=$('lf').value;const rows=[];LV.forEach((v,i)=>{[0,1].forEach(j=>{if(lang==='Japanese'&&i>2)return;const s=(i*3+j*5+lang.length)%9;rows.push([`${lang} ${v[0]}`,v[0],days[(i*2+j+lang.length)%7],tch[lang][j],s])})});
+const r=rows.filter(x=>!lf||x[1]===lf);$('tc').textContent=`${r.length} class${r.length===1?'':'es'} for ${lang}`;
+$('tb').innerHTML=r.length?r.map(x=>{const k=x[0]+x[2],h=held.has(k);return`<tr><td><b>${x[0]}</b></td><td><span class="lv">${x[1]}</span></td><td>${x[2]}</td><td>${x[3]}</td><td class="${x[4]<3?'low':''}">${x[4]?x[4]+' left':'Waitlist'}</td><td><button type="button" data-k="${k}" aria-pressed="${h}">${h?'Seat held ✓':'Hold a seat'}</button></td></tr>`}).join(''):`<tr><td colspan="6">No ${lang} classes at this level this term. Private lessons are a good option.</td></tr>`}
+$('tb').onclick=e=>{const b=e.target.closest('button');if(!b)return;const k=b.dataset.k;held.has(k)?held.delete(k):held.add(k);tt()};$('lf').onchange=tt;
+lt();score();tt();
+})();
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script></body>
+</html>

@@ -33,7 +33,10 @@
     "test:approved-registry": "tsx scripts/test-approved-registry.mts",
     "research:templates": "tsx scripts/research-motion-templates.mts --verify-license-files",
     "build:motion-templates": "tsx scripts/build-motion-templates.mts",
-    "validate:motion-templates": "tsx scripts/validate-approved-previews.mts --templates"
+    "validate:motion-templates": "tsx scripts/validate-approved-previews.mts --templates",
+    "research:template-collections": "python scripts/research-template-collections.py --owners",
+    "build:collection-templates": "tsx scripts/build-collection-templates.mts",
+    "validate:collection-templates": "tsx scripts/validate-approved-previews.mts --templates --collection"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

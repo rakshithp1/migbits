@@ -2,6 +2,14 @@
 
 Source: UI-Library-Website-Research-and-Implementation-Report.pdf, all 26 pages, prepared 15 October 2026. This plan consolidates phases A-L without treating recommendations as verified vendor capabilities.
 
+## Current checkpoint — 26 October 2026
+
+The historical phase descriptions below are a plan, not a list of missing features. Existing category/detail galleries, isolated lazy previews, code/source downloads, reduced-motion controls, ready themes, editable generators and the standard eight-item registry are implemented. Cloudflare deployment and Chrome browser journeys have been exercised; this does not prove untested D1/R2/auth/payment flows.
+
+The current template expansion builds 114 complete kits (131 pages) in a 467-resource gallery. The 500-kit target remains in progress with 386 missing; see `TEMPLATE-COLLECTION-EXPANSION.md` and the persistent inventory. Sitemap, crawl exclusions and canonical URLs are implemented in this change. Accessibility audits, multi-browser coverage, field performance evidence and original onboarding remain unfinished.
+
+Next user-ordered expansions: a 3D Models section with 150 distinct professionally designed, redistributable models, followed by 100 distinct reviewed motion backgrounds. These are queued after the template work, not counted as existing content. Free/Pro categorization and commerce remain deferred.
+
 ## Product brief
 
 Audience: React developers and small agencies building SaaS marketing sites and application interfaces. Initial stack: React, TypeScript, Tailwind-compatible semantic CSS variables. Keep reusable source independent of Next.js, hosting, authentication, and billing.

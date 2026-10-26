@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Conference Website Template (HTML) | Buildwell Summit</title>
+<meta name="description" content="Free conference website template as a single HTML file. Speakers with track filter, two-day agenda with a personal schedule, ticket tiers with totals and venue.">
+<meta name="keywords" content="conference website template, event HTML template free, tech conference website, summit landing page template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#14142B">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--mg:#D6246E;--mg2:#B01B5A;--mn:#14142B;--mn2:#1E1E3D;--mt:#7FE0C4;--ic:#F4F3FA;--gr:#5C5C74;--ln:#E3E2EE;--f:"Familjen Grotesk",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}body{margin:0;font-family:var(--f);font-size:17px;line-height:1.6;color:var(--mn);background:#fff}
+img{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{font-weight:700;margin:0;line-height:1;letter-spacing:-.02em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--mt);padding:8px;z-index:99}
+:focus-visible{outline:3px solid var(--mt);outline-offset:2px}
+.hero{background:var(--mn);color:#fff;overflow:hidden;position:relative}
+.nav{display:flex;justify-content:space-between;align-items:center;height:78px;position:relative;z-index:5}.logo{font-weight:700;font-size:22px;text-decoration:none;display:flex;gap:8px;align-items:center}
+.menu{display:flex;gap:24px;list-style:none;margin:0;padding:0;align-items:center}.menu a{text-decoration:none}.menu a:hover{color:var(--mt)}.menu .cta{background:var(--mg);padding:9px 16px;border-radius:30px}.menu .cta:hover{color:#fff}
+.burger{display:none;background:none;border:2px solid #fff;color:#fff;width:44px;height:40px;border-radius:10px;font-size:20px;cursor:pointer}
+.hg{display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:end;padding:50px 0 60px;position:relative;z-index:2}
+.hero h1{font-size:clamp(64px,11vw,170px);line-height:.85}.hero h1 span{color:var(--mt);display:block}.hero .sub{display:flex;flex-wrap:wrap;gap:8px 28px;margin:28px 0 0;font-size:20px;color:#D5D4E8}.hero .sub b{color:#fff}
+.bars{position:absolute;right:-40px;top:0;bottom:0;width:42%;display:flex;gap:18px;align-items:flex-end;opacity:.4;z-index:1}.bars i{flex:1;background:var(--mn2);border-radius:14px 14px 0 0}.bars i:nth-child(2){background:var(--mg)}.bars i:nth-child(4){background:var(--mt)}
+.eb{background:#fff;color:var(--mn);border-radius:20px;padding:22px}.eb small{color:var(--mg2);font-weight:700}.eb .t{display:flex;gap:8px;margin:10px 0 14px}.eb .t div{flex:1;background:var(--ic);border-radius:10px;text-align:center;padding:8px 2px}.eb .t b{display:block;font-size:30px}.eb .t span{font-size:13px;color:var(--gr)}
+.btn{display:inline-block;background:var(--mg);color:#fff;text-decoration:none;font:600 17px var(--f);padding:13px 22px;border-radius:30px;border:0;cursor:pointer}.btn.d{background:var(--mn)}
+.logos{background:var(--mn2);color:#A9A8C6}.logos .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 30px;padding-top:18px;padding-bottom:18px;font-weight:600;font-size:18px}
+section{padding:86px 0}.sh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:28px}.sh h2{font-size:clamp(44px,6vw,84px)}.sh p{color:var(--gr);margin:8px 0 0;max-width:32em}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips button{font:600 15px var(--f);background:var(--ic);border:0;border-radius:30px;padding:9px 16px;cursor:pointer;color:var(--mn)}.chips button[aria-pressed=true]{background:var(--mn);color:#fff}
+.sp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.spk img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px;filter:grayscale(1)}.spk:hover img{filter:none}
+.spk h3{font-size:22px;margin-top:12px}.spk p{margin:2px 0 0;color:var(--gr);font-size:15px}.spk .tk{display:inline-block;margin-top:8px;font-size:13px;font-weight:700;border-radius:20px;padding:2px 10px}
+.tk.Product{background:#FCE4EE;color:var(--mg2)}.tk.Engineering{background:#DDF6EF;color:#1D7A61}.tk.Design{background:#E6E4FB;color:#4A3FB5}
+.ag{background:var(--ic)}.agt{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;margin-bottom:18px}
+.days{display:inline-flex;background:#fff;border-radius:30px;padding:4px}.days button{font:700 16px var(--f);border:0;background:transparent;padding:10px 20px;border-radius:30px;cursor:pointer;color:var(--mn)}.days button[aria-pressed=true]{background:var(--mg);color:#fff}
+.mine{font:600 15px var(--f);background:#fff;border:2px solid var(--mn);border-radius:30px;padding:8px 16px;cursor:pointer;color:var(--mn)}.mine[aria-pressed=true]{background:var(--mn);color:#fff}
+.sl{background:#fff;border-radius:16px;display:grid;grid-template-columns:110px 1fr auto;gap:18px;align-items:center;padding:16px 20px;margin-bottom:10px}
+.sl .tm{font-size:22px;font-weight:700}.sl h3{font-size:20px;letter-spacing:-.01em}.sl p{margin:4px 0 0;color:var(--gr);font-size:15px}.sl .tk{margin-left:8px;vertical-align:middle;font-size:12px;border-radius:20px;padding:2px 8px;font-weight:700}
+.sl button{width:44px;height:44px;border-radius:50%;border:2px solid var(--ln);background:#fff;font-size:20px;cursor:pointer;color:var(--gr)}.sl button[aria-pressed=true]{background:var(--mt);border-color:var(--mt);color:var(--mn)}
+.sl.brk{background:transparent;border:2px dashed #CFCDE2}.none{background:#fff;border-radius:16px;padding:24px;text-align:center}
+.tix .tg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.tc{border:2px solid var(--ln);border-radius:22px;padding:26px;display:flex;flex-direction:column}.tc.hot{border-color:var(--mg);box-shadow:8px 8px 0 var(--mg)}
+.tc h3{font-size:28px}.tc .pr{font-size:52px;font-weight:700;margin:10px 0 0;line-height:1}.tc .was{color:var(--gr);text-decoration:line-through;font-size:16px;margin:4px 0 12px}.tc ul{padding-left:18px;margin:0 0 18px;flex:1}.tc li{margin:5px 0}
+.qt{display:flex;align-items:center;gap:10px;margin-bottom:10px}.qt button{width:40px;height:40px;border-radius:50%;border:2px solid var(--mn);background:#fff;font-size:20px;cursor:pointer}.qt output{font-weight:700;font-size:22px;min-width:26px;text-align:center}
+.cart{margin-top:24px;background:var(--mn);color:#fff;border-radius:22px;padding:22px 26px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.cart b{font-size:38px}.cart span{color:#C4C3DB}
+.msg{visibility:hidden;margin:12px 0 0;font-weight:600;color:var(--mg2)}.msg.on{visibility:visible}
+.venue{background:var(--mn);color:#fff}.vg{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.venue h2{font-size:clamp(40px,5vw,70px)}.venue p{color:#C4C3DB}.venue img{border-radius:22px;width:100%;aspect-ratio:4/3;object-fit:cover}
+footer{background:var(--mn2);color:#A9A8C6;padding:28px 0;font-size:15px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:980px){.hg,.vg{grid-template-columns:1fr}.bars{width:60%;opacity:.35}.sp{grid-template-columns:1fr 1fr}.tix .tg{grid-template-columns:1fr}}
+@media (max-width:760px){.burger{display:block}.menu{display:none;position:absolute;top:78px;left:0;right:0;background:var(--mn);flex-direction:column;align-items:flex-start;padding:18px 22px;z-index:30}.menu.open{display:flex}.sl{grid-template-columns:1fr auto}.sl .tm{grid-column:1/-1;font-size:18px}.bars{display:none}.tc.hot{box-shadow:5px 5px 0 var(--mg)}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<main id="main">
+<section class="hero" style="padding:0" aria-labelledby="h1"><div class="bars" aria-hidden="true"><i style="height:45%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:92%"></i></div>
+<header class="wrap nav"><a href="#" class="logo"><svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="34" width="12" height="22" fill="#D6246E"/><rect x="26" y="20" width="12" height="36" fill="#7FE0C4"/><rect x="44" y="8" width="12" height="48" fill="#fff"/></svg>Buildwell</a><nav aria-label="Main"><ul class="menu" id="menu"><li><a href="#speakers">Speakers</a></li><li><a href="#agenda">Agenda</a></li><li><a href="#venue">Venue</a></li><li><a href="#tickets" class="cta">Get tickets</a></li></ul></nav><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></header>
+<div class="wrap hg"><div><h1 id="h1">Buildwell <span>Summit 27</span></h1><div class="sub"><span><b>18 to 19 March 2027</b></span><span><b>Lisbon</b>, riverside hall</span><span><b>40 talks</b>, 3 tracks</span></div></div>
+<div class="eb" aria-live="polite"><small>Early bird price ends in</small><div class="t"><div><b id="eD">0</b><span>days</span></div><div><b id="eH">0</b><span>hours</span></div><div><b id="eM">0</b><span>mins</span></div></div><a class="btn" href="#tickets">Save €150 now</a></div></div></section>
+<div class="logos" aria-label="Past attendees came from"><div class="wrap"><span>1,400 people from 52 countries attended in 2026</span><span>Product managers</span><span>Engineers</span><span>Designers</span><span>Founders</span></div></div>
+
+<section id="speakers" aria-labelledby="s1"><div class="wrap"><div class="sh"><div><h2 id="s1">Speakers</h2><p>People who build things that millions of people use, talking honestly about how they did it.</p></div><div class="chips" id="sf" role="group" aria-label="Filter by track"><button type="button" aria-pressed="true" data-t="all">All</button><button type="button" aria-pressed="false" data-t="Product">Product</button><button type="button" aria-pressed="false" data-t="Engineering">Engineering</button><button type="button" aria-pressed="false" data-t="Design">Design</button></div></div><div class="sp" id="sp" aria-live="polite"></div></div></section>
+
+<section class="ag" id="agenda" aria-labelledby="a1"><div class="wrap"><div class="sh"><div><h2 id="a1">Agenda</h2><p>Tap the star to add a talk to your schedule. Then show only your picks.</p></div></div>
+<div class="agt"><div class="days" id="days" role="group" aria-label="Choose a day"><button type="button" aria-pressed="true" data-d="1">Thu 18 March</button><button type="button" aria-pressed="false" data-d="2">Fri 19 March</button></div><button type="button" class="mine" id="mine" aria-pressed="false">My schedule (0)</button></div><div id="sl" aria-live="polite"></div></div></section>
+
+<section class="tix" id="tickets" aria-labelledby="t1"><div class="wrap"><div class="sh"><div><h2 id="t1">Tickets</h2><p>All tickets include lunch, coffee all day and the Thursday evening party by the river.</p></div></div>
+<div class="tg" id="tg"></div><div class="cart" aria-live="polite"><div><span id="ci">No tickets yet</span><br><b id="ct">€0</b></div><button class="btn" type="button" id="buy">Continue to payment</button></div><p class="msg" id="msg" role="status"></p></div></section>
+
+<section class="venue" id="venue" aria-labelledby="v1"><div class="wrap vg"><div><h2 id="v1">Venue</h2><p>Armazém 22, a converted warehouse on the Tagus river, 10 minutes from the city centre by tram. Step-free access, quiet rooms, and a nursing room.</p><p>We have discounted rates at three hotels within walking distance until 1 February.</p></div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzM1IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjE2NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDMzNSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMTU3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMzUyIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIxNTMiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCg5IDYwJSA0NyUpIi8+PHJlY3QgeD0iNDg1IiB5PSIxNTEiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjU1IiByeD0iMjEiIGZpbGw9ImhzbCgyNiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMTUwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woNDMgNjAlIDU5JSkiLz48cmVjdCB4PSI3NzUiIHk9IjE1MCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMDUiIHJ4PSIyNyIgZmlsbD0iaHNsKDYwIDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSIzNTAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCg3NyA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMzM1IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="900" height="675" loading="eager"></div></section>
+</main>
+<footer><div class="wrap"><p>© <span id="yr"></span> Buildwell Summit. hello@buildwell.example</p><p><a href="https://unsplash.com">Photos: Unsplash</a> &nbsp;|&nbsp; <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">More free templates</a></p></div></footer>
+<script>
+(()=>{const $=id=>document.getElementById(id);const U=i=>`data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTIxIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjIzMSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDEyMSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMzkwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMTM4IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIyNzAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgxNTUgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjQxMCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDE3MiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMjgwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMTg5IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIyMTUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgyMDYgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjM4MiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDIyMyA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMTIxIDM1JSAyMCUpIi8+PC9zdmc+`;
+const S=[["Ana Ribeiro","Head of Product, Lendwise","Product","1573496359142-b8d87734a5a2"],["Kwame Asante","Staff Engineer, Parcelly","Engineering","1507003211169-0a1dd7228f2d"],["Mei Lin","Design Director, Notewise","Design","1534528741775-53994a69daeb"],["Jonas Weber","CTO, Railpath","Engineering","1500648767791-00dcc994a43e"],["Priya Nair","VP Product, Habitly Health","Product","1544005313-94ddf0286df2"],["Luca Ferraro","Principal Designer, Tidewater","Design","1535713875002-d1d0cf377fde"],["Sara Okoye","Engineering Manager, Dotfield","Engineering","1573497019940-1c28c88b4f3e"],["Tom Brandt","Founder, Shelfspace","Product","1472099645785-5658abf4ff4e"]];
+function sp(t){$('sp').innerHTML=S.filter(s=>t==='all'||s[2]===t).map(s=>`<article class="spk"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTMgMjUlIDEyJSkiLz48cmVjdCB4PSI1MCIgeT0iNDgzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE4MCIgcng9IjEyIiBmaWxsPSJoc2woMTMgNjAlIDM1JSkiLz48cmVjdCB4PSIxOTUiIHk9IjMxNiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyMDUiIHJ4PSIxNSIgZmlsbD0iaHNsKDMwIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI0MzMiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCg0NyA2MCUgNDclKSIvPjxyZWN0IHg9IjQ4NSIgeT0iMjkxIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI1NSIgcng9IjIxIiBmaWxsPSJoc2woNjQgNjAlIDUzJSkiLz48cmVjdCB4PSI2MzAiIHk9IjQyMCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyODAiIHJ4PSIyNCIgZmlsbD0iaHNsKDgxIDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIyODUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCg5OCA2MCUgNjUlKSIvPjxyZWN0IHg9IjkyMCIgeT0iMjE3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMzMCIgcng9IjMwIiBmaWxsPSJoc2woMTE1IDYwJSA3MSUpIi8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxMyAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="500" height="500" loading="eager"><h3>${s[0]}</h3><p>${s[1]}</p><span class="tk ${s[2]}">${s[2]}</span></article>`).join('')}
+$('sf').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('sf').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));sp(b.dataset.t)};sp('all');
+const A={1:[["09:00","Opening: what we got wrong in 2026","Tom Brandt","Product"],["10:00","Shipping weekly without breaking things","Kwame Asante","Engineering"],["10:00","Designing for tired people","Mei Lin","Design"],["11:30","Coffee and demos",null,null],["12:00","Saying no to your biggest customer","Ana Ribeiro","Product"],["14:00","Our database migration, hour by hour","Jonas Weber","Engineering"],["15:30","Accessible by default, not by audit","Luca Ferraro","Design"],["19:00","Riverside party",null,null]],2:[["09:30","Small teams, big products","Priya Nair","Product"],["10:30","Growing engineers into managers","Sara Okoye","Engineering"],["10:30","Design systems people actually use","Mei Lin","Design"],["12:00","Lunch",null,null],["13:30","Pricing experiments that worked","Ana Ribeiro","Product"],["14:30","On-call without burning out","Kwame Asante","Engineering"],["16:00","Closing panel and goodbye","All speakers","Product"]]};
+let day=1,only=false;const my=new Set();
+function ag(){let r=A[day].map((s,i)=>[s,day+'-'+i]);if(only)r=r.filter(([s,k])=>my.has(k));$('mine').textContent=`My schedule (${my.size})`;
+$('sl').innerHTML=r.length?r.map(([s,k])=>s[2]?`<div class="sl"><span class="tm">${s[0]}</span><div><h3>${s[1]}<span class="tk ${s[3]}">${s[3]}</span></h3><p>${s[2]}</p></div><button type="button" data-k="${k}" aria-pressed="${my.has(k)}" aria-label="${my.has(k)?'Remove from':'Add to'} my schedule: ${s[1]}">${my.has(k)?'★':'☆'}</button></div>`:`<div class="sl brk"><span class="tm">${s[0]}</span><div><h3>${s[1]}</h3></div><span></span></div>`).join(''):'<p class="none">No talks picked for this day yet. Tap a star to add one.</p>'}
+$('days').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('days').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));day=+b.dataset.d;ag()};
+$('sl').onclick=e=>{const b=e.target.closest('button');if(!b)return;const k=b.dataset.k;my.has(k)?my.delete(k):my.add(k);ag()};$('mine').onclick=()=>{only=!only;$('mine').setAttribute('aria-pressed',only);ag()};ag();
+const T=[["Standard",349,499,["Both days, all tracks","Lunch and party","Talk recordings after"]],["Team pack of 5",1495,2245,["5 standard tickets","Reserved table at lunch","One invoice"],1],["Student",99,149,["Both days, all tracks","Student ID needed at the door","Limited to 150"]]];const q=[1,0,0];
+function tg(){$('tg').innerHTML=T.map((t,i)=>`<div class="tc${t[4]?' hot':''}"><h3>${t[0]}</h3><div class="pr">€${t[1].toLocaleString('en-US')}</div><div class="was">€${t[2].toLocaleString('en-US')} after early bird</div><ul>${t[3].map(x=>`<li>${x}</li>`).join('')}</ul><div class="qt" role="group" aria-label="${t[0]} quantity"><button type="button" data-i="${i}" data-d="-1" aria-label="Fewer">−</button><output>${q[i]}</output><button type="button" data-i="${i}" data-d="1" aria-label="More">+</button></div></div>`).join('');
+const n=q.reduce((a,b)=>a+b,0),tot=q.reduce((a,x,i)=>a+x*T[i][1],0);$('ci').textContent=n?q.map((x,i)=>x?`${x} x ${T[i][0]}`:'').filter(Boolean).join(', '):'No tickets yet';$('ct').textContent='€'+tot.toLocaleString('en-US')}
+$('tg').onclick=e=>{const b=e.target.closest('button');if(!b)return;const i=+b.dataset.i;q[i]=Math.max(0,Math.min(20,q[i]+ +b.dataset.d));tg()};tg();
+$('buy').onclick=()=>{const m=$('msg');m.textContent=q.some(x=>x)?`Great. ${$('ci').textContent} saved. In your own site, this button would open your payment page.`:'Add at least one ticket first.';m.classList.add('on')};
+const E=new Date('2027-01-15T23:59:00');function eb(){const s=Math.max(0,Math.floor((E-new Date())/1000));$('eD').textContent=Math.floor(s/86400);$('eH').textContent=Math.floor(s%86400/3600);$('eM').textContent=Math.floor(s%3600/60)}eb();setInterval(eb,30000);
+})();
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script></body>
+</html>

@@ -53334,7 +53334,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "b2d5d5c6b1396bc5b0e8dd92c693b106cfb7cee1",
     "licenseFile": "LICENSE",
@@ -53342,7 +53342,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53357,7 +53357,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "b1762d8c690a2379c078c776dc0830bdd81c6f55",
     "licenseFile": "LICENSE",
@@ -53365,7 +53365,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53380,7 +53380,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "d974402542d05abcbaa8d21d4dd78e53680f2edd",
     "licenseFile": "LICENSE",
@@ -53388,7 +53388,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53403,7 +53403,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "5bc65b4bd01e4ab63186395d5f95c7fdaa26216d",
     "licenseFile": "LICENSE",
@@ -53411,7 +53411,7 @@
     "licenseSha256": "7cfb7483fa643abcce409ac1d6f4004b65ebbdcf6a419e02f6897eee3a4f1694",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53426,7 +53426,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "247a46a2503c91d1157179eab297953438ec498b",
     "licenseFile": "LICENSE",
@@ -53434,7 +53434,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53449,7 +53449,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "5f619773a873e44545b9e1e049d6565d3a9e81d7",
     "licenseFile": "LICENSE",
@@ -53457,7 +53457,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53472,7 +53472,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "6a1ebcc76a93ead054412fcbdf417d9c83dc762b",
     "licenseFile": "LICENSE",
@@ -53480,7 +53480,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 4 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53495,7 +53495,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "c6fbe5ef431642984d0f17960194632f20cf67bc",
     "licenseFile": "LICENSE",
@@ -53503,7 +53503,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53518,7 +53518,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "b6f928934386a54e08c2e7f40ebd9e4d7510bba4",
     "licenseFile": "LICENSE",
@@ -53526,7 +53526,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 4 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53541,7 +53541,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "7d297106cbda2f04db4696752fcdb5b4dc9cd936",
     "licenseFile": "LICENSE",
@@ -53549,7 +53549,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 9 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53564,7 +53564,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "a658eb7130db599f69572384ef2dd6221757f028",
     "licenseFile": "LICENSE",
@@ -53572,7 +53572,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53587,7 +53587,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "1ebc4f8f3b6194335df237a2a7837955a5a4a9aa",
     "licenseFile": "LICENSE",
@@ -53595,7 +53595,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 4 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53610,7 +53610,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "9c5ef57a25c2c8e1223b274ef7312375925e281c",
     "licenseFile": "LICENSE",
@@ -53618,7 +53618,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53633,7 +53633,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "b330ff68d31fca0950dcce5687796d71432fbd5f",
     "licenseFile": "LICENSE",
@@ -53641,7 +53641,7 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
   },
   {
@@ -53656,7 +53656,7 @@
       "Official creator repository; individual scope review"
     ],
     "status": "IMPORTED_VALIDATED",
-    "reason": "Exact author source and Bootstrap CSS licenses retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks.",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
     "imported": true,
     "revision": "45ee8f6a5503ec6d4b41ec86cf5be2c930b606df",
     "licenseFile": "LICENSE",
@@ -53664,7 +53664,30 @@
     "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
     "codeLicenseVerified": true,
     "motion": "Native MigBits adaptation verified; upstream code preserved separately",
-    "templateScope": "Complete template kit, 1 pages",
+    "templateScope": "1 separately reviewed complete template kits; repository count is not kit count",
     "public": true
+  },
+  {
+    "repository": "mmrahmanbappi/100-free-html-templates",
+    "public": true,
+    "url": "https://github.com/mmrahmanbappi/100-free-html-templates",
+    "owner": "mmrahmanbappi",
+    "topics": [
+      "website-template"
+    ],
+    "spdxHint": "MIT",
+    "discovery": [
+      "Official creator repository; individual scope review"
+    ],
+    "status": "IMPORTED_VALIDATED",
+    "reason": "Exact author source and applicable dependency notices retained. Original photographs/fonts/vendor assets excluded; separately attributed native-motion and original-artwork adaptation passed isolated page checks. Approval applies only to the individually listed imported kits.",
+    "imported": true,
+    "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+    "licenseFile": "LICENSE",
+    "licenseURL": "https://raw.githubusercontent.com/mmrahmanbappi/100-free-html-templates/bab6ec6c8900450aab90989d217942a67ad9b16d/LICENSE",
+    "licenseSha256": "5ead47eac39050d9e6115ee18b79a9d17aba29813b1ebb802e0878aa19f997f5",
+    "codeLicenseVerified": true,
+    "motion": "Native MigBits adaptation verified; upstream code preserved separately",
+    "templateScope": "96 separately reviewed complete template kits; repository count is not kit count"
   }
 ]

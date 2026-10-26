@@ -15,7 +15,7 @@ export async function generateMetadata({
 }) {
   const { id } = await params;
   const item = libraryResources.find((r) => r.id === id);
-  return { title: item ? item.name + " — Migbits" : "Resource not found" };
+  return { title: item ? item.name + " — Migbits" : "Resource not found", ...(item ? { description: item.description, alternates: { canonical: `/library/resource/${id}` } } : {}) };
 }
 export default async function ResourcePage({
   params,

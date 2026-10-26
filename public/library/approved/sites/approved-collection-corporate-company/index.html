@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Corporate Company Website Template (HTML) | Meridian</title>
+<meta name="description" content="Free corporate website template in one HTML file. Company profile, divisions, history, leadership, news and careers pages. Mobile friendly. Free download.">
+<meta name="keywords" content="corporate website template, company profile website template, business website template free, corporate HTML template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#1F2A37">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+
+<style>
+:root{
+  --slate:#1F2A37; --slate-2:#2E3C4D; --steel:#E9EDF1; --line:#CFD6DE; --brass:#B08D57; --brass-d:#8E6F3E; --paper:#FFFFFF; --text:#26313D; --muted:#5E6B79;
+  --serif:"Newsreader", Georgia, "Times New Roman", serif;
+  --sans:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1240px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--text);background:var(--paper);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;color:var(--slate);line-height:1.12;letter-spacing:-.01em}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--brass);color:#fff;padding:10px 14px;z-index:99}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+
+/* top bar + header */
+.topbar{background:var(--slate);color:#b9c3cf;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:8px;padding-bottom:8px}
+.topbar a{text-decoration:none}.topbar a:hover{color:#fff}
+.site-header{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--serif);font-size:26px;color:var(--slate)}
+.logo svg{width:36px;height:36px}
+.menu{display:flex;gap:34px;list-style:none;margin:0;padding:0}
+.menu a{text-decoration:none;font-weight:500;font-size:16px;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-color:var(--brass)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:var(--sans);transition:background .2s,color .2s}
+.btn-dark{background:var(--slate);color:#fff}.btn-dark:hover{background:var(--slate-2)}
+.btn-brass{background:var(--brass);color:#fff}.btn-brass:hover{background:var(--brass-d)}
+.btn-line{border-color:#fff;color:#fff}.btn-line:hover{background:#fff;color:var(--slate)}
+.burger{display:none;background:none;border:1px solid var(--line);padding:10px 12px;cursor:pointer}
+.burger span{display:block;width:22px;height:2px;background:var(--slate);margin:4px 0}
+
+/* hero */
+.hero{position:relative;min-height:720px;display:flex;align-items:flex-end;color:#fff}
+.hero-img{position:absolute;inset:0}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,42,55,.92) 0%,rgba(31,42,55,.55) 55%,rgba(31,42,55,.15))}
+.hero .wrap{position:relative;width:100%;padding-bottom:0}
+.hero-copy{max-width:760px;padding:120px 0 64px}
+.hero h1{color:#fff;font-size:clamp(44px,6.4vw,86px);font-weight:400}
+.hero h1 i{color:#e3c998}
+.hero p{font-size:20px;color:#d7dee6;max-width:56ch;margin:26px 0 36px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.facts{position:relative;background:#fff;color:var(--text);display:grid;grid-template-columns:repeat(4,1fr);margin-top:0;border-top:4px solid var(--brass);box-shadow:0 30px 60px -40px rgba(31,42,55,.6)}
+.fact{padding:30px 32px;border-right:1px solid var(--line)}
+.fact:last-child{border-right:0}
+.fact strong{font-family:var(--serif);font-size:44px;font-weight:500;color:var(--slate);display:block;line-height:1.1}
+.fact span{color:var(--muted);font-size:15px}
+
+section{padding:120px 0}
+.label-line{display:flex;align-items:center;gap:14px;color:var(--brass-d);font-weight:600;font-size:15px;margin-bottom:18px}
+.label-line::before{content:"";width:40px;height:1px;background:var(--brass)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+h2{font-size:clamp(34px,4.2vw,56px)}
+.intro-lead{font-family:var(--serif);font-size:24px;line-height:1.5;color:var(--slate);margin:26px 0}
+.intro figure{margin:0;position:relative}
+.intro figure img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.intro figcaption{position:absolute;left:-40px;bottom:40px;background:var(--slate);color:#fff;padding:26px 30px;max-width:300px;font-family:var(--serif);font-size:20px;line-height:1.4}
+.intro figcaption small{display:block;font-family:var(--sans);font-size:14px;color:#c8a870;margin-top:10px}
+.sign{display:flex;align-items:center;gap:16px;margin-top:30px}
+.sign img{width:64px;height:64px;border-radius:50%;object-fit:cover}
+.sign b{display:block;color:var(--slate)}.sign span{color:var(--muted);font-size:15px}
+
+/* businesses */
+.biz{background:var(--steel)}
+.biz-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:54px}
+.biz-head p{max-width:48ch;color:var(--muted);margin:0}
+.biz-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);border:2px solid var(--line)}
+.biz-card{background:#fff;display:flex;flex-direction:column}
+.biz-card img{aspect-ratio:3/2;object-fit:cover;width:100%}
+.biz-body{padding:28px;display:flex;flex-direction:column;flex:1}
+.biz-body h3{font-size:26px;margin-bottom:10px}
+.biz-body p{color:var(--muted);font-size:16px}
+.biz-body .more{margin-top:auto;font-weight:600;color:var(--brass-d);text-decoration:none;font-size:15px}
+.biz-body .more:hover{text-decoration:underline}
+
+/* history */
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);margin-top:56px}
+.tl{padding:28px 24px 0 0;position:relative}
+.tl::before{content:"";position:absolute;top:-6px;left:0;width:11px;height:11px;background:var(--brass);border-radius:50%}
+.tl b{font-family:var(--serif);font-size:34px;font-weight:500;color:var(--slate);display:block}
+.tl h3{font-family:var(--sans);font-size:17px;font-weight:700;margin:6px 0 8px}
+.tl p{font-size:15px;color:var(--muted)}
+
+/* leadership */
+.leaders{background:var(--slate);color:#c6cfd9}
+.leaders h2{color:#fff}
+.leaders .label-line{color:#c8a870}
+.lead-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:56px}
+.leader img{aspect-ratio:1/1.15;object-fit:cover;width:100%;filter:grayscale(1) contrast(1.05);transition:filter .4s}
+.leader:hover img{filter:none}
+.leader h3{color:#fff;font-size:24px;margin-top:18px}
+.leader p{margin:2px 0 0;font-size:15px}
+
+/* sustainability */
+.goals{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border:1px solid var(--line)}
+.goal{padding:36px;border-right:1px solid var(--line)}
+.goal:last-child{border-right:0}
+.goal .num{font-family:var(--serif);font-size:56px;color:var(--brass-d);line-height:1}
+.goal h3{font-family:var(--sans);font-size:18px;font-weight:700;margin:14px 0 8px}
+.goal p{color:var(--muted);font-size:16px;margin:0}
+.bar{height:6px;background:var(--steel);margin-top:20px}
+.bar i{display:block;height:100%;background:var(--brass)}
+
+/* news */
+.news{background:var(--steel)}
+.news-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px;margin-top:48px}
+.post{background:#fff;display:flex;flex-direction:column}
+.post img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.post-body{padding:26px}
+.post time{font-size:14px;color:var(--muted)}
+.post h3{font-size:24px;margin:8px 0 10px}
+.post h3 a{text-decoration:none}.post h3 a:hover{color:var(--brass-d)}
+.post p{color:var(--muted);font-size:16px;margin:0}
+
+/* careers */
+.careers{position:relative;color:#fff;padding:0}
+.careers img{width:100%;height:520px;object-fit:cover}
+.careers .overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(31,42,55,.9),rgba(31,42,55,.35));display:flex;align-items:center}
+.careers .overlay .wrap{width:100%}
+.careers h2{color:#fff;max-width:18ch}
+.careers p{max-width:54ch;font-size:19px;color:#dde3ea;margin:20px 0 30px}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-top:48px}
+.office{border-top:3px solid var(--brass);padding-top:22px}
+.office h3{font-size:26px;margin-bottom:10px}
+.office p{color:var(--muted);margin:0 0 6px}
+.office a{color:var(--slate);font-weight:600}
+
+footer{background:#151D27;color:#94a1b0;padding:72px 0 30px;font-size:15px}
+.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:50px}
+footer h3{font-family:var(--sans);color:#fff;font-size:15px;font-weight:700;margin-bottom:14px}
+footer ul{list-style:none;padding:0;margin:0}footer li{margin-bottom:8px}
+footer a{text-decoration:none}footer a:hover{color:#e3c998}
+.foot .logo{color:#fff}
+.legal{border-top:1px solid #2a3542;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media (max-width:1020px){
+  .menu,.nav .btn{display:none}.burger{display:block}
+  .menu.open{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:84px;background:#fff;padding:22px 28px;border-bottom:1px solid var(--line);gap:14px}
+  .split{grid-template-columns:1fr;gap:56px}
+  .intro figcaption{left:16px}
+  .biz-grid,.lead-grid{grid-template-columns:1fr 1fr}
+  .facts{grid-template-columns:1fr 1fr}.fact:nth-child(2){border-right:0}.fact:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .timeline{grid-template-columns:1fr 1fr}
+  .news-grid,.contact-grid{grid-template-columns:1fr}
+  .goals{grid-template-columns:1fr}.goal{border-right:0;border-bottom:1px solid var(--line)}
+  .foot{grid-template-columns:1fr 1fr}
+  .biz-head{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  section{padding:80px 0}
+  .topbar .hide-sm{display:none}
+  .hero{min-height:620px}
+  .biz-grid,.lead-grid,.timeline,.facts,.foot{grid-template-columns:1fr}
+  .fact{border-right:0!important;border-bottom:1px solid var(--line)}
+  .careers img{height:560px}
+}
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+
+<div class="topbar"><div class="wrap"><span class="hide-sm">LSE: MRDN · 4,218p <span style="color:#7fc29b">▲ 1.3%</span></span><span><a href="#investors">Investors</a> &nbsp;·&nbsp; <a href="#careers">Careers</a> &nbsp;·&nbsp; <a href="#contact">Contact</a></span></div></div>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="#" class="logo" aria-label="Meridian Group home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#1F2A37"/><circle cx="32" cy="32" r="16" fill="none" stroke="#B08D57" stroke-width="5"/><path d="M32 10v44" stroke="#B08D57" stroke-width="5"/></svg>Meridian Group</a>
+    <ul class="menu" id="menu">
+      <li><a href="#about">About us</a></li>
+      <li><a href="#businesses">Our businesses</a></li>
+      <li><a href="#sustainability">Sustainability</a></li>
+      <li><a href="#investors">Investors</a></li>
+      <li><a href="#careers">Careers</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-dark">Contact us</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title" style="padding:0">
+    <div class="hero-img"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzMwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMjYwIiByPSI1NSIgZmlsbD0iaHNsKDMzMCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzOTUiIHI9IjY3IiBmaWxsPSJoc2woMzUzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ2MiIgcj0iNzkiIGZpbGw9ImhzbCgxNiA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSIzNDYiIHI9IjkxIiBmaWxsPSJoc2woMzkgNjUlIDU1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNzcwIiBjeT0iMjg4IiByPSIxMDMiIGZpbGw9ImhzbCg2MiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIyNTkiIHI9IjExNSIgZmlsbD0iaHNsKDg1IDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSIzOTQiIHI9IjEyNyIgZmlsbD0iaHNsKDEwOCA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDMzMCAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="1920" height="1280" fetchpriority="high"></div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1 id="hero-title">Building businesses <i>that last</i> for generations.</h1>
+        <p>For almost four decades, Meridian Group has invested in the companies that keep economies moving: logistics networks, clean energy, homes and the factories that supply them.</p>
+        <div class="hero-actions"><a href="#businesses" class="btn btn-brass">See our businesses</a><a href="#investors" class="btn btn-line">Investor relations</a></div>
+      </div>
+      <div class="facts">
+        <div class="fact"><strong>1987</strong><span>Founded in Manchester</span></div>
+        <div class="fact"><strong>12,400</strong><span>Employees worldwide</span></div>
+        <div class="fact"><strong>28</strong><span>Countries of operation</span></div>
+        <div class="fact"><strong>£4.2bn</strong><span>Group revenue, FY2025</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro" id="about" aria-labelledby="about-title">
+    <div class="wrap split">
+      <div>
+        <div class="label-line">About Meridian</div>
+        <h2 id="about-title">A long-term owner of essential businesses.</h2>
+        <p class="intro-lead">We don't buy companies to sell them. We buy good businesses, give them capital and patience, and help them become great.</p>
+        <p>Meridian began as a single freight company with eleven trucks. Today our four divisions serve more than 30,000 customers, from global retailers to local councils. Each company keeps its own name, leadership and culture, while sharing the group's financial strength, governance standards and purchasing power.</p>
+        <p>Our approach is simple: invest for decades, not quarters, treat people fairly and leave every community we work in better than we found it.</p>
+        <div class="sign"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woNjAgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIyMzAiIHI9IjU1IiBmaWxsPSJoc2woNjAgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iMzgwIiByPSI2NyIgZmlsbD0iaHNsKDgzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjMwNSIgcj0iNzkiIGZpbGw9ImhzbCgxMDYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNDE3IiByPSI5MSIgZmlsbD0iaHNsKDEyOSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzMjMiIHI9IjEwMyIgZmlsbD0iaHNsKDE1MiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0MjYiIHI9IjExNSIgZmlsbD0iaHNsKDE3NSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzI4IiByPSIxMjciIGZpbGw9ImhzbCgxOTggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCg2MCAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="64" height="64" loading="eager"><div><b>James Whitfield</b><span>Group Chief Executive</span></div></div>
+      </div>
+      <figure>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjIxIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjQ1MSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDIyMSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMzAwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjM4IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIyMjUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyNTUgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjM4NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDI3MiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMjY4IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjg5IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIyMDkiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzMDYgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjE3OSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDMyMyA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjIxIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="900" height="1125" loading="eager">
+        <figcaption>"Our best investments are the ones we never sell."<small>Robert Hale, founder</small></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="biz" id="businesses" aria-labelledby="biz-title">
+    <div class="wrap">
+      <div class="biz-head"><div><div class="label-line">Our businesses</div><h2 id="biz-title">Four divisions, one standard.</h2></div><p>Each division is led by an experienced management team and reports to the group board, with clear targets for growth, safety and sustainability.</p></div>
+      <div class="biz-grid">
+        <article class="biz-card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woOTMgMjUlIDEyJSkiLz48cmVjdCB4PSI1MCIgeT0iMjAzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE4MCIgcng9IjEyIiBmaWxsPSJoc2woOTMgNjAlIDM1JSkiLz48cmVjdCB4PSIxOTUiIHk9IjM3NiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyMDUiIHJ4PSIxNSIgZmlsbD0iaHNsKDExMCA2MCUgNDElKSIvPjxyZWN0IHg9IjM0MCIgeT0iNDYzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIzMCIgcng9IjE4IiBmaWxsPSJoc2woMTI3IDYwJSA0NyUpIi8+PHJlY3QgeD0iNDg1IiB5PSIzMDYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjU1IiByeD0iMjEiIGZpbGw9ImhzbCgxNDQgNjAlIDUzJSkiLz48cmVjdCB4PSI2MzAiIHk9IjIyOCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyODAiIHJ4PSIyNCIgZmlsbD0iaHNsKDE2MSA2MCUgNTklKSIvPjxyZWN0IHg9Ijc3NSIgeT0iMTg5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMwNSIgcng9IjI3IiBmaWxsPSJoc2woMTc4IDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSIzNjkiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCgxOTUgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDkzIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="700" height="467" loading="eager"><div class="biz-body"><h3>Meridian Logistics</h3><p>Road freight, warehousing and last-mile delivery across Europe, with 140 distribution centres and 6,000 vehicles.</p><a class="more" href="#contact">Visit Meridian Logistics</a></div></article>
+        <article class="biz-card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTczIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjM2MyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDE3MyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNDU2IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMTkwIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI1MDMiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyMDcgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjUyNiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDIyNCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNTM4IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjQxIDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIzNDQiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgyNTggNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjI0NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDI3NSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMTczIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="700" height="467" loading="eager"><div class="biz-body"><h3>Meridian Energy</h3><p>Developer and operator of solar and onshore wind farms, generating 2.1 GW of clean power for 1.4 million homes.</p><a class="more" href="#contact">Visit Meridian Energy</a></div></article>
+        <article class="biz-card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTQ1IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjI1NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDE0NSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNDAyIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMTYyIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIyNzYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgxNzkgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjIxMyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDE5NiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMTgxIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjEzIDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIzNjUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgyMzAgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjI1NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDI0NyA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMTQ1IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="700" height="467" loading="eager"><div class="biz-body"><h3>Meridian Estates</h3><p>Commercial and residential property, including 9,800 rental homes and 3.2 million sq ft of office and retail space.</p><a class="more" href="#contact">Visit Meridian Estates</a></div></article>
+        <article class="biz-card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzM5IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjI0OSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDMzOSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMzk5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMzU2IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI0NzQiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgxMyA2MCUgNDclKSIvPjxyZWN0IHg9IjQ4NSIgeT0iNTEyIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI1NSIgcng9IjIxIiBmaWxsPSJoc2woMzAgNjAlIDUzJSkiLz48cmVjdCB4PSI2MzAiIHk9IjMzMSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyODAiIHJ4PSIyNCIgZmlsbD0iaHNsKDQ3IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSI0NDAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCg2NCA2MCUgNjUlKSIvPjxyZWN0IHg9IjkyMCIgeT0iMjk1IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMzMCIgcng9IjMwIiBmaWxsPSJoc2woODEgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDMzOSAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="700" height="467" loading="eager"><div class="biz-body"><h3>Meridian Industries</h3><p>Precision components and electrical systems for automotive, rail and medical equipment makers in 14 countries.</p><a class="more" href="#contact">Visit Meridian Industries</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="history-title">
+    <div class="wrap">
+      <div class="label-line">Our history</div>
+      <h2 id="history-title">Thirty-nine years of steady growth.</h2>
+      <div class="timeline">
+        <div class="tl"><b>1987</b><h3>Eleven trucks</h3><p>Robert Hale founds Hale Freight in Manchester.</p></div>
+        <div class="tl"><b>1998</b><h3>First acquisition</h3><p>Purchase of Northgate Warehousing doubles the business.</p></div>
+        <div class="tl"><b>2006</b><h3>Meridian Group formed</h3><p>A new holding structure brings property and industry under one roof.</p></div>
+        <div class="tl"><b>2014</b><h3>Listed in London</h3><p>Shares admitted to the London Stock Exchange main market.</p></div>
+        <div class="tl"><b>2023</b><h3>Energy division</h3><p>£1.1bn committed to renewable power by 2030.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="leaders" aria-labelledby="leaders-title">
+    <div class="wrap">
+      <div class="label-line">Leadership</div>
+      <h2 id="leaders-title">The team guiding the group.</h2>
+      <div class="lead-grid">
+        <div class="leader"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTAwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNTEwIiByPSI1NSIgZmlsbD0iaHNsKDEwMCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI1MjAiIHI9IjY3IiBmaWxsPSJoc2woMTIzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjM3NSIgcj0iNzkiIGZpbGw9ImhzbCgxNDYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNDUyIiByPSI5MSIgZmlsbD0iaHNsKDE2OSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0OTEiIHI9IjEwMyIgZmlsbD0iaHNsKDE5MiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI1MTAiIHI9IjExNSIgZmlsbD0iaHNsKDIxNSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzcwIiByPSIxMjciIGZpbGw9ImhzbCgyMzggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxMDAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="500" height="575" loading="eager"><h3>James Whitfield</h3><p>Group Chief Executive</p></div>
+        <div class="leader"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzIgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIzMjIiIHI9IjU1IiBmaWxsPSJoc2woMzIgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iNDI2IiByPSI2NyIgZmlsbD0iaHNsKDU1IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ3OCIgcj0iNzkiIGZpbGw9ImhzbCg3OCA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSI1MDQiIHI9IjkxIiBmaWxsPSJoc2woMTAxIDY1JSA1NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9Ijc3MCIgY3k9IjUxNyIgcj0iMTAzIiBmaWxsPSJoc2woMTI0IDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjM3MyIgcj0iMTE1IiBmaWxsPSJoc2woMTQ3IDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSI0NTEiIHI9IjEyNyIgZmlsbD0iaHNsKDE3MCA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDMyIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="500" height="575" loading="eager"><h3>Elena Marsh</h3><p>Chief Financial Officer</p></div>
+        <div class="leader"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTE4IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDY4IiByPSI1NSIgZmlsbD0iaHNsKDExOCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNDkiIHI9IjY3IiBmaWxsPSJoc2woMTQxIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjI4OSIgcj0iNzkiIGZpbGw9ImhzbCgxNjQgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMjU5IiByPSI5MSIgZmlsbD0iaHNsKDE4NyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzOTQiIHI9IjEwMyIgZmlsbD0iaHNsKDIxMCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzMTIiIHI9IjExNSIgZmlsbD0iaHNsKDIzMyA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMjcxIiByPSIxMjciIGZpbGw9ImhzbCgyNTYgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxMTggMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="500" height="575" loading="eager"><h3>David Kerr</h3><p>Chair of the Board</p></div>
+        <div class="leader"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTM2IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDg2IiByPSI1NSIgZmlsbD0iaHNsKDEzNiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNTgiIHI9IjY3IiBmaWxsPSJoc2woMTU5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ0NCIgcj0iNzkiIGZpbGw9ImhzbCgxODIgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNDg3IiByPSI5MSIgZmlsbD0iaHNsKDIwNSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI1MDgiIHI9IjEwMyIgZmlsbD0iaHNsKDIyOCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzNjkiIHI9IjExNSIgZmlsbD0iaHNsKDI1MSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDQ5IiByPSIxMjciIGZpbGw9ImhzbCgyNzQgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxMzYgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="500" height="575" loading="eager"><h3>Omar Siddiqui</h3><p>Chief Operating Officer</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sustainability" aria-labelledby="sus-title">
+    <div class="wrap">
+      <div class="split" style="align-items:end">
+        <div><div class="label-line">Sustainability</div><h2 id="sus-title">Responsible growth, measured every year.</h2></div>
+        <p style="color:var(--muted)">Our 2030 commitments are approved by the board and independently audited. Progress is published in full in our annual sustainability report.</p>
+      </div>
+      <div class="goals">
+        <div class="goal"><div class="num">64%</div><h3>Lower carbon emissions</h3><p>Scope 1 and 2 emissions cut since 2019, on track for net zero operations by 2035.</p><div class="bar" role="img" aria-label="64 percent progress"><i style="width:64%"></i></div></div>
+        <div class="goal"><div class="num">42%</div><h3>Women in leadership</h3><p>Of senior management roles across the group, up from 27% five years ago.</p><div class="bar" role="img" aria-label="42 percent"><i style="width:42%"></i></div></div>
+        <div class="goal"><div class="num">£18m</div><h3>Community investment</h3><p>Given to apprenticeships, local charities and skills programmes since 2020.</p><div class="bar" role="img" aria-label="90 percent of target"><i style="width:90%"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="investors" aria-labelledby="news-title">
+    <div class="wrap">
+      <div class="biz-head"><div><div class="label-line">News &amp; investors</div><h2 id="news-title">Latest from Meridian.</h2></div><a href="#" class="btn btn-dark">Download 2025 annual report (PDF)</a></div>
+      <div class="news-grid">
+        <article class="post"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTMwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDIwIiByPSI1NSIgZmlsbD0iaHNsKDEzMCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI0NzUiIHI9IjY3IiBmaWxsPSJoc2woMTUzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjUwMiIgcj0iNzkiIGZpbGw9ImhzbCgxNzYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzY2IiByPSI5MSIgZmlsbD0iaHNsKDE5OSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0NDgiIHI9IjEwMyIgZmlsbD0iaHNsKDIyMiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzMzkiIHI9IjExNSIgZmlsbD0iaHNsKDI0NSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDM0IiByPSIxMjciIGZpbGw9ImhzbCgyNjggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxMzAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="900" height="563" loading="eager"><div class="post-body"><time datetime="2026-03-12">12 March 2026</time><h3><a href="#">Full-year results: revenue up 9% to £4.2bn</a></h3><p>All four divisions grew, with energy and logistics leading. The board proposes a final dividend of 38.5p per share.</p></div></article>
+        <article class="post"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzU4IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDA4IiByPSI1NSIgZmlsbD0iaHNsKDM1OCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI0NjkiIHI9IjY3IiBmaWxsPSJoc2woMjEgNjUlIDQ1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNDUwIiBjeT0iMzQ5IiByPSI3OSIgZmlsbD0iaHNsKDQ0IDY1JSA1MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjYxMCIgY3k9IjQzOSIgcj0iOTEiIGZpbGw9ImhzbCg2NyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0ODQiIHI9IjEwMyIgZmlsbD0iaHNsKDkwIDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjM1NyIgcj0iMTE1IiBmaWxsPSJoc2woMTEzIDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSIyOTMiIHI9IjEyNyIgZmlsbD0iaHNsKDEzNiA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDM1OCAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="700" height="438" loading="eager"><div class="post-body"><time datetime="2026-02-03">3 February 2026</time><h3><a href="#">Meridian Estates completes Leeds riverside scheme</a></h3><p>412 new rental homes, a quarter of them affordable.</p></div></article>
+        <article class="post"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTYwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzMwIiByPSI1NSIgZmlsbD0iaHNsKDE2MCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI0MzAiIHI9IjY3IiBmaWxsPSJoc2woMTgzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ4MCIgcj0iNzkiIGZpbGw9ImhzbCgyMDYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNTA1IiByPSI5MSIgZmlsbD0iaHNsKDIyOSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzNjciIHI9IjEwMyIgZmlsbD0iaHNsKDI1MiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0NDgiIHI9IjExNSIgZmlsbD0iaHNsKDI3NSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzM5IiByPSIxMjciIGZpbGw9ImhzbCgyOTggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxNjAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="700" height="438" loading="eager"><div class="post-body"><time datetime="2026-01-18">18 January 2026</time><h3><a href="#">1,000 apprenticeships by 2028</a></h3><p>A new group-wide programme for school leavers and career changers.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="careers" id="careers" aria-labelledby="careers-title">
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzIxIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjMxMSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDMyMSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNDMwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMzM4IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIyOTAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgzNTUgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjQyMCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDEyIDYwJSA1MyUpIi8+PHJlY3QgeD0iNjMwIiB5PSIyODUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjgwIiByeD0iMjQiIGZpbGw9ImhzbCgyOSA2MCUgNTklKSIvPjxyZWN0IHg9Ijc3NSIgeT0iMjE3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMwNSIgcng9IjI3IiBmaWxsPSJoc2woNDYgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjM4MyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDYzIDYwJSA3MSUpIi8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgzMjEgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="1920" height="1080" loading="eager">
+    <div class="overlay"><div class="wrap">
+      <div class="label-line" style="color:#e3c998">Careers</div>
+      <h2 id="careers-title">Build a career across four industries.</h2>
+      <p>From engineering and finance to operations and property, Meridian offers long-term careers, real responsibility and the chance to move between our companies as you grow.</p>
+      <a href="#contact" class="btn btn-brass">View open positions</a>
+    </div></div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="label-line">Contact</div>
+      <h2 id="contact-title">Get in touch with the group.</h2>
+      <div class="contact-grid">
+        <div class="office"><h3>London head office</h3><p>1 Canada Square, London E14 5AB</p><p><a href="tel:+442079460321">+44 20 7946 0321</a></p><p><a href="mailto:info@meridiangroup.com">info@meridiangroup.com</a></p></div>
+        <div class="office"><h3>Investor relations</h3><p>Results, reports, share price and AGM information.</p><p><a href="mailto:investors@meridiangroup.com">investors@meridiangroup.com</a></p></div>
+        <div class="office"><h3>Media enquiries</h3><p>Press releases, images and interview requests.</p><p><a href="mailto:press@meridiangroup.com">press@meridiangroup.com</a></p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><a href="#" class="logo"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#2E3C4D"/><circle cx="32" cy="32" r="16" fill="none" stroke="#B08D57" stroke-width="5"/><path d="M32 10v44" stroke="#B08D57" stroke-width="5"/></svg>Meridian Group</a><p style="margin-top:16px;max-width:36ch">Meridian Group Holdings Ltd. Registered in England and Wales, company no. 01234567.</p></div>
+      <div><h3>Group</h3><ul><li><a href="#about">About us</a></li><li><a href="#businesses">Our businesses</a></li><li><a href="#sustainability">Sustainability</a></li></ul></div>
+      <div><h3>Investors</h3><ul><li><a href="#investors">Results &amp; reports</a></li><li><a href="#investors">Share price</a></li><li><a href="#investors">Governance</a></li></ul></div>
+      <div><h3>Work with us</h3><ul><li><a href="#careers">Careers</a></li><li><a href="#contact">Suppliers</a></li><li><a href="#contact">Media</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> Meridian Group Holdings Ltd.</span><span>Geometric artwork: MigBits · Free template from <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">Free HTML Templates</a></span></div>
+  </div>
+</footer>
+
+<script>
+  const burger=document.querySelector('.burger'),menu=document.getElementById('menu');
+  burger.addEventListener('click',()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');burger.setAttribute('aria-expanded',false)}));
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script></body>
+</html>

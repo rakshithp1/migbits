@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Bakery Website Template (HTML) | Crumb & Co</title>
+<meta name="description" content="Free bakery website template as a single HTML file. Custom cake builder with live price, today's bakes with sold-out labels, bread pre-orders, hours and FAQ.">
+<meta name="keywords" content="bakery website template, bakery HTML template free, cake shop website, pastry shop template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#6B3A2A">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--br:#6B3A2A;--cr:#C9824E;--pk:#F6D8CF;--pk-l:#FDF1EC;--sg:#8FA67E;--tx:#3A2A24;--mu:#7C6A62;--ln:#EFDDD3;--s:"Lora",Georgia,serif;--b:"Nunito Sans",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--b);font-size:18px;line-height:1.6;color:var(--tx);background:#fff}
+img{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{font-family:var(--s);font-weight:700;margin:0;line-height:1.08;color:var(--br)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--pk);padding:8px;z-index:99}:focus-visible{outline:3px solid var(--cr);outline-offset:3px;border-radius:8px}
+.top{background:var(--br);color:var(--pk);text-align:center;font-size:15px;padding:8px}
+.nav{display:flex;justify-content:space-between;align-items:center;height:80px}.logo{font-family:var(--s);font-style:italic;font-size:30px;text-decoration:none;color:var(--br)}
+.menu{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:700}.menu a{text-decoration:none}.menu a:hover{color:var(--cr)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--br);font-family:var(--b);font-size:16px;cursor:pointer}
+.btn-b{background:var(--br);color:#fff}.btn-l{background:transparent;color:var(--br)}.burger{display:none;background:none;border:2px solid var(--br);border-radius:10px;padding:6px 10px;cursor:pointer}
+.hero{background:var(--pk-l)}.hg{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:50px 0}
+.hero h1{font-size:clamp(46px,6.4vw,88px)}.hero h1 em{color:var(--cr)}.hero p{font-size:20px;color:var(--mu);max-width:40ch;margin:18px 0 26px}
+.hi{display:grid;grid-template-columns:1fr 1fr;gap:14px}.hi img{border-radius:24px;object-fit:cover;width:100%}.hi img:first-child{grid-row:span 2;height:100%}.hi img:not(:first-child){aspect-ratio:1/1}
+section{padding:80px 0}.sh{text-align:center;margin-bottom:32px}.sh h2{font-size:clamp(38px,4.8vw,60px)}.sh p{color:var(--mu);margin:10px 0 0}
+.today{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.bk{border:2px solid var(--ln);border-radius:22px;padding:18px;text-align:center;position:relative}
+.bk .e{font-size:54px}.bk h3{font-size:21px;margin:6px 0 4px}.bk small{color:var(--mu)}.bk .rw{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.bk .rw b{font-size:18px}.bk button{background:var(--br);color:#fff;border:0;border-radius:999px;padding:8px 14px;font:inherit;font-weight:700;font-size:14px;cursor:pointer}
+.bk.out{opacity:.55}.bk.out button{background:var(--mu);cursor:not-allowed}.bk .so{position:absolute;top:12px;right:12px;background:var(--br);color:#fff;font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px}
+.left{font-size:14px;color:var(--cr);font-weight:700;display:block;margin-top:4px}
+.cake{background:var(--pk-l)}.cg{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.grp{margin-bottom:18px}.grp>b{display:block;margin-bottom:8px}.opts{display:flex;gap:8px;flex-wrap:wrap}.opts button{border:2px solid var(--ln);background:#fff;border-radius:14px;padding:10px 14px;font:inherit;font-weight:700;cursor:pointer;color:var(--tx)}
+.opts button[aria-pressed=true]{border-color:var(--br);background:var(--br);color:#fff}.opts small{display:block;font-weight:400;font-size:13px}
+.cg input{width:100%;border:2px solid var(--ln);border-radius:14px;padding:11px 14px;font:inherit;background:#fff}
+.prev{background:#fff;border-radius:28px;padding:26px;text-align:center;position:sticky;top:20px}.prev svg{width:100%;max-width:300px;margin:0 auto}
+.prev .am{font-family:var(--s);font-size:44px;color:var(--br);margin:8px 0}.prev p{margin:0;color:var(--mu)}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.story img{border-radius:24px;aspect-ratio:4/3;object-fit:cover;width:100%}.story h2{font-size:clamp(34px,4vw,50px);margin-bottom:12px}.story p{color:var(--mu)}
+.faq{max-width:800px;margin:0 auto}.faq details{border-bottom:2px solid var(--ln);padding:16px 0}.faq summary{cursor:pointer;font-weight:700;font-size:19px;list-style:none;color:var(--br)}.faq summary::-webkit-details-marker{display:none}.faq p{color:var(--mu);margin:8px 0 0}
+footer{background:var(--br);color:#E9CFC4;padding:40px 0;font-size:15px}.ft{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.ft b{color:#fff;display:block;margin-bottom:6px}.ft a{color:#fff}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--br);color:#fff;padding:12px 22px;border-radius:999px;transition:.3s;z-index:70;visibility:hidden;font-weight:700}.toast.show{transform:translate(-50%,0);visibility:visible}
+@media(max-width:940px){.menu{display:none}.burger{display:block}.menu.open{display:flex;flex-direction:column;position:absolute;top:80px;left:0;right:0;background:#fff;padding:20px;gap:14px;z-index:30}.nav{position:relative}
+.hg,.cg,.story,.ft{grid-template-columns:1fr}.today{grid-template-columns:1fr 1fr}.prev{position:static}}
+@media(max-width:520px){.today{grid-template-columns:1fr}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<div class="top">Order cakes 3 days ahead · Fresh bread from 7am, until it's gone</div>
+<header class="wrap"><nav class="nav" aria-label="Main"><a href="#" class="logo">Crumb &amp; Co.</a><ul class="menu" id="menu"><li><a href="#today">Today's bakes</a></li><li><a href="#cakes">Custom cakes</a></li><li><a href="#story">Our story</a></li><li><a href="#faq">FAQ</a></li></ul><a href="#today" class="btn btn-b">Basket (<span id="bc">0</span>)</a><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1" style="padding:0"><div class="wrap hg"><div><h1 id="h1">Baked this morning, <em>still warm.</em></h1><p>A family bakery in Leeds since 1998. Slow-proved sourdough, buttery pastries and celebration cakes made to order, with real butter and local flour.</p><div style="display:flex;gap:12px;flex-wrap:wrap"><a href="#today" class="btn btn-b">Pre-order today's bakes</a><a href="#cakes" class="btn btn-l">Design a cake</a></div></div>
+<div class="hi"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzI2IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDM2IiByPSI1NSIgZmlsbD0iaHNsKDMyNiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzMzMiIHI9IjY3IiBmaWxsPSJoc2woMzQ5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjI4MSIgcj0iNzkiIGZpbGw9ImhzbCgxMiA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSI0MDUiIHI9IjkxIiBmaWxsPSJoc2woMzUgNjUlIDU1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNzcwIiBjeT0iNDY3IiByPSIxMDMiIGZpbGw9ImhzbCg1OCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0OTgiIHI9IjExNSIgZmlsbD0iaHNsKDgxIDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSIzNjQiIHI9IjEyNyIgZmlsbD0iaHNsKDEwNCA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDMyNiAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="700" height="900" fetchpriority="high"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzUzIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjQ2MyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDM1MyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNTA2IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMTAgNjAlIDQxJSkiLz48cmVjdCB4PSIzNDAiIHk9IjUyOCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyMzAiIHJ4PSIxOCIgZmlsbD0iaHNsKDI3IDYwJSA0NyUpIi8+PHJlY3QgeD0iNDg1IiB5PSIzMzkiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjU1IiByeD0iMjEiIGZpbGw9ImhzbCg0NCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMjQ0IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woNjEgNjAlIDU5JSkiLz48cmVjdCB4PSI3NzUiIHk9IjE5NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMDUiIHJ4PSIyNyIgZmlsbD0iaHNsKDc4IDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSIzNzMiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCg5NSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMzUzIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="500" height="500"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woNjcgMjUlIDEyJSkiLz48cmVjdCB4PSI1MCIgeT0iNDE3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE4MCIgcng9IjEyIiBmaWxsPSJoc2woNjcgNjAlIDM1JSkiLz48cmVjdCB4PSIxOTUiIHk9IjI4MyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyMDUiIHJ4PSIxNSIgZmlsbD0iaHNsKDg0IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIyMTYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgxMDEgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjM4MyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDExOCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNDY2IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMTM1IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSI1MDgiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgxNTIgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjMyOSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDE2OSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woNjcgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="500" height="500" loading="eager"></div></div></section>
+<section id="today" aria-labelledby="t1"><div class="wrap"><div class="sh"><h2 id="t1">Today's bakes</h2><p>Pre-order now and collect from 7am. We bake a set amount each day, so when it's gone, it's gone.</p></div><div class="today" id="bakes"></div></div></section>
+<section class="cake" id="cakes" aria-labelledby="c1"><div class="wrap"><div class="sh"><h2 id="c1">Design your cake</h2><p>Choose your size, flavour and finish. We need 3 days' notice.</p></div><div class="cg">
+<div><div class="grp"><b>Size</b><div class="opts" id="sz"><button type="button" aria-pressed="false" data-v="6 inch" data-p="38" data-t="1">6 inch<small>serves 8</small></button><button type="button" aria-pressed="true" data-v="8 inch" data-p="52" data-t="1">8 inch<small>serves 14</small></button><button type="button" aria-pressed="false" data-v="Two tiers" data-p="95" data-t="2">Two tiers<small>serves 30</small></button></div></div>
+<div class="grp"><b>Flavour</b><div class="opts" id="fl"><button type="button" aria-pressed="true" data-v="Vanilla" data-p="0" data-c="#F7E3B5">Vanilla</button><button type="button" aria-pressed="false" data-v="Chocolate" data-p="4" data-c="#6B3A2A">Chocolate</button><button type="button" aria-pressed="false" data-v="Lemon" data-p="3" data-c="#F5E07A">Lemon</button><button type="button" aria-pressed="false" data-v="Red velvet" data-p="5" data-c="#A8323A">Red velvet</button></div></div>
+<div class="grp"><b>Icing</b><div class="opts" id="ic"><button type="button" aria-pressed="true" data-v="Buttercream" data-p="0" data-c="#FFF7EE">Buttercream</button><button type="button" aria-pressed="false" data-v="Pink buttercream" data-p="0" data-c="#F6C2CF">Pink</button><button type="button" aria-pressed="false" data-v="Chocolate ganache" data-p="6" data-c="#4A261B">Ganache</button></div></div>
+<div class="grp"><b><label for="msg">Message on top (optional)</label></b><input id="msg" maxlength="24" placeholder="Happy birthday, Sam"></div>
+<div class="grp"><b><label for="dt">Collection date</label></b><input id="dt" type="date"></div></div>
+<div class="prev" aria-live="polite"><svg viewBox="0 0 300 260" aria-hidden="true"><ellipse cx="150" cy="232" rx="120" ry="14" fill="#EFDDD3"/><g id="cakeG"></g><text id="ct" x="150" y="0" text-anchor="middle" font-family="Lora" font-style="italic" font-size="15" fill="#6B3A2A"></text></svg>
+<h3 id="cn">8 inch vanilla cake</h3><p id="cd">Buttercream</p><div class="am">£<span id="cp">52</span></div><button class="btn btn-b" type="button" id="cadd">Add cake to basket</button></div></div></div></section>
+<section id="story" aria-labelledby="s1"><div class="wrap story"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjI3IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjQ5NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDIyNyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMzIzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjQ0IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI0MzYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyNjEgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjI5MyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDI3OCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNDIxIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjk1IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIyODUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzMTIgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjIxNyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDMyOSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjI3IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="900" height="675" loading="eager"><div><h2 id="s1">Three generations, one oven.</h2><p>Rosa opened Crumb &amp; Co. with one oven and her mother's recipes. Today her son Daniel bakes through the night, still using the same sourdough starter from 1998.</p><p>Everything is made by hand in our kitchen behind the shop. Nothing is frozen, and leftover bread goes to the local food bank every evening.</p></div></div></section>
+<section id="faq" aria-labelledby="f1" style="padding-top:0"><div class="wrap"><div class="sh"><h2 id="f1">Questions</h2></div><div class="faq">
+<details open><summary>How far ahead should I order a cake?</summary><p>Please order at least 3 days before you need it. For weddings and cakes with more than two tiers, give us 2 weeks.</p></details>
+<details><summary>Do you make gluten-free or vegan bakes?</summary><p>Yes. We bake gluten-free brownies and vegan banana bread every day, and can make most cakes vegan with 5 days' notice. Our kitchen uses flour and nuts, so we can't promise allergen-free.</p></details>
+<details><summary>Can you deliver?</summary><p>We deliver cakes within 8 miles of the shop for £6. Bread and pastries are collection only.</p></details></div></div></section>
+</main>
+<footer><div class="wrap ft"><div><b>Visit</b>42 Kirkgate, Leeds LS2 7DJ</div><div><b>Opening hours</b>Tuesday to Saturday 7:00 to 16:00<br>Sunday 8:00 to 13:00 · Closed Monday</div><div><b>© <span id="yr">2026</span> Crumb &amp; Co.</b>Geometric artwork: MigBits · <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">Free HTML Templates</a></div></div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const B=[["🍞","Country sourdough","800 g",4.8,6],["🥐","Butter croissant","each",2.4,14],["🥖","French baguette","each",2.2,0],["🥯","Cinnamon bun","each",3.1,3],["🧁","Vanilla cupcake","each",2.9,11],["🍪","Oat and raisin cookie","each",1.8,20],["🥧","Apple pie","serves 6",14,2],["🍰","Carrot cake slice","each",3.8,0]];
+const $=id=>document.getElementById(id);let bc=0;function toast(t){const x=$('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),2200)}
+function bakes(){$('bakes').innerHTML=B.map((b,i)=>`<article class="bk ${b[4]?'':'out'}">${b[4]?'':'<span class="so">Sold out</span>'}<div class="e" aria-hidden="true">${b[0]}</div><h3>${b[1]}</h3><small>${b[2]}</small>${b[4]&&b[4]<=3?`<span class="left">Only ${b[4]} left</span>`:''}<div class="rw"><b>£${b[3].toFixed(2)}</b><button type="button" data-i="${i}" ${b[4]?'':'disabled'}>${b[4]?'Add':'Gone'}</button></div></article>`).join('')}
+$('bakes').onclick=e=>{const b=e.target.closest('[data-i]');if(!b||b.disabled)return;B[b.dataset.i][4]--;bc++;$('bc').textContent=bc;toast(B[b.dataset.i][1]+' added');bakes()};bakes();
+const on=id=>$(id).querySelector('[aria-pressed=true]');['sz','fl','ic'].forEach(id=>$(id).onclick=e=>{const b=e.target.closest('button');if(!b)return;$(id).querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));cake()});
+function tier(y,w,h,sp,ic){return `<rect x="${150-w/2}" y="${y}" width="${w}" height="${h}" rx="10" fill="${sp}"/><path d="M${150-w/2} ${y+10}q0-10 10-10h${w-20}q10 0 10 10v12${Array.from({length:6},(_,i)=>`q${-w/12} 14 ${-w/6} 0`).join('')}z" fill="${ic}"/>`}
+function cake(){const s=on('sz'),f=on('fl'),c=on('ic');let g='';const t=+s.dataset.t;
+if(t===2){g+=tier(150,210,78,f.dataset.c,c.dataset.c)+tier(80,140,70,f.dataset.c,c.dataset.c)}else{const w=s.dataset.v==='6 inch'?170:210;g+=tier(130,w,98,f.dataset.c,c.dataset.c)}
+$('cakeG').innerHTML=g;const top=t===2?74:124;$('ct').setAttribute('y',top);$('ct').textContent=$('msg').value;
+$('cn').textContent=s.dataset.v+' '+f.dataset.v.toLowerCase()+' cake';$('cd').textContent=c.dataset.v+($('msg').value?', with "'+$('msg').value+'"':'');$('cp').textContent=+s.dataset.p+ +f.dataset.p+ +c.dataset.p}
+$('msg').oninput=cake;const d=new Date(Date.now()+3*864e5).toISOString().slice(0,10);$('dt').min=d;$('dt').value=d;cake();
+$('cadd').onclick=()=>{bc++;$('bc').textContent=bc;toast($('cn').textContent+' added for '+$('dt').value)};
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script></body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "id": "approved-collection-elearning-platform",
+  "status": "APPROVED",
+  "repository": "mmrahmanbappi/100-free-html-templates",
+  "revision": "bab6ec6c8900450aab90989d217942a67ad9b16d",
+  "license": "MIT",
+  "author": "mmrahmanbappi",
+  "evidence": "https://raw.githubusercontent.com/mmrahmanbappi/100-free-html-templates/bab6ec6c8900450aab90989d217942a67ad9b16d/LICENSE",
+  "checksums": {
+    "index.html": "8b8bb25f4953a13e0452e912a004471cbc0ad34cc487dcf308287d1fa4dc33c7",
+    "LICENSE": "5ead47eac39050d9e6115ee18b79a9d17aba29813b1ebb802e0878aa19f997f5"
+  },
+  "sourceDigest": "16087a564921dbf97f313bd9d4de9a2f8c35cb830c96a3bec7a6a6362c3b1032",
+  "dependencies": [],
+  "excludedAssets": [
+    "Unsplash photographs",
+    "Google Fonts downloads",
+    "Upstream screenshot/branding files"
+  ],
+  "adaptations": [
+    "Original single-file HTML/CSS/inline JavaScript retained separately with creator MIT notice.",
+    "Stock photography, external fonts, favicons, metadata and remote services are excluded from the runnable edition; original HTML references are preserved as text only.",
+    "Original MigBits geometric demo artwork and motion controls are separate adaptations. Forms and checkout are frontend demonstrations, not backend services.",
+    "No React conversion is claimed. System font fallback changes the upstream typography. Render validation is not a complete accessibility audit.",
+    "Mobile grid minimum widths and word wrapping are corrected for community-center and nonprofit-charity. Dynamic photo references and initially empty image viewers use original artwork.",
+    "The original download-promotion toolbar is removed from runnable pages; creator attribution and complete copyright notices remain. Photo credit labels reflect the replacement MigBits artwork."
+  ]
+}
