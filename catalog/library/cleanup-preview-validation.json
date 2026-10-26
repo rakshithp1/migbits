@@ -1,0 +1,1017 @@
+[
+  {
+    "id": "template-atlas",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-atlas/atlas.html",
+    "previewDigest": "a1e9cdccfab31475f870acbd7f4d3b12ae2961144792e8e5ce45cf7a5dc611ff"
+  },
+  {
+    "id": "template-pulse",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-pulse/pulse.html",
+    "previewDigest": "be5142d03fc2af2f01cddfbbe82cbb35e4e40e202781d7ae4fb3955b3e8b35bd"
+  },
+  {
+    "id": "template-gather",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-gather/gather.html",
+    "previewDigest": "fe20bdb19b9023cf529c1bc2761732631e6823e6183f4dc881f89c32e7522523"
+  },
+  {
+    "id": "approved-template-agency",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-agency/index.html",
+    "previewDigest": "441a462e8cca6c3b729e0e40dac0d457dfdba022ae2dde7cf54b9c51dc0a3ecc"
+  },
+  {
+    "id": "approved-template-creative",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-creative/index.html",
+    "previewDigest": "379dd814e73393a71f8fd686f4a48f9102f7301911945f416989e2053f3c951e"
+  },
+  {
+    "id": "approved-template-grayscale",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-grayscale/index.html",
+    "previewDigest": "7433b3ae6f01c3780d34aa77fce4e517f466dddb7bc12ab6e16f590b27cfcd99"
+  },
+  {
+    "id": "approved-template-freelancer",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-freelancer/index.html",
+    "previewDigest": "ca7a93ab8a809238f4ffb7d207924a7d58a7508bd609db6a809b0112a514145e"
+  },
+  {
+    "id": "approved-template-landing-page",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-landing-page/index.html",
+    "previewDigest": "6b8660784bcff2fbbc96458f72cb426874fce3da850ee3aaefa67f6ad8936dbf"
+  },
+  {
+    "id": "approved-template-new-age",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-new-age/index.html",
+    "previewDigest": "94da22c5b7839587f3574e9ade60f3d32246688ffe244f1a5545c96ac84c7fcd"
+  },
+  {
+    "id": "approved-template-personal",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-personal/index.html",
+    "previewDigest": "0b70be2ebaeb431a0b02f47a05073a0f761bf86c54814e53b8c2f91a707e7614"
+  },
+  {
+    "id": "approved-template-resume",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-resume/index.html",
+    "previewDigest": "96e749c7d9d635e612b1bfb2436cb8627bcc9a6647d3c14fcb5ce5d0d4ef6397"
+  },
+  {
+    "id": "approved-template-business-casual",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-business-casual/index.html",
+    "previewDigest": "ec6fc2322c798a976d879306c2d7b1ffdc3cbad7df83b5d8732842b7e067b25b"
+  },
+  {
+    "id": "approved-template-modern-business",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-modern-business/index.html",
+    "previewDigest": "4942d0066cb2dac504f14d4f900d96e4732058be8aa7a2e29e55c032a8a7ed6e"
+  },
+  {
+    "id": "approved-template-stylish-portfolio",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-stylish-portfolio/index.html",
+    "previewDigest": "922cc102cf7fa4c10fd086238daa2ba25133dd08a3546e57498f09e636115abb"
+  },
+  {
+    "id": "approved-template-clean-blog",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-clean-blog/index.html",
+    "previewDigest": "f68ce17993a181297079fcc21042323f2ae2e425a18491cf80d3f66e88b65495"
+  },
+  {
+    "id": "approved-template-small-business",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-small-business/index.html",
+    "previewDigest": "cffae21af7473e704dd9e00e89c73a35409bd1df55f6ba120002931934dbf6e1"
+  },
+  {
+    "id": "approved-template-business-frontpage",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-business-frontpage/index.html",
+    "previewDigest": "f39156f0cc8bfe216934d8d229ed3758a5e25605e090fc05c0db2271a8389b9f"
+  },
+  {
+    "id": "approved-template-scrolling-nav",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-template-scrolling-nav/index.html",
+    "previewDigest": "7a97b484cc809963440af3fcde45ac7c076b5937f54c182c28aecc3a947b1157"
+  },
+  {
+    "id": "approved-collection-analytics-dashboard",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-analytics-dashboard/index.html",
+    "previewDigest": "b9a957d1c0f711cf05a05ef7e9cd11949b4932e1b81616c091436de3c6a9af67"
+  },
+  {
+    "id": "approved-collection-crm-dashboard",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-crm-dashboard/index.html",
+    "previewDigest": "0489c32019959304cdbe6b32c33bd7329390fc155b4dc8a43a8ec52bc2461139"
+  },
+  {
+    "id": "approved-collection-ecommerce-admin",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-ecommerce-admin/index.html",
+    "previewDigest": "3c7a4ded4b5a0fb0109a1ddb40fd512b3b6ef83a303ab39aea180b39fa278026"
+  },
+  {
+    "id": "approved-collection-finance-dashboard",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-finance-dashboard/index.html",
+    "previewDigest": "ce06d32ff24926cf78795f655e249b7460a0f6ca19cf533a302e07f464223e1a"
+  },
+  {
+    "id": "approved-collection-hospital-management",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-hospital-management/index.html",
+    "previewDigest": "2bbc1189e0e03ecc924a8d6608bd320801850a5ec628dd3745a932aa877e2388"
+  },
+  {
+    "id": "approved-collection-hr-dashboard",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-hr-dashboard/index.html",
+    "previewDigest": "57f401a2a63ab911f5f4a4b0dd68a66891dc63dfe3fb1b907cc7704ecb202c69"
+  },
+  {
+    "id": "approved-collection-inventory-dashboard",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-inventory-dashboard/index.html",
+    "previewDigest": "40520f7f55e9a207832ad507c5306e5e35b9fba8a2bdb9ac93ae196a7a1647d0"
+  },
+  {
+    "id": "approved-collection-project-management",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-project-management/index.html",
+    "previewDigest": "4893c829968be0e329f859c2d0789331cff7091bb8cd45a030c4bf30061b3d16"
+  },
+  {
+    "id": "approved-collection-saas-admin-panel",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-saas-admin-panel/index.html",
+    "previewDigest": "a90f27c52c3e81b58bf794c06606b79d16df0b2a01070c294427889fa800031d"
+  },
+  {
+    "id": "approved-collection-school-management",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-school-management/index.html",
+    "previewDigest": "e86f84531ebef07d5bf08f00c931a8d593eb65b16eddf46e8be78b60afd6fc6a"
+  },
+  {
+    "id": "approved-collection-branding-studio",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-branding-studio/index.html",
+    "previewDigest": "01abab1146741c1be7a664965e016d286445853d93f59955a98e4ca97952a482"
+  },
+  {
+    "id": "approved-collection-consulting-firm",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-consulting-firm/index.html",
+    "previewDigest": "45122dba5c8d0251a62ab2e86bc6d4a998b1ae96924fd7519675389538efc3bb"
+  },
+  {
+    "id": "approved-collection-corporate-company",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-corporate-company/index.html",
+    "previewDigest": "64dc3118deab1eb1447053f7291c9a4251a74f0f616aa149b72f9601c452f481"
+  },
+  {
+    "id": "approved-collection-creative-agency",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-creative-agency/index.html",
+    "previewDigest": "7e0aad879c04e95afacfddd564cc443471dc85d74c19b7747ab6050922c6ae02"
+  },
+  {
+    "id": "approved-collection-digital-marketing-agency",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-digital-marketing-agency/index.html",
+    "previewDigest": "4c80bd049f5e2d14f4a9e5453f74a45dbdbc8d0214e05e48950f68f6bb650dbe"
+  },
+  {
+    "id": "approved-collection-freelancer-team",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-freelancer-team/index.html",
+    "previewDigest": "ffaf8cda76ac9862488a972ee08b9aad9957244d5971db701d6a4b8f23904e39"
+  },
+  {
+    "id": "approved-collection-it-service-company",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-it-service-company/index.html",
+    "previewDigest": "04048506f7b73b9b1e324806f3d31f90f9bdb877e569fb553a8ee9ce2a284c6f"
+  },
+  {
+    "id": "approved-collection-social-media-marketing",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-social-media-marketing/index.html",
+    "previewDigest": "16b9f34606cba7c470b8e537d30b607178022d566facb0a94ee8c2b51fc14167"
+  },
+  {
+    "id": "approved-collection-startup-company",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-startup-company/index.html",
+    "previewDigest": "7011b58293860dd28040d0aa824f5afa0ccfad72ff4b288034c1a999b3d576f3"
+  },
+  {
+    "id": "approved-collection-web-development-agency",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-web-development-agency/index.html",
+    "previewDigest": "b8c8aff240a87e34e8ceec9bf6401ad3996b53a484bfa64544251a207d237313"
+  },
+  {
+    "id": "approved-collection-cosmetics-skincare-store",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-cosmetics-skincare-store/index.html",
+    "previewDigest": "131a63b7aedd5994157001e03a2657e0f1ffa6a31e34732f92ec0b93148927f6"
+  },
+  {
+    "id": "approved-collection-electronics-store",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-electronics-store/index.html",
+    "previewDigest": "bd4fd6becfc512f68d3fc224fd39588b6421641a6c9e106ba45fcb70729a27bd"
+  },
+  {
+    "id": "approved-collection-fashion-store",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-fashion-store/index.html",
+    "previewDigest": "73324a729bb34c6186aded6308f59572bbc334dd19028e0c795b65a865169638"
+  },
+  {
+    "id": "approved-collection-grocery-store",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-grocery-store/index.html",
+    "previewDigest": "79ababc30187c78a9e46a6b4d4944dd584792dd11759b7d51584fc490563b23c"
+  },
+  {
+    "id": "approved-collection-handicraft-store",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-handicraft-store/index.html",
+    "previewDigest": "951f6cc80691ded8272d2339122eff1eb1aeba2aac2474d8853382233dd6af65"
+  },
+  {
+    "id": "approved-collection-jewellery-store",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-jewellery-store/index.html",
+    "previewDigest": "956cfd171c52c12fe35071559f57d2feac0327bc39cd136509f747a30a4b5784"
+  },
+  {
+    "id": "approved-collection-shoes-bags-store",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-shoes-bags-store/index.html",
+    "previewDigest": "13e82b775f42d63ea0705bc436199bb1c183c2980889be9fd51168c6c221c2b2"
+  },
+  {
+    "id": "approved-collection-single-product-store",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-single-product-store/index.html",
+    "previewDigest": "5c82fe8156186ea55a34566f3f69c089274d2875a381d1ed288f24ee0ac485c3"
+  },
+  {
+    "id": "approved-collection-coding-bootcamp",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-coding-bootcamp/index.html",
+    "previewDigest": "6ef281e09aea9723ad97b9f7b10a1e44efc0026573c43ec9331d7493d73f4b0c"
+  },
+  {
+    "id": "approved-collection-elearning-platform",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-elearning-platform/index.html",
+    "previewDigest": "6a9e011ab9d2832f98191123ece95e99bf55f93ce6c2db58321de563c3e372e2"
+  },
+  {
+    "id": "approved-collection-kids-daycare",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-kids-daycare/index.html",
+    "previewDigest": "e02fa13eadb1ce7382b7372ddb4f8d5671733dbe6de2450093264ceaaf3be9ce"
+  },
+  {
+    "id": "approved-collection-language-school",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-language-school/index.html",
+    "previewDigest": "79fb39ab986115b92790e0d40b514ef6a4245708af7e2064b796b05e3ea4d05e"
+  },
+  {
+    "id": "approved-collection-online-course",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-online-course/index.html",
+    "previewDigest": "b16b1789af570f9bc2f19794c4bf29ad97a196da29dc0f8d8461516f07f90529"
+  },
+  {
+    "id": "approved-collection-school",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-school/index.html",
+    "previewDigest": "ff03484edd6e79c851f35e7ab67c729b80d6c804553b19b947128136d0be77e0"
+  },
+  {
+    "id": "approved-collection-tutoring",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-tutoring/index.html",
+    "previewDigest": "a68bc51cbea3463385b8f163ed535ef7878f75c4647541f614a327c1dcf6844b"
+  },
+  {
+    "id": "approved-collection-university",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-university/index.html",
+    "previewDigest": "5d31cf730372d895052309690de8952033ce1c269eb32d12d8fb50e0646e8a8f"
+  },
+  {
+    "id": "approved-collection-community-center",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-community-center/index.html",
+    "previewDigest": "4616e41f427646dd0635e03c8d0d3e7c4833fb7b42f2c30f7e6f02e69dc4e06c"
+  },
+  {
+    "id": "approved-collection-conference-event",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-conference-event/index.html",
+    "previewDigest": "3613d0dda0a2981ac96379b9f75f716c8769fa34c78f7685397acf71225f1ff6"
+  },
+  {
+    "id": "approved-collection-musician-band",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-musician-band/index.html",
+    "previewDigest": "e3fc0dba8eb3ce92b4611a301e62b082cbea9c14181fe507118a59771c1239af"
+  },
+  {
+    "id": "approved-collection-nonprofit-charity",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-nonprofit-charity/index.html",
+    "previewDigest": "da8b9e8ba9ded66d75ff17a6951297d86796299a421ea4ad259c8fb55b11a18a"
+  },
+  {
+    "id": "approved-collection-podcast",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-podcast/index.html",
+    "previewDigest": "253524c7f1124764b21379c04b48915a5af54e6e484acbbdd0fe5443b0f59b2a"
+  },
+  {
+    "id": "approved-collection-wedding",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-wedding/index.html",
+    "previewDigest": "8be51cfa761c8132a84393c9648f73e9dccea6ac7ee2d5ec7498c78c0a0eab75"
+  },
+  {
+    "id": "approved-collection-dental-clinic",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-dental-clinic/index.html",
+    "previewDigest": "e95a93f7076c5da17f06b423c112fecc7032f234011b04a1d38d64396f499a75"
+  },
+  {
+    "id": "approved-collection-gym-fitness",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-gym-fitness/index.html",
+    "previewDigest": "cf5a023d418d78df72f1830cba367ada5b283f34cbd050127bf663302b6805ae"
+  },
+  {
+    "id": "approved-collection-medical-clinic",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-medical-clinic/index.html",
+    "previewDigest": "d6aec725cde7f7a805d4e0806891a205304e97c9ea353eee1118941841917bd1"
+  },
+  {
+    "id": "approved-collection-nutritionist",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-nutritionist/index.html",
+    "previewDigest": "6d782c525b61614c8183ca260f42563de9bd7741311a437abe2144441cf8d3c4"
+  },
+  {
+    "id": "approved-collection-personal-trainer",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-personal-trainer/index.html",
+    "previewDigest": "d4f07d70edd29651ab342a1fcb488b2bae56ceb20c7298f716ab27a4660555a8"
+  },
+  {
+    "id": "approved-collection-physiotherapy",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-physiotherapy/index.html",
+    "previewDigest": "be80d65800ca0e5029cbcb783afb4f649a93e5ed44b82b29d6d328af95814df2"
+  },
+  {
+    "id": "approved-collection-spa-salon",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-spa-salon/index.html",
+    "previewDigest": "783818fa10adccf02db553d9b8c8c87e221e4378d15b62f7269b5f72123da350"
+  },
+  {
+    "id": "approved-collection-yoga-studio",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-yoga-studio/index.html",
+    "previewDigest": "efec69496f29768f0d176f69341949798eb7de017e08bba97b9c482f17b32057"
+  },
+  {
+    "id": "approved-collection-ebook-download",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-ebook-download/index.html",
+    "previewDigest": "c09c1a36185aa4ce75ecbe1c9f16ded29132f29882786c4fe408b0f98a3eb40b"
+  },
+  {
+    "id": "approved-collection-event-ticket",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-event-ticket/index.html",
+    "previewDigest": "95bf4ececfe3be9fe67eb9ccc5bbd0bfae3cf148d37d0ff8a64a057b991a5bb6"
+  },
+  {
+    "id": "approved-collection-job-board",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-job-board/index.html",
+    "previewDigest": "e4b3bf3be20bec5f983723b48d576e3804196b2c2ff4b1d20d934c2c65a2461a"
+  },
+  {
+    "id": "approved-collection-product-launch",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-product-launch/index.html",
+    "previewDigest": "5c6b2a72ebdb78ac6323b2ddf2ca7e43ae6a23a1cc008c4170faf67ceba9cc66"
+  },
+  {
+    "id": "approved-collection-webinar-signup",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-webinar-signup/index.html",
+    "previewDigest": "f8fa0a0fef73128c455c35ff148281f1a7e21ba744bb44dd2cb90f4c6c331426"
+  },
+  {
+    "id": "approved-collection-accounting-firm",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-accounting-firm/index.html",
+    "previewDigest": "a6559e618d93cbb7edd4006c3c7d61a1c9593e8c0fa7b13ffd39905c48654597"
+  },
+  {
+    "id": "approved-collection-auto-repair",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-auto-repair/index.html",
+    "previewDigest": "a10b29f38b1dfcdc5676f0f9cf661d0992d0f5fadcfd1b51955d94048e5c3c10"
+  },
+  {
+    "id": "approved-collection-cleaning-company",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-cleaning-company/index.html",
+    "previewDigest": "9ef47cbd34b7805b6c47c0a0c63cdd4c0c04dbf5f25034e8e247fb991f9e980c"
+  },
+  {
+    "id": "approved-collection-construction-company",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-construction-company/index.html",
+    "previewDigest": "c05238d10588fd2057e55341613317c1b2bd09340ba1a94f07ffdfb5fe392318"
+  },
+  {
+    "id": "approved-collection-law-firm",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-law-firm/index.html",
+    "previewDigest": "6bbf7a9f2139ba76337f364fa18e40ecd7277cd23615000d40bf2d62e3cd57bf"
+  },
+  {
+    "id": "approved-collection-moving-company",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-moving-company/index.html",
+    "previewDigest": "063a8af1655385b916775c32440354b13fa48231a62db2e62a85eea4f745b886"
+  },
+  {
+    "id": "approved-collection-pet-care-vet",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-pet-care-vet/index.html",
+    "previewDigest": "da96edf598843533779926552bb90458fabb5a30c642e21b14a810b84655c89f"
+  },
+  {
+    "id": "approved-collection-plumber-home-services",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-plumber-home-services/index.html",
+    "previewDigest": "bc307be5e8f430aa3a7daf9f08f68c9e16fe4977b82a01c3741bfe6f0f70cbae"
+  },
+  {
+    "id": "approved-collection-architect-portfolio",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-architect-portfolio/index.html",
+    "previewDigest": "9dad0573aabda51b64120cfdc792d90b7c894c291680516ced2aca50801b5fbe"
+  },
+  {
+    "id": "approved-collection-artist-illustrator",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-artist-illustrator/index.html",
+    "previewDigest": "3b7fa6c1f59ce2de598a6d343f312fb92d1f6fe392147aab4cb7e24a1c00bf26"
+  },
+  {
+    "id": "approved-collection-designer-portfolio",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-designer-portfolio/index.html",
+    "previewDigest": "873322246a9a1fd18a965a47d37794f0caea70cafee5c52a8a97d2bb22de6df2"
+  },
+  {
+    "id": "approved-collection-developer-portfolio",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-developer-portfolio/index.html",
+    "previewDigest": "5a88a6201e29046c6240356c0015ecb48cf03e619473ae3a1653835af55f4240"
+  },
+  {
+    "id": "approved-collection-photographer-portfolio",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-photographer-portfolio/index.html",
+    "previewDigest": "15d580410efca7a89d8755b261359af47df7c28bf27877c2e5aba31523a8ba77"
+  },
+  {
+    "id": "approved-collection-resume-cv",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-resume-cv/index.html",
+    "previewDigest": "b01069252ffec09cfd41e3999567548387b18eebf218d866b39658eed77bb569"
+  },
+  {
+    "id": "approved-collection-video-editor-youtuber",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-video-editor-youtuber/index.html",
+    "previewDigest": "086fe8ee0d84d952678e8b211f70a79ce82e189f76a2a05541f43a0bfe82352f"
+  },
+  {
+    "id": "approved-collection-writer-blogger",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-writer-blogger/index.html",
+    "previewDigest": "41597645a3f1beaff27b37ca84e5b030cedf5ed665aac60865d1596818fe55d4"
+  },
+  {
+    "id": "approved-collection-car-rental",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-car-rental/index.html",
+    "previewDigest": "74b51b0128571f5cdb98da807bc22a8d5437af2c4dbc3d91a4e8196197ba3bc7"
+  },
+  {
+    "id": "approved-collection-hotel-resort",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-hotel-resort/index.html",
+    "previewDigest": "1dd7ce7d2ddae542752e3bebc66bc9c8d0713d78b76e45f6213f1c4184c995ae"
+  },
+  {
+    "id": "approved-collection-interior-design",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-interior-design/index.html",
+    "previewDigest": "3658466b755fd013cbab9b7ada856df8d92a633f57d57c723782cd636143cbb5"
+  },
+  {
+    "id": "approved-collection-property-listing",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-property-listing/index.html",
+    "previewDigest": "3b1c5a5ea7131888013f79e752a46f01f79df8f86a8101e9e1164f913e1314e3"
+  },
+  {
+    "id": "approved-collection-real-estate-agency",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-real-estate-agency/index.html",
+    "previewDigest": "1337c9855fba5fe172176a84922f615e8b14bf0e473d156dce815a7c973f337a"
+  },
+  {
+    "id": "approved-collection-travel-agency",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-travel-agency/index.html",
+    "previewDigest": "d205a8aae10c59f4bf2f44ce74ab46903d68747f58a6cfc1f0e7223923c652cf"
+  },
+  {
+    "id": "approved-collection-vacation-rental",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-vacation-rental/index.html",
+    "previewDigest": "0e2a3f2311d9fbe86ef413e6c4ab5f8150f393d07a488da41f9fa5e2c8dd644d"
+  },
+  {
+    "id": "approved-collection-bakery",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-bakery/index.html",
+    "previewDigest": "5911321bb4e538a5eee6ef77b88588358d8365ba16724ab67a7a00db290f8826"
+  },
+  {
+    "id": "approved-collection-bar-lounge",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-bar-lounge/index.html",
+    "previewDigest": "fc3082d768211a8a9d89ec9460cc8635b8170059492c941dc1bc1c9f4e192b3c"
+  },
+  {
+    "id": "approved-collection-cafe-coffee-shop",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-cafe-coffee-shop/index.html",
+    "previewDigest": "fd29c8a34620fc424565e68626b5bdaeb5da7d9c363ac5a5ce1bc08194e327fe"
+  },
+  {
+    "id": "approved-collection-catering",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-catering/index.html",
+    "previewDigest": "ee208dd29ec2cfb35484f7716d9a608d1b595e2cfa27c54b52ff50b45510a667"
+  },
+  {
+    "id": "approved-collection-food-truck",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-food-truck/index.html",
+    "previewDigest": "941642074528fd7d018cc4fa85389c81ae57e5201c2c6ff81687bc0e1c692d32"
+  },
+  {
+    "id": "approved-collection-pizza-delivery",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-pizza-delivery/index.html",
+    "previewDigest": "b4e051b10cd991b5c87881168ec09a02239958ac7b9f6a99b767386f4289df02"
+  },
+  {
+    "id": "approved-collection-recipe-blog",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-recipe-blog/index.html",
+    "previewDigest": "f759914895e5f73b6f93fe4781dba4b2612e99cb70f2d23c32ad5df8ebdc167c"
+  },
+  {
+    "id": "approved-collection-restaurant",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-restaurant/index.html",
+    "previewDigest": "88ca6b4b3e8e5bef57c94f7912ccd8bdad7841b220fb566cf660250a17fae2db"
+  },
+  {
+    "id": "approved-collection-ai-chatbot",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-ai-chatbot/index.html",
+    "previewDigest": "376055a1fd5d8ba686f8b80ae10f744fd42d336e8b0c86e94073a4b1c506649d"
+  },
+  {
+    "id": "approved-collection-ai-image-generator",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-ai-image-generator/index.html",
+    "previewDigest": "d372c425fc70aef24d50ff0895fbe5d93b393b7b74cb54441d0769cfcee49c02"
+  },
+  {
+    "id": "approved-collection-chrome-extension",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-chrome-extension/index.html",
+    "previewDigest": "6effa7bddc9baba85a89b432097a0f70ee16b60deed0f848a589bebd74b8e7db"
+  },
+  {
+    "id": "approved-collection-cloud-hosting",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-cloud-hosting/index.html",
+    "previewDigest": "4a5369d7f0c293841a6ec92d7406ea2a969a8ccfc81de3a4467e57986fc6da2c"
+  },
+  {
+    "id": "approved-collection-cyber-security",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-cyber-security/index.html",
+    "previewDigest": "2332b66545634930451bb9df84c31504ebc71374289178ff0f9ae3006506e229"
+  },
+  {
+    "id": "approved-collection-developer-api",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-developer-api/index.html",
+    "previewDigest": "8b05246546699090b8eb2ce598596a0e0ba29879497aff575e07dbc7daf1d629"
+  },
+  {
+    "id": "approved-collection-mobile-app",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-mobile-app/index.html",
+    "previewDigest": "e69b31a28f8f6aa869605d602ab612c127dba8ddfa6ba55bb507e00145230be0"
+  },
+  {
+    "id": "approved-collection-newsletter-waitlist",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-newsletter-waitlist/index.html",
+    "previewDigest": "350286d805d7bdf33cd443b1f935c576b0bc9c575dbeb3929ea5099b0a2151b2"
+  },
+  {
+    "id": "approved-collection-productivity-app",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-productivity-app/index.html",
+    "previewDigest": "ebfbad246526ba0c2a1b1729ac2b3fee1032fb09ff7c90df512a7b1257a56a95"
+  },
+  {
+    "id": "approved-collection-saas-product",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/approved-collection-saas-product/index.html",
+    "previewDigest": "7102f30e77a7bd47b60fc9d52cf107ab33bd81ef4edac3b8a9a1c0b2d8faf7dd"
+  },
+  {
+    "id": "shaders--aurora",
+    "status": "passed",
+    "automaticPixelChange": 0.4984728682170543,
+    "previewUrl": "/imported/shaders/previews/shaders--aurora.html",
+    "previewDigest": "964577ac832982e22513cc8e93d39f0a7756cf2fef00be5906857668e9532023"
+  },
+  {
+    "id": "shaders--boids",
+    "status": "passed",
+    "automaticPixelChange": 0.241265988372093,
+    "previewUrl": "/imported/shaders/previews/shaders--boids.html",
+    "previewDigest": "eb74f8e3ce8973e07192b8f1e93cb75fc96c2ac5ee5df7476d41e86bc2cefb97"
+  },
+  {
+    "id": "shaders--brushedmetal",
+    "status": "passed",
+    "automaticPixelChange": 0.0005823643410852713,
+    "previewUrl": "/imported/shaders/previews/shaders--brushedmetal.html",
+    "previewDigest": "5ab3f653977c61fbe9b14f20b3b356c0ca95f416c5a6331775dbecf99a628b8a"
+  },
+  {
+    "id": "shaders--chrome",
+    "status": "passed",
+    "automaticPixelChange": 0.10891957364341086,
+    "previewUrl": "/imported/shaders/previews/shaders--chrome.html",
+    "previewDigest": "7cfb4dc86cb82d8aaa07bd90c4709d3ab4cf0fdeeab097023c9ad1bc0805965d"
+  },
+  {
+    "id": "shaders--fallinglines",
+    "status": "passed",
+    "automaticPixelChange": 0.12654554263565893,
+    "previewUrl": "/imported/shaders/previews/shaders--fallinglines.html",
+    "previewDigest": "e72124193e506286b88de691407801d04c25a29f431c5b548d6806cb0d958154"
+  },
+  {
+    "id": "shaders--flowinggradient",
+    "status": "passed",
+    "automaticPixelChange": 0.6727785852713178,
+    "previewUrl": "/imported/shaders/previews/shaders--flowinggradient.html",
+    "previewDigest": "f73711b615e04f25570b8e3539db6f27e71e00ddde31b4976deb5cbd72bd90a4"
+  },
+  {
+    "id": "shaders--form3d",
+    "status": "passed",
+    "automaticPixelChange": 0.029126937984496126,
+    "previewUrl": "/imported/shaders/previews/shaders--form3d.html",
+    "previewDigest": "59af31a0641ed2c3e40e84b0d75c9a8512f80916dbe614266f1e171ed8848069"
+  },
+  {
+    "id": "shaders--frost",
+    "status": "passed",
+    "automaticPixelChange": 0.0006027131782945736,
+    "previewUrl": "/imported/shaders/previews/shaders--frost.html",
+    "previewDigest": "eae8de48487981c67adc11c2558297d5c3bbb06e42e2ca0e532afdf2422e4999"
+  },
+  {
+    "id": "shaders--godrays",
+    "status": "passed",
+    "automaticPixelChange": 0.7012596899224807,
+    "previewUrl": "/imported/shaders/previews/shaders--godrays.html",
+    "previewDigest": "313b287ce564fe9f288633e72a7c4913071d17e57d122f7631ebb66835ac9629"
+  },
+  {
+    "id": "shaders--goo",
+    "status": "passed",
+    "automaticPixelChange": 0.17102422480620155,
+    "previewUrl": "/imported/shaders/previews/shaders--goo.html",
+    "previewDigest": "14bca91ae1dfeb9245edc8a41f4a2977b50e8093d4daa69bf031acf4cb792e05"
+  },
+  {
+    "id": "shaders--heatmap",
+    "status": "passed",
+    "automaticPixelChange": 0.315734496124031,
+    "previewUrl": "/imported/shaders/previews/shaders--heatmap.html",
+    "previewDigest": "2f94fcec21b35e2fd2473e145ef55fbf1f34711b60e7bd26c0546f94fb421407"
+  },
+  {
+    "id": "shaders--hologram",
+    "status": "passed",
+    "automaticPixelChange": 0.2150794573643411,
+    "previewUrl": "/imported/shaders/previews/shaders--hologram.html",
+    "previewDigest": "54faee3771107d19477114bb189313359407bd601c6b38ea046b2f99240c3851"
+  },
+  {
+    "id": "shaders--holographic",
+    "status": "passed",
+    "automaticPixelChange": 0.2576196705426357,
+    "previewUrl": "/imported/shaders/previews/shaders--holographic.html",
+    "previewDigest": "703c805b2bff74c50d08894fc7f87f5fdf9d48acc3c6e5669487545e8fa4da19"
+  },
+  {
+    "id": "shaders--lensflare",
+    "status": "passed",
+    "automaticPixelChange": 0.1740687984496124,
+    "previewUrl": "/imported/shaders/previews/shaders--lensflare.html",
+    "previewDigest": "28ea945d877dad78401638e771b0d7b509561b2f00f55e90b41ce581cfc53434"
+  },
+  {
+    "id": "shaders--lightedge",
+    "status": "passed",
+    "automaticPixelChange": 0.10760174418604651,
+    "previewUrl": "/imported/shaders/previews/shaders--lightedge.html",
+    "previewDigest": "4854c2e0849c94656a3f3bb405e1fc9235b59d7128d76f4b06943b495c676de8"
+  },
+  {
+    "id": "shaders--magneticfilings",
+    "status": "passed",
+    "automaticPixelChange": 0.24575872093023257,
+    "previewUrl": "/imported/shaders/previews/shaders--magneticfilings.html",
+    "previewDigest": "6e19bb36fe57be41ba168ac0a941081839ffa3dbb6305fb9208f1ab0d77d67b2"
+  },
+  {
+    "id": "shaders--liquidmetal",
+    "status": "passed",
+    "automaticPixelChange": 0.09105910852713178,
+    "previewUrl": "/imported/shaders/previews/shaders--liquidmetal.html",
+    "previewDigest": "59e4620a9d2e1c78e8a559fe76e7110b82b4d698be743fb79e95eb318175a405"
+  },
+  {
+    "id": "shaders--nebula",
+    "status": "passed",
+    "automaticPixelChange": 0.20746753875968993,
+    "previewUrl": "/imported/shaders/previews/shaders--nebula.html",
+    "previewDigest": "843d61e7df1e3944d85124b5e82b93426dc5414d13a659c9a51ef6ddfcced95e"
+  },
+  {
+    "id": "shaders--obsidian",
+    "status": "passed",
+    "automaticPixelChange": 0.17300678294573643,
+    "previewUrl": "/imported/shaders/previews/shaders--obsidian.html",
+    "previewDigest": "64b7e53e7f7dcc0178b21c21ab2b2fd8baf1491c052ed9a2fbe9d26f6c479227"
+  },
+  {
+    "id": "shaders--particleflow",
+    "status": "passed",
+    "automaticPixelChange": 0.3815828488372093,
+    "previewUrl": "/imported/shaders/previews/shaders--particleflow.html",
+    "previewDigest": "4d436e6d26358933853679bb4f635343f82bb50492db8c84a849fb25b3b14775"
+  },
+  {
+    "id": "shaders--particles",
+    "status": "passed",
+    "automaticPixelChange": 0.15566036821705426,
+    "previewUrl": "/imported/shaders/previews/shaders--particles.html",
+    "previewDigest": "9f83a9eee5e459e6c9e6610c823b5563c0c6db67b759e390c4d30624a2aeb5b4"
+  },
+  {
+    "id": "shaders--plasma",
+    "status": "passed",
+    "automaticPixelChange": 0.4968202519379845,
+    "previewUrl": "/imported/shaders/previews/shaders--plasma.html",
+    "previewDigest": "74fbe4279891e2a01d1b738fc92ba5b565ae7329ef5858071c04015fcc6de46d"
+  },
+  {
+    "id": "shaders--plastic",
+    "status": "passed",
+    "automaticPixelChange": 0.035401162790697674,
+    "previewUrl": "/imported/shaders/previews/shaders--plastic.html",
+    "previewDigest": "80b68b62f76259ac7ca592640ffcb56659c7964ff11f8632692688d0a59fbe72"
+  },
+  {
+    "id": "shaders--prism",
+    "status": "passed",
+    "automaticPixelChange": 0.13138711240310078,
+    "previewUrl": "/imported/shaders/previews/shaders--prism.html",
+    "previewDigest": "9e711fdb8e8b85782d2e0989fe044fe1407e74c311fbaebbc879bd23a7ce2a7f"
+  },
+  {
+    "id": "shaders--reactiondiffusion",
+    "status": "passed",
+    "automaticPixelChange": 0.8906540697674419,
+    "previewUrl": "/imported/shaders/previews/shaders--reactiondiffusion.html",
+    "previewDigest": "068e244e801d38122a47163aa1068b1fbac9c74d3e4bd4069edb80e6b0cbc80a"
+  },
+  {
+    "id": "shaders--satin",
+    "status": "passed",
+    "automaticPixelChange": 0.5935358527131783,
+    "previewUrl": "/imported/shaders/previews/shaders--satin.html",
+    "previewDigest": "25eb07b810f46ac9d08e035e663b4d9adeed55322afff6d3045e16b05fdd6dd8"
+  },
+  {
+    "id": "shaders--smokefill",
+    "status": "passed",
+    "automaticPixelChange": 0.07910416666666667,
+    "previewUrl": "/imported/shaders/previews/shaders--smokefill.html",
+    "previewDigest": "1de256a1c8e2f4c92fc39aa88cbec0e1625c1adf81c8d607e8b0268792a32598"
+  },
+  {
+    "id": "shaders--strands",
+    "status": "passed",
+    "automaticPixelChange": 0.20362209302325582,
+    "previewUrl": "/imported/shaders/previews/shaders--strands.html",
+    "previewDigest": "1f077f19eebd39b6bb2112860c8cef65b05be05979a2022f183bc25ca51e77cc"
+  },
+  {
+    "id": "shaders--thinfilm",
+    "status": "passed",
+    "automaticPixelChange": 0.14448546511627908,
+    "previewUrl": "/imported/shaders/previews/shaders--thinfilm.html",
+    "previewDigest": "1aa2caf1b4a62dc022dbac847a861f38aa8f591b56707f4e4442e35bf1c7fe52"
+  },
+  {
+    "id": "shaders--water",
+    "status": "passed",
+    "automaticPixelChange": 0.1834452519379845,
+    "previewUrl": "/imported/shaders/previews/shaders--water.html",
+    "previewDigest": "f4e79d6159d402852aab15df201a99bd3c4af398ed401733f276a8abbbe32648"
+  },
+  {
+    "id": "shaders--waveform",
+    "status": "passed",
+    "automaticPixelChange": 0.08719282945736434,
+    "previewUrl": "/imported/shaders/previews/shaders--waveform.html",
+    "previewDigest": "3b54031bb7cf73616f771a894553eae32a5157f7bd40f2fed62252e79c20177e"
+  }
+]

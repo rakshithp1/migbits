@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Web Development Agency Template (HTML) | Codefield</title>
+<meta name="description" content="Free web design and development agency template in one HTML file. Services, speed scores, portfolio, process, packages, FAQ and a quote form. Mobile friendly.">
+<meta name="keywords" content="web development agency template, web design company website template free, web agency HTML template, developer agency landing page, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#0F1B2D">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--ink:#0F1B2D;--ink-2:#1C2B42;--cyan:#00A7B5;--cyan-l:#00C2CF;--lemon:#F2E94E;--bg:#F5F8FA;--line:#DCE4EA;--text:#1B2735;--muted:#5A6B7C;
+--display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;--wrap:1220px}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--text);font-family:var(--body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}a{color:inherit}p{margin:0 0 1em}
+h1,h2,h3{font-family:var(--display);font-stretch:112%;font-weight:800;margin:0;line-height:1.02;color:var(--ink);letter-spacing:-.02em}
+h3{font-weight:600}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--lemon);padding:10px;z-index:99}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:var(--display);font-weight:800;font-size:22px;text-decoration:none;display:flex;align-items:center;gap:10px;color:var(--ink)}
+.logo b{font-family:var(--mono);background:var(--ink);color:var(--cyan-l);border-radius:8px;padding:2px 8px;font-size:16px}
+.menu{display:flex;gap:30px;list-style:none;margin:0;padding:0}.menu a{text-decoration:none;font-weight:600}.menu a:hover{color:var(--cyan)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:8px;font-weight:700;text-decoration:none;border:2px solid var(--ink);font-family:var(--body);font-size:17px;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{box-shadow:4px 4px 0 var(--cyan)}
+.btn-lemon{background:var(--lemon);color:var(--ink)}.btn-white{background:#fff;color:var(--ink)}
+.burger{display:none;background:none;border:2px solid var(--ink);border-radius:8px;padding:8px 10px;cursor:pointer}.burger span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0}
+
+.hero{background:var(--bg);padding:80px 0 90px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(42px,5.8vw,78px)}
+.hero h1 mark{background:var(--lemon);color:var(--ink);padding:0 .1em}
+.hero .lead{font-size:21px;color:var(--muted);max-width:44ch;margin:24px 0 32px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.proof{display:flex;gap:26px;margin-top:36px;flex-wrap:wrap;font-size:16px;color:var(--muted)}.proof b{color:var(--ink);font-size:18px}
+.browser{background:var(--ink);border-radius:14px;overflow:hidden;box-shadow:12px 12px 0 var(--cyan)}
+.bar{display:flex;align-items:center;gap:8px;padding:12px 14px;background:var(--ink-2)}
+.bar i{width:11px;height:11px;border-radius:50%;background:#3a4a63}
+.bar span{margin-left:12px;flex:1;background:#0b1422;color:#8fa3bb;font-family:var(--mono);font-size:13px;padding:6px 12px;border-radius:6px}
+.code{font-family:var(--mono);font-size:14px;line-height:1.7;color:#c9d6e6;padding:22px 24px;margin:0;white-space:pre;overflow-x:auto}
+.code .k{color:#7fdbff}.code .s{color:var(--lemon)}.code .c{color:#6b7f98}.code .t{color:#ff9e8f}
+.browser img{width:100%;aspect-ratio:16/7;object-fit:cover;border-top:1px solid #243650}
+
+.stack{padding:28px 0;border-bottom:1px solid var(--line)}
+.stack .wrap{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.stack p{margin:0;font-weight:700}
+.stack ul{display:flex;gap:10px;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+.stack li{font-family:var(--mono);font-size:14px;border:1px solid var(--line);border-radius:6px;padding:6px 12px;background:#fff}
+
+section{padding:110px 0}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:54px}
+.head h2{font-size:clamp(36px,4.6vw,60px)}.head p{color:var(--muted);margin:0}
+.tag{font-family:var(--mono);color:var(--cyan);font-weight:600;font-size:14px;display:block;margin-bottom:12px}
+
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2px solid var(--ink)}
+.svc article{padding:34px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.svc article:nth-child(3n){border-right:0}.svc article:nth-last-child(-n+3){border-bottom:0}
+.svc h3{font-size:24px;margin:0 0 10px}.svc p{color:var(--muted);font-size:17px;margin:0 0 14px}
+.svc .price{font-family:var(--mono);font-size:14px;color:var(--ink);background:var(--bg);display:inline-block;padding:4px 10px;border-radius:6px}
+
+.speed{background:var(--ink);color:#c9d6e6}
+.speed h2{color:#fff}.speed .head p{color:#98abc2}
+.rings{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.ring{background:var(--ink-2);border-radius:14px;padding:30px 20px;text-align:center}
+.ring svg{width:120px;height:120px;margin:0 auto 14px;display:block}
+.ring b{display:block;color:#fff;font-size:19px}.ring span{font-size:15px;color:#98abc2}
+.speed .note{margin-top:30px;color:#98abc2;font-size:16px}
+
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.project{border:2px solid var(--ink);border-radius:14px;overflow:hidden;background:#fff;text-decoration:none;display:block;transition:transform .15s,box-shadow .15s}
+.project:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--ink)}
+.project img{width:100%;aspect-ratio:16/10;object-fit:cover;border-bottom:2px solid var(--ink)}
+.project div{padding:22px 24px}
+.project h3{font-size:24px;margin-bottom:6px}.project p{color:var(--muted);margin:0;font-size:16px}
+.project .res{font-family:var(--mono);font-size:14px;color:var(--cyan);margin-top:10px;display:block}
+
+.process{background:var(--bg)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;counter-increment:s}
+.step::before{content:"0" counter(s);font-family:var(--mono);font-weight:600;color:var(--cyan);display:block;margin-bottom:10px}
+.step h3{font-size:20px;margin-bottom:8px}.step p{margin:0;color:var(--muted);font-size:16px}
+.step small{display:block;margin-top:10px;font-family:var(--mono);font-size:13px;color:var(--ink)}
+
+.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pack{border:2px solid var(--ink);border-radius:14px;padding:32px;display:flex;flex-direction:column}
+.pack.hot{background:var(--lemon)}
+.pack h3{font-size:24px}.pack .amt{font-family:var(--display);font-weight:800;font-size:46px;margin:12px 0 2px;color:var(--ink)}
+.pack .amt small{font-family:var(--body);font-size:16px;font-weight:600;color:var(--muted)}
+.pack ul{list-style:none;padding:0;margin:18px 0 26px}.pack li{padding:8px 0;border-bottom:1px dashed #b9c6d1}
+.pack li::before{content:"✓";font-weight:700;margin-right:10px;color:var(--cyan)}
+.pack.hot li::before{color:var(--ink)}
+.pack .btn{margin-top:auto;justify-content:center}
+
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.q{background:var(--bg);border-radius:14px;padding:28px;margin:0}
+.q p{font-size:18px}.q .who{display:flex;gap:12px;align-items:center}.q img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+.q b{display:block;font-size:16px}.q span{font-size:14px;color:var(--muted)}
+
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.faq details{border-bottom:2px solid var(--ink);padding:20px 0}
+.faq summary{list-style:none;cursor:pointer;font-weight:700;font-size:20px;display:flex;justify-content:space-between;gap:18px}
+.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";font-family:var(--mono);font-size:22px}
+.faq details[open] summary::after{content:"-"}.faq details p{color:var(--muted);margin:10px 0 0}
+
+.cta{background:var(--cyan);color:var(--ink)}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.cta h2{font-size:clamp(38px,5vw,66px)}
+.cta .lead{font-size:20px;margin:22px 0}
+form{background:#fff;border:2px solid var(--ink);border-radius:14px;padding:30px;box-shadow:8px 8px 0 var(--ink)}
+label{display:block;font-weight:700;font-size:15px;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:17px;padding:12px 14px;border:2px solid var(--line);border-radius:8px;margin-bottom:16px;color:var(--text);background:#fff}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ink)}
+form .btn{width:100%;justify-content:center}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+footer{background:var(--ink);color:#98abc2;padding:54px 0 28px;font-size:16px}
+.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:34px}
+footer .logo{color:#fff}footer ul{list-style:none;padding:0;margin:0;display:flex;gap:24px;flex-wrap:wrap}footer a{text-decoration:none}footer a:hover{color:#fff}
+.legal{border-top:1px solid var(--ink-2);padding-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:15px}
+@media (max-width:1000px){.menu,.nav>.btn{display:none}.burger{display:block}
+.menu.open{display:flex;flex-direction:column;position:absolute;top:74px;left:0;right:0;background:#fff;padding:22px 24px;border-bottom:1px solid var(--line);gap:16px}
+.hero-grid,.head,.faq,.cta-grid{grid-template-columns:1fr}
+.svc,.packs,.quotes{grid-template-columns:1fr}.svc article{border-right:0!important;border-bottom:2px solid var(--ink)!important}.svc article:last-child{border-bottom:0!important}
+.rings{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.work{grid-template-columns:1fr}}
+@media (max-width:600px){body{font-size:17px}section{padding:76px 0}.steps,.row2{grid-template-columns:1fr}.code{font-size:12px}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="#" class="logo"><b>&lt;/&gt;</b>Codefield</a>
+    <ul class="menu" id="menu"><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#process">Process</a></li><li><a href="#packages">Packages</a></li><li><a href="#faq">FAQ</a></li></ul>
+    <a href="#quote" class="btn btn-ink">Get a quote</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 id="hero-title">Websites that load fast, rank well and <mark>bring in work.</mark></h1>
+        <p class="lead">Codefield is a web design and development agency. We build websites, online shops and web apps for small and growing businesses, then look after them so you never have to think about the tech.</p>
+        <div class="actions"><a href="#quote" class="btn btn-ink">Get a free quote in 24 hours</a><a href="#work" class="btn btn-white">See our websites</a></div>
+        <div class="proof"><span><b>260+</b> websites launched</span><span><b>98</b> average speed score</span><span><b>4.9★</b> on Clutch</span></div>
+      </div>
+      <div class="browser" aria-label="Example code and website preview">
+        <div class="bar"><i></i><i></i><i></i><span>yourbusiness.com</span></div>
+<pre class="code"><span class="c">// what your visitors actually get</span>
+<span class="k">const</span> site = {
+  loadTime: <span class="s">"0.8s"</span>,
+  mobile: <span class="t">true</span>,
+  seo: <span class="s">"ready from day one"</span>,
+  editableBy: <span class="s">"you, no coding"</span>
+};</pre>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzU4IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzQ4IiByPSI1NSIgZmlsbD0iaHNsKDM1OCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIyODkiIHI9IjY3IiBmaWxsPSJoc2woMjEgNjUlIDQ1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNDUwIiBjeT0iNDA5IiByPSI3OSIgZmlsbD0iaHNsKDQ0IDY1JSA1MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjYxMCIgY3k9IjQ2OSIgcj0iOTEiIGZpbGw9ImhzbCg2NyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0OTkiIHI9IjEwMyIgZmlsbD0iaHNsKDkwIDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjM2NCIgcj0iMTE1IiBmaWxsPSJoc2woMTEzIDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSIyOTciIHI9IjEyNyIgZmlsbD0iaHNsKDEzNiA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDM1OCAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="1000" height="440" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <div class="stack"><div class="wrap"><p>We build with</p><ul aria-label="Technologies"><li>HTML &amp; CSS</li><li>JavaScript</li><li>React</li><li>Next.js</li><li>WordPress</li><li>Shopify</li><li>Webflow</li><li>Laravel</li><li>Node.js</li></ul></div></div>
+
+  <section id="services" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="head"><div><span class="tag">// services</span><h2 id="svc-title">From a one-page site to a full web app.</h2></div><p>Every project includes a mobile-friendly design, basic SEO setup, speed testing and a training call so you can update the site yourself.</p></div>
+      <div class="svc">
+        <article><h3>Business websites</h3><p>A clear, professional site that explains what you do and makes it easy to get in touch.</p><span class="price">from $2,400</span></article>
+        <article><h3>Online shops</h3><p>Shopify and WooCommerce stores with fast checkout, stock control and payment setup.</p><span class="price">from $5,900</span></article>
+        <article><h3>Web apps</h3><p>Booking systems, client portals and dashboards built around how your business works.</p><span class="price">from $12,000</span></article>
+        <article><h3>Website redesign</h3><p>Keep your Google rankings while replacing a slow or outdated site with something you're proud of.</p><span class="price">from $3,200</span></article>
+        <article><h3>SEO &amp; speed fixes</h3><p>Technical fixes that make your current site load faster and show up higher in search.</p><span class="price">from $900</span></article>
+        <article><h3>Care plans</h3><p>Hosting, backups, security updates and small changes each month, handled by us.</p><span class="price">from $89/month</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="speed" aria-labelledby="speed-title">
+    <div class="wrap">
+      <div class="head"><div><span class="tag">// performance</span><h2 id="speed-title">Built to pass Google's tests.</h2></div><p>Google ranks fast, easy-to-use websites higher. These are the average Lighthouse scores of the last 40 sites we launched.</p></div>
+      <div class="rings" id="rings"></div>
+      <p class="note">A one-second delay in load time can cut sales by around 7%. We test every page on a real mid-range phone before launch.</p>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="head"><div><span class="tag">// recent work</span><h2 id="work-title">Websites we're proud of.</h2></div><p>A few projects from this year. Every client owns their site, their domain and their content.</p></div>
+      <div class="work">
+        <a class="project" href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTYxIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjUxMSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDE2MSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNTMwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMTc4IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI1NDAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgxOTUgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjM0NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDIxMiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMjQ3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjI5IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIzOTgiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgyNDYgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjQ3NCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDI2MyA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMTYxIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="900" height="563" loading="eager"><div><h3>Harbor Dental Group</h3><p>New website with online booking for four clinics.</p><span class="res">+64% online bookings in 3 months</span></div></a>
+        <a class="project" href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjM5IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjUwOSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDIzOSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNTI5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjU2IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI1MzkiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyNzMgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjM0NCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDI5MCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNDQ3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMzA3IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIyOTgiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzMjQgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjIyNCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDM0MSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjM5IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="900" height="563" loading="eager"><div><h3>Oakline Furniture</h3><p>Shopify store with 1,200 products and a room planner.</p><span class="res">Load time cut from 4.1s to 1.2s</span></div></a>
+        <a class="project" href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woNDYgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSI0NTYiIHI9IjU1IiBmaWxsPSJoc2woNDYgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iNDkzIiByPSI2NyIgZmlsbD0iaHNsKDY5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjUxMSIgcj0iNzkiIGZpbGw9ImhzbCg5MiA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSIzNzAiIHI9IjkxIiBmaWxsPSJoc2woMTE1IDY1JSA1NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9Ijc3MCIgY3k9IjQ1MCIgcj0iMTAzIiBmaWxsPSJoc2woMTM4IDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjQ5MCIgcj0iMTE1IiBmaWxsPSJoc2woMTYxIDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSIzNjAiIHI9IjEyNyIgZmlsbD0iaHNsKDE4NCA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDQ2IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="900" height="563" loading="eager"><div><h3>ClearPath Tutors</h3><p>Web app for matching students with tutors and paying online.</p><span class="res">3,400 lessons booked a month</span></div></a>
+        <a class="project" href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzQ0IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzM0IiByPSI1NSIgZmlsbD0iaHNsKDM0NCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIyODIiIHI9IjY3IiBmaWxsPSJoc2woNyA2NSUgNDUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI0NTAiIGN5PSI0MDYiIHI9Ijc5IiBmaWxsPSJoc2woMzAgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNDY4IiByPSI5MSIgZmlsbD0iaHNsKDUzIDY1JSA1NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9Ijc3MCIgY3k9IjM0OSIgcj0iMTAzIiBmaWxsPSJoc2woNzYgNjUlIDYwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iOTMwIiBjeT0iMjg5IiByPSIxMTUiIGZpbGw9ImhzbCg5OSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDA5IiByPSIxMjciIGZpbGw9ImhzbCgxMjIgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgzNDQgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="900" height="563" loading="eager"><div><h3>Greenline Landscaping</h3><p>Redesign of a 10-year-old site, keeping every Google ranking.</p><span class="res">Page one for 38 local keywords</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process" aria-labelledby="proc-title">
+    <div class="wrap">
+      <div class="head"><div><span class="tag">// how it works</span><h2 id="proc-title">Five steps, agreed up front.</h2></div><p>A typical business website takes four to six weeks. You'll see progress every week on a private preview link.</p></div>
+      <div class="steps">
+        <div class="step"><h3>Call</h3><p>We learn about your business, customers and goals.</p><small>Week 1</small></div>
+        <div class="step"><h3>Plan</h3><p>Page list, fixed price and timeline in writing.</p><small>Week 1</small></div>
+        <div class="step"><h3>Design</h3><p>You review the design on desktop and phone.</p><small>Weeks 2 to 3</small></div>
+        <div class="step"><h3>Build</h3><p>We code, test speed and set up SEO basics.</p><small>Weeks 3 to 5</small></div>
+        <div class="step"><h3>Launch</h3><p>Go live, plus a training call and 30 days of free fixes.</p><small>Week 6</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" aria-labelledby="pack-title">
+    <div class="wrap">
+      <div class="head"><div><span class="tag">// packages</span><h2 id="pack-title">Clear prices, fixed before we start.</h2></div><p>Prices include design, development, launch and one month of support. Pay 50% to start and 50% at launch.</p></div>
+      <div class="packs">
+        <article class="pack"><h3>Starter</h3><div class="amt">$2,400</div><p>For new and small businesses.</p><ul><li>Up to 5 pages</li><li>Mobile-friendly design</li><li>Contact form and Google Maps</li><li>Basic SEO setup</li></ul><a href="#quote" class="btn btn-white">Choose Starter</a></article>
+        <article class="pack hot"><h3>Business</h3><div class="amt">$5,800</div><p>Our most popular package.</p><ul><li>Up to 15 pages</li><li>Custom design and copywriting help</li><li>Blog or news section</li><li>Full SEO setup and speed tuning</li><li>Editable by you, no coding</li></ul><a href="#quote" class="btn btn-ink">Choose Business</a></article>
+        <article class="pack"><h3>Store</h3><div class="amt">$9,500</div><p>For selling online.</p><ul><li>Shopify or WooCommerce</li><li>Up to 200 products set up</li><li>Payments, shipping and tax</li><li>Email receipts and abandoned-cart emails</li></ul><a href="#quote" class="btn btn-white">Choose Store</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="rev-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><div><span class="tag">// reviews</span><h2 id="rev-title">What clients say.</h2></div><p>Rated 4.9 out of 5 from 120 reviews on Clutch and Google.</p></div>
+      <div class="quotes">
+        <blockquote class="q"><p>"They explained everything clearly, hit every deadline and the site paid for itself in two months."</p><div class="who"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjQ3IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjIzNyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDI0NyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMzkzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjY0IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI0NzEiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyODEgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjUxMCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDI5OCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMzMwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMzE1IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIyNDAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzMzIgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjE5NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDM0OSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjQ3IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="48" height="48" loading="eager"><div><b>Dr. Kate Lowell</b><span>Harbor Dental Group</span></div></div></blockquote>
+        <blockquote class="q"><p>"Our old site took forever to load on phones. Now it's instant and our online sales are up 41%."</p><div class="who"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjcyIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNTAyIiByPSI1NSIgZmlsbD0iaHNsKDI3MiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNjYiIHI9IjY3IiBmaWxsPSJoc2woMjk1IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjI5OCIgcj0iNzkiIGZpbGw9ImhzbCgzMTggNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMjY0IiByPSI5MSIgZmlsbD0iaHNsKDM0MSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIyNDciIHI9IjEwMyIgZmlsbD0iaHNsKDQgNjUlIDYwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iOTMwIiBjeT0iMzg4IiByPSIxMTUiIGZpbGw9ImhzbCgyNyA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDU5IiByPSIxMjciIGZpbGw9ImhzbCg1MCA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDI3MiAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="48" height="48" loading="eager"><div><b>Paul Hendry</b><span>Oakline Furniture</span></div></div></blockquote>
+        <blockquote class="q"><p>"I can update prices and photos myself in five minutes. No more waiting on a developer."</p><div class="who"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjAgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIyNTAiIHI9IjU1IiBmaWxsPSJoc2woMjAgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iMjQwIiByPSI2NyIgZmlsbD0iaHNsKDQzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjM4NSIgcj0iNzkiIGZpbGw9ImhzbCg2NiA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSIzMDciIHI9IjkxIiBmaWxsPSJoc2woODkgNjUlIDU1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNzcwIiBjeT0iMjY4IiByPSIxMDMiIGZpbGw9ImhzbCgxMTIgNjUlIDYwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iOTMwIiBjeT0iMzk5IiByPSIxMTUiIGZpbGw9ImhzbCgxMzUgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjMxNCIgcj0iMTI3IiBmaWxsPSJoc2woMTU4IDY1JSA3MCUpIiBvcGFjaXR5PSIuOCIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="48" height="48" loading="eager"><div><b>Nina Brooks</b><span>ClearPath Tutors</span></div></div></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title" style="padding-top:0">
+    <div class="wrap faq">
+      <div><span class="tag">// faq</span><h2 id="faq-title" style="font-size:clamp(34px,4vw,52px)">Good questions to ask any web agency.</h2></div>
+      <div>
+        <details open><summary>How much does a website cost?</summary><p>Most small business websites cost between $2,400 and $6,000. Online shops start at $5,900 and custom web apps at $12,000. You get a fixed price in writing before any work starts.</p></details>
+        <details><summary>How long does it take to build a website?</summary><p>Four to six weeks for most business sites, and eight to twelve weeks for online shops and web apps.</p></details>
+        <details><summary>Will I be able to update the website myself?</summary><p>Yes. We build on tools that let you change text, photos and prices without coding, and we give you a recorded training session.</p></details>
+        <details><summary>Do I own the website?</summary><p>Yes. You own the domain, the design, the code and all the content. If you ever leave us, we hand everything over.</p></details>
+        <details><summary>Do you offer hosting?</summary><p>Our care plans include fast hosting, daily backups, security updates and up to two hours of changes each month.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="quote" aria-labelledby="cta-title">
+    <div class="wrap cta-grid">
+      <div><h2 id="cta-title">Tell us about your website.</h2><p class="lead">Answer four quick questions and we'll send a fixed quote within one working day. No sales calls unless you ask for one.</p><p><b>Email:</b> <a href="mailto:hello@codefield.dev">hello@codefield.dev</a><br><b>Phone:</b> <a href="tel:+16175550132">+1 (617) 555-0132</a><br><b>Studio:</b> 45 Kendall Street, Cambridge, MA 02142</p></div>
+      <formaction="#" method="POST" aria-label="Request a quote">
+        <div class="row2"><div><label for="n">Name</label><input id="n" name="name" autocomplete="name" required></div><div><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required></div></div>
+        <label for="t">What do you need?</label><select id="t" name="type"><option>New business website</option><option>Online shop</option><option>Website redesign</option><option>Web app</option><option>SEO or speed fixes</option></select>
+        <label for="w">Current website (if any)</label><input id="w" name="website" type="url" placeholder="https://">
+        <label for="b">Budget</label><select id="b" name="budget"><option>Under $3,000</option><option>$3,000 to $6,000</option><option>$6,000 to $15,000</option><option>More than $15,000</option></select>
+        <button class="btn btn-ink" type="submit">Send my quote request</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot"><a href="#" class="logo"><b>&lt;/&gt;</b>Codefield</a><ul><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#packages">Packages</a></li><li><a href="https://github.com/" rel="noopener">GitHub</a></li><li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li></ul></div>
+    <div class="legal"><span>© <span id="yr">2026</span> Codefield Web Studio LLC</span><span>Geometric artwork: MigBits | Free template from <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">Free HTML Templates</a></span></div>
+  </div>
+</footer>
+<script>
+[["Performance",98],["Accessibility",100],["Best practices",100],["SEO",100]].forEach(([n,v])=>{
+ const c=2*Math.PI*52,off=c*(1-v/100);
+ document.getElementById('rings').insertAdjacentHTML('beforeend',`<div class="ring"><svg viewBox="0 0 120 120" role="img" aria-label="${n} score ${v} out of 100"><circle cx="60" cy="60" r="52" fill="none" stroke="#243650" stroke-width="10"/><circle cx="60" cy="60" r="52" fill="none" stroke="#39D98A" stroke-width="10" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${off}" transform="rotate(-90 60 60)"/><text x="60" y="70" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="800" font-size="30" fill="#fff">${v}</text></svg><b>${n}</b><span>average score</span></div>`)});
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><style>@media(max-width:480px){.rings{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px}.ring{min-width:0;padding:20px 12px}.ring svg{max-width:100%;height:auto}}</style><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

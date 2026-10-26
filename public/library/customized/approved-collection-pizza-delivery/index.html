@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Pizza Delivery Website Template (HTML) | Forno Rapido</title>
+<meta name="description" content="Free pizza shop and delivery template in one HTML file. Build your own pizza with live preview, menu with cart, delivery time checker, deals and FAQ.">
+<meta name="keywords" content="pizza website template, pizza delivery HTML template free, pizzeria website template, food ordering website, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#D62828">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--rd:#D62828;--rd-d:#A91E1E;--yl:#FCBF49;--gn:#2A9D8F;--bk:#1D1A17;--cr:#FFF6E9;--tx:#2A2320;--mu:#766A62;--ln:#F0DEC6;--d:"Titan One",Impact,sans-serif;--b:"Rubik",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--b);font-size:17px;line-height:1.55;color:var(--tx);background:var(--cr)}
+img,svg{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{font-family:var(--d);font-weight:400;margin:0;line-height:1;color:var(--bk)}h3{font-family:var(--b);font-weight:700}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--yl);padding:8px;z-index:99}:focus-visible{outline:3px solid var(--gn);outline-offset:2px;border-radius:8px}
+.hd{background:var(--rd);color:#fff;position:sticky;top:0;z-index:40}.nav{display:flex;align-items:center;gap:20px;height:70px}
+.logo{font-family:var(--d);font-size:28px;text-decoration:none;color:#fff}.logo span{color:var(--yl)}
+.menu{display:flex;gap:22px;list-style:none;margin:0 auto 0 20px;padding:0;font-weight:700}.menu a{text-decoration:none}.menu a:hover{color:var(--yl)}
+.cart{background:var(--yl);color:var(--bk);border:0;border-radius:999px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer;margin-left:auto}
+.burger{display:none;background:none;border:2px solid #fff;color:#fff;border-radius:8px;padding:5px 10px;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 26px;border-radius:14px;font-weight:700;text-decoration:none;border:0;font-family:var(--b);font-size:17px;cursor:pointer}
+.btn-r{background:var(--rd);color:#fff}.btn-r:hover{background:var(--rd-d)}.btn-y{background:var(--yl);color:var(--bk)}
+.hero{padding:40px 0 60px}.hg{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.hero h1{font-size:clamp(52px,7.6vw,110px);color:var(--rd)}.hero p{font-size:20px;margin:18px 0 22px;max-width:40ch}
+.chk{display:flex;background:#fff;border:3px solid var(--bk);border-radius:16px;overflow:hidden;max-width:460px}.chk input{flex:1;border:0;padding:12px 14px;font:inherit;min-width:0}.chk input:focus{outline:none}.chk button{background:var(--bk);color:#fff;border:0;padding:0 18px;font:inherit;font-weight:700;cursor:pointer}
+.eta{margin-top:10px;font-weight:700;min-height:26px}.hi img{border-radius:50%;aspect-ratio:1/1;object-fit:cover;width:100%;border:10px solid #fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.4)}
+.deals{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.deal{border-radius:22px;padding:24px;color:#fff}.deal h3{font-family:var(--d);font-weight:400;font-size:34px;color:#fff}.deal p{margin:6px 0 0}
+section{padding:60px 0}.sh{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:22px;flex-wrap:wrap}.sh h2{font-size:clamp(40px,5vw,64px)}
+.bld{display:grid;grid-template-columns:1fr 1fr;gap:30px;background:#fff;border:3px solid var(--bk);border-radius:28px;padding:30px}
+.pv{text-align:center}.pv svg{width:100%;max-width:340px;margin:0 auto}.pv .am{font-family:var(--d);font-size:48px;color:var(--rd);margin:10px 0}
+.grp{margin-bottom:18px}.grp>b{display:block;margin-bottom:8px}.opts{display:flex;gap:8px;flex-wrap:wrap}.opts button{border:2px solid var(--ln);background:var(--cr);border-radius:12px;padding:9px 14px;font:inherit;font-weight:700;cursor:pointer;color:var(--tx)}
+.opts button[aria-pressed=true]{background:var(--bk);border-color:var(--bk);color:#fff}.opts small{display:block;font-weight:400;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.p{background:#fff;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;border:2px solid var(--ln)}
+.p img{aspect-ratio:16/10;object-fit:cover;width:100%}.p .bd{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}.p h3{font-size:21px}.p p{margin:0;color:var(--mu);font-size:15px}
+.p .rw{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:8px}.p b{font-size:20px}.p button{background:var(--rd);color:#fff;border:0;border-radius:12px;padding:9px 14px;font:inherit;font-weight:700;cursor:pointer}
+.tg{font-size:12px;font-weight:700;border-radius:6px;padding:1px 7px;background:#E5F4F2;color:var(--gn);align-self:flex-start}.tg.hot{background:#FDE7E7;color:var(--rd)}
+.faq details{border-bottom:2px solid var(--ln);padding:14px 0}.faq summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none}.faq summary::-webkit-details-marker{display:none}.faq p{color:var(--mu);margin:8px 0 0}
+footer{background:var(--bk);color:#BFB3A8;padding:36px 0;font-size:15px}.ft{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}footer a{color:var(--yl)}
+.dr{position:fixed;top:0;right:0;bottom:0;width:min(380px,100%);background:#fff;z-index:60;transform:translateX(100%);transition:.3s;display:flex;flex-direction:column;box-shadow:-10px 0 30px rgba(0,0,0,.2)}.dr.open{transform:none}
+.dr .h{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:2px solid var(--ln)}.dr .h button{border:0;background:none;font-size:26px;cursor:pointer}.dr .it{flex:1;overflow:auto;padding:8px 20px}
+.ci{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--ln);font-size:15px}.ci button{border:0;background:none;color:var(--rd);cursor:pointer;font:inherit;font-size:13px}.dr .f{padding:18px 20px;border-top:2px solid var(--ln)}
+@media(max-width:960px){.menu{display:none}.burger{display:block}.menu.open{display:flex;flex-direction:column;position:absolute;top:70px;left:0;right:0;background:var(--rd);padding:18px 20px;gap:12px;margin:0}
+.hg,.bld{grid-template-columns:1fr}.deals,.grid{grid-template-columns:1fr 1fr}.hi{max-width:420px;margin:0 auto}}
+@media(max-width:560px){.deals,.grid{grid-template-columns:1fr}.bld{padding:18px}}
+.hg>*{min-width:0}.hero h1{overflow-wrap:break-word}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<header class="hd"><nav class="wrap nav" aria-label="Main"><a href="#" class="logo">Forno<span>Rapido</span></a><ul class="menu" id="menu"><li><a href="#build">Build a pizza</a></li><li><a href="#menu-sec">Menu</a></li><li><a href="#deals">Deals</a></li><li><a href="#faq">Help</a></li></ul><button class="cart" type="button" id="cb">🛒 £<span id="ct">0.00</span></button><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1"><div class="wrap hg"><div><h1 id="h1">Hot pizza at your door in 30 minutes.</h1><p>Wood-fired Neapolitan pizza made with 48-hour dough, San Marzano tomatoes and fior di latte. Delivered fast, or it's free.</p>
+<form class="chk" id="pc" aria-label="Check delivery time"><label class="skip" for="pcode">Your postcode</label><input id="pcode" placeholder="Enter your postcode, e.g. M1 2AB" autocomplete="postal-code"><button type="submit">Check</button></form><p class="eta" id="eta" aria-live="polite"></p><a href="#build" class="btn btn-r">Build your own pizza</a></div>
+<div class="hi"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjM4IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDA4IiByPSI1NSIgZmlsbD0iaHNsKDIzOCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI0NjkiIHI9IjY3IiBmaWxsPSJoc2woMjYxIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ5OSIgcj0iNzkiIGZpbGw9ImhzbCgyODQgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzY0IiByPSI5MSIgZmlsbD0iaHNsKDMwNyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0NDciIHI9IjEwMyIgZmlsbD0iaHNsKDMzMCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzMzgiIHI9IjExNSIgZmlsbD0iaHNsKDM1MyA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDM0IiByPSIxMjciIGZpbGw9ImhzbCgxNiA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDIzOCAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="900" height="900" fetchpriority="high"></div></div></section>
+<section id="deals" aria-labelledby="d1" style="padding-top:0"><div class="wrap"><h2 id="d1" class="skip">Deals</h2><div class="deals"><div class="deal" style="background:var(--rd)"><h3>2 for Tuesday</h3><p>Buy any large pizza, get a second free. Every Tuesday.</p></div><div class="deal" style="background:var(--gn)"><h3>Family feast £29</h3><p>2 large pizzas, garlic bread, 2 dips and a 1.5 L drink.</p></div><div class="deal" style="background:var(--bk)"><h3>Free delivery</h3><p>On every order over £20 within 3 miles.</p></div></div></div></section>
+<section id="build" aria-labelledby="b1"><div class="wrap"><div class="sh"><h2 id="b1">Build your own</h2><p style="color:var(--mu);margin:0">Tap toppings to add them to your pizza.</p></div><div class="bld">
+<div class="pv" aria-live="polite"><svg viewBox="0 0 300 300" id="pz" role="img" aria-label="Preview of your pizza"></svg><h3 id="pn">Large Neapolitan, Margherita</h3><div class="am">£<span id="pp">11.00</span></div><button class="btn btn-r" type="button" id="padd">Add to order</button></div>
+<div><div class="grp"><b>Size</b><div class="opts" id="sz"><button type="button" aria-pressed="false" data-v="Small" data-p="7" data-r="96">Small<small>10 inch</small></button><button type="button" aria-pressed="false" data-v="Medium" data-p="9" data-r="112">Medium<small>12 inch</small></button><button type="button" aria-pressed="true" data-v="Large" data-p="11" data-r="128">Large<small>14 inch</small></button></div></div>
+<div class="grp"><b>Crust</b><div class="opts" id="cr"><button type="button" aria-pressed="true" data-v="Neapolitan" data-p="0" data-c="#E9B872">Neapolitan</button><button type="button" aria-pressed="false" data-v="Thin and crispy" data-p="0" data-c="#DDA15E">Thin</button><button type="button" aria-pressed="false" data-v="Gluten free" data-p="2" data-c="#E4C590">Gluten free (+£2)</button></div></div>
+<div class="grp"><b>Toppings (£1.20 each)</b><div class="opts" id="tp"><button type="button" aria-pressed="false" data-v="Pepperoni" data-c="#B23A2E" data-s="c">Pepperoni</button><button type="button" aria-pressed="false" data-v="Mushrooms" data-c="#A58B6F" data-s="m">Mushrooms</button><button type="button" aria-pressed="false" data-v="Peppers" data-c="#3A9D4A" data-s="s">Peppers</button><button type="button" aria-pressed="false" data-v="Olives" data-c="#2D2A26" data-s="o">Olives</button><button type="button" aria-pressed="false" data-v="Red onion" data-c="#8E3B8E" data-s="s">Red onion</button><button type="button" aria-pressed="false" data-v="Basil" data-c="#2E8B3E" data-s="l">Basil</button><button type="button" aria-pressed="false" data-v="Chilli" data-c="#E03A1E" data-s="s">Chilli</button><button type="button" aria-pressed="false" data-v="Pineapple" data-c="#F2C94C" data-s="m">Pineapple</button></div></div></div></div></div></section>
+<section id="menu-sec" aria-labelledby="m1"><div class="wrap"><div class="sh"><h2 id="m1">Our pizzas</h2></div><div class="grid" id="grid"></div></div></section>
+<section id="faq" aria-labelledby="f1" style="padding-top:0"><div class="wrap" style="max-width:820px"><h2 id="f1" style="font-size:52px;margin-bottom:10px">Help</h2><div class="faq">
+<details open><summary>How long does pizza delivery take?</summary><p>Most orders arrive in 25 to 35 minutes. If your pizza takes longer than 45 minutes within our delivery area, your next order is free.</p></details>
+<details><summary>Do you have gluten-free pizza?</summary><p>Yes. Our gluten-free base is made in a separate area, but our kitchen uses flour, so it's not suitable for people with coeliac disease.</p></details>
+<details><summary>Can I collect my order?</summary><p>Yes. Choose collection at checkout and your pizza will be ready in about 15 minutes.</p></details></div></div></section>
+</main>
+<footer><div class="wrap ft"><span>© <span id="yr">2026</span> Forno Rapido Pizzeria, 9 Oldham Street, Manchester</span><span>Geometric artwork: MigBits · <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">Free HTML Templates</a></span></div></footer>
+<aside class="dr" id="dr" aria-label="Your order" aria-hidden="true"><div class="h"><h2 style="font-size:30px">Your order</h2><button type="button" id="dx" aria-label="Close order">×</button></div><div class="it" id="it"></div><div class="f"><div style="display:flex;justify-content:space-between;font-weight:700;font-size:19px;margin-bottom:12px"><span>Total</span><span>£<span id="ct2">0.00</span></span></div><button class="btn btn-r" type="button" style="width:100%">Checkout</button></div></aside>
+<script>
+const $=id=>document.getElementById(id);const on=id=>$(id).querySelector('[aria-pressed=true]');let cart=[];
+['sz','cr'].forEach(id=>$(id).onclick=e=>{const b=e.target.closest('button');if(!b)return;$(id).querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));draw()});
+$('tp').onclick=e=>{const b=e.target.closest('button');if(!b)return;b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')!=='true');draw()};
+function draw(){const s=on('sz'),c=on('cr'),T=[...$('tp').querySelectorAll('[aria-pressed=true]')],r=+s.dataset.r;
+let g=`<circle cx="150" cy="150" r="${r+12}" fill="${c.dataset.c}"/><circle cx="150" cy="150" r="${r}" fill="#C8412F"/><circle cx="150" cy="150" r="${r-6}" fill="#F4E3B8" opacity=".85"/>`;
+T.forEach((t,k)=>{for(let i=0;i<9;i++){const a=i*0.7+k*1.3,d=(0.25+((i*37+k*17)%60)/100)*(r-16),x=150+Math.cos(a)*d,y=150+Math.sin(a)*d,col=t.dataset.c;
+g+=t.dataset.s==='c'?`<circle cx="${x}" cy="${y}" r="11" fill="${col}"/>`:t.dataset.s==='o'?`<circle cx="${x}" cy="${y}" r="5" fill="none" stroke="${col}" stroke-width="3"/>`:t.dataset.s==='l'?`<ellipse cx="${x}" cy="${y}" rx="9" ry="5" fill="${col}" transform="rotate(${a*50} ${x} ${y})"/>`:t.dataset.s==='m'?`<path d="M${x-7} ${y}a7 7 0 0 1 14 0z" fill="${col}"/>`:`<rect x="${x-8}" y="${y-2}" width="16" height="4" rx="2" fill="${col}" transform="rotate(${a*60} ${x} ${y})"/>`}});
+$('pz').innerHTML=g;const p=+s.dataset.p+ +c.dataset.p+T.length*1.2;$('pp').textContent=p.toFixed(2);$('pn').textContent=`${s.dataset.v} ${c.dataset.v.toLowerCase()}, ${T.length?T.map(t=>t.dataset.v.toLowerCase()).join(', '):'Margherita'}`}draw();
+function render(){const t=cart.reduce((a,c)=>a+c[1],0);$('ct').textContent=t.toFixed(2);$('ct2').textContent=t.toFixed(2);$('it').innerHTML=cart.length?cart.map((c,i)=>`<div class="ci"><span>${c[0]}</span><span>£${c[1].toFixed(2)} <button type="button" data-rm="${i}">Remove</button></span></div>`).join(''):'<p style="color:var(--mu);text-align:center;padding:40px 0">Your order is empty.</p>'}
+const open=o=>{$('dr').classList.toggle('open',o);$('dr').setAttribute('aria-hidden',!o)};$('cb').onclick=()=>open(true);$('dx').onclick=()=>open(false);
+$('it').onclick=e=>{const b=e.target.closest('[data-rm]');if(!b)return;cart.splice(+b.dataset.rm,1);render()};
+$('padd').onclick=()=>{cart.push([$('pn').textContent,+$('pp').textContent]);render();open(true)};
+const P=[["Margherita","Tomato, fior di latte, basil, olive oil",9.5,"1574071318508-1cdbab80d002","Veggie"],["Diavola","Spicy salami, chilli, mozzarella, honey",12,"1513104890138-7c749659a591","Hot"],["Garden","Peppers, onion, mushrooms, olives",11,"1565299624946-b28f40a0ae38","Veggie"]];
+$('grid').innerHTML=P.map((p,i)=>`<article class="p"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjc1IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjE4NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDI3NSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMzY3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjkyIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI0NTgiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgzMDkgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjUwNCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDMyNiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNTI3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMzQzIDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIzMzgiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgwIDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSIyNDQiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCgxNyA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjc1IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="600" height="375" loading="eager"><div class="bd"><span class="tg ${p[4]==='Hot'?'hot':''}">${p[4]}</span><h3>${p[0]}</h3><p>${p[1]}</p><div class="rw"><b>£${p[2].toFixed(2)}</b><button type="button" data-i="${i}">Add</button></div></div></article>`).join('');
+$('grid').onclick=e=>{const b=e.target.closest('[data-i]');if(!b)return;const p=P[b.dataset.i];cart.push([p[0]+' (large)',p[2]]);render();open(true)};render();
+$('pc').onsubmit=e=>{e.preventDefault();const v=$('pcode').value.trim().toUpperCase();if(!v){$('eta').textContent='Please enter your postcode.';return}
+$('eta').textContent=/^M\d/.test(v)?`🛵 Great news! We deliver to ${v} in about ${22+v.length*2} minutes.`:`Sorry, we don't deliver to ${v} yet. You can still order for collection.`};
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

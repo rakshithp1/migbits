@@ -1,3 +1,5 @@
+import { consolidateTemplateColors } from "./consolidate-template-colors";
+import { customizeTemplatePreviews } from "./customize-template-previews";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { zipSync, strToU8, unzipSync } from "fflate";
 import { shadcnCatalog } from "../catalog/shadcn";
@@ -24,7 +26,7 @@ const json = (p: string, value: unknown) =>
   save(p, JSON.stringify(value, null, 2) + "\n");
 const license = readFileSync("resources/library/LICENSE", "utf8");
 json("catalog/library/original-license.json", { text: license });
-const list: LibraryResource[] = [];
+let list: LibraryResource[] = [];
 const curation: { retainedIds: string[] } = read(
   "catalog/library/curation.json",
 );
@@ -344,6 +346,7 @@ for (const tested of archiveValidation) {
   if (!upstream || upstream.license !== "MIT")
     throw Error("Unreviewed promotion " + tested.id);
   const shader = upstream.source === "shaders";
+  if (shader && !read("catalog/library/shader-presentation-policy.json").retained.includes(upstream.id.replace("shaders--", ""))) continue;
   list.push({
     id: upstream.id,
     name: upstream.name,
@@ -366,7 +369,7 @@ for (const tested of archiveValidation) {
       "Original upstream source is preserved in the source download; Migbits preview fixtures and standalone styling are separate adaptations.",
       `Download the original source and supporting engine or collection files: /imported/${upstream.source}/support.zip . Preserve all copyright and license notices.`,
       shader
-        ? "Requires WebGPU. The preview starts paused; choose Play animation to animate. Supply a static fallback on unsupported devices. This definition needs the upstream engine; it is not a standalone React component."
+        ? "Requires WebGPU. The preview starts automatically when motion is allowed. Supply a static fallback on unsupported devices. This definition needs the upstream engine; it is not a standalone React component."
         : "Use the included registry definition in a separate React/Tailwind project. Apply its CSS, variables and registry dependencies; review keyboard interaction, contrast and reduced motion in your app.",
     ],
   });
@@ -478,6 +481,8 @@ for (const item of list) {
     throw Error("Missing download " + item.id);
 }
 list.push(...buildVisualLibrary());
+list = consolidateTemplateColors(list);
+customizeTemplatePreviews(list);
 const libraryErrors = validateLibrary(list);
 if (libraryErrors.length) throw Error(libraryErrors.join("\n"));
 json("catalog/library/resources.json", list);

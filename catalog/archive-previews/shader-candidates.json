@@ -1,7 +1,7 @@
 [
   {
     "id": "shaders--angularblur",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--angularblur.png",
     "definition": "AngularBlur",
     "preset": {
@@ -24,11 +24,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--angularblur.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--arc",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--arc.png",
     "definition": "Arc",
     "preset": {
@@ -51,11 +51,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--arc.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--ascii",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--ascii.png",
     "definition": "Ascii",
     "preset": {
@@ -78,7 +78,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--ascii.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--aurora",
@@ -109,7 +109,7 @@
   },
   {
     "id": "shaders--barshift",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--barshift.png",
     "definition": "BarShift",
     "preset": {
@@ -132,11 +132,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--barshift.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--barndoors",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--barndoors.png",
     "definition": "BarnDoors",
     "preset": {
@@ -159,11 +159,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--barndoors.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--beam",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--beam.png",
     "definition": "Beam",
     "preset": {
@@ -186,11 +186,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--beam.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--bend",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--bend.png",
     "definition": "Bend",
     "preset": {
@@ -213,11 +213,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--bend.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--blob",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--blob.png",
     "definition": "Blob",
     "preset": {
@@ -240,11 +240,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--blob.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--blockdissolve",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--blockdissolve.png",
     "definition": "BlockDissolve",
     "preset": {
@@ -267,11 +267,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--blockdissolve.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--blocknoise",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--blocknoise.png",
     "definition": "BlockNoise",
     "preset": {
@@ -294,11 +294,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--blocknoise.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--bluenoise",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--bluenoise.png",
     "definition": "BlueNoise",
     "preset": {
@@ -321,11 +321,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--bluenoise.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--blur",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--blur.png",
     "definition": "Blur",
     "preset": {
@@ -348,7 +348,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--blur.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--boids",
@@ -379,7 +379,7 @@
   },
   {
     "id": "shaders--bokehblur",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--bokehblur.png",
     "definition": "BokehBlur",
     "preset": {
@@ -402,11 +402,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--bokehblur.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--brickpattern",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--brickpattern.png",
     "definition": "BrickPattern",
     "preset": {
@@ -429,11 +429,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--brickpattern.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--brightnesscontrast",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--brightnesscontrast.png",
     "definition": "BrightnessContrast",
     "preset": {
@@ -456,7 +456,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--brushedmetal",
@@ -487,7 +487,7 @@
   },
   {
     "id": "shaders--bulge",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--bulge.png",
     "definition": "Bulge",
     "preset": {
@@ -510,11 +510,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--bulge.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--carbonfiber",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--carbonfiber.png",
     "definition": "CarbonFiber",
     "preset": {
@@ -537,11 +537,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--carbonfiber.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--chalkboard",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--chalkboard.png",
     "definition": "Chalkboard",
     "preset": {
@@ -564,11 +564,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--chalkboard.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--channelblur",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--channelblur.png",
     "definition": "ChannelBlur",
     "preset": {
@@ -591,11 +591,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--channelblur.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--checkerwipe",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--checkerwipe.png",
     "definition": "CheckerWipe",
     "preset": {
@@ -618,11 +618,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--checkerwipe.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--checkerboard",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--checkerboard.png",
     "definition": "Checkerboard",
     "preset": {
@@ -645,11 +645,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--checkerboard.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--chevron",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--chevron.png",
     "definition": "Chevron",
     "preset": {
@@ -672,16 +672,16 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--chevron.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--chromaflow",
-    "status": "blocked",
-    "reason": "Transparent output: a different input or configuration is required"
+    "status": "excluded",
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--chromaticaberration",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--chromaticaberration.png",
     "definition": "ChromaticAberration",
     "preset": {
@@ -704,7 +704,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--chromaticaberration.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--chrome",
@@ -735,7 +735,7 @@
   },
   {
     "id": "shaders--circle",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--circle.png",
     "definition": "Circle",
     "preset": {
@@ -758,11 +758,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--circle.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--colorwheel",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--colorwheel.png",
     "definition": "ColorWheel",
     "preset": {
@@ -785,11 +785,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--colorwheel.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--compressionartifacts",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--compressionartifacts.png",
     "definition": "CompressionArtifacts",
     "preset": {
@@ -812,11 +812,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--compressionartifacts.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--concentricspin",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--concentricspin.png",
     "definition": "ConcentricSpin",
     "preset": {
@@ -839,11 +839,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--concentricspin.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--conicgradient",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--conicgradient.png",
     "definition": "ConicGradient",
     "preset": {
@@ -866,11 +866,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--conicgradient.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--contourlines",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--contourlines.png",
     "definition": "ContourLines",
     "preset": {
@@ -893,11 +893,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--contourlines.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--cornerpin",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--cornerpin.png",
     "definition": "CornerPin",
     "preset": {
@@ -920,11 +920,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--crescent",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--crescent.png",
     "definition": "Crescent",
     "preset": {
@@ -947,11 +947,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--crescent.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--cross",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--cross.png",
     "definition": "Cross",
     "preset": {
@@ -974,11 +974,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--cross.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--crtscreen",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--crtscreen.png",
     "definition": "CRTScreen",
     "preset": {
@@ -1001,11 +1001,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--crtscreen.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--crystal",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--crystal.png",
     "definition": "Crystal",
     "preset": {
@@ -1028,11 +1028,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--crystal.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--curlnoise",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--curlnoise.png",
     "definition": "CurlNoise",
     "preset": {
@@ -1055,11 +1055,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--curlnoise.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--cursorripples",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--cursorripples.png",
     "definition": "CursorRipples",
     "preset": {
@@ -1082,16 +1082,16 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--cursortrail",
-    "status": "blocked",
-    "reason": "Transparent output: a different input or configuration is required"
+    "status": "excluded",
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--datamosh",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--datamosh.png",
     "definition": "DataMosh",
     "preset": {
@@ -1114,11 +1114,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--datamosh.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--diamondgradient",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--diamondgradient.png",
     "definition": "DiamondGradient",
     "preset": {
@@ -1141,11 +1141,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--diamondgradient.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--diamondwipe",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--diamondwipe.png",
     "definition": "DiamondWipe",
     "preset": {
@@ -1168,11 +1168,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--diamondwipe.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--diffuseblur",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--diffuseblur.png",
     "definition": "DiffuseBlur",
     "preset": {
@@ -1195,11 +1195,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--diffuseblur.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--displacementmap",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--displacementmap.png",
     "definition": "DisplacementMap",
     "preset": {
@@ -1222,11 +1222,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--dither",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--dither.png",
     "definition": "Dither",
     "preset": {
@@ -1249,11 +1249,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--dither.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--dotgrid",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--dotgrid.png",
     "definition": "DotGrid",
     "preset": {
@@ -1276,11 +1276,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--dotgrid.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--dropshadow",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--dropshadow.png",
     "definition": "DropShadow",
     "preset": {
@@ -1303,11 +1303,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--duotone",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--duotone.png",
     "definition": "Duotone",
     "preset": {
@@ -1330,11 +1330,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--duotone.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--ellipse",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--ellipse.png",
     "definition": "Ellipse",
     "preset": {
@@ -1357,11 +1357,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--ellipse.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--emboss",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--emboss.png",
     "definition": "Emboss",
     "preset": {
@@ -1384,11 +1384,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--emboss.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--engraving",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--engraving.png",
     "definition": "Engraving",
     "preset": {
@@ -1411,11 +1411,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--engraving.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--erosionnoise",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--erosionnoise.png",
     "definition": "ErosionNoise",
     "preset": {
@@ -1438,11 +1438,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--erosionnoise.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--exposure",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--exposure.png",
     "definition": "Exposure",
     "preset": {
@@ -1465,7 +1465,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--fallinglines",
@@ -1496,7 +1496,7 @@
   },
   {
     "id": "shaders--filmgrain",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--filmgrain.png",
     "definition": "FilmGrain",
     "preset": {
@@ -1519,11 +1519,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--filmgrain.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--filmstock",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--filmstock.png",
     "definition": "FilmStock",
     "preset": {
@@ -1546,11 +1546,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--filmstock.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--flip",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--flip.png",
     "definition": "Flip",
     "preset": {
@@ -1573,11 +1573,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--floatingparticles",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--floatingparticles.png",
     "definition": "FloatingParticles",
     "preset": {
@@ -1600,11 +1600,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--floatingparticles.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--flowfield",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--flowfield.png",
     "definition": "FlowField",
     "preset": {
@@ -1627,11 +1627,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--flowfield.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--flower",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--flower.png",
     "definition": "Flower",
     "preset": {
@@ -1654,7 +1654,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--flower.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--flowinggradient",
@@ -1685,7 +1685,7 @@
   },
   {
     "id": "shaders--flutedglass",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--flutedglass.png",
     "definition": "FlutedGlass",
     "preset": {
@@ -1708,11 +1708,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--flutedglass.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--fog",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--fog.png",
     "definition": "Fog",
     "preset": {
@@ -1735,7 +1735,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--fog.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--form3d",
@@ -1766,7 +1766,7 @@
   },
   {
     "id": "shaders--fractalnoise",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--fractalnoise.png",
     "definition": "FractalNoise",
     "preset": {
@@ -1789,7 +1789,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--fractalnoise.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--frost",
@@ -1820,7 +1820,7 @@
   },
   {
     "id": "shaders--gabornoise",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--gabornoise.png",
     "definition": "GaborNoise",
     "preset": {
@@ -1843,11 +1843,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--gabornoise.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--glass",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--glass.png",
     "definition": "Glass",
     "preset": {
@@ -1870,11 +1870,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--glass.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--glasstiles",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--glasstiles.png",
     "definition": "GlassTiles",
     "preset": {
@@ -1897,11 +1897,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--glasstiles.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--glitch",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--glitch.png",
     "definition": "Glitch",
     "preset": {
@@ -1924,11 +1924,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--glow",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--glow.png",
     "definition": "Glow",
     "preset": {
@@ -1951,7 +1951,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--glow.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--godrays",
@@ -2009,7 +2009,7 @@
   },
   {
     "id": "shaders--gradientmap",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--gradientmap.png",
     "definition": "GradientMap",
     "preset": {
@@ -2032,11 +2032,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--gradientmap.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--grayscale",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--grayscale.png",
     "definition": "Grayscale",
     "preset": {
@@ -2059,11 +2059,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--grayscale.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--grid",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--grid.png",
     "definition": "Grid",
     "preset": {
@@ -2086,11 +2086,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--grid.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--griddistortion",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--griddistortion.png",
     "definition": "GridDistortion",
     "preset": {
@@ -2113,11 +2113,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--group",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--group.png",
     "definition": "Group",
     "preset": {
@@ -2140,11 +2140,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--halftone",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--halftone.png",
     "definition": "Halftone",
     "preset": {
@@ -2167,11 +2167,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--halftone.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--heart",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--heart.png",
     "definition": "Heart",
     "preset": {
@@ -2194,7 +2194,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--heart.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--heatmap",
@@ -2225,7 +2225,7 @@
   },
   {
     "id": "shaders--hexgrid",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--hexgrid.png",
     "definition": "HexGrid",
     "preset": {
@@ -2248,7 +2248,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--hexgrid.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--hologram",
@@ -2306,12 +2306,12 @@
   },
   {
     "id": "shaders--htmlincanvas",
-    "status": "blocked",
-    "reason": "Transparent output: a different input or configuration is required"
+    "status": "excluded",
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--hueshift",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--hueshift.png",
     "definition": "HueShift",
     "preset": {
@@ -2334,21 +2334,21 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--imagetexture",
-    "status": "blocked",
-    "reason": "Transparent output: a different input or configuration is required"
+    "status": "excluded",
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--inkflow",
-    "status": "blocked",
-    "reason": "Transparent output: a different input or configuration is required"
+    "status": "excluded",
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--invert",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--invert.png",
     "definition": "Invert",
     "preset": {
@@ -2371,11 +2371,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--invert.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--iriswipe",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--iriswipe.png",
     "definition": "IrisWipe",
     "preset": {
@@ -2398,11 +2398,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--iriswipe.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--irradiance",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--irradiance.png",
     "definition": "Irradiance",
     "preset": {
@@ -2425,11 +2425,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--irradiance.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--isometriccubes",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--isometriccubes.png",
     "definition": "IsometricCubes",
     "preset": {
@@ -2452,11 +2452,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--isometriccubes.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--kaleidoscope",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--kaleidoscope.png",
     "definition": "Kaleidoscope",
     "preset": {
@@ -2479,11 +2479,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--kaleidoscope.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--keyframes",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--keyframes.png",
     "definition": "KeyFrames",
     "preset": {
@@ -2506,11 +2506,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--keyframes.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--lensdistortion",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--lensdistortion.png",
     "definition": "LensDistortion",
     "preset": {
@@ -2533,7 +2533,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--lensdistortion.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--lensflare",
@@ -2591,7 +2591,7 @@
   },
   {
     "id": "shaders--lightleak",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--lightleak.png",
     "definition": "LightLeak",
     "preset": {
@@ -2614,11 +2614,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--lightleak.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--line",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--line.png",
     "definition": "Line",
     "preset": {
@@ -2641,11 +2641,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--line.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--linearblur",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--linearblur.png",
     "definition": "LinearBlur",
     "preset": {
@@ -2668,11 +2668,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--linearblur.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--lineargradient",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--lineargradient.png",
     "definition": "LinearGradient",
     "preset": {
@@ -2695,11 +2695,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--lineargradient.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--linearwipe",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--linearwipe.png",
     "definition": "LinearWipe",
     "preset": {
@@ -2722,7 +2722,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--linearwipe.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--liquidmetal",
@@ -2753,7 +2753,7 @@
   },
   {
     "id": "shaders--liquify",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--liquify.png",
     "definition": "Liquify",
     "preset": {
@@ -2776,7 +2776,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--magneticfilings",
@@ -2807,7 +2807,7 @@
   },
   {
     "id": "shaders--marble",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--marble.png",
     "definition": "Marble",
     "preset": {
@@ -2830,11 +2830,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--marble.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--meshgradient",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--meshgradient.png",
     "definition": "MeshGradient",
     "preset": {
@@ -2857,11 +2857,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--meshgradient.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--mirror",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--mirror.png",
     "definition": "Mirror",
     "preset": {
@@ -2884,11 +2884,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--mirror.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--multipointgradient",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--multipointgradient.png",
     "definition": "MultiPointGradient",
     "preset": {
@@ -2911,7 +2911,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--multipointgradient.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--nebula",
@@ -2942,7 +2942,7 @@
   },
   {
     "id": "shaders--neon",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--neon.png",
     "definition": "Neon",
     "preset": {
@@ -2965,11 +2965,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--neon.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--noisedissolve",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--noisedissolve.png",
     "definition": "NoiseDissolve",
     "preset": {
@@ -2992,11 +2992,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--noisedissolve.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--objecttracker",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--objecttracker.png",
     "definition": "ObjectTracker",
     "preset": {
@@ -3019,7 +3019,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--objecttracker.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--obsidian",
@@ -3050,7 +3050,7 @@
   },
   {
     "id": "shaders--pagepeel",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--pagepeel.png",
     "definition": "PagePeel",
     "preset": {
@@ -3073,11 +3073,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--pagepeel.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--paper",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--paper.png",
     "definition": "Paper",
     "preset": {
@@ -3100,11 +3100,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--paper.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--parallelogram",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--parallelogram.png",
     "definition": "Parallelogram",
     "preset": {
@@ -3127,11 +3127,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--parallelogram.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--particlefield",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--particlefield.png",
     "definition": "ParticleField",
     "preset": {
@@ -3154,7 +3154,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--particlefield.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--particleflow",
@@ -3212,7 +3212,7 @@
   },
   {
     "id": "shaders--perlinnoise",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--perlinnoise.png",
     "definition": "PerlinNoise",
     "preset": {
@@ -3235,11 +3235,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--perlinnoise.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--perspective",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--perspective.png",
     "definition": "Perspective",
     "preset": {
@@ -3262,11 +3262,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--pixelsort",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--pixelsort.png",
     "definition": "PixelSort",
     "preset": {
@@ -3289,11 +3289,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--pixelsort.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--pixelthrow",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--pixelthrow.png",
     "definition": "PixelThrow",
     "preset": {
@@ -3316,11 +3316,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--pixelate",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--pixelate.png",
     "definition": "Pixelate",
     "preset": {
@@ -3343,7 +3343,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--pixelate.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--plasma",
@@ -3401,7 +3401,7 @@
   },
   {
     "id": "shaders--polarcoordinates",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--polarcoordinates.png",
     "definition": "PolarCoordinates",
     "preset": {
@@ -3424,11 +3424,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--polarcoordinates.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--polygon",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--polygon.png",
     "definition": "Polygon",
     "preset": {
@@ -3451,11 +3451,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--polygon.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--posterize",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--posterize.png",
     "definition": "Posterize",
     "preset": {
@@ -3478,7 +3478,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--posterize.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--prism",
@@ -3509,7 +3509,7 @@
   },
   {
     "id": "shaders--progressiveblur",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--progressiveblur.png",
     "definition": "ProgressiveBlur",
     "preset": {
@@ -3532,11 +3532,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--progressiveblur.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--radialgradient",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--radialgradient.png",
     "definition": "RadialGradient",
     "preset": {
@@ -3559,11 +3559,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--radialgradient.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--radialwipe",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--radialwipe.png",
     "definition": "RadialWipe",
     "preset": {
@@ -3586,11 +3586,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--radialwipe.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--randombars",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--randombars.png",
     "definition": "RandomBars",
     "preset": {
@@ -3613,7 +3613,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--randombars.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--reactiondiffusion",
@@ -3644,7 +3644,7 @@
   },
   {
     "id": "shaders--rectangularcoordinates",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--rectangularcoordinates.png",
     "definition": "RectangularCoordinates",
     "preset": {
@@ -3667,11 +3667,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--rectangularcoordinates.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--reflectiveplane",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--reflectiveplane.png",
     "definition": "ReflectivePlane",
     "preset": {
@@ -3694,11 +3694,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--reflectiveplane.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--repeater",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--repeater.png",
     "definition": "Repeater",
     "preset": {
@@ -3721,11 +3721,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--repeater.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--ring",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--ring.png",
     "definition": "Ring",
     "preset": {
@@ -3748,11 +3748,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--ring.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--ripplewipe",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--ripplewipe.png",
     "definition": "RippleWipe",
     "preset": {
@@ -3775,11 +3775,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--ripplewipe.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--ripples",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--ripples.png",
     "definition": "Ripples",
     "preset": {
@@ -3802,11 +3802,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--ripples.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--roundedrect",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--roundedrect.png",
     "definition": "RoundedRect",
     "preset": {
@@ -3829,7 +3829,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--roundedrect.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--satin",
@@ -3860,7 +3860,7 @@
   },
   {
     "id": "shaders--saturation",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--saturation.png",
     "definition": "Saturation",
     "preset": {
@@ -3883,11 +3883,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--scratches",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--scratches.png",
     "definition": "Scratches",
     "preset": {
@@ -3910,11 +3910,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--scratches.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--sharpness",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--sharpness.png",
     "definition": "Sharpness",
     "preset": {
@@ -3937,11 +3937,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--shatter",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--shatter.png",
     "definition": "Shatter",
     "preset": {
@@ -3964,11 +3964,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--simplexnoise",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--simplexnoise.png",
     "definition": "SimplexNoise",
     "preset": {
@@ -3991,11 +3991,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--simplexnoise.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--sinewave",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--sinewave.png",
     "definition": "SineWave",
     "preset": {
@@ -4018,11 +4018,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--sinewave.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--slicewipe",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--slicewipe.png",
     "definition": "SliceWipe",
     "preset": {
@@ -4045,11 +4045,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--slicewipe.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--smoke",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--smoke.png",
     "definition": "Smoke",
     "preset": {
@@ -4072,7 +4072,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--smoke.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--smokefill",
@@ -4103,12 +4103,12 @@
   },
   {
     "id": "shaders--smokeflow",
-    "status": "blocked",
-    "reason": "Transparent output: a different input or configuration is required"
+    "status": "excluded",
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--solarize",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--solarize.png",
     "definition": "Solarize",
     "preset": {
@@ -4131,11 +4131,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--solidcolor",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--solidcolor.png",
     "definition": "SolidColor",
     "preset": {
@@ -4158,11 +4158,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--solidcolor.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--sparkle",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--sparkle.png",
     "definition": "Sparkle",
     "preset": {
@@ -4185,11 +4185,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--sparkle.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--spherize",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--spherize.png",
     "definition": "Spherize",
     "preset": {
@@ -4212,11 +4212,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--spherize.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--spiral",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--spiral.png",
     "definition": "Spiral",
     "preset": {
@@ -4239,11 +4239,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--spiral.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--star",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--star.png",
     "definition": "Star",
     "preset": {
@@ -4266,11 +4266,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--star.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--stone",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--stone.png",
     "definition": "Stone",
     "preset": {
@@ -4293,7 +4293,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--stone.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--strands",
@@ -4324,7 +4324,7 @@
   },
   {
     "id": "shaders--stretch",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--stretch.png",
     "definition": "Stretch",
     "preset": {
@@ -4347,11 +4347,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--stretch.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--stripes",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--stripes.png",
     "definition": "Stripes",
     "preset": {
@@ -4374,11 +4374,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--stripes.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--studiobackground",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--studiobackground.png",
     "definition": "StudioBackground",
     "preset": {
@@ -4401,11 +4401,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--studiobackground.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--sunburst",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--sunburst.png",
     "definition": "SunBurst",
     "preset": {
@@ -4428,11 +4428,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--sunburst.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--surface3d",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--surface3d.png",
     "definition": "Surface3D",
     "preset": {
@@ -4455,11 +4455,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--surface3d.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--swirl",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--swirl.png",
     "definition": "Swirl",
     "preset": {
@@ -4482,11 +4482,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--swirl.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--teardrop",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--teardrop.png",
     "definition": "Teardrop",
     "preset": {
@@ -4509,11 +4509,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--teardrop.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--text",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--text.png",
     "definition": "Text",
     "preset": {
@@ -4536,7 +4536,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--text.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--thinfilm",
@@ -4567,7 +4567,7 @@
   },
   {
     "id": "shaders--tiltshift",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--tiltshift.png",
     "definition": "TiltShift",
     "preset": {
@@ -4590,11 +4590,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--tiltshift.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--timetrail",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--timetrail.png",
     "definition": "TimeTrail",
     "preset": {
@@ -4617,11 +4617,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--timetrail.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--tint",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--tint.png",
     "definition": "Tint",
     "preset": {
@@ -4644,11 +4644,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--tint.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--trapezoid",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--trapezoid.png",
     "definition": "Trapezoid",
     "preset": {
@@ -4671,11 +4671,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--trapezoid.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--triangulargrid",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--triangulargrid.png",
     "definition": "TriangularGrid",
     "preset": {
@@ -4698,11 +4698,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--triangulargrid.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--tritone",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--tritone.png",
     "definition": "Tritone",
     "preset": {
@@ -4725,11 +4725,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--tritone.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--truchet",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--truchet.png",
     "definition": "Truchet",
     "preset": {
@@ -4752,11 +4752,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--truchet.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--twirl",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--twirl.png",
     "definition": "Twirl",
     "preset": {
@@ -4779,11 +4779,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--twirl.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--venetianblinds",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--venetianblinds.png",
     "definition": "VenetianBlinds",
     "preset": {
@@ -4806,11 +4806,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--venetianblinds.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--vesica",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--vesica.png",
     "definition": "Vesica",
     "preset": {
@@ -4833,11 +4833,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--vesica.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--vhs",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--vhs.png",
     "definition": "VHS",
     "preset": {
@@ -4860,11 +4860,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--vhs.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--vibrance",
-    "status": "blocked",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--vibrance.png",
     "definition": "Vibrance",
     "preset": {
@@ -4887,16 +4887,16 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "reason": "Neutral default produces an identical checkerboard; needs a meaningful effect preset before promotion."
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--videotexture",
-    "status": "blocked",
-    "reason": "Transparent output: a different input or configuration is required"
+    "status": "excluded",
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--vignette",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--vignette.png",
     "definition": "Vignette",
     "preset": {
@@ -4919,11 +4919,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--vignette.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--voronoi",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--voronoi.png",
     "definition": "Voronoi",
     "preset": {
@@ -4946,11 +4946,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--voronoi.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--voxels",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--voxels.png",
     "definition": "Voxels",
     "preset": {
@@ -4973,7 +4973,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--voxels.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--water",
@@ -5004,7 +5004,7 @@
   },
   {
     "id": "shaders--watercolor",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--watercolor.png",
     "definition": "Watercolor",
     "preset": {
@@ -5027,11 +5027,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--watercolor.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--wavedistortion",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--wavedistortion.png",
     "definition": "WaveDistortion",
     "preset": {
@@ -5054,7 +5054,7 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--wavedistortion.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--waveform",
@@ -5085,7 +5085,7 @@
   },
   {
     "id": "shaders--waveletnoise",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--waveletnoise.png",
     "definition": "WaveletNoise",
     "preset": {
@@ -5108,11 +5108,11 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--waveletnoise.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--weave",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--weave.png",
     "definition": "Weave",
     "preset": {
@@ -5135,16 +5135,16 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--weave.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--webcamtexture",
-    "status": "blocked",
-    "reason": "Transparent output: a different input or configuration is required"
+    "status": "excluded",
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--wool",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--wool.png",
     "definition": "Wool",
     "preset": {
@@ -5167,16 +5167,16 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--wool.html"
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--worleynoise",
-    "status": "blocked",
-    "reason": "[WebcamTexture] Camera permission denied by user"
+    "status": "excluded",
+    "reason": "Removed by gallery presentation policy"
   },
   {
     "id": "shaders--zoomblur",
-    "status": "compiled",
+    "status": "excluded",
     "thumbnail": "/imported/shaders/thumbnails/shaders--zoomblur.png",
     "definition": "ZoomBlur",
     "preset": {
@@ -5199,6 +5199,6 @@
     },
     "backend": "Native Chromium WebGPU",
     "notes": "Pinned upstream renderer. Five deterministic frames; GPU validation and visible output checked. Full accessibility and cross-device testing remain separate.",
-    "url": "/imported/shaders/previews/shaders--zoomblur.html"
+    "reason": "Removed by gallery presentation policy"
   }
 ]

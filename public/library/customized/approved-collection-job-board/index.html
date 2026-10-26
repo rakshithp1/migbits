@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Job Board Website Template (HTML) | Hireloop</title>
+<meta name="description" content="Free job board template as a single HTML file. Job list with search, location, type, remote and salary filters, a job detail panel, saved jobs and apply form.">
+<meta name="keywords" content="job board template, job listing website HTML free, careers page template, recruitment website template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#2563EB">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--bl:#2563EB;--bl2:#1D4ED8;--am:#F59E0B;--sl:#1E293B;--gr:#5B6576;--pa:#F1F5F9;--ln:#DDE3EC;--f:"Geologica",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}body{margin:0;font-family:var(--f);font-size:17px;line-height:1.6;color:var(--sl);background:var(--pa)}
+img{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{font-weight:700;margin:0;line-height:1.1;letter-spacing:-.015em}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--am);padding:8px;z-index:99}
+:focus-visible{outline:3px solid var(--am);outline-offset:2px}
+.hd{background:#fff;border-bottom:1px solid var(--ln)}.nav{display:flex;justify-content:space-between;align-items:center;height:70px;position:relative}.logo{font-weight:700;font-size:22px;text-decoration:none;color:var(--bl)}
+.menu{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-items:center}.menu a{text-decoration:none}.menu .cta{background:var(--sl);color:#fff;padding:8px 16px;border-radius:10px}
+.burger{display:none;background:none;border:2px solid var(--sl);width:44px;height:40px;border-radius:10px;font-size:20px;cursor:pointer}
+.hero{background:var(--bl);color:#fff;padding:44px 0 90px}.hero h1{font-size:clamp(36px,5vw,62px);max-width:14em}.hero p{color:#D7E3FF;font-size:19px;margin:12px 0 0}
+.sbar{background:#fff;border-radius:16px;padding:12px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:10px;margin-top:-54px;box-shadow:0 20px 40px rgba(30,41,59,.12);position:relative;z-index:2}
+.sbar label{display:block;font-size:13px;color:var(--gr);font-weight:500;margin:0 0 2px 4px}.sbar input,.sbar select{width:100%;font:16px var(--f);padding:11px;border:1px solid var(--ln);border-radius:10px;background:#fff;color:var(--sl)}
+.row{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:18px 0}.row .ck{display:flex;gap:8px;align-items:center}.row .ck input{width:18px;height:18px;accent-color:var(--bl)}.row span.c{margin-left:auto;color:var(--gr)}
+.sv{font:500 15px var(--f);background:#fff;border:1px solid var(--ln);border-radius:30px;padding:7px 14px;cursor:pointer;color:var(--sl)}.sv[aria-pressed=true]{background:var(--sl);color:#fff}
+.jg{display:grid;grid-template-columns:.95fr 1.05fr;gap:20px;align-items:start;padding-bottom:70px}.jg>*{min-width:0}
+.jb{background:#fff;border:2px solid transparent;border-radius:16px;padding:16px 18px;margin-bottom:10px;display:grid;grid-template-columns:48px 1fr auto;gap:14px;align-items:center;cursor:pointer;width:100%;text-align:left;font:inherit;color:inherit}
+.jb[aria-current=true]{border-color:var(--bl)}.lg{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-weight:700;color:#fff}.jb h3{font-size:18px}.jb p{margin:2px 0 0;color:var(--gr);font-size:14px}
+.tg{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.tg span{font-size:12px;background:var(--pa);border-radius:20px;padding:2px 9px}.tg span.r{background:#FEF3C7;color:#92400E}
+.pay{font-weight:700;font-size:15px;white-space:nowrap;text-align:right}.pay small{display:block;font-weight:400;color:var(--gr);font-size:12px}
+.det{background:#fff;border-radius:18px;padding:26px;position:sticky;top:16px}.det .hd2{display:flex;gap:14px;align-items:center}.det h2{font-size:28px}.det .co{color:var(--gr)}
+.det .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}.det .facts div{background:var(--pa);border-radius:12px;padding:10px 12px;font-size:14px;color:var(--gr)}.det .facts b{display:block;color:var(--sl);font-size:16px}
+.det h3{font-size:18px;margin:16px 0 6px}.det ul{padding-left:20px;margin:0}.det li{margin:4px 0}
+.acts{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}.btn{display:inline-block;background:var(--bl);color:#fff;text-decoration:none;font:600 16px var(--f);padding:12px 20px;border-radius:12px;border:0;cursor:pointer}.btn.o{background:#fff;color:var(--sl);border:2px solid var(--ln)}.btn.o[aria-pressed=true]{border-color:var(--am);background:#FEF3C7}
+.apf{margin-top:18px;background:var(--pa);border-radius:14px;padding:16px}.apf label{display:block;font-size:14px;font-weight:500;margin-bottom:4px}.apf input,.apf textarea{width:100%;font:16px var(--f);padding:10px;border:1px solid var(--ln);border-radius:10px;margin-bottom:10px}
+.msg{font-weight:600;color:#15803D;margin:10px 0 0;visibility:hidden}.msg.on{visibility:visible}
+.none{background:#fff;border-radius:16px;padding:24px;text-align:center}
+.emp{background:var(--sl);color:#fff;padding:50px 0}.emp .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.emp h2{font-size:clamp(26px,3.4vw,38px)}.emp img{width:260px;border-radius:16px;aspect-ratio:4/3;object-fit:cover}
+footer{padding:24px 0;font-size:15px;color:var(--gr)}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:960px){.jg{grid-template-columns:1fr}.det{position:static}.sbar{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.burger{display:block}.menu{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:18px 20px;z-index:30}.menu.open{display:flex}.sbar{grid-template-columns:1fr}.jb{grid-template-columns:40px 1fr}.pay{grid-column:2;text-align:left}.det .facts{grid-template-columns:1fr 1fr}.row span.c{margin-left:0}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<header class="hd"><nav class="wrap nav" aria-label="Main"><a href="#" class="logo">hireloop</a><ul class="menu" id="menu"><li><a href="#jobs">Find jobs</a></li><li><a href="#employers">For employers</a></li><li><a href="#employers" class="cta">Post a job</a></li></ul><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1"><div class="wrap"><h1 id="h1">Jobs at small, friendly companies. Salary on every post.</h1><p>1,240 open roles in design, tech, marketing and operations. No recruiters, no ghost jobs.</p></div></section>
+<div class="wrap" id="jobs"><form class="sbar" id="sf" role="search" aria-label="Search jobs"><div><label for="q">Job title or skill</label><input id="q" type="search" placeholder="Designer, Python, sales"></div><div><label for="loc">Location</label><select id="loc"><option value="">Anywhere</option><option>London</option><option>Manchester</option><option>Bristol</option><option>Edinburgh</option></select></div><div><label for="ty">Type</label><select id="ty"><option value="">Any type</option><option>Full time</option><option>Part time</option><option>Contract</option></select></div><div><label for="sal">Salary at least</label><select id="sal"><option value="0">Any</option><option value="35">£35k</option><option value="50">£50k</option><option value="65">£65k</option></select></div></form>
+<div class="row"><label class="ck"><input type="checkbox" id="rem"> Remote only</label><button type="button" class="sv" id="svo" aria-pressed="false">★ Saved (0)</button><span class="c" id="cnt" aria-live="polite"></span></div>
+<div class="jg"><div id="list"></div><aside class="det" id="det" aria-live="polite"></aside></div></div>
+<section class="emp" id="employers" aria-labelledby="e1"><div class="wrap"><div><h2 id="e1">Hiring? Post a job for £149.</h2><p style="color:#CBD5E1;margin:8px 0 18px">Live for 30 days, shared in our weekly email to 48,000 job seekers.</p><a class="btn" href="#employers" style="background:var(--am);color:var(--sl)">Post a job</a></div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjYxIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjI5MSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDI2MSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNDIwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjc4IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI0ODUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyOTUgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjMxNyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDMxMiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNDMzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMzI5IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSI0OTEiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzNDYgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjMyMCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDMgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDI2MSAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="600" height="450" loading="eager"></div></section>
+</main>
+<footer><div class="wrap"><p>© <span id="yr"></span> Hireloop Ltd</p><p><a href="https://unsplash.com">Photos: Unsplash</a> &nbsp;|&nbsp; <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">More free templates</a></p></div></footer>
+<script>
+(()=>{const $=id=>document.getElementById(id);
+const J=[["Product Designer","Bramble Health","London","Full time",true,55,68,"#2563EB","Design the app that helps 200,000 people manage long-term conditions.",["3+ years designing digital products","A portfolio with shipped work","Comfortable testing with real users"],"2 days ago"],["Junior Python Developer","Tidepool Data","Manchester","Full time",false,32,38,"#0EA5E9","Join a team of 6 building data tools for local councils.",["Some Python, from a course or projects","Curious and happy to ask questions","We'll pay for your training"],"Today"],["Marketing Manager","Oak & Ember Coffee","Bristol","Full time",false,45,52,"#B45309","Lead marketing for a coffee roaster with 14 cafés.",["Experience running campaigns end to end","You love writing","Bonus: you know your coffee"],"3 days ago"],["Customer Support Lead","Parcelly","Edinburgh","Full time",true,40,46,"#16A34A","Build and lead a support team of 5.",["2+ years in support","Kind, clear writer","Experience coaching people"],"1 week ago"],["Freelance Illustrator","Little Owl Books","London","Contract",true,30,40,"#DB2777","Illustrate a series of 4 picture books over 6 months.",["Children's book portfolio","Can hit monthly deadlines"],"Yesterday"],["Operations Assistant","Greenline Bikes","Bristol","Part time",false,24,26,"#65A30D","3 days a week helping our shop and warehouse run smoothly.",["Organised and calm","Happy on your feet","Bike knowledge helps"],"4 days ago"],["Senior Frontend Engineer","Ledgerly","London","Full time",true,75,90,"#7C3AED","Lead the frontend for small business accounting software.",["6+ years with JavaScript","Care about accessibility","Experience mentoring"],"Today"],["Data Analyst","Tidepool Data","Manchester","Contract",true,50,60,"#0EA5E9","6-month contract analysing public transport data.",["Strong SQL","Clear charts and easy-to-read reports"],"5 days ago"]];
+let cur=0;const saved=new Set();let so=false,applying=false;
+function list(){const q=$('q').value.trim().toLowerCase(),loc=$('loc').value,ty=$('ty').value,sal=+$('sal').value,rem=$('rem').checked;
+let r=J.map((j,i)=>[j,i]).filter(([j])=>(!q||(j[0]+' '+j[1]+' '+j[9].join(' ')).toLowerCase().includes(q))&&(!loc||j[2]===loc)&&(!ty||j[3]===ty)&&j[6]>=sal&&(!rem||j[4]));if(so)r=r.filter(([j,i])=>saved.has(i));
+$('cnt').textContent=`${r.length} job${r.length===1?'':'s'}`;$('svo').textContent=`★ Saved (${saved.size})`;
+if(r.length&&!r.some(([j,i])=>i===cur))cur=r[0][1];
+$('list').innerHTML=r.length?r.map(([j,i])=>`<button type="button" class="jb" data-i="${i}" aria-current="${i===cur}"><span class="lg" style="background:${j[7]}" aria-hidden="true">${j[1][0]}</span><span><h3>${j[0]}</h3><p>${j[1]}, ${j[2]}</p><span class="tg"><span>${j[3]}</span>${j[4]?'<span class="r">Remote OK</span>':''}<span>${j[10]}</span></span></span><span class="pay">£${j[5]}k to £${j[6]}k<small>per year${j[3]==='Part time'?', pro rata':''}</small></span></button>`).join(''):'<p class="none">No jobs match. Try clearing a filter.</p>';det(r.length>0)}
+function det(show){if(!show){$('det').innerHTML='<p>Pick a job to see the details.</p>';return}const j=J[cur];
+$('det').innerHTML=`<div class="hd2"><span class="lg" style="background:${j[7]}" aria-hidden="true">${j[1][0]}</span><div><h2>${j[0]}</h2><span class="co">${j[1]}</span></div></div><div class="facts"><div><b>£${j[5]}k to £${j[6]}k</b>salary</div><div><b>${j[2]}</b>${j[4]?'or remote':'on site'}</div><div><b>${j[3]}</b>posted ${j[10].toLowerCase()}</div></div><p>${j[8]}</p><h3>You'll be great if you have</h3><ul>${j[9].map(x=>`<li>${x}</li>`).join('')}</ul><div class="acts"><button type="button" class="btn" id="ap">Apply now</button><button type="button" class="btn o" id="sv" aria-pressed="${saved.has(cur)}">${saved.has(cur)?'★ Saved':'☆ Save job'}</button></div>
+<form class="apf" id="apf" ${applying?'':'hidden'} aria-label="Apply for ${j[0]}"><label for="an">Full name</label><input id="an" required autocomplete="name"><label for="ae">Email</label><input id="ae" type="email" required autocomplete="email"><label for="am">Why you? (two or three sentences)</label><textarea id="am" rows="3"></textarea><button class="btn" type="submit">Send application</button></form><p class="msg" id="msg" role="status"></p>`}
+$('list').onclick=e=>{const b=e.target.closest('.jb');if(!b)return;cur=+b.dataset.i;applying=false;list();if(innerWidth<960)$('det').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
+$('det').addEventListener('click',e=>{if(e.target.id==='ap'){applying=true;$('apf').hidden=false;$('an').focus()}if(e.target.id==='sv'){saved.has(cur)?saved.delete(cur):saved.add(cur);list()}});
+$('det').addEventListener('submit',e=>{e.preventDefault();applying=false;$('apf').hidden=true;$('msg').textContent=`Application sent to ${J[cur][1]}. They reply to everyone within 10 working days.`;$('msg').classList.add('on')});
+$('sf').addEventListener('input',list);$('sf').onsubmit=e=>e.preventDefault();$('rem').onchange=list;$('svo').onclick=()=>{so=!so;$('svo').setAttribute('aria-pressed',so);list()};list();
+})();
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

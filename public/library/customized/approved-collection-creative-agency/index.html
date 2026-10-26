@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Creative Agency Website Template (HTML) | Studio Kiln</title>
+<meta name="description" content="Free creative agency website template in one HTML file. Portfolio grid, services, awards, clients, team and a project form. For design studios. Mobile friendly.">
+<meta name="keywords" content="creative agency website template, design studio website template free, branding agency HTML template, portfolio agency template, free HTML template">
+
+
+<meta name="theme-color" content="#1F3BFF">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--blue:#1F3BFF;--blue-d:#0B1470;--pink:#FFD6E0;--pink-d:#FF9FB6;--white:#fff;--paper:#F3F4FF;--text:#141A4A;--muted:#5B6190;
+--display:"Syne",system-ui,sans-serif;--body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;--wrap:1280px}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.65;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}a{color:inherit}p{margin:0 0 1em}
+h1,h2,h3{font-family:var(--display);font-weight:800;margin:0;line-height:.98;letter-spacing:-.03em;color:var(--blue-d)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--pink);padding:10px 14px;z-index:99}
+:focus-visible{outline:3px solid var(--pink-d);outline-offset:3px}
+.site-header{background:var(--blue);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+.logo{font-family:var(--display);font-weight:800;font-size:26px;text-decoration:none;color:#fff;letter-spacing:-.02em}
+.menu{display:flex;gap:34px;list-style:none;margin:0;padding:0}.menu a{text-decoration:none;font-weight:500}.menu a:hover{color:var(--pink)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;font-family:var(--body);font-size:16px;cursor:pointer;transition:background .2s,color .2s}
+.btn-pink{background:var(--pink);color:var(--blue-d)}.btn-pink:hover{background:#fff}
+.btn-blue{background:var(--blue);color:#fff}.btn-blue:hover{background:var(--blue-d)}
+.btn-ghost{border-color:#fff;color:#fff}.btn-ghost:hover{background:#fff;color:var(--blue)}
+.burger{display:none;background:none;border:2px solid #fff;border-radius:999px;padding:8px 12px;cursor:pointer}.burger span{display:block;width:20px;height:2px;background:#fff;margin:4px 0}
+
+.hero{background:var(--blue);color:#dfe4ff;padding:40px 0 0;overflow:hidden}
+.hero h1{color:#fff;font-size:clamp(56px,11vw,188px);line-height:.88}
+.hero h1 span{color:var(--pink);display:block}
+.hero-foot{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end;margin-top:40px;padding-bottom:50px}
+.hero-foot p{font-size:20px;max-width:46ch;margin:0}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.strip{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:14px}
+.strip img{width:100%;height:340px;object-fit:cover;border-radius:24px 24px 0 0}
+
+.clients{background:var(--pink);padding:26px 0}
+.clients .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.clients p{margin:0;font-weight:700;color:var(--blue-d)}
+.clients .row{display:flex;gap:44px;flex-wrap:wrap}.clients .row span{font-family:var(--display);font-weight:700;font-size:22px;color:var(--blue-d)}
+
+section{padding:120px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px;flex-wrap:wrap}
+.head h2{font-size:clamp(44px,6.4vw,96px)}
+.head p{max-width:42ch;color:var(--muted);font-size:18px;margin:0}
+
+.work{display:grid;grid-template-columns:repeat(12,1fr);gap:26px}
+.project{text-decoration:none;display:block}
+.project figure{margin:0;border-radius:26px;overflow:hidden;background:var(--paper)}
+.project img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.project:hover img{transform:scale(1.05)}
+.project .meta{display:flex;justify-content:space-between;gap:12px;margin-top:16px;align-items:baseline}
+.project h3{font-size:30px}
+.project span{color:var(--muted);font-size:15px}
+.p1{grid-column:1/8}.p1 figure{aspect-ratio:4/3}
+.p2{grid-column:8/13;margin-top:120px}.p2 figure{aspect-ratio:4/5}
+.p3{grid-column:1/6}.p3 figure{aspect-ratio:4/5}
+.p4{grid-column:6/13;margin-top:80px}.p4 figure{aspect-ratio:4/3}
+
+.services{background:var(--paper)}
+.svc-list{border-top:2px solid var(--blue-d)}
+.svc-row{display:grid;grid-template-columns:1.1fr 1.4fr .9fr;gap:40px;padding:34px 0;border-bottom:2px solid var(--blue-d);align-items:start}
+.svc-row h3{font-size:clamp(30px,3.4vw,48px)}
+.svc-row p{margin:0;color:var(--muted)}
+.svc-row ul{list-style:none;padding:0;margin:0;font-weight:700;color:var(--blue)}
+.svc-row li{margin-bottom:4px}
+
+.big-quote{background:var(--blue);color:#fff}
+.big-quote blockquote{margin:0}
+.big-quote p{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.2vw,62px);line-height:1.08;letter-spacing:-.02em;max-width:22ch}
+.big-quote cite{font-style:normal;display:flex;align-items:center;gap:14px;color:#dfe4ff}
+.big-quote cite img{width:56px;height:56px;border-radius:50%;object-fit:cover}
+
+.awards table{width:100%;border-collapse:collapse;font-size:18px}
+.awards th{text-align:left;font-size:14px;color:var(--muted);font-weight:700;padding:0 0 12px}
+.awards td{padding:20px 0;border-top:1px solid #D8DBF5}
+.awards td:first-child{font-family:var(--display);font-weight:700;font-size:22px;color:var(--blue-d)}
+.awards td:last-child{text-align:right;color:var(--muted)}
+.tw{overflow-x:auto}
+
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.member img{aspect-ratio:3/4;object-fit:cover;border-radius:22px;width:100%;filter:grayscale(1);transition:filter .3s}
+.member:hover img{filter:none}
+.member h3{font-size:24px;margin-top:14px}.member p{margin:2px 0 0;color:var(--muted);font-size:15px}
+
+.contact{background:var(--pink)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact h2{font-size:clamp(46px,6.4vw,100px)}
+.contact .lead{font-size:19px;margin:24px 0}
+.contact-list a{display:block;font-family:var(--display);font-weight:700;font-size:26px;color:var(--blue);text-decoration:none;margin-bottom:6px}
+form{background:#fff;border-radius:28px;padding:34px}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:6px;color:var(--blue-d)}
+input,select,textarea{width:100%;font:inherit;padding:13px 15px;border:2px solid #D8DBF5;border-radius:14px;margin-bottom:16px;color:var(--text);background:#fff}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue)}
+fieldset{border:0;padding:0;margin:0 0 16px}legend{font-weight:700;font-size:14px;margin-bottom:8px;color:var(--blue-d)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{margin:0;cursor:pointer}
+.opts input{position:absolute;opacity:0;width:1px;height:1px}
+.opts span{display:inline-block;border:2px solid #D8DBF5;border-radius:999px;padding:8px 16px;font-weight:600}
+.opts input:checked+span{background:var(--blue);color:#fff;border-color:var(--blue)}
+.opts input:focus-visible+span{outline:3px solid var(--pink-d)}
+form .btn{width:100%;justify-content:center}
+footer{background:var(--blue-d);color:#b8c0ff;padding:60px 0 30px;font-size:15px}
+.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.foot .logo{font-size:60px}
+footer ul{list-style:none;padding:0;margin:0;display:flex;gap:26px;flex-wrap:wrap}footer a{text-decoration:none}footer a:hover{color:#fff}
+.legal{border-top:1px solid #26308c;padding-top:22px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:1000px){.menu,.nav>.btn{display:none}.burger{display:block}
+.menu.open{display:flex;flex-direction:column;position:absolute;top:84px;left:0;right:0;background:var(--blue);padding:22px 28px 30px;gap:16px;z-index:30}
+.site-header{position:relative}
+.hero-foot,.contact-grid{grid-template-columns:1fr}.hero-actions{justify-content:flex-start}
+.strip{grid-template-columns:1fr 1fr}.strip img:first-child{grid-column:span 2}
+.p1,.p2,.p3,.p4{grid-column:span 12;margin-top:0}
+.svc-row{grid-template-columns:1fr;gap:12px}
+.team-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){body{font-size:16px}section{padding:80px 0}.strip{grid-template-columns:1fr}.strip img{height:240px}.strip img:first-child{grid-column:auto}.strip img:not(:first-child){display:none}.team-grid{grid-template-columns:1fr}.foot .logo{font-size:44px}}
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="#" class="logo">Studio Kiln</a>
+    <ul class="menu" id="menu"><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="#awards">Awards</a></li><li><a href="#team">Studio</a></li></ul>
+    <a href="#contact" class="btn btn-pink">Start a project</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <h1 id="hero-title">We make brands <span>people remember.</span></h1>
+      <div class="hero-foot">
+        <p>Studio Kiln is an independent creative agency in Amsterdam. We design brand identities, websites and campaigns for companies that would rather be loved than ignored.</p>
+        <div class="hero-actions"><a href="#work" class="btn btn-pink">See our work</a><a href="#contact" class="btn btn-ghost">Start a project</a></div>
+      </div>
+      <div class="strip" aria-hidden="false">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTYgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSI0MjYiIHI9IjU1IiBmaWxsPSJoc2woMTYgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iNDc4IiByPSI2NyIgZmlsbD0iaHNsKDM5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjM1NCIgcj0iNzkiIGZpbGw9ImhzbCg2MiA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSI0NDIiIHI9IjkxIiBmaWxsPSJoc2woODUgNjUlIDU1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNzcwIiBjeT0iMzM2IiByPSIxMDMiIGZpbGw9ImhzbCgxMDggNjUlIDYwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iOTMwIiBjeT0iMjgzIiByPSIxMTUiIGZpbGw9ImhzbCgxMzEgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjQwNiIgcj0iMTI3IiBmaWxsPSJoc2woMTU0IDY1JSA3MCUpIiBvcGFjaXR5PSIuOCIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMTYgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="1100" height="680" fetchpriority="high">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjM0IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDY0IiByPSI1NSIgZmlsbD0iaHNsKDIzNCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNDciIHI9IjY3IiBmaWxsPSJoc2woMjU3IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQzOCIgcj0iNzkiIGZpbGw9ImhzbCgyODAgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzM0IiByPSI5MSIgZmlsbD0iaHNsKDMwMyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0MzIiIHI9IjEwMyIgZmlsbD0iaHNsKDMyNiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzMzEiIHI9IjExNSIgZmlsbD0iaHNsKDM0OSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDMwIiByPSIxMjciIGZpbGw9ImhzbCgxMiA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDIzNCAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="700" height="680" loading="eager">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTM5IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjQ4OSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDEzOSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMzE5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMTU2IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI0MzQiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgxNzMgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjQ5MiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDE5MCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMzIxIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjA3IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIyMzUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgyMjQgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjM5MiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDI0MSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMTM5IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="700" height="680" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <div class="clients"><div class="wrap"><p>Clients include</p><div class="row" aria-label="Client names"><span>Oat &amp; Co</span><span>Marlowe</span><span>Pepper &amp; Pine</span><span>Norrland</span><span>Vélo Club</span></div></div></div>
+
+  <section id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="head"><h2 id="work-title">Selected work</h2><p>A few projects from the last two years. Each one started with the same question: what should people feel when they see this?</p></div>
+      <div class="work">
+        <a class="project p1" href="#"><figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjY3IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjM3NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDI2NyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMjYzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjg0IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI0MDYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgzMDEgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjI3OCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDMxOCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNDE0IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMzM1IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSI0ODIiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzNTIgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjMxNiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDkgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDI2NyAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="1100" height="825" loading="eager"></figure><div class="meta"><h3>Norrland Travel</h3><span>App design, brand refresh</span></div></a>
+        <a class="project p2" href="#"><figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzA3IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjM3NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDMwNyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNDYzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMzI0IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI1MDYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgzNDEgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjUyOCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDM1OCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMzM5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMTUgNjAlIDU5JSkiLz48cmVjdCB4PSI3NzUiIHk9IjI0NCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMDUiIHJ4PSIyNyIgZmlsbD0iaHNsKDMyIDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSIxOTciIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCg0OSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMzA3IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="800" height="1000" loading="eager"></figure><div class="meta"><h3>Marlowe Bank</h3><span>Digital product, UX</span></div></a>
+        <a class="project p3" href="#"><figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjY5IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjI5OSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDI2OSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMjI0IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjg2IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIxODciIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgzMDMgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjM2OCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDMyMCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNDU5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMzM3IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSI1MDQiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzNTQgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjMyNyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDExIDYwJSA3MSUpIi8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgyNjkgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="800" height="1000" loading="eager"></figure><div class="meta"><h3>Pepper &amp; Pine</h3><span>Packaging, identity</span></div></a>
+        <a class="project p4" href="#"><figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjg0IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNTE0IiByPSI1NSIgZmlsbD0iaHNsKDI4NCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNzIiIHI9IjY3IiBmaWxsPSJoc2woMzA3IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ1MSIgcj0iNzkiIGZpbGw9ImhzbCgzMzAgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzQwIiByPSI5MSIgZmlsbD0iaHNsKDM1MyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIyODUiIHI9IjEwMyIgZmlsbD0iaHNsKDE2IDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjI1NyIgcj0iMTE1IiBmaWxsPSJoc2woMzkgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjI0MyIgcj0iMTI3IiBmaWxsPSJoc2woNjIgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgyODQgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="1100" height="825" loading="eager"></figure><div class="meta"><h3>Vélo Club</h3><span>E-commerce website</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="head"><h2 id="svc-title">What we do</h2><p>Small senior teams, usually three to five people, working directly with your founders or marketing lead.</p></div>
+      <div class="svc-list">
+        <div class="svc-row"><h3>Brand identity</h3><p>Name, logo, colours, type and a voice that sounds like you. Delivered with brand guidelines your team will actually open.</p><ul><li>Brand strategy</li><li>Logo &amp; visual identity</li><li>Brand guidelines</li></ul></div>
+        <div class="svc-row"><h3>Websites</h3><p>Fast, easy-to-edit websites that look as good on a phone as on a big screen, and turn visitors into customers.</p><ul><li>Web design</li><li>Webflow &amp; Shopify builds</li><li>UX writing</li></ul></div>
+        <div class="svc-row"><h3>Campaigns</h3><p>Launch ideas, social content and short videos with a clear story, made for the platforms your audience uses.</p><ul><li>Campaign concepts</li><li>Social &amp; video content</li><li>Art direction</li></ul></div>
+        <div class="svc-row"><h3>Packaging</h3><p>Boxes, bottles and labels that stand out on a crowded shelf and work for printers and factories.</p><ul><li>Packaging design</li><li>Illustration</li><li>Print production</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="big-quote" aria-label="Client testimonial">
+    <div class="wrap"><blockquote><p>"Kiln gave us a brand our customers talk about. Sales in our first year beat the plan by 40%."</p><cite><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzMxIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjQwMSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDMzMSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMjc1IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMzQ4IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI0MTIiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCg1IDYwJSA0NyUpIi8+PHJlY3QgeD0iNDg1IiB5PSI0ODEiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjU1IiByeD0iMjEiIGZpbGw9ImhzbCgyMiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMzE1IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMzkgNjAlIDU5JSkiLz48cmVjdCB4PSI3NzUiIHk9IjQzMiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMDUiIHJ4PSIyNyIgZmlsbD0iaHNsKDU2IDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSIyOTEiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCg3MyA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMzMxIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="56" height="56" loading="eager"><span><b style="color:#fff">Ines Vermeer</b><br>Founder, Pepper &amp; Pine</span></cite></blockquote></div>
+  </section>
+
+  <section class="awards" id="awards" aria-labelledby="aw-title">
+    <div class="wrap">
+      <div class="head"><h2 id="aw-title">Awards</h2><p>Nice to win. Nicer when the work also sells.</p></div>
+      <div class="tw"><table>
+        <thead><tr><th scope="col">Award</th><th scope="col">Project</th><th scope="col">Year</th></tr></thead>
+        <tbody>
+          <tr><td>D&amp;AD Wood Pencil</td><td>Pepper &amp; Pine packaging</td><td>2025</td></tr>
+          <tr><td>Awwwards Site of the Day</td><td>Vélo Club online store</td><td>2025</td></tr>
+          <tr><td>Dutch Design Award, nominee</td><td>Norrland Travel identity</td><td>2024</td></tr>
+          <tr><td>European Design Award, silver</td><td>Marlowe Bank app</td><td>2024</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section id="team" aria-labelledby="team-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><h2 id="team-title">The studio</h2><p>Eighteen designers, writers and developers in a converted print shop by the canal. Coffee's always on.</p></div>
+      <div class="team-grid">
+        <div class="member"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woNjYgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIyMzYiIHI9IjU1IiBmaWxsPSJoc2woNjYgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iMzgzIiByPSI2NyIgZmlsbD0iaHNsKDg5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjMwNiIgcj0iNzkiIGZpbGw9ImhzbCgxMTIgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMjY4IiByPSI5MSIgZmlsbD0iaHNsKDEzNSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzOTkiIHI9IjEwMyIgZmlsbD0iaHNsKDE1OCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0NjQiIHI9IjExNSIgZmlsbD0iaHNsKDE4MSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzQ3IiByPSIxMjciIGZpbGw9ImhzbCgyMDQgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCg2NiAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="500" height="667" loading="eager"><h3>Femke de Wit</h3><p>Creative director</p></div>
+        <div class="member"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woODYgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIyNTYiIHI9IjU1IiBmaWxsPSJoc2woODYgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iMzkzIiByPSI2NyIgZmlsbD0iaHNsKDEwOSA2NSUgNDUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI0NTAiIGN5PSI0NjEiIHI9Ijc5IiBmaWxsPSJoc2woMTMyIDY1JSA1MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjYxMCIgY3k9IjQ5NSIgcj0iOTEiIGZpbGw9ImhzbCgxNTUgNjUlIDU1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNzcwIiBjeT0iNTEyIiByPSIxMDMiIGZpbGw9ImhzbCgxNzggNjUlIDYwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iOTMwIiBjeT0iNTIxIiByPSIxMTUiIGZpbGw9ImhzbCgyMDEgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjM3NSIgcj0iMTI3IiBmaWxsPSJoc2woMjI0IDY1JSA3MCUpIiBvcGFjaXR5PSIuOCIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woODYgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="500" height="667" loading="eager"><h3>Julian Moss</h3><p>Managing director</p></div>
+        <div class="member"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTc4IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzQ4IiByPSI1NSIgZmlsbD0iaHNsKDE3OCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI0MzkiIHI9IjY3IiBmaWxsPSJoc2woMjAxIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjMzNCIgcj0iNzkiIGZpbGw9ImhzbCgyMjQgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMjgyIiByPSI5MSIgZmlsbD0iaHNsKDI0NyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0MDYiIHI9IjEwMyIgZmlsbD0iaHNsKDI3MCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0NjgiIHI9IjExNSIgZmlsbD0iaHNsKDI5MyA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDk5IiByPSIxMjciIGZpbGw9ImhzbCgzMTYgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxNzggMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="500" height="667" loading="eager"><h3>Zoe Adler</h3><p>Design lead</p></div>
+        <div class="member"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjY4IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzE4IiByPSI1NSIgZmlsbD0iaHNsKDI2OCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI0MjQiIHI9IjY3IiBmaWxsPSJoc2woMjkxIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ3NyIgcj0iNzkiIGZpbGw9ImhzbCgzMTQgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNTAzIiByPSI5MSIgZmlsbD0iaHNsKDMzNyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzNjYiIHI9IjEwMyIgZmlsbD0iaHNsKDAgNjUlIDYwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iOTMwIiBjeT0iMjk4IiByPSIxMTUiIGZpbGw9ImhzbCgyMyA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMjY0IiByPSIxMjciIGZpbGw9ImhzbCg0NiA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDI2OCAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="500" height="667" loading="eager"><h3>Sem Bakker</h3><p>Lead developer</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 id="contact-title">Got a project?</h2>
+        <p class="lead">Tell us a little about it. We reply to every message within two working days, with honest thoughts on timing and budget.</p>
+        <div class="contact-list"><a href="mailto:hello@studiokiln.com">hello@studiokiln.com</a><a href="tel:+31205550147">+31 20 555 0147</a></div>
+        <p style="margin-top:20px">Prinsengracht 212, 1016 HD Amsterdam</p>
+      </div>
+      <formaction="#" method="POST" aria-label="Start a project">
+        <label for="nm">Your name</label><input id="nm" name="name" autocomplete="name" required>
+        <label for="ml">Email</label><input id="ml" name="email" type="email" autocomplete="email" required>
+        <fieldset><legend>What do you need?</legend><div class="opts">
+          <label><input type="checkbox" name="need" value="Brand"><span>Brand</span></label>
+          <label><input type="checkbox" name="need" value="Website"><span>Website</span></label>
+          <label><input type="checkbox" name="need" value="Campaign"><span>Campaign</span></label>
+          <label><input type="checkbox" name="need" value="Packaging"><span>Packaging</span></label>
+        </div></fieldset>
+        <label for="bd">Budget</label><select id="bd" name="budget"><option>Under €20k</option><option>€20k to €50k</option><option>€50k to €100k</option><option>More than €100k</option></select>
+        <label for="ms">Tell us about the project</label><textarea id="ms" name="message" rows="4"></textarea>
+        <button class="btn btn-blue" type="submit">Send project details</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot"><a href="#" class="logo">Studio Kiln</a><ul><li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li><li><a href="https://www.behance.net/" rel="noopener">Behance</a></li><li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div class="legal"><span>© <span id="yr">2026</span> Studio Kiln B.V.</span><span>Geometric artwork: MigBits | Free template from <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">Free HTML Templates</a></span></div>
+  </div>
+</footer>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu');
+b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}));
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

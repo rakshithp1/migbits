@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free HR Dashboard Template (HTML) | Peoplebase</title>
+<meta name="description" content="Free HR and employee management dashboard template in one HTML file. Staff directory with search, leave approvals, headcount chart, attendance and hiring.">
+<meta name="keywords" content="HR dashboard template, employee management dashboard HTML free, HRMS admin template, staff directory template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#7C5CFC">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--vio:#7C5CFC;--vio-d:#6346E6;--vio-l:#F1EDFF;--pink:#FF7EB6;--mint:#2DD4A7;--sun:#FFC24B;--text:#2B2A3D;--muted:#76758A;--line:#ECEAF3;--bg:#F7F6FB;--card:#fff;
+--font:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font);font-size:15px;line-height:1.5;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:inherit}img{display:block;max-width:100%}h1,h2,h3{margin:0;color:#1D1C2E;font-weight:800}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--vio);color:#fff;padding:10px;z-index:99}
+:focus-visible{outline:3px solid var(--vio);outline-offset:2px;border-radius:8px}
+.app{display:grid;grid-template-columns:236px 1fr;min-height:100vh}
+.side{background:var(--card);padding:22px 16px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;border-right:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px;text-decoration:none;padding:0 8px 24px;color:#1D1C2E}
+.brand i{width:32px;height:32px;border-radius:12px;background:var(--vio)}
+.nav-l{list-style:none;padding:0;margin:0}
+.nav-l a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;text-decoration:none;font-weight:700;color:var(--muted);margin-bottom:2px}
+.nav-l a:hover{background:var(--bg);color:var(--text)}.nav-l a.on{background:var(--vio);color:#fff}
+.nav-l span{width:22px;text-align:center}
+.help{margin-top:auto;background:var(--vio-l);border-radius:16px;padding:16px;font-size:14px}.help b{display:block;color:var(--vio-d)}
+.main{min-width:0;padding:24px 28px 40px}
+.top{display:flex;align-items:center;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.menu-btn{display:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer}
+.top h1{font-size:26px;font-weight:900}.top p{margin:2px 0 0;color:var(--muted)}
+.top .r{margin-left:auto;display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:12px;font-weight:800;font-size:14px;border:1px solid var(--line);background:#fff;cursor:pointer;font-family:var(--font);color:var(--text)}
+.btn.pri{background:var(--vio);border-color:var(--vio);color:#fff}
+.top img{width:40px;height:40px;border-radius:12px;object-fit:cover}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
+.kpi{display:flex;gap:14px;align-items:center}
+.kpi .ic{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;font-size:22px;flex:none}
+.kpi small{color:var(--muted);font-weight:700}.kpi .v{font-size:26px;font-weight:900;color:#1D1C2E}
+.kpi .d{font-size:13px;font-weight:700;color:#15A37E}
+.row{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-bottom:14px}
+.row3{display:grid;grid-template-columns:1.6fr 1fr;gap:14px}
+.card-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;flex-wrap:wrap}
+.card h2{font-size:17px}
+.hbars .b{display:grid;grid-template-columns:120px 1fr 40px;gap:10px;align-items:center;margin-bottom:12px;font-size:14px;font-weight:700}
+.hbars .t{height:14px;background:var(--bg);border-radius:8px;overflow:hidden}.hbars .t i{display:block;height:100%;border-radius:8px}
+.leave{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.leave:last-child{border:0}
+.leave img{width:40px;height:40px;border-radius:12px;object-fit:cover}
+.leave div{flex:1;min-width:0}.leave b{display:block;font-size:14px}.leave small{color:var(--muted)}
+.leave .acts{display:flex;gap:6px}
+.leave button{border:0;border-radius:10px;padding:7px 12px;font:inherit;font-weight:800;font-size:13px;cursor:pointer}
+.ok{background:#E3F8F1;color:#15A37E}.no{background:#FFE8F1;color:#D6336C}
+.leave .done{font-size:13px;font-weight:800}
+.att{display:flex;align-items:center;gap:18px}
+.att svg{width:150px;height:150px;flex:none}
+.att ul{list-style:none;padding:0;margin:0;flex:1;font-size:14px}.att li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
+.att li i{display:inline-block;width:10px;height:10px;border-radius:4px;margin-right:8px}
+.dir-h{display:flex;gap:10px;flex-wrap:wrap}
+.dir-h input,.dir-h select{border:1px solid var(--line);background:var(--bg);border-radius:12px;padding:9px 12px;font:inherit;font-size:14px;color:var(--text)}
+.dir-h input{width:200px}
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.person{border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;gap:12px;align-items:center}
+.person img{width:48px;height:48px;border-radius:14px;object-fit:cover}
+.person b{display:block;font-size:14px}.person small{color:var(--muted);display:block}
+.dept{display:inline-block;font-size:11px;font-weight:800;border-radius:6px;padding:1px 7px;margin-top:4px}
+.side-list h2{margin-bottom:10px}
+.cel{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}.cel:last-child{border:0}
+.cel .e{width:38px;height:38px;border-radius:12px;background:var(--vio-l);display:grid;place-items:center;font-size:18px}
+.cel small{display:block;color:var(--muted)}
+.roles{margin-top:16px}.role{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px}.role b{color:var(--vio-d)}
+.foot{color:var(--muted);font-size:13px;margin-top:24px;text-align:center}.foot a{color:var(--vio)}
+@media (max-width:1150px){.kpis{grid-template-columns:1fr 1fr}.row,.row3{grid-template-columns:1fr}.people{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.app{grid-template-columns:1fr}.side{position:fixed;left:0;top:0;width:250px;z-index:30;transform:translateX(-100%);transition:transform .25s}.side.open{transform:none}.menu-btn{display:block}.main{padding:18px 14px}}
+@media (max-width:540px){.kpis,.people{grid-template-columns:1fr}.att{flex-direction:column}.hbars .b{grid-template-columns:90px 1fr 34px}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<div class="app">
+  <aside class="side" id="menu" aria-label="Sidebar">
+    <a href="#" class="brand"><i aria-hidden="true"></i>Peoplebase</a>
+    <ul class="nav-l"><li><a href="#" class="on"><span aria-hidden="true">🏠</span>Dashboard</a></li><li><a href="#"><span aria-hidden="true">👥</span>Employees</a></li><li><a href="#"><span aria-hidden="true">🌴</span>Time off</a></li><li><a href="#"><span aria-hidden="true">⏱️</span>Attendance</a></li><li><a href="#"><span aria-hidden="true">💼</span>Hiring</a></li><li><a href="#"><span aria-hidden="true">💵</span>Payroll</a></li><li><a href="#"><span aria-hidden="true">📈</span>Reviews</a></li><li><a href="#"><span aria-hidden="true">⚙️</span>Settings</a></li></ul>
+    <div class="help"><b>Open enrolment</b>Health plan choices close on 31 October. 42 staff still to choose.</div>
+  </aside>
+  <main class="main" id="main">
+    <div class="top">
+      <button class="menu-btn burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <div><h1>People dashboard</h1><p>Tuesday, 14 October · Brightwell Ltd.</p></div>
+      <div class="r"><button class="btn" type="button">Announcements</button><button class="btn pri" type="button">+ Add employee</button><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjYyIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDkyIiByPSI1NSIgZmlsbD0iaHNsKDI2MiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNjEiIHI9IjY3IiBmaWxsPSJoc2woMjg1IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjI5NSIgcj0iNzkiIGZpbGw9ImhzbCgzMDggNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNDEyIiByPSI5MSIgZmlsbD0iaHNsKDMzMSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzMjEiIHI9IjEwMyIgZmlsbD0iaHNsKDM1NCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIyNzUiIHI9IjExNSIgZmlsbD0iaHNsKDE3IDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSIyNTIiIHI9IjEyNyIgZmlsbD0iaHNsKDQwIDY1JSA3MCUpIiBvcGFjaXR5PSIuOCIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjYyIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="40" height="40"></div>
+    </div>
+    <section class="kpis" aria-label="Key numbers">
+      <div class="card kpi"><span class="ic" style="background:var(--vio-l)" aria-hidden="true">👥</span><div><small>Employees</small><div class="v">248</div><span class="d">+6 this month</span></div></div>
+      <div class="card kpi"><span class="ic" style="background:#E3F8F1" aria-hidden="true">✅</span><div><small>At work today</small><div class="v">221</div><span class="d">89% attendance</span></div></div>
+      <div class="card kpi"><span class="ic" style="background:#FFF4DB" aria-hidden="true">🌴</span><div><small>On leave</small><div class="v">14</div><span class="d" style="color:var(--muted)">3 requests waiting</span></div></div>
+      <div class="card kpi"><span class="ic" style="background:#FFE8F1" aria-hidden="true">💼</span><div><small>Open roles</small><div class="v">9</div><span class="d">86 applicants</span></div></div>
+    </section>
+    <div class="row">
+      <section class="card" aria-labelledby="h-t"><div class="card-h"><h2 id="h-t">Headcount by department</h2><span style="color:var(--muted);font-size:14px">248 people</span></div><div class="hbars" id="hbars"></div></section>
+      <section class="card" aria-labelledby="l-t"><div class="card-h"><h2 id="l-t">Leave requests</h2><span style="color:var(--muted);font-size:14px" id="lcount">3 waiting</span></div><div id="leaves"></div></section>
+    </div>
+    <div class="row3">
+      <section class="card" aria-labelledby="d-t"><div class="card-h"><h2 id="d-t">Employee directory</h2><div class="dir-h"><label class="skip" for="q">Search employees</label><input id="q" placeholder="Search by name or role"><label class="skip" for="dp">Department</label><select id="dp"><option value="">All departments</option><option>Engineering</option><option>Sales</option><option>Marketing</option><option>Support</option><option>Finance</option></select></div></div><div class="people" id="people"></div></section>
+      <div style="display:grid;gap:14px">
+        <section class="card" aria-labelledby="a-t"><div class="card-h"><h2 id="a-t">Attendance today</h2></div><div class="att"><svg viewBox="0 0 42 42" role="img" aria-label="221 present, 14 on leave, 8 remote, 5 absent"><circle cx="21" cy="21" r="15.9" fill="none" stroke="#7C5CFC" stroke-width="6" stroke-dasharray="89 11" stroke-dashoffset="25"/><circle cx="21" cy="21" r="15.9" fill="none" stroke="#FFC24B" stroke-width="6" stroke-dasharray="5.6 94.4" stroke-dashoffset="-64"/><circle cx="21" cy="21" r="15.9" fill="none" stroke="#2DD4A7" stroke-width="6" stroke-dasharray="3.2 96.8" stroke-dashoffset="-69.6"/><circle cx="21" cy="21" r="15.9" fill="none" stroke="#FF7EB6" stroke-width="6" stroke-dasharray="2.2 97.8" stroke-dashoffset="-72.8"/><text x="21" y="22" text-anchor="middle" font-size="7" font-weight="900" fill="#1D1C2E">89%</text><text x="21" y="27" text-anchor="middle" font-size="2.8" fill="#76758A">present</text></svg>
+          <ul><li><span><i style="background:#7C5CFC"></i>In office</span><b>221</b></li><li><span><i style="background:#FFC24B"></i>On leave</span><b>14</b></li><li><span><i style="background:#2DD4A7"></i>Remote</span><b>8</b></li><li><span><i style="background:#FF7EB6"></i>Absent</span><b>5</b></li></ul></div></section>
+        <section class="card side-list" aria-labelledby="c-t"><h2 id="c-t">This week</h2>
+          <div class="cel"><span class="e" aria-hidden="true">🎂</span><span><b>Lena Park</b> turns 30<small>Wednesday</small></span></div>
+          <div class="cel"><span class="e" aria-hidden="true">🎉</span><span><b>Marcus Bell</b>, 5 years at Brightwell<small>Thursday</small></span></div>
+          <div class="cel"><span class="e" aria-hidden="true">👋</span><span><b>3 new starters</b> in Engineering<small>Monday</small></span></div>
+          <div class="roles"><h2 style="margin-bottom:6px">Hiring</h2><div class="role"><span>Senior frontend developer</span><b>24 applicants</b></div><div class="role"><span>Account executive</span><b>31 applicants</b></div><div class="role"><span>Support specialist</span><b>18 applicants</b></div></div></section>
+      </div>
+    </div>
+    <p class="foot">Peoplebase HR dashboard, a <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">free HTML template</a>. Sample data only. Geometric artwork: MigBits. © <span id="yr">2026</span></p>
+  </main>
+</div>
+<script>
+const D=[["Engineering",82,"#7C5CFC"],["Sales",54,"#FF7EB6"],["Support",41,"#2DD4A7"],["Marketing",28,"#FFC24B"],["Finance",18,"#5B8DEF"],["Operations",25,"#A78BFA"]];
+document.getElementById('hbars').innerHTML=D.map(d=>`<div class="b"><span>${d[0]}</span><div class="t"><i style="width:${d[1]/82*100}%;background:${d[2]}"></i></div><span>${d[1]}</span></div>`).join('');
+const L=[["Sam Okoye","Annual leave · 20 to 24 Oct (5 days)","1507003211169-0a1dd7228f2d"],["Grace Liu","Sick leave · 15 Oct (1 day)","1438761681033-6461ffad8d80"],["Tom Becker","Parental leave · from 3 Nov","1500648767791-00dcc994a43e"]];
+let waiting=L.length;const le=document.getElementById('leaves');
+le.innerHTML=L.map((l,i)=>`<div class="leave"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjMwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDYwIiByPSI1NSIgZmlsbD0iaHNsKDIzMCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNDUiIHI9IjY3IiBmaWxsPSJoc2woMjUzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQzNyIgcj0iNzkiIGZpbGw9ImhzbCgyNzYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNDgzIiByPSI5MSIgZmlsbD0iaHNsKDI5OSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzNTYiIHI9IjEwMyIgZmlsbD0iaHNsKDMyMiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0NDMiIHI9IjExNSIgZmlsbD0iaHNsKDM0NSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDg2IiByPSIxMjciIGZpbGw9ImhzbCg4IDY1JSA3MCUpIiBvcGFjaXR5PSIuOCIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjMwIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="40" height="40"><div><b>${l[0]}</b><small>${l[1]}</small></div><div class="acts" id="a${i}"><button class="ok" type="button" data-i="${i}" data-v="Approved">Approve</button><button class="no" type="button" data-i="${i}" data-v="Declined">Decline</button></div></div>`).join('');
+le.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const a=document.getElementById('a'+b.dataset.i);a.innerHTML=`<span class="done" style="color:${b.dataset.v==='Approved'?'#15A37E':'#D6336C'}">${b.dataset.v}</span>`;waiting--;document.getElementById('lcount').textContent=waiting?waiting+' waiting':'All done'});
+const C={Engineering:["#F1EDFF","#6346E6"],Sales:["#FFE8F1","#D6336C"],Marketing:["#FFF4DB","#B7791F"],Support:["#E3F8F1","#15A37E"],Finance:["#E7EEFD","#3B6FD8"]};
+const E=[["Lena Park","Product designer","Engineering","1494790108377-be9c29b29330"],["David Chen","Account executive","Sales","1507003211169-0a1dd7228f2d"],["Emily Hart","Content lead","Marketing","1438761681033-6461ffad8d80"],["Marcus Bell","Support manager","Support","1500648767791-00dcc994a43e"],["Aiko Tanaka","Frontend developer","Engineering","1534528741775-53994a69daeb"],["Ravi Kapoor","Financial analyst","Finance","1506794778202-cad84cf45f1d"],["Sofia Grant","Sales manager","Sales","1544005313-94ddf0286df2"],["Leo Brandt","Backend developer","Engineering","1535713875002-d1d0cf377fde"],["Nina Rossi","Support specialist","Support","1573496359142-b8d87734a5a2"]];
+function dir(){const q=document.getElementById('q').value.toLowerCase(),dp=document.getElementById('dp').value;
+document.getElementById('people').innerHTML=E.filter(e=>(!q||(e[0]+e[1]).toLowerCase().includes(q))&&(!dp||e[2]===dp)).map(e=>`<div class="person"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTI0IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzU0IiByPSI1NSIgZmlsbD0iaHNsKDEyNCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIyOTIiIHI9IjY3IiBmaWxsPSJoc2woMTQ3IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjI2MSIgcj0iNzkiIGZpbGw9ImhzbCgxNzAgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMjQ1IiByPSI5MSIgZmlsbD0iaHNsKDE5MyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzODciIHI9IjEwMyIgZmlsbD0iaHNsKDIxNiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0NTgiIHI9IjExNSIgZmlsbD0iaHNsKDIzOSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzQ0IiByPSIxMjciIGZpbGw9ImhzbCgyNjIgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxMjQgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="48" height="48" loading="eager"><div><b>${e[0]}</b><small>${e[1]}</small><span class="dept" style="background:${C[e[2]][0]};color:${C[e[2]][1]}">${e[2]}</span></div></div>`).join('')||'<p style="color:var(--muted)">No one matches that search.</p>'}
+['q','dp'].forEach(id=>document.getElementById(id).addEventListener('input',dir));dir();
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><style>@media(max-width:480px){.leave{flex-wrap:wrap}.leave .acts{flex-wrap:wrap;max-width:100%}}</style><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

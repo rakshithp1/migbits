@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-27",
+  "resources": 339,
+  "templates": 114,
+  "shaderScenes": 31,
+  "formerlyPublishedShadersRemoved": 140,
+  "individualShaderDownloadsRetired": 169,
+  "verifiedColourOnlyDuplicates": 0,
+  "templateColourOptions": 6,
+  "checks": {
+    "unit": 47,
+    "localBrowser": 8,
+    "isolatedPreview": 145,
+    "lint": "passed",
+    "types": "passed",
+    "cloudflareProductionBuild": "passed"
+  },
+  "ci": "pending",
+  "deployment": "pending"
+}

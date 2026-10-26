@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free SaaS Admin Panel Template (HTML) | Orbit Admin</title>
+<meta name="description" content="Free SaaS admin panel template as a single HTML file. Dark and light mode, MRR chart, users table with search and filters, plans, system health and settings.">
+<meta name="keywords" content="SaaS admin panel template, admin dashboard template dark mode free, user management dashboard HTML, admin template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#0D1117">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--bg:#0D1117;--panel:#161B22;--panel-2:#1F2630;--line:#2A323D;--text:#D6DCE4;--muted:#8B96A5;--head:#F3F6FA;--blue:#58A6FF;--peach:#FFB86B;--grn:#3FB950;--red:#F85149;--vio:#A78BFA;
+--font:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif}
+[data-theme="light"]{--bg:#F4F6F9;--panel:#FFFFFF;--panel-2:#F0F3F7;--line:#E1E6EC;--text:#2A3240;--muted:#6A7483;--head:#111827;--blue:#2563EB;--peach:#EA8A1F;--grn:#16A34A;--red:#DC2626;--vio:#7C3AED}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font);font-size:15px;line-height:1.5;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+a{color:inherit}img{display:block;max-width:100%}h1,h2,h3{margin:0;color:var(--head);font-weight:600}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--blue);color:#fff;padding:10px;z-index:99}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:6px}
+.app{display:grid;grid-template-columns:232px 1fr;min-height:100vh}
+.side{background:var(--panel);border-right:1px solid var(--line);padding:20px 12px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;text-decoration:none;color:var(--head);padding:0 10px 20px}
+.brand i{width:28px;height:28px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px var(--panel),0 0 0 5px var(--peach)}
+.nav-l{list-style:none;padding:0;margin:0}
+.nav-l b{display:block;font-size:11px;letter-spacing:.08em;color:var(--muted);margin:16px 10px 6px;font-weight:600}
+.nav-l a{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--muted);font-weight:500}
+.nav-l a:hover{background:var(--panel-2);color:var(--head)}.nav-l a.on{background:var(--panel-2);color:var(--head);box-shadow:inset 3px 0 0 var(--blue)}
+.nav-l .n{margin-left:auto;font-size:12px;background:var(--panel-2);border:1px solid var(--line);border-radius:999px;padding:0 8px}
+.env{margin-top:auto;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:13px}.env b{color:var(--grn)}
+.main{min-width:0}
+.top{display:flex;align-items:center;gap:12px;padding:14px 24px;border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:10}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--text);cursor:pointer}
+.crumbs{color:var(--muted);font-size:14px}.crumbs b{color:var(--head);font-weight:600}
+.top .r{margin-left:auto;display:flex;gap:10px;align-items:center}
+.cmdk{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--panel-2);border-radius:8px;padding:6px 12px;color:var(--muted);font-size:14px}
+.cmdk kbd{font-family:inherit;border:1px solid var(--line);border-radius:4px;padding:0 6px;font-size:12px}
+.tbtn{background:var(--panel-2);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.top img{width:32px;height:32px;border-radius:50%;object-fit:cover}
+.content{padding:22px 24px 40px}
+.title{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.title h1{font-size:24px}.title p{margin:2px 0 0;color:var(--muted);font-size:14px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:8px;font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--panel-2);color:var(--head);cursor:pointer;font-family:var(--font)}
+.btn.pri{background:var(--blue);border-color:var(--blue);color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.kpi small{color:var(--muted)}.kpi .v{font-size:26px;font-weight:700;color:var(--head);margin:4px 0}
+.kpi .d{font-size:13px;font-weight:600}.g{color:var(--grn)}.rd{color:var(--red)}
+.row{display:grid;grid-template-columns:1.8fr 1fr;gap:14px;margin-bottom:14px}
+.card-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px;flex-wrap:wrap}
+.card h2{font-size:16px}
+#mrr{width:100%;height:230px}
+.plans .p{margin-bottom:14px}
+.stack{display:flex;height:14px;border-radius:7px;overflow:hidden;margin:6px 0 16px}
+.plans .lab{display:flex;justify-content:space-between;font-size:14px;padding:6px 0;border-bottom:1px solid var(--line)}
+.plans .lab i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:8px}
+.health{margin-top:10px}
+.svc{display:flex;justify-content:space-between;align-items:center;padding:7px 0;font-size:14px}
+.svc span:last-child{font-size:13px;font-weight:600}.ok{color:var(--grn)}.warn{color:var(--peach)}
+.users-h{display:flex;gap:10px;flex-wrap:wrap}
+.users-h input,.users-h select{background:var(--panel-2);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:8px 12px;font:inherit;font-size:14px}
+.users-h input{width:220px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:680px;font-size:14px}
+th{text-align:left;color:var(--muted);font-weight:500;padding:10px;border-bottom:1px solid var(--line);font-size:13px}
+td{padding:10px;border-bottom:1px solid var(--line)}
+tr:hover td{background:var(--panel-2)}
+.u{display:flex;align-items:center;gap:10px}.u img{width:30px;height:30px;border-radius:50%;object-fit:cover}.u b{display:block;color:var(--head);font-weight:600}.u small{color:var(--muted)}
+.pill{font-size:12px;font-weight:600;border-radius:999px;padding:2px 9px;border:1px solid var(--line)}
+.pl-Pro{color:var(--blue)}.pl-Business{color:var(--vio)}.pl-Free{color:var(--muted)}
+.st-Active{color:var(--grn)}.st-Trial{color:var(--peach)}.st-Suspended{color:var(--red)}
+.st::before{content:"● "}
+.row3{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.switch{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;gap:12px}
+.switch small{display:block;color:var(--muted)}
+.tg{position:relative;width:40px;height:22px;flex:none}
+.tg input{opacity:0;width:0;height:0}
+.tg span{position:absolute;inset:0;background:var(--line);border-radius:999px;cursor:pointer;transition:.2s}
+.tg span::after{content:"";position:absolute;width:16px;height:16px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.2s}
+.tg input:checked+span{background:var(--blue)}.tg input:checked+span::after{transform:translateX(18px)}
+.tg input:focus-visible+span{outline:2px solid var(--blue);outline-offset:2px}
+.log{list-style:none;padding:0;margin:0;font-size:14px}
+.log li{display:grid;grid-template-columns:70px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.log time{color:var(--muted);font-size:13px}
+.log code{font-size:13px;background:var(--panel-2);padding:1px 6px;border-radius:4px;color:var(--peach)}
+.foot{color:var(--muted);font-size:13px;margin-top:22px;text-align:center}.foot a{color:var(--blue)}
+@media (max-width:1150px){.kpis{grid-template-columns:1fr 1fr}.row,.row3{grid-template-columns:1fr}}
+@media (max-width:860px){.app{grid-template-columns:1fr}.side{position:fixed;left:0;top:0;width:240px;z-index:30;transform:translateX(-100%);transition:transform .25s}.side.open{transform:none}.menu-btn{display:block}.cmdk{display:none}}
+@media (max-width:520px){.kpis{grid-template-columns:1fr}.content{padding:16px 12px}.users-h input{width:100%}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<div class="app">
+  <aside class="side" id="menu" aria-label="Sidebar">
+    <a href="#" class="brand"><i aria-hidden="true"></i>Orbit Admin</a>
+    <ul class="nav-l">
+      <li><b>OVERVIEW</b></li><li><a href="#" class="on">Dashboard</a></li><li><a href="#">Revenue</a></li><li><a href="#">Usage</a></li>
+      <li><b>MANAGE</b></li><li><a href="#">Users <span class="n">4,812</span></a></li><li><a href="#">Teams</a></li><li><a href="#">Plans &amp; billing</a></li><li><a href="#">Support tickets <span class="n">7</span></a></li>
+      <li><b>SYSTEM</b></li><li><a href="#">API keys</a></li><li><a href="#">Audit log</a></li><li><a href="#">Settings</a></li>
+    </ul>
+    <div class="env">Environment<br><b>● Production</b> · v4.12.0</div>
+  </aside>
+  <div class="main">
+    <header class="top">
+      <button class="menu-btn burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <span class="crumbs">Orbit / <b>Dashboard</b></span>
+      <div class="r"><span class="cmdk">Search <kbd>Ctrl K</kbd></span><button class="tbtn" type="button" id="theme" aria-pressed="false">☀ Light mode</button><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjMwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDAwIiByPSI1NSIgZmlsbD0iaHNsKDIzMCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI0NjUiIHI9IjY3IiBmaWxsPSJoc2woMjUzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ5NyIgcj0iNzkiIGZpbGw9ImhzbCgyNzYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzYzIiByPSI5MSIgZmlsbD0iaHNsKDI5OSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0NDYiIHI9IjEwMyIgZmlsbD0iaHNsKDMyMiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzMzgiIHI9IjExNSIgZmlsbD0iaHNsKDM0NSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDM0IiByPSIxMjciIGZpbGw9ImhzbCg4IDY1JSA3MCUpIiBvcGFjaXR5PSIuOCIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjMwIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="32" height="32"></div>
+    </header>
+    <main class="content" id="main">
+      <div class="title"><div><h1>Admin dashboard</h1><p>Updated 2 minutes ago</p></div><div style="display:flex;gap:8px"><button class="btn" type="button">Invite admin</button><button class="btn pri" type="button">+ Create user</button></div></div>
+      <section class="kpis" aria-label="Business numbers">
+        <div class="card kpi"><small>Monthly recurring revenue</small><div class="v">$128,450</div><span class="d g">+6.8% this month</span></div>
+        <div class="card kpi"><small>Active users</small><div class="v">4,812</div><span class="d g">+312 this month</span></div>
+        <div class="card kpi"><small>Trial to paid</small><div class="v">24.6%</div><span class="d g">+1.9 pts</span></div>
+        <div class="card kpi"><small>Churn</small><div class="v">2.1%</div><span class="d rd">+0.3 pts</span></div>
+      </section>
+      <div class="row">
+        <section class="card" aria-labelledby="m-t"><div class="card-h"><h2 id="m-t">MRR growth</h2><span style="color:var(--muted);font-size:13px">Last 12 months</span></div><svg id="mrr" role="img" aria-label="Area chart of monthly recurring revenue growing from 71 to 128 thousand dollars"></svg></section>
+        <section class="card plans" aria-labelledby="p-t"><h2 id="p-t" style="margin-bottom:6px">Customers by plan</h2>
+          <div class="stack" aria-hidden="true"><i style="width:52%;background:var(--muted)"></i><i style="width:36%;background:var(--blue)"></i><i style="width:12%;background:var(--vio)"></i></div>
+          <div class="lab"><span><i style="background:var(--muted)"></i>Free</span><b>2,502</b></div><div class="lab"><span><i style="background:var(--blue)"></i>Pro</span><b>1,732</b></div><div class="lab"><span><i style="background:var(--vio)"></i>Business</span><b>578</b></div>
+          <div class="health"><h2 style="margin:18px 0 6px">System health</h2>
+            <div class="svc"><span>API</span><span class="ok">Operational · 42 ms</span></div><div class="svc"><span>Database</span><span class="ok">Operational</span></div><div class="svc"><span>Email delivery</span><span class="warn">Slow · 2.4 s</span></div><div class="svc"><span>File storage</span><span class="ok">Operational</span></div></div></section>
+      </div>
+      <section class="card" aria-labelledby="u-t"><div class="card-h"><h2 id="u-t">Users</h2><div class="users-h"><label class="skip" for="q">Search users</label><input id="q" placeholder="Search by name or email"><label class="skip" for="fp">Filter by plan</label><select id="fp"><option value="">All plans</option><option>Free</option><option>Pro</option><option>Business</option></select><label class="skip" for="fs">Filter by status</label><select id="fs"><option value="">All statuses</option><option>Active</option><option>Trial</option><option>Suspended</option></select></div></div>
+        <div class="tw"><table><thead><tr><th scope="col">User</th><th scope="col">Plan</th><th scope="col">Status</th><th scope="col">Signed up</th><th scope="col">Last active</th><th scope="col">MRR</th></tr></thead><tbody id="users"></tbody></table></div></section>
+      <div class="row3">
+        <section class="card" aria-labelledby="s-t"><h2 id="s-t" style="margin-bottom:6px">Workspace settings</h2>
+          <div class="switch"><span>Require two-step login<small>For every admin account</small></span><label class="tg"><input type="checkbox" checked aria-label="Require two-step login"><span></span></label></div>
+          <div class="switch"><span>Allow new sign-ups<small>Show the sign-up page</small></span><label class="tg"><input type="checkbox" checked aria-label="Allow new sign-ups"><span></span></label></div>
+          <div class="switch"><span>Maintenance mode<small>Show a notice to all users</small></span><label class="tg"><input type="checkbox" aria-label="Maintenance mode"><span></span></label></div>
+          <div class="switch"><span>Weekly report email<small>Sent every Monday at 8am</small></span><label class="tg"><input type="checkbox" checked aria-label="Weekly report email"><span></span></label></div></section>
+        <section class="card" aria-labelledby="l-t"><h2 id="l-t" style="margin-bottom:6px">Audit log</h2>
+          <ul class="log"><li><time>09:42</time><span><b>Ana</b> changed plan for <code>kestrel-build</code> to Business</span></li><li><time>09:17</time><span><b>System</b> rotated API key <code>sk_live_…8f2a</code></span></li><li><time>08:55</time><span><b>Tom</b> suspended user <code>spam-bot-29</code></span></li><li><time>08:03</time><span><b>Ana</b> exported users list (CSV)</span></li><li><time>Yesterday</time><span><b>System</b> deployed version <code>v4.12.0</code></span></li></ul></section>
+      </div>
+      <p class="foot">Orbit Admin panel, a <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">free HTML template</a>. Sample data only. Geometric artwork: MigBits. © <span id="yr">2026</span></p>
+    </main>
+  </div>
+</div>
+<script>
+const P=["1494790108377-be9c29b29330","1507003211169-0a1dd7228f2d","1438761681033-6461ffad8d80","1472099645785-5658abf4ff4e","1544005313-94ddf0286df2","1506794778202-cad84cf45f1d","1534528741775-53994a69daeb","1535713875002-d1d0cf377fde"];
+const U=[["Lena Park","lena@brightwell.io","Business","Active","12 Mar 2025","2 min ago",490],["Omar Haddad","omar@parcelio.com","Pro","Active","3 Jun 2025","1 hour ago",49],["Grace Liu","grace@lumen.studio","Pro","Trial","8 Oct 2026","Today",0],["Tom Becker","tom@kestrel.build","Business","Active","21 Jan 2024","Yesterday",890],["Nina Rossi","nina@example.com","Free","Active","2 Sep 2026","3 days ago",0],["Sam Okoye","sam@nimbus.health","Pro","Suspended","17 Feb 2025","2 weeks ago",0],["Aiko Tanaka","aiko@marlowe.co","Business","Trial","11 Oct 2026","Today",0],["Leo Grant","leo@oakline.shop","Pro","Active","30 Apr 2025","5 hours ago",98]];
+function users(){const q=document.getElementById('q').value.toLowerCase(),fp=document.getElementById('fp').value,fs=document.getElementById('fs').value;
+const rows=U.map((u,i)=>[u,i]).filter(([u])=>(!q||(u[0]+u[1]).toLowerCase().includes(q))&&(!fp||u[2]===fp)&&(!fs||u[3]===fs));
+document.getElementById('users').innerHTML=rows.map(([u,i])=>`<tr><td><div class="u"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzI2IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDM2IiByPSI1NSIgZmlsbD0iaHNsKDMyNiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzMzMiIHI9IjY3IiBmaWxsPSJoc2woMzQ5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQzMSIgcj0iNzkiIGZpbGw9ImhzbCgxMiA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSIzMzAiIHI9IjkxIiBmaWxsPSJoc2woMzUgNjUlIDU1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNzcwIiBjeT0iMjgwIiByPSIxMDMiIGZpbGw9ImhzbCg1OCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0MDUiIHI9IjExNSIgZmlsbD0iaHNsKDgxIDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSI0NjciIHI9IjEyNyIgZmlsbD0iaHNsKDEwNCA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDMyNiAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="30" height="30"><span><b>${u[0]}</b><small>${u[1]}</small></span></div></td><td><span class="pill pl-${u[2]}">${u[2]}</span></td><td><span class="st st-${u[3]}">${u[3]}</span></td><td>${u[4]}</td><td>${u[5]}</td><td>$${u[6]}</td></tr>`).join('')||'<tr><td colspan="6">No users match these filters.</td></tr>'}
+['q','fp','fs'].forEach(id=>document.getElementById(id).addEventListener('input',users));users();
+const v=[71,74,78,83,87,92,97,103,108,114,121,128],L=["Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct"];
+function chart(){const s=document.getElementById('mrr'),W=s.clientWidth||700,H=230,pl=40,pb=24,mn=60,mx=135,cs=getComputedStyle(document.documentElement),blue=cs.getPropertyValue('--blue').trim(),line=cs.getPropertyValue('--line').trim(),mut=cs.getPropertyValue('--muted').trim();
+const X=i=>pl+i/(v.length-1)*(W-pl-10),Y=x=>H-pb-(x-mn)/(mx-mn)*(H-pb-10);let g=`<defs><linearGradient id="ga" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${blue}" stop-opacity=".35"/><stop offset="1" stop-color="${blue}" stop-opacity="0"/></linearGradient></defs>`;
+for(let j=0;j<=3;j++){const val=mn+(mx-mn)*j/3,y=Y(val);g+=`<line x1="${pl}" x2="${W-10}" y1="${y}" y2="${y}" stroke="${line}"/><text x="${pl-6}" y="${y+4}" text-anchor="end" font-size="11" fill="${mut}">$${Math.round(val)}k</text>`}
+const d=v.map((x,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(x).toFixed(1)).join(' ');
+g+=`<path d="${d} L${X(v.length-1)} ${H-pb} L${pl} ${H-pb}Z" fill="url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzIwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDkwIiByPSI1NSIgZmlsbD0iaHNsKDMyMCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI1MTAiIHI9IjY3IiBmaWxsPSJoc2woMzQzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjUyMCIgcj0iNzkiIGZpbGw9ImhzbCg2IDY1JSA1MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjYxMCIgY3k9IjUyNSIgcj0iOTEiIGZpbGw9ImhzbCgyOSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzNzciIHI9IjEwMyIgZmlsbD0iaHNsKDUyIDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjMwMyIgcj0iMTE1IiBmaWxsPSJoc2woNzUgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjQxNiIgcj0iMTI3IiBmaWxsPSJoc2woOTggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgzMjAgMzUlIDIwJSkiLz48L3N2Zz4=")"/><path d="${d}" fill="none" stroke="${blue}" stroke-width="2.5"/>`;
+v.forEach((x,i)=>{if(i%2===1)g+=`<text x="${X(i)}" y="${H-6}" text-anchor="middle" font-size="11" fill="${mut}">${L[i]}</text>`});
+g+=`<circle cx="${X(11)}" cy="${Y(128)}" r="5" fill="${blue}"/>`;s.setAttribute('viewBox',`0 0 ${W} ${H}`);s.innerHTML=g}
+chart();window.addEventListener('resize',chart);
+const tb=document.getElementById('theme');tb.addEventListener('click',()=>{const l=document.documentElement.dataset.theme==='light';document.documentElement.dataset.theme=l?'dark':'light';tb.textContent=l?'☀ Light mode':'☾ Dark mode';tb.setAttribute('aria-pressed',!l);chart()});
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Developer Portfolio Website Template | Maya Okafor</title>
+<meta name="description" content="Free developer portfolio template as a single HTML file. Projects with tech filters, coding activity chart, skills, work history, copy email button and CV link.">
+<meta name="keywords" content="developer portfolio template, programmer portfolio HTML free, software engineer portfolio website, web developer resume site, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#0E0E10">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--ink:#0E0E10;--tx:#26262B;--mu:#6C6C75;--ln:#E6E6EA;--bg:#FAFAFA;--tl:#0D9488;--tl-l:#E6F5F3;--m:"Fira Code",ui-monospace,monospace;--b:"Figtree",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--b);font-size:18px;line-height:1.65;color:var(--tx);background:var(--bg)}
+img{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{margin:0;line-height:1.1;color:var(--ink);font-weight:800;letter-spacing:-.02em}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--tl);color:#fff;padding:8px;z-index:99}
+:focus-visible{outline:2px solid var(--tl);outline-offset:3px;border-radius:4px}
+.hd{position:sticky;top:0;z-index:40;background:rgba(250,250,250,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--m);font-weight:500;text-decoration:none;color:var(--ink)}.logo span{color:var(--tl)}
+.menu{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-family:var(--m);font-size:15px}.menu a{text-decoration:none}.menu a:hover{color:var(--tl)}
+.burger{display:none;background:none;border:1px solid var(--ln);border-radius:6px;padding:6px 10px;cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:1px solid var(--ink);font-family:var(--b);font-size:16px;cursor:pointer}
+.btn-k{background:var(--ink);color:#fff}.btn-o{background:transparent;color:var(--ink)}
+.hero{padding:80px 0 60px}.av{display:flex;align-items:center;gap:14px;margin-bottom:26px}.av img{width:64px;height:64px;border-radius:50%;object-fit:cover}
+.status{display:inline-flex;align-items:center;gap:8px;font-family:var(--m);font-size:14px;background:var(--tl-l);color:var(--tl);border-radius:999px;padding:4px 12px}.status i{width:8px;height:8px;border-radius:50%;background:var(--tl)}
+.hero h1{font-size:clamp(40px,6vw,74px)}.hero h1 span{color:var(--tl)}.hero p{font-size:21px;color:var(--mu);max-width:48ch;margin:22px 0 28px}
+.ac{display:flex;gap:10px;flex-wrap:wrap}
+.term{margin-top:40px;background:var(--ink);color:#C8C8D0;border-radius:12px;padding:20px 22px;font-family:var(--m);font-size:15px;line-height:1.8}
+.term .p{color:var(--tl)}.term .c{color:#77777F}
+section{padding:70px 0;border-top:1px solid var(--ln)}.sh{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.sh h2{font-size:34px}.sh .k{font-family:var(--m);font-size:14px;color:var(--tl);display:block;margin-bottom:6px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}.chips button{font-family:var(--m);font-size:13px;border:1px solid var(--ln);background:#fff;border-radius:6px;padding:6px 12px;cursor:pointer}.chips button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:18px}.pj{background:#fff;border:1px solid var(--ln);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.pj img{aspect-ratio:16/9;object-fit:cover;width:100%;border-bottom:1px solid var(--ln)}.pj .bd{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pj h3{font-size:21px}.pj p{margin:0;color:var(--mu);font-size:16px}.tags{display:flex;gap:6px;flex-wrap:wrap}.tags span{font-family:var(--m);font-size:12px;background:var(--bg);border:1px solid var(--ln);border-radius:4px;padding:2px 8px}
+.pj .lk{display:flex;gap:16px;margin-top:auto;font-family:var(--m);font-size:14px}.pj .lk a{color:var(--tl)}
+.heat{background:#fff;border:1px solid var(--ln);border-radius:14px;padding:18px;overflow-x:auto}
+.hm{display:grid;grid-template-rows:repeat(7,12px);grid-auto-flow:column;grid-auto-columns:12px;gap:3px;min-width:680px}.hm i{border-radius:2px;background:#EBEDF0}
+.hm .l1{background:#B3E4DE}.hm .l2{background:#5CC7BA}.hm .l3{background:#14A394}.hm .l4{background:#0B6E64}
+.hl{display:flex;justify-content:space-between;font-size:14px;color:var(--mu);margin-top:10px;font-family:var(--m)}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.sk{background:#fff;border:1px solid var(--ln);border-radius:12px;padding:16px}
+.sk h3{font-size:16px;font-family:var(--m);font-weight:500;color:var(--tl);margin-bottom:8px}.sk ul{list-style:none;padding:0;margin:0;font-size:16px}.sk li{display:flex;justify-content:space-between;padding:4px 0}.sk li span{color:var(--mu);font-family:var(--m);font-size:13px}
+.xp{list-style:none;padding:0;margin:0}.xp li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:18px 0;border-bottom:1px dashed var(--ln)}
+.xp time{font-family:var(--m);font-size:14px;color:var(--mu)}.xp h3{font-size:19px}.xp b{color:var(--tl);font-weight:600}.xp p{margin:6px 0 0;color:var(--mu);font-size:16px}
+.ct{background:var(--ink);color:#C8C8D0;border-radius:18px;padding:44px;text-align:center}.ct h2{color:#fff;font-size:clamp(32px,4.4vw,52px)}.ct p{margin:14px auto 22px;max-width:44ch}
+.mail{display:inline-flex;align-items:center;gap:12px;background:#1C1C21;border:1px solid #33333A;border-radius:10px;padding:10px 12px 10px 18px;font-family:var(--m)}
+.mail button{background:var(--tl);color:#fff;border:0;border-radius:6px;padding:7px 12px;font:inherit;font-size:13px;cursor:pointer}
+.soc{display:flex;gap:18px;justify-content:center;margin-top:20px;font-family:var(--m);font-size:15px}.soc a{color:#fff}
+footer{padding:30px 0;font-family:var(--m);font-size:13px;color:var(--mu);text-align:center}
+@media(max-width:760px){.menu{display:none}.burger{display:block}.menu.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--bg);padding:18px 22px;border-bottom:1px solid var(--ln);gap:12px}
+.proj,.skills{grid-template-columns:1fr}.xp li{grid-template-columns:1fr;gap:4px}.ct{padding:30px 20px}.mail{flex-direction:column}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<header class="hd"><nav class="wrap nav" aria-label="Main"><a href="#" class="logo">~/maya<span>.dev</span></a><ul class="menu" id="menu"><li><a href="#work">work</a></li><li><a href="#skills">skills</a></li><li><a href="#experience">experience</a></li><li><a href="#contact">contact</a></li></ul><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></nav></header>
+<main id="main" class="wrap">
+<section class="hero" aria-labelledby="h1" style="border:0">
+<div class="av"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woOTggMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSI1MDgiIHI9IjU1IiBmaWxsPSJoc2woOTggNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iNTE5IiByPSI2NyIgZmlsbD0iaHNsKDEyMSA2NSUgNDUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI0NTAiIGN5PSI1MjQiIHI9Ijc5IiBmaWxsPSJoc2woMTQ0IDY1JSA1MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjYxMCIgY3k9IjUyNyIgcj0iOTEiIGZpbGw9ImhzbCgxNjcgNjUlIDU1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNzcwIiBjeT0iNTI4IiByPSIxMDMiIGZpbGw9ImhzbCgxOTAgNjUlIDYwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iOTMwIiBjeT0iNTI5IiByPSIxMTUiIGZpbGw9ImhzbCgyMTMgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjM3OSIgcj0iMTI3IiBmaWxsPSJoc2woMjM2IDY1JSA3MCUpIiBvcGFjaXR5PSIuOCIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woOTggMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="64" height="64"><span class="status"><i></i>Open to new projects from November</span></div>
+<h1 id="h1">Hi, I'm Maya. I build fast, <span>friendly</span> web apps.</h1>
+<p>Full-stack developer in Berlin with 8 years of experience. I help startups and product teams turn ideas into web apps people enjoy using, from the database to the last pixel.</p>
+<div class="ac"><a href="#work" class="btn btn-k">See my work</a><a href="#" class="btn btn-o">Download CV (PDF)</a></div>
+<div class="term" aria-label="Short summary"><div><span class="p">$</span> whoami</div><div>maya okafor · full-stack developer · berlin</div><div><span class="p">$</span> cat stack.txt</div><div>typescript, react, next.js, node, postgres, aws</div><div class="c"># currently: building a booking platform for 400 clinics</div></div>
+</section>
+<section id="work" aria-labelledby="w1"><div class="sh"><div><span class="k">// selected work</span><h2 id="w1">Projects</h2></div><div class="chips" role="group" aria-label="Filter by technology" id="chips"><button type="button" aria-pressed="true" data-t="all">all</button><button type="button" aria-pressed="false" data-t="React">react</button><button type="button" aria-pressed="false" data-t="Node">node</button><button type="button" aria-pressed="false" data-t="Python">python</button></div></div><div class="proj" id="proj"></div></section>
+<section aria-labelledby="a1"><div class="sh"><div><span class="k">// activity</span><h2 id="a1">1,284 contributions in the last year</h2></div></div><div class="heat"><div class="hm" id="hm" role="img" aria-label="Chart of daily coding activity over the past year"></div><div class="hl"><span>Oct 2025</span><span>Less ▢▣■ More</span><span>Oct 2026</span></div></div></section>
+<section id="skills" aria-labelledby="k1"><div class="sh"><div><span class="k">// toolbox</span><h2 id="k1">Skills</h2></div></div><div class="skills">
+<div class="sk"><h3>frontend</h3><ul><li>TypeScript<span>8 yrs</span></li><li>React / Next.js<span>6 yrs</span></li><li>CSS and design systems<span>8 yrs</span></li><li>Accessibility<span>5 yrs</span></li></ul></div>
+<div class="sk"><h3>backend</h3><ul><li>Node.js<span>7 yrs</span></li><li>PostgreSQL<span>6 yrs</span></li><li>Python / FastAPI<span>3 yrs</span></li><li>GraphQL<span>4 yrs</span></li></ul></div>
+<div class="sk"><h3>ops</h3><ul><li>AWS<span>5 yrs</span></li><li>Docker<span>6 yrs</span></li><li>CI/CD<span>6 yrs</span></li><li>Testing<span>8 yrs</span></li></ul></div></div></section>
+<section id="experience" aria-labelledby="x1"><div class="sh"><div><span class="k">// history</span><h2 id="x1">Experience</h2></div></div><ol class="xp">
+<li><time>2023 to now</time><div><h3>Senior engineer · <b>ClinicFlow</b></h3><p>Lead developer on a booking platform used by 400 clinics. Cut page load time by 62% and rebuilt the design system.</p></div></li>
+<li><time>2020 to 2023</time><div><h3>Full-stack developer · <b>Parcelio</b></h3><p>Built the delivery tracking app from zero to 2 million monthly users. Introduced end-to-end testing.</p></div></li>
+<li><time>2018 to 2020</time><div><h3>Frontend developer · <b>Studio Nord</b></h3><p>Built websites and web apps for 30+ clients in retail, travel and finance.</p></div></li></ol></section>
+<section id="contact" aria-labelledby="c1" style="border:0"><div class="ct"><h2 id="c1">Let's build something together.</h2><p>I take on two or three freelance projects a year, and I'm always happy to talk about full-time roles.</p><div class="mail"><span id="em">hello@maya.dev</span><button type="button" id="cp">Copy email</button></div><div class="soc"><a href="https://github.com/" rel="noopener">GitHub</a><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a><a href="#">Read my blog</a></div></div></section>
+</main>
+<footer>© <span id="yr">2026</span> Maya Okafor · Geometric artwork: MigBits · <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">Free HTML Templates</a></footer>
+<script>
+const P=[["Clinic booking platform","Online booking, reminders and payments for 400 clinics. Next.js front end with a Node API.",["React","Node","Postgres"],"1551288049-bebda4e38f71"],["Parcel tracking app","Live delivery tracking with maps and push updates for 2 million monthly users.",["React","Node"],"1558494949-ef010cbdcc31"],["Price forecasting tool","A Python service that predicts demand for a grocery chain, with a simple dashboard.",["Python","FastAPI"],"1504868584819-f8e8b4b6d7e3"],["Open-source form library","A tiny, accessible form library for React with 3,400 stars on GitHub.",["React","TypeScript"],"1555066931-4365d14bab8c"]];
+const $=id=>document.getElementById(id);
+function proj(t){$('proj').innerHTML=P.filter(p=>t==='all'||p[2].includes(t)||(t==='Python'&&p[2].includes('Python'))).map(p=>`<article class="pj"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjU1IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjI0NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDI1NSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMzk3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjcyIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIyNzMiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyODkgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjQxMSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDMwNiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNDgwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMzIzIDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSI1MTUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzNDAgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjUzMiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDM1NyA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjU1IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="700" height="394" loading="eager"><div class="bd"><h3>${p[0]}</h3><p>${p[1]}</p><div class="tags">${p[2].map(x=>`<span>${x}</span>`).join('')}</div><div class="lk"><a href="#">Live site</a><a href="#">Source code</a></div></div></article>`).join('')}
+$('chips').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('chips').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));proj(b.dataset.t)};proj('all');
+let h='';for(let i=0;i<364;i++){const v=Math.abs(Math.sin(i*1.37)+Math.cos(i*.21))*2.2,wk=i%7>4?0.4:1,l=Math.min(4,Math.floor(v*wk));h+=`<i class="${l?'l'+l:''}"></i>`}$('hm').innerHTML=h;
+$('cp').onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText($('em').textContent);$('cp').textContent='Copied ✓';setTimeout(()=>$('cp').textContent='Copy email',1800)};
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

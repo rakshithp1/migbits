@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Community Center Website Template (HTML) | Maple Street</title>
+<meta name="description" content="Free community centre website template in one HTML file. Programmes by age group, a room hire price calculator, a monthly events calendar and contact.">
+<meta name="keywords" content="community center website template, community centre HTML template free, village hall website, church hall website template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#1D7874">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--tl:#1D7874;--tl2:#155B58;--mr:#B83B2E;--yl:#F4C542;--pt:#EEF5F4;--ink:#1E2A2A;--gr:#566463;--ln:#D8E4E2;--h:"Bitter",Georgia,serif;--b:"Kumbh Sans",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}body{margin:0;font-family:var(--b);font-size:18px;line-height:1.6;color:var(--ink);background:#fff}
+img{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{font-family:var(--h);font-weight:800;margin:0;line-height:1.1}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--yl);padding:8px;z-index:99}
+:focus-visible{outline:3px solid var(--mr);outline-offset:2px}
+.nav{display:flex;justify-content:space-between;align-items:center;height:82px;position:relative}.logo{font-family:var(--h);font-weight:800;font-size:23px;text-decoration:none;display:flex;gap:10px;align-items:center;color:var(--tl2)}
+.menu{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500}.menu a{text-decoration:none}.menu a:hover{color:var(--mr)}
+.burger{display:none;background:none;border:2px solid var(--tl);color:var(--tl);width:44px;height:40px;border-radius:10px;font-size:20px;cursor:pointer}
+.hero{padding:20px 0 70px}.hg{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(42px,5.4vw,72px);color:var(--ink)}.hero h1 span{background:var(--yl);padding:0 8px;border-radius:6px}.hero p{font-size:20px;color:var(--gr);margin:20px 0 26px;max-width:28em}
+.btn{display:inline-block;background:var(--tl);color:#fff;text-decoration:none;font:700 17px var(--b);padding:14px 24px;border-radius:12px;border:0;cursor:pointer}.btn.r{background:var(--mr)}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.ph{position:relative}.ph img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:28px}.open{position:absolute;left:-18px;bottom:24px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 14px 30px rgba(0,0,0,.14);font-size:15px}.open b{display:block;font-size:17px}.open .d{display:inline-block;width:10px;height:10px;border-radius:50%;background:#2E9E5B;margin-right:6px}.open .d.c{background:var(--mr)}
+section{padding:80px 0}.sh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:26px}.sh h2{font-size:clamp(34px,4.4vw,54px)}.sh p{color:var(--gr);margin:6px 0 0;max-width:34em}
+.prog{background:var(--pt)}.chips{display:flex;flex-wrap:wrap;gap:8px}.chips button{font:700 16px var(--b);background:#fff;border:2px solid var(--ln);border-radius:30px;padding:8px 16px;cursor:pointer;color:var(--ink)}.chips button[aria-pressed=true]{background:var(--tl);color:#fff;border-color:var(--tl)}
+.pg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.pc{background:#fff;border-radius:20px;padding:22px;border-top:6px solid var(--tl)}.pc.Kids{border-color:var(--yl)}.pc.Teens{border-color:#6C63FF}.pc.Adults{border-color:var(--tl)}.pc[class*="Over"]{border-color:var(--mr)}
+.pc .ag{font-size:14px;font-weight:700;color:var(--gr)}.pc h3{font-size:23px;margin:6px 0}.pc p{margin:0 0 10px;color:var(--gr);font-size:16px}.pc .w{font-weight:700;font-size:15px}.pc .w span{color:var(--mr)}
+.hire .hg2{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:start}.hire .hg2>div{min-width:0}
+.rooms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:18px}.rooms label{position:relative;cursor:pointer}.rooms input{position:absolute;opacity:0;width:1px;height:1px;left:0;top:0}.rooms span{display:block;border:2px solid var(--ln);border-radius:16px;padding:14px;height:100%}.rooms span b{display:block;font-family:var(--h);font-size:19px}.rooms span small{color:var(--gr);font-size:14px}
+.rooms input:checked+span{border-color:var(--tl);background:var(--pt)}.rooms input:focus-visible+span{outline:3px solid var(--mr)}
+.hf label.l{display:block;font-weight:700;font-size:16px;margin:0 0 6px}.hf input[type=number],.hf input[type=date]{width:100%;font:17px var(--b);padding:11px;border:2px solid var(--ln);border-radius:12px;margin-bottom:14px;color:var(--ink)}
+.ck{display:flex;gap:10px;align-items:flex-start;margin:6px 0;font-size:16px}.ck input{width:20px;height:20px;accent-color:var(--tl);margin-top:3px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fr>div{min-width:0}
+.quote{background:var(--tl2);color:#fff;border-radius:24px;padding:26px;position:sticky;top:16px}.quote h3{font-size:24px}.quote ul{list-style:none;padding:0;margin:14px 0}.quote li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #2E7A76;font-size:16px}
+.quote .t{display:flex;justify-content:space-between;align-items:baseline}.quote .t b{font-family:var(--h);font-size:44px;color:var(--yl)}.quote .btn{background:var(--yl);color:var(--ink);width:100%;text-align:center;margin-top:12px}
+.msg{visibility:hidden;margin:10px 0 0;font-weight:700;font-size:15px}.msg.on{visibility:visible}
+.ev{background:var(--pt)}.mt{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}.mt button{font:700 16px var(--b);background:#fff;border:0;border-radius:12px;padding:10px 16px;cursor:pointer;color:var(--ink)}.mt button[aria-pressed=true]{background:var(--mr);color:#fff}
+.el{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}.el li{background:#fff;border-radius:18px;padding:16px 18px;display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center}
+.el .d{background:var(--yl);border-radius:14px;text-align:center;padding:6px 0;line-height:1.1}.el .d b{display:block;font-family:var(--h);font-size:26px}.el .d span{font-size:13px;font-weight:700}.el h3{font-size:20px}.el p{margin:2px 0 0;font-size:15px;color:var(--gr)}
+.find .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.find img{border-radius:28px;width:100%;aspect-ratio:3/2;object-fit:cover}
+footer{background:var(--tl2);color:#CDE3E1;padding:28px 0;font-size:15px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:980px){.hg,.hire .hg2,.find .wrap{grid-template-columns:1fr}.pg{grid-template-columns:1fr 1fr}.quote{position:static}.open{left:14px}}
+@media (max-width:760px){.burger{display:block}.menu{display:none;position:absolute;top:82px;left:0;right:0;background:#fff;flex-direction:column;padding:18px 22px;z-index:30;box-shadow:0 10px 20px rgba(0,0,0,.06)}.menu.open{display:flex}.pg,.el,.fr{grid-template-columns:1fr}.rooms{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+@media(max-width:760px){.wrap>*{min-width:0}h1,h2{overflow-wrap:anywhere}.imp{grid-template-columns:1fr!important}}</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<header><nav class="wrap nav" aria-label="Main"><a href="#" class="logo"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6l6 12 12-4-6 12 10 6-14 2 2 14-10-8-10 8 2-14-14-2 10-6-6-12 12 4z" fill="#B83B2E"/><path d="M32 40v18" stroke="#1D7874" stroke-width="4"/></svg>Maple Street Community Centre</a>
+<ul class="menu" id="menu"><li><a href="#programmes">What's on</a></li><li><a href="#hire">Hire a room</a></li><li><a href="#events">Events</a></li><li><a href="#find">Find us</a></li></ul><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1"><div class="wrap hg"><div><h1 id="h1">A place for the whole <span>neighbourhood.</span></h1><p>Classes, clubs and a warm café for all ages, run by local people for local people. Most activities are free or pay what you can.</p><div class="row"><a class="btn" href="#programmes">See what's on</a><a class="btn r" href="#hire">Hire a room</a></div></div>
+<div class="ph"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woNzQgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIzNjQiIHI9IjU1IiBmaWxsPSJoc2woNzQgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iNDQ3IiByPSI2NyIgZmlsbD0iaHNsKDk3IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjMzOCIgcj0iNzkiIGZpbGw9ImhzbCgxMjAgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMjg0IiByPSI5MSIgZmlsbD0iaHNsKDE0MyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0MDciIHI9IjEwMyIgZmlsbD0iaHNsKDE2NiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0NjgiIHI9IjExNSIgZmlsbD0iaHNsKDE4OSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzQ5IiByPSIxMjciIGZpbGw9ImhzbCgyMTIgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCg3NCAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="900" height="720" fetchpriority="high"><div class="open" aria-live="polite"><b><span class="d" id="od"></span><span id="ot"></span></b><span id="oh"></span></div></div></div></section>
+
+<section class="prog" id="programmes" aria-labelledby="p1"><div class="wrap"><div class="sh"><div><h2 id="p1">What's on every week</h2><p>Just turn up unless it says to book. Prices in brackets are suggested donations.</p></div><div class="chips" id="chips" role="group" aria-label="Filter by age group"><button type="button" aria-pressed="true" data-a="all">Everyone</button><button type="button" aria-pressed="false" data-a="Kids">Kids</button><button type="button" aria-pressed="false" data-a="Teens">Teens</button><button type="button" aria-pressed="false" data-a="Adults">Adults</button><button type="button" aria-pressed="false" data-a="Over 60s">Over 60s</button></div></div><div class="pg" id="pg" aria-live="polite"></div></div></section>
+
+<section class="hire" id="hire" aria-labelledby="h2"><div class="wrap"><div class="sh"><div><h2 id="h2">Hire a room</h2><p>For parties, meetings, classes and clubs. Local charities and community groups get 40% off.</p></div></div>
+<div class="hg2"><form class="hf" id="hf" aria-label="Room hire calculator"><div class="rooms"><label><input type="radio" name="rm" value="35" data-n="Main hall" checked><span><b>Main hall</b><small>Up to 120 people, stage, £35 an hour</small></span></label><label><input type="radio" name="rm" value="18" data-n="Garden room"><span><b>Garden room</b><small>Up to 30, doors to the garden, £18 an hour</small></span></label><label><input type="radio" name="rm" value="12" data-n="Meeting room"><span><b>Meeting room</b><small>Up to 12, screen and Wi-Fi, £12 an hour</small></span></label></div>
+<div class="fr"><div><label class="l" for="hd">Date</label><input id="hd" type="date"></div><div><label class="l" for="hh">Hours</label><input id="hh" type="number" min="1" max="12" value="4"></div></div>
+<label class="ck"><input type="checkbox" id="kit" data-p="20"> Use of the kitchen (£20)</label><label class="ck"><input type="checkbox" id="pa" data-p="15"> Sound system and microphone (£15)</label><label class="ck"><input type="checkbox" id="cg"> We're a charity or community group (40% off room hire)</label></form>
+<aside class="quote" aria-live="polite"><h3>Your quote</h3><ul id="ql"></ul><div class="t"><span>Total</span><b id="qt">£0</b></div><button class="btn" type="button" id="qb">Request this booking</button><p class="msg" id="qm" role="status"></p></aside></div></div></section>
+
+<section class="ev" id="events" aria-labelledby="e1"><div class="wrap"><div class="sh"><div><h2 id="e1">Special events</h2><p>One-off events, fairs and celebrations. Everyone welcome.</p></div></div><div class="mt" id="mt" role="group" aria-label="Choose a month"></div><ul class="el" id="el" aria-live="polite"></ul></div></section>
+
+<section class="find" id="find" aria-labelledby="f1"><div class="wrap"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzQgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSI0NDQiIHI9IjU1IiBmaWxsPSJoc2woMzQgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iNDg3IiByPSI2NyIgZmlsbD0iaHNsKDU3IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjM1OCIgcj0iNzkiIGZpbGw9ImhzbCg4MCA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSI0NDQiIHI9IjkxIiBmaWxsPSJoc2woMTAzIDY1JSA1NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9Ijc3MCIgY3k9IjMzNyIgcj0iMTAzIiBmaWxsPSJoc2woMTI2IDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjI4MyIgcj0iMTE1IiBmaWxsPSJoc2woMTQ5IDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSI0MDYiIHI9IjEyNyIgZmlsbD0iaHNsKDE3MiA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDM0IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="900" height="600" loading="eager"><div><h2 id="f1" style="font-size:clamp(32px,4vw,48px)">Find us</h2><p>14 Maple Street, Riverside, RV2 8LT. Bus 12 and 38 stop outside. Step-free entrance, accessible toilets and a hearing loop in the main hall.</p><p>Café open Monday to Saturday, 9am to 3pm. Call 01632 960 771 or email hello@maplestreet.example.org.</p></div></div></section>
+</main>
+<footer><div class="wrap"><p>© <span id="yr"></span> Maple Street Community Centre, run by volunteers</p><p><a href="https://unsplash.com">Photos: Unsplash</a> &nbsp;|&nbsp; <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">More free templates</a></p></div></footer>
+<script>
+(()=>{const $=id=>document.getElementById(id);
+const H=[[9,21],[9,21],[9,21],[9,21],[9,22],[9,17],[10,16]],n=new Date(),di=(n.getDay()+6)%7,h=n.getHours()+n.getMinutes()/60,o=h>=H[di][0]&&h<H[di][1];$('od').classList.toggle('c',!o);$('ot').textContent=o?'Open now':'Closed now';$('oh').textContent=o?`Until ${H[di][1]>12?H[di][1]-12+'pm':H[di][1]+'am'} today`:`Opens ${H[(di+(h>=H[di][1]?1:0))%7][0]}am ${h>=H[di][1]?'tomorrow':'today'}`;
+const P=[["Kids","Toddler stay and play","Toys, songs and a cuppa for grown-ups. Ages 0 to 4.","Mon and Thu, 10am","£2"],["Kids","After-school art club","Painting, clay and messy fun. Ages 6 to 11. Book ahead.","Wed, 4pm","Free"],["Teens","Youth club","Games, music studio and pizza. Ages 12 to 17.","Fri, 6:30pm","Free"],["Teens","Homework help","Volunteer tutors for maths, English and science.","Tue, 4pm","Free"],["Adults","Beginner yoga","Gentle class, mats provided.","Tue, 7pm","£5"],["Adults","Repair café","Bring broken lamps, clothes or bikes and fix them with us.","Last Sat, 11am","Pay what you can"],["Over 60s","Coffee morning","Cake, chat and a warm room.","Wed, 10:30am","£1"],["Over 60s","Chair exercise","Keep moving with our friendly instructor.","Fri, 11am","£3"],["Adults","English conversation","Practise speaking English in a relaxed group.","Thu, 6pm","Free"]];
+function pg(a){$('pg').innerHTML=P.filter(p=>a==='all'||p[0]===a).map(p=>`<article class="pc ${p[0]}"><span class="ag">${p[0]}</span><h3>${p[1]}</h3><p>${p[2]}</p><div class="w">${p[3]} <span>(${p[4]})</span></div></article>`).join('')}
+$('chips').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('chips').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));pg(b.dataset.a)};pg('all');
+const g=v=>'£'+(Math.round(v*100)/100).toLocaleString('en-GB',{minimumFractionDigits:v%1?2:0});
+function quote(){const r=document.querySelector('input[name=rm]:checked'),hr=Math.max(1,Math.min(12,+$('hh').value||1)),base=r.value*hr,cg=$('cg').checked;const L=[[`${r.dataset.n}, ${hr} hour${hr>1?'s':''}`,base]];if(cg)L.push(['Community group discount',-base*.4]);
+['kit','pa'].forEach(i=>{if($(i).checked)L.push([$(i).parentElement.textContent.split(' (')[0].trim(),+$(i).dataset.p])});const t=L.reduce((a,l)=>a+l[1],0);
+$('ql').innerHTML=L.map(l=>`<li><span>${l[0]}</span><span>${l[1]<0?'−'+g(-l[1]):g(l[1])}</span></li>`).join('');$('qt').textContent=g(t)}
+$('hf').addEventListener('input',quote);quote();const hd=new Date(Date.now()+21*864e5);$('hd').value=hd.toISOString().slice(0,10);$('hd').min=new Date().toISOString().slice(0,10);
+$('qb').onclick=()=>{$('qm').textContent=`Request sent for ${$('hd').value}. Our bookings volunteer will reply within 2 days.`;$('qm').classList.add('on')};
+const E=[[0,[[5,"Harvest supper","Bring a dish to share. Live folk music from 7pm."],[12,"Flu jab clinic","Walk in from 10am, run by the local surgery."],[19,"Kids' Halloween disco","Fancy dress, games and a spooky trail. £3."],[27,"Community clean-up","Litter picking in the park. Gloves provided."]]],[1,[[2,"Bonfire night","Fireworks on the field from 6:30pm. Hot soup inside."],[16,"Winter craft fair","40 local makers. Free entry."],[23,"Film night","Family film and popcorn, pay what you can."]]],[2,[[7,"Carol singing","Mince pies and songs round the tree."],[14,"Christmas lunch for over 60s","Free, but please book by 1 December."],[21,"Toy swap","Bring a toy, take a toy."]]]];
+let mi=0;const base=new Date(2026,9,1);
+function ev(){$('mt').innerHTML=E.map((e,i)=>{const d=new Date(base.getFullYear(),base.getMonth()+e[0],1);return`<button type="button" aria-pressed="${i===mi}" data-i="${i}">${d.toLocaleDateString('en-GB',{month:'long'})}</button>`}).join('');
+const d=new Date(base.getFullYear(),base.getMonth()+E[mi][0],1);$('el').innerHTML=E[mi][1].map(x=>`<li><div class="d"><b>${x[0]}</b><span>${d.toLocaleDateString('en-GB',{month:'short'})}</span></div><div><h3>${x[1]}</h3><p>${x[2]}</p></div></li>`).join('')}
+$('mt').onclick=e=>{const b=e.target.closest('button');if(!b)return;mi=+b.dataset.i;ev()};ev();
+})();
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

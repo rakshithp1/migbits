@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free E-learning Platform Website Template (HTML) | Studyloop</title>
+<meta name="description" content="Free e-learning platform template in one editable file. Course catalogue with search, filters and sorting, plus a learner dashboard that updates as you enrol.">
+<meta name="keywords" content="elearning website template, online learning platform HTML template free, LMS website template, course marketplace template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#5B3FD1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--gp:#5B3FD1;--gp2:#4630A8;--lm:#F9E45B;--lv:#F3F0FF;--ink:#1C1633;--gr:#5D5875;--ln:#E4DFF5;--h:"Funnel Display",system-ui,sans-serif;--b:"Funnel Sans",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--b);font-size:17px;line-height:1.6;color:var(--ink);background:#fff}
+img{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{font-family:var(--h);font-weight:800;margin:0;line-height:1.05;letter-spacing:-.015em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--lm);padding:8px;z-index:99}
+:focus-visible{outline:3px solid var(--lm);outline-offset:2px}
+.nav{display:flex;justify-content:space-between;align-items:center;height:78px;position:relative}.logo{font-family:var(--h);font-weight:800;font-size:26px;text-decoration:none;display:flex;gap:8px;align-items:center;color:var(--gp)}
+.menu{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;align-items:center}.menu a{text-decoration:none}.menu .cta{background:var(--ink);color:#fff;padding:9px 18px;border-radius:30px}
+.burger{display:none;background:none;border:2px solid var(--gp);color:var(--gp);width:44px;height:40px;border-radius:12px;font-size:20px;cursor:pointer}
+.hero{background:var(--lv);border-radius:36px;margin:0 16px;padding:60px 0}.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(44px,5.6vw,76px)}.hero p{font-size:19px;color:var(--gr);margin:20px 0 26px;max-width:30em}
+.btn{display:inline-block;background:var(--gp);color:#fff;text-decoration:none;font:600 17px var(--b);padding:14px 24px;border-radius:30px;border:0;cursor:pointer}.btn.y{background:var(--lm);color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.dash{background:#fff;border-radius:26px;padding:22px;box-shadow:0 30px 60px rgba(91,63,209,.18);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.dash h2{grid-column:1/-1;font-size:22px;display:flex;justify-content:space-between;align-items:center}.dash h2 span{font-family:var(--b);font-weight:500;font-size:14px;color:var(--gr)}
+.tile{background:var(--lv);border-radius:18px;padding:16px}.tile small{display:block;color:var(--gr);font-size:13px}.tile b{font-family:var(--h);font-size:30px}
+.ring{display:flex;gap:12px;align-items:center}.ring svg{flex:none}
+.streak{display:flex;gap:5px;margin-top:8px}.streak i{flex:1;height:26px;border-radius:6px;background:#DCD5F7}.streak i.on{background:var(--gp)}.streak i.td{background:var(--lm);outline:2px solid var(--gp)}
+.mine{grid-column:1/-1}.mine ul{list-style:none;padding:0;margin:8px 0 0}.mine li{display:grid;grid-template-columns:1fr 90px 42px;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--ln);font-size:15px}
+.mine .pb{height:8px;background:var(--lv);border-radius:8px;overflow:hidden}.mine .pb i{display:block;height:100%;background:var(--gp)}.mine .pc{font-weight:600;text-align:right;font-size:14px}
+.mine .em{color:var(--gr);font-size:15px;padding:8px 0}
+section{padding:84px 0}.sh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:24px}.sh h2{font-size:clamp(34px,4.4vw,56px)}.sh p{color:var(--gr);margin:6px 0 0}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}.srch{flex:1 1 260px}.srch input{width:100%;font:17px var(--b);padding:13px 18px;border:2px solid var(--ln);border-radius:30px;color:var(--ink)}
+.bar select{font:16px var(--b);padding:12px 14px;border:2px solid var(--ln);border-radius:30px;background:#fff;color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.chips button{font:600 15px var(--b);background:var(--lv);border:0;border-radius:30px;padding:9px 16px;cursor:pointer;color:var(--ink)}.chips button[aria-pressed=true]{background:var(--ink);color:#fff}
+.cnt{color:var(--gr);margin:0 0 16px}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.cc{border:2px solid var(--ln);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.cv{aspect-ratio:16/10;position:relative;display:grid;place-items:center;overflow:hidden}.cv svg{width:44%;height:auto}
+.cv .lv{position:absolute;left:12px;top:12px;background:rgba(255,255,255,.9);border-radius:20px;padding:2px 10px;font-size:13px;font-weight:600}
+.cc .c{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}.cc h3{font-size:20px;line-height:1.2}.cc .by{font-size:14px;color:var(--gr);margin:4px 0 10px}
+.cc .mt{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--gr);margin-bottom:14px;flex:1}.cc .mt b{color:#B7791F}
+.cc .ft{display:flex;justify-content:space-between;align-items:center;gap:10px}.cc .pr{font-family:var(--h);font-weight:800;font-size:20px}
+.cc button{font:600 15px var(--b);background:var(--gp);color:#fff;border:0;border-radius:30px;padding:9px 16px;cursor:pointer}.cc button[aria-pressed=true]{background:var(--lm);color:var(--ink)}
+.none{grid-column:1/-1;background:var(--lv);border-radius:22px;padding:30px;text-align:center}
+.any{background:var(--ink);color:#fff;border-radius:36px;margin:0 16px}.any .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.any h2{font-size:clamp(34px,4.4vw,54px)}.any p{color:#C9C3E4}.any img{border-radius:26px;width:100%;aspect-ratio:4/3;object-fit:cover}
+.any ul{list-style:none;padding:0;margin:20px 0 0}.any li{padding:10px 0 10px 34px;position:relative;border-top:1px solid #332B55}.any li:before{content:"";position:absolute;left:0;top:14px;width:20px;height:20px;border-radius:50%;background:var(--lm)}
+.pl .pg{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:860px}.pp{border:2px solid var(--ln);border-radius:26px;padding:30px}.pp.pro{background:var(--gp);color:#fff;border-color:var(--gp)}
+.pp h3{font-size:28px}.pp .pr{font-family:var(--h);font-weight:800;font-size:54px;margin:10px 0}.pp .pr small{font:500 16px var(--b)}.pp ul{padding-left:20px;margin:0 0 22px}.pp li{margin:6px 0}.pp.pro .btn{background:var(--lm);color:var(--ink)}
+footer{padding:30px 0;font-size:15px;color:var(--gr)}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:1060px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:900px){.hero .wrap,.any .wrap{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.pl .pg{grid-template-columns:1fr}}
+@media (max-width:760px){.burger{display:block}.menu{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:18px 22px;z-index:30;box-shadow:0 10px 20px rgba(0,0,0,.06)}.menu.open{display:flex}.hero,.any{margin:0 8px;border-radius:24px}.dash{grid-template-columns:1fr}.mine li{grid-template-columns:1fr 60px 40px}}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<header><nav class="wrap nav" aria-label="Main"><a href="#" class="logo"><svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="22" fill="none" stroke="#5B3FD1" stroke-width="10" stroke-dasharray="100 38"/></svg>Studyloop</a>
+<ul class="menu" id="menu"><li><a href="#catalogue">Courses</a></li><li><a href="#anywhere">How it works</a></li><li><a href="#plans">Plans</a></li><li><a href="#catalogue" class="cta">Start free</a></li></ul><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1"><div class="wrap"><div><h1 id="h1">Learn a little every day. It adds up fast.</h1><p>Over 600 short courses in business, tech, design and life skills. Lessons take 10 minutes, so you can learn on the bus, at lunch or before bed.</p><div class="row"><a class="btn" href="#catalogue">Browse courses</a><a class="btn y" href="#plans">See plans</a></div></div>
+<div class="dash" aria-label="Your learning dashboard preview"><h2>Hi Maya <span id="dd"></span></h2>
+<div class="tile ring"><svg width="62" height="62" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" fill="none" stroke="#DCD5F7" stroke-width="5"/><circle id="rg" cx="18" cy="18" r="15" fill="none" stroke="#5B3FD1" stroke-width="5" stroke-linecap="round" stroke-dasharray="94.2" stroke-dashoffset="94.2" transform="rotate(-90 18 18)"/></svg><div><small>Weekly goal</small><b id="wg">0 of 60</b><small>minutes</small></div></div>
+<div class="tile"><small>Learning streak</small><b id="sk">6 days</b><div class="streak" id="stk" aria-hidden="true"></div></div>
+<div class="tile mine"><small>My courses</small><ul id="mine" aria-live="polite"></ul></div></div></div></section>
+
+<section id="catalogue" aria-labelledby="c1"><div class="wrap"><div class="sh"><div><h2 id="c1">Course catalogue</h2><p>Enrol in anything and it appears in your dashboard at the top of the page.</p></div></div>
+<div class="bar"><div class="srch"><label for="q" style="position:absolute;left:-999px">Search courses</label><input id="q" type="search" placeholder="Search courses or teachers"></div>
+<label for="lvl" style="position:absolute;left:-999px">Level</label><select id="lvl"><option value="">Any level</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
+<label for="prc" style="position:absolute;left:-999px">Price</label><select id="prc"><option value="">Free and paid</option><option value="free">Free only</option><option value="paid">Paid only</option></select>
+<label for="srt" style="position:absolute;left:-999px">Sort by</label><select id="srt"><option value="pop">Most popular</option><option value="rate">Highest rated</option><option value="short">Shortest first</option></select></div>
+<div class="chips" id="chips" role="group" aria-label="Category"><button type="button" aria-pressed="true" data-c="">All</button><button type="button" aria-pressed="false" data-c="Business">Business</button><button type="button" aria-pressed="false" data-c="Tech">Tech</button><button type="button" aria-pressed="false" data-c="Design">Design</button><button type="button" aria-pressed="false" data-c="Life skills">Life skills</button></div>
+<p class="cnt" id="cnt" aria-live="polite"></p><div class="cards" id="cards"></div></div></section>
+
+<section class="any" id="anywhere" aria-labelledby="a1"><div class="wrap"><div><h2 id="a1">Learn on any screen</h2><p>Start a lesson on your laptop, finish it on your phone. Your progress follows you.</p><ul><li>Download lessons to watch offline</li><li>Short quizzes help it stick</li><li>Certificates you can add to your CV</li><li>Reminders at the time that suits you</li></ul></div>
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTYzIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjUxMyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDE2MyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMzMxIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMTgwIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIyNDAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgxOTcgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjE5NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDIxNCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMTcyIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjMxIDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIzNjEiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgyNDggNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjI1NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDI2NSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMTYzIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="900" height="675" loading="eager"></div></section>
+
+<section class="pl" id="plans" aria-labelledby="p1"><div class="wrap"><div class="sh"><div><h2 id="p1">Plans</h2><p>Start free. Upgrade when you want more.</p></div></div>
+<div class="pg"><div class="pp"><h3>Free</h3><div class="pr">$0</div><ul><li>120 free courses</li><li>Progress tracking and streaks</li><li>Watch on web and mobile</li></ul><a class="btn" href="#catalogue">Start learning</a></div>
+<div class="pp pro"><h3>Plus</h3><div class="pr">$12<small> a month</small></div><ul><li>Every course, 600 and growing</li><li>Offline downloads</li><li>Certificates for every course</li><li>Cancel any time</li></ul><a class="btn" href="#catalogue">Try Plus free for 7 days</a></div></div></div></section>
+</main>
+<footer><div class="wrap"><p>© <span id="yr"></span> Studyloop Learning Ltd.</p><p><a href="https://unsplash.com">Photos: Unsplash</a> &nbsp;|&nbsp; <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">More free templates</a></p></div></footer>
+<script>
+(()=>{const $=id=>document.getElementById(id);
+const IC={Business:'<path d="M10 40h44M16 40V26h8v14M28 40V18h8v22M40 40V30h8v10" stroke="#fff" stroke-width="4" fill="none"/>',Tech:'<path d="M22 20 10 32l12 12M42 20l12 12-12 12" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>',Design:'<circle cx="24" cy="26" r="12" fill="none" stroke="#fff" stroke-width="4"/><rect x="30" y="30" width="20" height="20" fill="none" stroke="#fff" stroke-width="4"/>','Life skills':'<path d="M32 50s-18-10-18-24a10 10 0 0 1 18-6 10 10 0 0 1 18 6c0 14-18 24-18 24z" fill="none" stroke="#fff" stroke-width="4"/>'};
+const COL={Business:"#1F8A70",Tech:"#5B3FD1",Design:"#E4572E",'Life skills':"#D6336C"};
+const C=[["Excel for everyday work","Business","Beginner",0,3.5,4.8,41200,"Hannah Moss"],["Managing your first team","Business","Intermediate",39,5,4.7,18300,"Owen Price"],["Negotiation basics","Business","Beginner",29,2.5,4.6,12900,"Grace Lin"],["Python for beginners","Tech","Beginner",0,8,4.9,63500,"Arjun Rao"],["SQL in a weekend","Tech","Beginner",29,4,4.8,27100,"Lena Fischer"],["Build a website with HTML and CSS","Tech","Beginner",0,6,4.7,48800,"Sam Carter"],["JavaScript beyond the basics","Tech","Advanced",49,9,4.8,15200,"Arjun Rao"],["Figma from zero","Design","Beginner",29,4.5,4.8,22400,"Mia Torres"],["Colour and type for non-designers","Design","Beginner",0,2,4.6,19800,"Mia Torres"],["UX research methods","Design","Intermediate",39,6,4.7,9700,"Tom Becker"],["Money basics: budgets and saving","Life skills","Beginner",0,2,4.9,35600,"Rita Gomez"],["Public speaking without panic","Life skills","Intermediate",29,3,4.8,21300,"Owen Price"]];
+const mine=new Map([["Python for beginners",42],["Money basics: budgets and saving",75]]);let cat='';
+function cover(c){return`<div class="cv" style="background:${COL[c[1]]};background-image:radial-gradient(circle at 85% 20%,rgba(255,255,255,.22) 0 22%,transparent 23%),radial-gradient(circle at 10% 90%,rgba(0,0,0,.12) 0 28%,transparent 29%)"><span class="lv">${c[2]}</span><svg viewBox="0 0 64 64" aria-hidden="true">${IC[c[1]]}</svg></div>`}
+function cards(){const q=$('q').value.trim().toLowerCase(),lv=$('lvl').value,p=$('prc').value,s=$('srt').value;
+let r=C.filter(c=>(!cat||c[1]===cat)&&(!lv||c[2]===lv)&&(!p||(p==='free'?c[3]===0:c[3]>0))&&(!q||(c[0]+' '+c[7]).toLowerCase().includes(q)));
+r.sort((a,b)=>s==='rate'?b[5]-a[5]:s==='short'?a[4]-b[4]:b[6]-a[6]);$('cnt').textContent=`${r.length} course${r.length===1?'':'s'}`;
+$('cards').innerHTML=r.length?r.map(c=>{const on=mine.has(c[0]);return`<article class="cc">${cover(c)}<div class="c"><h3>${c[0]}</h3><p class="by">with ${c[7]}</p><div class="mt"><span><b>★ ${c[5]}</b></span><span>${c[4]} hours</span><span>${(c[6]/1000).toFixed(1)}k learners</span></div><div class="ft"><span class="pr">${c[3]?'$'+c[3]:'Free'}</span><button type="button" data-n="${c[0]}" aria-pressed="${on}">${on?'Enrolled ✓':'Enrol'}</button></div></div></article>`}).join(''):'<p class="none">No courses match. Try a different word or clear a filter.</p>'}
+function dash(){const L=[...mine];$('mine').innerHTML=L.length?L.map(([n,p])=>`<li><span>${n}</span><span class="pb"><i style="width:${p}%"></i></span><span class="pc">${p}%</span></li>`).join(''):'<li class="em">No courses yet. Enrol below to get started.</li>';
+const m=Math.min(60,24+L.length*9);$('wg').textContent=`${m} of 60`;$('rg').style.strokeDashoffset=94.2*(1-m/60)}
+$('cards').onclick=e=>{const b=e.target.closest('button');if(!b)return;const n=b.dataset.n;mine.has(n)?mine.delete(n):mine.set(n,0);cards();dash()};
+['q','lvl','prc','srt'].forEach(i=>$(i).addEventListener('input',cards));
+$('chips').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('chips').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));cat=b.dataset.c;cards()};
+const D=['M','T','W','T','F','S','S'],td=(new Date().getDay()+6)%7;$('stk').innerHTML=D.map((d,i)=>`<i class="${i===td?'td':'on'}"></i>`).join('');$('dd').textContent=new Date().toLocaleDateString('en-US',{weekday:'long'});
+cards();dash();
+})();
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

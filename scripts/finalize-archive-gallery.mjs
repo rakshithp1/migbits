@@ -5,6 +5,7 @@ const audit = JSON.parse(
 );
 const hashes = new Map();
 const promoted = [];
+const retainedShaders = new Set(JSON.parse(fs.readFileSync("catalog/library/shader-presentation-policy.json", "utf8")).retained);
 const needsBetterFixture = new Set(
   [
     "backlight",
@@ -25,6 +26,7 @@ const needsBetterFixture = new Set(
   ].map((s) => "magic-ui--" + s),
 );
 for (const item of audit) {
+  if (item.id.startsWith("shaders--") && !retainedShaders.has(item.id.replace("shaders--", ""))) { item.status="excluded"; item.reason="Removed by gallery presentation policy"; continue; }
   if (item.status !== "validated") continue;
   if (needsBetterFixture.has(item.id)) {
     item.status = "blocked";

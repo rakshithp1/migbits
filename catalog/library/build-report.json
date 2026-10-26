@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-25",
-  "total": 479,
+  "total": 339,
   "categories": {
     "components": 102,
     "blocks": 19,
@@ -9,7 +9,7 @@
     "colors": 18,
     "illustrations": 14,
     "figma": 1,
-    "shaders": 171,
+    "shaders": 31,
     "foundations": 6,
     "backgrounds": 6,
     "icons": 2,

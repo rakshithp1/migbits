@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Travel Agency Website Template | Far &amp; Wide Trips</title>
+<meta name="description" content="Free travel agency website template in one editable file. Trip packages with region, budget and length filters, day by day itinerary tabs and an enquiry form.">
+<meta name="keywords" content="travel agency website template, tour operator HTML template free, holiday packages website template, travel booking template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#0F9D9A">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--lg:#0F9D9A;--lg2:#0B7A78;--hb:#E0457B;--sd:#F7EFE5;--ink:#1F2A37;--gr:#566170;--ln:#E8DFD3;--h:"Bungee",Impact,sans-serif;--b:"Hind Madurai",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}body{margin:0;font-family:var(--b);font-size:18px;line-height:1.6;color:var(--ink);background:#fff}
+img{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{font-family:var(--h);font-weight:400;margin:0;line-height:1.02}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--hb);color:#fff;padding:8px;z-index:99}
+:focus-visible{outline:3px solid var(--hb);outline-offset:2px}
+.nav{display:flex;justify-content:space-between;align-items:center;height:80px;position:relative}.logo{font-family:var(--h);font-size:24px;text-decoration:none;color:var(--lg2)}.logo span{color:var(--hb)}
+.menu{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:600}.menu a{text-decoration:none}.menu a:hover{color:var(--hb)}
+.burger{display:none;background:none;border:2px solid var(--ink);width:44px;height:40px;border-radius:10px;font-size:20px;cursor:pointer}
+.hero{padding:10px 0 70px}.hg{display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(46px,6.2vw,88px);color:var(--ink)}.hero h1 span{color:var(--hb)}.hero p{font-size:20px;color:var(--gr);margin:20px 0 26px;max-width:26em}
+.btn{display:inline-block;background:var(--hb);color:#fff;text-decoration:none;font:600 18px var(--b);padding:14px 26px;border-radius:40px;border:0;cursor:pointer}.btn.t{background:var(--lg2)}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.cl{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:170px 170px 170px;gap:12px}.cl img{width:100%;height:100%;object-fit:cover;border-radius:22px}
+.cl img:nth-child(1){grid-row:1/3}.cl img:nth-child(4){grid-column:1/3;border-radius:22px 22px 120px 22px}
+.stamp{display:inline-flex;gap:10px;align-items:center;margin-top:24px;font-weight:600;color:var(--gr);font-size:16px}.stamp b{font-family:var(--h);font-weight:400;font-size:26px;color:var(--lg2)}
+section{padding:84px 0}.sh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:26px}.sh h2{font-size:clamp(34px,4.6vw,58px)}.sh p{color:var(--gr);margin:6px 0 0;max-width:32em}
+.trips{background:var(--sd)}
+.fl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;background:#fff;border-radius:22px;padding:18px 20px;margin-bottom:26px;align-items:end}.fl>div{min-width:0}
+.fl label{display:block;font-weight:600;font-size:15px;margin-bottom:4px}.fl select{width:100%;font:17px var(--b);padding:10px 12px;border:2px solid var(--ln);border-radius:12px;background:#fff;color:var(--ink)}.fl input[type=range]{width:100%;accent-color:var(--hb)}.fl output{font-weight:600;color:var(--hb)}
+.tg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.tp{background:#fff;border-radius:22px;overflow:hidden;display:flex;flex-direction:column}.tp img{width:100%;aspect-ratio:3/2;object-fit:cover}.tp .c{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.tp .rg{font-size:14px;font-weight:600;color:var(--lg2)}.tp h3{font-size:24px;margin:6px 0 8px}.tp p{margin:0 0 14px;color:var(--gr);font-size:16px;flex:1}
+.tp .ft{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px dashed var(--ln);padding-top:12px}.tp .pr{font-family:var(--h);font-size:22px}.tp .pr small{font-family:var(--b);font-size:14px;color:var(--gr)}
+.tp button{font:600 16px var(--b);background:var(--lg);color:#fff;border:0;border-radius:30px;padding:8px 16px;cursor:pointer}
+.none{grid-column:1/-1;background:#fff;border-radius:22px;padding:30px;text-align:center}
+.it .ig{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}.it .ig>div{min-width:0}
+.it .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:180px 180px 22px 22px}
+.dtabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.dtabs button{font:600 16px var(--b);background:var(--sd);border:0;border-radius:30px;padding:9px 16px;cursor:pointer;color:var(--ink)}.dtabs button[aria-pressed=true]{background:var(--ink);color:#fff}
+.day{background:var(--sd);border-radius:22px;padding:26px}.day h3{font-size:28px;color:var(--lg2)}.day p{margin:10px 0}.day ul{margin:10px 0 0;padding-left:20px}.day li{margin:4px 0}.day .inc{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.day .inc span{background:#fff;border-radius:20px;padding:3px 12px;font-size:15px}
+.enq{background:var(--lg2);color:#fff}.eg{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px}.enq .sh p{color:#CDEDEC}
+.enq form{background:#fff;color:var(--ink);border-radius:22px;padding:30px}.fr{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fr>div{min-width:0}
+.enq label{display:block;font-weight:600;font-size:15px;margin-bottom:6px}.enq input,.enq select,.enq textarea{width:100%;font:17px var(--b);padding:12px;border:2px solid var(--ln);border-radius:12px;margin-bottom:14px;color:var(--ink);background:#fff}
+.est{background:var(--sd);border-radius:14px;padding:12px 16px;margin-bottom:16px}.est b{font-family:var(--h);font-weight:400;font-size:26px;color:var(--hb)}
+.msg{visibility:hidden;margin:12px 0 0;font-weight:600;color:var(--lg2)}.msg.on{visibility:visible}
+.why{list-style:none;padding:0;margin:20px 0 0}.why li{padding:10px 0 10px 32px;position:relative;border-top:1px solid rgba(255,255,255,.2)}.why li:before{content:"✓";position:absolute;left:0;color:#FFD1E0;font-weight:700}
+footer{padding:28px 0;font-size:15px;color:var(--gr)}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:980px){.hg,.it .ig,.eg{grid-template-columns:1fr}.tg{grid-template-columns:1fr 1fr}.it .ph img{max-width:380px}}
+@media (max-width:760px){.burger{display:block}.menu{display:none;position:absolute;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:18px 22px;z-index:30;box-shadow:0 10px 20px rgba(0,0,0,.06)}.menu.open{display:flex}.tg,.fl,.fr{grid-template-columns:1fr}.cl{grid-template-rows:130px 130px 130px}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<header><nav class="wrap nav" aria-label="Main"><a href="#" class="logo">Far <span>&amp;</span> Wide</a><ul class="menu" id="menu"><li><a href="#trips">Trips</a></li><li><a href="#itinerary">Sample trip</a></li><li><a href="#enquire">Enquire</a></li></ul><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1"><div class="wrap hg"><div><h1 id="h1">Trips planned by people who've <span>been there.</span></h1><p>Small group and tailor-made holidays in Europe and Asia. We book the hotels, trains and guides, and our team answers the phone if anything goes wrong.</p><div class="row"><a class="btn" href="#trips">Find a trip</a><a class="btn t" href="#enquire">Plan something custom</a></div><div class="stamp"><b>4.9</b> from 2,300 travellers, since 2011</div></div>
+<div class="cl"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTE2IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDA2IiByPSI1NSIgZmlsbD0iaHNsKDExNiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI0NjgiIHI9IjY3IiBmaWxsPSJoc2woMTM5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ5OSIgcj0iNzkiIGZpbGw9ImhzbCgxNjIgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzY0IiByPSI5MSIgZmlsbD0iaHNsKDE4NSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0NDciIHI9IjEwMyIgZmlsbD0iaHNsKDIwOCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzMzgiIHI9IjExNSIgZmlsbD0iaHNsKDIzMSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDM0IiByPSIxMjciIGZpbGw9ImhzbCgyNTQgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxMTYgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="600" height="700" fetchpriority="high"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzQxIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjI5MSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDM0MSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMjIwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMzU4IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIzODUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgxNSA2MCUgNDclKSIvPjxyZWN0IHg9IjQ4NSIgeT0iMjY3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI1NSIgcng9IjIxIiBmaWxsPSJoc2woMzIgNjAlIDUzJSkiLz48cmVjdCB4PSI2MzAiIHk9IjQwOCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyODAiIHJ4PSIyNCIgZmlsbD0iaHNsKDQ5IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSI0NzkiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCg2NiA2MCUgNjUlKSIvPjxyZWN0IHg9IjkyMCIgeT0iMzE0IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMzMCIgcng9IjMwIiBmaWxsPSJoc2woODMgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDM0MSAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="600" height="340"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzExIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjM0MSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDMxMSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMjQ1IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMzI4IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIxOTciIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgzNDUgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjE3MyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDIgNjAlIDUzJSkiLz48cmVjdCB4PSI2MzAiIHk9IjE2MSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyODAiIHJ4PSIyNCIgZmlsbD0iaHNsKDE5IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIxNTUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzNiA2MCUgNjUlKSIvPjxyZWN0IHg9IjkyMCIgeT0iMTUyIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMzMCIgcng9IjMwIiBmaWxsPSJoc2woNTMgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDMxMSAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="600" height="340"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTc3IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjM2NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDE3NyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMjU4IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMTk0IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIyMDQiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyMTEgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjE3NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDIyOCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMzYzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjQ1IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSI0NTYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgyNjIgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjMwMyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDI3OSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMTc3IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="1000" height="340"></div></div></section>
+
+<section class="trips" id="trips" aria-labelledby="t1"><div class="wrap"><div class="sh"><div><h2 id="t1">Our trips</h2><p>Prices are per person sharing, including hotels, transport between places and some meals. Flights are extra.</p></div></div>
+<form class="fl" id="ff" aria-label="Filter trips"><div><label for="rg">Region</label><select id="rg"><option value="">Anywhere</option><option>Europe</option><option>Asia</option></select></div><div><label for="ln">Length</label><select id="ln"><option value="">Any length</option><option value="8">Up to 8 days</option><option value="12">9 to 12 days</option><option value="99">13 days or more</option></select></div><div><label for="bu">Budget: up to <output id="bo" for="bu">$4,000</output></label><input id="bu" type="range" min="1500" max="5000" step="100" value="4000"></div></form>
+<p id="cnt" aria-live="polite" style="color:var(--gr);margin:0 0 14px"></p><div class="tg" id="tg"></div></div></section>
+
+<section class="it" id="itinerary" aria-labelledby="i1"><div class="wrap ig"><div class="ph"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjUyIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDgyIiByPSI1NSIgZmlsbD0iaHNsKDI1MiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNTYiIHI9IjY3IiBmaWxsPSJoc2woMjc1IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ0MyIgcj0iNzkiIGZpbGw9ImhzbCgyOTggNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzM2IiByPSI5MSIgZmlsbD0iaHNsKDMyMSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0MzMiIHI9IjEwMyIgZmlsbD0iaHNsKDM0NCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0ODEiIHI9IjExNSIgZmlsbD0iaHNsKDcgNjUlIDY1JSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMTA5MCIgY3k9IjM1NSIgcj0iMTI3IiBmaWxsPSJoc2woMzAgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgyNTIgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="700" height="875" loading="eager"></div>
+<div><div class="sh"><div><h2 id="i1">Italy slowly, 10 days</h2><p>Our most popular trip. Tap a day to see what's planned.</p></div></div><div class="dtabs" id="dt" role="group" aria-label="Choose a day"></div><div class="day" id="day" aria-live="polite"></div></div></div></section>
+
+<section class="enq" id="enquire" aria-labelledby="e1"><div class="wrap eg"><div><div class="sh"><div><h2 id="e1">Start planning</h2><p>Tell us where and when. A trip planner will call you within one working day, with no obligation to book.</p></div></div>
+<ul class="why"><li>ATOL protected and fully bonded</li><li>24-hour help line while you travel</li><li>Pay a 20% deposit, the rest 8 weeks before</li><li>Free changes up to 60 days before you go</li></ul></div>
+<formaction="#" method="POST" id="ef" aria-label="Trip enquiry"><div class="fr"><div><label for="en">Name</label><input id="en" name="name" required autocomplete="name"></div><div><label for="ee">Email</label><input id="ee" name="email" type="email" required autocomplete="email"></div></div>
+<div class="fr"><div><label for="et">Trip</label><select id="et" name="trip"></select></div><div><label for="ep">Travellers</label><input id="ep" name="travellers" type="number" min="1" max="16" value="2"></div></div>
+<div class="fr"><div><label for="ed">Rough dates</label><input id="ed" name="month" type="month"></div><div><label for="er">Room</label><select id="er" name="room"><option value="0">Sharing a room</option><option value="1">Own room (+25%)</option></select></div></div>
+<div class="est" aria-live="polite">Estimated trip cost: <b id="es">$0</b></div><button class="btn" type="submit">Send my enquiry</button><p class="msg" id="msg" role="status"></p></form></div></section>
+</main>
+<footer><div class="wrap"><p>© <span id="yr"></span> Far &amp; Wide Trips Ltd, 22 Queen Square, Bath</p><p><a href="https://unsplash.com">Photos: Unsplash</a> &nbsp;|&nbsp; <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">More free templates</a></p></div></footer>
+<script>
+(()=>{const $=id=>document.getElementById(id);const U=i=>`data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjI1IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjI5NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDIyNSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMjIyIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjQyIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIzODYiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyNTkgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjI2OCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDI3NiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMjA5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjkzIDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIzNzkiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgzMTAgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjQ2NCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDMyNyA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjI1IDM1JSAyMCUpIi8+PC9zdmc+`;const f=n=>'$'+Math.round(n).toLocaleString('en-US');
+const T=[["Italy slowly","Europe",10,3450,"Venice, Florence and the Amalfi coast by train, with a cooking class in Tuscany.","1523906834658-6e24ef2386f9","Venice canal with boats"],["Greek islands hop","Europe",12,3100,"Athens, Naxos and Santorini by ferry. Swim stops, village tavernas, sunsets.","1533105079780-92b9be482077","White houses above the sea on a Greek island"],["Dolomites lakes and peaks","Europe",7,2450,"Easy mountain walks, lake swims and cosy family-run guesthouses.","1476514525535-07fb3b4ae5f1","Boat on a green mountain lake"],["Vietnam north to south","Asia",14,3650,"Hanoi, Ha Long Bay by overnight boat, Hoi An and the Mekong Delta.","1528127269322-539801943592","Limestone islands in Ha Long Bay"],["Bali at your own pace","Asia",10,2650,"Rice terraces, temples and a few lazy days by the sea in Sidemen and Amed.","1537996194471-e657df975ab4","Temple on a lake in Bali"],["Thailand islands","Asia",9,2150,"Bangkok street food, then island hopping in the Andaman Sea.","1506929562872-bb421503ef21","Boats on turquoise water by a white beach"],["Philippines by boat","Asia",13,4200,"Palawan's lagoons and hidden beaches on a small traditional boat.","1552733407-5d5c46c3bb3b","Green river between palm trees from above"]];
+function tg(){const rg=$('rg').value,ln=+$('ln').value,bu=+$('bu').value;$('bo').textContent=f(bu);
+const r=T.filter(t=>(!rg||t[1]===rg)&&t[3]<=bu&&(!ln||(ln===8?t[2]<=8:ln===12?t[2]>8&&t[2]<=12:t[2]>12)));$('cnt').textContent=`${r.length} trip${r.length===1?'':'s'} found`;
+$('tg').innerHTML=r.length?r.map(t=>`<article class="tp"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woOTkgMjUlIDEyJSkiLz48cmVjdCB4PSI1MCIgeT0iNDA5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE4MCIgcng9IjEyIiBmaWxsPSJoc2woOTkgNjAlIDM1JSkiLz48cmVjdCB4PSIxOTUiIHk9IjI3OSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyMDUiIHJ4PSIxNSIgZmlsbD0iaHNsKDExNiA2MCUgNDElKSIvPjxyZWN0IHg9IjM0MCIgeT0iNDE0IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIzMCIgcng9IjE4IiBmaWxsPSJoc2woMTMzIDYwJSA0NyUpIi8+PHJlY3QgeD0iNDg1IiB5PSI0ODIiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjU1IiByeD0iMjEiIGZpbGw9ImhzbCgxNTAgNjAlIDUzJSkiLz48cmVjdCB4PSI2MzAiIHk9IjUxNiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyODAiIHJ4PSIyNCIgZmlsbD0iaHNsKDE2NyA2MCUgNTklKSIvPjxyZWN0IHg9Ijc3NSIgeT0iMzMzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMwNSIgcng9IjI3IiBmaWxsPSJoc2woMTg0IDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSI0NDEiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCgyMDEgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDk5IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="700" height="467" loading="eager"><div class="c"><span class="rg">${t[1]}, ${t[2]} days</span><h3>${t[0]}</h3><p>${t[4]}</p><div class="ft"><span class="pr">${f(t[3])}<small> pp</small></span><button type="button" data-t="${t[0]}">Enquire</button></div></div></article>`).join(''):'<p class="none">No trips match. Try a bigger budget or any length.</p>'}
+$('ff').addEventListener('input',tg);tg();
+$('et').innerHTML=T.map(t=>`<option>${t[0]}</option>`).join('')+'<option>Something custom</option>';
+function est(){const t=T.find(x=>x[0]===$('et').value);const p=Math.max(1,+$('ep').value||1);$('es').textContent=t?f(t[3]*p*(1+$('er').value*.25)):'We will quote you'}
+['et','ep','er'].forEach(i=>$(i).addEventListener('input',est));est();
+$('tg').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('et').value=b.dataset.t;est();$('enquire').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
+const D=[["Day 1","Arrive in Venice","Meet your guide at the hotel for a welcome drink and a short walk to Rialto.",["Hotel near San Marco","Welcome dinner"]],["Day 2","Venice by water","Morning boat to Murano and Burano. Afternoon free to get lost in the lanes.",["Boat pass","Breakfast"]],["Days 3 and 4","Florence","Fast train to Florence. Uffizi tour, then a free day for markets or a hilltop walk.",["Train tickets","Gallery entry"]],["Day 5","Tuscan countryside","Cooking class on a farm near Siena, then dinner with the family who runs it.",["Cooking class","Lunch and dinner"]],["Days 6 to 9","Amalfi coast","Train and ferry to Positano. Boat trip, path of the gods walk and beach days.",["Sea view hotel","Boat day"]],["Day 10","Home","Private transfer to Naples airport, whenever your flight is.",["Airport transfer"]]];
+let di=0;function day(){$('dt').innerHTML=D.map((d,i)=>`<button type="button" aria-pressed="${i===di}" data-i="${i}">${d[0]}</button>`).join('');const d=D[di];$('day').innerHTML=`<h3>${d[1]}</h3><p>${d[2]}</p><div class="inc">${d[3].map(x=>`<span>Included: ${x}</span>`).join('')}</div>`}
+$('dt').onclick=e=>{const b=e.target.closest('button');if(!b)return;di=+b.dataset.i;day()};day();
+const nm=new Date();nm.setMonth(nm.getMonth()+4);$('ed').value=nm.toISOString().slice(0,7);
+$('ef').onsubmit=e=>{e.preventDefault();$('msg').textContent=`Thanks ${$('en').value}. A trip planner will call you about ${$('et').value} within one working day.`;$('msg').classList.add('on')};
+})();
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

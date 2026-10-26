@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Band and Musician Website Template | The Low Tides</title>
+<meta name="description" content="Free band and musician website template in one editable file. Music player with track list, tour dates with region filter, merch with a bag, and a mailing list.">
+<meta name="keywords" content="band website template, musician HTML template free, artist website template, music website template, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#3D1C6B">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+<style>
+:root{--uv:#3D1C6B;--uv2:#2A1249;--uv3:#53298F;--or:#FF7A3D;--pk:#FFD9C7;--wh:#fff;--mu:#C9B8E3;--h:"Dela Gothic One",Impact,sans-serif;--b:"Instrument Sans",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}body{margin:0;font-family:var(--b);font-size:17px;line-height:1.6;color:#F3ECFB;background:var(--uv2)}
+img{max-width:100%;height:auto;display:block}a{color:inherit}h1,h2,h3{font-family:var(--h);font-weight:400;margin:0;line-height:.95}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--or);color:#000;padding:8px;z-index:99}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+.nav{display:flex;justify-content:space-between;align-items:center;height:80px;position:relative}.logo{font-family:var(--h);font-size:22px;text-decoration:none;color:var(--pk)}
+.menu{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:500}.menu a{text-decoration:none}.menu a:hover{color:var(--or)}
+.bag{font:600 15px var(--b);background:var(--or);color:#1A0A30;border:0;border-radius:30px;padding:8px 14px}
+.burger{display:none;background:none;border:2px solid var(--pk);color:var(--pk);width:44px;height:40px;font-size:20px;cursor:pointer}
+.hero{position:relative;overflow:hidden;padding:30px 0 80px}.hg{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:end}
+.hero h1{font-size:clamp(70px,13vw,200px);color:var(--pk);letter-spacing:-.02em}.hero h1 span{display:block;color:var(--or)}
+.hero p{font-size:19px;color:var(--mu);max-width:28em;margin:20px 0 26px}
+.btn{display:inline-block;background:var(--or);color:#1A0A30;text-decoration:none;font:600 17px var(--b);padding:14px 24px;border-radius:40px;border:0;cursor:pointer}.btn.o{background:transparent;color:var(--pk);box-shadow:inset 0 0 0 2px var(--pk)}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.hero img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:300px 300px 20px 20px;filter:saturate(1.2)}
+.sun{position:absolute;right:8%;top:40px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,var(--or),transparent 70%);opacity:.35;pointer-events:none}
+section{padding:80px 0}.sh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:28px}.sh h2{font-size:clamp(44px,6vw,86px);color:var(--pk)}.sh p{color:var(--mu);margin:6px 0 0;max-width:30em}
+.music{background:var(--uv)}.mg{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}.mg>div{min-width:0}
+.cover{aspect-ratio:1;border-radius:20px;background:linear-gradient(160deg,var(--or),#C2185B 55%,var(--uv2));position:relative;overflow:hidden}.cover svg{position:absolute;inset:0;width:100%;height:100%}
+.cover b{position:absolute;left:22px;bottom:18px;font-family:var(--h);font-size:34px;color:#fff;line-height:1}
+.player{background:var(--uv2);border-radius:20px;padding:22px}.np{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}.np b{font-size:20px}.np span{color:var(--mu);font-size:15px}
+.ctl{display:flex;align-items:center;gap:10px}.ctl button{width:44px;height:44px;border-radius:50%;border:2px solid var(--uv3);background:transparent;color:#fff;cursor:pointer;font-size:16px}.ctl #pp{width:58px;height:58px;background:var(--or);border:0;color:#1A0A30;font-size:22px}
+.prog{height:6px;background:var(--uv3);border-radius:6px;margin:14px 0 4px;overflow:hidden}.prog i{display:block;height:100%;width:0;background:var(--or)}.tm{display:flex;justify-content:space-between;font-size:13px;color:var(--mu)}
+.eq{display:flex;gap:3px;align-items:flex-end;height:22px}.eq i{width:4px;background:var(--or);height:4px;border-radius:2px}.playing .eq i{animation:eq .9s infinite ease-in-out}.eq i:nth-child(2){animation-delay:.2s}.eq i:nth-child(3){animation-delay:.4s}.eq i:nth-child(4){animation-delay:.1s}
+@keyframes eq{0%,100%{height:4px}50%{height:22px}}
+.tl{list-style:none;padding:0;margin:16px 0 0}.tl button{width:100%;display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;background:none;border:0;border-top:1px solid var(--uv3);padding:12px 4px;color:#F3ECFB;font:500 16px var(--b);text-align:left;cursor:pointer}.tl button[aria-current=true]{color:var(--or)}.tl .n{color:var(--mu);font-size:14px}
+.note{font-size:14px;color:var(--mu);margin:14px 0 0}
+.flt{display:flex;flex-wrap:wrap;gap:8px}.flt button{font:600 15px var(--b);background:transparent;border:2px solid var(--uv3);color:var(--pk);border-radius:30px;padding:8px 16px;cursor:pointer}.flt button[aria-pressed=true]{background:var(--pk);color:var(--uv2);border-color:var(--pk)}
+.gig{display:grid;grid-template-columns:140px 1fr 1fr auto;gap:18px;align-items:center;padding:20px 0;border-top:1px solid var(--uv3)}.gig .d{font-family:var(--h);font-size:24px;white-space:nowrap;color:var(--or);line-height:1}.gig .d small{display:block;font-family:var(--b);font-size:14px;color:var(--mu)}
+.gig h3{font-family:var(--b);font-weight:600;font-size:21px}.gig p{margin:0;color:var(--mu);font-size:15px}.gig a,.gig span.so{justify-self:end;font-weight:600;font-size:15px;border-radius:30px;padding:9px 18px;text-decoration:none}.gig a{background:var(--or);color:#1A0A30}.gig span.so{border:2px solid var(--uv3);color:var(--mu);text-decoration:line-through}.gig a.few{background:var(--pk)}
+.merch{background:var(--pk);color:var(--uv2)}.merch .sh h2{color:var(--uv)}.merch .sh p{color:#6A4B8F}
+.mr{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.it{background:#fff;border-radius:20px;padding:16px;display:flex;flex-direction:column}.it .art{aspect-ratio:1;border-radius:14px;display:grid;place-items:center;margin-bottom:12px}
+.it h3{font-family:var(--b);font-weight:600;font-size:18px}.it p{margin:2px 0 12px;color:#6A4B8F;font-size:15px;flex:1}.it .ft{display:flex;justify-content:space-between;align-items:center}.it .ft b{font-size:20px}.it button{font:600 15px var(--b);background:var(--uv);color:#fff;border:0;border-radius:30px;padding:8px 14px;cursor:pointer}
+.bm{background:var(--uv);color:#fff;border-radius:18px;padding:16px 20px;margin-top:20px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;visibility:hidden}.bm.on{visibility:visible}
+.list{text-align:center}.list h2{font-size:clamp(40px,6vw,80px);color:var(--pk)}.list p{color:var(--mu)}.lf{display:flex;gap:10px;max-width:520px;margin:24px auto 0;flex-wrap:wrap;justify-content:center}.lf input{flex:1 1 240px;font:17px var(--b);padding:14px 18px;border-radius:40px;border:2px solid var(--uv3);background:var(--uv);color:#fff}.lf label{position:absolute;left:-999px}
+.msg{visibility:hidden;color:var(--or);font-weight:600;margin:12px 0 0}.msg.on{visibility:visible}
+footer{border-top:1px solid var(--uv3);padding:28px 0;font-size:15px;color:var(--mu)}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:980px){.hg,.mg{grid-template-columns:1fr}.hero img{max-width:360px}.mr{grid-template-columns:1fr 1fr}.gig{grid-template-columns:90px 1fr auto}.gig p.v{display:none}}
+@media (max-width:760px){.burger{display:block}.menu{display:none;position:absolute;top:80px;left:0;right:0;background:var(--uv);flex-direction:column;padding:18px 22px;z-index:30}.menu.open{display:flex}.gig{grid-template-columns:1fr auto}.gig .d{grid-column:1/-1}.mr{grid-template-columns:1fr 1fr}.cover{max-width:320px}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.playing .eq i{animation:none;height:14px}}
+
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+<header><nav class="wrap nav" aria-label="Main"><a href="#" class="logo">THE LOW TIDES</a><ul class="menu" id="menu"><li><a href="#music">Music</a></li><li><a href="#tour">Tour</a></li><li><a href="#merch">Merch</a></li><li><span class="bag" id="bagc" aria-live="polite">Bag: 0</span></li></ul><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1"><span class="sun" aria-hidden="true"></span><div class="wrap hg"><div><h1 id="h1">The Low <span>Tides</span></h1><p>Four friends from Brighton making warm, loud, sad-but-dancey indie. The new album "Salt Hours" is out now, and we're touring it all winter.</p><div class="row"><a class="btn" href="#music">Listen to Salt Hours</a><a class="btn o" href="#tour">Tour dates</a></div></div>
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woNTIgMjUlIDEyJSkiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSI0MDIiIHI9IjU1IiBmaWxsPSJoc2woNTIgNjUlIDQwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iMjkwIiBjeT0iMzE2IiByPSI2NyIgZmlsbD0iaHNsKDc1IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQyMyIgcj0iNzkiIGZpbGw9ImhzbCg5OCA2NSUgNTAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSI0NzYiIHI9IjkxIiBmaWxsPSJoc2woMTIxIDY1JSA1NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9Ijc3MCIgY3k9IjM1MyIgcj0iMTAzIiBmaWxsPSJoc2woMTQ0IDY1JSA2MCUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjkzMCIgY3k9IjQ0MSIgcj0iMTE1IiBmaWxsPSJoc2woMTY3IDY1JSA2NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjEwOTAiIGN5PSIzMzUiIHI9IjEyNyIgZmlsbD0iaHNsKDE5MCA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDUyIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="700" height="933" fetchpriority="high"></div></section>
+
+<section class="music" id="music" aria-labelledby="m1"><div class="wrap"><div class="sh"><div><h2 id="m1">Salt Hours</h2><p>Our second album. 8 songs, recorded live in a church hall in two weeks.</p></div></div>
+<div class="mg"><div class="cover" aria-hidden="true"><svg viewBox="0 0 300 300"><circle cx="210" cy="90" r="46" fill="#FFD9C7" opacity=".9"/><path d="M0 210c40-30 70-30 110 0s70 30 110 0 60-24 80-10v100H0z" fill="#2A1249" opacity=".7"/><path d="M0 240c40-26 70-26 110 0s70 26 110 0 60-20 80-8v68H0z" fill="#2A1249"/></svg><b>Salt<br>Hours</b></div>
+<div class="player" id="pl"><div class="np"><div><b id="tn"></b><br><span id="ta">The Low Tides</span></div><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+<div class="ctl"><button type="button" id="pv" aria-label="Previous track">⏮</button><button type="button" id="pp" aria-label="Play" aria-pressed="false">▶</button><button type="button" id="nx" aria-label="Next track">⏭</button></div>
+<div class="prog" aria-hidden="true"><i id="pb"></i></div><div class="tm"><span id="ct">0:00</span><span id="dt">0:00</span></div>
+<ol class="tl" id="tl"></ol><p class="note">This is a preview player with no audio files. Connect your own music or embed a streaming player here.</p></div></div></div></section>
+
+<section id="tour" aria-labelledby="t1"><div class="wrap"><div class="sh"><div><h2 id="t1">On tour</h2><p>Tickets go fast. Sold out shows have a waitlist at the venue.</p></div><div class="flt" id="flt" role="group" aria-label="Filter by region"><button type="button" aria-pressed="true" data-r="all">All shows</button><button type="button" aria-pressed="false" data-r="UK">UK</button><button type="button" aria-pressed="false" data-r="Europe">Europe</button><button type="button" aria-pressed="false" data-r="North America">North America</button></div></div><div id="gigs" aria-live="polite"></div></div></section>
+
+<section class="merch" id="merch" aria-labelledby="r1"><div class="wrap"><div class="sh"><div><h2 id="r1">Merch</h2><p>Printed in Brighton on organic cotton. Shipping worldwide.</p></div></div><div class="mr" id="mr"></div><div class="bm" id="bm" aria-live="polite"><span id="bt"></span><a class="btn" href="#merch" style="background:var(--or)">Checkout</a></div></div></section>
+
+<section class="list" aria-labelledby="l1"><div class="wrap"><h2 id="l1">Get the news first</h2><p>New songs, tour dates and the odd blurry photo. About one email a month.</p><form class="lf" id="lf"><label for="le">Email address</label><input id="le" type="email" placeholder="Your email" required autocomplete="email"><button class="btn" type="submit">Sign me up</button></form><p class="msg" id="lm" role="status">You're on the list. See you at a show.</p></div></section>
+</main>
+<footer><div class="wrap"><p>© <span id="yr"></span> The Low Tides. Booking: agent@lowtides.example</p><p><a href="https://unsplash.com">Photos: Unsplash</a> &nbsp;|&nbsp; <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">More free templates</a></p></div></footer>
+<script>
+(()=>{const $=id=>document.getElementById(id);
+const T=[["Undertow",214],["Salt Hours",248],["Pier Lights",197],["Half Awake",231],["Slow Leak",265],["Cold Coffee Sunday",189],["Driftwood",242],["Low Tide",305]];let ti=0,pos=0,iv=null;const f=s=>Math.floor(s/60)+':'+String(s%60).padStart(2,'0');
+function draw(){$('tn').textContent=T[ti][0];$('dt').textContent=f(T[ti][1]);$('ct').textContent=f(pos);$('pb').style.width=pos/T[ti][1]*100+'%';
+$('tl').innerHTML=T.map((t,i)=>`<li><button type="button" data-i="${i}" aria-current="${i===ti}"><span class="n">${i+1}</span><span>${t[0]}</span><span class="n">${f(t[1])}</span></button></li>`).join('')}
+function play(on){clearInterval(iv);iv=null;$('pl').classList.toggle('playing',on);$('pp').textContent=on?'⏸':'▶';$('pp').setAttribute('aria-label',on?'Pause':'Play');$('pp').setAttribute('aria-pressed',on);
+if(on)iv=setInterval(()=>{pos+=1;if(pos>=T[ti][1]){ti=(ti+1)%T.length;pos=0}draw()},250)}
+$('pp').onclick=()=>play(!iv);$('nx').onclick=()=>{ti=(ti+1)%T.length;pos=0;draw()};$('pv').onclick=()=>{ti=(ti+T.length-1)%T.length;pos=0;draw()};
+$('tl').onclick=e=>{const b=e.target.closest('button');if(!b)return;ti=+b.dataset.i;pos=0;draw();play(true)};draw();
+const G=[["2026-10-17","Brighton","The Old Pier Rooms","UK","few"],["2026-10-19","London","The Lantern Hall","UK","sold"],["2026-10-21","Manchester","Mill Street Social","UK",""],["2026-10-24","Glasgow","The Wee Stage","UK",""],["2026-11-02","Amsterdam","Canal House","Europe",""],["2026-11-04","Berlin","Kellerbar Ost","Europe","few"],["2026-11-06","Paris","Le Petit Hangar","Europe",""],["2026-11-18","New York","Delancey Room","North America","sold"],["2026-11-20","Toronto","Queen West Hall","North America",""],["2026-11-23","Chicago","Northside Theater","North America",""]];
+function gigs(r){$('gigs').innerHTML=G.filter(g=>r==='all'||g[3]===r).map(g=>{const d=new Date(g[0]);return`<div class="gig"><span class="d">${d.getDate()} ${d.toLocaleDateString('en-GB',{month:'short'})}<small>${d.toLocaleDateString('en-GB',{weekday:'long'})}</small></span><div><h3>${g[1]}</h3><p>${g[2]}</p></div><p class="v">${g[3]}</p>${g[4]==='sold'?'<span class="so">Sold out</span>':`<a href="#tour" class="${g[4]}">${g[4]==='few'?'Last tickets':'Tickets'}</a>`}</div>`}).join('')}
+$('flt').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('flt').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));gigs(b.dataset.r)};gigs('all');
+const M=[["Salt Hours on vinyl","Heavyweight, coral pink",28,"#FF7A3D","vinyl"],["Wave tee","Cream cotton, sizes S to XXL",25,"#FFD9C7","tee"],["Tour hoodie","Deep purple, tour dates on the back",45,"#53298F","tee"],["Tote bag","Strong enough for records",14,"#FFE9A8","bag"]];
+const art=(c,t)=>t==='vinyl'?`<svg width="70%" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#1A0A30"/><circle cx="50" cy="50" r="18" fill="${c}"/><circle cx="50" cy="50" r="3" fill="#1A0A30"/></svg>`:t==='bag'?`<svg width="60%" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 35h60l-6 55H26z" fill="#3D1C6B"/><path d="M36 35c0-16 28-16 28 0" stroke="#3D1C6B" stroke-width="5" fill="none"/></svg>`:`<svg width="70%" viewBox="0 0 100 100" aria-hidden="true"><path d="M30 18 12 30l8 16 10-4v44h40V42l10 4 8-16-18-12c-4 8-26 8-30 0z" fill="#3D1C6B"/><path d="M34 60c6-6 10-6 16 0s10 6 16 0" stroke="#FF7A3D" stroke-width="4" fill="none"/></svg>`;
+let bag=[];$('mr').innerHTML=M.map((m,i)=>`<article class="it"><div class="art" style="background:${m[3]}">${art(m[3],m[4])}</div><h3>${m[0]}</h3><p>${m[1]}</p><div class="ft"><b>£${m[2]}</b><button type="button" data-i="${i}">Add to bag</button></div></article>`).join('');
+$('mr').onclick=e=>{const b=e.target.closest('button');if(!b)return;bag.push(+b.dataset.i);const t=bag.reduce((a,i)=>a+M[i][2],0);$('bagc').textContent='Bag: '+bag.length;$('bt').textContent=`${bag.length} item${bag.length>1?'s':''} in your bag, £${t}`;$('bm').classList.add('on');b.textContent='Added ✓';setTimeout(()=>b.textContent='Add to bag',1200)};
+$('lf').onsubmit=e=>{e.preventDefault();$('lm').classList.add('on')};
+})();
+</script>
+<script>
+(()=>{const b=document.querySelector('.burger'),m=document.getElementById('menu'),y=document.getElementById('yr');
+if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}))}
+if(y)y.textContent=new Date().getFullYear()})();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

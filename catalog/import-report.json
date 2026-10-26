@@ -96,18 +96,18 @@
       "revision": "eb3df5cedc826008be8e1037c1182e649037c74a",
       "license": "MIT",
       "adapter": "shaders",
-      "reason": "Only the retained, reviewed source scope is distributed.",
+      "reason": "Public catalog reduced to temporally validated original scenes; checkerboard/filter fixtures, blur demonstrations and static test shapes removed. Shared engine source remains a dependency.",
       "evidence": "https://github.com/shader-effects-inc/shaders/blob/eb3df5cedc826008be8e1037c1182e649037c74a/LICENSE",
       "discovered": 200,
-      "imported": 200,
-      "sourceChecked": 200,
-      "runtimeValidated": 0,
+      "imported": 31,
+      "sourceChecked": 31,
+      "runtimeValidated": 31,
       "duplicates": 0,
       "inventoryComplete": true,
       "scope": "Import open-source shader definitions and supporting package source. Pro presets, stock media and marketing images are outside this import.",
       "supportFiles": 499,
       "supportUrl": "/imported/shaders/support.zip",
-      "removed": 0
+      "removed": 169
     },
     {
       "id": "spline",

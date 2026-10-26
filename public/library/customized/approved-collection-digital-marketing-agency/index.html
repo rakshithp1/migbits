@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;connect-src 'none';font-src 'none';form-action 'none';base-uri 'none'">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Marketing Agency Website Template (HTML) | Brightline</title>
+<meta name="description" content="Free marketing agency website template in one HTML file. Works on phones, SEO ready, with case studies, pricing, FAQ and a contact form. Free download.">
+<meta name="keywords" content="digital marketing agency website template, marketing agency template free, SEO agency website template, agency landing page HTML, free HTML template, one page website template">
+
+
+<meta name="theme-color" content="#0B3C49">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Structured data for this template page. When you use the template, replace it with LocalBusiness or Organization schema for your own business (see README). -->
+
+
+<style>
+:root{
+  --ink:#0B3C49; --ink-2:#12505F; --magenta:#E0218A; --sun:#FFC53D; --mist:#EAF3F4; --white:#FFFFFF; --text:#16323A; --muted:#54717A;
+  --display:"Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --body:"DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1200px; --r-lg:28px; --r-sm:10px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--text);background:var(--white);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.02;margin:0;letter-spacing:-.02em;color:var(--ink)}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:0;background:var(--sun);padding:10px 16px;z-index:100}
+.skip:focus{left:12px;top:12px}
+:focus-visible{outline:3px solid var(--magenta);outline-offset:3px;border-radius:4px}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #d9e6e8}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:24px;color:var(--ink);text-decoration:none}
+.logo svg{width:34px;height:34px}
+.menu{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.menu a{text-decoration:none;font-weight:500;color:var(--ink)}
+.menu a:hover{color:var(--magenta)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;border-radius:999px;padding:14px 26px;border:2px solid transparent;cursor:pointer;font-family:var(--body);font-size:16px;transition:transform .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--magenta);color:#fff}
+.btn-primary:hover{background:#c41677}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-sun{background:var(--sun);color:var(--ink)}
+.burger{display:none;background:none;border:0;padding:8px;cursor:pointer}
+.burger span{display:block;width:26px;height:3px;background:var(--ink);margin:5px 0;border-radius:2px}
+
+/* hero */
+.hero{padding:72px 0 96px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(46px,7.4vw,104px);font-weight:800}
+.hero h1 .hl{background:linear-gradient(transparent 62%, var(--sun) 62%);padding:0 .06em}
+.hero .lead{font-size:20px;color:var(--muted);max-width:40ch;margin:28px 0 36px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.rating{display:flex;align-items:center;gap:12px;margin-top:40px;color:var(--muted);font-size:15px}
+.stars{color:var(--sun);letter-spacing:2px;font-size:18px}
+.collage{position:relative;height:540px}
+.collage figure{position:absolute;margin:0;border-radius:var(--r-lg);overflow:hidden;box-shadow:0 30px 60px -30px rgba(11,60,73,.55)}
+.collage .c1{width:74%;height:70%;right:0;top:0;transform:rotate(3deg)}
+.collage .c2{width:58%;height:48%;left:0;bottom:0;transform:rotate(-4deg);border:8px solid #fff}
+.collage img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:8%;top:12%;background:var(--ink);color:#fff;border-radius:20px;padding:18px 20px;font-family:var(--display);box-shadow:0 20px 40px -20px rgba(0,0,0,.5);z-index:2}
+.badge b{display:block;font-size:40px;color:var(--sun);line-height:1}
+.badge span{font-size:14px;font-family:var(--body);opacity:.85}
+
+/* ticker */
+.ticker{background:var(--sun);color:var(--ink);overflow:hidden;border-block:3px solid var(--ink)}
+.track{display:flex;gap:56px;width:max-content;padding:22px 0;animation:scroll 38s linear infinite}
+.track span{font-family:var(--display);font-weight:800;font-size:clamp(26px,3.4vw,42px);white-space:nowrap}
+.track span em{font-style:normal;color:var(--magenta)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.track{animation:none}}
+
+/* sections */
+section{padding:110px 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.sec-head h2{font-size:clamp(36px,4.6vw,64px);font-weight:800}
+.sec-head p{color:var(--muted);font-size:18px;max-width:52ch}
+
+.services{background:var(--mist)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:#fff;border-radius:var(--r-sm);padding:32px;border:1px solid #d3e3e6;display:flex;flex-direction:column}
+.svc:nth-child(1){grid-row:span 2;background:var(--ink);color:#e7f2f4;border-color:var(--ink)}
+.svc:nth-child(1) h3{color:#fff}
+.svc:nth-child(1) .svc-ico{background:var(--sun);color:var(--ink)}
+.svc:nth-child(1) img{border-radius:8px;margin-top:auto;aspect-ratio:4/3;object-fit:cover}
+.svc-ico{width:52px;height:52px;border-radius:14px;background:var(--mist);display:grid;place-items:center;margin-bottom:22px;color:var(--magenta)}
+.svc h3{font-size:26px;margin-bottom:12px;font-weight:700}
+.svc ul{padding-left:18px;margin:6px 0 22px;color:inherit;opacity:.9}
+.svc li{margin-bottom:4px}
+
+/* work */
+.work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.case{position:relative;border-radius:var(--r-lg);overflow:hidden;min-height:440px;color:#fff;display:flex;align-items:flex-end}
+.case img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.case:hover img{transform:scale(1.04)}
+.case::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,60,73,0) 30%,rgba(11,60,73,.92))}
+.case-body{position:relative;z-index:1;padding:32px}
+.case-body h3{color:#fff;font-size:30px;margin:8px 0 10px}
+.tag{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;font-size:13px;padding:5px 12px;border-radius:999px}
+.metric{display:flex;gap:28px;margin-top:16px;flex-wrap:wrap}
+.metric b{font-family:var(--display);font-size:38px;color:var(--sun);display:block;line-height:1}
+.metric small{opacity:.85;font-size:14px}
+.case.w7{grid-column:span 7}.case.w5{grid-column:span 5}
+
+/* process */
+.process{background:var(--ink);color:#d6e8eb}
+.process h2{color:#fff}
+.process .sec-head p{color:#a9c7cd}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:2px solid var(--ink-2)}
+.step{padding:34px 26px 10px 0;counter-increment:s;position:relative}
+.step::before{content:"0" counter(s);font-family:var(--display);font-weight:800;font-size:64px;color:var(--sun);line-height:1;display:block;margin-bottom:18px}
+.step h3{color:#fff;font-size:24px;margin-bottom:10px}
+
+/* team */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.member figure{margin:0 0 16px;border-radius:var(--r-sm);overflow:hidden;aspect-ratio:4/5;background:var(--mist)}
+.member img{width:100%;height:100%;object-fit:cover;filter:saturate(.9)}
+.member h3{font-size:22px;font-weight:700}
+.member p{color:var(--muted);margin:4px 0 0;font-size:15px}
+
+/* quotes */
+.quotes{background:var(--mist)}
+.q-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:24px}
+blockquote{margin:0;background:#fff;border-radius:var(--r-lg);padding:40px;border:1px solid #d3e3e6}
+blockquote p{font-family:var(--display);font-size:clamp(22px,2.4vw,32px);line-height:1.25;color:var(--ink);font-weight:500}
+blockquote.small p{font-size:21px}
+cite{font-style:normal;display:flex;align-items:center;gap:14px;margin-top:22px;color:var(--muted);font-size:15px}
+cite b{color:var(--ink);display:block;font-size:16px}
+.av{width:48px;height:48px;border-radius:50%;background:var(--magenta);color:#fff;display:grid;place-items:center;font-weight:700}
+
+/* pricing */
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+.plan{border:2px solid #d3e3e6;border-radius:var(--r-lg);padding:36px;display:flex;flex-direction:column}
+.plan.pop{border-color:var(--magenta);background:linear-gradient(180deg,#fff0f8,#fff 45%);position:relative}
+.plan.pop::before{content:"Most chosen";position:absolute;top:-14px;left:36px;background:var(--magenta);color:#fff;font-size:13px;font-weight:700;padding:4px 14px;border-radius:999px}
+.plan h3{font-size:26px}
+.amount{font-family:var(--display);font-size:54px;font-weight:800;color:var(--ink);margin:14px 0 4px}
+.amount small{font-size:17px;font-family:var(--body);color:var(--muted);font-weight:500}
+.plan ul{list-style:none;padding:0;margin:20px 0 28px}
+.plan li{padding:9px 0 9px 30px;border-bottom:1px solid #e5eef0;position:relative}
+.plan li::before{content:"";position:absolute;left:0;top:15px;width:16px;height:9px;border-left:3px solid var(--magenta);border-bottom:3px solid var(--magenta);transform:rotate(-45deg)}
+.plan .btn{margin-top:auto;justify-content:center}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+details{border-bottom:2px solid #d3e3e6;padding:22px 0}
+summary{cursor:pointer;list-style:none;font-family:var(--display);font-weight:700;font-size:22px;color:var(--ink);display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:30px;line-height:1;color:var(--magenta);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:14px 0 0;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--magenta);color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact h2{color:#fff;font-size:clamp(40px,5vw,70px);font-weight:800}
+.contact .lead{font-size:19px;opacity:.95;margin:22px 0 30px}
+.contact-list{list-style:none;padding:0;margin:0}
+.contact-list li{padding:10px 0;border-top:1px solid rgba(255,255,255,.35)}
+.contact-list b{display:block;font-size:13px;opacity:.8;font-weight:500}
+form{background:#fff;color:var(--text);border-radius:var(--r-lg);padding:34px}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:6px;color:var(--ink)}
+input,select,textarea{width:100%;font:inherit;padding:13px 15px;border:2px solid #d3e3e6;border-radius:12px;margin-bottom:16px;background:#fff;color:var(--text)}
+input:focus,select:focus,textarea:focus{border-color:var(--ink);outline:none}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .btn{width:100%;justify-content:center;background:var(--ink);color:#fff}
+.form-note{font-size:13px;color:var(--muted);margin-top:12px;text-align:center}
+
+footer{background:var(--ink);color:#a9c7cd;padding:64px 0 32px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+footer h3{color:#fff;font-size:18px;font-family:var(--body);margin-bottom:14px}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--sun)}
+.foot-logo{color:#fff}
+.legal{border-top:1px solid var(--ink-2);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media (max-width:980px){
+  .hero-grid,.sec-head,.q-grid,.faq-grid,.contact-grid{grid-template-columns:1fr}
+  .collage{height:420px}
+  .svc-grid,.price-grid{grid-template-columns:1fr 1fr}
+  .svc:nth-child(1){grid-row:auto;grid-column:span 2}
+  .steps{grid-template-columns:1fr 1fr}
+  .team-grid{grid-template-columns:1fr 1fr}
+  .case.w7,.case.w5{grid-column:span 12}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .menu,.nav .btn{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:#fff;padding:20px 24px 28px;border-bottom:1px solid #d9e6e8;gap:18px}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  section{padding:76px 0}
+  .svc-grid,.price-grid,.steps,.team-grid,.row2,.foot-grid{grid-template-columns:1fr}
+  .svc:nth-child(1){grid-column:auto}
+  .collage{height:340px}
+  .badge{left:0;top:4%}
+}
+</style>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{overflow-x:clip}img{object-fit:cover}
+body[data-mb-template-edition]{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:focus-visible{outline:3px solid #367aff!important;outline-offset:4px}
+.mb-template-motion{position:fixed;bottom:16px;right:16px;z-index:2000;background:#10213c;color:white;border:1px solid #9bbcff66;border-radius:30px;padding:9px 14px;font:12px system-ui;box-shadow:0 5px 24px #0003}
+.mb-template-status{font:13px/1.5 system-ui;color:inherit;margin-top:12px}
+.mb-template-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+.mb-template-icon svg{width:100%;height:100%;fill:currentColor}
+.mb-template-art{max-width:100%;height:auto}
+.mb-template-zoom{max-width:min(1000px,92vw);border:0;border-radius:14px;padding:10px;background:#101827;color:white}
+.mb-template-zoom::backdrop{background:#050a15ce}.mb-template-zoom img{max-width:100%;max-height:80vh}.mb-template-zoom button{display:block;margin:6px 0 6px auto}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.btn{transition:box-shadow .25s,filter .25s}.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px #0002}.card,.portfolio-item{transition:box-shadow .3s}.card:hover,.portfolio-item:hover{box-shadow:0 12px 32px #1636671c}}
+html[data-template-motion=paused] *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body data-mb-template-edition data-preview-state="loading">
+<a class="skip" href="#main">Skip to content</a>
+<!-- Template notice bar: delete this block before you publish your own site -->
+
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="#" class="logo" aria-label="Brightline home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0B3C49"/><path d="M18 44 L32 16 L46 44" stroke="#FFC53D" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Brightline
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Case studies</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary">Get a free audit</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 id="hero-title">Marketing that shows up as <span class="hl">revenue</span>, not just reach.</h1>
+        <p class="lead">Brightline is a digital marketing agency for brands that are ready to grow. We run SEO, paid ads, social media and content as one plan, measured against the only number that matters: sales.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get a free marketing audit</a>
+          <a href="#work" class="btn btn-ghost">See our results</a>
+        </div>
+        <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span>Rated 4.9 by 180+ clients across e-commerce, SaaS and local services</span></div>
+      </div>
+      <div class="collage">
+        <figure class="c1"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTk2IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iMzA2IiByPSI1NSIgZmlsbD0iaHNsKDE5NiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIyNjgiIHI9IjY3IiBmaWxsPSJoc2woMjE5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjI0OSIgcj0iNzkiIGZpbGw9ImhzbCgyNDIgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzg5IiByPSI5MSIgZmlsbD0iaHNsKDI2NSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0NTkiIHI9IjEwMyIgZmlsbD0iaHNsKDI4OCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSIzNDQiIHI9IjExNSIgZmlsbD0iaHNsKDMxMSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMjg3IiByPSIxMjciIGZpbGw9ImhzbCgzMzQgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxOTYgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="900" height="760"></figure>
+        <figure class="c2"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzI5IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjQ3OSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDMyOSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iMzE0IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMzQ2IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI0MzIiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgzIDYwJSA0NyUpIi8+PHJlY3QgeD0iNDg1IiB5PSI0OTEiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjU1IiByeD0iMjEiIGZpbGw9ImhzbCgyMCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNTIwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMzcgNjAlIDU5JSkiLz48cmVjdCB4PSI3NzUiIHk9IjUzNSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMDUiIHJ4PSIyNyIgZmlsbD0iaHNsKDU0IDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSIzNDIiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCg3MSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMzI5IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="700" height="520" loading="eager"></figure>
+        <div class="badge"><b>3.8×</b><span>average return on ad spend in 2025</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-label="Recent client results">
+    <div class="track">
+      <span><em>+212%</em> organic traffic for a skincare brand</span>
+      <span><em>−41%</em> cost per lead for a law firm</span>
+      <span><em>$1.2M</em> in tracked e-commerce sales</span>
+      <span><em>18k</em> new followers in 90 days</span>
+      <span><em>+212%</em> organic traffic for a skincare brand</span>
+      <span><em>−41%</em> cost per lead for a law firm</span>
+      <span><em>$1.2M</em> in tracked e-commerce sales</span>
+      <span><em>18k</em> new followers in 90 days</span>
+    </div>
+  </div>
+
+  <section class="services" id="services" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 id="svc-title">Everything your growth needs, under one roof.</h2>
+        <p>Most brands hire one freelancer for ads, another for SEO and a third for social, then wonder why nothing connects. We build one plan where every channel feeds the next.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal">
+          <div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div>
+          <h3>Search engine optimisation</h3>
+          <p>We fix the technical issues that hold your site back, research the keywords your buyers actually type, and publish pages that earn a place on page one.</p>
+          <ul><li>Technical SEO audit and fixes</li><li>Keyword and competitor research</li><li>On-page optimisation and link building</li><li>Local SEO and Google Business Profile</li></ul>
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woNjMgMjUlIDEyJSkiLz48cmVjdCB4PSI1MCIgeT0iMzczIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE4MCIgcng9IjEyIiBmaWxsPSJoc2woNjMgNjAlIDM1JSkiLz48cmVjdCB4PSIxOTUiIHk9IjQ2MSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyMDUiIHJ4PSIxNSIgZmlsbD0iaHNsKDgwIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI1MDUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCg5NyA2MCUgNDclKSIvPjxyZWN0IHg9IjQ4NSIgeT0iMzI3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI1NSIgcng9IjIxIiBmaWxsPSJoc2woMTE0IDYwJSA1MyUpIi8+PHJlY3QgeD0iNjMwIiB5PSIyMzgiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjgwIiByeD0iMjQiIGZpbGw9ImhzbCgxMzEgNjAlIDU5JSkiLz48cmVjdCB4PSI3NzUiIHk9IjE5NCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMDUiIHJ4PSIyNyIgZmlsbD0iaHNsKDE0OCA2MCUgNjUlKSIvPjxyZWN0IHg9IjkyMCIgeT0iMTcyIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMzMCIgcng9IjMwIiBmaWxsPSJoc2woMTY1IDYwJSA3MSUpIi8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCg2MyAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="700" height="525" loading="eager">
+        </article>
+        <article class="svc reveal">
+          <div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg></div>
+          <h3>Paid advertising</h3>
+          <p>Google, Meta, TikTok and LinkedIn campaigns built around your margins, so every dollar has a job.</p>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 12a9 9 0 1 1-4-7.5L21 3v6h-6"/></svg></div>
+          <h3>Social media</h3>
+          <p>Content calendars, short-form video and community management that give people a reason to follow.</p>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div>
+          <h3>Content marketing</h3>
+          <p>Blog posts, guides and landing pages written by specialists who understand both your customers and search.</p>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></div>
+          <h3>Email &amp; automation</h3>
+          <p>Welcome series, abandoned-cart flows and newsletters that keep selling after the first visit.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 id="work-title">Real campaigns. Real numbers.</h2>
+        <p>A few recent projects. Every figure comes from the client's own analytics, measured over the same period the year before.</p>
+      </div>
+      <div class="work-grid">
+        <article class="case w7 reveal">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzAzIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjQ1MyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDMwMyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNTAxIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMzIwIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIzMjUiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgzMzcgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjIzNyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDM1NCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iMzkzIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMTEgNjAlIDU5JSkiLz48cmVjdCB4PSI3NzUiIHk9IjQ3MSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMDUiIHJ4PSIyNyIgZmlsbD0iaHNsKDI4IDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSI1MTAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCg0NSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMzAzIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="1100" height="700" loading="eager">
+          <div class="case-body"><span class="tag">E-commerce · SEO + Ads</span><h3>Taking a skincare brand from page five to page one</h3><p>We rebuilt their category pages around real search demand and paired them with retargeting ads.</p><div class="metric"><div><b>+212%</b><small>organic traffic</small></div><div><b>4.6×</b><small>ROAS</small></div></div></div>
+        </article>
+        <article class="case w5 reveal">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTkxIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjUwMSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDE5MSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNTI1IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjA4IDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIzMzciIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyMjUgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjQ0MyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDI0MiA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNDk2IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjU5IDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIzMjMiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgyNzYgNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjQzNiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDI5MyA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMTkxIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="800" height="700" loading="eager">
+          <div class="case-body"><span class="tag">Legal · Google Ads</span><h3>Cutting cost per lead for a city law firm</h3><div class="metric"><div><b>−41%</b><small>cost per lead</small></div><div><b>+63</b><small>cases per quarter</small></div></div></div>
+        </article>
+        <article class="case w5 reveal">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjY4IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDM4IiByPSI1NSIgZmlsbD0iaHNsKDI2OCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSI0ODQiIHI9IjY3IiBmaWxsPSJoc2woMjkxIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjUwNyIgcj0iNzkiIGZpbGw9ImhzbCgzMTQgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzY4IiByPSI5MSIgZmlsbD0iaHNsKDMzNyA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSI0NDkiIHI9IjEwMyIgZmlsbD0iaHNsKDAgNjUlIDYwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iOTMwIiBjeT0iNDg5IiByPSIxMTUiIGZpbGw9ImhzbCgyMyA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzU5IiByPSIxMjciIGZpbGw9ImhzbCg0NiA2NSUgNzAlKSIgb3BhY2l0eT0iLjgiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDI2OCAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="800" height="700" loading="eager">
+          <div class="case-body"><span class="tag">Food &amp; drink · Social</span><h3>Building a following for a local coffee chain</h3><div class="metric"><div><b>18k</b><small>new followers</small></div><div><b>+27%</b><small>store visits</small></div></div></div>
+        </article>
+        <article class="case w7 reveal">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTY2IDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNTE2IiByPSI1NSIgZmlsbD0iaHNsKDE2NiA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzNzMiIHI9IjY3IiBmaWxsPSJoc2woMTg5IDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ1MSIgcj0iNzkiIGZpbGw9ImhzbCgyMTIgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iMzQwIiByPSI5MSIgZmlsbD0iaHNsKDIzNSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIyODUiIHI9IjEwMyIgZmlsbD0iaHNsKDI1OCA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0MDciIHI9IjExNSIgZmlsbD0iaHNsKDI4MSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iNDY4IiByPSIxMjciIGZpbGw9ImhzbCgzMDQgNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxNjYgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="1100" height="700" loading="eager">
+          <div class="case-body"><span class="tag">SaaS · Content + LinkedIn</span><h3>Filling the sales pipeline for a B2B software company</h3><p>A content engine of 40 in-depth guides, promoted to decision makers on LinkedIn.</p><div class="metric"><div><b>320</b><small>demo requests</small></div><div><b>$1.2M</b><small>pipeline created</small></div></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 id="process-title">How we work with you</h2>
+        <p>No mystery, no 60-slide decks. A clear four-step process that gets you from first call to live campaigns in about three weeks.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h3>Audit</h3><p>We review your website, ads, analytics and competitors, then show you exactly where money is being lost.</p></div>
+        <div class="step reveal"><h3>Plan</h3><p>You get a 90-day plan with targets, budgets and the channels that suit your business best.</p></div>
+        <div class="step reveal"><h3>Launch</h3><p>Our specialists build pages, ads and content, and set up tracking so every sale is measured.</p></div>
+        <div class="step reveal"><h3>Grow</h3><p>We test, cut what doesn't work and invest more in what does, with a report you can actually read.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" aria-labelledby="team-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 id="team-title">The people behind your growth</h2>
+        <p>A senior team of 24 strategists, analysts, writers and designers. You always speak to the people doing the work.</p>
+      </div>
+      <div class="team-grid">
+        <div class="member reveal"><figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMTgwIDI1JSAxMiUpIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iNDEwIiByPSI1NSIgZmlsbD0iaHNsKDE4MCA2NSUgNDAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzMjAiIHI9IjY3IiBmaWxsPSJoc2woMjAzIDY1JSA0NSUpIiBvcGFjaXR5PSIuOCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQyNSIgcj0iNzkiIGZpbGw9ImhzbCgyMjYgNjUlIDUwJSkiIG9wYWNpdHk9Ii44Ii8+PGNpcmNsZSBjeD0iNjEwIiBjeT0iNDc3IiByPSI5MSIgZmlsbD0iaHNsKDI0OSA2NSUgNTUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIzNTMiIHI9IjEwMyIgZmlsbD0iaHNsKDI3MiA2NSUgNjAlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0NDEiIHI9IjExNSIgZmlsbD0iaHNsKDI5NSA2NSUgNjUlKSIgb3BhY2l0eT0iLjgiLz48Y2lyY2xlIGN4PSIxMDkwIiBjeT0iMzM1IiByPSIxMjciIGZpbGw9ImhzbCgzMTggNjUlIDcwJSkiIG9wYWNpdHk9Ii44Ii8+PHBhdGggZD0iTTAgNzAwUTQ1MCA0NTAgMTI4MCA2NTBWODAwSDAiIGZpbGw9ImhzbCgxODAgMzUlIDIwJSkiLz48L3N2Zz4=" alt="Original MigBits geometric demo artwork" width="500" height="625" loading="eager"></figure><h3>Maya Chen</h3><p>Founder &amp; strategy lead</p></div>
+        <div class="member reveal"><figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzE1IDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjU0NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDMxNSA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNTQ3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMzMyIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSI1NDgiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgzNDkgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjU0OSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDYgNjAlIDUzJSkiLz48cmVjdCB4PSI2MzAiIHk9IjU0OSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyODAiIHJ4PSIyNCIgZmlsbD0iaHNsKDIzIDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIzNDkiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCg0MCA2MCUgNjUlKSIvPjxyZWN0IHg9IjkyMCIgeT0iMjQ5IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMzMCIgcng9IjMwIiBmaWxsPSJoc2woNTcgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDMxNSAzNSUgMjAlKSIvPjwvc3ZnPg==" alt="Original MigBits geometric demo artwork" width="500" height="625" loading="eager"></figure><h3>Daniel Okafor</h3><p>Head of paid media</p></div>
+        <div class="member reveal"><figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMjEzIDI1JSAxMiUpIi8+PHJlY3QgeD0iNTAiIHk9IjQ4MyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0iaHNsKDIxMyA2MCUgMzUlKSIvPjxyZWN0IHg9IjE5NSIgeT0iNTE2IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjIwNSIgcng9IjE1IiBmaWxsPSJoc2woMjMwIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIzMzMiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCgyNDcgNjAlIDQ3JSkiLz48cmVjdCB4PSI0ODUiIHk9IjQ0MSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNTUiIHJ4PSIyMSIgZmlsbD0iaHNsKDI2NCA2MCUgNTMlKSIvPjxyZWN0IHg9IjYzMCIgeT0iNDk1IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI4MCIgcng9IjI0IiBmaWxsPSJoc2woMjgxIDYwJSA1OSUpIi8+PHJlY3QgeD0iNzc1IiB5PSIzMjIiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzA1IiByeD0iMjciIGZpbGw9ImhzbCgyOTggNjAlIDY1JSkiLz48cmVjdCB4PSI5MjAiIHk9IjQzNiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIzMCIgZmlsbD0iaHNsKDMxNSA2MCUgNzElKSIvPjxwYXRoIGQ9Ik0wIDcwMFE0NTAgNDUwIDEyODAgNjUwVjgwMEgwIiBmaWxsPSJoc2woMjEzIDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="500" height="625" loading="eager"></figure><h3>Sofia Lindqvist</h3><p>SEO director</p></div>
+        <div class="member reveal"><figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCI+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJoc2woMzUgMjUlIDEyJSkiLz48cmVjdCB4PSI1MCIgeT0iNDI1IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE4MCIgcng9IjEyIiBmaWxsPSJoc2woMzUgNjAlIDM1JSkiLz48cmVjdCB4PSIxOTUiIHk9IjQ4NyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyMDUiIHJ4PSIxNSIgZmlsbD0iaHNsKDUyIDYwJSA0MSUpIi8+PHJlY3QgeD0iMzQwIiB5PSIzMTgiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjMwIiByeD0iMTgiIGZpbGw9ImhzbCg2OSA2MCUgNDclKSIvPjxyZWN0IHg9IjQ4NSIgeT0iMjM0IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI1NSIgcng9IjIxIiBmaWxsPSJoc2woODYgNjAlIDUzJSkiLz48cmVjdCB4PSI2MzAiIHk9IjE5MiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyODAiIHJ4PSIyNCIgZmlsbD0iaHNsKDEwMyA2MCUgNTklKSIvPjxyZWN0IHg9Ijc3NSIgeT0iMTcxIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMwNSIgcng9IjI3IiBmaWxsPSJoc2woMTIwIDYwJSA2NSUpIi8+PHJlY3QgeD0iOTIwIiB5PSIzNjAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzMwIiByeD0iMzAiIGZpbGw9ImhzbCgxMzcgNjAlIDcxJSkiLz48cGF0aCBkPSJNMCA3MDBRNDUwIDQ1MCAxMjgwIDY1MFY4MDBIMCIgZmlsbD0iaHNsKDM1IDM1JSAyMCUpIi8+PC9zdmc+" alt="Original MigBits geometric demo artwork" width="500" height="625" loading="eager"></figure><h3>Arjun Mehta</h3><p>Creative director</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quotes" aria-labelledby="quotes-title">
+    <div class="wrap">
+      <div class="sec-head reveal"><h2 id="quotes-title">What clients say</h2><p>We keep 92% of our clients for more than two years. Here's why.</p></div>
+      <div class="q-grid">
+        <blockquote class="reveal"><p>"Brightline found $9,000 a month we were wasting on ads, then used it to double our online sales. It's the first agency that talks to us about profit, not clicks."</p><cite><span class="av" aria-hidden="true">LR</span><span><b>Laura Reyes</b>CEO, Glow &amp; Co. Skincare</span></cite></blockquote>
+        <div style="display:grid;gap:24px">
+          <blockquote class="small reveal"><p>"Clear reports, honest advice and results within the first month."</p><cite><span class="av" aria-hidden="true">TW</span><span><b>Tom Walsh</b>Partner, Walsh &amp; Grant Law</span></cite></blockquote>
+          <blockquote class="small reveal"><p>"Our LinkedIn content now books more demos than our sales team."</p><cite><span class="av" aria-hidden="true">PN</span><span><b>Priya Nair</b>VP Marketing, Stackly</span></cite></blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" aria-labelledby="price-title">
+    <div class="wrap">
+      <div class="sec-head reveal"><h2 id="price-title">Simple monthly plans</h2><p>Fees cover strategy, execution and reporting. Ad spend is paid directly to the platforms, so you always own your accounts and data.</p></div>
+      <div class="price-grid">
+        <article class="plan reveal"><h3>Starter</h3><p>For local businesses getting serious about online leads.</p><div class="amount">$1,490<small> /month</small></div><ul><li>One paid channel (Google or Meta)</li><li>Local SEO and Google Business Profile</li><li>Monthly report and call</li></ul><a href="#contact" class="btn btn-ghost">Choose Starter</a></article>
+        <article class="plan pop reveal"><h3>Growth</h3><p>For brands ready to scale across search and social.</p><div class="amount">$3,900<small> /month</small></div><ul><li>Two paid channels</li><li>Full SEO with 4 new pages a month</li><li>Social content (12 posts a month)</li><li>Live dashboard and bi-weekly calls</li></ul><a href="#contact" class="btn btn-primary">Choose Growth</a></article>
+        <article class="plan reveal"><h3>Scale</h3><p>For companies that want a complete marketing team.</p><div class="amount">Custom</div><ul><li>All channels, including email</li><li>Dedicated strategist and analyst</li><li>Video and creative production</li><li>Weekly calls and quarterly planning</li></ul><a href="#contact" class="btn btn-ghost">Talk to us</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <div class="reveal"><h2 id="faq-title" style="font-size:clamp(36px,4.6vw,60px)">Questions, answered</h2><p style="color:var(--muted);margin-top:18px">Can't find what you're looking for? Email <a href="mailto:hello@brightline.agency">hello@brightline.agency</a> and a strategist will reply within one business day.</p></div>
+      <div class="reveal">
+        <details open><summary>How long does it take to see results?</summary><p>Paid ads can bring qualified traffic within the first two weeks. SEO usually shows clear movement in three to six months, depending on your competition and the state of your website.</p></details>
+        <details><summary>Do you lock clients into long contracts?</summary><p>No. After a 90-day starting period, every plan runs month to month with 30 days' notice. We'd rather earn your business every month.</p></details>
+        <details><summary>What is the minimum ad budget?</summary><p>We recommend at least $1,500 a month in ad spend so the platforms have enough data to optimise. We'll tell you honestly if a smaller budget won't work for your goals.</p></details>
+        <details><summary>How do you report on performance?</summary><p>You get a live dashboard, a written monthly report and a review call. We focus on revenue, cost per lead and what we'll do next, not vanity metrics.</p></details>
+        <details><summary>Which industries do you work with?</summary><p>E-commerce, SaaS, professional services, healthcare, hospitality and local businesses. We don't take on two direct competitors in the same city.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 id="contact-title">Let's find your next 100 customers.</h2>
+        <p class="lead">Book a free 30-minute audit. We'll review your website and marketing, and you'll leave with three practical ideas you can use even if you never hire us.</p>
+        <ul class="contact-list">
+          <li><b>Email</b><a href="mailto:hello@brightline.agency">hello@brightline.agency</a></li>
+          <li><b>Phone</b><a href="tel:+15550142290">+1 (555) 014-2290</a></li>
+          <li><b>Studio</b>88 Harbour Street, Toronto, ON M5J 2L1</li>
+        </ul>
+      </div>
+      <formaction="#" method="POST" aria-label="Request a free audit">
+        <div class="row2">
+          <div><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+          <div><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <label for="site">Website</label><input id="site" name="website" type="url" placeholder="https://">
+        <label for="budget">Monthly marketing budget</label>
+        <select id="budget" name="budget"><option>Under $2,000</option><option>$2,000 to $5,000</option><option>$5,000 to $15,000</option><option>More than $15,000</option></select>
+        <label for="msg">What would you like to achieve?</label><textarea id="msg" name="message" rows="4"></textarea>
+        <button type="submit" class="btn">Request my free audit</button>
+        <p class="form-note">We reply within one business day. No spam, ever.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a href="#" class="logo foot-logo"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#12505F"/><path d="M18 44 L32 16 L46 44" stroke="#FFC53D" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Brightline</a><p style="margin-top:16px;max-width:34ch">A digital marketing agency helping growing brands turn attention into revenue since 2014.</p></div>
+      <div><h3>Services</h3><ul><li><a href="#services">SEO</a></li><li><a href="#services">Paid advertising</a></li><li><a href="#services">Social media</a></li><li><a href="#services">Content marketing</a></li></ul></div>
+      <div><h3>Company</h3><ul><li><a href="#team">Team</a></li><li><a href="#work">Case studies</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h3>Follow</h3><ul><li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li><li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li><li><a href="https://www.youtube.com/" rel="noopener">YouTube</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> Brightline Digital. All rights reserved.</span><span>Geometric artwork: MigBits · Free template from <a href="https://mmrahmanbappi.github.io/100-free-html-templates/">Free HTML Templates</a></span></div>
+  </div>
+</footer>
+
+<script>
+  const burger=document.querySelector('.burger'),menu=document.getElementById('menu');
+  burger.addEventListener('click',()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');burger.setAttribute('aria-expanded',false)}));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+<script>
+(()=>{
+const media=matchMedia('(prefers-reduced-motion:reduce)'),active=new Set(),seen=new WeakSet();let paused=false,lastFocus=null;
+const toggle=document.createElement('button');toggle.className='mb-template-motion';toggle.type='button';document.body.append(toggle);
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting||paused||media.matches)continue;observer.unobserve(entry.target);if(seen.has(entry.target))continue;seen.add(entry.target);const a=entry.target.animate([{opacity:.78,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:700,easing:'cubic-bezier(.16,1,.3,1)'});active.add(a);a.finished.finally(()=>active.delete(a)).catch(()=>{});}},{threshold:.1});
+function policy(){const stop=paused||media.matches;document.documentElement.dataset.templateMotion=stop?'paused':'running';toggle.textContent=media.matches?'Reduced motion':paused?'Resume motion':'Pause motion';toggle.disabled=media.matches;toggle.setAttribute('aria-pressed',String(stop));if(stop){active.forEach(a=>a.cancel());active.clear();}else document.querySelectorAll('main>section,header .wrap,article,.card').forEach(el=>{if(!seen.has(el))observer.observe(el);});}
+toggle.onclick=()=>{paused=!paused;policy()};media.addEventListener('change',policy);policy();
+function targetFor(button){const selector=button.getAttribute('data-bs-target')||button.getAttribute('href');return selector&&/^#[a-zA-Z][\w-]*$/.test(selector)?document.querySelector(selector):null;}
+function closeModals(){document.querySelectorAll('.modal.show').forEach(el=>{el.classList.remove('show');el.style.display='none';el.setAttribute('aria-hidden','true');el.removeAttribute('aria-modal');});document.querySelectorAll('.modal-backdrop').forEach(el=>el.remove());lastFocus?.focus();lastFocus=null;}
+document.addEventListener('click',event=>{
+const trigger=event.target.closest('[data-bs-toggle],[data-bs-dismiss]');if(trigger){const kind=trigger.getAttribute('data-bs-toggle'),target=targetFor(trigger);if(kind==='collapse'&&target){event.preventDefault();const show=target.classList.toggle('show');trigger.setAttribute('aria-expanded',String(show));}if(kind==='dropdown'){event.preventDefault();const menu=trigger.parentElement.querySelector('.dropdown-menu');if(menu)trigger.setAttribute('aria-expanded',String(menu.classList.toggle('show')));}if(kind==='modal'&&target){event.preventDefault();lastFocus=trigger;target.classList.add('show');target.style.display='block';target.setAttribute('aria-modal','true');target.removeAttribute('aria-hidden');target.setAttribute('role','dialog');target.tabIndex=-1;target.focus();const backdrop=document.createElement('div');backdrop.className='modal-backdrop fade show';document.body.append(backdrop);}if(trigger.hasAttribute('data-bs-dismiss'))closeModals();}
+const anchor=event.target.closest('a');if(!anchor)return;const href=anchor.getAttribute('href')||'';
+if(anchor.dataset.mbImage){event.preventDefault();const dialog=document.createElement('dialog');dialog.className='mb-template-zoom';const close=document.createElement('button');close.type='button';close.textContent='Close image';const image=document.createElement('img');image.src=anchor.dataset.mbImage;image.alt='Original MigBits demo artwork';dialog.append(close,image);document.body.append(dialog);close.onclick=()=>dialog.close();dialog.onclose=()=>dialog.remove();dialog.showModal();return;}
+if(/^https?:|^mailto:|^tel:/.test(href)){event.preventDefault();return;}
+if(href.startsWith('#')&&!anchor.hasAttribute('data-bs-toggle'))document.querySelectorAll('.navbar-collapse.show').forEach(el=>{el.classList.remove('show');document.querySelectorAll('.navbar-toggler').forEach(button=>button.setAttribute('aria-expanded','false'));});
+});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeModals();if(event.key==='Tab'){const modal=document.querySelector('.modal.show');if(!modal)return;const focus=[...modal.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);if(!focus.length){event.preventDefault();modal.focus();return;}const first=focus[0],last=focus[focus.length-1];if(event.shiftKey&&(document.activeElement===first||document.activeElement===modal)){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('submit',event=>{event.preventDefault();let status=event.target.querySelector('[role=status]');if(!status){status=document.createElement('p');status.setAttribute('role','status');status.className='mb-template-status';event.target.append(status);}status.textContent='Demo only — no information has been sent. Connect your own form backend.';});
+document.querySelectorAll('form [type=submit]').forEach(button=>{button.disabled=false;button.classList.remove('disabled')});
+document.body.dataset.previewState='rendered';
+})();</script><script>(()=>{
+const presets={ocean:215,emerald:155,amber:35,violet:265,rose:340};
+const styles=[...document.querySelectorAll('style')].map(node=>[node,node.textContent]);
+function recolor(css,hue){return css.replace(/#([a-f0-9]{6}|[a-f0-9]{3})(?![a-f0-9])/gi,(original,hex)=>{
+if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');
+const rgb=[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(...rgb),min=Math.min(...rgb),l=(max+min)/2;
+if(max-min<.08||l<.06||l>.96)return original;
+const s=(max-min)/(1-Math.abs(2*l-1));
+const linear=c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4;
+const lum=channels=>channels.reduce((total,c,i)=>total+linear(c)*[.2126,.7152,.0722][i],0);
+const target=lum(rgb),h=hue/30;
+function atLightness(light){const a=s*Math.min(light,1-light);return [0,8,4].map(n=>{const k=(n+h)%12;return light-a*Math.max(-1,Math.min(k-3,9-k,1))})}
+let low=0,high=1;for(let i=0;i<18;i++){const mid=(low+high)/2;if(lum(atLightness(mid))<target)low=mid;else high=mid}
+return 'hsl('+hue+' '+(s*100).toFixed(3)+'% '+((low+high)*50).toFixed(3)+'%)';
+});}
+addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='migbits-template-color')return;
+const id=event.data.color;if(id!=='original'&&!Object.hasOwn(presets,id))return;
+for(const [node,original] of styles)node.textContent=id==='original'?original:recolor(original,presets[id]);
+document.documentElement.dataset.templateColor=id;
+parent.postMessage({type:'migbits-template-color-applied',color:id,css:styles.map(([node])=>node.textContent).join('\n')},'*');
+});parent.postMessage({type:'migbits-template-color-ready'},'*');
+})();</script></body>
+</html>

@@ -17,3 +17,5 @@ public/library/approved/** -text -whitespace
 public/r/*.json -text
 # Pinned reviewed icon sources and notices are hash-verified across platforms.
 resources/visual/fluent-color/** -text -whitespace
+
+public/library/customized/** -text

@@ -1,0 +1,1586 @@
+[
+  {
+    "id": "template-atlas",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-atlas/atlas.html",
+        "sha256": "a1e9cdccfab31475f870acbd7f4d3b12ae2961144792e8e5ce45cf7a5dc611ff",
+        "originalUrl": "/library/previews/templates/atlas.html",
+        "originalSha256": "40dad3332ce949df19bd383c5ad67c93c27d294acc819c188d8e6854ca674748"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-pulse",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-pulse/pulse.html",
+        "sha256": "be5142d03fc2af2f01cddfbbe82cbb35e4e40e202781d7ae4fb3955b3e8b35bd",
+        "originalUrl": "/library/previews/templates/pulse.html",
+        "originalSha256": "a1ef8e35cf81570c0719024bbf80678b79b1f5f076ed569443bac2fe095a791e"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-gather",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-gather/gather.html",
+        "sha256": "fe20bdb19b9023cf529c1bc2761732631e6823e6183f4dc881f89c32e7522523",
+        "originalUrl": "/library/previews/templates/gather.html",
+        "originalSha256": "00ea1563521d4531c118d7442b8e7cb45e47bd0a6d5857592381c757311c7bf0"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-agency",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-agency/index.html",
+        "sha256": "441a462e8cca6c3b729e0e40dac0d457dfdba022ae2dde7cf54b9c51dc0a3ecc",
+        "originalUrl": "/library/approved/sites/approved-template-agency/index.html",
+        "originalSha256": "874d0647992f60cb051a48b670f207131a549b246c265a13e7fb39f0ae02d487"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-creative",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-creative/index.html",
+        "sha256": "379dd814e73393a71f8fd686f4a48f9102f7301911945f416989e2053f3c951e",
+        "originalUrl": "/library/approved/sites/approved-template-creative/index.html",
+        "originalSha256": "186f9af7e5f65ca55c06ebc0a6c5056a1461a8bffaabc31c1805fe207a61d8dc"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-grayscale",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-grayscale/index.html",
+        "sha256": "7433b3ae6f01c3780d34aa77fce4e517f466dddb7bc12ab6e16f590b27cfcd99",
+        "originalUrl": "/library/approved/sites/approved-template-grayscale/index.html",
+        "originalSha256": "546e7e497f49846e3be95e410b08a4ebb3d1973d0dde8392eba4dff7cc7fed0b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-freelancer",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-freelancer/index.html",
+        "sha256": "ca7a93ab8a809238f4ffb7d207924a7d58a7508bd609db6a809b0112a514145e",
+        "originalUrl": "/library/approved/sites/approved-template-freelancer/index.html",
+        "originalSha256": "6f4eb9c9ce55aeb9d8baf087f126702d1ef1eda186a096dfe2d4fcc696c6e998"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-landing-page",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-landing-page/index.html",
+        "sha256": "6b8660784bcff2fbbc96458f72cb426874fce3da850ee3aaefa67f6ad8936dbf",
+        "originalUrl": "/library/approved/sites/approved-template-landing-page/index.html",
+        "originalSha256": "de1650d07b9720e0ba99132b8bc5c941205f890c64f25dba4d84298440e83f8b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-new-age",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-new-age/index.html",
+        "sha256": "94da22c5b7839587f3574e9ade60f3d32246688ffe244f1a5545c96ac84c7fcd",
+        "originalUrl": "/library/approved/sites/approved-template-new-age/index.html",
+        "originalSha256": "26f641d61796724bfd0d948f74f12b6f5d786e2e377b752f3dbfaec8c59818fc"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-personal",
+    "pages": 4,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-personal/index.html",
+        "sha256": "0b70be2ebaeb431a0b02f47a05073a0f761bf86c54814e53b8c2f91a707e7614",
+        "originalUrl": "/library/approved/sites/approved-template-personal/index.html",
+        "originalSha256": "67399dea12df89a0613d91ff90aea134df7b36f3e65276d708eb491fc40bb738"
+      },
+      {
+        "url": "/library/customized/approved-template-personal/contact.html",
+        "sha256": "027211988cdca8761704113672ee239337bcae3301c19f39fea82a2ea05d9d8c",
+        "originalUrl": "/library/approved/sites/approved-template-personal/contact.html",
+        "originalSha256": "b215e7a6d4430a4ee0cbade59cfb6cd8e1f2ad461c61c090dae559719dc70a90"
+      },
+      {
+        "url": "/library/customized/approved-template-personal/projects.html",
+        "sha256": "b18421fa7efa892f960bc3cd04dd4b82c6d24220dda0b7a021cf506fd596d090",
+        "originalUrl": "/library/approved/sites/approved-template-personal/projects.html",
+        "originalSha256": "cd21fc9ab49ef3f66e4f966cad8f2550eae2c354e8b5839f854a05d05d82bb7f"
+      },
+      {
+        "url": "/library/customized/approved-template-personal/resume.html",
+        "sha256": "a70f545dec649eeb0bea722adf480dee798680a0f9b6d5dce016ff4679c2e115",
+        "originalUrl": "/library/approved/sites/approved-template-personal/resume.html",
+        "originalSha256": "98123d7cfa8584240ff5e16870b9f129f066521bb8b5e1984a3050d3fdf2de9e"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-resume",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-resume/index.html",
+        "sha256": "96e749c7d9d635e612b1bfb2436cb8627bcc9a6647d3c14fcb5ce5d0d4ef6397",
+        "originalUrl": "/library/approved/sites/approved-template-resume/index.html",
+        "originalSha256": "64c7339e8d931e941b72e6a7d9fdf09c9b390ef16ac377fc02add41c64f9024d"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-business-casual",
+    "pages": 4,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-business-casual/index.html",
+        "sha256": "ec6fc2322c798a976d879306c2d7b1ffdc3cbad7df83b5d8732842b7e067b25b",
+        "originalUrl": "/library/approved/sites/approved-template-business-casual/index.html",
+        "originalSha256": "c670b044ecea70830c225568be71479b3f3ab02dbdf075292199f9774a04731f"
+      },
+      {
+        "url": "/library/customized/approved-template-business-casual/about.html",
+        "sha256": "cb1a232f306cefc243a9b02a70494e4a039b6dc65fc7daab7414eba174ec5539",
+        "originalUrl": "/library/approved/sites/approved-template-business-casual/about.html",
+        "originalSha256": "b929bfb1546395173a7343850c68304976849fbd07ef0222922acd150a52fa3a"
+      },
+      {
+        "url": "/library/customized/approved-template-business-casual/products.html",
+        "sha256": "49d4d42d927347fc374c5d43ec8392ab2bd5106db6637ae7ab9d5928732bd2aa",
+        "originalUrl": "/library/approved/sites/approved-template-business-casual/products.html",
+        "originalSha256": "743d4ac7df1338ce42dbf710718e0e9e43a3bcded29924042357721d6ccea6c4"
+      },
+      {
+        "url": "/library/customized/approved-template-business-casual/store.html",
+        "sha256": "1d437022c544b4be7d479e7acd2a675fe27296ca336e0a67f9475767362c802a",
+        "originalUrl": "/library/approved/sites/approved-template-business-casual/store.html",
+        "originalSha256": "74e3e4b0b4c47f120c6f8a8b89f0179cac79a65acb810b62f526929efae1ba95"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-modern-business",
+    "pages": 9,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-modern-business/index.html",
+        "sha256": "4942d0066cb2dac504f14d4f900d96e4732058be8aa7a2e29e55c032a8a7ed6e",
+        "originalUrl": "/library/approved/sites/approved-template-modern-business/index.html",
+        "originalSha256": "64dd663639f7ac3c7aaa74054a56fc1895146299c8978cbfe1ecfdd0059f06d1"
+      },
+      {
+        "url": "/library/customized/approved-template-modern-business/about.html",
+        "sha256": "84e5a25327d973019189fb1ebc18a89228b52a2da835452815c4441deeb5259f",
+        "originalUrl": "/library/approved/sites/approved-template-modern-business/about.html",
+        "originalSha256": "0bc7dea0736777c43ed25cb4a0306b0df8a2b21bb7eff363ae00292f411e6bda"
+      },
+      {
+        "url": "/library/customized/approved-template-modern-business/blog-home.html",
+        "sha256": "a8758f6e9f53d158865591291b00b62df789594f9735ee7af1cf8a2d7ca6ee38",
+        "originalUrl": "/library/approved/sites/approved-template-modern-business/blog-home.html",
+        "originalSha256": "45846e0a7c4d07e8ab734e588d04d937c1f7c5669c023d1beb456e2abd00ace3"
+      },
+      {
+        "url": "/library/customized/approved-template-modern-business/blog-post.html",
+        "sha256": "a59cc5f7231511cb58c59e5019d744b35da4dcbc60bb206cc61aeb093a8ac870",
+        "originalUrl": "/library/approved/sites/approved-template-modern-business/blog-post.html",
+        "originalSha256": "5ea5e47db497545fec05202fca52a214ba57a8aa313d59d115a9cfa3b50d6bd3"
+      },
+      {
+        "url": "/library/customized/approved-template-modern-business/contact.html",
+        "sha256": "120187d0518eb1d5450614d50950d07c01adde06f365c2b842a444b5b97f14a1",
+        "originalUrl": "/library/approved/sites/approved-template-modern-business/contact.html",
+        "originalSha256": "f58d31fe6e47c33a20b4eb707122fa78c829358261dee8caa25795c040ac22d2"
+      },
+      {
+        "url": "/library/customized/approved-template-modern-business/faq.html",
+        "sha256": "4f464bef6b041b1ac693004b8346d9d0209a1bf59b251470602087beb37c7e77",
+        "originalUrl": "/library/approved/sites/approved-template-modern-business/faq.html",
+        "originalSha256": "8c42c7cdfdd20c1eb43cfe1f558a85c2731d3e85257107264a07450bd69ca297"
+      },
+      {
+        "url": "/library/customized/approved-template-modern-business/portfolio-item.html",
+        "sha256": "fc97ceed0b82587665196e1820fb22b2d707166f28c4b6cede8c4b322b2aaef3",
+        "originalUrl": "/library/approved/sites/approved-template-modern-business/portfolio-item.html",
+        "originalSha256": "9886b15ea8dd02af7d528c2778f74698741bbc96a57335c4aa0925bf7080a001"
+      },
+      {
+        "url": "/library/customized/approved-template-modern-business/portfolio-overview.html",
+        "sha256": "055e2124b7308848bf380eed7925f4a9f5adcaaccab015bc432e2580113180e4",
+        "originalUrl": "/library/approved/sites/approved-template-modern-business/portfolio-overview.html",
+        "originalSha256": "0acc35d0a6180607d54f10c03bbd6b600f2c76f5e2742ba1a27ff7630da9b369"
+      },
+      {
+        "url": "/library/customized/approved-template-modern-business/pricing.html",
+        "sha256": "ab995b138c36611f8d9948bc006d8b1b0949b5fa176bbac8c620a416681e4811",
+        "originalUrl": "/library/approved/sites/approved-template-modern-business/pricing.html",
+        "originalSha256": "b4466c9d19684e8c70fde131ab0591779adf5e9049e933a88dee99f5c7a52b46"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-stylish-portfolio",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-stylish-portfolio/index.html",
+        "sha256": "922cc102cf7fa4c10fd086238daa2ba25133dd08a3546e57498f09e636115abb",
+        "originalUrl": "/library/approved/sites/approved-template-stylish-portfolio/index.html",
+        "originalSha256": "ce3a2eeadc4275527ceeba68c1c36d1c16f39c492647d30730a40d062b221bd6"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-clean-blog",
+    "pages": 4,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-clean-blog/index.html",
+        "sha256": "f68ce17993a181297079fcc21042323f2ae2e425a18491cf80d3f66e88b65495",
+        "originalUrl": "/library/approved/sites/approved-template-clean-blog/index.html",
+        "originalSha256": "e0e8a4caadac5e82ff3627b20aa8139dc15f1f210e912ec6bb185aa061b2a9c0"
+      },
+      {
+        "url": "/library/customized/approved-template-clean-blog/about.html",
+        "sha256": "183ab3da41988c5ef481e2e44fb840001ca235243b5e666f703576c65da0e73d",
+        "originalUrl": "/library/approved/sites/approved-template-clean-blog/about.html",
+        "originalSha256": "3a7e67379874db49d9ee0a7e4b2d792d95fadd22f1c5dc3c97c32e44443ed6d2"
+      },
+      {
+        "url": "/library/customized/approved-template-clean-blog/contact.html",
+        "sha256": "8bc89e88495e42c913fb05f6e8bd3d8b3163c067c37412ca1fd68f44b536c324",
+        "originalUrl": "/library/approved/sites/approved-template-clean-blog/contact.html",
+        "originalSha256": "33b9c639b61c37ee1cb3a346b04071d6ea3fc6af716916334f95a33e1fbb281d"
+      },
+      {
+        "url": "/library/customized/approved-template-clean-blog/post.html",
+        "sha256": "f6b73172ace35c95e06601ae2c785412e7b63d74047e9609e9b78890eb06cd3e",
+        "originalUrl": "/library/approved/sites/approved-template-clean-blog/post.html",
+        "originalSha256": "0bcb9fa7b59a73544b87fa26d1492392accc873da783971fe9c27f548e35e6ae"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-small-business",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-small-business/index.html",
+        "sha256": "cffae21af7473e704dd9e00e89c73a35409bd1df55f6ba120002931934dbf6e1",
+        "originalUrl": "/library/approved/sites/approved-template-small-business/index.html",
+        "originalSha256": "e55ddbf8b7448cb49a4097c23944ff36825e68738ddf3b162bba73c36ebe6a60"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-business-frontpage",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-business-frontpage/index.html",
+        "sha256": "f39156f0cc8bfe216934d8d229ed3758a5e25605e090fc05c0db2271a8389b9f",
+        "originalUrl": "/library/approved/sites/approved-template-business-frontpage/index.html",
+        "originalSha256": "69cdb253a0151c2d4cef573f0ff87a2d6f87dc55ede2a5076f88049087659aaa"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-template-scrolling-nav",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-template-scrolling-nav/index.html",
+        "sha256": "7a97b484cc809963440af3fcde45ac7c076b5937f54c182c28aecc3a947b1157",
+        "originalUrl": "/library/approved/sites/approved-template-scrolling-nav/index.html",
+        "originalSha256": "bd00d2b1a634ca771e899c48e727ab7d6921a845b696a3e6feee3f6013a0ab53"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-analytics-dashboard",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-analytics-dashboard/index.html",
+        "sha256": "b9a957d1c0f711cf05a05ef7e9cd11949b4932e1b81616c091436de3c6a9af67",
+        "originalUrl": "/library/approved/sites/approved-collection-analytics-dashboard/index.html",
+        "originalSha256": "3c5e158ea7a97d777550607bea3d1ae3c8548840c74536a2f40d328c86c23f6b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-crm-dashboard",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-crm-dashboard/index.html",
+        "sha256": "0489c32019959304cdbe6b32c33bd7329390fc155b4dc8a43a8ec52bc2461139",
+        "originalUrl": "/library/approved/sites/approved-collection-crm-dashboard/index.html",
+        "originalSha256": "75c4840a3c28589a0ff73687782048d8591cb3379e0f331f9b6e6e078f6748da"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-ecommerce-admin",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-ecommerce-admin/index.html",
+        "sha256": "3c7a4ded4b5a0fb0109a1ddb40fd512b3b6ef83a303ab39aea180b39fa278026",
+        "originalUrl": "/library/approved/sites/approved-collection-ecommerce-admin/index.html",
+        "originalSha256": "044cbc9752675281bc05a4e25c050f1ff8a5f2429fafc71527b1c338ede6dafe"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-finance-dashboard",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-finance-dashboard/index.html",
+        "sha256": "ce06d32ff24926cf78795f655e249b7460a0f6ca19cf533a302e07f464223e1a",
+        "originalUrl": "/library/approved/sites/approved-collection-finance-dashboard/index.html",
+        "originalSha256": "b8d5da3f1ba23130a1421007189609632436878d4e7ad5fa94dc4748801e84a5"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-hospital-management",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-hospital-management/index.html",
+        "sha256": "2bbc1189e0e03ecc924a8d6608bd320801850a5ec628dd3745a932aa877e2388",
+        "originalUrl": "/library/approved/sites/approved-collection-hospital-management/index.html",
+        "originalSha256": "1e968d7d2ed22b1e0ecd22a828a9e2591660004a3a00b6c1fc4f5ada2ca4bfef"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-hr-dashboard",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-hr-dashboard/index.html",
+        "sha256": "57f401a2a63ab911f5f4a4b0dd68a66891dc63dfe3fb1b907cc7704ecb202c69",
+        "originalUrl": "/library/approved/sites/approved-collection-hr-dashboard/index.html",
+        "originalSha256": "58ca729a2888b3347268bb9674e79a4607c665aef0ad653a55ced1a5974e4091"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-inventory-dashboard",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-inventory-dashboard/index.html",
+        "sha256": "40520f7f55e9a207832ad507c5306e5e35b9fba8a2bdb9ac93ae196a7a1647d0",
+        "originalUrl": "/library/approved/sites/approved-collection-inventory-dashboard/index.html",
+        "originalSha256": "c06d35a4b563f3fc12f5c81c2ab73e19beeb2a8885e13564c7d1d114923ea529"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-project-management",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-project-management/index.html",
+        "sha256": "4893c829968be0e329f859c2d0789331cff7091bb8cd45a030c4bf30061b3d16",
+        "originalUrl": "/library/approved/sites/approved-collection-project-management/index.html",
+        "originalSha256": "66f1c6220d7606b400f0ff764e43f98397940b4311328064dab8dc70cdc69b5e"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-saas-admin-panel",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-saas-admin-panel/index.html",
+        "sha256": "a90f27c52c3e81b58bf794c06606b79d16df0b2a01070c294427889fa800031d",
+        "originalUrl": "/library/approved/sites/approved-collection-saas-admin-panel/index.html",
+        "originalSha256": "7ed15ad4a1a87a651663b03367210f47d8074501e462a46731c3a1a70a29ffcd"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-school-management",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-school-management/index.html",
+        "sha256": "e86f84531ebef07d5bf08f00c931a8d593eb65b16eddf46e8be78b60afd6fc6a",
+        "originalUrl": "/library/approved/sites/approved-collection-school-management/index.html",
+        "originalSha256": "ce1e02079aeed6bfc84e9ee828a8152054c45cc335aa049c9c551ae64bb4f9fb"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-branding-studio",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-branding-studio/index.html",
+        "sha256": "01abab1146741c1be7a664965e016d286445853d93f59955a98e4ca97952a482",
+        "originalUrl": "/library/approved/sites/approved-collection-branding-studio/index.html",
+        "originalSha256": "5d659fb6c04ddad5d1625ec3bd60905a4c1b0eba4ebce66f5dc6b893119b9d48"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-consulting-firm",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-consulting-firm/index.html",
+        "sha256": "45122dba5c8d0251a62ab2e86bc6d4a998b1ae96924fd7519675389538efc3bb",
+        "originalUrl": "/library/approved/sites/approved-collection-consulting-firm/index.html",
+        "originalSha256": "ccbc861a1cab0858d0f3ef05f62386a7fd85d17531f73b40ce6ce0557695919a"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-corporate-company",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-corporate-company/index.html",
+        "sha256": "64dc3118deab1eb1447053f7291c9a4251a74f0f616aa149b72f9601c452f481",
+        "originalUrl": "/library/approved/sites/approved-collection-corporate-company/index.html",
+        "originalSha256": "6ace985cdcdee303813adb5ddaa90b85ae9f2bad44768347655f23928a5ec61d"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-creative-agency",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-creative-agency/index.html",
+        "sha256": "7e0aad879c04e95afacfddd564cc443471dc85d74c19b7747ab6050922c6ae02",
+        "originalUrl": "/library/approved/sites/approved-collection-creative-agency/index.html",
+        "originalSha256": "13a7eea2e5cb891d347b9a099fba846834faba58713b2386d8c85eff1b666f1b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-digital-marketing-agency",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-digital-marketing-agency/index.html",
+        "sha256": "4c80bd049f5e2d14f4a9e5453f74a45dbdbc8d0214e05e48950f68f6bb650dbe",
+        "originalUrl": "/library/approved/sites/approved-collection-digital-marketing-agency/index.html",
+        "originalSha256": "8b21aa894004459eab2c08423a58004e3e1762b605deb15a7ba79564911cbd6b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-freelancer-team",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-freelancer-team/index.html",
+        "sha256": "ffaf8cda76ac9862488a972ee08b9aad9957244d5971db701d6a4b8f23904e39",
+        "originalUrl": "/library/approved/sites/approved-collection-freelancer-team/index.html",
+        "originalSha256": "2ee8183a6902d3abefac7765dcdb6bd676e0eb57356ae2d8f231fda653c63eb7"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-it-service-company",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-it-service-company/index.html",
+        "sha256": "04048506f7b73b9b1e324806f3d31f90f9bdb877e569fb553a8ee9ce2a284c6f",
+        "originalUrl": "/library/approved/sites/approved-collection-it-service-company/index.html",
+        "originalSha256": "4ef5b41262f9886267bd8cac299709a96c1814f168938ea2fafff3ab9b8e29e7"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-social-media-marketing",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-social-media-marketing/index.html",
+        "sha256": "16b9f34606cba7c470b8e537d30b607178022d566facb0a94ee8c2b51fc14167",
+        "originalUrl": "/library/approved/sites/approved-collection-social-media-marketing/index.html",
+        "originalSha256": "802c2386af788360e7e3062b7c390dc915ca74c7c9e8000110896eeda53932df"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-startup-company",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-startup-company/index.html",
+        "sha256": "7011b58293860dd28040d0aa824f5afa0ccfad72ff4b288034c1a999b3d576f3",
+        "originalUrl": "/library/approved/sites/approved-collection-startup-company/index.html",
+        "originalSha256": "2f601a0cba2ce7a29f726a01d4537e9427e6ebbf2b48c7a3a4cd2fb295933d1d"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-web-development-agency",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-web-development-agency/index.html",
+        "sha256": "b8c8aff240a87e34e8ceec9bf6401ad3996b53a484bfa64544251a207d237313",
+        "originalUrl": "/library/approved/sites/approved-collection-web-development-agency/index.html",
+        "originalSha256": "49c048a6df0a922f3b7b5a9f628adda2da7ee8ea07cbc2ab9427c1a237418b40"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-cosmetics-skincare-store",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-cosmetics-skincare-store/index.html",
+        "sha256": "131a63b7aedd5994157001e03a2657e0f1ffa6a31e34732f92ec0b93148927f6",
+        "originalUrl": "/library/approved/sites/approved-collection-cosmetics-skincare-store/index.html",
+        "originalSha256": "c3cffadcfdc67044765723c058ea51666b24f365d36c962fb0ad226dc1708f82"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-electronics-store",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-electronics-store/index.html",
+        "sha256": "bd4fd6becfc512f68d3fc224fd39588b6421641a6c9e106ba45fcb70729a27bd",
+        "originalUrl": "/library/approved/sites/approved-collection-electronics-store/index.html",
+        "originalSha256": "8cc33e37b48abbc771dc894e90ee731a11171816a7d49ffd8a850142771fadc1"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-fashion-store",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-fashion-store/index.html",
+        "sha256": "73324a729bb34c6186aded6308f59572bbc334dd19028e0c795b65a865169638",
+        "originalUrl": "/library/approved/sites/approved-collection-fashion-store/index.html",
+        "originalSha256": "374d1a61f0e328554a30dc8826f77a42a1bf62b870a62f82e8fcc7b77c0a343c"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-grocery-store",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-grocery-store/index.html",
+        "sha256": "79ababc30187c78a9e46a6b4d4944dd584792dd11759b7d51584fc490563b23c",
+        "originalUrl": "/library/approved/sites/approved-collection-grocery-store/index.html",
+        "originalSha256": "c73ba972707a35fd8f36db2a961e73898f055c008a77ab6558e7b4d0aeae30f5"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-handicraft-store",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-handicraft-store/index.html",
+        "sha256": "951f6cc80691ded8272d2339122eff1eb1aeba2aac2474d8853382233dd6af65",
+        "originalUrl": "/library/approved/sites/approved-collection-handicraft-store/index.html",
+        "originalSha256": "40634dfe886f0da528aaddf57bacc5ab9171d3ce708b51dbdc4889b5f44d66d0"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-jewellery-store",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-jewellery-store/index.html",
+        "sha256": "956cfd171c52c12fe35071559f57d2feac0327bc39cd136509f747a30a4b5784",
+        "originalUrl": "/library/approved/sites/approved-collection-jewellery-store/index.html",
+        "originalSha256": "2444f7533b077eb39c264032cc035e72cba98f64562a7b356c3271903e0065a3"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-shoes-bags-store",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-shoes-bags-store/index.html",
+        "sha256": "13e82b775f42d63ea0705bc436199bb1c183c2980889be9fd51168c6c221c2b2",
+        "originalUrl": "/library/approved/sites/approved-collection-shoes-bags-store/index.html",
+        "originalSha256": "31dfe29313ada4ea13e3afb9ca6087e793120a94912a4c901bc0056cb40951be"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-single-product-store",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-single-product-store/index.html",
+        "sha256": "5c82fe8156186ea55a34566f3f69c089274d2875a381d1ed288f24ee0ac485c3",
+        "originalUrl": "/library/approved/sites/approved-collection-single-product-store/index.html",
+        "originalSha256": "110275b1566344dd938572adb447f405bef89ea8c19566e9683e1c1a72ed8a28"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-coding-bootcamp",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-coding-bootcamp/index.html",
+        "sha256": "6ef281e09aea9723ad97b9f7b10a1e44efc0026573c43ec9331d7493d73f4b0c",
+        "originalUrl": "/library/approved/sites/approved-collection-coding-bootcamp/index.html",
+        "originalSha256": "55aceaab388940a1ec4f92d0a17696405af725df2b17c8e27ed782babd30e8cb"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-elearning-platform",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-elearning-platform/index.html",
+        "sha256": "6a9e011ab9d2832f98191123ece95e99bf55f93ce6c2db58321de563c3e372e2",
+        "originalUrl": "/library/approved/sites/approved-collection-elearning-platform/index.html",
+        "originalSha256": "c8e33ac1dae79e0c3f135e6e3dc717d5f6bd9e662b910030a49f4fc84ace6513"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-kids-daycare",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-kids-daycare/index.html",
+        "sha256": "e02fa13eadb1ce7382b7372ddb4f8d5671733dbe6de2450093264ceaaf3be9ce",
+        "originalUrl": "/library/approved/sites/approved-collection-kids-daycare/index.html",
+        "originalSha256": "9f28f4098c3390e692e679c605fc4704d6dd73254298d5d4ead4094cccbaec35"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-language-school",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-language-school/index.html",
+        "sha256": "79fb39ab986115b92790e0d40b514ef6a4245708af7e2064b796b05e3ea4d05e",
+        "originalUrl": "/library/approved/sites/approved-collection-language-school/index.html",
+        "originalSha256": "97a0ba9e42616f0c79e22a790768f1bed174a3051689ce1fda83a11dd0b3a674"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-online-course",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-online-course/index.html",
+        "sha256": "b16b1789af570f9bc2f19794c4bf29ad97a196da29dc0f8d8461516f07f90529",
+        "originalUrl": "/library/approved/sites/approved-collection-online-course/index.html",
+        "originalSha256": "1307fc4caa71299e59726cef36248b36ffd55036df83065f5c0da74377c3f373"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-school",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-school/index.html",
+        "sha256": "ff03484edd6e79c851f35e7ab67c729b80d6c804553b19b947128136d0be77e0",
+        "originalUrl": "/library/approved/sites/approved-collection-school/index.html",
+        "originalSha256": "60b30da942f3fadb91e39eb15397a699262edd333801be537773ad737c6495c1"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-tutoring",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-tutoring/index.html",
+        "sha256": "a68bc51cbea3463385b8f163ed535ef7878f75c4647541f614a327c1dcf6844b",
+        "originalUrl": "/library/approved/sites/approved-collection-tutoring/index.html",
+        "originalSha256": "d22bce3ce93dca04c11ab4eb0c8e05b4bc28052995cc40d073b49271bcda6b45"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-university",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-university/index.html",
+        "sha256": "5d31cf730372d895052309690de8952033ce1c269eb32d12d8fb50e0646e8a8f",
+        "originalUrl": "/library/approved/sites/approved-collection-university/index.html",
+        "originalSha256": "a67f81195096219f70355bc5a2eacce3239f1a2301915583ec71cc66d6f4bd46"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-community-center",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-community-center/index.html",
+        "sha256": "4616e41f427646dd0635e03c8d0d3e7c4833fb7b42f2c30f7e6f02e69dc4e06c",
+        "originalUrl": "/library/approved/sites/approved-collection-community-center/index.html",
+        "originalSha256": "80e4b31415d0c853774bcca65516beaf7241d769c8a261cf3e0d206c63815640"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-conference-event",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-conference-event/index.html",
+        "sha256": "3613d0dda0a2981ac96379b9f75f716c8769fa34c78f7685397acf71225f1ff6",
+        "originalUrl": "/library/approved/sites/approved-collection-conference-event/index.html",
+        "originalSha256": "44156d4e7e689fab28f165d4eb51182b5ac4d66bfc7ddd006daf8c3ef925d5c0"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-musician-band",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-musician-band/index.html",
+        "sha256": "e3fc0dba8eb3ce92b4611a301e62b082cbea9c14181fe507118a59771c1239af",
+        "originalUrl": "/library/approved/sites/approved-collection-musician-band/index.html",
+        "originalSha256": "cc15042350cf270d5af8bf5d5d033de83ec225e15afbd8bda926db5c07f8b1ef"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-nonprofit-charity",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-nonprofit-charity/index.html",
+        "sha256": "da8b9e8ba9ded66d75ff17a6951297d86796299a421ea4ad259c8fb55b11a18a",
+        "originalUrl": "/library/approved/sites/approved-collection-nonprofit-charity/index.html",
+        "originalSha256": "0b9d3c13dfdf90a7e3efa2c32dcddc7446f477cc10b0543552b8c8d4ff02f27c"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-podcast",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-podcast/index.html",
+        "sha256": "253524c7f1124764b21379c04b48915a5af54e6e484acbbdd0fe5443b0f59b2a",
+        "originalUrl": "/library/approved/sites/approved-collection-podcast/index.html",
+        "originalSha256": "08ab23de7a007331bf198e2c5a2aae6e1e1512c0217a168f3a87f434a9043876"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-wedding",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-wedding/index.html",
+        "sha256": "8be51cfa761c8132a84393c9648f73e9dccea6ac7ee2d5ec7498c78c0a0eab75",
+        "originalUrl": "/library/approved/sites/approved-collection-wedding/index.html",
+        "originalSha256": "a392d20a47c7296cd77c640af72d2839e86996d652cbb0f770ef338d331ac947"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-dental-clinic",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-dental-clinic/index.html",
+        "sha256": "e95a93f7076c5da17f06b423c112fecc7032f234011b04a1d38d64396f499a75",
+        "originalUrl": "/library/approved/sites/approved-collection-dental-clinic/index.html",
+        "originalSha256": "3bff6b78d23410a01eab319ef4cef4389b53869154ae262d29f6fc46c8701a25"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-gym-fitness",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-gym-fitness/index.html",
+        "sha256": "cf5a023d418d78df72f1830cba367ada5b283f34cbd050127bf663302b6805ae",
+        "originalUrl": "/library/approved/sites/approved-collection-gym-fitness/index.html",
+        "originalSha256": "54082d064a53301121ab2de30197a4c6d6a4e6f7d93f03b85047312302ed76d0"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-medical-clinic",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-medical-clinic/index.html",
+        "sha256": "d6aec725cde7f7a805d4e0806891a205304e97c9ea353eee1118941841917bd1",
+        "originalUrl": "/library/approved/sites/approved-collection-medical-clinic/index.html",
+        "originalSha256": "353a94dc362a426c25618878bc60bb070a47c0141d58e71968b7aa4d3171337a"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-nutritionist",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-nutritionist/index.html",
+        "sha256": "6d782c525b61614c8183ca260f42563de9bd7741311a437abe2144441cf8d3c4",
+        "originalUrl": "/library/approved/sites/approved-collection-nutritionist/index.html",
+        "originalSha256": "1dc84ed2be0e4b1abab37fa3caeef942c7a2e60be5bfd494fc29ece6c7e50614"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-personal-trainer",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-personal-trainer/index.html",
+        "sha256": "d4f07d70edd29651ab342a1fcb488b2bae56ceb20c7298f716ab27a4660555a8",
+        "originalUrl": "/library/approved/sites/approved-collection-personal-trainer/index.html",
+        "originalSha256": "ddea7e3e5cb6ab9283c08d62c1db13ec1e04999d74682ce4ad817d1e79f69206"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-physiotherapy",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-physiotherapy/index.html",
+        "sha256": "be80d65800ca0e5029cbcb783afb4f649a93e5ed44b82b29d6d328af95814df2",
+        "originalUrl": "/library/approved/sites/approved-collection-physiotherapy/index.html",
+        "originalSha256": "38f381b92a735d44765554f5ee4fe45259a44d827372012ecdd05f4248059d62"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-spa-salon",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-spa-salon/index.html",
+        "sha256": "783818fa10adccf02db553d9b8c8c87e221e4378d15b62f7269b5f72123da350",
+        "originalUrl": "/library/approved/sites/approved-collection-spa-salon/index.html",
+        "originalSha256": "a9c7ffa3e4b0ccc360b1ac90f678e8e0d519143b440bcc01159e4cc10dc36277"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-yoga-studio",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-yoga-studio/index.html",
+        "sha256": "efec69496f29768f0d176f69341949798eb7de017e08bba97b9c482f17b32057",
+        "originalUrl": "/library/approved/sites/approved-collection-yoga-studio/index.html",
+        "originalSha256": "4818dccfc41eee97b2b4e77dd19c5c32a958eec5669bb4dc593e649492c25de9"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-ebook-download",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-ebook-download/index.html",
+        "sha256": "c09c1a36185aa4ce75ecbe1c9f16ded29132f29882786c4fe408b0f98a3eb40b",
+        "originalUrl": "/library/approved/sites/approved-collection-ebook-download/index.html",
+        "originalSha256": "17f7044607c2aa2b74985fc351436921f91beb497c32078c710579d1cd934c8c"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-event-ticket",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-event-ticket/index.html",
+        "sha256": "95bf4ececfe3be9fe67eb9ccc5bbd0bfae3cf148d37d0ff8a64a057b991a5bb6",
+        "originalUrl": "/library/approved/sites/approved-collection-event-ticket/index.html",
+        "originalSha256": "1c5a7bd6c224e835ef208e9bace468625baad4df69f7633d34c27253504f1c2a"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-job-board",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-job-board/index.html",
+        "sha256": "e4b3bf3be20bec5f983723b48d576e3804196b2c2ff4b1d20d934c2c65a2461a",
+        "originalUrl": "/library/approved/sites/approved-collection-job-board/index.html",
+        "originalSha256": "df3d106d9b32a367ed0f940ddaa57f900279e0e32161bfdaf56ebb33ffd5dc43"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-product-launch",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-product-launch/index.html",
+        "sha256": "5c6b2a72ebdb78ac6323b2ddf2ca7e43ae6a23a1cc008c4170faf67ceba9cc66",
+        "originalUrl": "/library/approved/sites/approved-collection-product-launch/index.html",
+        "originalSha256": "8b0ad03945cdf95d0bbe84eebc9e9e0a6ef283cad299acef4332ba0e60960b7a"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-webinar-signup",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-webinar-signup/index.html",
+        "sha256": "f8fa0a0fef73128c455c35ff148281f1a7e21ba744bb44dd2cb90f4c6c331426",
+        "originalUrl": "/library/approved/sites/approved-collection-webinar-signup/index.html",
+        "originalSha256": "fd22747a49593b7e3decd1cc6986a4f2583d47df8f92dee8d82b00aa4094e454"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-accounting-firm",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-accounting-firm/index.html",
+        "sha256": "a6559e618d93cbb7edd4006c3c7d61a1c9593e8c0fa7b13ffd39905c48654597",
+        "originalUrl": "/library/approved/sites/approved-collection-accounting-firm/index.html",
+        "originalSha256": "1bc645199fb39ffb4ce45a61d0f026aa1fd2f173bd5bb1c04328d00cba0e2221"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-auto-repair",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-auto-repair/index.html",
+        "sha256": "a10b29f38b1dfcdc5676f0f9cf661d0992d0f5fadcfd1b51955d94048e5c3c10",
+        "originalUrl": "/library/approved/sites/approved-collection-auto-repair/index.html",
+        "originalSha256": "a9aabe2e3ebccd6521f6c38deddb36eed57ca7fa7359ab18e9c7620df8dbc93a"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-cleaning-company",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-cleaning-company/index.html",
+        "sha256": "9ef47cbd34b7805b6c47c0a0c63cdd4c0c04dbf5f25034e8e247fb991f9e980c",
+        "originalUrl": "/library/approved/sites/approved-collection-cleaning-company/index.html",
+        "originalSha256": "3439e7fc90832f205b7dc9d23cfb4d45b182a6bca695d7bd05b3fd4cee1e67b2"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-construction-company",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-construction-company/index.html",
+        "sha256": "c05238d10588fd2057e55341613317c1b2bd09340ba1a94f07ffdfb5fe392318",
+        "originalUrl": "/library/approved/sites/approved-collection-construction-company/index.html",
+        "originalSha256": "707c7a750d68edee6ab5e683bb5b9bb7484b0f06a4c948c056a54ed61ebbdcef"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-law-firm",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-law-firm/index.html",
+        "sha256": "6bbf7a9f2139ba76337f364fa18e40ecd7277cd23615000d40bf2d62e3cd57bf",
+        "originalUrl": "/library/approved/sites/approved-collection-law-firm/index.html",
+        "originalSha256": "a22ef3b56fcb8741e22fb3702b57001b32874ef6cd5ad6052948fcab565fdb97"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-moving-company",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-moving-company/index.html",
+        "sha256": "063a8af1655385b916775c32440354b13fa48231a62db2e62a85eea4f745b886",
+        "originalUrl": "/library/approved/sites/approved-collection-moving-company/index.html",
+        "originalSha256": "fdaaaf2861697473e035d37b3567758d2f2cf04403e1d3e640854c0b676e7d60"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-pet-care-vet",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-pet-care-vet/index.html",
+        "sha256": "da96edf598843533779926552bb90458fabb5a30c642e21b14a810b84655c89f",
+        "originalUrl": "/library/approved/sites/approved-collection-pet-care-vet/index.html",
+        "originalSha256": "05d7417ab636d4da0ec7a2495fa99dd22d27e0209e575460710600bb0f1c9697"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-plumber-home-services",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-plumber-home-services/index.html",
+        "sha256": "bc307be5e8f430aa3a7daf9f08f68c9e16fe4977b82a01c3741bfe6f0f70cbae",
+        "originalUrl": "/library/approved/sites/approved-collection-plumber-home-services/index.html",
+        "originalSha256": "64d3b6c41ae465d809b797ed02e389ee0f2e4ea4e11d64244167cbacb098248d"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-architect-portfolio",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-architect-portfolio/index.html",
+        "sha256": "9dad0573aabda51b64120cfdc792d90b7c894c291680516ced2aca50801b5fbe",
+        "originalUrl": "/library/approved/sites/approved-collection-architect-portfolio/index.html",
+        "originalSha256": "b1e06a09a7758ee77206af741705b13bd63662a752b0564d990865ce2d7e504e"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-artist-illustrator",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-artist-illustrator/index.html",
+        "sha256": "3b7fa6c1f59ce2de598a6d343f312fb92d1f6fe392147aab4cb7e24a1c00bf26",
+        "originalUrl": "/library/approved/sites/approved-collection-artist-illustrator/index.html",
+        "originalSha256": "7fc1059c55949061bbc927e272b0620238374d326ec3be9592d018f0886b418b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-designer-portfolio",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-designer-portfolio/index.html",
+        "sha256": "873322246a9a1fd18a965a47d37794f0caea70cafee5c52a8a97d2bb22de6df2",
+        "originalUrl": "/library/approved/sites/approved-collection-designer-portfolio/index.html",
+        "originalSha256": "f78b1f9b75e350f329e2f3025717c58c8287d8f2dfe971755e545dc8a3e2e9cd"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-developer-portfolio",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-developer-portfolio/index.html",
+        "sha256": "5a88a6201e29046c6240356c0015ecb48cf03e619473ae3a1653835af55f4240",
+        "originalUrl": "/library/approved/sites/approved-collection-developer-portfolio/index.html",
+        "originalSha256": "b987a6c81a7d376ee5451748a86bd1d9fa53fd4aaf157f6b4667691b9d645869"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-photographer-portfolio",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-photographer-portfolio/index.html",
+        "sha256": "15d580410efca7a89d8755b261359af47df7c28bf27877c2e5aba31523a8ba77",
+        "originalUrl": "/library/approved/sites/approved-collection-photographer-portfolio/index.html",
+        "originalSha256": "1a7208c04323391e448c0fe51993d733ea1c12180682d0381d878d8704fb192b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-resume-cv",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-resume-cv/index.html",
+        "sha256": "b01069252ffec09cfd41e3999567548387b18eebf218d866b39658eed77bb569",
+        "originalUrl": "/library/approved/sites/approved-collection-resume-cv/index.html",
+        "originalSha256": "0ffab1ac224fc8bd86c109852994a049e995fefeb3deeed9ca7db4c1f4e745d3"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-video-editor-youtuber",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-video-editor-youtuber/index.html",
+        "sha256": "086fe8ee0d84d952678e8b211f70a79ce82e189f76a2a05541f43a0bfe82352f",
+        "originalUrl": "/library/approved/sites/approved-collection-video-editor-youtuber/index.html",
+        "originalSha256": "12e9d1b05bdabd2c9862464ba0f0d9ffc59b2345e4fd8fc440302e32092e21b6"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-writer-blogger",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-writer-blogger/index.html",
+        "sha256": "41597645a3f1beaff27b37ca84e5b030cedf5ed665aac60865d1596818fe55d4",
+        "originalUrl": "/library/approved/sites/approved-collection-writer-blogger/index.html",
+        "originalSha256": "c9c6d6e889636221a4872e1773cb013bf6c34b45570773745f32a88139b981a1"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-car-rental",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-car-rental/index.html",
+        "sha256": "74b51b0128571f5cdb98da807bc22a8d5437af2c4dbc3d91a4e8196197ba3bc7",
+        "originalUrl": "/library/approved/sites/approved-collection-car-rental/index.html",
+        "originalSha256": "06446afc2928f2b24d051593fd1886ad705b3aa5a2c2256133b5c71fe6e9c3df"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-hotel-resort",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-hotel-resort/index.html",
+        "sha256": "1dd7ce7d2ddae542752e3bebc66bc9c8d0713d78b76e45f6213f1c4184c995ae",
+        "originalUrl": "/library/approved/sites/approved-collection-hotel-resort/index.html",
+        "originalSha256": "8886f7e4d601dcb85ebb1839e054bdfed71d29301be0de43309d2668838f57d4"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-interior-design",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-interior-design/index.html",
+        "sha256": "3658466b755fd013cbab9b7ada856df8d92a633f57d57c723782cd636143cbb5",
+        "originalUrl": "/library/approved/sites/approved-collection-interior-design/index.html",
+        "originalSha256": "56942c9078eca5ac68749b4397708b64b058a6a0b9354aa5ed62bf61ea797577"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-property-listing",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-property-listing/index.html",
+        "sha256": "3b1c5a5ea7131888013f79e752a46f01f79df8f86a8101e9e1164f913e1314e3",
+        "originalUrl": "/library/approved/sites/approved-collection-property-listing/index.html",
+        "originalSha256": "1e115d863b7cca3f02943421b676967cf7f0430a986558a65795dd27d1a0e881"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-real-estate-agency",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-real-estate-agency/index.html",
+        "sha256": "1337c9855fba5fe172176a84922f615e8b14bf0e473d156dce815a7c973f337a",
+        "originalUrl": "/library/approved/sites/approved-collection-real-estate-agency/index.html",
+        "originalSha256": "bbde285277c9a0d95a96aed2afc814a5c053688c37e885279616877d2ca5078f"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-travel-agency",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-travel-agency/index.html",
+        "sha256": "d205a8aae10c59f4bf2f44ce74ab46903d68747f58a6cfc1f0e7223923c652cf",
+        "originalUrl": "/library/approved/sites/approved-collection-travel-agency/index.html",
+        "originalSha256": "289269b5d2af43c91c0e0ffb6fb8d6cc2456b22eaf225bcd1876b8672a7fe3cc"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-vacation-rental",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-vacation-rental/index.html",
+        "sha256": "0e2a3f2311d9fbe86ef413e6c4ab5f8150f393d07a488da41f9fa5e2c8dd644d",
+        "originalUrl": "/library/approved/sites/approved-collection-vacation-rental/index.html",
+        "originalSha256": "e1bb371ff174da6669bd191b29a56aa7db3656c8e320e99f8eeabe0edde1b472"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-bakery",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-bakery/index.html",
+        "sha256": "5911321bb4e538a5eee6ef77b88588358d8365ba16724ab67a7a00db290f8826",
+        "originalUrl": "/library/approved/sites/approved-collection-bakery/index.html",
+        "originalSha256": "bc719cb6d6a7ea50bb928fc47dad2ee60261921181415c902374cc246099ef1b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-bar-lounge",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-bar-lounge/index.html",
+        "sha256": "fc3082d768211a8a9d89ec9460cc8635b8170059492c941dc1bc1c9f4e192b3c",
+        "originalUrl": "/library/approved/sites/approved-collection-bar-lounge/index.html",
+        "originalSha256": "a3ce44d9db2920806384640294269ff2dff21f756714425be660e803607b2b4f"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-cafe-coffee-shop",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-cafe-coffee-shop/index.html",
+        "sha256": "fd29c8a34620fc424565e68626b5bdaeb5da7d9c363ac5a5ce1bc08194e327fe",
+        "originalUrl": "/library/approved/sites/approved-collection-cafe-coffee-shop/index.html",
+        "originalSha256": "012c795db86b32504304e222e9d776924f7db945e2c5904a8004aef688566d37"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-catering",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-catering/index.html",
+        "sha256": "ee208dd29ec2cfb35484f7716d9a608d1b595e2cfa27c54b52ff50b45510a667",
+        "originalUrl": "/library/approved/sites/approved-collection-catering/index.html",
+        "originalSha256": "100928ef6e0fb788147d8f787df931ccf222115d69b7e71e21d4465c3b1dcbfd"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-food-truck",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-food-truck/index.html",
+        "sha256": "941642074528fd7d018cc4fa85389c81ae57e5201c2c6ff81687bc0e1c692d32",
+        "originalUrl": "/library/approved/sites/approved-collection-food-truck/index.html",
+        "originalSha256": "5ceefefa4480ead8ea577ed2b3f94e571944357b2be20295664763946b2268f8"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-pizza-delivery",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-pizza-delivery/index.html",
+        "sha256": "b4e051b10cd991b5c87881168ec09a02239958ac7b9f6a99b767386f4289df02",
+        "originalUrl": "/library/approved/sites/approved-collection-pizza-delivery/index.html",
+        "originalSha256": "e9975d588ead063621b0ed2364b1b6d2817ff2686c44bfe2cc05c9273b227ed7"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-recipe-blog",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-recipe-blog/index.html",
+        "sha256": "f759914895e5f73b6f93fe4781dba4b2612e99cb70f2d23c32ad5df8ebdc167c",
+        "originalUrl": "/library/approved/sites/approved-collection-recipe-blog/index.html",
+        "originalSha256": "78c38b82a7cca815ae8ddfafcbcb774b7c50864662824eeaa7348bc7666a4ab4"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-restaurant",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-restaurant/index.html",
+        "sha256": "88ca6b4b3e8e5bef57c94f7912ccd8bdad7841b220fb566cf660250a17fae2db",
+        "originalUrl": "/library/approved/sites/approved-collection-restaurant/index.html",
+        "originalSha256": "e8de5a0f01e111bf475df5a3ed48c82a935fc15af6bda115e8b5a49a9d2fffe2"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-ai-chatbot",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-ai-chatbot/index.html",
+        "sha256": "376055a1fd5d8ba686f8b80ae10f744fd42d336e8b0c86e94073a4b1c506649d",
+        "originalUrl": "/library/approved/sites/approved-collection-ai-chatbot/index.html",
+        "originalSha256": "ff42ab20e934e768d8e66408e6f2780920528fb5a8403da8d013e288412d3331"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-ai-image-generator",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-ai-image-generator/index.html",
+        "sha256": "d372c425fc70aef24d50ff0895fbe5d93b393b7b74cb54441d0769cfcee49c02",
+        "originalUrl": "/library/approved/sites/approved-collection-ai-image-generator/index.html",
+        "originalSha256": "9e811abbd55afb72006740a3a239255f7a7f54601eb5c06a7f02b5619ee9e572"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-chrome-extension",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-chrome-extension/index.html",
+        "sha256": "6effa7bddc9baba85a89b432097a0f70ee16b60deed0f848a589bebd74b8e7db",
+        "originalUrl": "/library/approved/sites/approved-collection-chrome-extension/index.html",
+        "originalSha256": "cecca3c2955982844071a5bb6b8b9c55421d055954e12223b5bbd535459652da"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-cloud-hosting",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-cloud-hosting/index.html",
+        "sha256": "4a5369d7f0c293841a6ec92d7406ea2a969a8ccfc81de3a4467e57986fc6da2c",
+        "originalUrl": "/library/approved/sites/approved-collection-cloud-hosting/index.html",
+        "originalSha256": "8b977980a0256e8f7268be328936fbc13356c1b1b1248f915c19d580bc070d1b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-cyber-security",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-cyber-security/index.html",
+        "sha256": "2332b66545634930451bb9df84c31504ebc71374289178ff0f9ae3006506e229",
+        "originalUrl": "/library/approved/sites/approved-collection-cyber-security/index.html",
+        "originalSha256": "c8c169e7ff72e8998c6cc517b4c3ff75f5f4c7003a8c615c1eda65ec605c192f"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-developer-api",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-developer-api/index.html",
+        "sha256": "8b05246546699090b8eb2ce598596a0e0ba29879497aff575e07dbc7daf1d629",
+        "originalUrl": "/library/approved/sites/approved-collection-developer-api/index.html",
+        "originalSha256": "f8c96352b0e557ce9475f758d4b71d5cb1873dddfd0c7da62678741b4b660936"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-mobile-app",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-mobile-app/index.html",
+        "sha256": "e69b31a28f8f6aa869605d602ab612c127dba8ddfa6ba55bb507e00145230be0",
+        "originalUrl": "/library/approved/sites/approved-collection-mobile-app/index.html",
+        "originalSha256": "36061e97ba4b8227b3befac4791a4a72f3e804e239d3063d659f76b959f2cd8d"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-newsletter-waitlist",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-newsletter-waitlist/index.html",
+        "sha256": "350286d805d7bdf33cd443b1f935c576b0bc9c575dbeb3929ea5099b0a2151b2",
+        "originalUrl": "/library/approved/sites/approved-collection-newsletter-waitlist/index.html",
+        "originalSha256": "467e24c75f1cfcda8c12f3abd9993cf8c76b99e706665e1d2eeefd06ed077437"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-productivity-app",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-productivity-app/index.html",
+        "sha256": "ebfbad246526ba0c2a1b1729ac2b3fee1032fb09ff7c90df512a7b1257a56a95",
+        "originalUrl": "/library/approved/sites/approved-collection-productivity-app/index.html",
+        "originalSha256": "8c58a804b54270b790ba8ecc2d607e5a36f12a44571895cd578c0cc8a4218d9b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "approved-collection-saas-product",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/approved-collection-saas-product/index.html",
+        "sha256": "7102f30e77a7bd47b60fc9d52cf107ab33bd81ef4edac3b8a9a1c0b2d8faf7dd",
+        "originalUrl": "/library/approved/sites/approved-collection-saas-product/index.html",
+        "originalSha256": "3aee85ff5299ebfe623f4359055d102af0cfecc965e6949a26a54083cbe48fe7"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  }
+]

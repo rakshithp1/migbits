@@ -1,6 +1,6 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import {
   Check,
   Copy,
@@ -10,6 +10,7 @@ import {
   Eye,
   Download,
 } from "lucide-react";
+import { templateColors } from "../../lib/template-colors";
 import type { LibraryResource } from "../../lib/resource-library";
 import { contrastRatio } from "../../lib/color-theory";
 import { ThemeStudio } from "./theme-studio";
@@ -573,6 +574,26 @@ function SourcePanel({ item }: { item: LibraryResource }) {
 }
 export function ResourceStudio({ resource }: { resource: LibraryResource }) {
   const [variant, setVariant] = useState(0);
+  const [color, setColor] = useState("original");
+  const [colorCss, setColorCss] = useState("");
+  const previewRef = useRef<HTMLIFrameElement>(null);
+  useEffect(() => {
+    const send = () => previewRef.current?.contentWindow?.postMessage({ type: "migbits-template-color", color }, "*");
+    const receive = (event: MessageEvent) => {
+      if (event.source !== previewRef.current?.contentWindow) return;
+      if (event.data?.type === "migbits-template-color-ready") send();
+      if (event.data?.type === "migbits-template-color-applied" && event.data.color === color && typeof event.data.css === "string") setColorCss(event.data.css);
+    };
+    window.addEventListener("message", receive); send();
+    return () => window.removeEventListener("message", receive);
+  }, [color, variant]);
+  useEffect(() => {
+    const send = () => previewRef.current?.contentWindow?.postMessage({ type: "migbits-motion-policy", paused: document.documentElement.dataset.mbMotion === "paused" }, "*");
+    const observer = new MutationObserver(send);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-mb-motion"] });
+    const frame = previewRef.current; frame?.addEventListener("load", send); send();
+    return () => { observer.disconnect(); frame?.removeEventListener("load", send); };
+  }, [variant]);
   const item = { ...resource, ...resource.variants?.[variant] };
   const [tab, setTab] = useState("preview"),
     [mobile, setMobile] = useState(false);
@@ -639,6 +660,12 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
         </div>
         {iframeUrl && tab === "preview" && (
           <div className="mb-device-controls">
+            {resource.category === "templates" && <>
+              <label>Colour <select aria-label="Template colour" value={color} onChange={event => { setColorCss(""); setColor(event.target.value); }}>
+                {templateColors.map(preset => <option key={preset.id} value={preset.id}>{preset.label}</option>)}
+              </select></label>
+              {color !== "original" && colorCss && <CopyButton label="Copy colour CSS" text={`/* ${resource.author} ? ${resource.license}. Preserve the notices in the source download. MigBits colour adaptation. */\n${colorCss}`} />}
+            </>}
             {resource.variants && (
               <>
                 <select
@@ -712,6 +739,11 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
           <div className="mb-frame-well">
             <div className={mobile ? "mb-frame-mobile" : "mb-frame-desktop"}>
               <iframe
+                  ref={previewRef}
+                  onLoad={() => {
+                    previewRef.current?.contentWindow?.postMessage({ type: "migbits-template-color", color }, "*");
+                    previewRef.current?.contentWindow?.postMessage({ type: "migbits-motion-policy", paused: document.documentElement.dataset.mbMotion === "paused" }, "*");
+                  }}
                   title={item.name + " interactive preview"}
                   src={iframeUrl}
                   sandbox="allow-scripts"

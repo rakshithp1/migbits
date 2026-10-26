@@ -222,10 +222,13 @@ async function main() {
         const url = `/imported/${source.id}/support${i ? `-${i + 1}` : ""}.zip`;
         writeFileSync(`public${url}`, bytes); return url;
       });
-      const candidates = candidatesFor(source, files); let checked = 0, duplicates = 0;
+      const candidates = candidatesFor(source, files); let checked = 0, duplicates = 0, removed = 0;
       const seen = new Map<string, string>(); const items: Record<string, unknown>[] = [];
       for (const candidate of candidates) {
         const id = `${source.id}--${slug(candidate.key)}`;
+        if (source.id === "shaders" && !JSON.parse(readFileSync("catalog/library/shader-presentation-policy.json", "utf8")).retained.includes(slug(candidate.key))) {
+          removed++; items.push({ key: candidate.key, id, status: "removed", reason: "Excluded by reviewed gallery presentation policy" }); continue;
+        }
         if (index.some(item => item.id === id)) throw new Error(`Duplicate identifier ${id}`);
         const notes: string[] = []; const originalFiles: ImportedFile[] = [];
         for (const p of candidate.paths) {
@@ -257,7 +260,7 @@ async function main() {
         index.push(resource); items.push({ key: candidate.key, id, status: "imported", validation: resource.validation, digest, reason: resource.validationNotes[0] });
       }
       save(`catalog/import-progress/${source.id}.json`, { revision: source.revision, licenseSha256: hash(licenseText), archiveSha256: hash(readFileSync(cache)), items });
-      report.push({ ...source, status: "imported", discovered: candidates.length, imported: candidates.length - duplicates, sourceChecked: checked, runtimeValidated: 0, duplicates, inventoryComplete: true, scope: source.reason, supportFiles: support.length, supportUrl: supportUrls[0], supportUrls });
+      report.push({ ...source, status: "imported", discovered: candidates.length, imported: candidates.length - duplicates - removed, removed, sourceChecked: checked, runtimeValidated: 0, duplicates, inventoryComplete: true, scope: source.reason, supportFiles: support.length, supportUrl: supportUrls[0], supportUrls });
       console.log(`${source.id}: ${candidates.length - duplicates} imported, ${checked} source-checked, ${duplicates} duplicates`);
     } catch (error) {
       index.push(...previous.filter(item => item.source === source.id && !index.some(current => current.id === item.id)));
