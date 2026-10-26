@@ -1,6 +1,7 @@
 import catalog from "../catalog/library/resources.json";
 
 const categoryDefinitions = [
+  { id: "tools", label: "Developer tools", description: "Reviewed source kits and AI development workflows. Installation status is shown explicitly.", icon: "tools" },
   { id: "themes", label: "Themes", description: "Ready light and dark themes, coordinated gradients and typography. Preview, copy and apply.", icon: "themes" },
   { id: "backgrounds", label: "Backgrounds", description: "Static CSS patterns and decorative backgrounds, with original source and notices.", icon: "backgrounds" },
   { id: "foundations", label: "Design tokens", description: "Reusable spacing, typography, shadows and theme foundations.", icon: "foundations" },
@@ -62,7 +63,7 @@ const categoryDefinitions = [
     icon: "figma",
   },
 ] as const;
-const sectionOrder = ["templates", "blocks", "components", "themes", "typography", "colors", "illustrations", "figma", "icons", "backgrounds", "foundations", "motion", "shaders"];
+const sectionOrder = ["templates", "blocks", "components", "themes", "typography", "colors", "illustrations", "figma", "icons", "backgrounds", "foundations", "motion", "shaders", "tools"];
 export const resourceCategories = [...categoryDefinitions].sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
 export type ResourceCategory = (typeof resourceCategories)[number]["id"];
 export interface LibraryResource {
@@ -76,6 +77,8 @@ export interface LibraryResource {
   format: string;
   previewType:
     | "theme"
+    | "motion-example"
+    | "source-kit"
     | "icons"
     | "component"
     | "block"
@@ -113,13 +116,14 @@ export const librarySections = [
     id: "motion",
     label: "Motion & backgrounds",
     description:
-      "Two decorative backgrounds and six real animation demos with source and downloads.",
+      "Official Motion example collections, two decorative backgrounds and six animation demos with source and downloads.",
     icon: "motion",
-    count: 8,
+    count: 8 + libraryResources.filter(item => item.previewType === "motion-example").length,
   },
 ].filter((section) => section.count > 0 || section.id === "icons").sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
 
 export function resourceUsage(item: Pick<LibraryResource, "license">) {
+  if (item.license === "Unlicense") return { saleOfCopies: true, summary: "Creator code is dedicated to the public domain under the Unlicense, with permission to copy, modify, distribute and sell. Keep the supplied evidence; dependency and trademark rights remain separate." };
   if (item.license === "OFL-1.1") return { saleOfCopies: false, summary: "Commercial design use and redistribution with the OFL notice. Font files cannot be sold by themselves; preserve reserved-name requirements." };
   if (item.license === "CC0-1.0") return { saleOfCopies: true, summary: "Copy, modify and redistribute under the creator’s CC0 dedication. Creator credit is appreciated; trademark and endorsement rights are separate." };
   if (["MIT", "ISC", "BSD-2-Clause", "BSD-3-Clause", "Apache-2.0"].includes(item.license)) return { saleOfCopies: true, summary: "Commercial use, modification and redistribution permitted for the reviewed source. Preserve the complete copyright, license and applicable notices; retain required change notices." };

@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-26T14:12:35.395064+00:00",
+  "scope": {
+    "motionExamples": 109,
+    "motionCollections": 10,
+    "sourceKitsOverviewValidatedInstallUnverified": 2,
+    "excludedDiagnostics": 43,
+    "totalGalleryResources": 479,
+    "completeTemplates": 114
+  },
+  "upstreamOriginalBytes": {
+    "checked": 570,
+    "matched": 570,
+    "mismatches": 0,
+    "evidence": "catalog/partner-imports/upstream-byte-verification.json"
+  },
+  "individualPreviewChecks": {
+    "passed": 111,
+    "failed": 0,
+    "motionVariants": 109,
+    "documentationOverviews": 2,
+    "scope": "Chrome render, root content, image completeness, nonblank screenshots, pause/resume, reduced motion and document width. Source-kit installation is not certified."
+  },
+  "unit": {
+    "passed": 44,
+    "failed": 0
+  },
+  "localWorkerBrowserBeforeFinalMotionDestinationIntegration": {
+    "passed": 36,
+    "failed": 0
+  },
+  "finalMotionDestinationAndPartnerBrowserRecheck": {
+    "passed": 4,
+    "failed": 0
+  },
+  "lint": "passed",
+  "typecheck": "passed",
+  "cloudflareProductionBuild": "passed",
+  "productionCssOptimizationWarnings": 0,
+  "sourceCommitCI": "pending",
+  "liveValidation": "pending",
+  "limits": [
+    "No per-example strict TypeScript consumer or full accessibility certification",
+    "No source-kit install, agent hook or backend execution",
+    "No Nexus catalog or restricted GetLayers source imported",
+    "Motion+ and Motion AI Kit redistribution not approved by this audit"
+  ]
+}

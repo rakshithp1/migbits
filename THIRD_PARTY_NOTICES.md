@@ -1,5 +1,13 @@
 # Third-party notices
 
+## Motion examples and Textura developer source kits
+
+109 reviewed Motion React example variants are grouped into 10 collections. Original creator code comes from `motiondivision/motion` at `136f854291ad3c325dfa257d28912c4849ba2e9b`, under MIT, copyright (c) 2024 Motion B.V. The complete creator license and every bundled installed MIT package notice accompany the source payloads and downloads. Originals remain separate from current-import/client-boundary adaptations. Two photo-based examples use original MigBits SVG artwork instead; no external photograph is distributed, and the adaptation license is included.
+
+The separately linked `textura-agency/next16-claude-starter` (`4ce3ade04ed0c21f38d9b476e079f02a18273463`) and `textura-agency/ai-design-vault` (`f0cdc2b9550642c181e62cb670ba51e6ea63160c`) preserve their exact Unlicense dedications. These are source-reviewed developer kits with documentation previews; upstream builds, backends, installation and hooks are not executed or certified. Their public branding/image files are excluded; dependencies retain separate licenses.
+
+GetLayers catalog content and Nexus UI components are excluded under their source redistribution/competing-library restrictions, including their free offerings. Motion+ content is not covered by this import. See [the source audit](docs/MOTION-LAYERS-NEXUS-IMPORT.md) and `catalog/partner-imports/source-audit.json` for primary evidence, counts, exclusions and validation limits.
+
 ## Single-file website template collection
 
 96 distinct single-page website kits derive from `mmrahmanbappi/100-free-html-templates` at commit `bab6ec6c8900450aab90989d217942a67ad9b16d`.

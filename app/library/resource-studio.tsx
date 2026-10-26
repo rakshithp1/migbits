@@ -477,14 +477,15 @@ function SourcePanel({ item }: { item: LibraryResource }) {
       })
       .then((data: Payload) => {
         setPayload(data);
-        setSelected(data.files?.[0]?.path || "");
+        const preferred = item.previewType === "source-kit" ? "README-MIGBITS.md" : item.previewType === "motion-example" ? "Example.tsx" : "";
+        setSelected(data.files?.find(file => file.path === preferred)?.path || data.files?.[0]?.path || "");
       })
       .catch((e) => {
         if (e.name !== "AbortError")
           setError("Source could not load. Retry or download the ZIP.");
       });
     return () => controller.abort();
-  }, [item.dataUrl, retry]);
+  }, [item.dataUrl, item.previewType, retry]);
   if (!item.dataUrl)
     return (
       <div className="mb-source-panel">
@@ -718,7 +719,7 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
                     className="mb-button mb-button-primary"
                     onClick={() => setLoaded(true)}
                   >
-                    Load interactive preview <Eye size={15} />
+                    {item.previewType === "source-kit" ? "Load source kit overview" : "Load interactive preview"} <Eye size={15} />
                   </button>
                 </div>
               ) : (
@@ -735,7 +736,11 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
               {item.category === "shaders" &&
                 "WebGPU required · starts paused · "}
               Isolated preview ·{" "}
-              {item.previewType === "template"
+              {item.previewType === "source-kit"
+                ? "documentation overview; installation not verified"
+                : item.previewType === "motion-example"
+                  ? "technical example; source accessibility needs review"
+                : item.previewType === "template"
                 ? "frontend demo; forms do not send data"
                 : "original source and setup in the download"}{" "}
               · animations respect reduced motion where supported.

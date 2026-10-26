@@ -1,0 +1,136 @@
+{
+  "checkedAt": "2026-10-26T13:46:54.534981+00:00",
+  "requestedDomains": [
+    "motion.dev",
+    "getlayers.ai",
+    "andnexus-ui.com"
+  ],
+  "verifiedDomains": [
+    {
+      "requested": "motion.dev",
+      "official": "https://motion.dev",
+      "evidence": "https://github.com/motiondivision/motion",
+      "status": "official site and linked repository verified"
+    },
+    {
+      "requested": "getlayers.ai",
+      "official": "https://www.getlayers.ai",
+      "evidence": "https://www.getlayers.ai/docs",
+      "status": "www host accessed; original bare-domain browser request failed"
+    },
+    {
+      "requested": "andnexus-ui.com",
+      "official": "https://www.nexus-ui.com",
+      "evidence": "https://www.nexus-ui.com/terms",
+      "status": "Requested domain inaccessible; interpreted intended source as Nexus UI after search and official catalog/docs confirmation"
+    }
+  ],
+  "sources": [
+    {
+      "repository": "motiondivision/motion",
+      "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+      "license": "MIT",
+      "licenseEvidence": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/LICENSE.md",
+      "sourceArchiveSha256": "3dca5e1e91d72b190cdda5cbd7b757f8ca1bedc3f62fbb7724261a4ba92ce7ce"
+    },
+    {
+      "repository": "textura-agency/ai-design-vault",
+      "revision": "f0cdc2b9550642c181e62cb670ba51e6ea63160c",
+      "license": "Unlicense",
+      "licenseEvidence": "https://github.com/textura-agency/ai-design-vault/blob/f0cdc2b9550642c181e62cb670ba51e6ea63160c/LICENSE.md",
+      "sourceArchiveSha256": "3f8fdf66a3302f2e6940800f428eba7a68a8fb852be016ab977e093da917964a"
+    },
+    {
+      "repository": "textura-agency/next16-claude-starter",
+      "revision": "4ce3ade04ed0c21f38d9b476e079f02a18273463",
+      "license": "Unlicense",
+      "licenseEvidence": "https://github.com/textura-agency/next16-claude-starter/blob/4ce3ade04ed0c21f38d9b476e079f02a18273463/LICENSE.md",
+      "sourceArchiveSha256": "5d358bc26e9f494b7a7efb4871ceed209d1cf1cef3a099211690bbb335cc40f2"
+    }
+  ],
+  "motionReactExamples": {
+    "discovered": 152,
+    "importedPreviewValidated": 109,
+    "excludedDiagnostics": 43,
+    "pending": 0,
+    "galleryCollections": 10,
+    "inventory": "catalog/partner-imports/inventory.json",
+    "scope": "Pinned official React example directory, not the entire Motion website examples vault or every framework repository"
+  },
+  "getLayersOpenRepositories": {
+    "discovered": 2,
+    "sourceImported": 2,
+    "installationFullyValidated": 0,
+    "sourceFiles": 412,
+    "sourceAndOverviewChecked": true,
+    "excludedStarterPublicFiles": 13
+  },
+  "restrictedSources": [
+    {
+      "source": "GetLayers catalog and free layer source/prompts",
+      "status": "BLOCKED",
+      "evidence": [
+        "https://www.getlayers.ai/docs",
+        "https://www.getlayers.ai/terms-of-use"
+      ],
+      "reason": "Commercial client/end-product use is permitted, but the docs prohibit redistribution/resale of prompts and source files; a competing library mirror is not authorized. Free availability does not change this."
+    },
+    {
+      "source": "Nexus UI free and paid components, blocks, templates and marketplace source",
+      "status": "BLOCKED",
+      "evidence": [
+        "https://www.nexus-ui.com/terms"
+      ],
+      "reason": "Section 5 prohibits standalone source redistribution and inclusion in competing UI kits/libraries; section 6 prohibits bulk catalog/registry mirroring. No Nexus registry source files or asset packages were downloaded or imported."
+    },
+    {
+      "source": "Motion website Motion+ and examples without a matching primary source grant",
+      "status": "UNVERIFIED_FOR_REDISTRIBUTION",
+      "evidence": [
+        "https://motion.dev/plus",
+        "https://motion.dev/llms.txt"
+      ],
+      "reason": "MIT applies to the reviewed open-source packages and repository files. It is not assumed to cover the separate paid Motion+ examples, artwork, components or website content."
+    }
+  ],
+  "additionalHolds": [
+    {
+      "repository": "motiondivision/ai-kit",
+      "revision": "1e424943582cbbdb6e3f410687e39f96451447bb",
+      "status": "UNVERIFIED",
+      "reason": "No actual primary LICENSE grant found in the pinned tree. Website MIT label alone does not approve redistribution.",
+      "treeEvidence": "https://github.com/motiondivision/ai-kit/tree/1e424943582cbbdb6e3f410687e39f96451447bb"
+    }
+  ],
+  "notInstalled": [
+    "Upstream agent instructions, skills and hooks",
+    "GetLayers paid MCP integration",
+    "Source-kit backends, dependencies or project builds"
+  ],
+  "coverageLimit": "No completeness claim for the whole internet or the restricted website catalogs. All 152 React example entry files in the pinned Motion directory are reconciled. Developer kits are source-reviewed, not installation-tested.",
+  "upstreamOriginalBytes": "570/570 retained text files matched the Git blob hashes in the complete pinned official repository trees.",
+  "accessLimits": [
+    "Initial bare-domain GetLayers browser request failed; verified www host and official docs were accessible.",
+    "Nexus direct HTML requests returned HTTP 403; no access-control bypass attempted. Official terms and installation docs were readable through the browsing tool."
+  ],
+  "getLayersTools": {
+    "directory": "https://www.getlayers.ai/tools",
+    "observedCount": 13,
+    "names": [
+      "Text Animations",
+      "Custom Cursors",
+      "ASCII Studio",
+      "Particle Forms",
+      "Image Compressor",
+      "Holographic Cloth",
+      "Image Motion",
+      "SVG to 3D",
+      "Refract",
+      "Liquid Colour",
+      "Orb Studio",
+      "Dither Art",
+      "Shader Backgrounds"
+    ],
+    "scope": "Free to operate in browser. Generator/source redistribution is not approved by this audit; individual output asset resale remains unverified. No tool source, presets or prompts copied."
+  }
+}

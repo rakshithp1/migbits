@@ -1,0 +1,672 @@
+{
+  "results": [
+    {
+      "id": "approved-motion-animatepresence-image-gallery",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animatepresence-layout-animations-siblings",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animatepresence-notifications-list-pop",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animatepresence-notifications-list",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animatepresence-parallel-children",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animatepresence-siblings",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animatepresence-switch",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animatepresence-variants",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animatepresence-wait",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animatepresence",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-css-variables",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-animate",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-batch-read-writes",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-between-value-types-x",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-between-value-types",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-boxshadow",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-cleanup",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-display-visibility",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-filter",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-height-auto-display-none",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-height-auto-padding",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-height-auto-rotate-scale",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-keyframes",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-layout-delay-children",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-layout-nested-position",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-layout-scale-correction",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-layout-seperate-children",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-layout-size",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-layout-text-size",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-layout-transform-template",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-repeat-spring",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-reverse",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-spring-css",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-stagger-custom",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-stagger",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-transition-tween",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-useanimate-initial-transform",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-animation-variants",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-sharedlayout",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-block-viewport-conditionally",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-constraints-ref-small-container-layout",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-constraints-ref-small-container",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-constraints-ref",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-constraints-relative",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-constraints-resize",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-draggable",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-external-handlers",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-nested",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-svg-viewbox",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-svg",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-to-reorder",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-usedragcontrols-snaptocursor",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-drag-usedragcontrols",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-events-ontap",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-events-pan",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-events-whilefocus-variants",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-events-whilefocus",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-events-whilehover-unit-conversion",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-events-whilehover",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-events-whiletap-cancel-on-scroll",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-events-whiletap-global",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-events-whiletap-variants",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-events-whiletap",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-layout-projection-correct-style-border-radius",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-layout-projection-custom-values",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-layout-projection-scale-correction-border-radius",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-layout-projection-scale-correction-shadow",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-layout-projection-scale-position",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-layout-projection-scale-size",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-layout-svg",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-layout-rotate",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-layout-skew",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-lazymotion-sync",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-reorder-grid-variable-width",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-reorder-grid",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-svg-motionvalue",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-svg-text-motionvalue-child",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-svg-layout-animation",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-svg-path",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-svg-transform",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-svg-without-initial-values",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-continuity-crossfade",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-continuity",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-lightbox-crossfade",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-lightbox",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-lists",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-motion-value-continuity",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-nested-inset-elements-no-layout",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-nested-inset-elements",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-reparenting-transform-template",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-reparenting",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-rotate",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-sibling-to-child",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-skew",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-shared-layout-toggle-details",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-waapi-background-color",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-waapi-interrupt",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-waapi-opacity-orchestration",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-waapi-opacity",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-useanimatedstate",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-useanimation",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-useinstanttransition",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-usepresence",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-usereducedmotion",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-usescroll",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-usespring",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-usetransform-with-uselayouteffect",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-usevelocity",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-motion-useviewportscroll",
+      "status": "passed",
+      "detail": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate."
+    },
+    {
+      "id": "approved-partner-textura-agency-next16-claude-starter",
+      "status": "passed",
+      "detail": "Source hash/notice integrity and documentation preview rendered. Upstream installation/build remains UNVERIFIED."
+    },
+    {
+      "id": "approved-partner-textura-agency-ai-design-vault",
+      "status": "passed",
+      "detail": "Source hash/notice integrity and documentation preview rendered. Upstream installation/build remains UNVERIFIED."
+    }
+  ],
+  "passedIds": [
+    "approved-motion-animatepresence-image-gallery",
+    "approved-motion-animatepresence-layout-animations-siblings",
+    "approved-motion-animatepresence-notifications-list-pop",
+    "approved-motion-animatepresence-notifications-list",
+    "approved-motion-animatepresence-parallel-children",
+    "approved-motion-animatepresence-siblings",
+    "approved-motion-animatepresence-switch",
+    "approved-motion-animatepresence-variants",
+    "approved-motion-animatepresence-wait",
+    "approved-motion-animatepresence",
+    "approved-motion-animation-css-variables",
+    "approved-motion-animation-animate",
+    "approved-motion-animation-batch-read-writes",
+    "approved-motion-animation-between-value-types-x",
+    "approved-motion-animation-between-value-types",
+    "approved-motion-animation-boxshadow",
+    "approved-motion-animation-cleanup",
+    "approved-motion-animation-display-visibility",
+    "approved-motion-animation-filter",
+    "approved-motion-animation-height-auto-display-none",
+    "approved-motion-animation-height-auto-padding",
+    "approved-motion-animation-height-auto-rotate-scale",
+    "approved-motion-animation-keyframes",
+    "approved-motion-animation-layout-delay-children",
+    "approved-motion-animation-layout-nested-position",
+    "approved-motion-animation-layout-scale-correction",
+    "approved-motion-animation-layout-seperate-children",
+    "approved-motion-animation-layout-size",
+    "approved-motion-animation-layout-text-size",
+    "approved-motion-animation-layout-transform-template",
+    "approved-motion-animation-repeat-spring",
+    "approved-motion-animation-reverse",
+    "approved-motion-animation-spring-css",
+    "approved-motion-animation-stagger-custom",
+    "approved-motion-animation-stagger",
+    "approved-motion-animation-transition-tween",
+    "approved-motion-animation-useanimate-initial-transform",
+    "approved-motion-animation-variants",
+    "approved-motion-drag-sharedlayout",
+    "approved-motion-drag-block-viewport-conditionally",
+    "approved-motion-drag-constraints-ref-small-container-layout",
+    "approved-motion-drag-constraints-ref-small-container",
+    "approved-motion-drag-constraints-ref",
+    "approved-motion-drag-constraints-relative",
+    "approved-motion-drag-constraints-resize",
+    "approved-motion-drag-draggable",
+    "approved-motion-drag-external-handlers",
+    "approved-motion-drag-nested",
+    "approved-motion-drag-svg-viewbox",
+    "approved-motion-drag-svg",
+    "approved-motion-drag-to-reorder",
+    "approved-motion-drag-usedragcontrols-snaptocursor",
+    "approved-motion-drag-usedragcontrols",
+    "approved-motion-events-ontap",
+    "approved-motion-events-pan",
+    "approved-motion-events-whilefocus-variants",
+    "approved-motion-events-whilefocus",
+    "approved-motion-events-whilehover-unit-conversion",
+    "approved-motion-events-whilehover",
+    "approved-motion-events-whiletap-cancel-on-scroll",
+    "approved-motion-events-whiletap-global",
+    "approved-motion-events-whiletap-variants",
+    "approved-motion-events-whiletap",
+    "approved-motion-layout-projection-correct-style-border-radius",
+    "approved-motion-layout-projection-custom-values",
+    "approved-motion-layout-projection-scale-correction-border-radius",
+    "approved-motion-layout-projection-scale-correction-shadow",
+    "approved-motion-layout-projection-scale-position",
+    "approved-motion-layout-projection-scale-size",
+    "approved-motion-layout-svg",
+    "approved-motion-layout-rotate",
+    "approved-motion-layout-skew",
+    "approved-motion-lazymotion-sync",
+    "approved-motion-reorder-grid-variable-width",
+    "approved-motion-reorder-grid",
+    "approved-motion-svg-motionvalue",
+    "approved-motion-svg-text-motionvalue-child",
+    "approved-motion-svg-layout-animation",
+    "approved-motion-svg-path",
+    "approved-motion-svg-transform",
+    "approved-motion-svg-without-initial-values",
+    "approved-motion-shared-layout-continuity-crossfade",
+    "approved-motion-shared-layout-continuity",
+    "approved-motion-shared-layout-lightbox-crossfade",
+    "approved-motion-shared-layout-lightbox",
+    "approved-motion-shared-layout-lists",
+    "approved-motion-shared-layout-motion-value-continuity",
+    "approved-motion-shared-layout-nested-inset-elements-no-layout",
+    "approved-motion-shared-layout-nested-inset-elements",
+    "approved-motion-shared-layout-reparenting-transform-template",
+    "approved-motion-shared-layout-reparenting",
+    "approved-motion-shared-layout-rotate",
+    "approved-motion-shared-layout-sibling-to-child",
+    "approved-motion-shared-layout-skew",
+    "approved-motion-shared-layout-toggle-details",
+    "approved-motion-waapi-background-color",
+    "approved-motion-waapi-interrupt",
+    "approved-motion-waapi-opacity-orchestration",
+    "approved-motion-waapi-opacity",
+    "approved-motion-useanimatedstate",
+    "approved-motion-useanimation",
+    "approved-motion-useinstanttransition",
+    "approved-motion-usepresence",
+    "approved-motion-usereducedmotion",
+    "approved-motion-usescroll",
+    "approved-motion-usespring",
+    "approved-motion-usetransform-with-uselayouteffect",
+    "approved-motion-usevelocity",
+    "approved-motion-useviewportscroll",
+    "approved-partner-textura-agency-next16-claude-starter",
+    "approved-partner-textura-agency-ai-design-vault"
+  ]
+}

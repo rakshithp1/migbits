@@ -36,7 +36,10 @@
     "validate:motion-templates": "tsx scripts/validate-approved-previews.mts --templates",
     "research:template-collections": "python scripts/research-template-collections.py --owners",
     "build:collection-templates": "tsx scripts/build-collection-templates.mts",
-    "validate:collection-templates": "tsx scripts/validate-approved-previews.mts --templates --collection"
+    "validate:collection-templates": "tsx scripts/validate-approved-previews.mts --templates --collection",
+    "snapshot:partners": "python scripts/snapshot-partner-sources.py",
+    "build:partners": "tsx scripts/build-partner-resources.mts",
+    "validate:partners": "tsx scripts/validate-partner-resources.mts"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

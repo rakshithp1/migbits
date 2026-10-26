@@ -14,12 +14,13 @@ import curation from "../catalog/library/curation.json";
 import promotions from "../catalog/archive-previews/promotion.json";
 import approved from "../catalog/approved-resources.json";
 import templates from "../catalog/approved-templates.json";
+import partners from "../catalog/approved-partner-resources.json";
 import { validateLibrary } from "../lib/library-validation";
 test("visual curation excludes retired entries and repeated color families from delivery", () => {
   const ids = new Set(libraryResources.map((r) => r.id));
   const baseline = new Set([...curation.retainedIds, ...promotions.map(r => r.id)]);
   for (const id of baseline) assert.ok(ids.has(id), `Existing resource lost: ${id}`);
-  for (const item of libraryResources) assert.ok(baseline.has(item.id) || [...approved, ...templates].some(r => r.id === item.id), `Unreviewed gallery addition: ${item.id}`);
+  for (const item of libraryResources) assert.ok(baseline.has(item.id) || [...approved, ...templates, ...partners].some(r => r.id === item.id), `Unreviewed gallery addition: ${item.id}`);
   for (const item of approved) assert.ok(ids.has(item.id) || libraryResources.some(r => r.variants?.some(v => v.previewUrl === item.previewUrl)), `Source variant lost: ${item.id}`);
   for (const item of curation.removed) {
     assert.equal(ids.has(item.id), false, item.id);
@@ -91,7 +92,7 @@ test("every gallery source and asset exists and original downloads preserve lice
   for (const item of libraryResources.filter((r) => r.license === "OFL-1.1"))
     assert.equal(item.category, "typography");
   assert.deepEqual(validateLibrary(libraryResources), []);
-  assert.ok(libraryResources.every(r => ["MIT", "OFL-1.1", "CC0-1.0"].includes(r.license)));
+  assert.ok(libraryResources.every(r => ["MIT", "OFL-1.1", "CC0-1.0", "Unlicense"].includes(r.license)));
 });
 
 test("new resources cannot bypass source/preview approval or safe artifact paths", () => {

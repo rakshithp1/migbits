@@ -12,6 +12,7 @@ public/library/fonts/*-OFL.txt -text -whitespace
 # SHA256 values were verified, including on Windows checkouts.
 resources/approved/**/original/** -text -whitespace
 resources/template-imports/**/original/** -text -whitespace
+resources/partner-imports/** -text -whitespace
 public/library/approved/** -text -whitespace
 public/r/*.json -text
 # Pinned reviewed icon sources and notices are hash-verified across platforms.

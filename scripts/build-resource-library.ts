@@ -432,6 +432,21 @@ for (const item of templateImports) {
   if (!item.image || !existsSync("public" + item.image) || !item.downloadUrl || !existsSync("public" + item.downloadUrl)) throw Error("Missing template artifact " + item.id);
   list.push(item);
 }
+// Partner scopes are pinned data, never active agent instructions or installed upstream projects.
+const partnerImports: (LibraryResource & { partner: { repositoryKey: string }; review: NonNullable<LibraryResource["review"]> & { artifactDigests: Record<string, string>; previewDigest: string } })[] = existsSync("catalog/approved-partner-resources.json") ? read("catalog/approved-partner-resources.json") : [];
+for (const item of partnerImports) {
+  const folder = `resources/partner-imports/${item.partner.repositoryKey}`;
+  const snapshot = read(folder + "/snapshot.json");
+  const digest = createHash("sha256").update(readFileSync(folder + "/source-files.json")).digest("hex");
+  if (!["MIT", "Unlicense"].includes(snapshot.license) || digest !== snapshot.sourceArchiveSha256 || digest !== item.review.sourceDigest || item.review.status !== "APPROVED" || item.review.preview !== "passed") throw Error("Unapproved partner scope " + item.id);
+  const originals = read(folder + "/source-files.json");
+  for (const [file, expected] of Object.entries(snapshot.checksums)) if (createHash("sha256").update(originals[file]).digest("hex") !== expected) throw Error("Changed partner source " + file);
+  for (const [url, expected] of Object.entries(item.review.artifactDigests)) if (!url.startsWith("/library/approved/") || url.includes("..") || createHash("sha256").update(readFileSync("public" + url)).digest("hex") !== expected) throw Error("Stale partner artifact " + url);
+  for (const url of [item.previewUrl, item.image, item.dataUrl, item.downloadUrl, item.licenseUrl]) if (!url || !item.review.artifactDigests[url]) throw Error("Missing partner proof " + item.id);
+  if (createHash("sha256").update(readFileSync("public" + item.previewUrl)).digest("hex") !== item.review.previewDigest) throw Error("Stale partner preview " + item.id);
+  for (const variant of item.variants || []) for (const url of [variant.previewUrl, variant.dataUrl, variant.downloadUrl]) if (!item.review.artifactDigests[url]) throw Error("Missing partner variant proof " + item.id);
+  list.push(item);
+}
 for (const item of list) {
   const first = [
     "inspo--hero-split-screen",

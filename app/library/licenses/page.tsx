@@ -12,6 +12,7 @@ export default function Attribution() {
         <Link href="/library">← Back to the library</Link>
         <h1>Attribution &amp; licenses</h1>
         <p>Creator credits and original license notices for the library. Downloads retain applicable copyright and dependency notices.</p>
+        <p>Unlicense source kits preserve the creator’s public-domain dedication and permission grant. Their dependencies retain separate licenses. A source-reviewed kit is not an installation-tested application; its detail page states the validation scope.</p>
         <p><a href="https://github.com/rakshithp1/migbits/blob/main/THIRD_PARTY_NOTICES.md">Project third-party notices ↗</a></p>
         <section aria-label="Resource attribution records">
           <ul>{libraryResources.map(item => (

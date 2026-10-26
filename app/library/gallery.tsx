@@ -18,6 +18,7 @@ import {
   Menu,
   Grid3X3,
   Sparkles,
+  Wrench,
 } from "lucide-react";
 import {
   categoryLabel,
@@ -33,6 +34,7 @@ import "./reference-layout.css";
 import { SearchShortcut } from "./search-shortcut";
 import { ThemeControls } from "./theme-controls";
 const sectionIcons: Record<string, typeof Component> = {
+  tools: Wrench,
   themes: Palette,
   backgrounds: Sparkles,
   foundations: Shapes,

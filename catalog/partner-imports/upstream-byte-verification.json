@@ -1,0 +1,26 @@
+[
+  {
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "checked": 158,
+    "matched": 158,
+    "mismatches": [],
+    "method": "Git blob SHA1 framing compared against complete pinned official GitHub tree; SHA256 snapshot guards remain separate."
+  },
+  {
+    "repository": "textura-agency/ai-design-vault",
+    "revision": "f0cdc2b9550642c181e62cb670ba51e6ea63160c",
+    "checked": 97,
+    "matched": 97,
+    "mismatches": [],
+    "method": "Git blob SHA1 framing compared against complete pinned official GitHub tree; SHA256 snapshot guards remain separate."
+  },
+  {
+    "repository": "textura-agency/next16-claude-starter",
+    "revision": "4ce3ade04ed0c21f38d9b476e079f02a18273463",
+    "checked": 315,
+    "matched": 315,
+    "mismatches": [],
+    "method": "Git blob SHA1 framing compared against complete pinned official GitHub tree; SHA256 snapshot guards remain separate."
+  }
+]

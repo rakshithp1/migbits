@@ -66,7 +66,11 @@ export default async function ResourcePage({
             <div>
               <h2>Good to know</h2>
               <p>
-                {item.previewType === "figma"
+                {item.previewType === "source-kit"
+                  ? "Documentation preview only. Original source and license are reviewed; upstream installation, hooks, backend services and builds have not been executed."
+                  : item.previewType === "motion-example"
+                    ? "Technical Motion example. Preview pause/reduced-motion handling is a separate adaptation; original keyboard behavior, fixed sizing and production integration require review."
+                  : item.previewType === "figma"
                   ? "Editable SVG + component generator. Native Figma execution is not verified."
                   : item.previewType === "block"
                     ? "Sandbox render checked. Dependencies, keyboard behavior and production integration need review."

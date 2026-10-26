@@ -1,0 +1,1388 @@
+[
+  {
+    "id": "approved-motion-animatepresence-image-gallery",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/AnimatePresence-image-gallery.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/AnimatePresence-image-gallery.tsx"
+  },
+  {
+    "id": "approved-motion-animatepresence-layout-animations-siblings",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/AnimatePresence-layout-animations-siblings.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/AnimatePresence-layout-animations-siblings.tsx"
+  },
+  {
+    "id": "approved-motion-animatepresence-notifications-list-pop",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/AnimatePresence-notifications-list-pop.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/AnimatePresence-notifications-list-pop.tsx"
+  },
+  {
+    "id": "approved-motion-animatepresence-notifications-list",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/AnimatePresence-notifications-list.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/AnimatePresence-notifications-list.tsx"
+  },
+  {
+    "id": "approved-motion-animatepresence-parallel-children",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/AnimatePresence-parallel-children.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/AnimatePresence-parallel-children.tsx"
+  },
+  {
+    "id": "approved-motion-animatepresence-siblings",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/AnimatePresence-siblings.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/AnimatePresence-siblings.tsx"
+  },
+  {
+    "id": "approved-motion-animatepresence-switch",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/AnimatePresence-switch.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/AnimatePresence-switch.tsx"
+  },
+  {
+    "id": "approved-motion-animatepresence-variants",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/AnimatePresence-variants.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/AnimatePresence-variants.tsx"
+  },
+  {
+    "id": "approved-motion-animatepresence-wait",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/AnimatePresence-wait.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/AnimatePresence-wait.tsx"
+  },
+  {
+    "id": "approved-motion-animatepresence",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/AnimatePresence.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/AnimatePresence.tsx"
+  },
+  {
+    "id": "approved-motion-animation-css-variables",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-CSS-variables.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-CSS-variables.tsx"
+  },
+  {
+    "id": "approved-motion-animation-animate",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-animate.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-animate.tsx"
+  },
+  {
+    "id": "approved-motion-animation-batch-read-writes",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-batch-read-writes.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-batch-read-writes.tsx"
+  },
+  {
+    "id": "approved-motion-animation-between-value-types-x",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-between-value-types-x.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-between-value-types-x.tsx"
+  },
+  {
+    "id": "approved-motion-animation-between-value-types",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-between-value-types.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-between-value-types.tsx"
+  },
+  {
+    "id": "approved-motion-animation-boxshadow",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-boxShadow.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-boxShadow.tsx"
+  },
+  {
+    "id": "approved-motion-animation-cleanup",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-cleanup.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-cleanup.tsx"
+  },
+  {
+    "id": "approved-motion-animation-display-visibility",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-display-visibility.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-display-visibility.tsx"
+  },
+  {
+    "id": "approved-motion-animation-filter",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-filter.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-filter.tsx"
+  },
+  {
+    "id": "approved-motion-animation-height-auto-display-none",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-height-auto-display-none.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-height-auto-display-none.tsx"
+  },
+  {
+    "id": "approved-motion-animation-height-auto-padding",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-height-auto-padding.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-height-auto-padding.tsx"
+  },
+  {
+    "id": "approved-motion-animation-height-auto-rotate-scale",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-height-auto-rotate-scale.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-height-auto-rotate-scale.tsx"
+  },
+  {
+    "id": "approved-motion-animation-keyframes",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-keyframes.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-keyframes.tsx"
+  },
+  {
+    "id": "approved-motion-animation-layout-delay-children",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-layout-delay-children.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-layout-delay-children.tsx"
+  },
+  {
+    "id": "approved-motion-animation-layout-nested-position",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-layout-nested-position.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-layout-nested-position.tsx"
+  },
+  {
+    "id": "approved-motion-animation-layout-scale-correction",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-layout-scale-correction.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-layout-scale-correction.tsx"
+  },
+  {
+    "id": "approved-motion-animation-layout-seperate-children",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-layout-seperate-children.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-layout-seperate-children.tsx"
+  },
+  {
+    "id": "approved-motion-animation-layout-size",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-layout-size.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-layout-size.tsx"
+  },
+  {
+    "id": "approved-motion-animation-layout-text-size",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-layout-text-size.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-layout-text-size.tsx"
+  },
+  {
+    "id": "approved-motion-animation-layout-transform-template",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-layout-transform-template.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-layout-transform-template.tsx"
+  },
+  {
+    "id": "approved-motion-animation-layout-update-stress",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-layout-update-stress.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-layout-update-stress.tsx"
+  },
+  {
+    "id": "approved-motion-animation-repeat-spring",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-repeat-spring.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-repeat-spring.tsx"
+  },
+  {
+    "id": "approved-motion-animation-reverse",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-reverse.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-reverse.tsx"
+  },
+  {
+    "id": "approved-motion-animation-spring-css",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-spring-css.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-spring-css.tsx"
+  },
+  {
+    "id": "approved-motion-animation-stagger-custom",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-stagger-custom.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-stagger-custom.tsx"
+  },
+  {
+    "id": "approved-motion-animation-stagger",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-stagger.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-stagger.tsx"
+  },
+  {
+    "id": "approved-motion-animation-stress-mount",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-stress-mount.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-stress-mount.tsx"
+  },
+  {
+    "id": "approved-motion-animation-transition-tween",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-transition-tween.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-transition-tween.tsx"
+  },
+  {
+    "id": "approved-motion-animation-useanimate-initial-transform",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-useAnimate-initial-transform.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-useAnimate-initial-transform.tsx"
+  },
+  {
+    "id": "approved-motion-animation-variants",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Animation-variants.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Animation-variants.tsx"
+  },
+  {
+    "id": "approved-motion-benchmark-cold-start-gsap",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Benchmark-cold-start-gsap.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Benchmark-cold-start-gsap.tsx"
+  },
+  {
+    "id": "approved-motion-benchmark-cold-start-motion",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Benchmark-cold-start-motion.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Benchmark-cold-start-motion.tsx"
+  },
+  {
+    "id": "approved-motion-drag-sharedlayout",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-SharedLayout.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-SharedLayout.tsx"
+  },
+  {
+    "id": "approved-motion-drag-block-viewport-conditionally",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-block-viewport-conditionally.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-block-viewport-conditionally.tsx"
+  },
+  {
+    "id": "approved-motion-drag-constraints-ref-small-container-layout",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-constraints-ref-small-container-layout.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-constraints-ref-small-container-layout.tsx"
+  },
+  {
+    "id": "approved-motion-drag-constraints-ref-small-container",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-constraints-ref-small-container.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-constraints-ref-small-container.tsx"
+  },
+  {
+    "id": "approved-motion-drag-constraints-ref",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-constraints-ref.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-constraints-ref.tsx"
+  },
+  {
+    "id": "approved-motion-drag-constraints-relative",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-constraints-relative.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-constraints-relative.tsx"
+  },
+  {
+    "id": "approved-motion-drag-constraints-resize",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-constraints-resize.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-constraints-resize.tsx"
+  },
+  {
+    "id": "approved-motion-drag-draggable",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-draggable.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-draggable.tsx"
+  },
+  {
+    "id": "approved-motion-drag-external-handlers",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-external-handlers.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-external-handlers.tsx"
+  },
+  {
+    "id": "approved-motion-drag-nested",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-nested.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-nested.tsx"
+  },
+  {
+    "id": "approved-motion-drag-svg-viewbox",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-svg-viewbox.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-svg-viewbox.tsx"
+  },
+  {
+    "id": "approved-motion-drag-svg",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-svg.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-svg.tsx"
+  },
+  {
+    "id": "approved-motion-drag-to-reorder",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-to-reorder.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-to-reorder.tsx"
+  },
+  {
+    "id": "approved-motion-drag-usedragcontrols-snaptocursor",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-useDragControls-snapToCursor.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-useDragControls-snapToCursor.tsx"
+  },
+  {
+    "id": "approved-motion-drag-usedragcontrols",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Drag-useDragControls.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Drag-useDragControls.tsx"
+  },
+  {
+    "id": "approved-motion-events-ontap",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Events-onTap.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Events-onTap.tsx"
+  },
+  {
+    "id": "approved-motion-events-pan",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Events-pan.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Events-pan.tsx"
+  },
+  {
+    "id": "approved-motion-events-whilefocus-variants",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Events-whileFocus-variants.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Events-whileFocus-variants.tsx"
+  },
+  {
+    "id": "approved-motion-events-whilefocus",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Events-whileFocus.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Events-whileFocus.tsx"
+  },
+  {
+    "id": "approved-motion-events-whilehover-unit-conversion",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Events-whileHover-unit-conversion.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Events-whileHover-unit-conversion.tsx"
+  },
+  {
+    "id": "approved-motion-events-whilehover",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Events-whileHover.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Events-whileHover.tsx"
+  },
+  {
+    "id": "approved-motion-events-whiletap-cancel-on-scroll",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Events-whileTap-cancel-on-scroll.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Events-whileTap-cancel-on-scroll.tsx"
+  },
+  {
+    "id": "approved-motion-events-whiletap-global",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Events-whileTap-global.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Events-whileTap-global.tsx"
+  },
+  {
+    "id": "approved-motion-events-whiletap-variants",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Events-whileTap-variants.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Events-whileTap-variants.tsx"
+  },
+  {
+    "id": "approved-motion-events-whiletap",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Events-whileTap.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Events-whileTap.tsx"
+  },
+  {
+    "id": "approved-motion-layout-projection-correct-style-border-radius",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Layout-Projection-correct-style-border-radius.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Layout-Projection-correct-style-border-radius.tsx"
+  },
+  {
+    "id": "approved-motion-layout-projection-custom-values",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Layout-Projection-custom-values.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Layout-Projection-custom-values.tsx"
+  },
+  {
+    "id": "approved-motion-layout-projection-scale-correction-border-radius",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Layout-Projection-scale-correction-border-radius.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Layout-Projection-scale-correction-border-radius.tsx"
+  },
+  {
+    "id": "approved-motion-layout-projection-scale-correction-shadow",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Layout-Projection-scale-correction-shadow.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Layout-Projection-scale-correction-shadow.tsx"
+  },
+  {
+    "id": "approved-motion-layout-projection-scale-position",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Layout-Projection-scale-position.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Layout-Projection-scale-position.tsx"
+  },
+  {
+    "id": "approved-motion-layout-projection-scale-size",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Layout-Projection-scale-size.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Layout-Projection-scale-size.tsx"
+  },
+  {
+    "id": "approved-motion-layout-svg",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Layout-SVG.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Layout-SVG.tsx"
+  },
+  {
+    "id": "approved-motion-layout-rotate",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Layout-rotate.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Layout-rotate.tsx"
+  },
+  {
+    "id": "approved-motion-layout-skew",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Layout-skew.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Layout-skew.tsx"
+  },
+  {
+    "id": "approved-motion-lazymotion-async",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/LazyMotion-async.tsx",
+    "status": "EXCLUDED",
+    "reason": "Diagnostic fixture deliberately rejects the feature-loading promise after a timer; not a working reusable example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/LazyMotion-async.tsx"
+  },
+  {
+    "id": "approved-motion-lazymotion-sync",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/LazyMotion-sync.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/LazyMotion-sync.tsx"
+  },
+  {
+    "id": "approved-motion-motionconfig-isstatic",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/MotionConfig-isStatic.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/MotionConfig-isStatic.tsx"
+  },
+  {
+    "id": "approved-motion-motionconfig-nonce",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/MotionConfig-nonce.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/MotionConfig-nonce.tsx"
+  },
+  {
+    "id": "approved-motion-prop-ref",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Prop-ref.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Prop-ref.tsx"
+  },
+  {
+    "id": "approved-motion-prop-style",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Prop-style.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Prop-style.tsx"
+  },
+  {
+    "id": "approved-motion-reorder-grid-variable-width",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Reorder-grid-variable-width.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Reorder-grid-variable-width.tsx"
+  },
+  {
+    "id": "approved-motion-reorder-grid",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Reorder-grid.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Reorder-grid.tsx"
+  },
+  {
+    "id": "approved-motion-svg-motionvalue",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/SVG-MotionValue.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/SVG-MotionValue.tsx"
+  },
+  {
+    "id": "approved-motion-svg-text-motionvalue-child",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/SVG-Text-MotionValue-Child.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/SVG-Text-MotionValue-Child.tsx"
+  },
+  {
+    "id": "approved-motion-svg-layout-animation",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/SVG-layout-animation.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/SVG-layout-animation.tsx"
+  },
+  {
+    "id": "approved-motion-svg-path",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/SVG-path.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/SVG-path.tsx"
+  },
+  {
+    "id": "approved-motion-svg-transform",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/SVG-transform.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/SVG-transform.tsx"
+  },
+  {
+    "id": "approved-motion-svg-without-initial-values",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/SVG-without-initial-values.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/SVG-without-initial-values.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-continuity-crossfade",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-continuity-crossfade.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-continuity-crossfade.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-continuity",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-continuity.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-continuity.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-lightbox-crossfade",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-lightbox-crossfade.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-lightbox-crossfade.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-lightbox",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-lightbox.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-lightbox.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-lists",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-lists.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-lists.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-motion-value-continuity",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-motion-value-continuity.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-motion-value-continuity.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-nested-inset-elements-no-layout",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-nested-inset-elements-no-layout.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-nested-inset-elements-no-layout.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-nested-inset-elements",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-nested-inset-elements.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-nested-inset-elements.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-reparenting-transform-template",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-reparenting-transform-template.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-reparenting-transform-template.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-reparenting",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-reparenting.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-reparenting.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-rotate",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-rotate.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-rotate.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-sibling-to-child",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-sibling-to-child.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-sibling-to-child.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-skew",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-skew.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-skew.tsx"
+  },
+  {
+    "id": "approved-motion-shared-layout-toggle-details",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/Shared-layout-toggle-details.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/Shared-layout-toggle-details.tsx"
+  },
+  {
+    "id": "approved-motion-waapi-background-color",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/WAAPI-background-color.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/WAAPI-background-color.tsx"
+  },
+  {
+    "id": "approved-motion-waapi-interrupt",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/WAAPI-interrupt.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/WAAPI-interrupt.tsx"
+  },
+  {
+    "id": "approved-motion-waapi-opacity-orchestration",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/WAAPI-opacity-orchestration.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/WAAPI-opacity-orchestration.tsx"
+  },
+  {
+    "id": "approved-motion-waapi-opacity",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/WAAPI-opacity.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/WAAPI-opacity.tsx"
+  },
+  {
+    "id": "approved-motion--svg-layout-animation-correction",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_SVG-layout-animation-correction.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_SVG-layout-animation-correction.tsx"
+  },
+  {
+    "id": "approved-motion--conditionaldraggable",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_conditionalDraggable.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_conditionalDraggable.tsx"
+  },
+  {
+    "id": "approved-motion--dragclickable",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragClickable.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragClickable.tsx"
+  },
+  {
+    "id": "approved-motion--dragconstraintchanges",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragConstraintChanges.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragConstraintChanges.tsx"
+  },
+  {
+    "id": "approved-motion--dragconstraints",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragConstraints.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragConstraints.tsx"
+  },
+  {
+    "id": "approved-motion--dragconstraintsref",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragConstraintsRef.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragConstraintsRef.tsx"
+  },
+  {
+    "id": "approved-motion--dragconstraintsrefscale",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragConstraintsRefScale.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragConstraintsRefScale.tsx"
+  },
+  {
+    "id": "approved-motion--dragconstraintsrefsmallerthanchild",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragConstraintsRefSmallerThanChild.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragConstraintsRefSmallerThanChild.tsx"
+  },
+  {
+    "id": "approved-motion--dragcontaininginput",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragContainingInput.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragContainingInput.tsx"
+  },
+  {
+    "id": "approved-motion--dragcontrols",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragControls.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragControls.tsx"
+  },
+  {
+    "id": "approved-motion--dragdevice",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragDevice.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragDevice.tsx"
+  },
+  {
+    "id": "approved-motion--dragexternalcontrol",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragExternalControl.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragExternalControl.tsx"
+  },
+  {
+    "id": "approved-motion--dragoverdrag",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragOverdrag.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragOverdrag.tsx"
+  },
+  {
+    "id": "approved-motion--dragpropagation",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragPropagation.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragPropagation.tsx"
+  },
+  {
+    "id": "approved-motion--dragsetstate",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_dragSetState.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_dragSetState.tsx"
+  },
+  {
+    "id": "approved-motion--layoutdragtransform",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_layoutDragTransform.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_layoutDragTransform.tsx"
+  },
+  {
+    "id": "approved-motion--layouttransform",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/_layoutTransform.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/_layoutTransform.tsx"
+  },
+  {
+    "id": "approved-motion-animate-stress-empty-transforms",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/animate-stress-empty-transforms.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/animate-stress-empty-transforms.tsx"
+  },
+  {
+    "id": "approved-motion-animate-stress-external-motion-value",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/animate-stress-external-motion-value.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/animate-stress-external-motion-value.tsx"
+  },
+  {
+    "id": "approved-motion-animate-stress-headless-color",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/animate-stress-headless-color.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/animate-stress-headless-color.tsx"
+  },
+  {
+    "id": "approved-motion-animate-stress-headless-x",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/animate-stress-headless-x.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/animate-stress-headless-x.tsx"
+  },
+  {
+    "id": "approved-motion-layout-memory",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/layout-memory.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/layout-memory.tsx"
+  },
+  {
+    "id": "approved-motion-layout-stress-limit-propagation",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/layout-stress-limit-propagation.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/layout-stress-limit-propagation.tsx"
+  },
+  {
+    "id": "approved-motion-layout-stress-scale-correction",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/layout-stress-scale-correction.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/layout-stress-scale-correction.tsx"
+  },
+  {
+    "id": "approved-motion-layout-stress-scroll",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/layout-stress-scroll.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/layout-stress-scroll.tsx"
+  },
+  {
+    "id": "approved-motion-layout-stress-subtree",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/layout-stress-subtree.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/layout-stress-subtree.tsx"
+  },
+  {
+    "id": "approved-motion-layout-stress-transform-only",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/layout-stress-transform-only.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/layout-stress-transform-only.tsx"
+  },
+  {
+    "id": "approved-motion-layout-stress-transform",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/layout-stress-transform.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/layout-stress-transform.tsx"
+  },
+  {
+    "id": "approved-motion-layout-stress-translate",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/layout-stress-translate.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/layout-stress-translate.tsx"
+  },
+  {
+    "id": "approved-motion-layout-stress",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/layout-stress.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/layout-stress.tsx"
+  },
+  {
+    "id": "approved-motion-motion-custom-tag",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/motion-custom-tag.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/motion-custom-tag.tsx"
+  },
+  {
+    "id": "approved-motion-transition-arc-playground",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/transition-arc-playground.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/transition-arc-playground.tsx"
+  },
+  {
+    "id": "approved-motion-transition-arc-spring-playground",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/transition-arc-spring-playground.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/transition-arc-spring-playground.tsx"
+  },
+  {
+    "id": "approved-motion-useanimatedstate",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/useAnimatedState.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/useAnimatedState.tsx"
+  },
+  {
+    "id": "approved-motion-useanimation",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/useAnimation.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/useAnimation.tsx"
+  },
+  {
+    "id": "approved-motion-useinstanttransition",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/useInstantTransition.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/useInstantTransition.tsx"
+  },
+  {
+    "id": "approved-motion-usepresence",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/usePresence.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/usePresence.tsx"
+  },
+  {
+    "id": "approved-motion-usereducedmotion",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/useReducedMotion.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/useReducedMotion.tsx"
+  },
+  {
+    "id": "approved-motion-usescroll",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/useScroll.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/useScroll.tsx"
+  },
+  {
+    "id": "approved-motion-usespring",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/useSpring.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/useSpring.tsx"
+  },
+  {
+    "id": "approved-motion-usetransform-with-uselayouteffect",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/useTransform-with-useLayoutEffect.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/useTransform-with-useLayoutEffect.tsx"
+  },
+  {
+    "id": "approved-motion-usevelocity",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/useVelocity.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/useVelocity.tsx"
+  },
+  {
+    "id": "approved-motion-useviewportscroll",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/useViewportScroll.tsx",
+    "status": "IMPORTED_PREVIEW_VALIDATED",
+    "reason": "Chrome render, root content, screenshot, motion pause/resume, live reduced-motion and mobile document-width checks. Original fixed-width content can scroll within the demo canvas; full accessibility/consumer certification is separate.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/useViewportScroll.tsx"
+  },
+  {
+    "id": "approved-motion-variants-race",
+    "repository": "motiondivision/motion",
+    "revision": "136f854291ad3c325dfa257d28912c4849ba2e9b",
+    "file": "dev/react/src/examples/variants-race.tsx",
+    "status": "EXCLUDED",
+    "reason": "Internal, stress, benchmark, diagnostic or experimental fixture; not a reusable gallery example.",
+    "sourceUrl": "https://github.com/motiondivision/motion/blob/136f854291ad3c325dfa257d28912c4849ba2e9b/dev/react/src/examples/variants-race.tsx"
+  },
+  {
+    "id": "approved-partner-textura-agency-next16-claude-starter",
+    "repository": "textura-agency/next16-claude-starter",
+    "revision": "4ce3ade04ed0c21f38d9b476e079f02a18273463",
+    "status": "IMPORTED_SOURCE_INSTALL_UNVERIFIED",
+    "sourceFiles": 315,
+    "excludedFiles": 13,
+    "reason": "Source hash/notice integrity and documentation preview rendered. Upstream installation/build remains UNVERIFIED."
+  },
+  {
+    "id": "approved-partner-textura-agency-ai-design-vault",
+    "repository": "textura-agency/ai-design-vault",
+    "revision": "f0cdc2b9550642c181e62cb670ba51e6ea63160c",
+    "status": "IMPORTED_SOURCE_INSTALL_UNVERIFIED",
+    "sourceFiles": 97,
+    "excludedFiles": 0,
+    "reason": "Source hash/notice integrity and documentation preview rendered. Upstream installation/build remains UNVERIFIED."
+  }
+]

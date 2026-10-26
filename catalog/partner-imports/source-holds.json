@@ -1,0 +1,9 @@
+[
+  {
+    "repository": "motiondivision/ai-kit",
+    "revision": "1e424943582cbbdb6e3f410687e39f96451447bb",
+    "status": "UNVERIFIED",
+    "reason": "No actual primary LICENSE grant found in the pinned tree. Website MIT label alone does not approve redistribution.",
+    "treeEvidence": "https://github.com/motiondivision/ai-kit/tree/1e424943582cbbdb6e3f410687e39f96451447bb"
+  }
+]
