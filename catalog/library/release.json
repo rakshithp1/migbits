@@ -1,14 +1,14 @@
 {
-  "releasedAt": "2026-10-25T20:12:20.491944+00:00",
+  "releasedAt": "2026-10-26T03:36:55.093253+00:00",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "ca09d5964475ca33d189d792c3ae43daf8819f74",
-  "deploymentVersion": "e8fed9c3-b2f3-4770-8bc2-3d28bb52375d",
-  "resources": 371,
+  "sourceCommit": "9b7303ef59a6bf186bd96debe5b6ff656c412dce",
+  "deploymentVersion": "6dfd2782-31ae-4a82-9b3e-ee5692955df4",
+  "resources": 467,
   "categories": {
     "components": 92,
     "blocks": 19,
-    "templates": 18,
+    "templates": 114,
     "typography": 12,
     "colors": 18,
     "illustrations": 14,
@@ -20,58 +20,59 @@
     "themes": 12
   },
   "licenses": {
-    "MIT": 357,
+    "MIT": 453,
     "OFL-1.1": 12,
     "CC0-1.0": 2
   },
   "changes": [
-    "12 original ready themes with light/dark semantic roles, typography, CSS/JSON downloads and persistent site controls",
-    "16 individually reviewed generic Microsoft Fluent color SVGs with complete MIT/NOTICE preservation; one collection, not16 template kits",
-    "Six original CSS motion recipes with static reduced-motion behavior; no restricted animation collection copied",
-    "Gradient angle/color/animation editor with portable reduced-motion CSS export",
-    "Four responsive type scales across12 existing licensed font families; font binaries not relicensed or bundled into theme ZIPs",
-    "Five-color editing and palette presets for12 existing original illustrations; existing third-party illustrations retained unchanged"
+    "96 distinct MIT single-file website template kits, pinned original code and creator notices retained separately",
+    "Original geometric demo artwork replaces excluded stock photos; remote fonts and services are disabled",
+    "Isolated thumbnails, mobile layouts, native motion controls and reduced-motion validation",
+    "Persistent collection discovery, individual outcomes, approved-source hashes and resumable validation checkpoints",
+    "Sitemap, crawl exclusions and canonical URLs for the homepage, catalog categories and resources"
   ],
   "checks": {
-    "unit": 42,
-    "ciBrowser": 32,
-    "localBrowserBeforeFinalContrastPolish": 31,
-    "localFocusedFinalBrowser": 6,
-    "liveBrowser": 6,
-    "semanticContrastPairs": 168,
-    "liveArtifactsHashMatched": 57,
-    "hostingGroups": 9,
+    "unit": 43,
+    "ciBrowser": 34,
+    "localBrowser": 34,
+    "localFocusedFinalBrowser": 4,
+    "liveBrowser": 4,
+    "individualTemplateRenders": 96,
+    "liveArtifactsHashMatched": 480,
     "lint": "passed",
     "typecheck": "passed",
     "cleanConsumer": "passed",
     "communityBundles": "passed",
-    "nextBuild": "passed",
     "cloudflareBuild": "passed",
     "workerDryRun": "passed",
-    "liveHosting": "passed",
     "sourceCommitCI": "passed",
-    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40229054942"
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40264572361"
   },
   "remaining": {
     "requestedCompleteTemplates": 500,
-    "currentCompleteTemplateKits": 18,
-    "remainingToTarget": 482,
+    "currentCompleteTemplateKits": 114,
+    "remainingToTarget": 386,
     "candidateRepositoriesStillUnverified": 1799,
+    "requested3DModels": 150,
+    "modelsStatus": "queued after template expansion",
+    "requestedMotionBackgrounds": 100,
+    "motionBackgroundStatus": "queued after 3D models",
     "freePro": "deferred",
-    "accessibility": "Per-entry comprehensive accessibility certification remains pending"
+    "accessibility": "Comprehensive per-entry accessibility and multi-browser verification remain pending"
   },
   "previousDeployment": {
-    "releasedAt": "2026-10-25T17:55:21.421Z",
-    "sourceCommit": "9167b8970c2e7fffa9a6fad7ba329750b15ddc59",
-    "deploymentVersion": "afbfe782-b545-4cf8-93d3-f6c644e0956d",
-    "resources": 358
+    "releasedAt": "2026-10-25T20:12:20.491944+00:00",
+    "sourceCommit": "ca09d5964475ca33d189d792c3ae43daf8819f74",
+    "deploymentVersion": "e8fed9c3-b2f3-4770-8bc2-3d28bb52375d",
+    "resources": 371
   },
   "evidence": [
-    "docs/VISUAL-EXPANSION.md",
-    "resources/visual/fluent-color/review.json",
-    "resources/visual/fluent-color/LICENSE",
-    "resources/visual/fluent-color/NOTICE",
-    "tests/theme-expansion.test.ts",
-    "tests/browser/theme-expansion.spec.ts"
+    "docs/TEMPLATE-COLLECTION-EXPANSION.md",
+    "catalog/template-research/collection-items.json",
+    "catalog/template-research/reviewed-single-file-source.json",
+    "catalog/template-research/expansion-validation.json",
+    "catalog/template-research/visual-dedup-review.json",
+    "tests/collection-template-safety.test.ts",
+    "tests/browser/collection-templates.spec.ts"
   ]
 }

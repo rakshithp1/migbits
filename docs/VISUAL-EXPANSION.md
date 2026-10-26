@@ -1,6 +1,6 @@
 # Visual expansion — 26 October 2026
 
-This release adds 12 original ready themes and one collection containing 16 reviewed generic Fluent color icons. These are themes and glyphs, not additional template kits. The gallery has 371 resource entries; the earlier 1,000-template target remains 18 complete kits.
+This release adds 12 original ready themes and one collection containing 16 reviewed generic Fluent color icons. These are themes and glyphs, not additional template kits. The gallery has 371 resource entries; that release had 18 complete template kits. The current target is 500; see TEMPLATE-COLLECTION-EXPANSION.md and catalog/template-research/progress.json for newer counts.
 
 ## What changed
 
