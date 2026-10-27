@@ -47,5 +47,15 @@
     "/library/data/block-coral-signup.json": "dbfb30fcb698bbcacc1fab818bcf6e4ee61862ebb2211dcf2f28dca1a88acbdf",
     "/library/downloads/block-coral-signup.zip": "edff088f96b466f72b95416137d805ca1c29609d20a20dfed11bb5087d1b6f06",
     "/library/notices/block-coral-signup.txt": "673fa859c4c91525db5971d20d145740535221d9a008d40e91250af1fd1da55f"
-  }
+  },
+  "sourceCommit": "2c657cb06f510791bdfc9c5104ac0b70d6ddadac",
+  "ci": "passed",
+  "ciUnit": 48,
+  "ciBrowser": 50,
+  "ciUrl": "https://github.com/rakshithp1/migbits/actions/runs/40481936055",
+  "localFocusedBrowser": 5,
+  "liveBrowser": 2,
+  "liveArtifactsHashMatched": 5,
+  "deploymentVersion": "a714ac4c-387a-4089-a6bf-cfa7f2a5a4b1",
+  "productionUrl": "https://migbits.com/library/resource/block-coral-signup"
 }

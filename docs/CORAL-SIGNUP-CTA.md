@@ -22,3 +22,9 @@ Pinned font source: https://github.com/google/fonts/tree/e7db6ca603fd4862010383f
 Validation is recorded in `catalog/library/coral-cta-validation.json`. Regenerate catalog artifacts with `npm run build:catalog`, serve `public/`, then run `node scripts/validate-coral-cta.mjs`. The finished download requires none of those build tools.
 
 An opaque-iframe Chromium compositing stall was reproduced after the entrance ended. The video layer now stays above the plate darkening layer, the drawn border uses an underlay rather than an overlaid CSS mask, and a non-visible subpixel compositor timeline keeps embedded translucent video frames scheduled. This timeline is disabled by pause, visibility and reduced-motion policies. Verification compares decoded video pixels after the entrance, not only a running playback clock. The standalone version needs no extra compositor timeline.
+
+## Published verification
+
+Live: https://migbits.com/library/resource/block-coral-signup . Full-size standalone view: https://migbits.com/library/previews/blocks/coral-signup.html . Source commit `2c657cb06f510791bdfc9c5104ac0b70d6ddadac`; Cloudflare version `a714ac4c-387a-4089-a6bf-cfa7f2a5a4b1`. CI passed 48 unit and 50 browser tests, lint, type checks, clean-consumer/community checks and production Worker build. Five focused local browser checks and both live CTA checks passed; the five published artifacts hash-match their tested copies. The 1440x960 reference, four responsive viewport sizes, decoded pixel changes, embedded-font integrity and complete font notices were checked. The catalog now has 343 resources, including 20 blocks; no extra template or background counts were added for this block.
+
+CI: https://github.com/rakshithp1/migbits/actions/runs/40481936055
