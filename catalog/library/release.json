@@ -1,14 +1,14 @@
 {
-  "releasedAt": "2026-10-27T10:39:30.823848+00:00",
+  "releasedAt": "2026-10-27T15:22:39.293157+00:00",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "3d33e245a2d3ff9d5c5c137fdf06e4e98b1ab0f0",
-  "deploymentVersion": "0070afe4-d87d-4ff0-91f0-aa8ed8e3e5e1",
-  "resources": 343,
+  "sourceCommit": "99615f6f7c9d75b5b26970615b1199664b6ff718",
+  "deploymentVersion": "84a1d1c4-b7d8-455a-9252-389cbd34e852",
+  "resources": 349,
   "categories": {
     "components": 102,
     "blocks": 19,
-    "templates": 118,
+    "templates": 124,
     "typography": 12,
     "colors": 18,
     "illustrations": 14,
@@ -21,34 +21,29 @@
     "themes": 12
   },
   "licenses": {
-    "MIT": 326,
+    "MIT": 332,
     "OFL-1.1": 12,
     "CC0-1.0": 2,
     "Unlicense": 2,
     "MIT AND OFL-1.1": 1
   },
   "changes": [
-    "Moved the existing coral signup/footer to Templates and replaced the five-second video with continuous procedural Canvas 2D smoke",
-    "1440x960 reference layout, height-aware scaling, tablet/phone adaptations, one-time entrance and hover treatments",
-    "Verified continuous motion beyond five seconds, palette controls, phase-preserving pause, reduced motion and permanent redirects from old block URLs",
-    "Native email validation and local demo confirmation; no email submission or account backend",
-    "User-supplied brief provenance retained, unverified supplied stock media excluded, complete MIT and Inter OFL notices embedded and packaged"
+    "Added six distinct original single-page full-screen motion templates: Coral Horizon, Orbit Cloud, Folio Studio, Signal Developer, Afterhours Release and Monument Spaces",
+    "Added browser fullscreen control to the isolated template preview; six new designs lead the gallery",
+    "Generated source data, MIT notices, ZIP downloads, thumbnails and colour controls; no external assets or dependencies",
+    "Automatic Canvas motion, phase-preserving pause, reduced motion, responsive 320/390/768 widths and frontend-only form demo"
   ],
   "checks": {
     "unit": 48,
-    "ciBrowser": 50,
-    "localFocusedBrowser": 4,
-    "liveBrowser": 2,
-    "priorSealedPreviewChecks": 149,
-    "newLiveArtifactsHashMatched": 6,
+    "localFocusedBrowser": 7,
+    "liveBrowser": 7,
+    "sealedPreviewChecks": 155,
+    "newLiveArtifactsHashMatched": 30,
     "lint": "passed",
     "typecheck": "passed",
     "cloudflareBuild": "passed",
-    "workerDryRun": "passed",
-    "cleanConsumer": "passed",
-    "communityBundles": "passed",
-    "sourceCommitCI": "passed",
-    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40488974991"
+    "sourceCommitCI": "in_progress at release recording",
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40530041467"
   },
   "remaining": {
     "requestedCompleteTemplates": 500,
@@ -60,11 +55,13 @@
     "motionBackgroundStatus": "queued after 3D models",
     "freePro": "deferred",
     "sourceKits": "2 imported source kits have unverified installation, backend and hook execution",
-    "accessibility": "Full per-example production accessibility and strict consumer certification remain separate"
+    "accessibility": "Full per-example production accessibility and strict consumer certification remain separate",
+    "galleryTemplateEntries": 124
   },
   "previousDeployment": {
-    "sourceCommit": "2c657cb06f510791bdfc9c5104ac0b70d6ddadac",
-    "deploymentVersion": "a714ac4c-387a-4089-a6bf-cfa7f2a5a4b1",
+    "releasedAt": "2026-10-27T10:39:30.823848+00:00",
+    "sourceCommit": "3d33e245a2d3ff9d5c5c137fdf06e4e98b1ab0f0",
+    "deploymentVersion": "0070afe4-d87d-4ff0-91f0-aa8ed8e3e5e1",
     "resources": 343
   },
   "evidence": [

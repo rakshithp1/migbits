@@ -109,5 +109,15 @@
         "/library/notices/template-monument-spaces.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
       }
     }
-  ]
+  ],
+  "publication": {
+    "checkedAt": "2026-10-27T15:22:39.293157+00:00",
+    "sourceCommit": "99615f6f7c9d75b5b26970615b1199664b6ff718",
+    "deploymentVersion": "84a1d1c4-b7d8-455a-9252-389cbd34e852",
+    "localFocusedBrowser": 7,
+    "liveBrowser": 7,
+    "liveArtifactHashesMatched": 30,
+    "ciUrl": "https://github.com/rakshithp1/migbits/actions/runs/40530041467",
+    "ciStatus": "in_progress at release recording"
+  }
 }
