@@ -217,5 +217,15 @@
         "/library/notices/template-stillwater-tea.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
       }
     }
-  ]
+  ],
+  "publication": {
+    "checkedAt": "2026-10-27T16:34:30.774594+00:00",
+    "sourceCommit": "30ce51a3d240c845f4eb423e7a791a2fc0d5eff5",
+    "deploymentVersion": "90569458-b23d-4352-8a7b-0df8ed8379e9",
+    "localBrowser": 12,
+    "liveBrowser": 16,
+    "liveArtifactHashesMatched": 60,
+    "ciUrl": "https://github.com/rakshithp1/migbits/actions/runs/40541480761",
+    "ciStatus": "in_progress at release recording"
+  }
 }

@@ -1,14 +1,14 @@
 {
-  "releasedAt": "2026-10-27T15:22:39.293157+00:00",
+  "releasedAt": "2026-10-27T16:34:30.774594+00:00",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "99615f6f7c9d75b5b26970615b1199664b6ff718",
-  "deploymentVersion": "84a1d1c4-b7d8-455a-9252-389cbd34e852",
-  "resources": 349,
+  "sourceCommit": "30ce51a3d240c845f4eb423e7a791a2fc0d5eff5",
+  "deploymentVersion": "90569458-b23d-4352-8a7b-0df8ed8379e9",
+  "resources": 361,
   "categories": {
     "components": 102,
     "blocks": 19,
-    "templates": 124,
+    "templates": 136,
     "typography": 12,
     "colors": 18,
     "illustrations": 14,
@@ -21,29 +21,31 @@
     "themes": 12
   },
   "licenses": {
-    "MIT": 332,
+    "MIT": 344,
     "OFL-1.1": 12,
     "CC0-1.0": 2,
     "Unlicense": 2,
     "MIT AND OFL-1.1": 1
   },
   "changes": [
-    "Added six distinct original single-page full-screen motion templates: Coral Horizon, Orbit Cloud, Folio Studio, Signal Developer, Afterhours Release and Monument Spaces",
-    "Added browser fullscreen control to the isolated template preview; six new designs lead the gallery",
-    "Generated source data, MIT notices, ZIP downloads, thumbnails and colour controls; no external assets or dependencies",
-    "Automatic Canvas motion, phase-preserving pause, reduced motion, responsive 320/390/768 widths and frontend-only form demo"
+    "Added twelve original full-screen frontend templates: six software, three footwear and three drinks concepts",
+    "Created distinct dashboard, workflow, chart, shield, code and notebook presentations; original running shoe, high-top, loafer, soda cans and glass tea bottle SVGs",
+    "Integrated colour controls, source data, MIT notices, ZIP downloads and thumbnails; new industry templates lead the gallery",
+    "Preserved automatic motion, pause, keyboard focus, reduced motion and isolated fullscreen previews",
+    "Updated stale gallery-order browser assertion identified in the prior release CI"
   ],
   "checks": {
     "unit": 48,
-    "localFocusedBrowser": 7,
-    "liveBrowser": 7,
-    "sealedPreviewChecks": 155,
-    "newLiveArtifactsHashMatched": 30,
+    "localFocusedBrowser": 12,
+    "liveBrowser": 16,
+    "sealedPreviewChecks": 167,
+    "newLiveArtifactsHashMatched": 60,
+    "selfContainedPackages": 12,
     "lint": "passed",
     "typecheck": "passed",
     "cloudflareBuild": "passed",
     "sourceCommitCI": "in_progress at release recording",
-    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40530041467"
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40541480761"
   },
   "remaining": {
     "requestedCompleteTemplates": 500,
@@ -56,13 +58,13 @@
     "freePro": "deferred",
     "sourceKits": "2 imported source kits have unverified installation, backend and hook execution",
     "accessibility": "Full per-example production accessibility and strict consumer certification remain separate",
-    "galleryTemplateEntries": 124
+    "galleryTemplateEntries": 136
   },
   "previousDeployment": {
-    "releasedAt": "2026-10-27T10:39:30.823848+00:00",
-    "sourceCommit": "3d33e245a2d3ff9d5c5c137fdf06e4e98b1ab0f0",
-    "deploymentVersion": "0070afe4-d87d-4ff0-91f0-aa8ed8e3e5e1",
-    "resources": 343
+    "releasedAt": "2026-10-27T15:22:39.293157+00:00",
+    "sourceCommit": "99615f6f7c9d75b5b26970615b1199664b6ff718",
+    "deploymentVersion": "84a1d1c4-b7d8-455a-9252-389cbd34e852",
+    "resources": 349
   },
   "evidence": [
     "docs/CORAL-SIGNUP-CTA.md",
