@@ -16287,5 +16287,245 @@
       "This is a signup UI demonstration. Valid email submission displays a local confirmation and does not send data. Example contact details are not MigBits business contact information.",
       "Connect your own signup service and update the restrictive CSP before production integration. The live Canvas smoke starts automatically, evolves without a playback reset, pauses with visibility/global/local controls, and stays still for reduced motion."
     ]
+  },
+  {
+    "id": "template-coral-horizon",
+    "name": "Coral Horizon — full-screen",
+    "description": "Signup page with a full-viewport smoke composition, original automatic Canvas artwork and complete approach, contact and footer sections. Responsive single-file frontend template.",
+    "category": "templates",
+    "author": "MigBits contributors",
+    "license": "MIT",
+    "licenseUrl": "/library/notices/template-coral-horizon.txt",
+    "sourceUrl": "https://github.com/rakshithp1/migbits/tree/main/resources/library/fullscreen-templates",
+    "tags": [
+      "Full screen",
+      "Original",
+      "Motion",
+      "Single file",
+      "Responsive",
+      "Signup page",
+      "smoke"
+    ],
+    "format": "HTML · CSS · vanilla JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/customized/template-coral-horizon/coral-horizon.html",
+    "image": "/library/thumbnails/template-coral-horizon.png",
+    "dataUrl": "/library/data/template-coral-horizon.json",
+    "downloadUrl": "/library/downloads/template-coral-horizon.zip",
+    "revision": "migbits-fullscreen-1.0.0",
+    "template": {
+      "kind": "Signup page",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native Canvas 2D",
+      "original": true
+    },
+    "featured": 0,
+    "usage": [
+      "Open index.html directly. Single-file HTML, CSS and vanilla JavaScript; no framework, build step, network dependency or external font.",
+      "Full-viewport hero plus approach, contact and footer sections. Motion starts automatically. Pause preserves phase; reduced motion displays static artwork.",
+      "Original MigBits design and Canvas 2D artwork, MIT licensed. Retain the full copyright and permission notice when copying, modifying or redistributing.",
+      "Frontend demonstration only. Replace fictional content and example.com contact details, connect your own services and review CSP before production. No real account, infrastructure, music playback or contact backend is included."
+    ]
+  },
+  {
+    "id": "template-orbit-cloud",
+    "name": "Orbit Cloud — full-screen",
+    "description": "SaaS landing page with a full-viewport orbit composition, original automatic Canvas artwork and complete approach, contact and footer sections. Responsive single-file frontend template.",
+    "category": "templates",
+    "author": "MigBits contributors",
+    "license": "MIT",
+    "licenseUrl": "/library/notices/template-orbit-cloud.txt",
+    "sourceUrl": "https://github.com/rakshithp1/migbits/tree/main/resources/library/fullscreen-templates",
+    "tags": [
+      "Full screen",
+      "Original",
+      "Motion",
+      "Single file",
+      "Responsive",
+      "SaaS landing page",
+      "orbit"
+    ],
+    "format": "HTML · CSS · vanilla JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/customized/template-orbit-cloud/orbit-cloud.html",
+    "image": "/library/thumbnails/template-orbit-cloud.png",
+    "dataUrl": "/library/data/template-orbit-cloud.json",
+    "downloadUrl": "/library/downloads/template-orbit-cloud.zip",
+    "revision": "migbits-fullscreen-1.0.0",
+    "template": {
+      "kind": "SaaS landing page",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native Canvas 2D",
+      "original": true
+    },
+    "featured": 1,
+    "usage": [
+      "Open index.html directly. Single-file HTML, CSS and vanilla JavaScript; no framework, build step, network dependency or external font.",
+      "Full-viewport hero plus approach, contact and footer sections. Motion starts automatically. Pause preserves phase; reduced motion displays static artwork.",
+      "Original MigBits design and Canvas 2D artwork, MIT licensed. Retain the full copyright and permission notice when copying, modifying or redistributing.",
+      "Frontend demonstration only. Replace fictional content and example.com contact details, connect your own services and review CSP before production. No real account, infrastructure, music playback or contact backend is included."
+    ]
+  },
+  {
+    "id": "template-folio-studio",
+    "name": "Folio Studio — full-screen",
+    "description": "Agency website with a full-viewport ribbon composition, original automatic Canvas artwork and complete approach, contact and footer sections. Responsive single-file frontend template.",
+    "category": "templates",
+    "author": "MigBits contributors",
+    "license": "MIT",
+    "licenseUrl": "/library/notices/template-folio-studio.txt",
+    "sourceUrl": "https://github.com/rakshithp1/migbits/tree/main/resources/library/fullscreen-templates",
+    "tags": [
+      "Full screen",
+      "Original",
+      "Motion",
+      "Single file",
+      "Responsive",
+      "Agency website",
+      "ribbon"
+    ],
+    "format": "HTML · CSS · vanilla JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/customized/template-folio-studio/folio-studio.html",
+    "image": "/library/thumbnails/template-folio-studio.png",
+    "dataUrl": "/library/data/template-folio-studio.json",
+    "downloadUrl": "/library/downloads/template-folio-studio.zip",
+    "revision": "migbits-fullscreen-1.0.0",
+    "template": {
+      "kind": "Agency website",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native Canvas 2D",
+      "original": true
+    },
+    "featured": 2,
+    "usage": [
+      "Open index.html directly. Single-file HTML, CSS and vanilla JavaScript; no framework, build step, network dependency or external font.",
+      "Full-viewport hero plus approach, contact and footer sections. Motion starts automatically. Pause preserves phase; reduced motion displays static artwork.",
+      "Original MigBits design and Canvas 2D artwork, MIT licensed. Retain the full copyright and permission notice when copying, modifying or redistributing.",
+      "Frontend demonstration only. Replace fictional content and example.com contact details, connect your own services and review CSP before production. No real account, infrastructure, music playback or contact backend is included."
+    ]
+  },
+  {
+    "id": "template-signal-developer",
+    "name": "Signal Developer — full-screen",
+    "description": "Developer landing page with a full-viewport signal composition, original automatic Canvas artwork and complete approach, contact and footer sections. Responsive single-file frontend template.",
+    "category": "templates",
+    "author": "MigBits contributors",
+    "license": "MIT",
+    "licenseUrl": "/library/notices/template-signal-developer.txt",
+    "sourceUrl": "https://github.com/rakshithp1/migbits/tree/main/resources/library/fullscreen-templates",
+    "tags": [
+      "Full screen",
+      "Original",
+      "Motion",
+      "Single file",
+      "Responsive",
+      "Developer landing page",
+      "signal"
+    ],
+    "format": "HTML · CSS · vanilla JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/customized/template-signal-developer/signal-developer.html",
+    "image": "/library/thumbnails/template-signal-developer.png",
+    "dataUrl": "/library/data/template-signal-developer.json",
+    "downloadUrl": "/library/downloads/template-signal-developer.zip",
+    "revision": "migbits-fullscreen-1.0.0",
+    "template": {
+      "kind": "Developer landing page",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native Canvas 2D",
+      "original": true
+    },
+    "featured": 3,
+    "usage": [
+      "Open index.html directly. Single-file HTML, CSS and vanilla JavaScript; no framework, build step, network dependency or external font.",
+      "Full-viewport hero plus approach, contact and footer sections. Motion starts automatically. Pause preserves phase; reduced motion displays static artwork.",
+      "Original MigBits design and Canvas 2D artwork, MIT licensed. Retain the full copyright and permission notice when copying, modifying or redistributing.",
+      "Frontend demonstration only. Replace fictional content and example.com contact details, connect your own services and review CSP before production. No real account, infrastructure, music playback or contact backend is included."
+    ]
+  },
+  {
+    "id": "template-afterhours-release",
+    "name": "Afterhours Release — full-screen",
+    "description": "Music landing page with a full-viewport wave composition, original automatic Canvas artwork and complete approach, contact and footer sections. Responsive single-file frontend template.",
+    "category": "templates",
+    "author": "MigBits contributors",
+    "license": "MIT",
+    "licenseUrl": "/library/notices/template-afterhours-release.txt",
+    "sourceUrl": "https://github.com/rakshithp1/migbits/tree/main/resources/library/fullscreen-templates",
+    "tags": [
+      "Full screen",
+      "Original",
+      "Motion",
+      "Single file",
+      "Responsive",
+      "Music landing page",
+      "wave"
+    ],
+    "format": "HTML · CSS · vanilla JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/customized/template-afterhours-release/afterhours-release.html",
+    "image": "/library/thumbnails/template-afterhours-release.png",
+    "dataUrl": "/library/data/template-afterhours-release.json",
+    "downloadUrl": "/library/downloads/template-afterhours-release.zip",
+    "revision": "migbits-fullscreen-1.0.0",
+    "template": {
+      "kind": "Music landing page",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native Canvas 2D",
+      "original": true
+    },
+    "featured": 4,
+    "usage": [
+      "Open index.html directly. Single-file HTML, CSS and vanilla JavaScript; no framework, build step, network dependency or external font.",
+      "Full-viewport hero plus approach, contact and footer sections. Motion starts automatically. Pause preserves phase; reduced motion displays static artwork.",
+      "Original MigBits design and Canvas 2D artwork, MIT licensed. Retain the full copyright and permission notice when copying, modifying or redistributing.",
+      "Frontend demonstration only. Replace fictional content and example.com contact details, connect your own services and review CSP before production. No real account, infrastructure, music playback or contact backend is included."
+    ]
+  },
+  {
+    "id": "template-monument-spaces",
+    "name": "Monument Spaces — full-screen",
+    "description": "Portfolio website with a full-viewport architecture composition, original automatic Canvas artwork and complete approach, contact and footer sections. Responsive single-file frontend template.",
+    "category": "templates",
+    "author": "MigBits contributors",
+    "license": "MIT",
+    "licenseUrl": "/library/notices/template-monument-spaces.txt",
+    "sourceUrl": "https://github.com/rakshithp1/migbits/tree/main/resources/library/fullscreen-templates",
+    "tags": [
+      "Full screen",
+      "Original",
+      "Motion",
+      "Single file",
+      "Responsive",
+      "Portfolio website",
+      "architecture"
+    ],
+    "format": "HTML · CSS · vanilla JavaScript",
+    "previewType": "template",
+    "previewUrl": "/library/customized/template-monument-spaces/monument-spaces.html",
+    "image": "/library/thumbnails/template-monument-spaces.png",
+    "dataUrl": "/library/data/template-monument-spaces.json",
+    "downloadUrl": "/library/downloads/template-monument-spaces.zip",
+    "revision": "migbits-fullscreen-1.0.0",
+    "template": {
+      "kind": "Portfolio website",
+      "pages": 1,
+      "motion": true,
+      "motionEngine": "Native Canvas 2D",
+      "original": true
+    },
+    "featured": 5,
+    "usage": [
+      "Open index.html directly. Single-file HTML, CSS and vanilla JavaScript; no framework, build step, network dependency or external font.",
+      "Full-viewport hero plus approach, contact and footer sections. Motion starts automatically. Pause preserves phase; reduced motion displays static artwork.",
+      "Original MigBits design and Canvas 2D artwork, MIT licensed. Retain the full copyright and permission notice when copying, modifying or redistributing.",
+      "Frontend demonstration only. Replace fictional content and example.com contact details, connect your own services and review CSP before production. No real account, infrastructure, music playback or contact backend is included."
+    ]
   }
 ]

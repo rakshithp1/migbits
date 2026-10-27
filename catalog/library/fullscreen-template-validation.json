@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-10-27T15:17:37.847Z",
+  "resources": [
+    {
+      "id": "template-coral-horizon",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-coral-horizon/coral-horizon.html": "e2f0a60a54837a6e3731d52b8b9d6a3a1e68b15b5dc031d81ae9f327679af96e",
+        "/library/thumbnails/template-coral-horizon.png": "cb2c7810b1b6a6d962d73a9312ffd0f272ff66ef6bded515bd01a16dc5bd9470",
+        "/library/data/template-coral-horizon.json": "25c489b4ade4bab591276422b1cc3db8df8bb5b7a3b87fef5da6ca7f09014831",
+        "/library/downloads/template-coral-horizon.zip": "436431274204ee1582425c6a00da005d91c26b9a23fe5f0679c36f4ba3fe830c",
+        "/library/notices/template-coral-horizon.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-orbit-cloud",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-orbit-cloud/orbit-cloud.html": "c88a60fdd57e7fcf28efd9e56db3a7722b6a92dead742f284d918c562e6bd96a",
+        "/library/thumbnails/template-orbit-cloud.png": "62d67a0ceb8ea28e946ad6285e2e7b5ce7d2a4adaa49db44cdb9579dc6a973ee",
+        "/library/data/template-orbit-cloud.json": "b4b410876d565fad57826ea2563f119e3aa8e7a535bb0f7cf8ffc468651f039f",
+        "/library/downloads/template-orbit-cloud.zip": "285a06fbabae3876bbf2f1db26db38cddb91ff69f910c33fe6f9b67a7060e4e9",
+        "/library/notices/template-orbit-cloud.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-folio-studio",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-folio-studio/folio-studio.html": "e154826e32a40c78bed0d6eefcfa78087277cf1e9e3a52a2c798cda173d1c9eb",
+        "/library/thumbnails/template-folio-studio.png": "01738f65a178c750fbb82b65a44dec291de22c65238b1d46e40bb7ca01a06ace",
+        "/library/data/template-folio-studio.json": "1b224564b0e2cfe4e3815dec38c67e0e57f4d359493543ed662854f6be76da70",
+        "/library/downloads/template-folio-studio.zip": "e526aba29aa47b658821098f8991e5d7804f86baa590b0b377ba5a14fa802d72",
+        "/library/notices/template-folio-studio.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-signal-developer",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-signal-developer/signal-developer.html": "7c06b488312385e8da7e9082885b1e2ba0a8af593b81017cc7738d9b4646122e",
+        "/library/thumbnails/template-signal-developer.png": "5b1f9c470c0e2099fec11c5bf8bb304cde8a32515e60532330e59a53e784b343",
+        "/library/data/template-signal-developer.json": "b655767576e0d190cb0db80f20db5beba2cabe6a58a019a375eeddb178a8c3b7",
+        "/library/downloads/template-signal-developer.zip": "0d7691c74b3ab612b8cb88414990e68fe99ab59891f9489e105b448abd8a4b75",
+        "/library/notices/template-signal-developer.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-afterhours-release",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-afterhours-release/afterhours-release.html": "ae7ee1f016e741f39f1b8e505cb163be6c26ba7adbbbb6295172bc3ec6657ffd",
+        "/library/thumbnails/template-afterhours-release.png": "b62e1efa6a430697e3036fd4ac582eedbe0989677ba4a195d89a5eaacf6897a5",
+        "/library/data/template-afterhours-release.json": "31decb4250673b07135066a1d8724ba9f0e4b96dae22c154f13f56de52b48f2f",
+        "/library/downloads/template-afterhours-release.zip": "d6cd2b6aa92f42f775084cb744687cf0028303c3bfd77dc0d7a5c3289cb9cc79",
+        "/library/notices/template-afterhours-release.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-monument-spaces",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-monument-spaces/monument-spaces.html": "6b5b325c67ab7ab8a7e33f174439c98e9cbd5b76fcf6ce6c514a21ba4b1505f3",
+        "/library/thumbnails/template-monument-spaces.png": "b9ae5bba4608b6a2397ea9772616163f13f3b8fa2253761c497d6abfd3ae5398",
+        "/library/data/template-monument-spaces.json": "5bc4f3aed0b0bd2396da7618809c4f65c909a26218ef3b5f7c664d10517d4f35",
+        "/library/downloads/template-monument-spaces.zip": "f9fa966fbe06a552a93af4bfb21ad531ab4026520fd0e8b8d0d2c1ee48f8cc62",
+        "/library/notices/template-monument-spaces.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    }
+  ]
+}

@@ -662,6 +662,7 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
         {iframeUrl && tab === "preview" && (
           <div className="mb-device-controls">
             {resource.category === "templates" && <>
+              <button onClick={() => { const well = document.getElementById(`preview-${resource.id}`); if (well && document.fullscreenEnabled) void well.requestFullscreen().catch(() => {}); }} aria-label="Full-screen template preview">Full screen ↗</button>
               <label>Colour <select aria-label="Template colour" value={color} onChange={event => { setColorCss(""); setColor(event.target.value); }}>
                 {templateColors.map(preset => <option key={preset.id} value={preset.id}>{preset.label}</option>)}
               </select></label>
@@ -737,7 +738,7 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
         ) : item.previewType === "icons" ? (
           <ColorIcons />
         ) : iframeUrl ? (
-          <div className="mb-frame-well">
+          <div className="mb-frame-well" id={`preview-${resource.id}`}>
             <div className={mobile ? "mb-frame-mobile" : "mb-frame-desktop"}>
               <iframe
                   ref={previewRef}

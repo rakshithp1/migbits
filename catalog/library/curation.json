@@ -133,7 +133,13 @@
     "template-sonic",
     "template-margin",
     "template-stride",
-    "template-coral-signup"
+    "template-coral-signup",
+    "template-coral-horizon",
+    "template-orbit-cloud",
+    "template-folio-studio",
+    "template-signal-developer",
+    "template-afterhours-release",
+    "template-monument-spaces"
   ],
   "removed": [
     {
@@ -10086,5 +10092,6 @@
       ],
       "validation": "Numeric semantic contrast, source geometry/hash and notice integrity tests; browser checks run separately before release."
     }
-  ]
+  ],
+  "fullscreenReview": "Six original full-screen compositions visually reviewed with automated motion, responsive and reduced-motion checks; see fullscreen-template-validation.json."
 }

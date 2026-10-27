@@ -1041,5 +1041,47 @@
     "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
     "previewUrl": "/library/customized/template-coral-signup/coral-signup.html",
     "previewDigest": "a6441cc6bc4d2de2b6367e623e809b4fcf3aabeb2618d9f689bfbf30dea54876"
+  },
+  {
+    "id": "template-coral-horizon",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-coral-horizon/coral-horizon.html",
+    "previewDigest": "e2f0a60a54837a6e3731d52b8b9d6a3a1e68b15b5dc031d81ae9f327679af96e"
+  },
+  {
+    "id": "template-orbit-cloud",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-orbit-cloud/orbit-cloud.html",
+    "previewDigest": "c88a60fdd57e7fcf28efd9e56db3a7722b6a92dead742f284d918c562e6bd96a"
+  },
+  {
+    "id": "template-folio-studio",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-folio-studio/folio-studio.html",
+    "previewDigest": "e154826e32a40c78bed0d6eefcfa78087277cf1e9e3a52a2c798cda173d1c9eb"
+  },
+  {
+    "id": "template-signal-developer",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-signal-developer/signal-developer.html",
+    "previewDigest": "7c06b488312385e8da7e9082885b1e2ba0a8af593b81017cc7738d9b4646122e"
+  },
+  {
+    "id": "template-afterhours-release",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-afterhours-release/afterhours-release.html",
+    "previewDigest": "ae7ee1f016e741f39f1b8e505cb163be6c26ba7adbbbb6295172bc3ec6657ffd"
+  },
+  {
+    "id": "template-monument-spaces",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-monument-spaces/monument-spaces.html",
+    "previewDigest": "6b5b325c67ab7ab8a7e33f174439c98e9cbd5b76fcf6ce6c514a21ba4b1505f3"
   }
 ]

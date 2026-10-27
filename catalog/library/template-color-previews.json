@@ -1634,5 +1634,83 @@
       }
     ],
     "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-coral-horizon",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-coral-horizon/coral-horizon.html",
+        "sha256": "e2f0a60a54837a6e3731d52b8b9d6a3a1e68b15b5dc031d81ae9f327679af96e",
+        "originalUrl": "/library/previews/templates/coral-horizon.html",
+        "originalSha256": "e66d0e65b3474b6ea132831e971444115d9b7cdb9ce7213c42e51fa5b7531a29"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-orbit-cloud",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-orbit-cloud/orbit-cloud.html",
+        "sha256": "c88a60fdd57e7fcf28efd9e56db3a7722b6a92dead742f284d918c562e6bd96a",
+        "originalUrl": "/library/previews/templates/orbit-cloud.html",
+        "originalSha256": "dd1878ff45158faabdf8c95292e83b3115adff8bb066b6e7ffdb318b3700940c"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-folio-studio",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-folio-studio/folio-studio.html",
+        "sha256": "e154826e32a40c78bed0d6eefcfa78087277cf1e9e3a52a2c798cda173d1c9eb",
+        "originalUrl": "/library/previews/templates/folio-studio.html",
+        "originalSha256": "59e053d750eec39b5f674aee472823378f3d24a16dc3021716e60215d17b7412"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-signal-developer",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-signal-developer/signal-developer.html",
+        "sha256": "7c06b488312385e8da7e9082885b1e2ba0a8af593b81017cc7738d9b4646122e",
+        "originalUrl": "/library/previews/templates/signal-developer.html",
+        "originalSha256": "a5bee7626e1e3e045d89295ed81bd37819b9ba325e7e25f78c7c821164a6a8c9"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-afterhours-release",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-afterhours-release/afterhours-release.html",
+        "sha256": "ae7ee1f016e741f39f1b8e505cb163be6c26ba7adbbbb6295172bc3ec6657ffd",
+        "originalUrl": "/library/previews/templates/afterhours-release.html",
+        "originalSha256": "d7fb24beed4941adfc9be4246134066d112c3530f8d17a250972d0cbe6bb8c8d"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-monument-spaces",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-monument-spaces/monument-spaces.html",
+        "sha256": "6b5b325c67ab7ab8a7e33f174439c98e9cbd5b76fcf6ce6c514a21ba4b1505f3",
+        "originalUrl": "/library/previews/templates/monument-spaces.html",
+        "originalSha256": "8ac573a41526e472145ec346d0a1c91cb44d911f0cdca60f66f7aef225adc162"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
   }
 ]

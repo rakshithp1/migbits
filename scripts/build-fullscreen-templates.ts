@@ -1,0 +1,17 @@
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import path from "node:path";
+import { zipSync, strToU8 } from "fflate";
+import type { LibraryResource } from "../lib/resource-library";
+import { fullscreenDesigns, fullscreenHtml } from "../resources/library/fullscreen-templates";
+
+export function buildFullscreenTemplates(): LibraryResource[] {
+  const license = readFileSync("resources/library/LICENSE", "utf8").replace(/\r\n/g, "\n");
+  const save = (url: string, content: string | Uint8Array) => { mkdirSync(path.dirname("public" + url), { recursive: true }); writeFileSync("public" + url, content); };
+  return fullscreenDesigns.map((design, i) => {
+    const id = "template-" + design.slug, previewUrl = `/library/previews/templates/${design.slug}.html`, dataUrl = `/library/data/${id}.json`, downloadUrl = `/library/downloads/${id}.zip`, licenseUrl = `/library/notices/${id}.txt`;
+    const usage = ["Open index.html directly. Single-file HTML, CSS and vanilla JavaScript; no framework, build step, network dependency or external font.", "Full-viewport hero plus approach, contact and footer sections. Motion starts automatically. Pause preserves phase; reduced motion displays static artwork.", "Original MigBits design and Canvas 2D artwork, MIT licensed. Retain the full copyright and permission notice when copying, modifying or redistributing.", "Frontend demonstration only. Replace fictional content and example.com contact details, connect your own services and review CSP before production. No real account, infrastructure, music playback or contact backend is included."];
+    const html = fullscreenHtml(design, license), files = { "index.html": html, "LICENSE": license, "README.md": `# ${design.name}\n\n${usage.join("\n\n")}`, "ORIGIN.md": "Original MigBits layout, copy and procedural Canvas artwork. Uses system fonts, no stock assets, third-party prompts or bundled dependencies. Six distinct compositions; colour choices are controls, not duplicate catalog entries.\n" };
+    save(previewUrl, html); save(dataUrl, JSON.stringify({ files: Object.entries(files).map(([path, content]) => ({ path, content })), installation: usage }, null, 2) + "\n"); save(downloadUrl, zipSync(Object.fromEntries(Object.entries(files).map(([p,c]) => [p,strToU8(c)])), {level:6,mtime:new Date(2026,0,1)})); save(licenseUrl, license);
+    return { id, name: design.name + " — full-screen", description: `${design.kind} with a full-viewport ${design.mode} composition, original automatic Canvas artwork and complete approach, contact and footer sections. Responsive single-file frontend template.`, category: "templates", author: "MigBits contributors", license: "MIT", licenseUrl, sourceUrl: "https://github.com/rakshithp1/migbits/tree/main/resources/library/fullscreen-templates", tags: ["Full screen", "Original", "Motion", "Single file", "Responsive", design.kind, design.mode], format: "HTML · CSS · vanilla JavaScript", previewType: "template", previewUrl, image: `/library/thumbnails/${id}.png`, dataUrl, downloadUrl, revision: "migbits-fullscreen-1.0.0", template: {kind:design.kind,pages:1,motion:true,motionEngine:"Native Canvas 2D",original:true}, featured:i, usage };
+  });
+}
