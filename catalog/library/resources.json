@@ -16242,5 +16242,43 @@
       "Keep LICENSE.txt when modifying, distributing or selling copies. Review the final accessibility and connect your own services before production use.",
       "Use the template colour selector and copy the resulting CSS after the original stylesheet. Original vector artwork and source remain separate from that adaptation."
     ]
+  },
+  {
+    "id": "block-coral-signup",
+    "name": "Coral signup & footer",
+    "description": "MigBits signup CTA and minimal footer with original five-second coral smoke, embedded Inter, responsive reference scaling and reduced-motion support. Single self-contained HTML file; frontend demo.",
+    "category": "blocks",
+    "author": "MigBits contributors — implementation of a user-supplied brief",
+    "license": "MIT AND OFL-1.1",
+    "licenseUrl": "/library/notices/block-coral-signup.txt",
+    "sourceUrl": "https://github.com/rakshithp1/migbits/tree/main/resources/library/coral-cta",
+    "tags": [
+      "Signup",
+      "CTA",
+      "Footer",
+      "Coral",
+      "Smoke",
+      "Video",
+      "Inter",
+      "Single file",
+      "HTML",
+      "Reduced motion"
+    ],
+    "format": "HTML · CSS · vanilla JavaScript",
+    "previewType": "block",
+    "previewUrl": "/library/previews/blocks/coral-signup.html",
+    "image": "/library/thumbnails/block-coral-signup.png",
+    "dataUrl": "/library/data/block-coral-signup.json",
+    "downloadUrl": "/library/downloads/block-coral-signup.zip",
+    "revision": "migbits-coral-cta-1.0.0",
+    "featured": 1,
+    "usage": [
+      "Open index.html in a browser. The single HTML file embeds the font, static plate and five-second video; no framework, build step, CDN or network request is needed.",
+      "Implementation follows a user-supplied design brief. It is branded for MigBits; the brief itself is not offered as an original MigBits prompt.",
+      "The coral smoke plate/video and regeneration shader are original MigBits work. The supplied third-party CloudFront files were not bundled because their redistribution rights were not verified.",
+      "Code and original media: MIT. Unmodified Inter font: SIL OFL 1.1. Retain both complete notices, also embedded in the HTML. The font may not be sold by itself.",
+      "This is a signup UI demonstration. Valid email submission displays a local confirmation and does not send data. Example contact details are not MigBits business contact information.",
+      "Connect your own signup service and update the restrictive CSP before production integration. The video starts automatically when allowed, pauses with visibility/global/local controls, and is hidden for reduced motion."
+    ]
   }
 ]

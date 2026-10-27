@@ -2,7 +2,7 @@ import type { LibraryResource } from "./resource-library";
 
 /** Editorial visual order, not a popularity or licensing score. */
 const showcase = [
-  "template-atlas", "template-sonic", "template-margin", "template-stride", "template-gather", "theme-ocean", "magic-ui--globe",
+  "template-atlas", "block-coral-signup", "template-sonic", "template-margin", "template-stride", "template-gather", "theme-ocean", "magic-ui--globe",
   "approved-collection-travel-agency", "template-pulse", "fluent-color-motion", "theme-electric-mint",
   "shaders--boids", "approved-collection-productivity-app", "theme-indigo-editorial", "shaders--aurora",
   "approved-template-modern-business", "approved-template-agency", "inspo--hero-split-screen", "inspo--features-bento",

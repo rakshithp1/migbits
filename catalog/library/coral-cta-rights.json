@@ -1,0 +1,32 @@
+{
+  "resource": "block-coral-signup",
+  "status": "APPROVED",
+  "codeLicense": "MIT",
+  "designBrief": {
+    "source": "User-supplied fictional signup/footer specification",
+    "authorshipClaim": "MigBits implementation; ownership of the supplied brief is not claimed",
+    "promptRedistributed": false
+  },
+  "originalSmoke": {
+    "status": "APPROVED",
+    "license": "MIT",
+    "generatorSha256": "99738ce2ff54535d9c5b42ebe87c80fe639711dc05ae60fe2159660aa59cb7d3",
+    "mediaSnapshotSha256": "cb5691c2e20e87709d7c6bbf2b08a201dad3f69395f3d1f81f4cbda28f8cf154",
+    "format": "Original five-second forward MP4 with final-second crossfade to first frame; original PNG plate"
+  },
+  "font": {
+    "status": "APPROVED",
+    "license": "OFL-1.1",
+    "copyright": "Copyright 2020 The Inter Project Authors",
+    "source": "https://github.com/google/fonts/tree/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/inter",
+    "licenseEvidence": "https://github.com/google/fonts/blob/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/inter/OFL.txt",
+    "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "obligations": "Unmodified embedded font; retain complete OFL notice; no standalone font resale"
+  },
+  "suppliedCloudFrontMedia": {
+    "status": "UNVERIFIED / EXCLUDED",
+    "httpAvailability": "200 for both user-supplied files",
+    "reason": "No redistribution evidence supplied; replaced with original procedural media"
+  },
+  "validation": "catalog/library/coral-cta-validation.json"
+}

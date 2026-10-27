@@ -1,3 +1,4 @@
+import { buildCoralCta } from "./build-coral-cta";
 import { buildOriginalShowcases } from "./build-original-showcases";
 import { consolidateTemplateColors } from "./consolidate-template-colors";
 import { customizeTemplatePreviews } from "./customize-template-previews";
@@ -483,6 +484,7 @@ for (const item of list) {
 }
 list.push(...buildVisualLibrary());
 list.push(...buildOriginalShowcases());
+list.push(buildCoralCta());
 list = consolidateTemplateColors(list);
 customizeTemplatePreviews(list);
 const libraryErrors = validateLibrary(list);

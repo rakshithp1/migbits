@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-27T09:00:16.281Z",
+  "id": "block-coral-signup",
+  "status": "passed",
+  "sandbox": "allow-scripts without allow-same-origin or allow-forms",
+  "desktop": {
+    "width": 1440,
+    "height": 960,
+    "cardWidth": 1380,
+    "cardHeight": 340
+  },
+  "video": {
+    "duration": 5.0096,
+    "rate": 1,
+    "loop": true,
+    "muted": true
+  },
+  "decodedFramesChanged": true,
+  "font": "Pinned unmodified Inter variable font embedded with OFL notice",
+  "responsive": [
+    {
+      "width": 768,
+      "height": 700,
+      "overflow": false
+    },
+    {
+      "width": 680,
+      "height": 612,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 655,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "overflow": false
+    }
+  ],
+  "form": "Valid local confirmation; no email transmission",
+  "reducedMotion": "Video hidden and paused; still plate visible; entrance disabled",
+  "artifactDigests": {
+    "/library/previews/blocks/coral-signup.html": "bef01f436e6e8f82bb04cee8ef8a52ffa765fbb54865bda8b33ed5004d2b56d5",
+    "/library/thumbnails/block-coral-signup.png": "4a925461533818c7b534630620b0d1c75bfa8b46616dcd76ed040581bbbff3da",
+    "/library/data/block-coral-signup.json": "dbfb30fcb698bbcacc1fab818bcf6e4ee61862ebb2211dcf2f28dca1a88acbdf",
+    "/library/downloads/block-coral-signup.zip": "edff088f96b466f72b95416137d805ca1c29609d20a20dfed11bb5087d1b6f06",
+    "/library/notices/block-coral-signup.txt": "673fa859c4c91525db5971d20d145740535221d9a008d40e91250af1fd1da55f"
+  }
+}

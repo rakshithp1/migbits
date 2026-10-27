@@ -125,6 +125,7 @@ export const librarySections = [
 ].filter((section) => section.count > 0 || section.id === "icons").sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
 
 export function resourceUsage(item: Pick<LibraryResource, "license">) {
+  if (item.license === "MIT AND OFL-1.1") return { saleOfCopies: true, summary: "Code and original media: MIT. Bundled unmodified Inter font: SIL OFL 1.1. Redistribute the complete UI with both notices; the font may not be sold by itself." };
   if (item.license === "Unlicense") return { saleOfCopies: true, summary: "Creator code is dedicated to the public domain under the Unlicense, with permission to copy, modify, distribute and sell. Keep the supplied evidence; dependency and trademark rights remain separate." };
   if (item.license === "OFL-1.1") return { saleOfCopies: false, summary: "Commercial design use and redistribution with the OFL notice. Font files cannot be sold by themselves; preserve reserved-name requirements." };
   if (item.license === "CC0-1.0") return { saleOfCopies: true, summary: "Copy, modify and redistribute under the creator’s CC0 dedication. Creator credit is appreciated; trademark and endorsement rights are separate." };
