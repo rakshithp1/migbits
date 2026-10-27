@@ -61,5 +61,16 @@
         "/library/notices/template-sol-citrus.txt": "4f59c94f5624f239e7b45e6ff8cd3d6995a5bebaf0dcd273ff9fd889c5582159"
       }
     }
-  ]
+  ],
+  "publication": {
+    "checkedAt": "2026-10-27T17:44:16.517890+00:00",
+    "sourceCommit": "b541098f40257519b235d2672606c5bc367fd958",
+    "deploymentVersion": "ac6e6806-2581-404a-8f7b-08c4eb67e7ff",
+    "localBrowser": 4,
+    "liveBrowser": 8,
+    "liveArtifactHashesMatched": 15,
+    "retiredEndpoints404": 84,
+    "ciUrl": "https://github.com/rakshithp1/migbits/actions/runs/40552812059",
+    "ciStatus": "in_progress at release recording"
+  }
 }

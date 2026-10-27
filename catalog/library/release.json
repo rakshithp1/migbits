@@ -1,14 +1,14 @@
 {
-  "releasedAt": "2026-10-27T16:34:30.774594+00:00",
+  "releasedAt": "2026-10-27T17:44:16.517890+00:00",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "30ce51a3d240c845f4eb423e7a791a2fc0d5eff5",
-  "deploymentVersion": "90569458-b23d-4352-8a7b-0df8ed8379e9",
-  "resources": 361,
+  "sourceCommit": "b541098f40257519b235d2672606c5bc367fd958",
+  "deploymentVersion": "ac6e6806-2581-404a-8f7b-08c4eb67e7ff",
+  "resources": 352,
   "categories": {
     "components": 102,
     "blocks": 19,
-    "templates": 136,
+    "templates": 127,
     "typography": 12,
     "colors": 18,
     "illustrations": 14,
@@ -21,31 +21,32 @@
     "themes": 12
   },
   "licenses": {
-    "MIT": 344,
+    "MIT": 335,
     "OFL-1.1": 12,
     "CC0-1.0": 2,
     "Unlicense": 2,
     "MIT AND OFL-1.1": 1
   },
   "changes": [
-    "Added twelve original full-screen frontend templates: six software, three footwear and three drinks concepts",
-    "Created distinct dashboard, workflow, chart, shield, code and notebook presentations; original running shoe, high-top, loafer, soda cans and glass tea bottle SVGs",
-    "Integrated colour controls, source data, MIT notices, ZIP downloads and thumbnails; new industry templates lead the gallery",
-    "Preserved automatic motion, pause, keyboard focus, reduced motion and isolated fullscreen previews",
-    "Updated stale gallery-order browser assertion identified in the prior release CI"
+    "Removed all twelve rejected sector templates, their generator and 72 public artifact files",
+    "Added Aperture OS, Pace Atelier and Sol Citrus with scroll-driven sticky storytelling, parallax, chapter progress and reveals",
+    "Created realistic AI-generated footwear and beverage concept imagery with source asset hashes and provenance in downloads",
+    "Added unique accessibility IDs and working keyboard workspace tabs; reduced motion removes pinning and effects; phone layouts remain readable",
+    "Verified all 84 retired resource and individual asset endpoints return 404"
   ],
   "checks": {
     "unit": 48,
-    "localFocusedBrowser": 12,
-    "liveBrowser": 16,
-    "sealedPreviewChecks": 167,
-    "newLiveArtifactsHashMatched": 60,
-    "selfContainedPackages": 12,
+    "localFocusedBrowser": 4,
+    "liveBrowser": 8,
+    "sealedPreviewChecks": 158,
+    "newLiveArtifactsHashMatched": 15,
+    "retiredLiveEndpoints404": 84,
+    "opaqueSandboxScrollProofs": 3,
     "lint": "passed",
     "typecheck": "passed",
     "cloudflareBuild": "passed",
     "sourceCommitCI": "in_progress at release recording",
-    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40541480761"
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40552812059"
   },
   "remaining": {
     "requestedCompleteTemplates": 500,
@@ -58,13 +59,13 @@
     "freePro": "deferred",
     "sourceKits": "2 imported source kits have unverified installation, backend and hook execution",
     "accessibility": "Full per-example production accessibility and strict consumer certification remain separate",
-    "galleryTemplateEntries": 136
+    "galleryTemplateEntries": 127
   },
   "previousDeployment": {
-    "releasedAt": "2026-10-27T15:22:39.293157+00:00",
-    "sourceCommit": "99615f6f7c9d75b5b26970615b1199664b6ff718",
-    "deploymentVersion": "84a1d1c4-b7d8-455a-9252-389cbd34e852",
-    "resources": 349
+    "releasedAt": "2026-10-27T16:34:30.774594+00:00",
+    "sourceCommit": "30ce51a3d240c845f4eb423e7a791a2fc0d5eff5",
+    "deploymentVersion": "90569458-b23d-4352-8a7b-0df8ed8379e9",
+    "resources": 361
   },
   "evidence": [
     "docs/CORAL-SIGNUP-CTA.md",
