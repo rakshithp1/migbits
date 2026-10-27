@@ -8,7 +8,7 @@ import inventory from '../catalog/motionsites-import-inventory.json';
 import proof from '../catalog/motionsites-preview-validation.json';
 
 test('MotionSites free export retains all 40 original prompts and separate licensed adaptations',()=>{
- const records=libraryResources.filter(r=>r.previewType==='design-prompt');assert.equal(records.length,40);
+ const records=libraryResources.filter(r=>r.previewType==='design-prompt');assert.equal(records.length,40);assert.ok(records.every(r=>r.category==='templates'));
  for(const item of records){
   const original=inventory.records.find(r=>r.id===item.id)!;assert.ok(original);
   const zip=unzipSync(readFileSync('public'+item.downloadUrl));const source=strFromU8(zip['original/MotionSites-prompt.md']);

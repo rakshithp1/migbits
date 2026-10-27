@@ -7,11 +7,11 @@ const browser=await chromium.launch({channel:'chrome'});
 const selected=process.argv.find(a=>a.startsWith('--ids='))?.slice(6).split(',');
 const templatesOnly=process.argv.includes('--templates');
 const shadersOnly=process.argv.includes('--shaders');
-const templateIds=new Set(resources.filter(r=>r.category==='templates').map(r=>r.id));
+const templateIds=new Set(resources.filter(r=>r.previewType==='template').map(r=>r.id));
 const results=shadersOnly?JSON.parse(fs.readFileSync('catalog/library/cleanup-preview-validation.json')).filter(r=>templateIds.has(r.id)):templatesOnly?JSON.parse(fs.readFileSync('catalog/library/cleanup-preview-validation.json')).filter(r=>!templateIds.has(r.id)):selected?JSON.parse(fs.readFileSync('catalog/library/cleanup-preview-validation.json')).filter(r=>!selected.includes(r.id)):[];
 try {
 
- for(const item of resources.filter(r=>(r.category==='shaders'||r.category==='templates')&&(!selected||selected.includes(r.id))&&(!templatesOnly||r.category==='templates')&&(!shadersOnly||r.category==='shaders'))){
+ for(const item of resources.filter(r=>(r.category==='shaders'||r.previewType==='template')&&(!selected||selected.includes(r.id))&&(!templatesOnly||r.previewType==='template')&&(!shadersOnly||r.category==='shaders'))){
   const page=await browser.newPage({viewport:{width:1100,height:820},reducedMotion:'no-preference'});page.setDefaultTimeout(20000);
   const errors=[];const collect=e=>errors.push(e.message);page.on('pageerror',collect);
   try{

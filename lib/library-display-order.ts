@@ -14,6 +14,7 @@ const showcase = [
 const positions = new Map(showcase.map((id, index) => [id, index]));
 const motionOrder = ["layout", "presence", "reorder", "svg", "drag", "gestures", "animation", "hooks", "waapi", "lazy-loading"];
 export function visualPriority(item: LibraryResource) {
+  if (item.previewType === "design-prompt") return -100;
   const picked = positions.get(item.id);
   if (picked !== undefined) return picked;
   if (["templates", "themes", "illustrations", "icons"].includes(item.category)) return 100;

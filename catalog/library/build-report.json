@@ -4,7 +4,7 @@
   "categories": {
     "components": 102,
     "blocks": 19,
-    "templates": 127,
+    "templates": 167,
     "typography": 12,
     "colors": 18,
     "illustrations": 14,
@@ -14,8 +14,7 @@
     "backgrounds": 6,
     "icons": 2,
     "tools": 2,
-    "themes": 12,
-    "prompts": 40
+    "themes": 12
   },
   "scope": "Reviewed retained imports, original resources and separately licensed MotionSites prompt kits. Preserve upstream and adaptation notices. Prompt references are not complete template kits. OFL fonts are not standalone resale assets. Native Figma generator execution remains unverified."
 }

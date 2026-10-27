@@ -6,7 +6,7 @@ import type { LibraryResource } from "../lib/resource-library";
 export function consolidateTemplateColors(items: LibraryResource[]) {
   const fingerprints = new Map<string, LibraryResource>();
   const aliases: { id: string; canonicalId: string; reason: string }[] = [];
-  for (const item of items.filter(r => r.category === "templates" && r.previewUrl)) {
+  for (const item of items.filter(r => r.category === "templates" && r.previewType !== "design-prompt" && r.previewUrl)) {
     const html = readFileSync("public" + item.previewUrl, "utf8");
     const normalize = (s: string) => s.replace(/#[a-f0-9]{3,8}\b|(?:rgba?|hsla?)\([^)]*\)/gi, "COLOR").replace(/\s+/g, "");
     const css = [...html.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/gi)].map(m => normalize(m[1])).join("");

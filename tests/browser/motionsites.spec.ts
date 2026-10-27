@@ -2,7 +2,9 @@ import {test,expect} from '@playwright/test';
 import {libraryResources} from '../../lib/resource-library';
 
 test('MotionSites prompt collection is searchable, attributed and source-copyable',async({page})=>{
- await page.goto('/library/prompts');await expect(page.locator('.mb-card')).toHaveCount(40);
+ await page.goto('/library/prompts');await expect(page).toHaveURL(/\/library\/templates$/);
+ await expect(page.locator('.mb-card').first()).toContainText('MigBits /');
+ await page.goto('/library/templates?q=MotionSites');await expect(page.locator('.mb-card')).toHaveCount(40);
  await page.getByRole('link',{name:/MigBits \/ AI Workflow Hero/}).first().click();
  await expect(page.getByText('MotionSites design · MigBits adaptation.',{exact:false})).toBeVisible();
  await page.getByRole('tab',{name:'Source',exact:true}).click();await expect(page.getByRole('option',{name:'MigBits-build-brief.md',exact:true})).toBeAttached();

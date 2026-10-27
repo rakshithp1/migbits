@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { ResourceGallery } from "../gallery";
 import {
   resourceCategories,
@@ -17,6 +17,7 @@ export default async function Category(props: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const { category } = await props.params;
+  if (category === "prompts") redirect("/library/templates");
   if (!resourceCategories.some((c) => c.id === category)) notFound();
   return (
     <ResourceGallery category={category} searchParams={props.searchParams} />

@@ -21,3 +21,7 @@ Repeatable flow: `python scripts/snapshot-motionsites.py` → `python scripts/fe
 Source commit `95d122318280a4f4253e5247332c8680c4aef450`; Cloudflare version `fcc4d811-1875-411b-b9e2-55d2b98ed82b`. Live collection: https://migbits.com/library/prompts. Catalog: 392 entries, including 40 prompt kits (one live adaptation, 36 reference previews, three unavailable references); complete-template count remains 127.
 
 Lint, TypeScript, catalog validation, 49 unit tests, the clean-consumer check with 48 brand combinations, production Cloudflare build, Worker dry run, 40 isolated wrapper proofs, three local browser tests, three live browser tests and public hosting smoke tests passed. All 200 checked hosted artifacts match sealed hashes; all 49 reference media URLs returned successful HEAD responses. Evidence: `catalog/motionsites-release-validation.json`. Broader GitHub CI was still running at recording time: https://github.com/rakshithp1/migbits/actions/runs/40560388253.
+
+## Gallery placement update - 2026-10-28
+
+At the owner's request, all 40 MotionSites entries now appear at the top of Templates and the main gallery. Templates contains 167 entries: the existing 127 entries plus these 40 design/reference kits. Their provenance, reference/live implementation labels, source, download files and sealed preview proofs are unchanged. The separate Design prompts navigation section is removed; /library/prompts redirects to /library/templates. Reference wrappers are excluded from complete-template colour deduplication so distinct upstream briefs are retained.

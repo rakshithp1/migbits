@@ -2,7 +2,6 @@ import catalog from "../catalog/library/resources.json";
 import { compareLibraryPresentation } from "./library-display-order";
 
 const categoryDefinitions = [
-  { id: "prompts", label: "Design prompts", description: "Upstream design briefs, source excerpts and clearly labelled reference or live previews.", icon: "prompts" },
   { id: "tools", label: "Developer tools", description: "Reviewed source kits and AI development workflows. Installation status is shown explicitly.", icon: "tools" },
   { id: "themes", label: "Themes", description: "Ready light and dark themes, coordinated gradients and typography. Preview, copy and apply.", icon: "themes" },
   { id: "backgrounds", label: "Backgrounds", description: "Static CSS patterns and decorative backgrounds, with original source and notices.", icon: "backgrounds" },
@@ -33,7 +32,7 @@ const categoryDefinitions = [
     id: "templates",
     label: "Templates",
     description:
-      "Complete starting points for landing pages, dashboards and portfolios.",
+      "Website templates, design briefs and reference kits for landing pages, dashboards and portfolios.",
     icon: "templates",
   },
   {
@@ -65,7 +64,7 @@ const categoryDefinitions = [
     icon: "figma",
   },
 ] as const;
-const sectionOrder = ["templates", "prompts", "blocks", "components", "themes", "typography", "colors", "illustrations", "figma", "icons", "backgrounds", "foundations", "motion", "shaders", "tools"];
+const sectionOrder = ["templates", "blocks", "components", "themes", "typography", "colors", "illustrations", "figma", "icons", "backgrounds", "foundations", "motion", "shaders", "tools"];
 export const resourceCategories = [...categoryDefinitions].sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
 export type ResourceCategory = (typeof resourceCategories)[number]["id"];
 export interface LibraryResource {

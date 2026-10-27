@@ -7,7 +7,7 @@ import retired from "../catalog/library/retired-shader-resources.json";
 import validation from "../catalog/library/cleanup-preview-validation.json";
 
 test("Custom colour previews and retained motion scenes match tested artifacts", () => {
-  for (const item of libraryResources.filter(r => r.category === "templates" || r.category === "shaders")) {
+  for (const item of libraryResources.filter(r => r.previewType === "template" || r.category === "shaders")) {
     const proof = validation.find(r => r.id === item.id);
     assert.equal(proof?.status, "passed", item.id);
     assert.equal(proof?.previewUrl, item.previewUrl);

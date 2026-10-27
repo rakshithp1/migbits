@@ -662,10 +662,10 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
         </div>
         {iframeUrl && tab === "preview" && (
           <div className="mb-device-controls">
-            {(resource.category === "templates" || resource.category === "prompts") && <>
+            {resource.category === "templates" && <>
               <button onClick={() => { const well = document.getElementById(`preview-${resource.id}`); if (well && document.fullscreenEnabled) void well.requestFullscreen().catch(() => {}); }} aria-label="Full-screen template preview">Full screen ↗</button>
             </>}
-            {resource.category === "templates" && <>
+            {resource.previewType === "template" && <>
               <label>Colour <select aria-label="Template colour" value={color} onChange={event => { setColorCss(""); setColor(event.target.value); }}>
                 {templateColors.map(preset => <option key={preset.id} value={preset.id}>{preset.label}</option>)}
               </select></label>
@@ -675,7 +675,7 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
               <>
                 <select
                   aria-label={
-                    resource.category === "templates"
+                    resource.previewType === "template"
                       ? "Preview page"
                       : "Preview variant"
                   }
