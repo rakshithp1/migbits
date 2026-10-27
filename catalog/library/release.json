@@ -1,14 +1,14 @@
 {
-  "releasedAt": "2026-10-27T09:47:09.524879+00:00",
+  "releasedAt": "2026-10-27T10:39:30.823848+00:00",
   "productionUrl": "https://migbits.com",
   "repositoryUrl": "https://github.com/rakshithp1/migbits",
-  "sourceCommit": "2c657cb06f510791bdfc9c5104ac0b70d6ddadac",
-  "deploymentVersion": "a714ac4c-387a-4089-a6bf-cfa7f2a5a4b1",
+  "sourceCommit": "3d33e245a2d3ff9d5c5c137fdf06e4e98b1ab0f0",
+  "deploymentVersion": "0070afe4-d87d-4ff0-91f0-aa8ed8e3e5e1",
   "resources": 343,
   "categories": {
     "components": 102,
-    "blocks": 20,
-    "templates": 117,
+    "blocks": 19,
+    "templates": 118,
     "typography": 12,
     "colors": 18,
     "illustrations": 14,
@@ -28,20 +28,19 @@
     "MIT AND OFL-1.1": 1
   },
   "changes": [
-    "Added MigBits-branded single-file coral smoke signup CTA and footer to Blocks, with embedded Inter and original five-second MP4/still",
+    "Moved the existing coral signup/footer to Templates and replaced the five-second video with continuous procedural Canvas 2D smoke",
     "1440x960 reference layout, height-aware scaling, tablet/phone adaptations, one-time entrance and hover treatments",
-    "Verified real decoded motion in opaque sandbox after entrance; forward looping, loaded-data fade, local/global/visibility pause and static reduced motion",
+    "Verified continuous motion beyond five seconds, palette controls, phase-preserving pause, reduced motion and permanent redirects from old block URLs",
     "Native email validation and local demo confirmation; no email submission or account backend",
     "User-supplied brief provenance retained, unverified supplied stock media excluded, complete MIT and Inter OFL notices embedded and packaged"
   ],
   "checks": {
     "unit": 48,
     "ciBrowser": 50,
-    "localFocusedBrowser": 5,
+    "localFocusedBrowser": 4,
     "liveBrowser": 2,
-    "priorSealedPreviewChecks": 148,
-    "newBlockPreviewChecks": 1,
-    "newLiveArtifactsHashMatched": 5,
+    "priorSealedPreviewChecks": 149,
+    "newLiveArtifactsHashMatched": 6,
     "lint": "passed",
     "typecheck": "passed",
     "cloudflareBuild": "passed",
@@ -49,7 +48,7 @@
     "cleanConsumer": "passed",
     "communityBundles": "passed",
     "sourceCommitCI": "passed",
-    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40481936055"
+    "sourceCommitCIUrl": "https://github.com/rakshithp1/migbits/actions/runs/40488974991"
   },
   "remaining": {
     "requestedCompleteTemplates": 500,
@@ -64,10 +63,9 @@
     "accessibility": "Full per-example production accessibility and strict consumer certification remain separate"
   },
   "previousDeployment": {
-    "releasedAt": "2026-10-26T19:30:19.870948+00:00",
-    "sourceCommit": "d94e4de1dc5b91c00248c81e7ca72371a66e20de",
-    "deploymentVersion": "03bfda8c-ac5f-4447-b3d5-f7b288f53bc0",
-    "resources": 342
+    "sourceCommit": "2c657cb06f510791bdfc9c5104ac0b70d6ddadac",
+    "deploymentVersion": "a714ac4c-387a-4089-a6bf-cfa7f2a5a4b1",
+    "resources": 343
   },
   "evidence": [
     "docs/CORAL-SIGNUP-CTA.md",
