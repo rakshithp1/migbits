@@ -25,3 +25,5 @@ Lint, TypeScript, catalog validation, 49 unit tests, the clean-consumer check wi
 ## Gallery placement update - 2026-10-28
 
 At the owner's request, all 40 MotionSites entries now appear at the top of Templates and the main gallery. Templates contains 167 entries: the existing 127 entries plus these 40 design/reference kits. Their provenance, reference/live implementation labels, source, download files and sealed preview proofs are unchanged. The separate Design prompts navigation section is removed; /library/prompts redirects to /library/templates. Reference wrappers are excluded from complete-template colour deduplication so distinct upstream briefs are retained.
+
+Placement release verification: 49 unit tests, four local browser tests, two live browser tests, lint and the Cloudflare production build (including TypeScript) passed. Source `1e26e05c7c5c4375cf6c59531719d8b2e2adb7e3`; deployment `12b86a22-8270-422d-985d-990f35a6d293`. See `catalog/motionsites-placement-validation.json`.

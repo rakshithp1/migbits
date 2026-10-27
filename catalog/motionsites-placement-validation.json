@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-10-27T19:16:59.415871+00:00",
+  "sourceCommit": "1e26e05c7c5c4375cf6c59531719d8b2e2adb7e3",
+  "cloudflareVersion": "12b86a22-8270-422d-985d-990f35a6d293",
+  "origin": "https://migbits.com",
+  "templatesUrl": "https://migbits.com/library/templates",
+  "catalogEntries": 392,
+  "templatesCategoryEntries": 167,
+  "movedEntries": 40,
+  "placement": "First 40 in Templates and the unfiltered main gallery",
+  "oldRoute": "/library/prompts redirects to /library/templates",
+  "checks": {
+    "unitTests": 49,
+    "localBrowserTests": 4,
+    "liveBrowserTests": 2,
+    "lint": "passed",
+    "productionCloudflareBuildIncludingTypeScript": "passed"
+  },
+  "notChanged": "Upstream sources, notices, downloads and reference/live labels retained. A category change does not turn briefs into complete executable templates.",
+  "broaderCI": "https://github.com/rakshithp1/migbits/actions/runs/40567469051; in progress at recording time"
+}
