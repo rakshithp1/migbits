@@ -4,7 +4,7 @@ import { libraryResources } from "../../lib/resource-library";
 test("Showcase resources lead a complete scrolling gallery", async ({ page }) => {
   await page.goto("/library");
   await expect(page.locator(".mb-card")).toHaveCount(libraryResources.length);
-  await expect(page.locator(".mb-card").first()).toContainText("Atlas");
+  await expect(page.locator(".mb-card").first()).toContainText("Relay Workspace");
   await expect(page.getByRole("navigation", { name: "Gallery pages" })).toHaveCount(0);
   await page.locator(".mb-card").last().scrollIntoViewIfNeeded();
   await expect(page.locator(".mb-card").last()).toBeVisible();

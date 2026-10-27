@@ -1712,5 +1712,161 @@
       }
     ],
     "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-relay-software",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-relay-software/relay-software.html",
+        "sha256": "002400b1f4c6f0f6620246f2c45236393a145f90481c0dbe7541d5327dcc3329",
+        "originalUrl": "/library/previews/templates/relay-software.html",
+        "originalSha256": "7e3f0dcdd9fc19c0421e6c1b7e9f8145c183fc4877a736edf29af0ea4a6efb5b"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-cascade-automation",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-cascade-automation/cascade-automation.html",
+        "sha256": "f69ca7be6635cec9ceceeb6e01aeed0548a45377d1be4dff7b3904466f9c6380",
+        "originalUrl": "/library/previews/templates/cascade-automation.html",
+        "originalSha256": "3ac3033223f20b48311c9c8363c787023ac8e1065c046c3a6392c6e39191495a"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-prism-analytics",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-prism-analytics/prism-analytics.html",
+        "sha256": "7add48ee168ccabc217ecf90fa75304e89342bbcc7292b3ca03c09a4885b0846",
+        "originalUrl": "/library/previews/templates/prism-analytics.html",
+        "originalSha256": "58ab64f1cfa282fec9a65e28e75a1f2d2bc319435133d20c21796b45ce9bd35c"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-haven-security",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-haven-security/haven-security.html",
+        "sha256": "a8729dcce053020192ee2113c7cc78f9e45096552ced5a96c5960c6e5dfa5bd5",
+        "originalUrl": "/library/previews/templates/haven-security.html",
+        "originalSha256": "deb5732d8a2ecf4962dc47c705702638b52684f48caefad13fb3a923c1407214"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-syntax-api",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-syntax-api/syntax-api.html",
+        "sha256": "bcbe5cdcebe38d25953ce599889a018300ddd33e878b097ec2857d69ac69d2a1",
+        "originalUrl": "/library/previews/templates/syntax-api.html",
+        "originalSha256": "fa1c17058cb0d0e8abf9c69c7bbff76f99c9b4c991633cf684fb66bc195f1ed3"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-papertrail-knowledge",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-papertrail-knowledge/papertrail-knowledge.html",
+        "sha256": "580cc2a774c6c85af67a2f550cb88126626c8be731aec084a5bf167ca45ae7d4",
+        "originalUrl": "/library/previews/templates/papertrail-knowledge.html",
+        "originalSha256": "430b873ea0f170a3d1845e6c93ad632a7c8a67a47c9098338f4fcf1c492531e5"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-velocity-running",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-velocity-running/velocity-running.html",
+        "sha256": "6fd00f4e497824606f7dee41ba305e6326e41c5622ce2c2bc0b47cfb8d30cdb7",
+        "originalUrl": "/library/previews/templates/velocity-running.html",
+        "originalSha256": "aa5c069f3f9f8e3fc46fc0a236565b45f90bc1314605873a2a30823daf8af29f"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-concrete-sneakers",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-concrete-sneakers/concrete-sneakers.html",
+        "sha256": "87c575aa4376cd760f9f6fa3c9294a8eb9954110797fffd6ac274308a340bc8e",
+        "originalUrl": "/library/previews/templates/concrete-sneakers.html",
+        "originalSha256": "7f03b8b13cafa6897c9dc4ee9c2eb06f923bb09f58fb138734ae3c7e7869a6e3"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-form-footwear",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-form-footwear/form-footwear.html",
+        "sha256": "078de5022998f93f49d58dc8ddab65acc0c76b1cd7264158d23a846eb3560781",
+        "originalUrl": "/library/previews/templates/form-footwear.html",
+        "originalSha256": "7f6b824ee3c610c3c71a71f290303faf35d6eca9ff80865e52e9cf1261fa2277"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-squeeze-citrus",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-squeeze-citrus/squeeze-citrus.html",
+        "sha256": "025517a0f23a67db7550c96212ca1862c0c02da0a8edbdcc65c6edced84b11eb",
+        "originalUrl": "/library/previews/templates/squeeze-citrus.html",
+        "originalSha256": "386d09376f5e181d4dae50a769796bc9469ac37f2becb12f3f05c894a4938881"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-popwave-soda",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-popwave-soda/popwave-soda.html",
+        "sha256": "96d588365fdf85ec670dfd6fe340be547f10990449d353c8067c0de9ba76d3a7",
+        "originalUrl": "/library/previews/templates/popwave-soda.html",
+        "originalSha256": "cd0b4c608269ae6f317b801a4044d98bf80cdc69fbbd8556d8e0a279c9058f1d"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-stillwater-tea",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-stillwater-tea/stillwater-tea.html",
+        "sha256": "cd608dd5cc626081f955bcaf230276c22ebe8599b098bb4ed293d1268050f130",
+        "originalUrl": "/library/previews/templates/stillwater-tea.html",
+        "originalSha256": "d5c0c7ac6b3a38ec5b4489bad26f3a1a2a01ddb667174b1afef6200a9a982553"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
   }
 ]

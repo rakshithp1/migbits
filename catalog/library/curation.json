@@ -139,7 +139,19 @@
     "template-folio-studio",
     "template-signal-developer",
     "template-afterhours-release",
-    "template-monument-spaces"
+    "template-monument-spaces",
+    "template-relay-software",
+    "template-cascade-automation",
+    "template-prism-analytics",
+    "template-haven-security",
+    "template-syntax-api",
+    "template-papertrail-knowledge",
+    "template-velocity-running",
+    "template-concrete-sneakers",
+    "template-form-footwear",
+    "template-squeeze-citrus",
+    "template-popwave-soda",
+    "template-stillwater-tea"
   ],
   "removed": [
     {

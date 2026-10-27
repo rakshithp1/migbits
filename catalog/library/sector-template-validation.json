@@ -1,0 +1,221 @@
+{
+  "checkedAt": "2026-10-27T16:28:22.273Z",
+  "resources": [
+    {
+      "id": "template-relay-software",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-relay-software/relay-software.html": "002400b1f4c6f0f6620246f2c45236393a145f90481c0dbe7541d5327dcc3329",
+        "/library/thumbnails/template-relay-software.png": "7b2f5c5f2bb826c4889352369ea4facb08a0643599b535f75014933419e05c51",
+        "/library/data/template-relay-software.json": "92e8283ce6a32a9e8b7a982bd9dfc190b7b47e8b6663af363d850306730086f2",
+        "/library/downloads/template-relay-software.zip": "d35659f6aed08bd4c267c80888f0e6c91952a16ae29fbacd90fd0ae06927dac2",
+        "/library/notices/template-relay-software.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-cascade-automation",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-cascade-automation/cascade-automation.html": "f69ca7be6635cec9ceceeb6e01aeed0548a45377d1be4dff7b3904466f9c6380",
+        "/library/thumbnails/template-cascade-automation.png": "93f7620b737abcc8d6b943d4ed40c0e9d6199789671721bf961e02e97dc6ab4a",
+        "/library/data/template-cascade-automation.json": "e222c2e6d0a5cc573b000cb355649430bf398dc06ef84dfedab6938832fb020f",
+        "/library/downloads/template-cascade-automation.zip": "8fa9b1223f190992648acb7f8e97fe1b76013d8ee040dd31027914a6911d8698",
+        "/library/notices/template-cascade-automation.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-prism-analytics",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-prism-analytics/prism-analytics.html": "7add48ee168ccabc217ecf90fa75304e89342bbcc7292b3ca03c09a4885b0846",
+        "/library/thumbnails/template-prism-analytics.png": "5cf4dc9382fc85dc4b7b762cfe2c4e70a4e218aeb0a0a0fa53d61ee4acd37654",
+        "/library/data/template-prism-analytics.json": "82313ee6945955ee6486e820cacfae3f5795e19e55741f66d4fe7a0ca3a4b9ed",
+        "/library/downloads/template-prism-analytics.zip": "786f2853787b779305b92031fc9b878fdef258798604bee9a3ac1ae68f91eab0",
+        "/library/notices/template-prism-analytics.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-haven-security",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-haven-security/haven-security.html": "a8729dcce053020192ee2113c7cc78f9e45096552ced5a96c5960c6e5dfa5bd5",
+        "/library/thumbnails/template-haven-security.png": "282208a5d918e5584431ffa596d5b45fe94496f7817297c0d6aa5504fb8ad20f",
+        "/library/data/template-haven-security.json": "d4c0dd1f309e0c667ca2a546e70d23229326bb96f246ed7712e3e49e0e4e9977",
+        "/library/downloads/template-haven-security.zip": "9f0741060f0f47a66313e7d0dc04bbecab3032dd09bb1a0ed097a8a7dc33aacc",
+        "/library/notices/template-haven-security.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-syntax-api",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-syntax-api/syntax-api.html": "bcbe5cdcebe38d25953ce599889a018300ddd33e878b097ec2857d69ac69d2a1",
+        "/library/thumbnails/template-syntax-api.png": "a2f60f699f10a89390ebc9776ccd3e2c201f4f9d8c122250629e53be4716bb62",
+        "/library/data/template-syntax-api.json": "381474d944bda880ad9153f35d8c4d70c1aa9880cd3e7a86cb6b731f17e8fad4",
+        "/library/downloads/template-syntax-api.zip": "06e8769ccc9235e6482e41f14f0fa84b62e28c66d8c2cbb70b731f6e9f285420",
+        "/library/notices/template-syntax-api.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-papertrail-knowledge",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-papertrail-knowledge/papertrail-knowledge.html": "580cc2a774c6c85af67a2f550cb88126626c8be731aec084a5bf167ca45ae7d4",
+        "/library/thumbnails/template-papertrail-knowledge.png": "01e97be36fce97ab6a97b35fc0a509cddf41459471621bee01e5dc0cb514395b",
+        "/library/data/template-papertrail-knowledge.json": "cd4b27408312e9dc1cbb667b1693baa3b0eeb40a807f0ff0053c39e7fb2a9456",
+        "/library/downloads/template-papertrail-knowledge.zip": "bb5d49f508e9e436f5aa9a4d4d3d37676262e47bc3499cb779beb1fd0ae8d8bd",
+        "/library/notices/template-papertrail-knowledge.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-velocity-running",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-velocity-running/velocity-running.html": "6fd00f4e497824606f7dee41ba305e6326e41c5622ce2c2bc0b47cfb8d30cdb7",
+        "/library/thumbnails/template-velocity-running.png": "5b50fa4fd0bcce3f1a8cae642600865b4c8bd809c64b127d47dd09d60e8cb89b",
+        "/library/data/template-velocity-running.json": "13b58fe1a7319117f8d09aab308901de0ac6f1a8b3c5e61116f0d9576968eba0",
+        "/library/downloads/template-velocity-running.zip": "31d4f7578bdac2399859d140b88354478270d2ac385263231443de2c4354f343",
+        "/library/notices/template-velocity-running.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-concrete-sneakers",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-concrete-sneakers/concrete-sneakers.html": "87c575aa4376cd760f9f6fa3c9294a8eb9954110797fffd6ac274308a340bc8e",
+        "/library/thumbnails/template-concrete-sneakers.png": "05b5f32e17a6845bf09a4ced8cf77965c33c4f67fc7a263016399f31d151ae81",
+        "/library/data/template-concrete-sneakers.json": "92e1583d53dfc709825783981123d1522814eb147d81b78537dafe5151b8ae7d",
+        "/library/downloads/template-concrete-sneakers.zip": "8f023fc9b55118018528759ae9452f8b8ddc87757ae799fcf2c89f72a66122b1",
+        "/library/notices/template-concrete-sneakers.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-form-footwear",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-form-footwear/form-footwear.html": "078de5022998f93f49d58dc8ddab65acc0c76b1cd7264158d23a846eb3560781",
+        "/library/thumbnails/template-form-footwear.png": "22bd2c9a38d946661fb114db5b599d8d863f0ce224ce9deca73116357bb3bd4a",
+        "/library/data/template-form-footwear.json": "a25875e5af4c8a6f9662d3d3c8c6bd65e3ed388ea95f3f192cdf4c7ef7823584",
+        "/library/downloads/template-form-footwear.zip": "8430ee4457fe55c4e02abeea459f84e82a9f86ca6da2153c1ead0c22b8054384",
+        "/library/notices/template-form-footwear.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-squeeze-citrus",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-squeeze-citrus/squeeze-citrus.html": "025517a0f23a67db7550c96212ca1862c0c02da0a8edbdcc65c6edced84b11eb",
+        "/library/thumbnails/template-squeeze-citrus.png": "49047e5c244da30f4333d266eac959064a59a3b18dabda658e362fc3d2adaa8a",
+        "/library/data/template-squeeze-citrus.json": "f80bde15518b96d8440cbe104a46daaf89574865da2dd9bf16ce3abd9b43c1ba",
+        "/library/downloads/template-squeeze-citrus.zip": "2482533dda675bc25308d9adfa99a277782e4f286166e08d3a1913dfef3ec0ce",
+        "/library/notices/template-squeeze-citrus.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-popwave-soda",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-popwave-soda/popwave-soda.html": "96d588365fdf85ec670dfd6fe340be547f10990449d353c8067c0de9ba76d3a7",
+        "/library/thumbnails/template-popwave-soda.png": "355f4380b50459212f4bef5e374f3b964b258ec1d94dfe295e4af8e6c37d0e17",
+        "/library/data/template-popwave-soda.json": "c1bfa88bfa7bcfaad12a0a1565bbec0395cbddc05d6d5a32cab89044d059b26d",
+        "/library/downloads/template-popwave-soda.zip": "9d56aa5afa8d61814763e3cf5fa51f23584aaa4524bcde393351b70e47fe45d2",
+        "/library/notices/template-popwave-soda.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    },
+    {
+      "id": "template-stillwater-tea",
+      "status": "passed",
+      "checks": [
+        "Full-viewport 1440x960 hero",
+        "Changing automatic Canvas pixels",
+        "320/390/768 responsive no overflow",
+        "Reduced motion frozen",
+        "No browser errors"
+      ],
+      "artifacts": {
+        "/library/customized/template-stillwater-tea/stillwater-tea.html": "cd608dd5cc626081f955bcaf230276c22ebe8599b098bb4ed293d1268050f130",
+        "/library/thumbnails/template-stillwater-tea.png": "660f34da97f10c73cc3331e235ba0233b353819c8f0b79bf00b4091f908a4d43",
+        "/library/data/template-stillwater-tea.json": "3d300fd0d64adc8c1ad605432ef91bfeab9edda7a9bceca7a0beb9444bbadbde",
+        "/library/downloads/template-stillwater-tea.zip": "fa0b027a6921f51e78ab3a08fe5c66632d39800c0fcc369fcf4e04a215af7a89",
+        "/library/notices/template-stillwater-tea.txt": "1e7526e6008e53382bad088dd9dadeaf42c6817aeb06f1774fad5b24e4017201"
+      }
+    }
+  ]
+}

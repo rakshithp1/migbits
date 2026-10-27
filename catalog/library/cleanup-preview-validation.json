@@ -1083,5 +1083,89 @@
     "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
     "previewUrl": "/library/customized/template-monument-spaces/monument-spaces.html",
     "previewDigest": "6b5b325c67ab7ab8a7e33f174439c98e9cbd5b76fcf6ce6c514a21ba4b1505f3"
+  },
+  {
+    "id": "template-relay-software",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-relay-software/relay-software.html",
+    "previewDigest": "002400b1f4c6f0f6620246f2c45236393a145f90481c0dbe7541d5327dcc3329"
+  },
+  {
+    "id": "template-cascade-automation",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-cascade-automation/cascade-automation.html",
+    "previewDigest": "f69ca7be6635cec9ceceeb6e01aeed0548a45377d1be4dff7b3904466f9c6380"
+  },
+  {
+    "id": "template-prism-analytics",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-prism-analytics/prism-analytics.html",
+    "previewDigest": "7add48ee168ccabc217ecf90fa75304e89342bbcc7292b3ca03c09a4885b0846"
+  },
+  {
+    "id": "template-haven-security",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-haven-security/haven-security.html",
+    "previewDigest": "a8729dcce053020192ee2113c7cc78f9e45096552ced5a96c5960c6e5dfa5bd5"
+  },
+  {
+    "id": "template-syntax-api",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-syntax-api/syntax-api.html",
+    "previewDigest": "bcbe5cdcebe38d25953ce599889a018300ddd33e878b097ec2857d69ac69d2a1"
+  },
+  {
+    "id": "template-papertrail-knowledge",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-papertrail-knowledge/papertrail-knowledge.html",
+    "previewDigest": "580cc2a774c6c85af67a2f550cb88126626c8be731aec084a5bf167ca45ae7d4"
+  },
+  {
+    "id": "template-velocity-running",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-velocity-running/velocity-running.html",
+    "previewDigest": "6fd00f4e497824606f7dee41ba305e6326e41c5622ce2c2bc0b47cfb8d30cdb7"
+  },
+  {
+    "id": "template-concrete-sneakers",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-concrete-sneakers/concrete-sneakers.html",
+    "previewDigest": "87c575aa4376cd760f9f6fa3c9294a8eb9954110797fffd6ac274308a340bc8e"
+  },
+  {
+    "id": "template-form-footwear",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-form-footwear/form-footwear.html",
+    "previewDigest": "078de5022998f93f49d58dc8ddab65acc0c76b1cd7264158d23a846eb3560781"
+  },
+  {
+    "id": "template-squeeze-citrus",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-squeeze-citrus/squeeze-citrus.html",
+    "previewDigest": "025517a0f23a67db7550c96212ca1862c0c02da0a8edbdcc65c6edced84b11eb"
+  },
+  {
+    "id": "template-popwave-soda",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-popwave-soda/popwave-soda.html",
+    "previewDigest": "96d588365fdf85ec670dfd6fe340be547f10990449d353c8067c0de9ba76d3a7"
+  },
+  {
+    "id": "template-stillwater-tea",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-stillwater-tea/stillwater-tea.html",
+    "previewDigest": "cd608dd5cc626081f955bcaf230276c22ebe8599b098bb4ed293d1268050f130"
   }
 ]
