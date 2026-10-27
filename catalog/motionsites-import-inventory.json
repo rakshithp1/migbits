@@ -1,0 +1,1797 @@
+{
+  "repository": "Motionsites-AI/claude-skill",
+  "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+  "snapshotFiles": [
+    {
+      "path": "LICENSE",
+      "localPath": "resources/motionsites-imports/original/LICENSE",
+      "gitBlob": "a3d8ddfaa8798fbd4d12b91b10701e4da1124ac4",
+      "sha256": "6cd724256c3089086ad084e840fc9de970e59a9f1a72acf776ef937cec53a806",
+      "bytes": 1614
+    },
+    {
+      "path": "README.md",
+      "localPath": "resources/motionsites-imports/original/README.md",
+      "gitBlob": "e97a7effeb157976b267b947b5ea09a22ddd549e",
+      "sha256": "1917193caff7171b33ebaea13d934a958d3365853a1f1632bd041665fdfcd738",
+      "bytes": 4098
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-character-studio.md",
+      "localPath": "resources/motionsites-imports/original/examples/3d-character-studio.md",
+      "gitBlob": "1fc0d18dd43d4a93bc828716c7c8eaa71068f76e",
+      "sha256": "871c9c38444f785b8c5e52c410b73597019d61fdd801ea36327bb35e43911400",
+      "bytes": 6250
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-collectible-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/3d-collectible-hero.md",
+      "gitBlob": "492f1efd54498c4854414e8fd583022d993197a6",
+      "sha256": "dd39b5af1ff733bd71e7266719ea2f5754948e0fe59eaa78ee26ba8fbdb48148",
+      "bytes": 5749
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-jack-portfolio-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/3d-jack-portfolio-hero.md",
+      "gitBlob": "c6bae58a51d772afeb8f24e34b6f9d365d4295bb",
+      "sha256": "9c6358d030e0c6071158139d71b8b5b3c8ace9dd9726f2ef5774cee4b296fbc5",
+      "bytes": 14424
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/INDEX.md",
+      "localPath": "resources/motionsites-imports/original/examples/INDEX.md",
+      "gitBlob": "77ccd7352a8a4c28c764c9e1f66c8e0637702cd4",
+      "sha256": "7e9c738b1d52cd9c622a3ef55a4ff3f9d175461b157b4fb7bc94c989bd5cd13d",
+      "bytes": 9041
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/aethera-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/aethera-hero.md",
+      "gitBlob": "36f2c7f6397b4c0a70defd956bb04290ee1f2705",
+      "sha256": "174ba8304d270e94fb50745e7ae6033a6cffa328762fc7693552cf692eb08227",
+      "bytes": 3547
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/aetheris-voyage-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/aetheris-voyage-hero.md",
+      "gitBlob": "0d28b113373281f0e037d7dd8f8400370a4fb7a4",
+      "sha256": "6dd28cdfc56476fe1063d90b70766ef29fc29171b140156d9da1c34ec20a5900",
+      "bytes": 10805
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/agent-wave.md",
+      "localPath": "resources/motionsites-imports/original/examples/agent-wave.md",
+      "gitBlob": "2938931ee502c2176ad228e0d6e17a30ee52d7e7",
+      "sha256": "6668ee6ffe7a646e30b416df7ba533eaf46c80596d5b68f062c0045cbb1d515b",
+      "bytes": 17317
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/ai-runtime.md",
+      "localPath": "resources/motionsites-imports/original/examples/ai-runtime.md",
+      "gitBlob": "8bfe0b8e690485096f95397bf4da718b843e69cc",
+      "sha256": "099d81eb881c5177807b0e274e30c509852609f765841c3b79e87be36a9036b3",
+      "bytes": 10163
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/ai-workflow.md",
+      "localPath": "resources/motionsites-imports/original/examples/ai-workflow.md",
+      "gitBlob": "eea81adcbab6b9b8f238e15d12fcbdacbbd7f430",
+      "sha256": "5c48b34506e88ddc0222f80e970561593edab6002fd563c4997cf37125971b04",
+      "bytes": 17109
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/asme-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/asme-hero.md",
+      "gitBlob": "a4686ffb4920071c2d0118c95d2bb6207a405eb4",
+      "sha256": "c38c591e56b1516c563f1d16f1b207e4bf3e80ad4c8545a30be733db2d1a62da",
+      "bytes": 4883
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/bloom-ai-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/bloom-ai-hero.md",
+      "gitBlob": "d1085771e9f7ab1e1cbd15f80e985016a86f0e19",
+      "sha256": "56caa1560340dcd2d25e41949247ddf7f17038c490fab6cc4d71078ae5122ea1",
+      "bytes": 4294
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/bold-studio.md",
+      "localPath": "resources/motionsites-imports/original/examples/bold-studio.md",
+      "gitBlob": "99940d7aca87ab0e4c8a912e72c83867b5359ef9",
+      "sha256": "c36332e6be3aa8bc6baf8997355c0f2fb69a667a20c16d1b0570da4c686e63a5",
+      "bytes": 6431
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/contact-cybernetic.md",
+      "localPath": "resources/motionsites-imports/original/examples/contact-cybernetic.md",
+      "gitBlob": "993b6383492081a9bc0031a90cdb1e4a95b94041",
+      "sha256": "b4d7d05cf39c16e3924096f63e3e12af0f86ec72fe847609bf063e00177f775a",
+      "bytes": 6809
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/creative-studio.md",
+      "localPath": "resources/motionsites-imports/original/examples/creative-studio.md",
+      "gitBlob": "310fd91c578b90e8affc5fc5f4a070cad8930846",
+      "sha256": "3510b9a22229b0a5d37a379b78eca7432b57ab49443e7d3e0f7318ef3990b704",
+      "bytes": 5865
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/digital-epoch-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/digital-epoch-hero.md",
+      "gitBlob": "e98f0c84003f33cbd49962846bcda6ebbdbe032b",
+      "sha256": "ea63975912cf1a2da3b49ed16123dcb3c2c358e01e0143fc9ff74e04099474d5",
+      "bytes": 4984
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/digital-experiences.md",
+      "localPath": "resources/motionsites-imports/original/examples/digital-experiences.md",
+      "gitBlob": "56fd5d10017f290f66c09b5d7748e2455a15c5e9",
+      "sha256": "23cde5ef5ae9e70544e6e5a414550ee3a376be964b0672ba1fe2373a55ea1a25",
+      "bytes": 9390
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/email-landing-page.md",
+      "localPath": "resources/motionsites-imports/original/examples/email-landing-page.md",
+      "gitBlob": "f5ed4c6265f120e618bca33c2fbbfc3ac8dec297",
+      "sha256": "a5f52f7a550ae60441eeceb5797488daca1b33f621dc0791e130f8d00fda59ff",
+      "bytes": 19950
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/equilibrium.md",
+      "localPath": "resources/motionsites-imports/original/examples/equilibrium.md",
+      "gitBlob": "c648de7fead2c78f4de8d0b0b38758293ad27c7e",
+      "sha256": "161e4c3f2b337478f48d5ad20aad2b753cd04c1ffd77b5d5e302aa3f02e2caee",
+      "bytes": 5157
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/halo-usd-landing.md",
+      "localPath": "resources/motionsites-imports/original/examples/halo-usd-landing.md",
+      "gitBlob": "929a9355d52da6042fddc0241b5b5fc4ab445232",
+      "sha256": "409c2ad47c1102706f0b00a24b6a109a6efa003ad9ec56d958aa953559412279",
+      "bytes": 8978
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/immersive-ocean.md",
+      "localPath": "resources/motionsites-imports/original/examples/immersive-ocean.md",
+      "gitBlob": "29e889f6b1631a2031dd11e7f19a14d634cf6563",
+      "sha256": "15e65ded086c5975508cd95d8d3567ec1a7dfe1d9161caa58cc1c8b79ab496ba",
+      "bytes": 4406
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/innovation-landing.md",
+      "localPath": "resources/motionsites-imports/original/examples/innovation-landing.md",
+      "gitBlob": "75b97096b452e3f1fda0c01d0ea8ed42b9ed6899",
+      "sha256": "9660d9291d20c82bd42c8f19782a7d7b7407cb62b0dd9d7ed35e522414072d26",
+      "bytes": 9380
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/intelligence-layer.md",
+      "localPath": "resources/motionsites-imports/original/examples/intelligence-layer.md",
+      "gitBlob": "252094bad71df89cb5ec974125c6ebd1efc88eb3",
+      "sha256": "a30aff9e68eec1e1372df3a584285b5f5d798aa3c74d5aa8c8d45716dec62808",
+      "bytes": 14617
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/intelligent-operations.md",
+      "localPath": "resources/motionsites-imports/original/examples/intelligent-operations.md",
+      "gitBlob": "1e104b4287f0f07827cf9046751cfa5488a2f35a",
+      "sha256": "658e7cca01ddeadbb1458c0ff1669336f42b766eb1bfafb400a014b1c5193bb0",
+      "bytes": 11087
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/interactive-discovery.md",
+      "localPath": "resources/motionsites-imports/original/examples/interactive-discovery.md",
+      "gitBlob": "9d0933f9fba3058c50eb5ceb3c2129bc02cea8b7",
+      "sha256": "7333dfa51324001c9236f02733c110efda9bcb5c0e01c6c5b60fe8de7debe742",
+      "bytes": 7476
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/mindloop-landing.md",
+      "localPath": "resources/motionsites-imports/original/examples/mindloop-landing.md",
+      "gitBlob": "39e4bc05646c21e1670a6a1299d4da062adb3773",
+      "sha256": "a069ff4bfde557832ab9fd300ba20a4c2a1eb15c33145ef902467d1e9882eb5b",
+      "bytes": 7654
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/modern-agency.md",
+      "localPath": "resources/motionsites-imports/original/examples/modern-agency.md",
+      "gitBlob": "739582a6ce40698bccf6ab9f02a9c5b61ab0df47",
+      "sha256": "b27403daafbbb9dc34f288b1b7dbd99ebb5c6c820c610aebc5622bf6899c1a4b",
+      "bytes": 10719
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/mostar-guide.md",
+      "localPath": "resources/motionsites-imports/original/examples/mostar-guide.md",
+      "gitBlob": "fd9e5df35032aa6806b5a7f56280fcede4ba0831",
+      "sha256": "80215595606cb1a32ca7aad380aff8bcd1bb2939709724dd73d9f130f33c6b41",
+      "bytes": 28766
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/neo-museum.md",
+      "localPath": "resources/motionsites-imports/original/examples/neo-museum.md",
+      "gitBlob": "aa27b34fe1788592f20965230f9e14b74242a973",
+      "sha256": "c65bbbee2ef2a9576f4b7ddf0262397307fbaa2dc4e78a0e51cedaf0eee8e133",
+      "bytes": 15400
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/neon-logic.md",
+      "localPath": "resources/motionsites-imports/original/examples/neon-logic.md",
+      "gitBlob": "359cf9443dd32afa066f700c8ee20ba298807d41",
+      "sha256": "0631407180469afdfb282d1332478dcdd854876bf04c204aba0fe6c483029ca0",
+      "bytes": 13970
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/network-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/network-hero.md",
+      "gitBlob": "84c1424d1ae82f2b77e906ae2b038fff9997d5c1",
+      "sha256": "4f728b4b1af93d43dd943e209cbeda92325bafdd51a9a93f59e9374752e36aec",
+      "bytes": 7910
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/portal-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/portal-hero.md",
+      "gitBlob": "92031cf53a43d5a1e48733f1d47ba2dc81850d47",
+      "sha256": "3ae41f452b64309ea063e585975fb7db22955445a7a40a99ff85754b03a0d974",
+      "bytes": 7030
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/portfolio-cosmic-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/portfolio-cosmic-hero.md",
+      "gitBlob": "a814f05fe2da4836d4aa3a14aed0d186d91a7b0e",
+      "sha256": "025ee3379694feb92cc21ac3b90a22cb03e4d84baf085f9435a6182bdac431a2",
+      "bytes": 8730
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prisma-landing.md",
+      "localPath": "resources/motionsites-imports/original/examples/prisma-landing.md",
+      "gitBlob": "2b27e18c9992ee060f54ee6d0c830fd27497f311",
+      "sha256": "37f355f4525095c5a413bb940cad9a02002b9854937caf80acbfd07fbc050a3b",
+      "bytes": 8978
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prompt-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/prompt-hero.md",
+      "gitBlob": "3ce9d4f4c3aadeeb202c4cec2309271ea4524fee",
+      "sha256": "7af0da094b6dca1cfe0b3d8d835e8544148e9f74e31399022dd61ffeb8318d84",
+      "bytes": 13713
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prosthetics-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/prosthetics-hero.md",
+      "gitBlob": "dd43da93a9efbc116275741098ae8a55efb51c02",
+      "sha256": "96b0c6b4837db2c3346c2760a7e2463df39ad37a4c1359869d55ee740ed63a88",
+      "bytes": 3804
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/retro-futurist.md",
+      "localPath": "resources/motionsites-imports/original/examples/retro-futurist.md",
+      "gitBlob": "4461d565ded044fa120d432ec68057ec1277a58a",
+      "sha256": "9074e0715356d6d549e10c1640b85120868fd25c1e733a56c209436a75cfeee0",
+      "bytes": 6090
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/securify-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/securify-hero.md",
+      "gitBlob": "9c7a7b7c40899933b6ce2f2383520e8b31683151",
+      "sha256": "85df280ff85e5bfec3615b3565f607791d7eb17f69a06b0b1d1ee07a6a10278e",
+      "bytes": 4219
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/stillmind.md",
+      "localPath": "resources/motionsites-imports/original/examples/stillmind.md",
+      "gitBlob": "72a753063e1eaad0d2534c198879f8aa64634020",
+      "sha256": "1506beaf6322f06cb8a83b3ef44151e55bab9bac14974d37dcd002600dd571d6",
+      "bytes": 6383
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/tech-forward.md",
+      "localPath": "resources/motionsites-imports/original/examples/tech-forward.md",
+      "gitBlob": "677a43a4306c67e3c048df63d81242f94abf9137",
+      "sha256": "d87ad3125d7234cb98e7d73e1d362b8305596358d0c2c9b4f4b6b50e441ac783",
+      "bytes": 3767
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/velorah-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/velorah-hero.md",
+      "gitBlob": "8a5d4109df7b4ee299213186f5be89366684c503",
+      "sha256": "b92ade10b23298b56847627b084aeeabce55e0a820ab66abb73634b06cdb6a7a",
+      "bytes": 4161
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/vex-ventures-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/vex-ventures-hero.md",
+      "gitBlob": "3fadec0d728904cb9f97e654509b6eb27096c433",
+      "sha256": "1b6db7b00b4c02b635d9a5b7155170e9d0d1574008849b7121641a49b2abf060",
+      "bytes": 5436
+    }
+  ],
+  "records": [
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-character-studio.md",
+      "localPath": "resources/motionsites-imports/original/examples/3d-character-studio.md",
+      "gitBlob": "1fc0d18dd43d4a93bc828716c7c8eaa71068f76e",
+      "sha256": "871c9c38444f785b8c5e52c410b73597019d61fdd801ea36327bb35e43911400",
+      "bytes": 6250,
+      "id": "motionsites-3d-character-studio",
+      "slug": "3d-character-studio",
+      "title": "3D Character Studio",
+      "upstreamCategory": "3D",
+      "sourceUrl": "https://motionsites.ai/?prompt=3d-character-studio",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2ol7oe51mr4n9.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2F44eba8ce-fc5f-4fb4-bc19-de013c1d7404.png&w=1920&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 1,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2ol7oe51mr4n9.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2F44eba8ce-fc5f-4fb4-bc19-de013c1d7404.png&w=1920&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260826_041744_63efcd78-bf7d-4039-99e2-2461e8a61903.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2ol7oe51mr4n9.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2F44eba8ce-fc5f-4fb4-bc19-de013c1d7404.png&w=1920&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/796bb07be241ada67988296b.webp",
+          "sha256": "2a722ced32362fe8ceedc99e32c277e41b3505976220cb6df5080d61dfdc8708",
+          "bytes": 66950,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260826_041744_63efcd78-bf7d-4039-99e2-2461e8a61903.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/99024486182d1584b5f810af.mp4",
+          "sha256": "5f23c5935408f441c92d04c0a68f358e07e3ba70135a23b05b2c95473b668c3e",
+          "bytes": 810684,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-collectible-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/3d-collectible-hero.md",
+      "gitBlob": "492f1efd54498c4854414e8fd583022d993197a6",
+      "sha256": "dd39b5af1ff733bd71e7266719ea2f5754948e0fe59eaa78ee26ba8fbdb48148",
+      "bytes": 5749,
+      "id": "motionsites-3d-collectible-hero",
+      "slug": "3d-collectible-hero",
+      "title": "3D Collectible Hero",
+      "upstreamCategory": "3D Website",
+      "sourceUrl": "https://motionsites.ai/?prompt=3d-collectible-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=3d-collectible-hero",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 2,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://fifth-gentle-45902158.figma.site/_components/v2/4de492f6d9cf8244ad5293233e5c6f52407d42fc/1.02464a56.png"
+        ],
+        "video": []
+      },
+      "media": [
+        {
+          "url": "https://fifth-gentle-45902158.figma.site/_components/v2/4de492f6d9cf8244ad5293233e5c6f52407d42fc/1.02464a56.png",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/5f69aabb754d4ac187ae7112.png",
+          "sha256": "44d956dff662e244b2a54c043b7f7994e701b618f8614018a7b18604787a05f3",
+          "bytes": 7060349,
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-jack-portfolio-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/3d-jack-portfolio-hero.md",
+      "gitBlob": "c6bae58a51d772afeb8f24e34b6f9d365d4295bb",
+      "sha256": "9c6358d030e0c6071158139d71b8b5b3c8ace9dd9726f2ef5774cee4b296fbc5",
+      "bytes": 14424,
+      "id": "motionsites-3d-jack-portfolio-hero",
+      "slug": "3d-jack-portfolio-hero",
+      "title": "3D Jack Portfolio",
+      "upstreamCategory": "Portfolio",
+      "sourceUrl": "https://motionsites.ai/?prompt=3d-jack-portfolio-hero",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020402_14047c8b-e116-4ac5-bc7d-1ab18d18a358.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020402_14047c8b-e116-4ac5-bc7d-1ab18d18a358.png&w=1280&q=85"
+        ],
+        "video": []
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020402_14047c8b-e116-4ac5-bc7d-1ab18d18a358.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/74e074b87083e06ec6b956b9.webp",
+          "sha256": "5f968f89c3fe0373958d3448ebe20839d3bec4e758c6b1e802f357ef97d5f9e9",
+          "bytes": 66106,
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/aethera-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/aethera-hero.md",
+      "gitBlob": "36f2c7f6397b4c0a70defd956bb04290ee1f2705",
+      "sha256": "174ba8304d270e94fb50745e7ae6033a6cffa328762fc7693552cf692eb08227",
+      "bytes": 3547,
+      "id": "motionsites-aethera-hero",
+      "slug": "aethera-hero",
+      "title": "Aethera Studio",
+      "upstreamCategory": "Hero Section",
+      "sourceUrl": "https://motionsites.ai/?prompt=aethera-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=aethera-hero",
+      "status": "source-imported-reference-held",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_083109_283f3553-e28f-428b-a723-d639c617eb2b.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_083109_283f3553-e28f-428b-a723-d639c617eb2b.mp4",
+          "status": "held",
+          "reason": "Reference exceeds per-file delivery limit"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/aetheris-voyage-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/aetheris-voyage-hero.md",
+      "gitBlob": "0d28b113373281f0e037d7dd8f8400370a4fb7a4",
+      "sha256": "6dd28cdfc56476fe1063d90b70766ef29fc29171b140156d9da1c34ec20a5900",
+      "bytes": 10805,
+      "id": "motionsites-aetheris-voyage-hero",
+      "slug": "aetheris-voyage-hero",
+      "title": "Aetheris Voyage",
+      "upstreamCategory": "Hero Section",
+      "sourceUrl": "https://motionsites.ai/?prompt=aetheris-voyage-hero",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020834_841011fb-d336-4dcd-bbe6-493a895e4eb4.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020834_841011fb-d336-4dcd-bbe6-493a895e4eb4.png&w=1280&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_080021_d598092b-c4c2-4e53-8e46-94cf9064cd50.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020834_841011fb-d336-4dcd-bbe6-493a895e4eb4.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/daa4415bf14cc89f42ebafa3.webp",
+          "sha256": "c836d34ab9237d84fb8bb93d7edb9d8fcea009f47abd3e28fcf9c1ce9f0ce534",
+          "bytes": 36100,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_080021_d598092b-c4c2-4e53-8e46-94cf9064cd50.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/b211550d82acbd09e46a11e9.mp4",
+          "sha256": "83085022c7166780300a6ea6d4340b64b4ef432a47125c2aa0645377474bdb19",
+          "bytes": 2128096,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/agent-wave.md",
+      "localPath": "resources/motionsites-imports/original/examples/agent-wave.md",
+      "gitBlob": "2938931ee502c2176ad228e0d6e17a30ee52d7e7",
+      "sha256": "6668ee6ffe7a646e30b416df7ba533eaf46c80596d5b68f062c0045cbb1d515b",
+      "bytes": 17317,
+      "id": "motionsites-agent-wave",
+      "slug": "agent-wave",
+      "title": "Agent Wave",
+      "upstreamCategory": "AI",
+      "sourceUrl": "https://motionsites.ai/?prompt=agent-wave",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260818_075101_ea68beb6-4f5a-4e14-9dd0-6f07c6a8e27c.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 7,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260818_075101_ea68beb6-4f5a-4e14-9dd0-6f07c6a8e27c.png&w=1280&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260818_072341_50851634-bbc3-4c33-9acc-7647d4db44aa.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260818_075101_ea68beb6-4f5a-4e14-9dd0-6f07c6a8e27c.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/e0adc43e449f6cebaf8a5cc3.webp",
+          "sha256": "19e5c9e121d4b072bad82c3662a76dc42dd0bb849ed1b8829f5d9a570a12ff74",
+          "bytes": 114396,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260818_072341_50851634-bbc3-4c33-9acc-7647d4db44aa.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/b860acc611955323e719aafc.mp4",
+          "sha256": "5a8c3d7d2f3ac04c2fe40774dad05f14566fbd209127c42e87cdaa370d595959",
+          "bytes": 9488614,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/ai-runtime.md",
+      "localPath": "resources/motionsites-imports/original/examples/ai-runtime.md",
+      "gitBlob": "8bfe0b8e690485096f95397bf4da718b843e69cc",
+      "sha256": "099d81eb881c5177807b0e274e30c509852609f765841c3b79e87be36a9036b3",
+      "bytes": 10163,
+      "id": "motionsites-ai-runtime",
+      "slug": "ai-runtime",
+      "title": "AI Runtime",
+      "upstreamCategory": "AI",
+      "sourceUrl": "https://motionsites.ai/?prompt=ai-runtime",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260812_054351_d1d948b3-b00a-4bf2-b434-55f373010de8.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 7,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260812_054351_d1d948b3-b00a-4bf2-b434-55f373010de8.png&w=1280&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260812_054351_d1d948b3-b00a-4bf2-b434-55f373010de8.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/69bd1034e6a7b8ff7d00331d.webp",
+          "sha256": "00af87232f6184794d877c35c1b704820c408bdb35d1143d8d9b9ff3cb9cbd13",
+          "bytes": 138318,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/f1862a9c64d125907d3027e0.mp4",
+          "sha256": "c609927422fb125b4b8892467daa42400b2941283459eb6609ea90fed58389f0",
+          "bytes": 13856777,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/ai-workflow.md",
+      "localPath": "resources/motionsites-imports/original/examples/ai-workflow.md",
+      "gitBlob": "eea81adcbab6b9b8f238e15d12fcbdacbbd7f430",
+      "sha256": "5c48b34506e88ddc0222f80e970561593edab6002fd563c4997cf37125971b04",
+      "bytes": 17109,
+      "id": "motionsites-ai-workflow",
+      "slug": "ai-workflow",
+      "title": "AI Workflow Hero",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=ai-workflow",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260721_114043_a70b6aa4-73d7-4b38-9595-baa6a5bad2d3.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 6,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260721_114043_a70b6aa4-73d7-4b38-9595-baa6a5bad2d3.png&w=1280&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260511_131941_d136af49-e243-493a-be14-6ff3f24e09e6.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260721_114043_a70b6aa4-73d7-4b38-9595-baa6a5bad2d3.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/1843247a69a4f9d5938f5760.webp",
+          "sha256": "bdf8f1b6f69757d8549a09b5326c5eba3b76113f67695d2ca6598036105251f2",
+          "bytes": 79068,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260511_131941_d136af49-e243-493a-be14-6ff3f24e09e6.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/921b0d5364ec1b025143d49e.mp4",
+          "sha256": "751a2c5e285df01b1b3558e31ff0208af50b1d7a43217be6ea063394c1066395",
+          "bytes": 16662233,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/asme-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/asme-hero.md",
+      "gitBlob": "a4686ffb4920071c2d0118c95d2bb6207a405eb4",
+      "sha256": "c38c591e56b1516c563f1d16f1b207e4bf3e80ad4c8545a30be733db2d1a62da",
+      "bytes": 4883,
+      "id": "motionsites-asme-hero",
+      "slug": "asme-hero",
+      "title": "Asme",
+      "upstreamCategory": "Hero Section",
+      "sourceUrl": "https://motionsites.ai/?prompt=asme-hero",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020600_5ede1c43-1f5f-4d94-9292-4f1725bec0fc.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020600_5ede1c43-1f5f-4d94-9292-4f1725bec0fc.png&w=1280&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_115001_bcdaa3b4-03de-47e7-ad63-ae3e392c32d4.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020600_5ede1c43-1f5f-4d94-9292-4f1725bec0fc.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/a6569e073b1b982b1dd65564.webp",
+          "sha256": "76f305f02daa61fe2de68942f832fbdd07d9a524de5f0b2f70c115af3d48610a",
+          "bytes": 133936,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_115001_bcdaa3b4-03de-47e7-ad63-ae3e392c32d4.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/a7861d91c631f32250d35ca7.mp4",
+          "sha256": "e26edb15ac0e1032ea034f8d95f178cb1b6456fae699c8b7fcc1a4b2364d3f1b",
+          "bytes": 20064148,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/bloom-ai-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/bloom-ai-hero.md",
+      "gitBlob": "d1085771e9f7ab1e1cbd15f80e985016a86f0e19",
+      "sha256": "56caa1560340dcd2d25e41949247ddf7f17038c490fab6cc4d71078ae5122ea1",
+      "bytes": 4294,
+      "id": "motionsites-bloom-ai-hero",
+      "slug": "bloom-ai-hero",
+      "title": "Bloom AI",
+      "upstreamCategory": "Hero Section",
+      "sourceUrl": "https://motionsites.ai/?prompt=bloom-ai-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=bloom-ai-hero",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260315_073750_51473149-4350-4920-ae24-c8214286f323.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260315_073750_51473149-4350-4920-ae24-c8214286f323.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/13c3508c327b547df8e55890.mp4",
+          "sha256": "a0d12aee7e16527e34f9b1bf50684f0c560437c1d7fa7a54b4e53741cf9bbf7e",
+          "bytes": 12430549,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/bold-studio.md",
+      "localPath": "resources/motionsites-imports/original/examples/bold-studio.md",
+      "gitBlob": "99940d7aca87ab0e4c8a912e72c83867b5359ef9",
+      "sha256": "c36332e6be3aa8bc6baf8997355c0f2fb69a667a20c16d1b0570da4c686e63a5",
+      "bytes": 6431,
+      "id": "motionsites-bold-studio",
+      "slug": "bold-studio",
+      "title": "Bold Studio",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=bold-studio",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=bold-studio",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 2,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260606_154941_df1a96e1-a06f-450c-bd02-d863414cc1a0.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260606_154941_df1a96e1-a06f-450c-bd02-d863414cc1a0.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/d0f113a11b750eefc696e08b.mp4",
+          "sha256": "8ddcc4d001f91f43447103601299bad902f761818b7daf36b797134dfef50acc",
+          "bytes": 13160522,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/contact-cybernetic.md",
+      "localPath": "resources/motionsites-imports/original/examples/contact-cybernetic.md",
+      "gitBlob": "993b6383492081a9bc0031a90cdb1e4a95b94041",
+      "sha256": "b4d7d05cf39c16e3924096f63e3e12af0f86ec72fe847609bf063e00177f775a",
+      "bytes": 6809,
+      "id": "motionsites-contact-cybernetic",
+      "slug": "contact-cybernetic",
+      "title": "Contact Cybernetic",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=contact-cybernetic",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=contact-cybernetic",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260601_110537_3a579fa0-7bbc-4d94-9d25-0e816c7840f5.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260601_110537_3a579fa0-7bbc-4d94-9d25-0e816c7840f5.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/628333c6c5a106bd4f9d2b81.mp4",
+          "sha256": "a12a858763cb5a38e4a2147ca6b14ceb97a6b54eaf22c412e7be6573d930f44f",
+          "bytes": 3714600,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/creative-studio.md",
+      "localPath": "resources/motionsites-imports/original/examples/creative-studio.md",
+      "gitBlob": "310fd91c578b90e8affc5fc5f4a070cad8930846",
+      "sha256": "3510b9a22229b0a5d37a379b78eca7432b57ab49443e7d3e0f7318ef3990b704",
+      "bytes": 5865,
+      "id": "motionsites-creative-studio",
+      "slug": "creative-studio",
+      "title": "Creative Studio",
+      "upstreamCategory": "Agency",
+      "sourceUrl": "https://motionsites.ai/?prompt=creative-studio",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=creative-studio",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260517_222138_3e3205be-3364-417b-a64a-bfe087acbec4.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260517_222138_3e3205be-3364-417b-a64a-bfe087acbec4.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/1907be892bcecbbf80055dad.mp4",
+          "sha256": "8140138bc190ec07dea71bc1a5af85b75ac2c564b082debca33e67294bbca15e",
+          "bytes": 21980883,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/digital-epoch-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/digital-epoch-hero.md",
+      "gitBlob": "e98f0c84003f33cbd49962846bcda6ebbdbe032b",
+      "sha256": "ea63975912cf1a2da3b49ed16123dcb3c2c358e01e0143fc9ff74e04099474d5",
+      "bytes": 4984,
+      "id": "motionsites-digital-epoch-hero",
+      "slug": "digital-epoch-hero",
+      "title": "Digital Epoch",
+      "upstreamCategory": "Hero Section",
+      "sourceUrl": "https://motionsites.ai/?prompt=digital-epoch-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=digital-epoch-hero",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260505_101331_74f9b798-3f00-4e86-8a01-377aa16ffeaa.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260505_101331_74f9b798-3f00-4e86-8a01-377aa16ffeaa.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/79df348170dd489ff7a20425.mp4",
+          "sha256": "84882d84197946ee4ca32815ca8dd80684f11c13aa22cfc07f30d4a617c67ea3",
+          "bytes": 2788688,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/digital-experiences.md",
+      "localPath": "resources/motionsites-imports/original/examples/digital-experiences.md",
+      "gitBlob": "56fd5d10017f290f66c09b5d7748e2455a15c5e9",
+      "sha256": "23cde5ef5ae9e70544e6e5a414550ee3a376be964b0672ba1fe2373a55ea1a25",
+      "bytes": 9390,
+      "id": "motionsites-digital-experiences",
+      "slug": "digital-experiences",
+      "title": "Digital Experiences",
+      "upstreamCategory": "Landing Page",
+      "sourceUrl": "https://motionsites.ai/?prompt=digital-experiences",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=digital-experiences",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 1,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260619_191346_9d19d66e-86a4-47f7-8dc6-712c1788c3b2.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260619_191346_9d19d66e-86a4-47f7-8dc6-712c1788c3b2.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/968b279dafc40989ccc077e0.mp4",
+          "sha256": "acab51d41b35d68dea5f3597a2f65da0b5f7a56015bcbc6d3dd607d010fca087",
+          "bytes": 5737760,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/email-landing-page.md",
+      "localPath": "resources/motionsites-imports/original/examples/email-landing-page.md",
+      "gitBlob": "f5ed4c6265f120e618bca33c2fbbfc3ac8dec297",
+      "sha256": "a5f52f7a550ae60441eeceb5797488daca1b33f621dc0791e130f8d00fda59ff",
+      "bytes": 19950,
+      "id": "motionsites-email-landing-page",
+      "slug": "email-landing-page",
+      "title": "Email Landing Page",
+      "upstreamCategory": "Landing page",
+      "sourceUrl": "https://motionsites.ai/?prompt=email-landing-page",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=email-landing-page",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 7,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260508_064122_c4750c0e-7476-4b44-94a2-a85a65c63bf2.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260508_064122_c4750c0e-7476-4b44-94a2-a85a65c63bf2.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/64a49201ac40c891e373679c.mp4",
+          "sha256": "6f910c38577c5e45aa0907611af653c781f5ed0404f0f38ef5f9be1e1e860670",
+          "bytes": 16524236,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/equilibrium.md",
+      "localPath": "resources/motionsites-imports/original/examples/equilibrium.md",
+      "gitBlob": "c648de7fead2c78f4de8d0b0b38758293ad27c7e",
+      "sha256": "161e4c3f2b337478f48d5ad20aad2b753cd04c1ffd77b5d5e302aa3f02e2caee",
+      "bytes": 5157,
+      "id": "motionsites-equilibrium",
+      "slug": "equilibrium",
+      "title": "Equilibrium",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=equilibrium",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=equilibrium",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260511_230229_7c9bc431-46cf-489a-948d-e8144d8eb5d4.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260511_230229_7c9bc431-46cf-489a-948d-e8144d8eb5d4.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/09e3369764c00ab989edc46e.mp4",
+          "sha256": "473051d2c096ab92e66f0f6a45ec5068b9cecff86c3c5a3dab2488a25383fbc5",
+          "bytes": 5772143,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/halo-usd-landing.md",
+      "localPath": "resources/motionsites-imports/original/examples/halo-usd-landing.md",
+      "gitBlob": "929a9355d52da6042fddc0241b5b5fc4ab445232",
+      "sha256": "409c2ad47c1102706f0b00a24b6a109a6efa003ad9ec56d958aa953559412279",
+      "bytes": 8978,
+      "id": "motionsites-halo-usd-landing",
+      "slug": "halo-usd-landing",
+      "title": "USD Halo",
+      "upstreamCategory": "Landing Page",
+      "sourceUrl": "https://motionsites.ai/?prompt=halo-usd-landing",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=halo-usd-landing",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260423_164207_f243351d-ed59-48ec-83a0-a5e996bdbe3c.png&w=1280&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260423_161253_c72b1869-400f-45ed-ac0c-52f68c2ed5bd.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260423_164207_f243351d-ed59-48ec-83a0-a5e996bdbe3c.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/1361da5891b1b60a06fe38b7.webp",
+          "sha256": "7aa443aa15186375b9254a149f915a6d2dd730dee9e925f65d130635dcde97f8",
+          "bytes": 58566,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260423_161253_c72b1869-400f-45ed-ac0c-52f68c2ed5bd.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/83e47430299e69c7c9e20164.mp4",
+          "sha256": "e826a0ded2ebaca867be8ab7d16f4a72c4b1591e0e92a076562fb8c0da76408b",
+          "bytes": 5129492,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/immersive-ocean.md",
+      "localPath": "resources/motionsites-imports/original/examples/immersive-ocean.md",
+      "gitBlob": "29e889f6b1631a2031dd11e7f19a14d634cf6563",
+      "sha256": "15e65ded086c5975508cd95d8d3567ec1a7dfe1d9161caa58cc1c8b79ab496ba",
+      "bytes": 4406,
+      "id": "motionsites-immersive-ocean",
+      "slug": "immersive-ocean",
+      "title": "Immersive Ocean",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=immersive-ocean",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=immersive-ocean",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 2,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204221_5339e40b-e73d-4ab0-9c65-79c18c66fd50.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204221_5339e40b-e73d-4ab0-9c65-79c18c66fd50.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/481c662b602dfa44491885ca.mp4",
+          "sha256": "75856a0709d530e479618e4c130a2f577f50963cdbf12532ed4ec87d6a94fbb8",
+          "bytes": 7611846,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/innovation-landing.md",
+      "localPath": "resources/motionsites-imports/original/examples/innovation-landing.md",
+      "gitBlob": "75b97096b452e3f1fda0c01d0ea8ed42b9ed6899",
+      "sha256": "9660d9291d20c82bd42c8f19782a7d7b7407cb62b0dd9d7ed35e522414072d26",
+      "bytes": 9380,
+      "id": "motionsites-innovation-landing",
+      "slug": "innovation-landing",
+      "title": "Innovation",
+      "upstreamCategory": "Landing Page",
+      "sourceUrl": "https://motionsites.ai/?prompt=innovation-landing",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=innovation-landing",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_074625_a81f018a-956b-43fb-9aee-4d1508e30e6a.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_074625_a81f018a-956b-43fb-9aee-4d1508e30e6a.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/3a9c569d7fa43699db48d210.mp4",
+          "sha256": "bcc26c97dda8f63466f7fd4aacbe58557a6873f22ad225181dd898f98b2a7a69",
+          "bytes": 13480268,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/intelligence-layer.md",
+      "localPath": "resources/motionsites-imports/original/examples/intelligence-layer.md",
+      "gitBlob": "252094bad71df89cb5ec974125c6ebd1efc88eb3",
+      "sha256": "a30aff9e68eec1e1372df3a584285b5f5d798aa3c74d5aa8c8d45716dec62808",
+      "bytes": 14617,
+      "id": "motionsites-intelligence-layer",
+      "slug": "intelligence-layer",
+      "title": "Intelligence Layer",
+      "upstreamCategory": "Technology",
+      "sourceUrl": "https://motionsites.ai/?prompt=intelligence-layer",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260811_042402_7cde3e27-e8c9-46aa-b2e6-c93ef1bebe70.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260811_042402_7cde3e27-e8c9-46aa-b2e6-c93ef1bebe70.png&w=1280&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260808_112712_da9d53df-6d27-4b12-bdf6-aa9dc2622bdf.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260811_042402_7cde3e27-e8c9-46aa-b2e6-c93ef1bebe70.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/b2907a2f84e6e3be27e6099e.webp",
+          "sha256": "630319780a15c0bad228a3ffbbd3e4d1da35148d6ebcafbdd9e2044b6be34a54",
+          "bytes": 35284,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260808_112712_da9d53df-6d27-4b12-bdf6-aa9dc2622bdf.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/59635b67b1534a725089f683.mp4",
+          "sha256": "8c0a07b331f8967166a4d7fdbcc99d82604df3f0937671eec16256abcc307843",
+          "bytes": 5361462,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/intelligent-operations.md",
+      "localPath": "resources/motionsites-imports/original/examples/intelligent-operations.md",
+      "gitBlob": "1e104b4287f0f07827cf9046751cfa5488a2f35a",
+      "sha256": "658e7cca01ddeadbb1458c0ff1669336f42b766eb1bfafb400a014b1c5193bb0",
+      "bytes": 11087,
+      "id": "motionsites-intelligent-operations",
+      "slug": "intelligent-operations",
+      "title": "Intelligent Operations",
+      "upstreamCategory": "Agency",
+      "sourceUrl": "https://motionsites.ai/?prompt=intelligent-operations",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260730_075859_52d1611f-168a-44ed-8222-ba56da2755fa.png&w=1920&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 6,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260730_075859_52d1611f-168a-44ed-8222-ba56da2755fa.png&w=1920&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260729_102822_0e6c87e8-c141-4744-bf32-ad30db296371.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260730_075859_52d1611f-168a-44ed-8222-ba56da2755fa.png&w=1920&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/55111624b561d82a8cd5ddae.webp",
+          "sha256": "196685c8a6084a7be50951669697fd75aadbb9955cd69ffa856c9c2c4b689005",
+          "bytes": 77846,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260729_102822_0e6c87e8-c141-4744-bf32-ad30db296371.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/b58c7622727caed05c6ec924.mp4",
+          "sha256": "9706ce8a7a83047654c0fb4833a413e6a7d164df09d1f7ae6b0d26f9d1d5e18e",
+          "bytes": 10321675,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/interactive-discovery.md",
+      "localPath": "resources/motionsites-imports/original/examples/interactive-discovery.md",
+      "gitBlob": "9d0933f9fba3058c50eb5ceb3c2129bc02cea8b7",
+      "sha256": "7333dfa51324001c9236f02733c110efda9bcb5c0e01c6c5b60fe8de7debe742",
+      "bytes": 7476,
+      "id": "motionsites-interactive-discovery",
+      "slug": "interactive-discovery",
+      "title": "Interactive Discovery",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=interactive-discovery",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260721_114031_72704ebf-b8c6-4568-99e5-240183a9dcce.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 2,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260721_114031_72704ebf-b8c6-4568-99e5-240183a9dcce.png&w=1280&q=85"
+        ],
+        "video": []
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260721_114031_72704ebf-b8c6-4568-99e5-240183a9dcce.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/ff3c4e19ae015df1b7c786d6.webp",
+          "sha256": "6f3318760bb2e2c26a987d818f4dc04fb123d5177bb03883f745364dbc22104b",
+          "bytes": 115264,
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/mindloop-landing.md",
+      "localPath": "resources/motionsites-imports/original/examples/mindloop-landing.md",
+      "gitBlob": "39e4bc05646c21e1670a6a1299d4da062adb3773",
+      "sha256": "a069ff4bfde557832ab9fd300ba20a4c2a1eb15c33145ef902467d1e9882eb5b",
+      "bytes": 7654,
+      "id": "motionsites-mindloop-landing",
+      "slug": "mindloop-landing",
+      "title": "Mindloop Landing",
+      "upstreamCategory": "Landing Page",
+      "sourceUrl": "https://motionsites.ai/?prompt=mindloop-landing",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=mindloop-landing",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260325_120549_0cd82c36-56b3-4dd9-b190-069cfc3a623f.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260325_120549_0cd82c36-56b3-4dd9-b190-069cfc3a623f.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/86add4352fc227463f6beb39.mp4",
+          "sha256": "3db19c26629c9eba4e652f0012aff098feef922ff2c5ca49ed0f457c08cbe2b3",
+          "bytes": 22163077,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/modern-agency.md",
+      "localPath": "resources/motionsites-imports/original/examples/modern-agency.md",
+      "gitBlob": "739582a6ce40698bccf6ab9f02a9c5b61ab0df47",
+      "sha256": "b27403daafbbb9dc34f288b1b7dbd99ebb5c6c820c610aebc5622bf6899c1a4b",
+      "bytes": 10719,
+      "id": "motionsites-modern-agency",
+      "slug": "modern-agency",
+      "title": "Modern Agency",
+      "upstreamCategory": "Agency",
+      "sourceUrl": "https://motionsites.ai/?prompt=modern-agency",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=modern-agency",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 1,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260516_090123_74be96d4-9c1b-40cf-932a-96f4f4babed3.png&w=1280&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260516_122702_390f5305-8719-41d5-ae80-d23ab3796c28.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260516_090123_74be96d4-9c1b-40cf-932a-96f4f4babed3.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/0d3a1dddfde081a789052c3e.webp",
+          "sha256": "4f995b84c711086bfe787cf52c693fcb3403ef9714004bfd272be8cbeb78bd94",
+          "bytes": 84438,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260516_122702_390f5305-8719-41d5-ae80-d23ab3796c28.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/072166e39a8669fe502f121d.mp4",
+          "sha256": "7ae4366f98d04032dcb7d39cbaf0de8acd2d621e6596c4f1a61ada7692cad432",
+          "bytes": 5382028,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/mostar-guide.md",
+      "localPath": "resources/motionsites-imports/original/examples/mostar-guide.md",
+      "gitBlob": "fd9e5df35032aa6806b5a7f56280fcede4ba0831",
+      "sha256": "80215595606cb1a32ca7aad380aff8bcd1bb2939709724dd73d9f130f33c6b41",
+      "bytes": 28766,
+      "id": "motionsites-mostar-guide",
+      "slug": "mostar-guide",
+      "title": "Mostar Guide",
+      "upstreamCategory": "Travel",
+      "sourceUrl": "https://motionsites.ai/?prompt=mostar-guide",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260730_235046_ab8d2f0d-42b9-4091-8371-cdefe46e898f.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 10,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260730_235046_ab8d2f0d-42b9-4091-8371-cdefe46e898f.png&w=1280&q=85"
+        ],
+        "video": []
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260730_235046_ab8d2f0d-42b9-4091-8371-cdefe46e898f.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/8572a95220d6300b8d1bc91a.webp",
+          "sha256": "61cc2fe9379daa5dd3fdce688799a59f605e36afdfc0749334ae060d537dd2b9",
+          "bytes": 200762,
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/neo-museum.md",
+      "localPath": "resources/motionsites-imports/original/examples/neo-museum.md",
+      "gitBlob": "aa27b34fe1788592f20965230f9e14b74242a973",
+      "sha256": "c65bbbee2ef2a9576f4b7ddf0262397307fbaa2dc4e78a0e51cedaf0eee8e133",
+      "bytes": 15400,
+      "id": "motionsites-neo-museum",
+      "slug": "neo-museum",
+      "title": "Neo Museum",
+      "upstreamCategory": "Website",
+      "sourceUrl": "https://motionsites.ai/?prompt=neo-museum",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=neo-museum",
+      "status": "source-imported-reference-held",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 5,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://res.cloudinary.com/dsdxaxkiz/image/upload/v1779624247/01_udnber.png"
+        ],
+        "video": [
+          "https://res.cloudinary.com/dsdxaxkiz/video/upload/v1779624998/magnific_use-img-2-as-the-exact-ba_Piu3X0W42C_wnrc8f.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://res.cloudinary.com/dsdxaxkiz/image/upload/v1779624247/01_udnber.png",
+          "status": "held",
+          "reason": "HTTP Error 401: Unauthorized"
+        },
+        {
+          "url": "https://res.cloudinary.com/dsdxaxkiz/video/upload/v1779624998/magnific_use-img-2-as-the-exact-ba_Piu3X0W42C_wnrc8f.mp4",
+          "status": "held",
+          "reason": "HTTP Error 401: Unauthorized"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/neon-logic.md",
+      "localPath": "resources/motionsites-imports/original/examples/neon-logic.md",
+      "gitBlob": "359cf9443dd32afa066f700c8ee20ba298807d41",
+      "sha256": "0631407180469afdfb282d1332478dcdd854876bf04c204aba0fe6c483029ca0",
+      "bytes": 13970,
+      "id": "motionsites-neon-logic",
+      "slug": "neon-logic",
+      "title": "Neon Logic",
+      "upstreamCategory": "Landing Page",
+      "sourceUrl": "https://motionsites.ai/?prompt=neon-logic",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=neon-logic",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 2,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_083515_290e5a10-0b95-41af-a5e2-32b6389baa4d.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_083515_290e5a10-0b95-41af-a5e2-32b6389baa4d.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/583c63de446e556bf6826231.mp4",
+          "sha256": "3cd3d8e298ccc75b93dc1816ac9158b06d1c7c65759ac25ccf6c2cb30350bc08",
+          "bytes": 5339753,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/network-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/network-hero.md",
+      "gitBlob": "84c1424d1ae82f2b77e906ae2b038fff9997d5c1",
+      "sha256": "4f728b4b1af93d43dd943e209cbeda92325bafdd51a9a93f59e9374752e36aec",
+      "bytes": 7910,
+      "id": "motionsites-network-hero",
+      "slug": "network-hero",
+      "title": "Network Hero",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=network-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=network-hero",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 1,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260624_111401_56af5012-2263-45d3-849a-8688084d7c2a.png&w=1280&q=85"
+        ],
+        "video": []
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260624_111401_56af5012-2263-45d3-849a-8688084d7c2a.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/a47fe18f9de2e906c93a0984.webp",
+          "sha256": "75cf15a2de58237a572adc7b5a2c5f4941004172f61e1512f7cf3c604d582cd0",
+          "bytes": 11234,
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/portal-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/portal-hero.md",
+      "gitBlob": "92031cf53a43d5a1e48733f1d47ba2dc81850d47",
+      "sha256": "3ae41f452b64309ea063e585975fb7db22955445a7a40a99ff85754b03a0d974",
+      "bytes": 7030,
+      "id": "motionsites-portal-hero",
+      "slug": "portal-hero",
+      "title": "Portal",
+      "upstreamCategory": "Hero Section",
+      "sourceUrl": "https://motionsites.ai/?prompt=portal-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=portal-hero",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260406_094145_4a271a6c-3869-4f1c-8aa7-aeb0cb227994.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260406_094145_4a271a6c-3869-4f1c-8aa7-aeb0cb227994.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/de7f03353eeccb103dbbb6c8.mp4",
+          "sha256": "dc90e8d553c51b767d6a73b2d775bcb964f4a3e7b5905c0a9b87e82e628b5a07",
+          "bytes": 9432377,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/portfolio-cosmic-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/portfolio-cosmic-hero.md",
+      "gitBlob": "a814f05fe2da4836d4aa3a14aed0d186d91a7b0e",
+      "sha256": "025ee3379694feb92cc21ac3b90a22cb03e4d84baf085f9435a6182bdac431a2",
+      "bytes": 8730,
+      "id": "motionsites-portfolio-cosmic-hero",
+      "slug": "portfolio-cosmic-hero",
+      "title": "Portfolio Cosmic",
+      "upstreamCategory": "Portfolio",
+      "sourceUrl": "https://motionsites.ai/?prompt=portfolio-cosmic-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=portfolio-cosmic-hero",
+      "status": "source-imported-reference-held",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": []
+      },
+      "media": []
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prisma-landing.md",
+      "localPath": "resources/motionsites-imports/original/examples/prisma-landing.md",
+      "gitBlob": "2b27e18c9992ee060f54ee6d0c830fd27497f311",
+      "sha256": "37f355f4525095c5a413bb940cad9a02002b9854937caf80acbfd07fbc050a3b",
+      "bytes": 8978,
+      "id": "motionsites-prisma-landing",
+      "slug": "prisma-landing",
+      "title": "Prisma Creative Studio",
+      "upstreamCategory": "Landing Page",
+      "sourceUrl": "https://motionsites.ai/?prompt=prisma-landing",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020417_f0fb8494-c926-46a7-afd9-51f2d3f567a1.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020417_f0fb8494-c926-46a7-afd9-51f2d3f567a1.png&w=1280&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020417_f0fb8494-c926-46a7-afd9-51f2d3f567a1.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/f2992f45c8714bfd62b4f826.webp",
+          "sha256": "ba4c62201b6736cd70863769d253bc57ecd573042d9b87b13d97fcd1ee47b79b",
+          "bytes": 174986,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/50916edfda9facb3b238b51f.mp4",
+          "sha256": "f3a614b0ec8196c371448dbd9bcc3ad73223239fd9c31f63a2a82a6057e2a5d6",
+          "bytes": 16092112,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prompt-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/prompt-hero.md",
+      "gitBlob": "3ce9d4f4c3aadeeb202c4cec2309271ea4524fee",
+      "sha256": "7af0da094b6dca1cfe0b3d8d835e8544148e9f74e31399022dd61ffeb8318d84",
+      "bytes": 13713,
+      "id": "motionsites-prompt-hero",
+      "slug": "prompt-hero",
+      "title": "PROMPT",
+      "upstreamCategory": "Landing Page",
+      "sourceUrl": "https://motionsites.ai/?prompt=prompt-hero",
+      "referenceImageUrl": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020312_6a21f245-35e1-47c1-a730-090d3ebd518e.png&w=1280&q=85",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 1,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020312_6a21f245-35e1-47c1-a730-090d3ebd518e.png&w=1280&q=85"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_39ca84eAE1ODL9hbR5VhoEj8tBf/hf_20260625_154433_532a85d3-dabf-4265-b8bd-19ac6af31842.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260715_020312_6a21f245-35e1-47c1-a730-090d3ebd518e.png&w=1280&q=85",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/4e8ca740ce49af6ec6c338d0.webp",
+          "sha256": "4cfbab84c336e933ee8ce84f0f2600b7f071107a4c4be85511e056850f064f02",
+          "bytes": 50614,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39ca84eAE1ODL9hbR5VhoEj8tBf/hf_20260625_154433_532a85d3-dabf-4265-b8bd-19ac6af31842.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/8d448b3a960cfe4f5dace769.mp4",
+          "sha256": "e8ff85530415d85489ccd9631e274b216c1bd904ef59d38fb13e647910cd40d0",
+          "bytes": 3841185,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prosthetics-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/prosthetics-hero.md",
+      "gitBlob": "dd43da93a9efbc116275741098ae8a55efb51c02",
+      "sha256": "96b0c6b4837db2c3346c2760a7e2463df39ad37a4c1359869d55ee740ed63a88",
+      "bytes": 3804,
+      "id": "motionsites-prosthetics-hero",
+      "slug": "prosthetics-hero",
+      "title": "Prosthetics Hero",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=prosthetics-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=prosthetics-hero",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260508_215831_c6a8989c-d716-4d8d-8745-e972a2eec711.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260508_215831_c6a8989c-d716-4d8d-8745-e972a2eec711.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/be71d44eed5568f8a2608a17.mp4",
+          "sha256": "13bd7fb9372f9f0e63d10731cd04abd3e88c1ba37c64f49756b396dcbf02a67e",
+          "bytes": 2716267,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/retro-futurist.md",
+      "localPath": "resources/motionsites-imports/original/examples/retro-futurist.md",
+      "gitBlob": "4461d565ded044fa120d432ec68057ec1277a58a",
+      "sha256": "9074e0715356d6d549e10c1640b85120868fd25c1e733a56c209436a75cfeee0",
+      "bytes": 6090,
+      "id": "motionsites-retro-futurist",
+      "slug": "retro-futurist",
+      "title": "Retro-Futurist",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=retro-futurist",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=retro-futurist",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 1,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260530_042513_df96a13b-6155-4f6e-8b93-c9dee66fba08.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260530_042513_df96a13b-6155-4f6e-8b93-c9dee66fba08.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/14d375d3b07bcd3bd7abf09f.mp4",
+          "sha256": "a8a035f82baaf5e07d90e451f8cee4416c68d03781dba6dc8143e4b41974c25b",
+          "bytes": 4588424,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/securify-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/securify-hero.md",
+      "gitBlob": "9c7a7b7c40899933b6ce2f2383520e8b31683151",
+      "sha256": "85df280ff85e5bfec3615b3565f607791d7eb17f69a06b0b1d1ee07a6a10278e",
+      "bytes": 4219,
+      "id": "motionsites-securify-hero",
+      "slug": "securify-hero",
+      "title": "Securify Data Security",
+      "upstreamCategory": "SaaS",
+      "sourceUrl": "https://motionsites.ai/?prompt=securify-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=securify-hero",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_063509_7d167302-4fd4-480b-8260-18ab572333d4.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_063509_7d167302-4fd4-480b-8260-18ab572333d4.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/6a0fec0d385613291ae94ba3.mp4",
+          "sha256": "02c017e81205e252d81d99f81ed0544c135fc6ea41db61a798fed8f80a392542",
+          "bytes": 22896688,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/stillmind.md",
+      "localPath": "resources/motionsites-imports/original/examples/stillmind.md",
+      "gitBlob": "72a753063e1eaad0d2534c198879f8aa64634020",
+      "sha256": "1506beaf6322f06cb8a83b3ef44151e55bab9bac14974d37dcd002600dd571d6",
+      "bytes": 6383,
+      "id": "motionsites-stillmind",
+      "slug": "stillmind",
+      "title": "Stillmind",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=stillmind",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=stillmind",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 5,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [
+          "https://soft-zoom-63098134.figma.site/_assets/v11/0b4a435b2df2747593c43d7a1c9b4578f7d8d90c.png"
+        ],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260702_081127_0992a171-d3c6-4978-8213-0ec5df8b6d63.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://soft-zoom-63098134.figma.site/_assets/v11/0b4a435b2df2747593c43d7a1c9b4578f7d8d90c.png",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/0af17236613cd1b47c49b872.png",
+          "sha256": "1646c5d57c33afea3704f088ee21270a5c21a70a1ee9c7d5ec7107149bf29773",
+          "bytes": 1914322,
+          "kind": "image"
+        },
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260702_081127_0992a171-d3c6-4978-8213-0ec5df8b6d63.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/0dddf9fdc91ab8d09fc24426.mp4",
+          "sha256": "25f8d1c02b4e9ef91858255163e76a82a825901b5a8abf29b3843ac35322ea2d",
+          "bytes": 14397127,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/tech-forward.md",
+      "localPath": "resources/motionsites-imports/original/examples/tech-forward.md",
+      "gitBlob": "677a43a4306c67e3c048df63d81242f94abf9137",
+      "sha256": "d87ad3125d7234cb98e7d73e1d362b8305596358d0c2c9b4f4b6b50e441ac783",
+      "bytes": 3767,
+      "id": "motionsites-tech-forward",
+      "slug": "tech-forward",
+      "title": "Tech-Forward",
+      "upstreamCategory": "Hero",
+      "sourceUrl": "https://motionsites.ai/?prompt=tech-forward",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=tech-forward",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260508_215831_c6a8989c-d716-4d8d-8745-e972a2eec711.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260508_215831_c6a8989c-d716-4d8d-8745-e972a2eec711.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/be71d44eed5568f8a2608a17.mp4",
+          "sha256": "13bd7fb9372f9f0e63d10731cd04abd3e88c1ba37c64f49756b396dcbf02a67e",
+          "bytes": 2716267,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/velorah-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/velorah-hero.md",
+      "gitBlob": "8a5d4109df7b4ee299213186f5be89366684c503",
+      "sha256": "b92ade10b23298b56847627b084aeeabce55e0a820ab66abb73634b06cdb6a7a",
+      "bytes": 4161,
+      "id": "motionsites-velorah-hero",
+      "slug": "velorah-hero",
+      "title": "Velorah",
+      "upstreamCategory": "Agency",
+      "sourceUrl": "https://motionsites.ai/?prompt=velorah-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=velorah-hero",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/94d9b3db9d75cc9ba2bf4975.mp4",
+          "sha256": "c5c37853107ca51166f453662a4ccbfd668a020e7cd70ffa0b5a3be0351d458b",
+          "bytes": 14142575,
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/vex-ventures-hero.md",
+      "localPath": "resources/motionsites-imports/original/examples/vex-ventures-hero.md",
+      "gitBlob": "3fadec0d728904cb9f97e654509b6eb27096c433",
+      "sha256": "1b6db7b00b4c02b635d9a5b7155170e9d0d1574008849b7121641a49b2abf060",
+      "bytes": 5436,
+      "id": "motionsites-vex-ventures-hero",
+      "slug": "vex-ventures-hero",
+      "title": "VEX Ventures",
+      "upstreamCategory": "Hero Section",
+      "sourceUrl": "https://motionsites.ai/?prompt=vex-ventures-hero",
+      "referenceImageUrl": "https://motionsites.ai/?prompt=vex-ventures-hero",
+      "status": "media-cached",
+      "license": "LicenseRef-MotionSites-Distribution",
+      "freeEvidence": "Publisher repository free-example header and INDEX.md",
+      "codeFences": 0,
+      "implementationStatus": "Prompt and source excerpts; full application compilation not verified",
+      "referenceCandidates": {
+        "image": [],
+        "video": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260403_050628_c4e32401-fab4-4a27-b7a8-6e9291cd5959.mp4"
+        ]
+      },
+      "media": [
+        {
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260403_050628_c4e32401-fab4-4a27-b7a8-6e9291cd5959.mp4",
+          "status": "cached",
+          "file": "resources/motionsites-imports/media/2c7f9061c7f0a1de75b86c0a.mp4",
+          "sha256": "b5b94349cbee970b0963bebfb394cce19e323a8399a10df5f20ae78f6b5ef98e",
+          "bytes": 13786890,
+          "kind": "video"
+        }
+      ]
+    }
+  ],
+  "coverage": "All 40 prompts in the pinned publisher free sample. Not all free designs currently visible on the live website.",
+  "distribution": "Additional distribution authorization handled separately; upstream notices retained. Public repository MIT does not cover example prompts/media.",
+  "mediaSummary": {
+    "uniqueReferences": 52,
+    "cached": 49,
+    "held": 3,
+    "bytes": 332221718
+  }
+}

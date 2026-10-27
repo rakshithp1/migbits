@@ -42,6 +42,7 @@ next-env.d.ts
 
 # Local research and verification intermediates
 /tmp/
+/resources/motionsites-imports/media/
 
 # Cloudflare build output and local credentials
 /.open-next/

@@ -13,6 +13,7 @@ export function validateLibrary(items: LibraryResource[]): string[] {
     }
     if (item.id.startsWith("approved-") && (!item.review || item.review.status !== "APPROVED" || item.review.preview !== "passed" || !/^[a-f0-9]{64}$/.test(item.review.sourceDigest) || !item.review.evidence || !item.review.notices.length)) errors.push(`New resource has no complete source/preview gate: ${item.id}`);
     if (item.template && (item.category !== "templates" || !Number.isInteger(item.template.pages) || item.template.pages < 1 || !item.template.kind || !item.template.motionEngine)) errors.push(`Invalid template metadata: ${item.id}`);
+    if (item.previewType === "design-prompt" && (item.category !== "prompts" || !item.prompt || item.license !== "LicenseRef-MotionSites-Distribution")) errors.push(`Invalid prompt provenance: ${item.id}`);
   }
   return errors;
 }

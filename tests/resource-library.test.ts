@@ -92,7 +92,7 @@ test("every gallery source and asset exists and original downloads preserve lice
   for (const item of libraryResources.filter((r) => r.license === "OFL-1.1"))
     assert.equal(item.category, "typography");
   assert.deepEqual(validateLibrary(libraryResources), []);
-  assert.ok(libraryResources.every(r => ["MIT", "MIT AND OFL-1.1", "OFL-1.1", "CC0-1.0", "Unlicense"].includes(r.license)));
+  assert.ok(libraryResources.every(r => ["MIT", "MIT AND OFL-1.1", "OFL-1.1", "CC0-1.0", "Unlicense", "LicenseRef-MotionSites-Distribution"].includes(r.license)));
 });
 
 test("new resources cannot bypass source/preview approval or safe artifact paths", () => {

@@ -35,6 +35,7 @@ import { SearchShortcut } from "./search-shortcut";
 import { ThemeControls } from "./theme-controls";
 import { MotionCollectionCover } from "./motion-collection-cover";
 const sectionIcons: Record<string, typeof Component> = {
+  prompts: Sparkles,
   tools: Wrench,
   themes: Palette,
   backgrounds: Sparkles,
@@ -256,7 +257,7 @@ export function ResourceCard({
             resourceUsage(item).summary
           }
         >
-          {item.license === "OFL-1.1" ? "OFL" : item.license}
+          {item.license === "OFL-1.1" ? "OFL" : item.license === "LicenseRef-MotionSites-Distribution" ? "Licensed" : item.license}
         </span>
       </div>
       <div className="mb-card-foot">

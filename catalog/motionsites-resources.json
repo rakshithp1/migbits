@@ -1,0 +1,1761 @@
+[
+  {
+    "id": "motionsites-3d-character-studio",
+    "name": "MigBits / 3D Character Studio",
+    "description": "MotionSites 3D design prompt with a MigBits build brief and 1 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/3d-character-studio.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=3d-character-studio",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "3D",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/3d-character-studio.html",
+    "image": "/library/motionsites/thumbnails/3d-character-studio.webp",
+    "dataUrl": "/library/motionsites/data/3d-character-studio.json",
+    "downloadUrl": "/library/motionsites/downloads/3d-character-studio.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "1 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "3D Character Studio",
+      "upstreamCategory": "3D",
+      "excerptCount": 1,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/796bb07be241ada67988296b.webp",
+        "/library/motionsites/media/99024486182d1584b5f810af.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-3d-collectible-hero",
+    "name": "MigBits / 3D Collectible Hero",
+    "description": "MotionSites 3D Website design prompt with a MigBits build brief and 2 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/3d-collectible-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=3d-collectible-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "3D Website",
+      "Build prompt",
+      "Design reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/3d-collectible-hero.html",
+    "image": "/library/motionsites/thumbnails/3d-collectible-hero.webp",
+    "dataUrl": "/library/motionsites/data/3d-collectible-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/3d-collectible-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "2 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "3D Collectible Hero",
+      "upstreamCategory": "3D Website",
+      "excerptCount": 2,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/5f69aabb754d4ac187ae7112.png"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-3d-jack-portfolio-hero",
+    "name": "MigBits / 3D Jack Portfolio",
+    "description": "MotionSites Portfolio design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/3d-jack-portfolio-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=3d-jack-portfolio-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Portfolio",
+      "Build prompt",
+      "Design reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/3d-jack-portfolio-hero.html",
+    "image": "/library/motionsites/thumbnails/3d-jack-portfolio-hero.webp",
+    "dataUrl": "/library/motionsites/data/3d-jack-portfolio-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/3d-jack-portfolio-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "3D Jack Portfolio",
+      "upstreamCategory": "Portfolio",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/74e074b87083e06ec6b956b9.webp"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-aethera-hero",
+    "name": "MigBits / Aethera Studio",
+    "description": "MotionSites Hero Section design prompt with a MigBits build brief and 0 preserved code excerpts. Reference media unavailable; original source available.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/aethera-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=aethera-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero Section",
+      "Build prompt",
+      "Design reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/aethera-hero.html",
+    "image": "/library/motionsites/thumbnails/aethera-hero.webp",
+    "dataUrl": "/library/motionsites/data/aethera-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/aethera-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Aethera Studio",
+      "upstreamCategory": "Hero Section",
+      "excerptCount": 0,
+      "previewMode": "unavailable",
+      "implementation": "not-compiled",
+      "media": []
+    }
+  },
+  {
+    "id": "motionsites-aetheris-voyage-hero",
+    "name": "MigBits / Aetheris Voyage",
+    "description": "MotionSites Hero Section design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/aetheris-voyage-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=aetheris-voyage-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero Section",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/aetheris-voyage-hero.html",
+    "image": "/library/motionsites/thumbnails/aetheris-voyage-hero.webp",
+    "dataUrl": "/library/motionsites/data/aetheris-voyage-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/aetheris-voyage-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Aetheris Voyage",
+      "upstreamCategory": "Hero Section",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/daa4415bf14cc89f42ebafa3.webp",
+        "/library/motionsites/media/b211550d82acbd09e46a11e9.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-agent-wave",
+    "name": "MigBits / Agent Wave",
+    "description": "MotionSites AI design prompt with a MigBits build brief and 1 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/agent-wave.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=agent-wave",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "AI",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/agent-wave.html",
+    "image": "/library/motionsites/thumbnails/agent-wave.webp",
+    "dataUrl": "/library/motionsites/data/agent-wave.json",
+    "downloadUrl": "/library/motionsites/downloads/agent-wave.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "1 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Agent Wave",
+      "upstreamCategory": "AI",
+      "excerptCount": 1,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/e0adc43e449f6cebaf8a5cc3.webp",
+        "/library/motionsites/media/b860acc611955323e719aafc.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-ai-runtime",
+    "name": "MigBits / AI Runtime",
+    "description": "MotionSites AI design prompt with a MigBits build brief and 3 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/ai-runtime.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=ai-runtime",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "AI",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/ai-runtime.html",
+    "image": "/library/motionsites/thumbnails/ai-runtime.webp",
+    "dataUrl": "/library/motionsites/data/ai-runtime.json",
+    "downloadUrl": "/library/motionsites/downloads/ai-runtime.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "3 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "AI Runtime",
+      "upstreamCategory": "AI",
+      "excerptCount": 3,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/69bd1034e6a7b8ff7d00331d.webp",
+        "/library/motionsites/media/f1862a9c64d125907d3027e0.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-ai-workflow",
+    "name": "MigBits / AI Workflow Hero",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 5 preserved code excerpts. Live React adaptation included.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/ai-workflow.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=ai-workflow",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Live adaptation",
+      "Video reference"
+    ],
+    "format": "Prompt · React · TypeScript",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/ai-workflow.html",
+    "image": "/library/motionsites/thumbnails/ai-workflow.webp",
+    "dataUrl": "/library/motionsites/data/ai-workflow.json",
+    "downloadUrl": "/library/motionsites/downloads/ai-workflow.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "5 code excerpts are included. One live React adaptation is bundled and built for the sandbox.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "AI Workflow Hero",
+      "upstreamCategory": "Hero",
+      "excerptCount": 5,
+      "previewMode": "live-adaptation",
+      "implementation": "sandbox-built",
+      "media": [
+        "/library/motionsites/media/1843247a69a4f9d5938f5760.webp",
+        "/library/motionsites/media/921b0d5364ec1b025143d49e.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-asme-hero",
+    "name": "MigBits / Asme",
+    "description": "MotionSites Hero Section design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/asme-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=asme-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero Section",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/asme-hero.html",
+    "image": "/library/motionsites/thumbnails/asme-hero.webp",
+    "dataUrl": "/library/motionsites/data/asme-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/asme-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Asme",
+      "upstreamCategory": "Hero Section",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/a6569e073b1b982b1dd65564.webp",
+        "/library/motionsites/media/a7861d91c631f32250d35ca7.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-bloom-ai-hero",
+    "name": "MigBits / Bloom AI",
+    "description": "MotionSites Hero Section design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/bloom-ai-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=bloom-ai-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero Section",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/bloom-ai-hero.html",
+    "image": "/library/motionsites/thumbnails/bloom-ai-hero.webp",
+    "dataUrl": "/library/motionsites/data/bloom-ai-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/bloom-ai-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Bloom AI",
+      "upstreamCategory": "Hero Section",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/13c3508c327b547df8e55890.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-bold-studio",
+    "name": "MigBits / Bold Studio",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 1 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/bold-studio.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=bold-studio",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/bold-studio.html",
+    "image": "/library/motionsites/thumbnails/bold-studio.webp",
+    "dataUrl": "/library/motionsites/data/bold-studio.json",
+    "downloadUrl": "/library/motionsites/downloads/bold-studio.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "1 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Bold Studio",
+      "upstreamCategory": "Hero",
+      "excerptCount": 1,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/d0f113a11b750eefc696e08b.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-contact-cybernetic",
+    "name": "MigBits / Contact Cybernetic",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/contact-cybernetic.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=contact-cybernetic",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/contact-cybernetic.html",
+    "image": "/library/motionsites/thumbnails/contact-cybernetic.webp",
+    "dataUrl": "/library/motionsites/data/contact-cybernetic.json",
+    "downloadUrl": "/library/motionsites/downloads/contact-cybernetic.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Contact Cybernetic",
+      "upstreamCategory": "Hero",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/628333c6c5a106bd4f9d2b81.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-creative-studio",
+    "name": "MigBits / Creative Studio",
+    "description": "MotionSites Agency design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/creative-studio.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=creative-studio",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Agency",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/creative-studio.html",
+    "image": "/library/motionsites/thumbnails/creative-studio.webp",
+    "dataUrl": "/library/motionsites/data/creative-studio.json",
+    "downloadUrl": "/library/motionsites/downloads/creative-studio.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Creative Studio",
+      "upstreamCategory": "Agency",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/1907be892bcecbbf80055dad.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-digital-epoch-hero",
+    "name": "MigBits / Digital Epoch",
+    "description": "MotionSites Hero Section design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/digital-epoch-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=digital-epoch-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero Section",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/digital-epoch-hero.html",
+    "image": "/library/motionsites/thumbnails/digital-epoch-hero.webp",
+    "dataUrl": "/library/motionsites/data/digital-epoch-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/digital-epoch-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Digital Epoch",
+      "upstreamCategory": "Hero Section",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/79df348170dd489ff7a20425.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-digital-experiences",
+    "name": "MigBits / Digital Experiences",
+    "description": "MotionSites Landing Page design prompt with a MigBits build brief and 1 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/digital-experiences.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=digital-experiences",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Landing Page",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/digital-experiences.html",
+    "image": "/library/motionsites/thumbnails/digital-experiences.webp",
+    "dataUrl": "/library/motionsites/data/digital-experiences.json",
+    "downloadUrl": "/library/motionsites/downloads/digital-experiences.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "1 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Digital Experiences",
+      "upstreamCategory": "Landing Page",
+      "excerptCount": 1,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/968b279dafc40989ccc077e0.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-email-landing-page",
+    "name": "MigBits / Email Landing Page",
+    "description": "MotionSites Landing page design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/email-landing-page.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=email-landing-page",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Landing page",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/email-landing-page.html",
+    "image": "/library/motionsites/thumbnails/email-landing-page.webp",
+    "dataUrl": "/library/motionsites/data/email-landing-page.json",
+    "downloadUrl": "/library/motionsites/downloads/email-landing-page.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Email Landing Page",
+      "upstreamCategory": "Landing page",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/64a49201ac40c891e373679c.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-equilibrium",
+    "name": "MigBits / Equilibrium",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/equilibrium.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=equilibrium",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/equilibrium.html",
+    "image": "/library/motionsites/thumbnails/equilibrium.webp",
+    "dataUrl": "/library/motionsites/data/equilibrium.json",
+    "downloadUrl": "/library/motionsites/downloads/equilibrium.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Equilibrium",
+      "upstreamCategory": "Hero",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/09e3369764c00ab989edc46e.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-halo-usd-landing",
+    "name": "MigBits / USD Halo",
+    "description": "MotionSites Landing Page design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/halo-usd-landing.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=halo-usd-landing",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Landing Page",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/halo-usd-landing.html",
+    "image": "/library/motionsites/thumbnails/halo-usd-landing.webp",
+    "dataUrl": "/library/motionsites/data/halo-usd-landing.json",
+    "downloadUrl": "/library/motionsites/downloads/halo-usd-landing.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "USD Halo",
+      "upstreamCategory": "Landing Page",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/1361da5891b1b60a06fe38b7.webp",
+        "/library/motionsites/media/83e47430299e69c7c9e20164.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-immersive-ocean",
+    "name": "MigBits / Immersive Ocean",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 2 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/immersive-ocean.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=immersive-ocean",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/immersive-ocean.html",
+    "image": "/library/motionsites/thumbnails/immersive-ocean.webp",
+    "dataUrl": "/library/motionsites/data/immersive-ocean.json",
+    "downloadUrl": "/library/motionsites/downloads/immersive-ocean.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "2 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Immersive Ocean",
+      "upstreamCategory": "Hero",
+      "excerptCount": 2,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/481c662b602dfa44491885ca.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-innovation-landing",
+    "name": "MigBits / Innovation",
+    "description": "MotionSites Landing Page design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/innovation-landing.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=innovation-landing",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Landing Page",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/innovation-landing.html",
+    "image": "/library/motionsites/thumbnails/innovation-landing.webp",
+    "dataUrl": "/library/motionsites/data/innovation-landing.json",
+    "downloadUrl": "/library/motionsites/downloads/innovation-landing.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Innovation",
+      "upstreamCategory": "Landing Page",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/3a9c569d7fa43699db48d210.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-intelligence-layer",
+    "name": "MigBits / Intelligence Layer",
+    "description": "MotionSites Technology design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/intelligence-layer.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=intelligence-layer",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Technology",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/intelligence-layer.html",
+    "image": "/library/motionsites/thumbnails/intelligence-layer.webp",
+    "dataUrl": "/library/motionsites/data/intelligence-layer.json",
+    "downloadUrl": "/library/motionsites/downloads/intelligence-layer.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Intelligence Layer",
+      "upstreamCategory": "Technology",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/b2907a2f84e6e3be27e6099e.webp",
+        "/library/motionsites/media/59635b67b1534a725089f683.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-intelligent-operations",
+    "name": "MigBits / Intelligent Operations",
+    "description": "MotionSites Agency design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/intelligent-operations.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=intelligent-operations",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Agency",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/intelligent-operations.html",
+    "image": "/library/motionsites/thumbnails/intelligent-operations.webp",
+    "dataUrl": "/library/motionsites/data/intelligent-operations.json",
+    "downloadUrl": "/library/motionsites/downloads/intelligent-operations.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Intelligent Operations",
+      "upstreamCategory": "Agency",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/55111624b561d82a8cd5ddae.webp",
+        "/library/motionsites/media/b58c7622727caed05c6ec924.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-interactive-discovery",
+    "name": "MigBits / Interactive Discovery",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 2 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/interactive-discovery.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=interactive-discovery",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Design reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/interactive-discovery.html",
+    "image": "/library/motionsites/thumbnails/interactive-discovery.webp",
+    "dataUrl": "/library/motionsites/data/interactive-discovery.json",
+    "downloadUrl": "/library/motionsites/downloads/interactive-discovery.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "2 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Interactive Discovery",
+      "upstreamCategory": "Hero",
+      "excerptCount": 2,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/ff3c4e19ae015df1b7c786d6.webp"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-mindloop-landing",
+    "name": "MigBits / Mindloop Landing",
+    "description": "MotionSites Landing Page design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/mindloop-landing.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=mindloop-landing",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Landing Page",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/mindloop-landing.html",
+    "image": "/library/motionsites/thumbnails/mindloop-landing.webp",
+    "dataUrl": "/library/motionsites/data/mindloop-landing.json",
+    "downloadUrl": "/library/motionsites/downloads/mindloop-landing.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Mindloop Landing",
+      "upstreamCategory": "Landing Page",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/86add4352fc227463f6beb39.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-modern-agency",
+    "name": "MigBits / Modern Agency",
+    "description": "MotionSites Agency design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/modern-agency.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=modern-agency",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Agency",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/modern-agency.html",
+    "image": "/library/motionsites/thumbnails/modern-agency.webp",
+    "dataUrl": "/library/motionsites/data/modern-agency.json",
+    "downloadUrl": "/library/motionsites/downloads/modern-agency.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Modern Agency",
+      "upstreamCategory": "Agency",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/0d3a1dddfde081a789052c3e.webp",
+        "/library/motionsites/media/072166e39a8669fe502f121d.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-mostar-guide",
+    "name": "MigBits / Mostar Guide",
+    "description": "MotionSites Travel design prompt with a MigBits build brief and 8 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/mostar-guide.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=mostar-guide",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Travel",
+      "Build prompt",
+      "Design reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/mostar-guide.html",
+    "image": "/library/motionsites/thumbnails/mostar-guide.webp",
+    "dataUrl": "/library/motionsites/data/mostar-guide.json",
+    "downloadUrl": "/library/motionsites/downloads/mostar-guide.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "8 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Mostar Guide",
+      "upstreamCategory": "Travel",
+      "excerptCount": 8,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/8572a95220d6300b8d1bc91a.webp"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-neo-museum",
+    "name": "MigBits / Neo Museum",
+    "description": "MotionSites Website design prompt with a MigBits build brief and 5 preserved code excerpts. Reference media unavailable; original source available.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/neo-museum.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=neo-museum",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Website",
+      "Build prompt",
+      "Design reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/neo-museum.html",
+    "image": "/library/motionsites/thumbnails/neo-museum.webp",
+    "dataUrl": "/library/motionsites/data/neo-museum.json",
+    "downloadUrl": "/library/motionsites/downloads/neo-museum.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "5 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Neo Museum",
+      "upstreamCategory": "Website",
+      "excerptCount": 5,
+      "previewMode": "unavailable",
+      "implementation": "not-compiled",
+      "media": []
+    }
+  },
+  {
+    "id": "motionsites-neon-logic",
+    "name": "MigBits / Neon Logic",
+    "description": "MotionSites Landing Page design prompt with a MigBits build brief and 1 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/neon-logic.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=neon-logic",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Landing Page",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/neon-logic.html",
+    "image": "/library/motionsites/thumbnails/neon-logic.webp",
+    "dataUrl": "/library/motionsites/data/neon-logic.json",
+    "downloadUrl": "/library/motionsites/downloads/neon-logic.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "1 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Neon Logic",
+      "upstreamCategory": "Landing Page",
+      "excerptCount": 1,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/583c63de446e556bf6826231.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-network-hero",
+    "name": "MigBits / Network Hero",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/network-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=network-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Design reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/network-hero.html",
+    "image": "/library/motionsites/thumbnails/network-hero.webp",
+    "dataUrl": "/library/motionsites/data/network-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/network-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Network Hero",
+      "upstreamCategory": "Hero",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/a47fe18f9de2e906c93a0984.webp"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-portal-hero",
+    "name": "MigBits / Portal",
+    "description": "MotionSites Hero Section design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/portal-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=portal-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero Section",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/portal-hero.html",
+    "image": "/library/motionsites/thumbnails/portal-hero.webp",
+    "dataUrl": "/library/motionsites/data/portal-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/portal-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Portal",
+      "upstreamCategory": "Hero Section",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/de7f03353eeccb103dbbb6c8.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-portfolio-cosmic-hero",
+    "name": "MigBits / Portfolio Cosmic",
+    "description": "MotionSites Portfolio design prompt with a MigBits build brief and 0 preserved code excerpts. Reference media unavailable; original source available.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/portfolio-cosmic-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=portfolio-cosmic-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Portfolio",
+      "Build prompt",
+      "Design reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/portfolio-cosmic-hero.html",
+    "image": "/library/motionsites/thumbnails/portfolio-cosmic-hero.webp",
+    "dataUrl": "/library/motionsites/data/portfolio-cosmic-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/portfolio-cosmic-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Portfolio Cosmic",
+      "upstreamCategory": "Portfolio",
+      "excerptCount": 0,
+      "previewMode": "unavailable",
+      "implementation": "not-compiled",
+      "media": []
+    }
+  },
+  {
+    "id": "motionsites-prisma-landing",
+    "name": "MigBits / Prisma Creative Studio",
+    "description": "MotionSites Landing Page design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/prisma-landing.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=prisma-landing",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Landing Page",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/prisma-landing.html",
+    "image": "/library/motionsites/thumbnails/prisma-landing.webp",
+    "dataUrl": "/library/motionsites/data/prisma-landing.json",
+    "downloadUrl": "/library/motionsites/downloads/prisma-landing.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Prisma Creative Studio",
+      "upstreamCategory": "Landing Page",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/f2992f45c8714bfd62b4f826.webp",
+        "/library/motionsites/media/50916edfda9facb3b238b51f.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-prompt-hero",
+    "name": "MigBits / PROMPT",
+    "description": "MotionSites Landing Page design prompt with a MigBits build brief and 1 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/prompt-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=prompt-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Landing Page",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/prompt-hero.html",
+    "image": "/library/motionsites/thumbnails/prompt-hero.webp",
+    "dataUrl": "/library/motionsites/data/prompt-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/prompt-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "1 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "PROMPT",
+      "upstreamCategory": "Landing Page",
+      "excerptCount": 1,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/4e8ca740ce49af6ec6c338d0.webp",
+        "/library/motionsites/media/8d448b3a960cfe4f5dace769.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-prosthetics-hero",
+    "name": "MigBits / Prosthetics Hero",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/prosthetics-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=prosthetics-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/prosthetics-hero.html",
+    "image": "/library/motionsites/thumbnails/prosthetics-hero.webp",
+    "dataUrl": "/library/motionsites/data/prosthetics-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/prosthetics-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Prosthetics Hero",
+      "upstreamCategory": "Hero",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/be71d44eed5568f8a2608a17.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-retro-futurist",
+    "name": "MigBits / Retro-Futurist",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 1 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/retro-futurist.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=retro-futurist",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/retro-futurist.html",
+    "image": "/library/motionsites/thumbnails/retro-futurist.webp",
+    "dataUrl": "/library/motionsites/data/retro-futurist.json",
+    "downloadUrl": "/library/motionsites/downloads/retro-futurist.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "1 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Retro-Futurist",
+      "upstreamCategory": "Hero",
+      "excerptCount": 1,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/14d375d3b07bcd3bd7abf09f.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-securify-hero",
+    "name": "MigBits / Securify Data Security",
+    "description": "MotionSites SaaS design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/securify-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=securify-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "SaaS",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/securify-hero.html",
+    "image": "/library/motionsites/thumbnails/securify-hero.webp",
+    "dataUrl": "/library/motionsites/data/securify-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/securify-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Securify Data Security",
+      "upstreamCategory": "SaaS",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/6a0fec0d385613291ae94ba3.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-stillmind",
+    "name": "MigBits / Stillmind",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 3 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/stillmind.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=stillmind",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/stillmind.html",
+    "image": "/library/motionsites/thumbnails/stillmind.webp",
+    "dataUrl": "/library/motionsites/data/stillmind.json",
+    "downloadUrl": "/library/motionsites/downloads/stillmind.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "3 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Stillmind",
+      "upstreamCategory": "Hero",
+      "excerptCount": 3,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/0af17236613cd1b47c49b872.png",
+        "/library/motionsites/media/0dddf9fdc91ab8d09fc24426.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-tech-forward",
+    "name": "MigBits / Tech-Forward",
+    "description": "MotionSites Hero design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/tech-forward.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=tech-forward",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/tech-forward.html",
+    "image": "/library/motionsites/thumbnails/tech-forward.webp",
+    "dataUrl": "/library/motionsites/data/tech-forward.json",
+    "downloadUrl": "/library/motionsites/downloads/tech-forward.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Tech-Forward",
+      "upstreamCategory": "Hero",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/be71d44eed5568f8a2608a17.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-velorah-hero",
+    "name": "MigBits / Velorah",
+    "description": "MotionSites Agency design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/velorah-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=velorah-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Agency",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/velorah-hero.html",
+    "image": "/library/motionsites/thumbnails/velorah-hero.webp",
+    "dataUrl": "/library/motionsites/data/velorah-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/velorah-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "Velorah",
+      "upstreamCategory": "Agency",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/94d9b3db9d75cc9ba2bf4975.mp4"
+      ]
+    }
+  },
+  {
+    "id": "motionsites-vex-ventures-hero",
+    "name": "MigBits / VEX Ventures",
+    "description": "MotionSites Hero Section design prompt with a MigBits build brief and 0 preserved code excerpts. Reference preview; full application not verified.",
+    "category": "prompts",
+    "author": "MotionSites · MigBits adaptations",
+    "license": "LicenseRef-MotionSites-Distribution",
+    "licenseUrl": "/library/motionsites/notices/vex-ventures-hero.txt",
+    "sourceUrl": "https://motionsites.ai/?prompt=vex-ventures-hero",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "tags": [
+      "MotionSites",
+      "Free source sample",
+      "Hero Section",
+      "Build prompt",
+      "Design reference",
+      "Video reference"
+    ],
+    "format": "Design prompt · source excerpts",
+    "previewType": "design-prompt",
+    "previewUrl": "/library/motionsites/previews/vex-ventures-hero.html",
+    "image": "/library/motionsites/thumbnails/vex-ventures-hero.webp",
+    "dataUrl": "/library/motionsites/data/vex-ventures-hero.json",
+    "downloadUrl": "/library/motionsites/downloads/vex-ventures-hero.zip",
+    "featured": 500,
+    "usage": [
+      "This is a design prompt kit. Open MigBits-build-brief.md for the adapted brief; original/MotionSites-prompt.md is preserved unchanged.",
+      "0 code excerpts are included. A full application has not been compiled or certified; the preview is reference media.",
+      "The preview starts motion automatically when a video is selected and honors pause/reduced motion. The original heavy frame-cache strategy is not used in the live adaptation.",
+      "Reference media is deduplicated and served separately to keep each source ZIP small. REFERENCE-ASSETS.json lists exact asset URLs and hashes; the preview needs those URLs reachable.",
+      "No external font binaries or service credentials are included. Upstream font links inside the original brief are references, not a font redistribution grant.",
+      "Retain MotionSites notices, separate adaptation notices and dependency licenses. Distribution is not a general MIT grant for upstream prompts/media."
+    ],
+    "prompt": {
+      "upstreamTitle": "VEX Ventures",
+      "upstreamCategory": "Hero Section",
+      "excerptCount": 0,
+      "previewMode": "reference",
+      "implementation": "not-compiled",
+      "media": [
+        "/library/motionsites/media/2c7f9061c7f0a1de75b86c0a.mp4"
+      ]
+    }
+  }
+]

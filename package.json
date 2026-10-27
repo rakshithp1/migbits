@@ -10,7 +10,7 @@
     "validate:catalog": "tsx scripts/validate-catalog.ts",
     "test": "tsx --test tests/*.test.ts tests/*.test.tsx",
     "typecheck": "tsc --noEmit",
-    "build:catalog": "tsx scripts/build-catalog.ts && tsx scripts/build-resource-library.ts && tsx scripts/build-approved-registry.mts",
+    "build:catalog": "tsx scripts/build-catalog.ts && tsx scripts/build-motionsites.ts && tsx scripts/build-resource-library.ts && tsx scripts/build-approved-registry.mts",
     "prebuild": "npm run build:catalog",
     "predev": "npm run build:catalog",
     "pretest": "npm run build:catalog",

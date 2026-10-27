@@ -19,3 +19,7 @@ public/r/*.json -text
 resources/visual/fluent-color/** -text -whitespace
 
 public/library/customized/** -text
+
+# MotionSites pinned source and sealed preview artifacts retain reviewed bytes.
+resources/motionsites-imports/** -text -whitespace
+public/library/motionsites/** -text -whitespace

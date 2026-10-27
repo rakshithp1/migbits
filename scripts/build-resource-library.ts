@@ -489,6 +489,17 @@ list.push(...buildOriginalShowcases());
 list.push(buildCoralCta());
 list.push(...buildFullscreenTemplates());
 list.push(...buildScrollExperiences());
+// Publisher sample imports are sealed against source and browser proofs; pending candidates stay out.
+if (existsSync("catalog/motionsites-resources.json") && existsSync("catalog/motionsites-preview-validation.json")) {
+  const candidates: LibraryResource[] = read("catalog/motionsites-resources.json");
+  const proofs: { id: string; status: string; artifacts: Record<string, string> }[] = read("catalog/motionsites-preview-validation.json");
+  for (const item of candidates) {
+    const proof = proofs.find(p => p.id === item.id && p.status === "passed");
+    if (!proof) continue;
+    for (const url of [item.previewUrl, item.image, item.dataUrl, item.downloadUrl, item.licenseUrl]) if (!url || proof.artifacts[url] !== createHash("sha256").update(readFileSync("public" + url)).digest("hex")) throw Error("Unsealed MotionSites artifact " + item.id);
+    list.push(item);
+  }
+}
 list = consolidateTemplateColors(list);
 customizeTemplatePreviews(list);
 const libraryErrors = validateLibrary(list);
@@ -504,6 +515,6 @@ json("catalog/library/build-report.json", {
     ]),
   ),
   scope:
-    "Only reviewed retained imports and original resources. MIT sale permission requires preserving notices. OFL fonts are not standalone resale assets. Native Figma generator execution remains unverified.",
+    "Reviewed retained imports, original resources and separately licensed MotionSites prompt kits. Preserve upstream and adaptation notices. Prompt references are not complete template kits. OFL fonts are not standalone resale assets. Native Figma generator execution remains unverified.",
 });
 console.log("Built " + list.length + " gallery resources.");

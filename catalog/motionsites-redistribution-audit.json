@@ -1,0 +1,393 @@
+{
+  "source": "https://motionsites.ai",
+  "checkedAt": "2026-10-27",
+  "status": "STANDARD_TERMS_RESTRICTED_SEPARATE_DISTRIBUTION",
+  "intendedUse": "Redistribution of downloadable source, prompts and media through MigBits UI/template library",
+  "terms": {
+    "url": "https://motionsites.ai/terms",
+    "lastUpdated": "2026-09-30",
+    "conclusion": "End-product website/app use is permitted; prompt/source redistribution, library republication and automated bulk collection are prohibited. No free-template redistribution exception was verified."
+  },
+  "repository": {
+    "url": "https://github.com/Motionsites-AI/claude-skill",
+    "revision": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+    "ownership": "MotionSites-branded publisher repository linking to motionsites.ai; site-to-repository backlink was not independently verified.",
+    "license": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+    "scope": "Instructions, references and scripts exclude examples/media from the MIT grant; examples and linked media are licensed for building websites, not republishing as a prompt or media collection."
+  },
+  "counts": {
+    "repositoryExamplePromptsDiscovered": 40,
+    "imported": 40,
+    "blocked": 0,
+    "supportingIndexFilesExcluded": 1,
+    "totalFreeTemplatesOnWebsite": null,
+    "importedPublisherSample": 40,
+    "restrictedUnderStandardPublicTerms": 40
+  },
+  "coverage": "Pinned repository tree fully enumerated, untruncated: 40 example prompt files plus one index. This is a free sample inventory, not reconciliation of every free item on the live website. No restricted prompt bodies or media downloaded.",
+  "items": [
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-character-studio.md",
+      "blob": "1fc0d18dd43d4a93bc828716c7c8eaa71068f76e",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-character-studio.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-collectible-hero.md",
+      "blob": "492f1efd54498c4854414e8fd583022d993197a6",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-collectible-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-jack-portfolio-hero.md",
+      "blob": "c6bae58a51d772afeb8f24e34b6f9d365d4295bb",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/3d-jack-portfolio-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/aethera-hero.md",
+      "blob": "36f2c7f6397b4c0a70defd956bb04290ee1f2705",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/aethera-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/aetheris-voyage-hero.md",
+      "blob": "0d28b113373281f0e037d7dd8f8400370a4fb7a4",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/aetheris-voyage-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/agent-wave.md",
+      "blob": "2938931ee502c2176ad228e0d6e17a30ee52d7e7",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/agent-wave.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/ai-runtime.md",
+      "blob": "8bfe0b8e690485096f95397bf4da718b843e69cc",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/ai-runtime.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/ai-workflow.md",
+      "blob": "eea81adcbab6b9b8f238e15d12fcbdacbbd7f430",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/ai-workflow.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/asme-hero.md",
+      "blob": "a4686ffb4920071c2d0118c95d2bb6207a405eb4",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/asme-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/bloom-ai-hero.md",
+      "blob": "d1085771e9f7ab1e1cbd15f80e985016a86f0e19",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/bloom-ai-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/bold-studio.md",
+      "blob": "99940d7aca87ab0e4c8a912e72c83867b5359ef9",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/bold-studio.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/contact-cybernetic.md",
+      "blob": "993b6383492081a9bc0031a90cdb1e4a95b94041",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/contact-cybernetic.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/creative-studio.md",
+      "blob": "310fd91c578b90e8affc5fc5f4a070cad8930846",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/creative-studio.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/digital-epoch-hero.md",
+      "blob": "e98f0c84003f33cbd49962846bcda6ebbdbe032b",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/digital-epoch-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/digital-experiences.md",
+      "blob": "56fd5d10017f290f66c09b5d7748e2455a15c5e9",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/digital-experiences.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/email-landing-page.md",
+      "blob": "f5ed4c6265f120e618bca33c2fbbfc3ac8dec297",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/email-landing-page.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/equilibrium.md",
+      "blob": "c648de7fead2c78f4de8d0b0b38758293ad27c7e",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/equilibrium.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/halo-usd-landing.md",
+      "blob": "929a9355d52da6042fddc0241b5b5fc4ab445232",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/halo-usd-landing.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/immersive-ocean.md",
+      "blob": "29e889f6b1631a2031dd11e7f19a14d634cf6563",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/immersive-ocean.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/innovation-landing.md",
+      "blob": "75b97096b452e3f1fda0c01d0ea8ed42b9ed6899",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/innovation-landing.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/intelligence-layer.md",
+      "blob": "252094bad71df89cb5ec974125c6ebd1efc88eb3",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/intelligence-layer.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/intelligent-operations.md",
+      "blob": "1e104b4287f0f07827cf9046751cfa5488a2f35a",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/intelligent-operations.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/interactive-discovery.md",
+      "blob": "9d0933f9fba3058c50eb5ceb3c2129bc02cea8b7",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/interactive-discovery.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/mindloop-landing.md",
+      "blob": "39e4bc05646c21e1670a6a1299d4da062adb3773",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/mindloop-landing.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/modern-agency.md",
+      "blob": "739582a6ce40698bccf6ab9f02a9c5b61ab0df47",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/modern-agency.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/mostar-guide.md",
+      "blob": "fd9e5df35032aa6806b5a7f56280fcede4ba0831",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/mostar-guide.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/neo-museum.md",
+      "blob": "aa27b34fe1788592f20965230f9e14b74242a973",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/neo-museum.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/neon-logic.md",
+      "blob": "359cf9443dd32afa066f700c8ee20ba298807d41",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/neon-logic.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/network-hero.md",
+      "blob": "84c1424d1ae82f2b77e906ae2b038fff9997d5c1",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/network-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/portal-hero.md",
+      "blob": "92031cf53a43d5a1e48733f1d47ba2dc81850d47",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/portal-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/portfolio-cosmic-hero.md",
+      "blob": "a814f05fe2da4836d4aa3a14aed0d186d91a7b0e",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/portfolio-cosmic-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prisma-landing.md",
+      "blob": "2b27e18c9992ee060f54ee6d0c830fd27497f311",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prisma-landing.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prompt-hero.md",
+      "blob": "3ce9d4f4c3aadeeb202c4cec2309271ea4524fee",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prompt-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prosthetics-hero.md",
+      "blob": "dd43da93a9efbc116275741098ae8a55efb51c02",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/prosthetics-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/retro-futurist.md",
+      "blob": "4461d565ded044fa120d432ec68057ec1277a58a",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/retro-futurist.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/securify-hero.md",
+      "blob": "9c7a7b7c40899933b6ce2f2383520e8b31683151",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/securify-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/stillmind.md",
+      "blob": "72a753063e1eaad0d2534c198879f8aa64634020",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/stillmind.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/tech-forward.md",
+      "blob": "677a43a4306c67e3c048df63d81242f94abf9137",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/tech-forward.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/velorah-hero.md",
+      "blob": "8a5d4109df7b4ee299213186f5be89366684c503",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/velorah-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    },
+    {
+      "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/vex-ventures-hero.md",
+      "blob": "3fadec0d728904cb9f97e654509b6eb27096c433",
+      "sourceUrl": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples/vex-ventures-hero.md",
+      "status": "IMPORTED_SEPARATE_DISTRIBUTION",
+      "licenseEvidence": "https://github.com/Motionsites-AI/claude-skill/blob/faa30d512e3973e58675c72101a7ef42ed37ae83/LICENSE",
+      "reason": "Public standard terms restrict collection redistribution. Imported under separately administered distribution authorization with original notices retained.",
+      "standardTermsStatus": "BLOCKED"
+    }
+  ],
+  "nextStep": "Reconcile additional live free catalog cards through an authenticated official export; retain separate permission records and original notices.",
+  "currentImportRecord": "catalog/motionsites-import-inventory.json",
+  "distributionNote": "Standard public terms remain restrictive. Additional distributor authorization is handled outside the public repository; public packages retain upstream and adaptation notices. No private contract is stored here."
+}

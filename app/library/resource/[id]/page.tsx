@@ -57,7 +57,7 @@ export default async function ResourcePage({
             </div>
             <div>
               <h2>License</h2>
-              <strong className="mb-license">{item.license}</strong>
+              <strong className="mb-license">{item.license === "LicenseRef-MotionSites-Distribution" ? "Licensed MotionSites content" : item.license}</strong>
               <p>
                 {resourceUsage(item).summary}
               </p>
@@ -66,7 +66,9 @@ export default async function ResourcePage({
             <div>
               <h2>Good to know</h2>
               <p>
-                {item.previewType === "source-kit"
+                {item.previewType === "design-prompt"
+                  ? item.prompt?.previewMode === "live-adaptation" ? "MigBits live adaptation built in isolation. Original prompt and source excerpts remain separate; production integration and backend services are not verified." : "Design prompt with original source excerpts and reference media. The reference is not proof of a compiled or working full application."
+                  : item.previewType === "source-kit"
                   ? "Documentation preview only. Original source and license are reviewed; upstream installation, hooks, backend services and builds have not been executed."
                   : item.previewType === "motion-example"
                     ? "Technical Motion example. Preview pause/reduced-motion handling is a separate adaptation; original keyboard behavior, fixed sizing and production integration require review."

@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-25",
-  "total": 352,
+  "total": 392,
   "categories": {
     "components": 102,
     "blocks": 19,
@@ -14,7 +14,8 @@
     "backgrounds": 6,
     "icons": 2,
     "tools": 2,
-    "themes": 12
+    "themes": 12,
+    "prompts": 40
   },
-  "scope": "Only reviewed retained imports and original resources. MIT sale permission requires preserving notices. OFL fonts are not standalone resale assets. Native Figma generator execution remains unverified."
+  "scope": "Reviewed retained imports, original resources and separately licensed MotionSites prompt kits. Preserve upstream and adaptation notices. Prompt references are not complete template kits. OFL fonts are not standalone resale assets. Native Figma generator execution remains unverified."
 }

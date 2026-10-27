@@ -1,0 +1,350 @@
+{
+  "observedSurface": "Native Chrome MotionSites homepage, Free filter active; observed loaded card list, not a full pagination reconciliation.",
+  "publisherExportRecords": 40,
+  "liveFreeCardsObserved": 48,
+  "liveCatalogTotal": null,
+  "catalogAccessLimitations": [
+    "Direct website retrieval returned HTTP 403.",
+    "Documented MCP endpoint failed TLS connections with certificate validation kept enabled.",
+    "Only the publisher GitHub sample is fully snapshotted; current free card bodies outside it are not available through that export."
+  ],
+  "liveCards": [
+    {
+      "title": "Feathers Atlas",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Facet Glass Hero",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Space Voyage",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Freight Services Hero",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Velia",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Atrium MTL",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Playful Idea",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Neural Pathway",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Retro-Futurist",
+      "source": "https://motionsites.ai/",
+      "status": "imported-publisher-sample",
+      "importedId": "motionsites-retro-futurist",
+      "reason": null
+    },
+    {
+      "title": "macOS widget",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Orvante Agency",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "AXON",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Meadowbell",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Vertex",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Halora",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Velorah",
+      "source": "https://motionsites.ai/",
+      "status": "imported-publisher-sample",
+      "importedId": "motionsites-velorah-hero",
+      "reason": null
+    },
+    {
+      "title": "Space planet",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Sellix",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "KAIRN",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Reelmark",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "3D Character Studio",
+      "source": "https://motionsites.ai/",
+      "status": "imported-publisher-sample",
+      "importedId": "motionsites-3d-character-studio",
+      "reason": null
+    },
+    {
+      "title": "Agent Wave",
+      "source": "https://motionsites.ai/",
+      "status": "imported-publisher-sample",
+      "importedId": "motionsites-agent-wave",
+      "reason": null
+    },
+    {
+      "title": "Nature Portfolio",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "AI Runtime",
+      "source": "https://motionsites.ai/",
+      "status": "imported-publisher-sample",
+      "importedId": "motionsites-ai-runtime",
+      "reason": null
+    },
+    {
+      "title": "Zapline",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "LTX Video",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Logistics Freight",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "3D Collectible Hero",
+      "source": "https://motionsites.ai/",
+      "status": "imported-publisher-sample",
+      "importedId": "motionsites-3d-collectible-hero",
+      "reason": null
+    },
+    {
+      "title": "Verra Events Hero",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Wild Pill Hero",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Freight Scroll Hero",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Tana Elephant Sections",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Petalyx",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Sakura QR",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Strata AI",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Parallex",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Autumn Fox",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Vela Terms Hero",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Vaultra Hero",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "3D Portfolio",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Honey Bee",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Peculiar Atelier",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Norva Staffing Hero",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Lumora Skyranger",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Cast and Render",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Veyra Electric",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    },
+    {
+      "title": "Innovation",
+      "source": "https://motionsites.ai/",
+      "status": "imported-publisher-sample",
+      "importedId": "motionsites-innovation-landing",
+      "reason": null
+    },
+    {
+      "title": "Shipcraft Footer",
+      "source": "https://motionsites.ai/",
+      "status": "blocked-source-access",
+      "importedId": null,
+      "reason": "Observed free card, but source body is absent from the pinned export and no authenticated export is available."
+    }
+  ],
+  "completeLiveCatalogClaim": false
+}

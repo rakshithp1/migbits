@@ -142,7 +142,47 @@
     "template-monument-spaces",
     "template-aperture-os",
     "template-pace-atelier",
-    "template-sol-citrus"
+    "template-sol-citrus",
+    "motionsites-3d-character-studio",
+    "motionsites-3d-collectible-hero",
+    "motionsites-3d-jack-portfolio-hero",
+    "motionsites-aethera-hero",
+    "motionsites-aetheris-voyage-hero",
+    "motionsites-agent-wave",
+    "motionsites-ai-runtime",
+    "motionsites-ai-workflow",
+    "motionsites-asme-hero",
+    "motionsites-bloom-ai-hero",
+    "motionsites-bold-studio",
+    "motionsites-contact-cybernetic",
+    "motionsites-creative-studio",
+    "motionsites-digital-epoch-hero",
+    "motionsites-digital-experiences",
+    "motionsites-email-landing-page",
+    "motionsites-equilibrium",
+    "motionsites-halo-usd-landing",
+    "motionsites-immersive-ocean",
+    "motionsites-innovation-landing",
+    "motionsites-intelligence-layer",
+    "motionsites-intelligent-operations",
+    "motionsites-interactive-discovery",
+    "motionsites-mindloop-landing",
+    "motionsites-modern-agency",
+    "motionsites-mostar-guide",
+    "motionsites-neo-museum",
+    "motionsites-neon-logic",
+    "motionsites-network-hero",
+    "motionsites-portal-hero",
+    "motionsites-portfolio-cosmic-hero",
+    "motionsites-prisma-landing",
+    "motionsites-prompt-hero",
+    "motionsites-prosthetics-hero",
+    "motionsites-retro-futurist",
+    "motionsites-securify-hero",
+    "motionsites-stillmind",
+    "motionsites-tech-forward",
+    "motionsites-velorah-hero",
+    "motionsites-vex-ventures-hero"
   ],
   "removed": [
     {
@@ -10204,5 +10244,6 @@
       "validation": "Numeric semantic contrast, source geometry/hash and notice integrity tests; browser checks run separately before release."
     }
   ],
-  "fullscreenReview": "Six original full-screen compositions visually reviewed with automated motion, responsive and reduced-motion checks; see fullscreen-template-validation.json."
+  "fullscreenReview": "Six original full-screen compositions visually reviewed with automated motion, responsive and reduced-motion checks; see fullscreen-template-validation.json.",
+  "motionsitesReview": "Pinned publisher free design prompts with separate upstream/adaptation files and sealed reference/live-preview proofs; not complete template kits."
 }

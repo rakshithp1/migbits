@@ -2,6 +2,7 @@ import catalog from "../catalog/library/resources.json";
 import { compareLibraryPresentation } from "./library-display-order";
 
 const categoryDefinitions = [
+  { id: "prompts", label: "Design prompts", description: "Upstream design briefs, source excerpts and clearly labelled reference or live previews.", icon: "prompts" },
   { id: "tools", label: "Developer tools", description: "Reviewed source kits and AI development workflows. Installation status is shown explicitly.", icon: "tools" },
   { id: "themes", label: "Themes", description: "Ready light and dark themes, coordinated gradients and typography. Preview, copy and apply.", icon: "themes" },
   { id: "backgrounds", label: "Backgrounds", description: "Static CSS patterns and decorative backgrounds, with original source and notices.", icon: "backgrounds" },
@@ -64,7 +65,7 @@ const categoryDefinitions = [
     icon: "figma",
   },
 ] as const;
-const sectionOrder = ["templates", "blocks", "components", "themes", "typography", "colors", "illustrations", "figma", "icons", "backgrounds", "foundations", "motion", "shaders", "tools"];
+const sectionOrder = ["templates", "prompts", "blocks", "components", "themes", "typography", "colors", "illustrations", "figma", "icons", "backgrounds", "foundations", "motion", "shaders", "tools"];
 export const resourceCategories = [...categoryDefinitions].sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
 export type ResourceCategory = (typeof resourceCategories)[number]["id"];
 export interface LibraryResource {
@@ -84,6 +85,7 @@ export interface LibraryResource {
     | "component"
     | "block"
     | "template"
+    | "design-prompt"
     | "font"
     | "palette"
     | "illustration"
@@ -105,6 +107,7 @@ export interface LibraryResource {
   registryItem?: string;
   template?: { kind: string; pages: number; motion: boolean; motionEngine: string; original: boolean };
   originalPrompt?: string;
+  prompt?: { upstreamTitle: string; upstreamCategory: string; excerptCount: number; previewMode: "live-adaptation" | "reference" | "unavailable"; implementation: "sandbox-built" | "not-compiled"; media: string[] };
   variants?: { label: string; previewUrl: string; dataUrl: string; downloadUrl: string }[];
   review?: { status: "APPROVED"; sourceDigest: string; evidence: string; notices: string[]; preview: "passed"; checkedAt: string; previewDigests?: Record<string, string> };
 }
@@ -125,6 +128,7 @@ export const librarySections = [
 ].filter((section) => section.count > 0 || section.id === "icons").sort((a, b) => sectionOrder.indexOf(a.id) - sectionOrder.indexOf(b.id));
 
 export function resourceUsage(item: Pick<LibraryResource, "license">) {
+  if (item.license === "LicenseRef-MotionSites-Distribution") return { saleOfCopies: false, summary: "MotionSites content is distributed with separate permissions administered by MigBits. It is not covered by a general MIT grant. Preserve upstream and adaptation notices; do not assume permission to resell the prompt or media collection." };
   if (item.license === "MIT AND OFL-1.1") return { saleOfCopies: true, summary: "Code and original media: MIT. Bundled unmodified Inter font: SIL OFL 1.1. Redistribute the complete UI with both notices; the font may not be sold by itself." };
   if (item.license === "Unlicense") return { saleOfCopies: true, summary: "Creator code is dedicated to the public domain under the Unlicense, with permission to copy, modify, distribute and sell. Keep the supplied evidence; dependency and trademark rights remain separate." };
   if (item.license === "OFL-1.1") return { saleOfCopies: false, summary: "Commercial design use and redistribution with the OFL notice. Font files cannot be sold by themselves; preserve reserved-name requirements." };

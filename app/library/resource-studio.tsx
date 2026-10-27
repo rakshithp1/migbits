@@ -478,7 +478,7 @@ function SourcePanel({ item }: { item: LibraryResource }) {
       })
       .then((data: Payload) => {
         setPayload(data);
-        const preferred = item.previewType === "source-kit" ? "README-MIGBITS.md" : item.previewType === "motion-example" ? "Example.tsx" : "";
+        const preferred = item.previewType === "design-prompt" ? "MigBits-build-brief.md" : item.previewType === "source-kit" ? "README-MIGBITS.md" : item.previewType === "motion-example" ? "Example.tsx" : "";
         setSelected(data.files?.find(file => file.path === preferred)?.path || data.files?.[0]?.path || "");
       })
       .catch((e) => {
@@ -603,6 +603,7 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
       : item.previewUrl;
   return (
     <div className="mb-studio">
+      {item.prompt && <div className="mb-registry-install"><p>MotionSites design · MigBits adaptation. Open Source to copy the build brief and code excerpts.</p></div>}
       {item.originalPrompt && <div className="mb-registry-install"><p>Original MigBits template ? editable build brief included</p><CopyButton label="Copy build prompt" text={item.originalPrompt} /></div>}
       {item.registryItem && (
         <div className="mb-registry-install">
@@ -661,8 +662,10 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
         </div>
         {iframeUrl && tab === "preview" && (
           <div className="mb-device-controls">
-            {resource.category === "templates" && <>
+            {(resource.category === "templates" || resource.category === "prompts") && <>
               <button onClick={() => { const well = document.getElementById(`preview-${resource.id}`); if (well && document.fullscreenEnabled) void well.requestFullscreen().catch(() => {}); }} aria-label="Full-screen template preview">Full screen ↗</button>
+            </>}
+            {resource.category === "templates" && <>
               <label>Colour <select aria-label="Template colour" value={color} onChange={event => { setColorCss(""); setColor(event.target.value); }}>
                 {templateColors.map(preset => <option key={preset.id} value={preset.id}>{preset.label}</option>)}
               </select></label>
@@ -757,7 +760,9 @@ export function ResourceStudio({ resource }: { resource: LibraryResource }) {
               {item.category === "shaders" &&
                 "WebGPU required · starts paused · "}
               Isolated preview ·{" "}
-              {item.previewType === "source-kit"
+              {item.previewType === "design-prompt"
+                ? item.prompt?.previewMode === "live-adaptation" ? "live adaptation; original source retained" : "reference media; full application not verified"
+                : item.previewType === "source-kit"
                 ? "documentation overview; installation not verified"
                 : item.previewType === "motion-example"
                   ? "technical example; source accessibility needs review"

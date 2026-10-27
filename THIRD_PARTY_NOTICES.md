@@ -64,3 +64,11 @@ See docs/ARCHIVE-PROMOTION.md and catalog/archive-previews/reconciliation.json f
 Copyright (c) 2020 Microsoft Corporation. MIT license. Source SVGs are unchanged in `resources/visual/fluent-color/`; `review.json` records every source URL and SHA256.
 Full original [LICENSE](resources/visual/fluent-color/LICENSE) and [NOTICE](resources/visual/fluent-color/NOTICE) are retained in the repository, public attribution text, source payload and downloadable ZIP. Copied SVGs include both texts as metadata. Brand/product marks are excluded.
 Optional motion CSS and the preview wrapper are original MigBits MIT adaptations, kept separate from the original icon files. No ItsHover, React Bits or Animate UI source is included in this expansion.
+
+# MotionSites publisher free sample
+
+40 original design briefs and reference media from MotionSites-AI/claude-skill, revision faa30d512e3973e58675c72101a7ef42ed37ae83. Copyright MotionSites. These examples and media use custom distribution terms, not the skill code's MIT license. Additional distribution authorization is administered separately. Each download retains UPSTREAM-LICENSE.txt, DISTRIBUTION-NOTICE.txt, unchanged original source, and a separate MigBits adaptation notice. Public access does not grant unrestricted resale of the upstream collection.
+
+Official source: https://github.com/Motionsites-AI/claude-skill/tree/faa30d512e3973e58675c72101a7ef42ed37ae83/plugins/motionsites-web-builder/skills/motionsites-web-builder/examples
+
+The single live React adaptation bundles React, React DOM, Lucide and Tailwind with their dependency notices retained in DEPENDENCY-LICENSES.txt. Other previews are explicitly labelled visual references. See docs/MOTIONSITES-IMPORT.md for scope and media limitations.

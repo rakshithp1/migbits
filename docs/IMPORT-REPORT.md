@@ -17,7 +17,7 @@ Discovered totals describe the earlier pinned inventory. Removed records are his
 | iterationz | Unknown | 0 | 0 | blocked: Requested domain could not be reached or confidently matched to an official source. |
 | ui-guideline | Unknown | 0 | 0 | directory-reviewed: All 20 benchmark systems are inventoried separately below. Eligible repository collections are imported with their own licenses; unresolved rights and unavailable repositories remain blocked. Directory artwork and proprietary kits are excluded. |
 | react-bits | Unknown | 0 | 0 | excluded: Official repository uses MIT plus Commons Clause and additional redistribution conditions. Not imported into a competing component source collection. |
-| motionsites | Unknown | 0 | 0 | blocked: Public previews and prompts do not establish redistribution rights. No verified catalog license found. |
+| motionsites | 40 example prompts in reviewed repository sample; total website count unverified | 0 | 0 | blocked: Rechecked 2026-10-27. Site terms prohibit source/prompt library redistribution. The publisher-branded skill license expressly excludes examples/media from MIT. See docs/MOTIONSITES-REDISTRIBUTION-AUDIT.md. |
 | shaders | 200 | 200 | 0 | imported: Only the retained, reviewed source scope is distributed. |
 | spline | 4 | 0 | 4 | removed: Removed from current public catalog and all generated public downloads. |
 | framer | Unknown | 0 | 0 | blocked: Marketplace templates and assets have separate licenses. Motion is tracked separately; no blanket redistribution grant for Framer marketplace content identified. |
@@ -58,3 +58,7 @@ Discovered totals describe the earlier pinned inventory. Removed records are his
 The importer is paused while catalog/rights-cleanup.json exists. Explicit source and asset rights review is required before changing that policy. The item-level removal audit is preserved there; catalog/import-progress retains historical discovery evidence.
 
 The public branch history was replaced with a clean root snapshot after cleanup. GitHub-managed caches and previously downloaded external copies are outside repository history control. Previous build and deployment evidence in catalog/import-validation.json predates this cleanup unless explicitly marked otherwise.
+
+## MotionSites publisher sample update
+
+40 pinned free design briefs are now imported as Design prompts under separately administered distribution authorization, with unchanged originals, upstream notices and distinct MigBits adaptations. This supersedes the earlier blocked sample status, without changing the public standard-license restrictions. One complete React example has a live adaptation; references are not counted as complete templates. The observed live catalog has 41 additional unmatched free cards whose source bodies remain inaccessible. See docs/MOTIONSITES-IMPORT.md and catalog/motionsites-live-coverage.json.
