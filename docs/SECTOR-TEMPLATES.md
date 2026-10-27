@@ -1,3 +1,5 @@
+> RETIRED: All twelve resources described below were removed at user request. Public previews, thumbnails, source data and ZIP downloads are deleted. This document is historical. Replacements: docs/SCROLL-EXPERIENCES.md.
+
 # Twelve original industry templates
 
 This batch adds six software, three footwear and three drinks concepts as single-file frontend landing templates. Each has a full-viewport introduction, lower content, contact section and footer. They use the existing isolated preview, fullscreen control, colour controls, code viewer and source ZIP workflow.

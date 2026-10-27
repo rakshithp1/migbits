@@ -1,5 +1,6 @@
 import { buildCoralCta } from "./build-coral-cta";
 import { buildFullscreenTemplates } from "./build-fullscreen-templates";
+import { buildScrollExperiences } from "./build-scroll-experiences";
 import { buildOriginalShowcases } from "./build-original-showcases";
 import { consolidateTemplateColors } from "./consolidate-template-colors";
 import { customizeTemplatePreviews } from "./customize-template-previews";
@@ -487,6 +488,7 @@ list.push(...buildVisualLibrary());
 list.push(...buildOriginalShowcases());
 list.push(buildCoralCta());
 list.push(...buildFullscreenTemplates());
+list.push(...buildScrollExperiences());
 list = consolidateTemplateColors(list);
 customizeTemplatePreviews(list);
 const libraryErrors = validateLibrary(list);

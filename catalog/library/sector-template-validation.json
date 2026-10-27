@@ -227,5 +227,7 @@
     "liveArtifactHashesMatched": 60,
     "ciUrl": "https://github.com/rakshithp1/migbits/actions/runs/40541480761",
     "ciStatus": "in_progress at release recording"
-  }
+  },
+  "status": "retired",
+  "retirementReason": "All twelve resources and public artifacts removed at user request. Historical validation only."
 }

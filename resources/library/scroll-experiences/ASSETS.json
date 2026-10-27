@@ -1,0 +1,17 @@
+{
+  "assets": [
+    {
+      "file": "footwear.webp",
+      "sha256": "15aefbcdd741106bb21d9a1c91a31fcbf168c216cffd4665b22a5171fa5d6637",
+      "origin": "Generated for this project using OpenAI image generation; original generic fictional product, no stock or brand reference.",
+      "adaptation": "WebP encoding and resize for delivery; no content edit."
+    },
+    {
+      "file": "citrus.webp",
+      "sha256": "2856b3d1b3d6e032ca551824f9c28312f2bfbb5523fcaa52b90bcea228332c14",
+      "origin": "Generated for this project using OpenAI image generation; original generic fictional product, no stock or brand reference.",
+      "adaptation": "WebP encoding and resize for delivery; no content edit."
+    }
+  ],
+  "rights": "AI-generated concept imagery included for reuse with the template to the extent rights are held. No real product, third-party endorsement, or exclusive trademark claim."
+}

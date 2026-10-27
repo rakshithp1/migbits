@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-10-27T17:38:28.159Z",
+  "resources": [
+    {
+      "id": "template-aperture-os",
+      "status": "passed",
+      "checks": [
+        "Opaque sandbox and loaded product images",
+        "Unique accessibility IDs",
+        "Scroll-driven transform and three chapters",
+        "Pause freezes effects",
+        "Reduced motion removes pinning",
+        "Colour controls",
+        "320/390/768 widths without overflow"
+      ],
+      "artifacts": {
+        "/library/customized/template-aperture-os/aperture-os.html": "c8f3bdba445bf2b870ea96db1fc193e8d1f41e535c2d82728e422dd367441f9f",
+        "/library/thumbnails/template-aperture-os.png": "0503da148863502de2021e348785b9041b7b724597af1e71535991364ba19d61",
+        "/library/data/template-aperture-os.json": "d01682dce3986df800a1db0888b9ae3cc8caa5e8bae3af4a91082449a4fd36c5",
+        "/library/downloads/template-aperture-os.zip": "204449e62f3daaff565655ee4772d58ce2300273c06ebef4162e10010f8d3373",
+        "/library/notices/template-aperture-os.txt": "c99c1009f3186905ef2a7b6142e4a952b8997b7f447501d20633f1e117e8bd62"
+      }
+    },
+    {
+      "id": "template-pace-atelier",
+      "status": "passed",
+      "checks": [
+        "Opaque sandbox and loaded product images",
+        "Unique accessibility IDs",
+        "Scroll-driven transform and three chapters",
+        "Pause freezes effects",
+        "Reduced motion removes pinning",
+        "Colour controls",
+        "320/390/768 widths without overflow"
+      ],
+      "artifacts": {
+        "/library/customized/template-pace-atelier/pace-atelier.html": "4fb02fd73e6580059d042aa152542fd4e95c80997190a027d79a16d1279f1f63",
+        "/library/thumbnails/template-pace-atelier.png": "f46a79ef1335f900fd0f6f8c2132cf502ac67f325d766603ba5c870121d1d860",
+        "/library/data/template-pace-atelier.json": "39dbedb7d2e58b17e72e69f431a9c1eadbb794cf674880cbcfccfdf8cdeba7ff",
+        "/library/downloads/template-pace-atelier.zip": "3acac1cc5432dd81afb3550d8c5d85e1c3e92549956eb75289266f3881174932",
+        "/library/notices/template-pace-atelier.txt": "deef95ab3fbeea5b7a58089fbc3117f95656e3948073f587f990596cc7a0f812"
+      }
+    },
+    {
+      "id": "template-sol-citrus",
+      "status": "passed",
+      "checks": [
+        "Opaque sandbox and loaded product images",
+        "Unique accessibility IDs",
+        "Scroll-driven transform and three chapters",
+        "Pause freezes effects",
+        "Reduced motion removes pinning",
+        "Colour controls",
+        "320/390/768 widths without overflow"
+      ],
+      "artifacts": {
+        "/library/customized/template-sol-citrus/sol-citrus.html": "333643a07e3a29196ca738d7e639b5a23af0944658bd07f0bc4304185111deb8",
+        "/library/thumbnails/template-sol-citrus.png": "14d5028866f55ce03faf80be90f87aea526893dc76670c7208f3ee28d8344b36",
+        "/library/data/template-sol-citrus.json": "efafc2b6692983fea8fc40a95427d8780611928ccfe5f0130d5cc6a2c1120631",
+        "/library/downloads/template-sol-citrus.zip": "b47faba4cef1bf3405a9bf2e01acc5287370f2839d0af6ba9d175dd6edfd6238",
+        "/library/notices/template-sol-citrus.txt": "4f59c94f5624f239e7b45e6ff8cd3d6995a5bebaf0dcd273ff9fd889c5582159"
+      }
+    }
+  ]
+}

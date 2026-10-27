@@ -140,18 +140,9 @@
     "template-signal-developer",
     "template-afterhours-release",
     "template-monument-spaces",
-    "template-relay-software",
-    "template-cascade-automation",
-    "template-prism-analytics",
-    "template-haven-security",
-    "template-syntax-api",
-    "template-papertrail-knowledge",
-    "template-velocity-running",
-    "template-concrete-sneakers",
-    "template-form-footwear",
-    "template-squeeze-citrus",
-    "template-popwave-soda",
-    "template-stillwater-tea"
+    "template-aperture-os",
+    "template-pace-atelier",
+    "template-sol-citrus"
   ],
   "removed": [
     {
@@ -10066,6 +10057,114 @@
       "revision": "migbits-original-1.0.0",
       "reason": "Same SVG board and native component structure with different names and accent colors.",
       "replacementId": "figma-studio"
+    },
+    {
+      "id": "template-relay-software",
+      "name": "Relay Workspace \u2014 full-screen",
+      "previewUrl": "/library/customized/template-relay-software/relay-software.html",
+      "image": "/library/thumbnails/template-relay-software.png",
+      "dataUrl": "/library/data/template-relay-software.json",
+      "downloadUrl": "/library/downloads/template-relay-software.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-cascade-automation",
+      "name": "Cascade Automation \u2014 full-screen",
+      "previewUrl": "/library/customized/template-cascade-automation/cascade-automation.html",
+      "image": "/library/thumbnails/template-cascade-automation.png",
+      "dataUrl": "/library/data/template-cascade-automation.json",
+      "downloadUrl": "/library/downloads/template-cascade-automation.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-prism-analytics",
+      "name": "Prism Analytics \u2014 full-screen",
+      "previewUrl": "/library/customized/template-prism-analytics/prism-analytics.html",
+      "image": "/library/thumbnails/template-prism-analytics.png",
+      "dataUrl": "/library/data/template-prism-analytics.json",
+      "downloadUrl": "/library/downloads/template-prism-analytics.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-haven-security",
+      "name": "Haven Security \u2014 full-screen",
+      "previewUrl": "/library/customized/template-haven-security/haven-security.html",
+      "image": "/library/thumbnails/template-haven-security.png",
+      "dataUrl": "/library/data/template-haven-security.json",
+      "downloadUrl": "/library/downloads/template-haven-security.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-syntax-api",
+      "name": "Syntax API \u2014 full-screen",
+      "previewUrl": "/library/customized/template-syntax-api/syntax-api.html",
+      "image": "/library/thumbnails/template-syntax-api.png",
+      "dataUrl": "/library/data/template-syntax-api.json",
+      "downloadUrl": "/library/downloads/template-syntax-api.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-papertrail-knowledge",
+      "name": "Papertrail Knowledge \u2014 full-screen",
+      "previewUrl": "/library/customized/template-papertrail-knowledge/papertrail-knowledge.html",
+      "image": "/library/thumbnails/template-papertrail-knowledge.png",
+      "dataUrl": "/library/data/template-papertrail-knowledge.json",
+      "downloadUrl": "/library/downloads/template-papertrail-knowledge.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-velocity-running",
+      "name": "Velocity Running \u2014 full-screen",
+      "previewUrl": "/library/customized/template-velocity-running/velocity-running.html",
+      "image": "/library/thumbnails/template-velocity-running.png",
+      "dataUrl": "/library/data/template-velocity-running.json",
+      "downloadUrl": "/library/downloads/template-velocity-running.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-concrete-sneakers",
+      "name": "Concrete Sneakers \u2014 full-screen",
+      "previewUrl": "/library/customized/template-concrete-sneakers/concrete-sneakers.html",
+      "image": "/library/thumbnails/template-concrete-sneakers.png",
+      "dataUrl": "/library/data/template-concrete-sneakers.json",
+      "downloadUrl": "/library/downloads/template-concrete-sneakers.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-form-footwear",
+      "name": "Form Footwear \u2014 full-screen",
+      "previewUrl": "/library/customized/template-form-footwear/form-footwear.html",
+      "image": "/library/thumbnails/template-form-footwear.png",
+      "dataUrl": "/library/data/template-form-footwear.json",
+      "downloadUrl": "/library/downloads/template-form-footwear.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-squeeze-citrus",
+      "name": "Squeeze Citrus \u2014 full-screen",
+      "previewUrl": "/library/customized/template-squeeze-citrus/squeeze-citrus.html",
+      "image": "/library/thumbnails/template-squeeze-citrus.png",
+      "dataUrl": "/library/data/template-squeeze-citrus.json",
+      "downloadUrl": "/library/downloads/template-squeeze-citrus.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-popwave-soda",
+      "name": "Popwave Soda \u2014 full-screen",
+      "previewUrl": "/library/customized/template-popwave-soda/popwave-soda.html",
+      "image": "/library/thumbnails/template-popwave-soda.png",
+      "dataUrl": "/library/data/template-popwave-soda.json",
+      "downloadUrl": "/library/downloads/template-popwave-soda.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
+    },
+    {
+      "id": "template-stillwater-tea",
+      "name": "Stillwater Tea \u2014 full-screen",
+      "previewUrl": "/library/customized/template-stillwater-tea/stillwater-tea.html",
+      "image": "/library/thumbnails/template-stillwater-tea.png",
+      "dataUrl": "/library/data/template-stillwater-tea.json",
+      "downloadUrl": "/library/downloads/template-stillwater-tea.zip",
+      "reason": "User rejected the twelve sector concept templates; replaced by three realistic scroll-driven experiences."
     }
   ],
   "originalCounts": {
