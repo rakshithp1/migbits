@@ -1,30 +1,13 @@
-# MigBits coral signup CTA and footer
+# Coral signup template - continuous smoke
 
-Implementation of the user-supplied fictional-company design brief, branded for MigBits and published as a **Blocks** resource. It is not a replacement for the website's actual contact or authentication infrastructure.
+Version 2 moves this existing resource from Blocks to Templates. It is a single-page signup/footer template, not an additional imported website kit. The catalog still has 343 resources: 118 template entries and 19 blocks. The prior recorded video version is superseded.
 
-## Delivery
+The single HTML file now renders an original, continuously advected Canvas 2D smoke field. Its accumulated active time never wraps at five seconds; there is no video, seeking, crossfade seam or repeating playback timeline. Motion starts automatically, preserves its phase across pause/resume, and freezes for reduced motion or document invisibility. Native rendering also removes the prior opaque-iframe video compositor workaround. Source includes the standalone smoke renderer for inspection, but index.html requires no external file, dependency, framework or build step.
 
-- One self-contained `index.html`: plain HTML, CSS and vanilla JavaScript; embedded static plate, five-second MP4 and variable Inter font. No framework, build step, remote media, CDN or runtime package installation.
-- Desktop reference units, height-aware card sizing and tablet/phone adaptations. The 1440×960 acceptance view has a 1380×340 card, white centred copy, black waitlist pill, coral gradient button, two-column footer and matching side margins.
-- A 1.4-second one-time CSS entrance, border draw, title rise, copy fade, expanding form, button pop and final mark fade. Essential content remains visible if motion is paused before the entrance finishes.
-- Forward muted video playback, a final-second blend to its initial procedural frame, fade on `loadeddata`, right-bottom cover at 80% opacity, pause/visibility handling and a static reduced-motion plate. There is no reverse playback or activation gate.
-- Accessible email label, native validation and a sandbox-safe local confirmation. It does not submit, store or subscribe an email. Demo contact details are explicitly labelled.
-- Screenshot thumbnail, source viewer, deterministic source ZIP and full notices.
+The original black/coral layout, embedded Inter font, 1440x960 reference card, footer, responsive sizing, native form validation and local demo confirmation remain. Theme controls change the CSS palette and the rendered smoke colours. Font notices are also preserved inside the stylesheet so copied theme CSS retains the embedded font's complete licence. The email form remains a frontend demonstration with no account backend or email transmission.
 
-## Rights and provenance
+The user-supplied design brief is credited as an input, not an exclusive MigBits prompt. Supplied stock media remains excluded because redistribution rights were unverified. Code and original media are MIT; unmodified Inter remains OFL 1.1, with complete notices embedded and separately included. Fonts are not standalone resale assets.
 
-The provided CloudFront image/video were accessible but supplied without verifiable redistribution terms. They are not bundled. An original MigBits procedural smoke shader was written, then recorded into a five-second MP4; both its still plate and regeneration source are included. This preserves the requested visual direction without attributing third-party media to MigBits.
+Font source: https://github.com/google/fonts/tree/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/inter . Licence: https://github.com/google/fonts/blob/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/inter/OFL.txt . Pinned binary SHA-256: `29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031`.
 
-The design brief itself is user-supplied and is not represented as an original MigBits prompt. No `PROMPT.md` is redistributed for this block. Code and original smoke media are MIT. The unmodified Inter font is SIL OFL 1.1; its complete copyright/license is embedded in the HTML and included separately. It is a CSS family alias, not a renamed or modified font binary. The combined resource is labelled `MIT AND OFL-1.1`; the font is not a standalone resale product.
-
-Pinned font source: https://github.com/google/fonts/tree/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/inter . License: https://github.com/google/fonts/blob/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/inter/OFL.txt . SHA-256: `29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031`.
-
-Validation is recorded in `catalog/library/coral-cta-validation.json`. Regenerate catalog artifacts with `npm run build:catalog`, serve `public/`, then run `node scripts/validate-coral-cta.mjs`. The finished download requires none of those build tools.
-
-An opaque-iframe Chromium compositing stall was reproduced after the entrance ended. The video layer now stays above the plate darkening layer, the drawn border uses an underlay rather than an overlaid CSS mask, and a non-visible subpixel compositor timeline keeps embedded translucent video frames scheduled. This timeline is disabled by pause, visibility and reduced-motion policies. Verification compares decoded video pixels after the entrance, not only a running playback clock. The standalone version needs no extra compositor timeline.
-
-## Published verification
-
-Live: https://migbits.com/library/resource/block-coral-signup . Full-size standalone view: https://migbits.com/library/previews/blocks/coral-signup.html . Source commit `2c657cb06f510791bdfc9c5104ac0b70d6ddadac`; Cloudflare version `a714ac4c-387a-4089-a6bf-cfa7f2a5a4b1`. CI passed 48 unit and 50 browser tests, lint, type checks, clean-consumer/community checks and production Worker build. Five focused local browser checks and both live CTA checks passed; the five published artifacts hash-match their tested copies. The 1440x960 reference, four responsive viewport sizes, decoded pixel changes, embedded-font integrity and complete font notices were checked. The catalog now has 343 resources, including 20 blocks; no extra template or background counts were added for this block.
-
-CI: https://github.com/rakshithp1/migbits/actions/runs/40481936055
+Old resource, preview, data, download, thumbnail and notice URLs redirect to their replacements. Validation: `catalog/library/coral-cta-validation.json` and the sealed template-preview inventory. Build with `npm run build:catalog`; serve public/ and run `node scripts/validate-coral-cta.mjs` and the targeted template-colour validator. Final publication evidence is recorded in the release ledger.

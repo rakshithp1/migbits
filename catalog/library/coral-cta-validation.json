@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-27T09:00:16.281Z",
-  "id": "block-coral-signup",
+  "checkedAt": "2026-10-27T10:12:14.719Z",
+  "id": "template-coral-signup",
   "status": "passed",
   "sandbox": "allow-scripts without allow-same-origin or allow-forms",
   "desktop": {
@@ -9,13 +9,13 @@
     "cardWidth": 1380,
     "cardHeight": 340
   },
-  "video": {
-    "duration": 5.0096,
-    "rate": 1,
-    "loop": true,
-    "muted": true
+  "motion": {
+    "engine": "Native Canvas 2D",
+    "elapsedBeyondOldSeam": 5.246,
+    "continuous": true,
+    "noVideo": true
   },
-  "decodedFramesChanged": true,
+  "proceduralPixelsChanged": true,
   "font": "Pinned unmodified Inter variable font embedded with OFL notice",
   "responsive": [
     {
@@ -40,22 +40,12 @@
     }
   ],
   "form": "Valid local confirmation; no email transmission",
-  "reducedMotion": "Video hidden and paused; still plate visible; entrance disabled",
+  "reducedMotion": "Procedural field frozen; no video; entrance disabled",
   "artifactDigests": {
-    "/library/previews/blocks/coral-signup.html": "bef01f436e6e8f82bb04cee8ef8a52ffa765fbb54865bda8b33ed5004d2b56d5",
-    "/library/thumbnails/block-coral-signup.png": "4a925461533818c7b534630620b0d1c75bfa8b46616dcd76ed040581bbbff3da",
-    "/library/data/block-coral-signup.json": "dbfb30fcb698bbcacc1fab818bcf6e4ee61862ebb2211dcf2f28dca1a88acbdf",
-    "/library/downloads/block-coral-signup.zip": "edff088f96b466f72b95416137d805ca1c29609d20a20dfed11bb5087d1b6f06",
-    "/library/notices/block-coral-signup.txt": "673fa859c4c91525db5971d20d145740535221d9a008d40e91250af1fd1da55f"
-  },
-  "sourceCommit": "2c657cb06f510791bdfc9c5104ac0b70d6ddadac",
-  "ci": "passed",
-  "ciUnit": 48,
-  "ciBrowser": 50,
-  "ciUrl": "https://github.com/rakshithp1/migbits/actions/runs/40481936055",
-  "localFocusedBrowser": 5,
-  "liveBrowser": 2,
-  "liveArtifactsHashMatched": 5,
-  "deploymentVersion": "a714ac4c-387a-4089-a6bf-cfa7f2a5a4b1",
-  "productionUrl": "https://migbits.com/library/resource/block-coral-signup"
+    "/library/customized/template-coral-signup/coral-signup.html": "a6441cc6bc4d2de2b6367e623e809b4fcf3aabeb2618d9f689bfbf30dea54876",
+    "/library/thumbnails/template-coral-signup.png": "e58d6107131f7b6ca65550d95cb8201e1aefbe2e7d4d61e23d5d8cb7c72f8337",
+    "/library/data/template-coral-signup.json": "acc78dcf6c1fff658ab743c37f4269f283f109f36de039b4e13004232b885c60",
+    "/library/downloads/template-coral-signup.zip": "ec9b4788b013ffb01311a3d9924fe54598ead2412ff7a17e85d97d66c06815c6",
+    "/library/notices/template-coral-signup.txt": "673fa859c4c91525db5971d20d145740535221d9a008d40e91250af1fd1da55f"
+  }
 }

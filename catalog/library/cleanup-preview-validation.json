@@ -1034,5 +1034,12 @@
     "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
     "previewUrl": "/library/customized/template-stride/stride.html",
     "previewDigest": "7e7aa94cb28ebd145f307d0ec1bde48cf23e8b5bf573c639815a92351ca2aa24"
+  },
+  {
+    "id": "template-coral-signup",
+    "status": "passed",
+    "checks": "Opaque sandbox render, automatic initial mount, colour switch/reset, mobile width",
+    "previewUrl": "/library/customized/template-coral-signup/coral-signup.html",
+    "previewDigest": "a6441cc6bc4d2de2b6367e623e809b4fcf3aabeb2618d9f689bfbf30dea54876"
   }
 ]

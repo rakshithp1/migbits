@@ -6,11 +6,13 @@
   "licenseFilesWithMitGrant": 1791,
   "importedRepositories": 16,
   "importedFromThisResearch": 111,
-  "galleryTemplateCount": 117,
-  "includedPages": 134,
+  "galleryTemplateCount": 118,
+  "includedPages": 135,
   "remainingToTarget": 383,
   "pendingVerification": 1799,
   "source": "GitHub official search/API plus individually reviewed creator repositories; pagination recorded separately",
   "coverage": "Research candidates only. No claim that these are 500 distinct complete animated templates. No candidate is published automatically.",
-  "originalMigBitsKits": 6
+  "originalMigBitsKits": 6,
+  "currentCompleteWebsiteKits": 117,
+  "countingNote": "Coral signup was reclassified from an existing block to a single-page signup template; this is not a new imported complete website kit."
 }

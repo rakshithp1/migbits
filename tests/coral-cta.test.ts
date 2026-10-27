@@ -7,13 +7,15 @@ import { libraryResources, resourceUsage } from "../lib/resource-library";
 import validation from "../catalog/library/coral-cta-validation.json";
 
 test("Coral CTA is self-contained, preserves font rights and records the supplied brief accurately", () => {
-  const item = libraryResources.find(r => r.id === "block-coral-signup")!;
-  assert.equal(item.category, "blocks");
+  const item = libraryResources.find(r => r.id === "template-coral-signup")!;
+  assert.equal(item.category, "templates");
   assert.equal(item.license, "MIT AND OFL-1.1");
   assert.equal(resourceUsage(item).saleOfCopies, true);
   const files = unzipSync(readFileSync("public" + item.downloadUrl));
   const html = strFromU8(files["index.html"]);
-  assert.match(html, /data:video\/mp4;base64,/);
+  assert.doesNotMatch(html, /<video|data:video/);
+  assert.match(html, /createSmoke/);
+  assert.equal(item.template?.motionEngine, "Native Canvas 2D");
   assert.match(html, /data:image\/png;base64,/);
   assert.doesNotMatch(html, /cloudfront\.net|Vexor|200\+ businesses/);
   const font = Buffer.from(html.match(/data:font\/ttf;base64,([A-Za-z\d+/=]+)/)![1], "base64");

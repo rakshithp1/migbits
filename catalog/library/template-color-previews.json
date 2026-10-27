@@ -1621,5 +1621,18 @@
       }
     ],
     "status": "derived from approved preview; original source and downloads preserved"
+  },
+  {
+    "id": "template-coral-signup",
+    "pages": 1,
+    "artifacts": [
+      {
+        "url": "/library/customized/template-coral-signup/coral-signup.html",
+        "sha256": "a6441cc6bc4d2de2b6367e623e809b4fcf3aabeb2618d9f689bfbf30dea54876",
+        "originalUrl": "/library/previews/templates/coral-signup.html",
+        "originalSha256": "4439b3145ab4615cc7d2ed5ffe371e96cc61f511538673e81bb28ca24c4a46e0"
+      }
+    ],
+    "status": "derived from approved preview; original source and downloads preserved"
   }
 ]
